@@ -1,0 +1,34 @@
+{
+ "name" : "DunkirkSoilCoefficients",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "xu",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/DunkirkSoilCoefficientsItem",
+   "contained" : true,
+   "optional" : false
+  }, {
+   "name" : "k",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/DunkirkSoilCoefficientsItem",
+   "contained" : true,
+   "optional" : false
+  }, {
+   "name" : "n",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/DunkirkSoilCoefficientsItem",
+   "contained" : true,
+   "optional" : false
+  }, {
+   "name" : "yu",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/DunkirkSoilCoefficientsItem",
+   "contained" : true,
+   "optional" : false
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

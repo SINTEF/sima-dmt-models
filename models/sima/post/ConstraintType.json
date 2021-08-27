@@ -1,0 +1,7 @@
+{
+ "name" : "ConstraintType",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["LE", "LT", "GE", "GT"],
+ "labels" : ["<=", "<", ">=", ">"]
+}
+

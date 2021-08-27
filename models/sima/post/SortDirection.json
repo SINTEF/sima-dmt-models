@@ -1,0 +1,7 @@
+{
+ "name" : "SortDirection",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["ASCENDING", "DESCENDING"],
+ "labels" : ["Ascending", "Descending"]
+}
+

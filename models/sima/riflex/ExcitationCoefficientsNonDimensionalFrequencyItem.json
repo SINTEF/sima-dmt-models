@@ -1,0 +1,23 @@
+{
+ "name" : "ExcitationCoefficientsNonDimensionalFrequencyItem",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "nonDimensionalFrequency",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Non-dimensional frequency",
+   "default" : "0.0"
+  }, {
+   "name" : "amplitudeExcitationRatioProperties",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/AmplitudeDiameterExcitationCoefficientItem",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

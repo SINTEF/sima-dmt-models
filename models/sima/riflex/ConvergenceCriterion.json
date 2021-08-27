@@ -1,0 +1,7 @@
+{
+ "name" : "ConvergenceCriterion",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["AMPNOR", "DIFMAX", "NONE"],
+ "labels" : ["AMPNOR", "DIFMAX", "NONE"]
+}
+

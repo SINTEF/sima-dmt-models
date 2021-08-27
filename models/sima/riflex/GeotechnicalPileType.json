@@ -1,0 +1,7 @@
+{
+ "name" : "GeotechnicalPileType",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["OPEN", "CLOSED"],
+ "labels" : ["Open-ended", "Closed"]
+}
+

@@ -1,0 +1,40 @@
+{
+ "name" : "LongTermStatisticsWaveCalculation",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "returnPeriod",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "default" : "0.0"
+  }, {
+   "name" : "statistics",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/metocean/WaveLongTermStatistics",
+   "contained" : false,
+   "optional" : true
+  }, {
+   "name" : "omni",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/metocean/OmniDirectionalWaveLongTermStatistics",
+   "contained" : false,
+   "optional" : true
+  }, {
+   "name" : "method",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/metocean/WaveStatisticsMethod",
+   "default" : "FROM_DISTRIBUTION"
+  }, {
+   "name" : "directions",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/metocean/CalculationDirection",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

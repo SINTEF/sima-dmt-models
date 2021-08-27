@@ -1,0 +1,17 @@
+{
+ "name" : "SpatiallyVaryingCurrent",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "profiles",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/CurrentProfile",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : false
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

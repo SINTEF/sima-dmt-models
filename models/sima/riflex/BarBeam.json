@@ -1,0 +1,7 @@
+{
+ "name" : "BarBeam",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["BAR", "BEAM"],
+ "labels" : ["Bar", "Beam"]
+}
+

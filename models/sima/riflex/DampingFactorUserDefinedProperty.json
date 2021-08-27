@@ -1,0 +1,16 @@
+{
+ "name" : "DampingFactorUserDefinedProperty",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "stillWaterDampingFactor",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Still water damping factor",
+   "default" : "1.0"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

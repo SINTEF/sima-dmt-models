@@ -1,0 +1,53 @@
+{
+ "name" : "SegmentLengthVariationItem",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "line",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/ARLine",
+   "contained" : false,
+   "optional" : true,
+   "description" : "Line"
+  }, {
+   "name" : "segment",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "description" : "Segment on given line",
+   "default" : "1"
+  }, {
+   "name" : "allSegments",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "All segments",
+   "default" : "false"
+  }, {
+   "name" : "startTime",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Start time for segment length variation",
+   "default" : "0.0"
+  }, {
+   "name" : "endTime",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "End time for segment length variation",
+   "default" : "0.0"
+  }, {
+   "name" : "segmentLengthRate",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Segment length variation per time unit",
+   "default" : "0.0"
+  }, {
+   "name" : "interactive",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Activate interactive (HLA) control of segment variation",
+   "default" : "false"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

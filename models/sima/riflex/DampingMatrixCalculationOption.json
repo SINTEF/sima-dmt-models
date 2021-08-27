@@ -1,0 +1,7 @@
+{
+ "name" : "DampingMatrixCalculationOption",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["CONSTANT_PROPORTIONAL", "UPDATED_PROPORTIONAL"],
+ "labels" : ["Constant proportional", "Updated proportional"]
+}
+

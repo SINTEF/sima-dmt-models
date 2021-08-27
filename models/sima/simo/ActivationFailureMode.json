@@ -1,0 +1,7 @@
+{
+ "name" : "ActivationFailureMode",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["NONE", "FAIL", "ACTIVATE"],
+ "labels" : ["None", "Fail", "Activate"]
+}
+

@@ -1,0 +1,48 @@
+{
+ "name" : "StressJointLineType",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "internalFluid",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/InternalFluidType",
+   "contained" : false,
+   "optional" : true,
+   "description" : "Internal fluid component type."
+  }, {
+   "name" : "quadraticDrag",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Quadratic drag coefficient in normal direction, non-dimensional.",
+   "default" : "0.0"
+  }, {
+   "name" : "addedMass",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Added mass pr. unit length coefficient in normal direction, non-dimensional.",
+   "default" : "0.0"
+  }, {
+   "name" : "extDiameterEnd1",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "External diameter at 'first' end of first conical segment in stress joint.",
+   "default" : "0.0"
+  }, {
+   "name" : "wallThicknessEnd1",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Wall thickness at 'first' end of first conical segment in stress joint.",
+   "default" : "0.0"
+  }, {
+   "name" : "segments",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/StressJointSegment",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

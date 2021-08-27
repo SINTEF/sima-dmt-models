@@ -1,0 +1,7 @@
+{
+ "name" : "PeakType",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["LOCAL", "GLOBAL", "BLOCK"],
+ "labels" : ["Local", "Global", "Block"]
+}
+

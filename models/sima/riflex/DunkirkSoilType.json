@@ -1,0 +1,60 @@
+{
+ "name" : "DunkirkSoilType",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "requiredResolution",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "description" : "Required resolution of soil reaction curves",
+   "default" : "50"
+  }, {
+   "name" : "pvDamping",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "default" : "0.0"
+  }, {
+   "name" : "mtDamping",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "default" : "0.0"
+  }, {
+   "name" : "baseShearLoadDamping",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "default" : "0.0"
+  }, {
+   "name" : "baseMomentDamping",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "default" : "0.0"
+  }, {
+   "name" : "lateralDisplacementForce",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/DunkirkSoilCoefficients",
+   "contained" : true,
+   "optional" : false
+  }, {
+   "name" : "inPlaneMomentRotation",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/DunkirkSoilCoefficients",
+   "contained" : true,
+   "optional" : false
+  }, {
+   "name" : "baseShearLoad",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/DunkirkSoilCoefficients",
+   "contained" : true,
+   "optional" : false
+  }, {
+   "name" : "baseMoment",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/DunkirkSoilCoefficients",
+   "contained" : true,
+   "optional" : false
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

@@ -1,0 +1,22 @@
+{
+ "name" : "SupportVesselForceStorageItem",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "vessel",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/SupportVessel",
+   "contained" : false,
+   "optional" : false
+  }, {
+   "name" : "referenceSystem",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/BodyForceReferenceSystem",
+   "default" : "BODY_LOCAL"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

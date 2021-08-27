@@ -1,0 +1,7 @@
+{
+ "name" : "CurrentForceMethod",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["RELATIVE", "STATIC"],
+ "labels" : ["Relative current velocity", "Static forces only"]
+}
+

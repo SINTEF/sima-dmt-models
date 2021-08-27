@@ -1,0 +1,22 @@
+{
+ "name" : "BladeItem",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "eccentricityLine",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/ARLine",
+   "contained" : false,
+   "optional" : true
+  }, {
+   "name" : "bladeLine",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/ARLine",
+   "contained" : false,
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

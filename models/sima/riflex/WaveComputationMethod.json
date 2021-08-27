@@ -1,0 +1,7 @@
+{
+ "name" : "WaveComputationMethod",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["FFT", "COS", "WF2D"],
+ "labels" : ["FFT (Prestochastic analysis)", "Cos series", "2D wave field"]
+}
+

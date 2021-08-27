@@ -1,0 +1,76 @@
+{
+ "name" : "ExternalWrappingType",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "mass",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Mass per unit length",
+   "default" : "0.0"
+  }, {
+   "name" : "buoyancy",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Buoyancy volume/length",
+   "default" : "0.0"
+  }, {
+   "name" : "gyrationRadius",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Radius of gyration around x-axis",
+   "default" : "0.0"
+  }, {
+   "name" : "coveredFraction",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Fraction of the segment that is covered. 0 < FRAC < 1.0.",
+   "default" : "0.0"
+  }, {
+   "name" : "wrappingItemLength",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Length of wrapping item. Only used for graphics.",
+   "default" : "1.0"
+  }, {
+   "name" : "tangentialDrag",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Drag force coefficient in tangential direction",
+   "default" : "0.0"
+  }, {
+   "name" : "normalDrag",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Drag force coefficient in normal direction",
+   "default" : "0.0"
+  }, {
+   "name" : "tangentialAddedMass",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Added mass per length in tangential direction",
+   "default" : "0.0"
+  }, {
+   "name" : "normalAddedMass",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Added mass per length in normal direction",
+   "default" : "0.0"
+  }, {
+   "name" : "tangentialLinearDrag",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Linear drag force coefficients in tangential direction",
+   "default" : "0.0"
+  }, {
+   "name" : "normalLinearDrag",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Linear drag force coefficients in tangential direction",
+   "default" : "0.0"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

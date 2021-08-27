@@ -1,0 +1,28 @@
+{
+ "name" : "CRSMassDamping",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "axialFactor",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Factor for mass proportional damping in axial dof",
+   "default" : "0.0"
+  }, {
+   "name" : "torsionalFactor",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Factor for mass proportional damping in torsional dof",
+   "default" : "0.0"
+  }, {
+   "name" : "bendingFactor",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Factor for mass proportional damping in bending dof",
+   "default" : "0.0"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

@@ -1,0 +1,28 @@
+{
+ "name" : "Workflow",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "nodes",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/post/RunNode",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "connections",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/post/SlotConnection",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "computeServiceID",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

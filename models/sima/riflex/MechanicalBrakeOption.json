@@ -1,0 +1,7 @@
+{
+ "name" : "MechanicalBrakeOption",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["NONE", "BRAKE"],
+ "labels" : ["No mechanical brake", "Mechanical brake (linear damping)"]
+}
+

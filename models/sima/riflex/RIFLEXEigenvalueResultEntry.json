@@ -1,0 +1,56 @@
+{
+ "name" : "RIFLEXEigenvalueResultEntry",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "properties",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/sima/Property",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "resource",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string"
+  }, {
+   "name" : "relative",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "default" : "false"
+  }, {
+   "name" : "changeNumber",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "default" : "0"
+  }, {
+   "name" : "results",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/sima/Result",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "riflexLDAT",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/sima/Result",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "mpfResult",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/MatrixPlotResult",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "resFile",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/ResFile",
+   "contained" : true,
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

@@ -1,0 +1,7 @@
+{
+ "name" : "Plane",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["XY", "XZ", "YZ"],
+ "labels" : ["XY", "XZ", "YZ"]
+}
+

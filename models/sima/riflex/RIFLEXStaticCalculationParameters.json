@@ -1,0 +1,64 @@
+{
+ "name" : "RIFLEXStaticCalculationParameters",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "loadTypeItems",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/StaticLoadTypeItem",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "matrixStorage",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/MatrixStorage",
+   "default" : "SKYLINE"
+  }, {
+   "name" : "currentProfileScaling",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Scaling factor to amplify or reduce the referred current profile",
+   "default" : "1.0"
+  }, {
+   "name" : "staticLoadComponents",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/StaticLoadComponent",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "stressFreeConfiguration",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Whether a stress free configuration has been defined for the Slender system.",
+   "default" : "false"
+  }, {
+   "name" : "stressfreeFile",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string"
+  }, {
+   "name" : "loadAndMassFormulation",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/LoadAndMassFormulation",
+   "default" : "LUMPED"
+  }, {
+   "name" : "parameterVariation",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/ParameterVariation",
+   "contained" : true,
+   "optional" : false
+  }, {
+   "name" : "storeVisualisationResponses",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Store visualisation responses indicator",
+   "default" : "true"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

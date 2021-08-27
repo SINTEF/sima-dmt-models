@@ -1,0 +1,7 @@
+{
+ "name" : "Symmetry",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["NONE", "X", "Y", "XY"],
+ "labels" : ["None", "About X axis", "About Y axis", "About X and Y axis"]
+}
+

@@ -1,0 +1,7 @@
+{
+ "name" : "ControlReference",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["Global", "Body", "Waypoint", "GBCIRCLE"],
+ "labels" : ["Global", "Body Relative", "Waypoint", "Global circle"]
+}
+

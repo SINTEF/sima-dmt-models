@@ -1,0 +1,16 @@
+{
+ "name" : "SNCurveReference",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "snCurve",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/SNCurve",
+   "contained" : false,
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

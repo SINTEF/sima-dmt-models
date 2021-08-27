@@ -1,0 +1,40 @@
+{
+ "name" : "DragChainType",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "length",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Drag chain length.",
+   "default" : "0.0"
+  }, {
+   "name" : "unitWeight",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Drag chain weight.",
+   "default" : "0.0"
+  }, {
+   "name" : "friction",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Chain / seafloor friction coefficient.",
+   "default" : "0.0"
+  }, {
+   "name" : "cableLength",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Cable length.",
+   "default" : "0.0"
+  }, {
+   "name" : "cableWeight",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Cable weight.",
+   "default" : "0.0"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

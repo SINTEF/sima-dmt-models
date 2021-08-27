@@ -1,0 +1,7 @@
+{
+ "name" : "ThrusterAllocationMethod",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["ORDINARY", "HEADING"],
+ "labels" : ["Ordinary allocation", "Heading priority"]
+}
+

@@ -1,0 +1,17 @@
+{
+ "name" : "DirectionDependentWaveLongTermStatistics",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "sectors",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/metocean/WaveSector",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

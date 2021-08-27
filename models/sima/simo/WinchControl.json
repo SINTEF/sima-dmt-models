@@ -1,0 +1,7 @@
+{
+ "name" : "WinchControl",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["PREDEFINED", "HLA", "EXTERNAL"],
+ "labels" : ["Predefined", "HLA", "External"]
+}
+

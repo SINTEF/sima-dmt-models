@@ -1,0 +1,404 @@
+{
+ "name" : "SIMOBody",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "length",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Length",
+   "default" : "10.0"
+  }, {
+   "name" : "width",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Width",
+   "default" : "5.0"
+  }, {
+   "name" : "height",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Height",
+   "default" : "5.0"
+  }, {
+   "name" : "appearance",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/sima/Appearance",
+   "contained" : true,
+   "optional" : false
+  }, {
+   "name" : "initialPosition",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/sima/Position",
+   "contained" : true,
+   "optional" : false
+  }, {
+   "name" : "viewpoints",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/sima/BodyViewpoint",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "_type",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/simo/BodyType",
+   "description" : "Body type",
+   "default" : "PRESCRIBED"
+  }, {
+   "name" : "positionsImportType",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/simo/PositionsImportType",
+   "description" : "Type of import for positions",
+   "default" : "FIXED_POSITION"
+  }, {
+   "name" : "positionsFileName",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "File name for body positions"
+  }, {
+   "name" : "positionsHLAObjectName",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "HLA object name for body"
+  }, {
+   "name" : "applyGravityForce",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Should gravity force be included",
+   "default" : "false"
+  }, {
+   "name" : "bodyPoints",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/simo/SIMOBodyPoint",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "catenarySystem",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/simo/CatenarySystem",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "structuralMass",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/hydro/StructuralMass",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "linearDamping",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/hydro/LinearDampingMatrix",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "quadraticDamping",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/hydro/QuadraticDampingMatrix",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "linearDampingMatrices",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/simo/SIMOLinearDampingMatrix",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "quadraticDampingMatrices",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/simo/SIMOQuadraticDampingMatrix",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "hydrostaticStiffnessData",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/hydro/HydrostaticStiffnessData",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "nonLinearHydrostaticStiffness",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/simo/NonLinearHydrostaticStiffness",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "nonlinearBuoyancyCorrection",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/simo/NonlinearBuoyancyCorrection",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "firstOrderMotionTransferFunction",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/hydro/FirstOrderMotionTransferFunction",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "firstOrderWaveForceTransferFunction",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/hydro/FirstOrderWaveForceTransferFunction",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "waveDriftForce",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/hydro/WaveDriftForce",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "waveDriftDamping",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/hydro/WaveDriftDamping",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "simplifiedWaveDriftDamping",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/hydro/SimplifiedWaveDriftDamping",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "quadraticWindCoefficients",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/hydro/QuadraticWindCoefficient",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "linearCurrentCoefficients",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/hydro/LinearCurrentCoefficient",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "quadraticCurrentCoefficients",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/hydro/QuadraticCurrentCoefficient",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "diffractedWaveField",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/hydro/DiffractedWaveField",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "smallBodyHydrodynamicalData",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/simo/SmallBodyHydrodynamicData",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "quadraticTransferFunction",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/hydro/QuadraticTransferFunction",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "radiationData",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/hydro/RadiationDataGroup",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "specifiedForces",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/simo/SpecifiedForce",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "specifiedMoments",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/simo/SpecifiedMoment",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "thrusters",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/simo/IThruster",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "controlSystem",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/simo/ControlSystem",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "slenderElements",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/simo/SlenderElement",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "externalDLLForces",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/simo/ExternalDLLForce",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "externalHLAForces",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/simo/ExternalHLAForce",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "externalForcesFromFile",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/simo/ExternalForceFromFile",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "fixedBodyElements",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/simo/FixedBodyElement",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "timeDependentPointMasses",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/simo/TimeDependentPointMass",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "timeDependentVolumeMasses",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/simo/TimeDependentVolumeMass",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "slenderSystemConnection",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/simo/BodySlenderSystemConnection",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "gdfGeometry",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/hydro/GDFGeometry",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "fixedForceElongations",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/simo/FixedForceElongation",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "accCOG",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/sima/Point3",
+   "contained" : true,
+   "optional" : false
+  }, {
+   "name" : "liftAndDragForces",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/simo/LiftAndDragForce",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "articulatedStructure",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/simo/ArticulatedStructureData",
+   "contained" : true,
+   "optional" : false
+  }, {
+   "name" : "externalControlSystem",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/simo/ExternalControlSystem",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "dockingConePositionings",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/simo/DockingConePositioning",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "pointBerthingFenders",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/simo/PointBerthingFender",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "rollerBerthingFenders",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/simo/RollerBerthingFender",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "bumperDatas",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/simo/BumperData",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "horizontalAxisWindTurbine",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/simo/HorizontalAxisWindTurbine",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "verticalAxisWindTurbine",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/simo/VerticalAxisWindTurbine",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "genericExternalControlSystems",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/simo/GenericExternalControlSystem",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "ballastSystem",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/simo/BallastSystem",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "hydrodynamicSeparationMethod",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/simo/HydrodynamicSeparationMethod",
+   "description" : "Method for estimating low frequency motions",
+   "default" : "BW2_FILTERING"
+  }, {
+   "name" : "hydrodynamicFilterCutOffPeriod",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Cut off period used to estimate low ferquency motion from total motion",
+   "default" : "0.0"
+  }, {
+   "name" : "bodyShapeData",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/simo/BodyShapeData",
+   "contained" : true,
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

@@ -1,0 +1,7 @@
+{
+ "name" : "Guidance",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["STRAIGHT_LINES", "LOS"],
+ "labels" : ["Straight lines and circular arcs", "Line of sight (LOS)"]
+}
+

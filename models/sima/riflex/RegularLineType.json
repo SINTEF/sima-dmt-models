@@ -1,0 +1,31 @@
+{
+ "name" : "RegularLineType",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "internalFluid",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/InternalFluidType",
+   "contained" : false,
+   "optional" : true,
+   "description" : "Internal fluid component type."
+  }, {
+   "name" : "endComponent",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/NodalComponentType",
+   "contained" : false,
+   "optional" : true,
+   "description" : "Nodal component type number for attached body or connector at end 2 of rthe last segment."
+  }, {
+   "name" : "segments",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/RegularSegment",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

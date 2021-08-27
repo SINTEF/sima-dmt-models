@@ -1,0 +1,20 @@
+{
+ "name" : "DynamicCurrentVariation",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "active",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "default" : "false"
+  }, {
+   "name" : "fileName",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "File name for dynamic current variation"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

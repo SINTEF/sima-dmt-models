@@ -1,0 +1,7 @@
+{
+ "name" : "CalculateExcitingForcesOption",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["no", "yes", "yesSeparate"],
+ "labels" : ["No", "Yes", "Yes - separate"]
+}
+

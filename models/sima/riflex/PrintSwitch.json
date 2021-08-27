@@ -1,0 +1,7 @@
+{
+ "name" : "PrintSwitch",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["FINAL_RESULTS", "FINAL_RESULTS_FINAL_ITERATION", "FINAL_RESULTS_ALL_ITERATIONS"],
+ "labels" : ["Final results only", "Final results and final interation", "Final results and all iterations"]
+}
+

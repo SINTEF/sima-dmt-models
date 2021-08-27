@@ -1,0 +1,7 @@
+{
+ "name" : "RiserPosition",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["DYNAMIC_POSITIONS", "RISER_KEPT_FIXED", "STATIC_RISER_POSITION"],
+ "labels" : ["Dynamic positions", "Riser kept fixed", "Static riser position"]
+}
+

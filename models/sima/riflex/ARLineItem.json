@@ -1,0 +1,22 @@
+{
+ "name" : "ARLineItem",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "line",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/ARLine",
+   "contained" : false,
+   "optional" : false
+  }, {
+   "name" : "end",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/End",
+   "default" : "ONE"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

@@ -1,0 +1,7 @@
+{
+ "name" : "DepthDependency",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["WAVE_ELEVATION", "WATER_PLANE"],
+ "labels" : ["Wave elevation", "Water plane"]
+}
+

@@ -1,0 +1,64 @@
+{
+ "name" : "PisaSoilLayer",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "soilType",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/SoilType",
+   "contained" : false,
+   "optional" : true
+  }, {
+   "name" : "deltaZ",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Height of soil layer",
+   "default" : "0.0"
+  }, {
+   "name" : "shearModulusTop",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Shear modulus at top of soil layer",
+   "default" : "0.0"
+  }, {
+   "name" : "shearModulusBottom",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Shear modulus at bottom of soil layer",
+   "default" : "0.0"
+  }, {
+   "name" : "effectiveWeightTop",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Effective soil weight (gamma) at top of soil layer",
+   "default" : "0.0"
+  }, {
+   "name" : "effectiveWeightBottom",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Effective soil weight (gamma) at bottom of soil layer",
+   "default" : "0.0"
+  }, {
+   "name" : "undrainedShearStrengthTop",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Undrained shear strength (Su) at top of soil layer. Applies for clay only.",
+   "optional" : true
+  }, {
+   "name" : "undrainedShearStrengthBottom",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Undrained shear strength (Su) at bottom of soil layer. Applies for clay only.",
+   "optional" : true
+  }, {
+   "name" : "relativeDensity",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Relative density used for scaling soil curve. Applies for Dunkirk sand only.",
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

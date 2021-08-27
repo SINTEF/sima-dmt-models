@@ -1,0 +1,101 @@
+{
+ "name" : "NodeBoundaryChangeItem",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "boundaryChangeOption",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/BoundaryChangeOption",
+   "description" : "Boundary change option",
+   "default" : "FREE"
+  }, {
+   "name" : "surgeConstraint",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/BoundaryCondition",
+   "description" : "Boundary condition for translation in X-direction.",
+   "default" : "FREE"
+  }, {
+   "name" : "swayConstraint",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/BoundaryCondition",
+   "description" : "Boundary condition for translation in Y-direction.",
+   "default" : "FREE"
+  }, {
+   "name" : "heaveConstraint",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/BoundaryCondition",
+   "description" : "Boundary condition for translation in Z-direction.",
+   "default" : "FREE"
+  }, {
+   "name" : "rollConstraint",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/BoundaryCondition",
+   "description" : "Boundary condition for rotation about X-axis",
+   "default" : "FREE"
+  }, {
+   "name" : "pitchConstraint",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/BoundaryCondition",
+   "description" : "Boundary condition for rotation about Y-axis",
+   "default" : "FREE"
+  }, {
+   "name" : "yawConstraint",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/BoundaryCondition",
+   "description" : "Boundary condition for rotation about Z-axis",
+   "default" : "FREE"
+  }, {
+   "name" : "supportVessel",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/SupportVessel",
+   "contained" : false,
+   "optional" : true
+  }, {
+   "name" : "_type",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/BoundaryChangeReference",
+   "default" : "SUPERNODE"
+  }, {
+   "name" : "superNode",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/simo/SuperNodeReference",
+   "contained" : false,
+   "optional" : true
+  }, {
+   "name" : "node",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/NodeReference",
+   "contained" : true,
+   "optional" : false
+  }, {
+   "name" : "masterType",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/BoundaryChangeReference",
+   "default" : "SUPERNODE"
+  }, {
+   "name" : "master",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/simo/SuperNodeReference",
+   "contained" : false,
+   "optional" : true
+  }, {
+   "name" : "masterNodeReference",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/NodeReference",
+   "contained" : true,
+   "optional" : false
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

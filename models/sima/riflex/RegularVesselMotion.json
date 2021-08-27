@@ -1,0 +1,94 @@
+{
+ "name" : "RegularVesselMotion",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "supportVessel",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/SupportVessel",
+   "contained" : false,
+   "optional" : true
+  }, {
+   "name" : "amplitudeX",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Motion amplitude, x-direction",
+   "default" : "0.0"
+  }, {
+   "name" : "amplitudeY",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Motion amplitude, y-direction",
+   "default" : "0.0"
+  }, {
+   "name" : "amplitudeZ",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Motion amplitude, z-direction",
+   "default" : "0.0"
+  }, {
+   "name" : "amplitudeXR",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Motion amplitude, x-rotation",
+   "default" : "0.0"
+  }, {
+   "name" : "amplitudeYR",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Motion amplitude, y-rotation",
+   "default" : "0.0"
+  }, {
+   "name" : "amplitudeZR",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Motion amplitude, z-rotation",
+   "default" : "0.0"
+  }, {
+   "name" : "period",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Period of motion",
+   "default" : "0.0"
+  }, {
+   "name" : "phaseX",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Phase angle, x-motion",
+   "default" : "0.0"
+  }, {
+   "name" : "phaseY",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Phase angle, y-motion",
+   "default" : "0.0"
+  }, {
+   "name" : "phaseZ",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Phase angle, z-motion",
+   "default" : "0.0"
+  }, {
+   "name" : "phaseXR",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Phase angle, x-rotation",
+   "default" : "0.0"
+  }, {
+   "name" : "phaseYR",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Phase angle, y-rotation",
+   "default" : "0.0"
+  }, {
+   "name" : "phaseZR",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Phase angle, z-rotation",
+   "default" : "0.0"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

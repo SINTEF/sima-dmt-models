@@ -1,0 +1,7 @@
+{
+ "name" : "InnerOuter",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["INNER", "OUTER"],
+ "labels" : ["Inner", "Outer"]
+}
+

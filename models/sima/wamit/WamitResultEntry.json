@@ -1,0 +1,64 @@
+{
+ "name" : "WamitResultEntry",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "properties",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/sima/Property",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "resource",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string"
+  }, {
+   "name" : "relative",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "default" : "false"
+  }, {
+   "name" : "changeNumber",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "default" : "0"
+  }, {
+   "name" : "results",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/sima/Result",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "outFile",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/sima/Result",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "wamitBodyResults",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/wamit/WamitBodyResult",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "diffractedWaveField",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/hydro/DiffractedWaveField",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "hydrodynamicalCouplings",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/wamit/HydrodynamicalCoupling",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

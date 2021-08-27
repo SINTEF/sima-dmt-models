@@ -1,0 +1,7 @@
+{
+ "name" : "InputMethodType",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["TENSION", "ANCHORDIR", "ANCHORPOS"],
+ "labels" : ["Tension", "Anchor direction", "Anchor position"]
+}
+

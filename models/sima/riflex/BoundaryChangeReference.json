@@ -1,0 +1,7 @@
+{
+ "name" : "BoundaryChangeReference",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["SUPERNODE", "NODE"],
+ "labels" : ["Supernode", "Node"]
+}
+

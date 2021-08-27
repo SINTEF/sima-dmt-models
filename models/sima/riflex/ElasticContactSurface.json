@@ -1,0 +1,24 @@
+{
+ "name" : "ElasticContactSurface",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "points",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/ContactSurfacePoint",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "lines",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/ContactSurfaceLine",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

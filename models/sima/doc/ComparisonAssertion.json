@@ -1,0 +1,41 @@
+{
+ "name" : "ComparisonAssertion",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "severity",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/sima/Severity",
+   "default" : "WARNING"
+  }, {
+   "name" : "message",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string"
+  }, {
+   "name" : "outputNode",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/post/OutputNode",
+   "contained" : false,
+   "optional" : true
+  }, {
+   "name" : "path",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string"
+  }, {
+   "name" : "read",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "If the path points to a file, the file will be read",
+   "default" : "false"
+  }, {
+   "name" : "expectedOutput",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "Expected output represented by the content of this file"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

@@ -1,0 +1,65 @@
+{
+ "name" : "GeoTechnical",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "soilItems",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/SoilItem",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "scourDepth",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Length from mudline to actual contact point between mud and coductor",
+   "default" : "0.0"
+  }, {
+   "name" : "diameter",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Used for calculation of geotechnical spring properties",
+   "default" : "0.0"
+  }, {
+   "name" : "_type",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/SoilStiffnessType",
+   "default" : "STATIC"
+  }, {
+   "name" : "calculateDiameter",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Calculate diameter from cross-sections",
+   "default" : "true"
+  }, {
+   "name" : "calculateAxialPileResistance",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Calculate axial pile resistance",
+   "default" : "false"
+  }, {
+   "name" : "pileType",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/GeotechnicalPileType",
+   "default" : "OPEN"
+  }, {
+   "name" : "zoneOfInfluence",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Zone of influence",
+   "default" : "0.0"
+  }, {
+   "name" : "curveFittingFactor",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Curve fitting factor",
+   "default" : "0.0"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

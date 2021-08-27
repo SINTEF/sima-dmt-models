@@ -1,0 +1,41 @@
+{
+ "name" : "SeafloorContactLineSpecification",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "line",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/ARLine",
+   "contained" : false,
+   "optional" : true,
+   "description" : "Line"
+  }, {
+   "name" : "segment",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "description" : "Segment on given line",
+   "default" : "1"
+  }, {
+   "name" : "allSegments",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "All segments",
+   "default" : "false"
+  }, {
+   "name" : "allLines",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Apply specified contact to all lines",
+   "default" : "false"
+  }, {
+   "name" : "contact",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/SeafloorContact",
+   "contained" : false,
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

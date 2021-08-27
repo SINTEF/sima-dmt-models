@@ -1,0 +1,22 @@
+{
+ "name" : "AmplitudeDiameterExcitationCoefficientItem",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "amplitudeDiameterRatio",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Amplitude to diameter ratio",
+   "default" : "0.0"
+  }, {
+   "name" : "excitationCoefficient",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Excitation coefficient",
+   "default" : "0.0"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

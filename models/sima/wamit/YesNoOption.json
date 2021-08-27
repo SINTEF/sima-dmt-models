@@ -1,0 +1,7 @@
+{
+ "name" : "YesNoOption",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["no", "yes"],
+ "labels" : ["No", "Yes"]
+}
+

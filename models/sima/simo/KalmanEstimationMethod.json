@@ -1,0 +1,7 @@
+{
+ "name" : "KalmanEstimationMethod",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["CURRENT", "FORCE"],
+ "labels" : ["Current", "Force"]
+}
+

@@ -1,0 +1,44 @@
+{
+ "name" : "HindcastData",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "dataFile",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string"
+  }, {
+   "name" : "path",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string"
+  }, {
+   "name" : "firstDate",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string"
+  }, {
+   "name" : "lastDate",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string"
+  }, {
+   "name" : "waveData",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/metocean/HindcastWaveContainer",
+   "contained" : true,
+   "optional" : false
+  }, {
+   "name" : "windData",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/metocean/HindcastLevelContainer",
+   "contained" : true,
+   "optional" : false
+  }, {
+   "name" : "currentData",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/metocean/HindcastLevelContainer",
+   "contained" : true,
+   "optional" : false
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

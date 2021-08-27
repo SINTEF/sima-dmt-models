@@ -1,0 +1,7 @@
+{
+ "name" : "IterationType",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["TRUE_NEWTON_RAPHSON", "MODIFIED_NEWTON_RAPHSON"],
+ "labels" : ["True Newton-Raphson", "Modified Newton-Raphson"]
+}
+

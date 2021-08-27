@@ -1,0 +1,17 @@
+{
+ "name" : "ModelVariation",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "operations",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/condition/ModelVariationOperation",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

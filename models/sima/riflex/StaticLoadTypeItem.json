@@ -1,0 +1,98 @@
+{
+ "name" : "StaticLoadTypeItem",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "runWithPrevious",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Run the load group together with the last",
+   "default" : "false"
+  }, {
+   "name" : "boundaryChangeGroup",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/BoundaryChangeGroup",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "loadType",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/StaticLoadType",
+   "description" : "Load Type",
+   "default" : "VOLU"
+  }, {
+   "name" : "nStep",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "description" : "Number of load steps",
+   "default" : "10"
+  }, {
+   "name" : "maxIterations",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "description" : "Maximum number of iterations during application of load",
+   "default" : "10"
+  }, {
+   "name" : "accuracy",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Required accuracy measured by displacement norm",
+   "default" : "1.0E-5"
+  }, {
+   "name" : "convergenceNorm",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/ConvergenceNorm",
+   "default" : "DISP"
+  }, {
+   "name" : "energyAccuracy",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : " Required accuracy measured by energy norm. Value is not used if convergence norm is 'Displacement'.",
+   "default" : "1.0E-5"
+  }, {
+   "name" : "entered",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "start condition for pipe-in-pipe contact",
+   "default" : "true"
+  }, {
+   "name" : "temperatureVariations",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/TemperatureVariationItem",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "pressureVariations",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/PressureVariationItem",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "winchVariations",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/WinchVariationItem",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "growthFactor",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Scaling factor for growth profile",
+   "default" : "1.0"
+  }, {
+   "name" : "windOnTurbineBlades",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Enables wind force on turbine blades",
+   "default" : "false"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

@@ -1,0 +1,7 @@
+{
+ "name" : "DOF",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["X", "Y", "Z", "RX", "RY", "RZ"],
+ "labels" : ["X", "Y", "Z", "Rx", "Ry", "Rz"]
+}
+

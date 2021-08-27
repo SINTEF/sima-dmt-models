@@ -1,0 +1,7 @@
+{
+ "name" : "ConsequenceClass",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["CLASS_ONE", "CLASS_TWO", "CLASS_THREE"],
+ "labels" : ["Class 1", "Class 2", "Class 3"]
+}
+

@@ -1,0 +1,84 @@
+{
+ "name" : "FatigueAnalysisItem",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "line",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/ARLine",
+   "contained" : false,
+   "optional" : true,
+   "description" : "Line"
+  }, {
+   "name" : "segment",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "description" : "Segment on given line",
+   "default" : "1"
+  }, {
+   "name" : "allSegments",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "All segments",
+   "default" : "false"
+  }, {
+   "name" : "elementNumber",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "description" : "Local element number on actual segment",
+   "default" : "1"
+  }, {
+   "name" : "allElements",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "All elements",
+   "default" : "false"
+  }, {
+   "name" : "allEnds",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "All ends",
+   "default" : "false"
+  }, {
+   "name" : "elementEnd",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/End",
+   "description" : "End number 1 or 2",
+   "default" : "ONE"
+  }, {
+   "name" : "stressConcentrationFactor",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Stress consentration factor",
+   "default" : "1.0"
+  }, {
+   "name" : "snCurve",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/SNCurve",
+   "contained" : false,
+   "optional" : true
+  }, {
+   "name" : "effectiveThickness",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Thickness used in thickness correction of the SN curves. Default value is the same as the wall thickness",
+   "optional" : true
+  }, {
+   "name" : "crossSectionalArea",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Optional cross sectional area",
+   "optional" : true
+  }, {
+   "name" : "sectionModulus",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Optional section modulus",
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

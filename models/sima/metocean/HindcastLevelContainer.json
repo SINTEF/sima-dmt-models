@@ -1,0 +1,17 @@
+{
+ "name" : "HindcastLevelContainer",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "levels",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/metocean/HindcastLevel",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

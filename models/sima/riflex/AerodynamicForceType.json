@@ -1,0 +1,7 @@
+{
+ "name" : "AerodynamicForceType",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["NONE", "AIRFOIL", "MORISON"],
+ "labels" : ["None", "Airfoil", "Morison Type"]
+}
+

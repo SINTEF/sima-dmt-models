@@ -1,0 +1,7 @@
+{
+ "name" : "ReferenceFrameType",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["LOCAL", "GLOBAL"],
+ "labels" : ["Local", "Global"]
+}
+

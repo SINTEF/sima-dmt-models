@@ -1,0 +1,7 @@
+{
+ "name" : "ResponseIterationMethod",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["FIXED_POINT", "NEWTON_RAPHSON"],
+ "labels" : ["Fixed point", "Newton-Raphson"]
+}
+

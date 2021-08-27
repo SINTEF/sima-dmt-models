@@ -1,0 +1,7 @@
+{
+ "name" : "TangentialFroudeKrylovScaling",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["ON", "OFF"],
+ "labels" : ["On", "Off"]
+}
+

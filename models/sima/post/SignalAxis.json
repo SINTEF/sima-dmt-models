@@ -1,0 +1,7 @@
+{
+ "name" : "SignalAxis",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["Y", "X"],
+ "labels" : ["Y-Axis", "X-Axis"]
+}
+

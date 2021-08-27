@@ -1,0 +1,7 @@
+{
+ "name" : "FileFormatAsciStarNone",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["ASCII", "STARTIMES", "NONE"],
+ "labels" : ["ASCII", "STARTIMES", "NONE"]
+}
+

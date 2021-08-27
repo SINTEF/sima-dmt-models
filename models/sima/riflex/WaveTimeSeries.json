@@ -1,0 +1,58 @@
+{
+ "name" : "WaveTimeSeries",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "fileName",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "Wave time series file"
+  }, {
+   "name" : "fileFormat",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/FileFormatAsciStar",
+   "description" : "Wave time series file format",
+   "default" : "ASCII"
+  }, {
+   "name" : "timeColumnNum",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "description" : "Column number for time",
+   "default" : "1"
+  }, {
+   "name" : "waveColumnNum",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "description" : "Column or time series number for wave elevation",
+   "default" : "2"
+  }, {
+   "name" : "starFileVersion",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "description" : "Startimes file version",
+   "default" : "0"
+  }, {
+   "name" : "direction",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Wave direction",
+   "default" : "0.0"
+  }, {
+   "name" : "xgWav",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Global x-coordinate for position where time series is measured",
+   "default" : "0.0"
+  }, {
+   "name" : "ygWav",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Global y-coordinate for position where time series is measured",
+   "default" : "0.0"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

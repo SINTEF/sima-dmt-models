@@ -1,0 +1,64 @@
+{
+ "name" : "EnvelopeCurveSpecification",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "compDisplacement",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Compute displacement envelopes?",
+   "default" : "false"
+  }, {
+   "name" : "compForce",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Compute force envelopes?",
+   "default" : "false"
+  }, {
+   "name" : "compCurvature",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Compute curvature envelopes?",
+   "default" : "false"
+  }, {
+   "name" : "startTime",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Simulation start time for computing envelopes",
+   "default" : "0.0"
+  }, {
+   "name" : "endTime",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Simulation end time for computing envelopes",
+   "default" : "1.0E7"
+  }, {
+   "name" : "printDisplacement",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Print displacement envelopes?",
+   "default" : "false"
+  }, {
+   "name" : "printForce",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Print force envelopes?",
+   "default" : "false"
+  }, {
+   "name" : "printCurvature",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Print curvature envelopes?",
+   "default" : "false"
+  }, {
+   "name" : "plotOption",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/MatrixPlotFileOption",
+   "default" : "NO_PRINT"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

@@ -1,0 +1,91 @@
+{
+ "name" : "ParameterVariation",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "numVariations",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "description" : "Number of variations",
+   "default" : "0"
+  }, {
+   "name" : "maxIterations",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "description" : "Maximum number of iterations for each variation",
+   "default" : "1"
+  }, {
+   "name" : "convergenceNorm",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/ConvergenceNorm",
+   "default" : "DISP"
+  }, {
+   "name" : "accuracy",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Required accuracy measured by displacement norm",
+   "default" : "1.0E-4"
+  }, {
+   "name" : "energyAccuracy",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Required accuracy measured by energy norm. This value is relevant only if Convergence Norm is 'Both'.",
+   "default" : "1.0E-4"
+  }, {
+   "name" : "offset",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "default" : "false"
+  }, {
+   "name" : "current",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "default" : "false"
+  }, {
+   "name" : "specifiedForce",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "default" : "false"
+  }, {
+   "name" : "offsetVariation",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/OffsetVariationItem",
+   "contained" : true,
+   "optional" : false
+  }, {
+   "name" : "currentVariation",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/CurrentVariationItem",
+   "contained" : true,
+   "optional" : false
+  }, {
+   "name" : "boundaryChangeGroup",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/BoundaryChangeGroup",
+   "contained" : true,
+   "optional" : false
+  }, {
+   "name" : "fricActivation",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Activate bottom friction forces",
+   "default" : "false"
+  }, {
+   "name" : "springActivation",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Activate global springs",
+   "default" : "false"
+  }, {
+   "name" : "memoActivation",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Activate material memory formulation (isotropic / kinematic hardening)",
+   "default" : "false"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

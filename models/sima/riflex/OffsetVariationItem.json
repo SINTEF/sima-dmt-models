@@ -1,0 +1,60 @@
+{
+ "name" : "OffsetVariationItem",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "referenceType",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/ReferenceType",
+   "description" : "Reference to moving point",
+   "default" : "SUPER_NODE"
+  }, {
+   "name" : "dx",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Displacement increment, x-direction",
+   "default" : "0.0"
+  }, {
+   "name" : "dy",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Displacement increment, y-direction",
+   "default" : "0.0"
+  }, {
+   "name" : "dz",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Displacement increment, z-direction",
+   "default" : "0.0"
+  }, {
+   "name" : "rotationCode",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/RotationCode",
+   "description" : "Rotation about axis",
+   "default" : "NONE"
+  }, {
+   "name" : "rotationIncrement",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Rotation increments",
+   "default" : "0.0"
+  }, {
+   "name" : "supernode",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/SuperNode",
+   "contained" : false,
+   "optional" : true
+  }, {
+   "name" : "supportVessel",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/SupportVessel",
+   "contained" : false,
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

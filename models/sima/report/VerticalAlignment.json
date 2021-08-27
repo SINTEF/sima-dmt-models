@@ -1,0 +1,7 @@
+{
+ "name" : "VerticalAlignment",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["TOP", "CENTER", "BOTTOM"],
+ "labels" : ["Top", "Center", "Bottom"]
+}
+

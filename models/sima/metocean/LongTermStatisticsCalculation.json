@@ -1,0 +1,59 @@
+{
+ "name" : "LongTermStatisticsCalculation",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "relativeCompassAngle",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Relative angle between analysis x-axis and north direction in anti-clockwise direction.\r\nShould match the angle given in the recieving SIMA task location.",
+   "default" : "0.0"
+  }, {
+   "name" : "inputReferenceSystem",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/metocean/InputReferenceSystem",
+   "description" : "Defines the input reference system of the data.\nIf the data is defined in the Metocean system the corresponding SIMA coordinate system data is generated",
+   "default" : "Metocean"
+  }, {
+   "name" : "applyNorsok",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : " Apply NORSOK N-006",
+   "default" : "true"
+  }, {
+   "name" : "longTermStatistics",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/metocean/LongTermStatistics",
+   "contained" : false,
+   "optional" : false
+  }, {
+   "name" : "period",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/metocean/LongTermStatisticsPeriod",
+   "contained" : false,
+   "optional" : false
+  }, {
+   "name" : "waveCalculation",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/metocean/LongTermStatisticsWaveCalculation",
+   "contained" : true,
+   "optional" : false
+  }, {
+   "name" : "windCalculation",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/metocean/LongTermStatisticsWindCalculation",
+   "contained" : true,
+   "optional" : false
+  }, {
+   "name" : "currentCalculation",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/metocean/LongTermStatisticsCurrentCalculation",
+   "contained" : true,
+   "optional" : false
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

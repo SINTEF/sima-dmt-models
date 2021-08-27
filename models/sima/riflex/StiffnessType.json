@@ -1,0 +1,7 @@
+{
+ "name" : "StiffnessType",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["LINEAR", "NON_LINEAR"],
+ "labels" : ["Linear", "Non linear"]
+}
+

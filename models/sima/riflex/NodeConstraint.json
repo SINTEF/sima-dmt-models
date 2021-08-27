@@ -1,0 +1,7 @@
+{
+ "name" : "NodeConstraint",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["FREE", "FIXED_PRESCRIBED", "SLAVE"],
+ "labels" : ["Free", "Fixed or Prescribed", "Slave"]
+}
+

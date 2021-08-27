@@ -1,0 +1,7 @@
+{
+ "name" : "ResponseFrequencyOption",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["CONCURRENT", "CONSECUTIVE"],
+ "labels" : ["Concurrent", "Consecutive"]
+}
+

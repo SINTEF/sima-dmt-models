@@ -1,0 +1,7 @@
+{
+ "name" : "MethodIndicator",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["NONLINEAR", "LINEAR"],
+ "labels" : ["Nonlinear", "Linear"]
+}
+

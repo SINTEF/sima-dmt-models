@@ -1,0 +1,7 @@
+{
+ "name" : "FileFormatCode",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["BINARY_OUTPUT_ONLY", "ASCII_OUTPUT_ONLY", "NO_ADDITIONAL_OUTPUT", "ASCII_OUTPUT", "BINARY_OUTPUT"],
+ "labels" : ["Binary format", "ASCII format", "Outmod (IFNDYN) format", "Outmod (IFNDYN) and ASCII format", "Outmod (IFNDYN) and Binary format"]
+}
+

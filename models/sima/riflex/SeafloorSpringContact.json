@@ -1,0 +1,64 @@
+{
+ "name" : "SeafloorSpringContact",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "axialStiffness",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Horizontal stiffness parameter for seafloor in axial direction",
+   "default" : "0.0"
+  }, {
+   "name" : "axialFriction",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Horizontal friction parameter for seafloor in axial direction",
+   "default" : "0.0"
+  }, {
+   "name" : "axialDamping",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Axial seafloor damping ",
+   "default" : "0.0"
+  }, {
+   "name" : "lateralStiffness",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Horizontal stiffness parameter for seafloor in lateral direction",
+   "default" : "0.0"
+  }, {
+   "name" : "lateralFriction",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Horizontal stiffness parameter for seafloor in lateral direction",
+   "default" : "0.0"
+  }, {
+   "name" : "lateralDamping",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Lateral seafloor damping",
+   "default" : "0.0"
+  }, {
+   "name" : "normalStiffness",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Normal stiffness parameter for seafloor",
+   "default" : "0.0"
+  }, {
+   "name" : "normalDamping",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Normal seafloor damping",
+   "default" : "0.0"
+  }, {
+   "name" : "applyLateralContactForces",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Apply lateral contact forces at the external contact radius, giving a torsional moment",
+   "default" : "false"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

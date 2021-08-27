@@ -1,0 +1,79 @@
+{
+ "name" : "GlobalSpring",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "line",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/ARLine",
+   "contained" : false,
+   "optional" : true,
+   "description" : "Line"
+  }, {
+   "name" : "segment",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "description" : "Segment on given line",
+   "default" : "1"
+  }, {
+   "name" : "allSegments",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "All segments",
+   "default" : "false"
+  }, {
+   "name" : "nodeNumber",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "description" : "Local node number on actual segment",
+   "default" : "1"
+  }, {
+   "name" : "allNodes",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "All nodes",
+   "default" : "false"
+  }, {
+   "name" : "dof",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/SpringDOF",
+   "description" : "Local degree of freedom.",
+   "default" : "GLOBAL_X_DIRECTION"
+  }, {
+   "name" : "constantStiffness",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Constant stiffness",
+   "default" : "false"
+  }, {
+   "name" : "stiffness",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Constant spring stiffness.",
+   "default" : "0.0"
+  }, {
+   "name" : "dampingCoefficient",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Linear damping coefficient.",
+   "default" : "0.0"
+  }, {
+   "name" : "stiffnessDampingFactor",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Stiffness proportional damping factor.",
+   "default" : "0.0"
+  }, {
+   "name" : "stiffnessItems",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/GlobalSpringStiffnessItem",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

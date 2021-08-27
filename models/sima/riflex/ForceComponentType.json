@@ -1,0 +1,7 @@
+{
+ "name" : "ForceComponentType",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["CONSTANT", "HARMONIC", "RAMP"],
+ "labels" : ["Constant force", "Harmonic force", "Ramp"]
+}
+

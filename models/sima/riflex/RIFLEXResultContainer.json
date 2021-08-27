@@ -1,0 +1,50 @@
+{
+ "name" : "RIFLEXResultContainer",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "properties",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/sima/Property",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "modelOutputFile",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string"
+  }, {
+   "name" : "probability",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true
+  }, {
+   "name" : "static",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/RIFLEXStaticResultEntry",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "dynamic",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/RIFLEXDynamicResultEntry",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "eigenvalue",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/RIFLEXEigenvalueResultEntry",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "vivana",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/RIFLEXVivanaResultEntry",
+   "contained" : true,
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

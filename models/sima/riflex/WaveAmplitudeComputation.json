@@ -1,0 +1,7 @@
+{
+ "name" : "WaveAmplitudeComputation",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["DETERMINISTIC", "STOCHASTIC"],
+ "labels" : ["Deterministic", "Stochastic"]
+}
+

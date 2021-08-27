@@ -1,0 +1,261 @@
+{
+ "name" : "WamitCalculationParameters",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "solveRadiationProblem",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/wamit/YesNoOption",
+   "description" : "IRAD",
+   "default" : "no"
+  }, {
+   "name" : "solveDiffractionProblem",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/wamit/PotenProblemOption",
+   "description" : "IDIFF",
+   "default" : "yesForAll"
+  }, {
+   "name" : "calculateAddedMassAndDampingCoefficients",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/wamit/YesNoOption",
+   "description" : "Corresponds to IOPTN(1)",
+   "default" : "no"
+  }, {
+   "name" : "calculateExcitingForcesFromHaskindRelations",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/wamit/CalculateExcitingForcesOption",
+   "description" : "Corresponds to IOPTN(2)",
+   "default" : "no"
+  }, {
+   "name" : "calculateExcitingForcesFromDiffractionPotential",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/wamit/CalculateExcitingForcesOption",
+   "description" : "Corresponds to IOPTN(3)",
+   "default" : "no"
+  }, {
+   "name" : "calculateResponseAmplitudeOperator",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/wamit/CalculateResponseAmplitudeOperatorOption",
+   "description" : "Corresponds to IOPTN(4)",
+   "default" : "no"
+  }, {
+   "name" : "useMomentumIntegration",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/wamit/CalculateMeanForceAndMomentIntegrationOption",
+   "description" : "Corresponds to IOPTN(8)",
+   "default" : "no"
+  }, {
+   "name" : "usePressureIntegration",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/wamit/CalculateMeanForceAndMomentIntegrationOption",
+   "description" : "Corresponds to IOPTN(9)",
+   "default" : "no"
+  }, {
+   "name" : "pointField",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/wamit/PointField",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "useControlSurfaceIntegration",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/wamit/CalculateMeanForceAndMomentIntegrationOption",
+   "description" : "Corresponds to IOPTN(7)",
+   "default" : "no"
+  }, {
+   "name" : "methodForSolvingLinearSystems",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/wamit/LinearSystemSolvingMethod",
+   "description" : "ISOLVE",
+   "default" : "iterative"
+  }, {
+   "name" : "numberOfBlocksInBlockIterativeSolver",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "default" : "2"
+  }, {
+   "name" : "geometryMethod",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/wamit/GeometryOrderOption",
+   "description" : "ILOWHI",
+   "default" : "low"
+  }, {
+   "name" : "integrateLogarithmicSingularitySeparately",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/wamit/YesNoOption",
+   "description" : "ILOG",
+   "default" : "no"
+  }, {
+   "name" : "panelSize",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "default" : "10.0"
+  }, {
+   "name" : "evaluateSourceStrength",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/wamit/YesNoOption",
+   "description" : "ISOR",
+   "default" : "no"
+  }, {
+   "name" : "calculationOfDiffractionPotential",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/wamit/DiffractionPotentailOption",
+   "description" : "ISCATT",
+   "default" : "diffraction"
+  }, {
+   "name" : "fieldPoints",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/sima/Point3",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "useInfiniteWaterDepth",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "HBOT",
+   "default" : "true"
+  }, {
+   "name" : "maximumNumberOfIterations",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "description" : "The maximum number of iterations when using an iterative solver",
+   "default" : "35"
+  }, {
+   "name" : "maxNumOfIterationsAdaptiveIntegrationMomentum",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "default" : "8"
+  }, {
+   "name" : "generateReport",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "default" : "false"
+  }, {
+   "name" : "briefOverviewOfTheory",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "default" : "false"
+  }, {
+   "name" : "taskDescription",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "default" : "false"
+  }, {
+   "name" : "wavePeriodsAndHeadings",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "default" : "false"
+  }, {
+   "name" : "calculationParameters",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "default" : "false"
+  }, {
+   "name" : "hydrostaticResults",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "default" : "false"
+  }, {
+   "name" : "structuralMass",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "default" : "false"
+  }, {
+   "name" : "externalStiffnessMatrix",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "default" : "false"
+  }, {
+   "name" : "linearDampingMatrix",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "default" : "false"
+  }, {
+   "name" : "firstOrderMotionTransferFunction",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "default" : "false"
+  }, {
+   "name" : "firstOrderWaveForceTransferFunctionDiffraction",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "default" : "false"
+  }, {
+   "name" : "firstOrderWaveForceTransferFunctionHaskind",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "default" : "false"
+  }, {
+   "name" : "addedMassZeroFrequency",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "default" : "false"
+  }, {
+   "name" : "addedMassInfiniteFrequency",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "default" : "false"
+  }, {
+   "name" : "frequencyDependentAddedMass",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "default" : "false"
+  }, {
+   "name" : "frequencyDependentDamping",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "default" : "false"
+  }, {
+   "name" : "diffractedWaveField",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "default" : "false"
+  }, {
+   "name" : "waveDriftForcePressure",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "default" : "false"
+  }, {
+   "name" : "waveDriftForceMomentum",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "default" : "false"
+  }, {
+   "name" : "waveDriftForceControlSurfaceIntegration",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "default" : "false"
+  }, {
+   "name" : "runPotenOnceInConditionSetsAndSpaces",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "This will make WAMIT run POTEN for one condition only, and copy that result and only run FORCE on the the rest of the conditions.",
+   "default" : "false"
+  }, {
+   "name" : "ignoreExitCode",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Ignore process exit code. Be careful to check the result when checked",
+   "default" : "false"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

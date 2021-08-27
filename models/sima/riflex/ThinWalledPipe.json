@@ -1,0 +1,315 @@
+{
+ "name" : "ThinWalledPipe",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "scfkSpecification",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Scaling of Froude-Krylov term in Morison’s equation in normal direction",
+   "default" : "false"
+  }, {
+   "name" : "loadFormulation",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/LoadFormulation",
+   "default" : "MORISON"
+  }, {
+   "name" : "hydrodynamicDiameter",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Hydrodynamic diameter",
+   "optional" : true
+  }, {
+   "name" : "addedMassTanDir",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Added mass in tangential direction",
+   "default" : "0.0"
+  }, {
+   "name" : "addedMassNormDir",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Added mass in normal direction",
+   "default" : "0.0"
+  }, {
+   "name" : "dampingNormDir",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Damping coefficients in normal direction",
+   "default" : "0.0"
+  }, {
+   "name" : "cdt",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Quadratic drag coefficient in tangential direction.",
+   "default" : "0.0"
+  }, {
+   "name" : "cdn",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Quadratic drag coefficient in normal direction.",
+   "default" : "0.0"
+  }, {
+   "name" : "cmt",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Added mass per unit length in tangential direction.",
+   "default" : "0.0"
+  }, {
+   "name" : "cmn",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Added mass per unit length in normal direction.",
+   "default" : "0.0"
+  }, {
+   "name" : "cdtl",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Linear drag force coefficient in tangential direction.",
+   "default" : "0.0"
+  }, {
+   "name" : "cdnl",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Linear drag force coefficient in normal direction.",
+   "default" : "0.0"
+  }, {
+   "name" : "cdx",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Quadratic drag coefficient in tangential direction.",
+   "default" : "0.0"
+  }, {
+   "name" : "cdy",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Quadratic drag coefficient in normal direction.",
+   "default" : "0.0"
+  }, {
+   "name" : "amx",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Added mass per unit length in tangential direction.",
+   "default" : "0.0"
+  }, {
+   "name" : "amy",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Added mass per unit length in normal direction.",
+   "default" : "0.0"
+  }, {
+   "name" : "cdlx",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Linear drag force coefficient in tangential direction.",
+   "default" : "0.0"
+  }, {
+   "name" : "cdly",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Linear drag force coefficient in normal direction.",
+   "default" : "0.0"
+  }, {
+   "name" : "hydrodynamicInputCode",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/HydrodynamicInputCode",
+   "description" : "Hydrodynamic input code",
+   "default" : "DIMENSIONAL"
+  }, {
+   "name" : "scfk",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Scaling factor for Froude-Krylov term in Morison’s equation in normal direction",
+   "default" : "1.0"
+  }, {
+   "name" : "scfkt",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/TangentialFroudeKrylovScaling",
+   "description" : "Scale for Froude-Krylov term in Morison’s equation in tangential direction",
+   "default" : "ON"
+  }, {
+   "name" : "massDampingSpecification",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Mass proportional Rayleigh damping",
+   "default" : "false"
+  }, {
+   "name" : "stiffnessDampingSpecification",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Stiffness proportional Rayleigh damping",
+   "default" : "false"
+  }, {
+   "name" : "axialDampingSpecification",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Local axial damping model",
+   "default" : "false"
+  }, {
+   "name" : "temperature",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Temperature at which the specification applies",
+   "optional" : true
+  }, {
+   "name" : "alpha",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Thermal expansion coefficient",
+   "optional" : true
+  }, {
+   "name" : "beta",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Pressure expansion coefficient",
+   "optional" : true
+  }, {
+   "name" : "massDamping",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/CRSMassDamping",
+   "contained" : true,
+   "optional" : false
+  }, {
+   "name" : "stiffnessDamping",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/CRSStiffnessDamping",
+   "contained" : true,
+   "optional" : false
+  }, {
+   "name" : "axialDamping",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/CRSAxialDamping",
+   "contained" : true,
+   "optional" : false
+  }, {
+   "name" : "defaultExpansion",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Use default thermal and pressure expansion settings",
+   "default" : "true"
+  }, {
+   "name" : "cdax",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Quadratic aerodynamic drag force coefficient per unit length in tangential direction",
+   "default" : "0.0"
+  }, {
+   "name" : "cday",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Quadratic aerodynamic drag force coefficient per unit length in normal direction",
+   "default" : "0.0"
+  }, {
+   "name" : "cdaz",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Quadratic aerodynamic drag force coefficient per unit length in z direction",
+   "default" : "0.0"
+  }, {
+   "name" : "aerodynamicInputCode",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/AerodynamicInputCode",
+   "description" : "Aerodynamic input code",
+   "default" : "NONE"
+  }, {
+   "name" : "aerodynamicDiameter",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Aerodynamic diameter",
+   "optional" : true
+  }, {
+   "name" : "pipeDiameter",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Diameter of pipe.",
+   "default" : "0.0"
+  }, {
+   "name" : "pipeThickness",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Thickness of pipe",
+   "default" : "0.0"
+  }, {
+   "name" : "materialDensity",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Density of pipe material",
+   "default" : "0.0"
+  }, {
+   "name" : "extCoatingThickness",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Thickness of external coating",
+   "default" : "0.0"
+  }, {
+   "name" : "extCoatingDensity",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Density of external coating",
+   "default" : "0.0"
+  }, {
+   "name" : "extContactRadius",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "External contact radius",
+   "default" : "0.0"
+  }, {
+   "name" : "intContactRadius",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Inner contact radius",
+   "default" : "0.0"
+  }, {
+   "name" : "materialProperties",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/ThinWalledPipeMaterial",
+   "contained" : true,
+   "optional" : false
+  }, {
+   "name" : "tensionCapacity",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Tension capacity",
+   "default" : "0.0"
+  }, {
+   "name" : "maxCurvature",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Maximum curvature",
+   "default" : "0.0"
+  }, {
+   "name" : "calculateBeta",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Let RIFLEX calculate beta",
+   "default" : "false"
+  }, {
+   "name" : "diameterType",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/InnerOuter",
+   "description" : "Inner or outer diameter",
+   "default" : "INNER"
+  }, {
+   "name" : "coupledBendingTorsion",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Geometric stiffness coupling between bending and torsion",
+   "default" : "false"
+  }, {
+   "name" : "hydrodynamicRadiationInputCode",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/HydrodynamicRadiationInputCode",
+   "description" : "Code for input of simplified radiation force coefficients",
+   "default" : "DIMENSIONAL"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

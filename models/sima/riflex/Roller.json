@@ -1,0 +1,65 @@
+{
+ "name" : "Roller",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "direction",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Direction of roller axis (Clockwise around the local X-axis of the actual surface plane).",
+   "default" : "0.0"
+  }, {
+   "name" : "y",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Y-coordinate of roller origin",
+   "default" : "0.0"
+  }, {
+   "name" : "z",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Z-coordinate of roller origin",
+   "default" : "0.0"
+  }, {
+   "name" : "length",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Length of roller (0 means infinite length)",
+   "default" : "0.0"
+  }, {
+   "name" : "constantStiffness",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Constant spring compression stiffness.",
+   "default" : "false"
+  }, {
+   "name" : "damping",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Dash pot damping coefficient",
+   "default" : "0.0"
+  }, {
+   "name" : "stiffness",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Spring compression stiffness",
+   "default" : "0.0"
+  }, {
+   "name" : "radius",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Radius of roller",
+   "default" : "0.0"
+  }, {
+   "name" : "stiffnessItems",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/SpringStiffnessItem",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

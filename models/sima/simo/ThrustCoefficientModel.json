@@ -1,0 +1,7 @@
+{
+ "name" : "ThrustCoefficientModel",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["INTERNAL", "FORWARD", "SEPARATE"],
+ "labels" : ["Internal", "Forward", "Separate"]
+}
+

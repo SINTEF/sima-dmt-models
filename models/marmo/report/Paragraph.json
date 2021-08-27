@@ -1,0 +1,14 @@
+{
+ "name" : "Paragraph",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity", "/report/ReportItem"],
+ "attributes" : [{
+   "name" : "text",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

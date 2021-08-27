@@ -1,0 +1,7 @@
+{
+ "name" : "EquilibriumCalculationOption",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["TRANSIENT", "NEWTON_RAPHSON"],
+ "labels" : ["Transient", "Newton-Raphson"]
+}
+

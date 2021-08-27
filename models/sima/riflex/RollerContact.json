@@ -1,0 +1,17 @@
+{
+ "name" : "RollerContact",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "rollers",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/Roller",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

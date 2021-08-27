@@ -1,0 +1,40 @@
+{
+ "name" : "CRSAxialFrictionModel",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "staticFriction",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Static friction force corresponding to elongation",
+   "default" : "0.0"
+  }, {
+   "name" : "staticElongation",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Relative elongation",
+   "default" : "0.0"
+  }, {
+   "name" : "dynamicFriction",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Dynamic friction force corresponding to elongation",
+   "default" : "0.0"
+  }, {
+   "name" : "dynamicElongation",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Relative elongation",
+   "default" : "0.0"
+  }, {
+   "name" : "axialFriction",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Local axial friction model",
+   "default" : "false"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

@@ -1,0 +1,31 @@
+{
+ "name" : "LongTermStatisticsPeriod",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "waveStatistics",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/metocean/WaveLongTermStatistics",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "windStatistics",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/metocean/WindLongTermStatistics",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "currentStatistics",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/metocean/CurrentLongTermStatistics",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

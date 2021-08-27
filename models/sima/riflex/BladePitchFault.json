@@ -1,0 +1,31 @@
+{
+ "name" : "BladePitchFault",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "seizeFaults",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/SeizeBladePitchFaultItem",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "runawayFaults",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/RunawayBladePitchFaultItem",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "biasFaults",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/BiasBladePitchFaultItem",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

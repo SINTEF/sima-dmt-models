@@ -1,0 +1,225 @@
+{
+ "name" : "SuperNode",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "constraint",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/NodeConstraint",
+   "description" : "Supernode type.",
+   "default" : "FREE"
+  }, {
+   "name" : "referenceFrame",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/ReferenceFrame",
+   "contained" : false,
+   "optional" : true,
+   "description" : "Reference frame for local coordinates."
+  }, {
+   "name" : "supportVessel",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/SupportVessel",
+   "contained" : false,
+   "optional" : true,
+   "description" : "Support body reference."
+  }, {
+   "name" : "automaticInitialPosition",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Used to define the supernode position relative to \r\nthe x axis spanned by the reference supernodes",
+   "default" : "false"
+  }, {
+   "name" : "masterNode",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/simo/SuperNodeReference",
+   "contained" : false,
+   "optional" : true,
+   "description" : "Master node for Slaved / Fixed Relative Orientation nodes."
+  }, {
+   "name" : "xConstraint",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/BoundaryCondition",
+   "description" : "Boundary condition for translation in X-direction.",
+   "default" : "FREE"
+  }, {
+   "name" : "yConstraint",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/BoundaryCondition",
+   "description" : "Boundary condition for translation in Y-direction.",
+   "default" : "FREE"
+  }, {
+   "name" : "zConstraint",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/BoundaryCondition",
+   "description" : "Boundary condition for translation in Z-direction.",
+   "default" : "FREE"
+  }, {
+   "name" : "rxConstraint",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/BoundaryCondition",
+   "description" : "Boundary condition for rotation about X-axis",
+   "default" : "FREE"
+  }, {
+   "name" : "ryConstraint",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/BoundaryCondition",
+   "description" : "Boundary condition for rotation about Y-axis",
+   "default" : "FREE"
+  }, {
+   "name" : "rzConstraint",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/BoundaryCondition",
+   "description" : "Boundary condition for rotation about Z-axis",
+   "default" : "FREE"
+  }, {
+   "name" : "xGInitial",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Initial (stress-free) global coordinate X",
+   "default" : "0.0"
+  }, {
+   "name" : "yGInitial",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Initial (stress-free) global coordinate Y",
+   "default" : "0.0"
+  }, {
+   "name" : "zGInitial",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Initial (stress-free) global coordinate Z",
+   "default" : "0.0"
+  }, {
+   "name" : "xGStatic",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Static global coordinate X",
+   "default" : "0.0"
+  }, {
+   "name" : "yGStatic",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Static global coordinate Y",
+   "default" : "0.0"
+  }, {
+   "name" : "zGStatic",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Static global coordinate Z",
+   "default" : "0.0"
+  }, {
+   "name" : "rotation",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Specified rotation of supernode from stress free position \r\nto static equilibrium position.",
+   "default" : "0.0"
+  }, {
+   "name" : "direction",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Direction of axis for specified rotation.",
+   "default" : "0.0"
+  }, {
+   "name" : "referenceLine",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/ARLine",
+   "contained" : false,
+   "optional" : true,
+   "description" : "Used for automatic calculation of initial super node position"
+  }, {
+   "name" : "beta",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Direction to horisontal if set. Rotation is about \"local y-axis\" i.e. positive downwards.",
+   "optional" : true
+  }, {
+   "name" : "radial",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Used to define the supernode position relative to \r\nthe x axis spanned by the reference supernodes",
+   "default" : "false"
+  }, {
+   "name" : "radialReference1",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/SuperNode",
+   "contained" : false,
+   "optional" : true,
+   "description" : "Master node for Slaved / Fixed Relative Orientation nodes."
+  }, {
+   "name" : "radialReference2",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/SuperNode",
+   "contained" : false,
+   "optional" : true,
+   "description" : "Master node for Slaved / Fixed Relative Orientation nodes."
+  }, {
+   "name" : "radialAngle",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "default" : "0.0"
+  }, {
+   "name" : "verticalOffset",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "default" : "0.0"
+  }, {
+   "name" : "radialDistance",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "default" : "0.0"
+  }, {
+   "name" : "boundaryConditionFrame",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/BoundaryConditionFrame",
+   "description" : "Boundary condition reference co-ordinate system",
+   "default" : "GLOBAL"
+  }, {
+   "name" : "xx",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Skew x-axis x-component in reference system",
+   "default" : "0.0"
+  }, {
+   "name" : "xy",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Skew x-axis y-component in reference system",
+   "default" : "0.0"
+  }, {
+   "name" : "xz",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Skew x-axis z-component in reference system",
+   "default" : "0.0"
+  }, {
+   "name" : "xp",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "XY-plane reference vector x-component  in reference system",
+   "default" : "0.0"
+  }, {
+   "name" : "yp",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "XY-plane reference vector y-component  in reference system",
+   "default" : "0.0"
+  }, {
+   "name" : "zp",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "XY-plane reference vector z-component  in reference system",
+   "default" : "0.0"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

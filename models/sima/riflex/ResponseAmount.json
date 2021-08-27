@@ -1,0 +1,7 @@
+{
+ "name" : "ResponseAmount",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["MIN", "MED", "MAX"],
+ "labels" : ["Minimum", "Medium", "Maximum"]
+}
+

@@ -1,0 +1,7 @@
+{
+ "name" : "IECWindType",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["NTM", "ETM_1", "ETM_2", "ETM_3", "EWM1_1", "EWM1_2", "EWM1_3", "EWM50_1", "EWM50_2", "EWM50_3"],
+ "labels" : ["Normal", "Extreme turbulence (turbine class 1)", "Extreme turbulence (turbine class 2)", "Extreme turbulence (turbine class 3)", "Extreme 1-year wind (turbine class 1)", "Extreme 1-year wind (turbine class 2)", "Extreme 1-year wind (turbine class 3)", "Extreme 50-year wind (turbine class 1)", "Extreme 50-year wind (turbine class 2)", "Extreme 50-year wind (turbine class 3)"]
+}
+

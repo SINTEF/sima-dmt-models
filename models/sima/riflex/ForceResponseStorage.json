@@ -1,0 +1,63 @@
+{
+ "name" : "ForceResponseStorage",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "storageStep",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "description" : "Code for storage of internal forces. Storage for every <storage step> given.",
+   "default" : "1"
+  }, {
+   "name" : "format",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/FileFormatCode",
+   "description" : "Format code for additional output of time series",
+   "default" : "BINARY_OUTPUT_ONLY"
+  }, {
+   "name" : "elements",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/ElementReference",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true,
+   "description" : "Specification of nodes for displacement storage"
+  }, {
+   "name" : "matrixFormat",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/AdditionalFileFormatCode",
+   "description" : "Format code for additional output of element transformation matrices",
+   "default" : "BINARY_OUTPUT"
+  }, {
+   "name" : "readTransformationMatrices",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Make transformation matrices available in the post processor",
+   "default" : "false"
+  }, {
+   "name" : "relativeElementAngles",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/RelativeElementAngle",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "elementAngles",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/ElementAngle",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "storeBottomContactForces",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "default" : "false"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

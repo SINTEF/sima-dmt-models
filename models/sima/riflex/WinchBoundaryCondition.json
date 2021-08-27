@@ -1,0 +1,7 @@
+{
+ "name" : "WinchBoundaryCondition",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["FIXED", "VESSEL", "FLOATE"],
+ "labels" : ["Fixed boundaries", "Attached to support vessel", "Attached to SIMO body"]
+}
+

@@ -1,0 +1,7 @@
+{
+ "name" : "DepthDistribution",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["EQUIDISTANT", "QUADRATIC", "WAVE"],
+ "labels" : ["Equidistant", "Quadratic", "Wave"]
+}
+

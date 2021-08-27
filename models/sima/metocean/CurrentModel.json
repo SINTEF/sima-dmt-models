@@ -1,0 +1,7 @@
+{
+ "name" : "CurrentModel",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["FROM_INPUT", "FROM_WIND_VELOCITY"],
+ "labels" : ["From input data", "From wind velocity"]
+}
+

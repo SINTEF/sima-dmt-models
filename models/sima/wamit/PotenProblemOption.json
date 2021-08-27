@@ -1,0 +1,7 @@
+{
+ "name" : "PotenProblemOption",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["yesForAll", "yesForSpecified", "no"],
+ "labels" : ["Yes - for all modes", "Yes - for specified modes", "No"]
+}
+

@@ -1,0 +1,7 @@
+{
+ "name" : "TableFormat",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["DEFAULT", "TABLE"],
+ "labels" : ["Default", "Table"]
+}
+

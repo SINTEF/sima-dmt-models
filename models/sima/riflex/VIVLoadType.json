@@ -1,0 +1,7 @@
+{
+ "name" : "VIVLoadType",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["CROSS_FLOW", "IN_LINE", "COMBINED"],
+ "labels" : ["Cross-flow VIV loads are applied", "In-line VIV loads are applied", "Combined cross-flow and in-line VIV loads are applied"]
+}
+

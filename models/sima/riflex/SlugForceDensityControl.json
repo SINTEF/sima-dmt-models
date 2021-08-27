@@ -1,0 +1,7 @@
+{
+ "name" : "SlugForceDensityControl",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["CONSTANT", "VARIABLE"],
+ "labels" : ["Constant density", "Variable density with vertical position"]
+}
+

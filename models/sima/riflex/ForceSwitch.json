@@ -1,0 +1,7 @@
+{
+ "name" : "ForceSwitch",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["USE_STIFFNESS_MATRIX", "USE_CURVATURE"],
+ "labels" : ["Use stiffness matrix", "Use curvature"]
+}
+

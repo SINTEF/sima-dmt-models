@@ -1,0 +1,7 @@
+{
+ "name" : "SoilStiffnessType",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["STATIC", "CYCLIC"],
+ "labels" : ["Static", "Cyclic"]
+}
+

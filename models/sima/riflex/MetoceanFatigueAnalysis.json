@@ -1,0 +1,33 @@
+{
+ "name" : "MetoceanFatigueAnalysis",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "changeNumber",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "default" : "0"
+  }, {
+   "name" : "resultContainer",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/sima/ResultContainer",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "metoceanCondition",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/sima/Condition",
+   "contained" : false,
+   "optional" : true
+  }, {
+   "name" : "analysisCondition",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/sima/Condition",
+   "contained" : false,
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

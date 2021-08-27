@@ -1,0 +1,7 @@
+{
+ "name" : "ThrusterType",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["FIXED_CONVENTIONAL", "FIXED_DUCTED", "FIXED_TUNNEL", "ROTATABLE_CONVENTIONAL", "ROTATABLE_DUCTED", "OPEN_MAIN_PROPELLER", "DUCTED_MAIN_PROPELLER"],
+ "labels" : ["Fixed conventional", "Fixed ducted", "Fixed tunnel", "Rotatable conventional", "Rotatable ducted", "Open main propeller", "Ducted main propeller"]
+}
+

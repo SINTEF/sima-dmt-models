@@ -1,0 +1,36 @@
+{
+ "name" : "PisaSoilLayerProfile",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "topLevelSoilPosition",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/TopLevelSoilPosition",
+   "default" : "RELATIVE_TO_SEAFLOOR"
+  }, {
+   "name" : "offsetSeafloorToTopSoil",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Offset between seafloor and top of upper soil layer",
+   "default" : "0.0"
+  }, {
+   "name" : "soilLayers",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/PisaSoilLayer",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "embeddedLines",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/PisaLineItem",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

@@ -1,0 +1,37 @@
+{
+ "name" : "ARLine",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "lineType",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/ARLineType",
+   "contained" : false,
+   "optional" : false,
+   "description" : "Line type."
+  }, {
+   "name" : "end1",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/SuperNode",
+   "contained" : false,
+   "optional" : false,
+   "description" : "Supernode at end 1."
+  }, {
+   "name" : "end2",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/SuperNode",
+   "contained" : false,
+   "optional" : false,
+   "description" : "Supernode at end 2."
+  }, {
+   "name" : "disabled",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Do not include this line in the calculations",
+   "default" : "false"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

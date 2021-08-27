@@ -1,0 +1,7 @@
+{
+ "name" : "HLA",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["NO_IMPORT", "IMPORT"],
+ "labels" : ["No import", "Import"]
+}
+

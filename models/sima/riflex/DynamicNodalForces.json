@@ -1,0 +1,29 @@
+{
+ "name" : "DynamicNodalForces",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "_type",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/ForceSpecificationType",
+   "description" : "Type of force specification",
+   "default" : "SIMPLE_EXPRESSION"
+  }, {
+   "name" : "fileName",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "File name for time series of force components\r\n\r\nNTDFO: : Number of time instants (given once) \r\nMDCOMP TIMDFO: Number of load components and \r\ntime instant for the given loads\r\nRLMAG:  Magnitude of load component (MDCOMP lines)\r\n\r\nThe block {MDCOMP TIMDFO RLMAG} must be given for \r\neach time instant. \r\n"
+  }, {
+   "name" : "items",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/DynamicNodalForceItem",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

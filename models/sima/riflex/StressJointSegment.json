@@ -1,0 +1,46 @@
+{
+ "name" : "StressJointSegment",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "length",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Length of the segment.",
+   "default" : "0.0"
+  }, {
+   "name" : "numElements",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "description" : "Number of elements",
+   "default" : "10"
+  }, {
+   "name" : "extDiameterEnd2",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "External diameter at second end of actual segment.",
+   "default" : "0.0"
+  }, {
+   "name" : "wallThicknessEnd2",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Wall thickness at second end.",
+   "default" : "0.0"
+  }, {
+   "name" : "elasticModulus",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Elastic modulus.",
+   "default" : "0.0"
+  }, {
+   "name" : "materialDensity",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Density of pipe material.",
+   "default" : "0.0"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

@@ -1,0 +1,7 @@
+{
+ "name" : "LoadFormulation",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["MORISON", "MACCAMY_FUCHS", "POTN", "TVIV", "MORISON_PART_SUB", "NONE"],
+ "labels" : ["Morison", "MacCamy-Fuchs with quadratic drag", "Potential flow with quadratic drag load coefficients", "Time domain VIV", "Morison partly submerged cross section", "None"]
+}
+

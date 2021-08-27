@@ -1,0 +1,17 @@
+{
+ "name" : "ExcitationCoefficientsCurveProperty",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "amplitudeDiameterPropertyItems",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/AmplitudeDiameterPropertyItem",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

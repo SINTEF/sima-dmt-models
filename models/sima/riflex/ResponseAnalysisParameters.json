@@ -1,0 +1,106 @@
+{
+ "name" : "ResponseAnalysisParameters",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "iterationMethod",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/ResponseIterationMethod",
+   "description" : "Response iteration method",
+   "default" : "FIXED_POINT"
+  }, {
+   "name" : "maxNumberOfIterations",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "description" : "Maximum number of iterations",
+   "default" : "30"
+  }, {
+   "name" : "convergenceCriterion",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/ConvergenceCriterion",
+   "description" : "Convergence criterion",
+   "default" : "AMPNOR"
+  }, {
+   "name" : "convergenceLimit",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Convergence limit for the iteration",
+   "default" : "1.0E-4"
+  }, {
+   "name" : "initialResponseEstimate",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Scaling factor for the initial response estimate",
+   "default" : "0.5"
+  }, {
+   "name" : "responseFrequencyOption",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/ResponseFrequencyOption",
+   "description" : "Option for combining response frequencies",
+   "default" : "CONCURRENT"
+  }, {
+   "name" : "numberOfDominatingFrequencies",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "description" : "Number of dominating frequencies given in user defined frequency\nranking",
+   "default" : "0"
+  }, {
+   "name" : "amplitudeLimit",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Amplitude limit for including frequency normalized by\nthe minimum diameter.",
+   "default" : "0.01"
+  }, {
+   "name" : "lowerFrequencyCutoff",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Cut-off excitation parameter ration for frequencies below the identified dominating frequency.",
+   "default" : "0.0"
+  }, {
+   "name" : "upperFrequencyCutoff",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Cut-off excitation parameter ration for frequencies above the identified dominating frequency.",
+   "default" : "0.0"
+  }, {
+   "name" : "relativeStructuralDamping",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Relative structural damping",
+   "default" : "0.0"
+  }, {
+   "name" : "forceSwitch",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/ForceSwitch",
+   "description" : "Option for force calculation",
+   "default" : "USE_STIFFNESS_MATRIX"
+  }, {
+   "name" : "printSwitch",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/PrintSwitch",
+   "description" : "Print switch",
+   "default" : "FINAL_RESULTS"
+  }, {
+   "name" : "additionalStructuralDampingSpecification",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "This data group allows additional material and slip damping to be specified for some or all segments in the system. \nThis structural damping is read from separate files and is applied in addition to the relative structural damping level RELDAM. \nThe structural damping is given as a function of the response curvature and is therefore updated during the response iterations.",
+   "default" : "false"
+  }, {
+   "name" : "additionalStructuralDampingParameters",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/AdditionalStructuralDampingParameters",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

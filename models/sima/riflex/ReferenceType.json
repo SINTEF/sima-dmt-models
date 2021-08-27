@@ -1,0 +1,7 @@
+{
+ "name" : "ReferenceType",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["SUPER_NODE", "SUPPORT_VESSEL"],
+ "labels" : ["Super Node", "Support Vessel"]
+}
+

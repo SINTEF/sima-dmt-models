@@ -1,0 +1,66 @@
+{
+ "name" : "GeotechnicalSpring",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "line",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/ARLine",
+   "contained" : false,
+   "optional" : true,
+   "description" : "Line"
+  }, {
+   "name" : "segment",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "description" : "Segment on given line",
+   "default" : "1"
+  }, {
+   "name" : "allSegments",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "All segments",
+   "default" : "false"
+  }, {
+   "name" : "nodeNumber",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "description" : "Local node number on actual segment",
+   "default" : "1"
+  }, {
+   "name" : "allNodes",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "All nodes",
+   "default" : "false"
+  }, {
+   "name" : "stiffnessItems",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/GeotechnicalSpringStiffnessItem",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "dampingDisplacementItems",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/DampingDisplacementItem",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "strainVelocityExponent",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "default" : "1.0"
+  }, {
+   "name" : "relativeLength",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Relative length for result scaling",
+   "default" : "1.0"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

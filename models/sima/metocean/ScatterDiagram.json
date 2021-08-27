@@ -1,0 +1,32 @@
+{
+ "name" : "ScatterDiagram",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "hsUpperLimits",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/metocean/ScatterDimension",
+   "contained" : true,
+   "optional" : false
+  }, {
+   "name" : "tpUpperLimits",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/metocean/ScatterDimension",
+   "contained" : true,
+   "optional" : false
+  }, {
+   "name" : "values",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "dimensions" : "*",
+   "default" : "0.0"
+  }, {
+   "name" : "unit",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

@@ -1,0 +1,95 @@
+{
+ "name" : "CombinedLoadingProperties",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "line",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/ARLine",
+   "contained" : false,
+   "optional" : true,
+   "description" : "Line"
+  }, {
+   "name" : "segment",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "description" : "Segment on given line",
+   "default" : "1"
+  }, {
+   "name" : "allSegments",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "All segments",
+   "default" : "false"
+  }, {
+   "name" : "elementNumber",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "description" : "Local element number on actual segment",
+   "default" : "1"
+  }, {
+   "name" : "allElements",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "All elements",
+   "default" : "false"
+  }, {
+   "name" : "youngsFactor",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Young's modulus",
+   "default" : "2.1E11"
+  }, {
+   "name" : "poissonsRatio",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Poisson's ratio for pipe wall material",
+   "default" : "0.3"
+  }, {
+   "name" : "yieldStrength",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Yield strength to be used in design",
+   "default" : "4.0E8"
+  }, {
+   "name" : "tensileStrength",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Tensile strength to be used in design",
+   "default" : "7.0E8"
+  }, {
+   "name" : "ovality",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Ovality",
+   "default" : "0.005"
+  }, {
+   "name" : "internalCorrosion",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Internal corrosion allowance",
+   "default" : "0.001"
+  }, {
+   "name" : "externalCorrosion",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "External corrosion allowance",
+   "default" : "0.002"
+  }, {
+   "name" : "nominalDiameter",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Nominal outer diameter (D). If not set the value will be taken from the model",
+   "optional" : true
+  }, {
+   "name" : "nominalThickness",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Nominal wall thickness (t_nom) of pipe (uncorroded), as specified on the drawing/specification ",
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

@@ -1,0 +1,7 @@
+{
+ "name" : "WaveMethod",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["NO_WAVE", "FFT_ONLY", "COSINE", "COMBINED", "VISUALIZATION"],
+ "labels" : ["No wave", "FFT only", "Cosine", "Combined", "Visualization"]
+}
+

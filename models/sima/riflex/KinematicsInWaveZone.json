@@ -1,0 +1,7 @@
+{
+ "name" : "KinematicsInWaveZone",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["MEAN_WATER_LEVEL", "STRETCHING_COMPRESSION", "MOVING_POTENTIAL", "CONSTANT_POTENTIAL", "SECOND_ORDER"],
+ "labels" : ["Mean water level", "Stretching and compression of wave potential", "Moving the potential to actual surface", "Keeping the potential constant from mean water level to wave surface", "Second order wave with integration of wave forces to wave surface"]
+}
+

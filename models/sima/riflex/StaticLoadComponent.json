@@ -1,0 +1,60 @@
+{
+ "name" : "StaticLoadComponent",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "line",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/ARLine",
+   "contained" : false,
+   "optional" : true,
+   "description" : "Line"
+  }, {
+   "name" : "segment",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "description" : "Segment on given line",
+   "default" : "1"
+  }, {
+   "name" : "allSegments",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "All segments",
+   "default" : "false"
+  }, {
+   "name" : "node",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "description" : "Local node number within segment (if global reference system) or element number within segment (if local reference system)",
+   "default" : "0"
+  }, {
+   "name" : "dof",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "description" : "Degree of freedom within the specified node/element (1-6 for nodes, 1-6 for end 1 of an element and 7-12 for end 2 of an element)",
+   "default" : "0"
+  }, {
+   "name" : "magnitude",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Magnitude of load component",
+   "default" : "0.0"
+  }, {
+   "name" : "referenceFrame",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/simo/ReferenceFrameType",
+   "description" : "Reference system for application of nodal load components. If GLOBAL the force is applied at the specified node; if LOCAL the force is applied to the specified element.",
+   "default" : "LOCAL"
+  }, {
+   "name" : "specForceIncrement",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Force increment on magnitude",
+   "default" : "0.0"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

@@ -1,0 +1,28 @@
+{
+ "name" : "GrowthLevel",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "levelZCoordinate",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Z coordinate of level given in global coordinate system",
+   "default" : "0.0"
+  }, {
+   "name" : "thickness",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Growth thickness at this level",
+   "default" : "0.0"
+  }, {
+   "name" : "density",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Growth density at this level",
+   "default" : "0.0"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

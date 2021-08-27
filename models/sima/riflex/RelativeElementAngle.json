@@ -1,0 +1,22 @@
+{
+ "name" : "RelativeElementAngle",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "firstElement",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/ElementReference",
+   "contained" : true,
+   "optional" : false
+  }, {
+   "name" : "secondElement",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/ElementReference",
+   "contained" : true,
+   "optional" : false
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

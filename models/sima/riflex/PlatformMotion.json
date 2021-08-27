@@ -1,0 +1,7 @@
+{
+ "name" : "PlatformMotion",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["GENERATED", "NO_MOTIONS", "SPECIFIED"],
+ "labels" : ["Generated motions", "No motions", "Specified motions"]
+}
+

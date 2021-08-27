@@ -1,0 +1,7 @@
+{
+ "name" : "CalculateResponseAmplitudeOperatorOption",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["no", "yesHaskind", "yesDiffraction"],
+ "labels" : ["No", "Yes - Haskind", "Yes - diffraction"]
+}
+

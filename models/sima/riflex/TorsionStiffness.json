@@ -1,0 +1,7 @@
+{
+ "name" : "TorsionStiffness",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["CONSTANT", "UNSYMMETRIC", "SYMMETRIC", "GENERAL_TORSION_RELATION"],
+ "labels" : ["Constant", "Unsymmetric", "Symmetric", "General torsion / relation"]
+}
+

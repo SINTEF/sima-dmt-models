@@ -1,0 +1,7 @@
+{
+ "name" : "LowFrequencyMotionIndicator",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["NONE", "FILE"],
+ "labels" : ["No low-freq. motions", "Low freq. motion from file"]
+}
+

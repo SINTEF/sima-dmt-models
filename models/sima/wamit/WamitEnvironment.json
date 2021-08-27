@@ -1,0 +1,16 @@
+{
+ "name" : "WamitEnvironment",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "wave",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/wamit/WamitWave",
+   "contained" : true,
+   "optional" : false
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

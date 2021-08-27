@@ -1,0 +1,120 @@
+{
+ "name" : "WindTurbine",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "shaftLine",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/ARLine",
+   "contained" : false,
+   "optional" : false,
+   "description" : "Reference to the line that is used for shaft modelling"
+  }, {
+   "name" : "blades",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/BladeItem",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : false
+  }, {
+   "name" : "controller",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/windturbine/HorizontalAxisWindTurbineController",
+   "contained" : true,
+   "optional" : false
+  }, {
+   "name" : "body",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/sima/Body",
+   "contained" : false,
+   "optional" : true,
+   "description" : "Reference to SIMO body with wind"
+  }, {
+   "name" : "towerLine",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/ARLine",
+   "contained" : false,
+   "optional" : true,
+   "description" : "Reference to the line that is used for tower modelling.\r\nIf specified the incoming wind acting on the blades will be modified due to the presence of the tower."
+  }, {
+   "name" : "windLoadOption",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/WindTurbineLoadOption",
+   "description" : "If the aerodynamic moment is removed, Cm is treated as zero and the distance between aerodynamic and structural axes is ignored.",
+   "default" : "INCLUDE"
+  }, {
+   "name" : "turbineOrientation",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/TurbineOrientation",
+   "description" : "Turbine orientation",
+   "default" : "UPWIND"
+  }, {
+   "name" : "bakFactor",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Bak correction in tower shadow",
+   "default" : "0.1"
+  }, {
+   "name" : "dragEffect",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Drag correction in tower shadow",
+   "default" : "false"
+  }, {
+   "name" : "advancedOptions",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Use advanced aerodynamic options",
+   "default" : "false"
+  }, {
+   "name" : "inductionCalculation",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "It is recommended to turn off the induction calculation for a parked or idling wind turbine.",
+   "default" : "true"
+  }, {
+   "name" : "prandtlTip",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "The correction for tip loss due to the finite number of blades may be applied or removed.",
+   "default" : "true"
+  }, {
+   "name" : "prandtlRoot",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "The correction for hub loss due to the finite number of blades may be applied or removed.",
+   "default" : "false"
+  }, {
+   "name" : "prandtlYaw",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "If yaw correction is selected, the Prandtl factor is modified based on the angle between the incoming wind and the rotor plane.",
+   "default" : "true"
+  }, {
+   "name" : "measurementNodes",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/MeasurementNode",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "measurementElements",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/MeasurementElement",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "yawController",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/HorizontalAxisYawController",
+   "contained" : true,
+   "optional" : false
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

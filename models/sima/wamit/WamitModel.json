@@ -1,0 +1,36 @@
+{
+ "name" : "WamitModel",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "environments",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/wamit/WamitEnvironment",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "location",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/wamit/WamitLocation",
+   "contained" : true,
+   "optional" : false
+  }, {
+   "name" : "bodies",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/wamit/WamitBody",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "calculationParameters",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/wamit/WamitCalculationParameters",
+   "contained" : true,
+   "optional" : false
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

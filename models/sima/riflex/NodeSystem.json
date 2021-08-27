@@ -1,0 +1,7 @@
+{
+ "name" : "NodeSystem",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["GLOBAL", "SHAFT0"],
+ "labels" : ["Global", "Shaft"]
+}
+

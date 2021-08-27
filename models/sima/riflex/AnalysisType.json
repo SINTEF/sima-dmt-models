@@ -1,0 +1,7 @@
+{
+ "name" : "AnalysisType",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["IRREGULAR", "REGULAR"],
+ "labels" : ["Irregular waves", "Regular wave / motion"]
+}
+

@@ -1,0 +1,34 @@
+{
+ "name" : "OutputNodeValueAssertion",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "severity",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/sima/Severity",
+   "default" : "WARNING"
+  }, {
+   "name" : "message",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string"
+  }, {
+   "name" : "outputNode",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/post/OutputNode",
+   "contained" : false,
+   "optional" : true
+  }, {
+   "name" : "path",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string"
+  }, {
+   "name" : "expectedValue",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

@@ -1,0 +1,35 @@
+{
+ "name" : "CRSStiffnessDamping",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "axialFactor",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Factor for stiffness proportional damping in axial dof",
+   "default" : "0.0"
+  }, {
+   "name" : "torsionalFactor",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Factor for stiffness proportional damping in torsional dof",
+   "default" : "0.0"
+  }, {
+   "name" : "bendingFactor",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Factor for stiffness proportional damping in bending dof",
+   "default" : "0.0"
+  }, {
+   "name" : "option",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/RayleighDamping",
+   "description" : "Stiffness proportional damping options",
+   "default" : "TOTAL"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

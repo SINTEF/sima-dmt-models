@@ -1,0 +1,9 @@
+{
+ "name" : "SlowValidator",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : true,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

@@ -1,0 +1,27 @@
+{
+ "name" : "TurbineResponseStorage",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "store",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "default" : "false"
+  }, {
+   "name" : "timeInterval",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Desired time interval for storage. A value of 0 gives storage at each time step.",
+   "default" : "0.0"
+  }, {
+   "name" : "fileFormat",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/StorageType",
+   "default" : "BINARY"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

@@ -1,0 +1,139 @@
+{
+ "name" : "TimeDomainProcedure",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "method",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/MethodIndicator",
+   "description" : "Method indicator",
+   "default" : "NONLINEAR"
+  }, {
+   "name" : "procedure",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/ProcedureIndicator",
+   "description" : "Procedure indicator",
+   "default" : "NEWMARK"
+  }, {
+   "name" : "displacementStorage",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Displacement storage indicator",
+   "default" : "false"
+  }, {
+   "name" : "forceResultStorage",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Force response storage indicator",
+   "default" : "false"
+  }, {
+   "name" : "sumForceResponseStorage",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Sum force response storage indicator",
+   "default" : "false"
+  }, {
+   "name" : "curvatureResponseStorage",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Curvature response storage indicator",
+   "default" : "false"
+  }, {
+   "name" : "envelopeCurveSpecification",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Envelope curve specification indicator",
+   "default" : "false"
+  }, {
+   "name" : "inverseBeta",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Inverse value of the beta-parameter.",
+   "default" : "4.0"
+  }, {
+   "name" : "gamma",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Value of the parameter gamma of the Newmark operators (usually equal to 0.5)",
+   "default" : "0.5"
+  }, {
+   "name" : "theta",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Value of the parameter theta in Wilson`s integration method",
+   "default" : "1.0"
+  }, {
+   "name" : "dampingOption",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/RayleighDamping",
+   "description" : "Stiffness proportional damping options",
+   "default" : "TOTAL"
+  }, {
+   "name" : "globalMassDampingFactor",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Global mass proportional damping factor",
+   "default" : "0.0"
+  }, {
+   "name" : "globalStiffnessDampingFactor",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Global stiffness proportional damping factor",
+   "default" : "0.0"
+  }, {
+   "name" : "localMassTensionDamping",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Local mass proportional damping factor for tension",
+   "default" : "0.0"
+  }, {
+   "name" : "localMassTorsionDamping",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Local mass proportional damping factor for torsion",
+   "default" : "0.0"
+  }, {
+   "name" : "localMassBendingDamping",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Local mass proportional damping factor for bending",
+   "default" : "0.0"
+  }, {
+   "name" : "localStiffnessTensionDamping",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Local stiffness proportional damping factor for tension",
+   "default" : "0.0"
+  }, {
+   "name" : "localStiffnessTorsionDamping",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Local stiffness proportional damping factor for torsion",
+   "default" : "0.0"
+  }, {
+   "name" : "localStiffnessBendingDamping",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Local stiffness proportional damping factor for bending",
+   "default" : "0.0"
+  }, {
+   "name" : "nonLinearForceModel",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/NonLinearForceModel",
+   "contained" : true,
+   "optional" : false
+  }, {
+   "name" : "nonLinearIntegrationProcedure",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/NonLinearIntegrationProcedure",
+   "contained" : true,
+   "optional" : false
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

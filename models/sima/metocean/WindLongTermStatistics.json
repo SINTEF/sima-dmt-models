@@ -1,0 +1,24 @@
+{
+ "name" : "WindLongTermStatistics",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "weibullDistributions",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/metocean/WeibullDistribution",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "extremes",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/metocean/LevelExtreme",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

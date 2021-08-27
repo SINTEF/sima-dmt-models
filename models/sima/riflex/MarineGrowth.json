@@ -1,0 +1,17 @@
+{
+ "name" : "MarineGrowth",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "growthLevels",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/GrowthLevel",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

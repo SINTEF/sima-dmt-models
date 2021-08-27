@@ -1,0 +1,9 @@
+{
+ "name" : "SoilType",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : true,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

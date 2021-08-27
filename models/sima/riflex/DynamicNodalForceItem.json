@@ -1,0 +1,85 @@
+{
+ "name" : "DynamicNodalForceItem",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "line",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/ARLine",
+   "contained" : false,
+   "optional" : true,
+   "description" : "Line"
+  }, {
+   "name" : "segment",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "description" : "Segment on given line",
+   "default" : "1"
+  }, {
+   "name" : "allSegments",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "All segments",
+   "default" : "false"
+  }, {
+   "name" : "node",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "description" : "Local node/element number within segment",
+   "default" : "0"
+  }, {
+   "name" : "dof",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "description" : "Degree of freedom within the specified node/element (1-6 at node on end 1, 7-12 at node on end 2)",
+   "default" : "0"
+  }, {
+   "name" : "coordinateSystem",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/CoordinateSystem",
+   "description" : "Coordinate system code",
+   "default" : "LOCAL"
+  }, {
+   "name" : "forceType",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/ForceComponentType",
+   "description" : "Force component type",
+   "default" : "CONSTANT"
+  }, {
+   "name" : "timeOn",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Time for switching component on",
+   "default" : "0.0"
+  }, {
+   "name" : "timeOff",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Time for switching component off",
+   "default" : "0.0"
+  }, {
+   "name" : "p1",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Force component parameter 1",
+   "default" : "0.0"
+  }, {
+   "name" : "p2",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Force component parameter 2",
+   "default" : "0.0"
+  }, {
+   "name" : "p3",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Force component parameter 3",
+   "default" : "0.0"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

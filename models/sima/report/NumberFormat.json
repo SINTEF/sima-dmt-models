@@ -1,0 +1,7 @@
+{
+ "name" : "NumberFormat",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["AUTOFORMAT", "GENERAL", "SCIENTIFIC"],
+ "labels" : ["Autoformat", "General", "Scientific"]
+}
+

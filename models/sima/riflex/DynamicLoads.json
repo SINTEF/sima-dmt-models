@@ -1,0 +1,28 @@
+{
+ "name" : "DynamicLoads",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "dynamicNodalForces",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/DynamicNodalForces",
+   "contained" : true,
+   "optional" : false
+  }, {
+   "name" : "dynamicCurrentVariation",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/DynamicCurrentVariation",
+   "contained" : true,
+   "optional" : false
+  }, {
+   "name" : "rigidMoonpoolColumns",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/RigidMoonpoolColumn",
+   "contained" : true,
+   "optional" : false
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

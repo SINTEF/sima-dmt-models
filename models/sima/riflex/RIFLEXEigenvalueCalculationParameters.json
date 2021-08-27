@@ -1,0 +1,16 @@
+{
+ "name" : "RIFLEXEigenvalueCalculationParameters",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "eigenvalueAnalysisParameters",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/EigenvalueAnalysisParameters",
+   "contained" : true,
+   "optional" : false
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

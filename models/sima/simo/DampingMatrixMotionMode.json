@@ -1,0 +1,7 @@
+{
+ "name" : "DampingMatrixMotionMode",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["DEFAULT", "TOTAL", "WF", "LF"],
+ "labels" : ["Default", "Total", "Wave frequency", "Low frequency"]
+}
+

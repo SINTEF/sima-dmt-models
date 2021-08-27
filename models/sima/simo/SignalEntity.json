@@ -1,0 +1,16 @@
+{
+ "name" : "SignalEntity",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "entity",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/sima/NamedObject",
+   "contained" : false,
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

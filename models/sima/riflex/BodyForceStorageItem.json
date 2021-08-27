@@ -1,0 +1,22 @@
+{
+ "name" : "BodyForceStorageItem",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "body",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/simo/SIMOBody",
+   "contained" : false,
+   "optional" : false
+  }, {
+   "name" : "referenceSystem",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/BodyForceReferenceSystem",
+   "default" : "BODY_LOCAL"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

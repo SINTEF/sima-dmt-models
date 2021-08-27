@@ -1,0 +1,22 @@
+{
+ "name" : "ScatterLevel",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "level",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "default" : "0.0"
+  }, {
+   "name" : "scatterDiagrams",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/metocean/ScatterDiagram",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

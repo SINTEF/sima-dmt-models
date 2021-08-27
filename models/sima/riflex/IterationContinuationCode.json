@@ -1,0 +1,7 @@
+{
+ "name" : "IterationContinuationCode",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["CONTINUED", "INTERRUPTED"],
+ "labels" : ["Continued", "Interrupted"]
+}
+

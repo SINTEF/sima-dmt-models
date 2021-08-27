@@ -1,0 +1,150 @@
+{
+ "name" : "WamitBodyResult",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "firstOrderMotionTransferFunction",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/hydro/FirstOrderMotionTransferFunction",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "firstOrderWaveForceTransferFunctionDiffraction",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/wamit/WamitFirstOrderWaveForceTransferFunction",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "firstOrderWaveForceTransferFunctionHaskind",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/wamit/WamitFirstOrderWaveForceTransferFunction",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "characteristicLength",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Characteristic Length (ULEN)",
+   "default" : "0.0"
+  }, {
+   "name" : "x",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "x position coordinate ",
+   "default" : "0.0"
+  }, {
+   "name" : "y",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "y position coordinate ",
+   "default" : "0.0"
+  }, {
+   "name" : "z",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "z position coordinate ",
+   "default" : "0.0"
+  }, {
+   "name" : "rz",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "rotation about z-axis",
+   "default" : "0.0"
+  }, {
+   "name" : "symmetryAboutX",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "default" : "false"
+  }, {
+   "name" : "symmetryAboutY",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "default" : "false"
+  }, {
+   "name" : "gravity",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "default" : "0.0"
+  }, {
+   "name" : "waterDensity",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "default" : "0.0"
+  }, {
+   "name" : "volumes",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/sima/Point3",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "centreOfGravity",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/sima/Point3",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "centreOfBuoyancy",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/sima/Point3",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "radiationData",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/hydro/RadiationDataGroup",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "waveDriftForceMomentum",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/wamit/WamitWaveDriftForce",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "waveDriftForceControlSurface",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/wamit/WamitWaveDriftForce",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "waveDriftForcePressure",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/wamit/WamitWaveDriftForce",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "waterDepth",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Depth at global origin",
+   "default" : "0.0"
+  }, {
+   "name" : "externalStiffness",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/hydro/ExternalStiffnessMatrix",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "structuralMass",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/hydro/StructuralMass",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "linearDamping",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/hydro/LinearDampingMatrix",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "hydrostaticStiffness",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/hydro/HydrostaticStiffnessData",
+   "contained" : true,
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

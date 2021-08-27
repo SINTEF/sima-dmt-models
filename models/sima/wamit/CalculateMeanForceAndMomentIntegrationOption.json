@@ -1,0 +1,7 @@
+{
+ "name" : "CalculateMeanForceAndMomentIntegrationOption",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["no", "yesUnidirectional", "yesForAll"],
+ "labels" : ["No", "Yes - unidirectional", "Yes - for all"]
+}
+

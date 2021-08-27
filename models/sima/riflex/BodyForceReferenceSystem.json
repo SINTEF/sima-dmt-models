@@ -1,0 +1,7 @@
+{
+ "name" : "BodyForceReferenceSystem",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["BODY_LOCAL", "GLOBAL"],
+ "labels" : ["Body Local", "Global"]
+}
+

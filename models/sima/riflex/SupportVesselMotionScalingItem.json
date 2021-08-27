@@ -1,0 +1,52 @@
+{
+ "name" : "SupportVesselMotionScalingItem",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "supportVessel",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/SupportVessel",
+   "contained" : false,
+   "optional" : true
+  }, {
+   "name" : "scalx",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Scaling for global X-motion",
+   "default" : "1.0"
+  }, {
+   "name" : "scaly",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Scaling for global Y-motion",
+   "default" : "1.0"
+  }, {
+   "name" : "scalz",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Scaling for global Z-motion",
+   "default" : "1.0"
+  }, {
+   "name" : "scalxr",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Scaling for global X-rotation",
+   "default" : "1.0"
+  }, {
+   "name" : "scalyr",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Scaling for global Y-rotation",
+   "default" : "1.0"
+  }, {
+   "name" : "scalzr",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Scaling for global Z-rotation",
+   "default" : "1.0"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

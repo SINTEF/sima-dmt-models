@@ -1,0 +1,7 @@
+{
+ "name" : "MatrixPlotFileOption",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["NO_PRINT", "MIN_AND_STANDARD_DEV", "MAX_AND_STANDARD_DEV", "MIN_MAX_AND_STANDARD_DEV", "MAX_STATISTICS"],
+ "labels" : ["No print", "Min values and standard deviation", "Max values and standard deviation", "Min / max values and standard deviation", "Max amount of statistics"]
+}
+

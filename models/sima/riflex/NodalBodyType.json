@@ -1,0 +1,65 @@
+{
+ "name" : "NodalBodyType",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "mass",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Mass",
+   "default" : "0.0"
+  }, {
+   "name" : "volume",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Displacement volume",
+   "default" : "0.0"
+  }, {
+   "name" : "referenceFrame",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/simo/ReferenceFrameType",
+   "description" : "Reference frame",
+   "default" : "LOCAL"
+  }, {
+   "name" : "dragX",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Drag force coefficient in X-direction",
+   "default" : "0.0"
+  }, {
+   "name" : "dragY",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Drag force coefficient in Y-direction",
+   "default" : "0.0"
+  }, {
+   "name" : "dragZ",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Drag force coefficient in Z-direction",
+   "default" : "0.0"
+  }, {
+   "name" : "addedMassX",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Added mass in X-direction",
+   "default" : "0.0"
+  }, {
+   "name" : "addedMassY",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Added mass in Y-direction",
+   "default" : "0.0"
+  }, {
+   "name" : "addedMassZ",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Added mass in Z-direction",
+   "default" : "0.0"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

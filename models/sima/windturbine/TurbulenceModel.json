@@ -1,0 +1,7 @@
+{
+ "name" : "TurbulenceModel",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["IECKAI", "IECVKM"],
+ "labels" : ["Kaimal", "von Karman"]
+}
+

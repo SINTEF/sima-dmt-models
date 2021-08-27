@@ -1,0 +1,7 @@
+{
+ "name" : "CoefficientType",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["CLASSIC", "ADVANCED"],
+ "labels" : ["Classic", "Position dependent"]
+}
+

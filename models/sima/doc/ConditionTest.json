@@ -1,0 +1,46 @@
+{
+ "name" : "ConditionTest",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "disabled",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "If disabled, the test will not be run in a continuous integration environment",
+   "default" : "false"
+  }, {
+   "name" : "duration",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/doc/Duration",
+   "default" : "Medium"
+  }, {
+   "name" : "assertions",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/doc/OutputNodeValueAssertion",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "comparisons",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/doc/ComparisonAssertion",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "condition",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/sima/Condition",
+   "contained" : false,
+   "optional" : true
+  }, {
+   "name" : "analysis",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

@@ -1,0 +1,31 @@
+{
+ "name" : "DisplacementResponseStorage",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "storageStep",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "description" : "Code for storage of nodal displacements. Storage for every <storage step> given.",
+   "default" : "1"
+  }, {
+   "name" : "format",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/FileFormatCode",
+   "description" : "Format code for additional output of nodal displacement time series",
+   "default" : "BINARY_OUTPUT_ONLY"
+  }, {
+   "name" : "nodes",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/NodeReference",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true,
+   "description" : "Specification of nodes for displacement storage"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

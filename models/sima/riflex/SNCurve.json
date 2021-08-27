@@ -1,0 +1,54 @@
+{
+ "name" : "SNCurve",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "fatigueLimitIndicator",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/FatigueLimitIndicator",
+   "description" : "Fatigue limit indicator",
+   "default" : "NO_LIMIT"
+  }, {
+   "name" : "fatigueLimit",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Point where SN curve becomes horizontal. Stresses below this line will not contribute to fatigue damage.",
+   "default" : "0.0"
+  }, {
+   "name" : "referenceThickness",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Reference thickness for thickness correction. A value of zero will give no thickness correction.",
+   "optional" : true
+  }, {
+   "name" : "thicknessCorrectionExponent",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Exponent for thickness correction",
+   "optional" : true
+  }, {
+   "name" : "firstSlope",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Slope of the SN curve - m",
+   "default" : "0.0"
+  }, {
+   "name" : "constant",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Constant defining the SN curve. First segment or total curve - logC (for a SN-curve given in MPa)",
+   "default" : "0.0"
+  }, {
+   "name" : "curveItems",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/SNCurveItem",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

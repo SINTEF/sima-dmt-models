@@ -1,0 +1,7 @@
+{
+ "name" : "BendingStiffness",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["CONSTANT", "MOMENT_CURVATURE"],
+ "labels" : ["Constant", "Moment-curvature"]
+}
+

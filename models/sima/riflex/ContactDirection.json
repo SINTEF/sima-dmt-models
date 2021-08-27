@@ -1,0 +1,7 @@
+{
+ "name" : "ContactDirection",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["INWARDS", "OUTWARDS"],
+ "labels" : ["Inwards", "Outwards"]
+}
+

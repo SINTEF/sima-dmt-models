@@ -1,0 +1,7 @@
+{
+ "name" : "IrregularMotionIndicator",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["STAT", "NONE", "FILE"],
+ "labels" : ["Forced irregular motions", "No irregular motions", "Forced irregular motions from file"]
+}
+

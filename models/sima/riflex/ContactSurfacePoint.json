@@ -1,0 +1,57 @@
+{
+ "name" : "ContactSurfacePoint",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "line",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/ARLine",
+   "contained" : false,
+   "optional" : true,
+   "description" : "Line"
+  }, {
+   "name" : "segment",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "description" : "Segment on given line",
+   "default" : "1"
+  }, {
+   "name" : "allSegments",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "All segments",
+   "default" : "false"
+  }, {
+   "name" : "segmentEnd",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/End",
+   "description" : "Local segment end (1 or 2).",
+   "default" : "ONE"
+  }, {
+   "name" : "tensioner",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/Tensioner",
+   "contained" : false,
+   "optional" : true,
+   "description" : "Reference to tensioner contact type."
+  }, {
+   "name" : "rollerContact",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/RollerContact",
+   "contained" : false,
+   "optional" : true,
+   "description" : "Reference to roller contact type."
+  }, {
+   "name" : "tubularContact",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/TubularContact",
+   "contained" : false,
+   "optional" : true,
+   "description" : "Reference to tubular contact type."
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

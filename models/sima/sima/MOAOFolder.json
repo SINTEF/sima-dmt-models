@@ -1,0 +1,9 @@
+{
+ "name" : "MOAOFolder",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

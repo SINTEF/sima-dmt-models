@@ -1,0 +1,35 @@
+{
+ "name" : "MoonpoolColumnItem",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "body",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/sima/Body",
+   "contained" : false,
+   "optional" : true
+  }, {
+   "name" : "lowerZ",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Lower Z limit (local vessel system)",
+   "default" : "0.0"
+  }, {
+   "name" : "upperZ",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Upper Z limit (local vessel system)",
+   "default" : "0.0"
+  }, {
+   "name" : "lineReferences",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/LineReference",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

@@ -1,0 +1,7 @@
+{
+ "name" : "VIVLoadFormulation",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["CROSSFLOW_VIV_ONLY", "CROSSFLOW_INDUCED_INLINE", "CROSSFLOW_INLINE_SEPARATE", "INLINE_VIV_ONLY"],
+ "labels" : ["Cross-flow VIV loads only", "Cross-flow loads and cross-flow induced in-line loads", "Cross-flow loads and in-line loads calculated separately (under development)", "In-line VIV loads only (under development)"]
+}
+

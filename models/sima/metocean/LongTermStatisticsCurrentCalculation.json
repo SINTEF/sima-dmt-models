@@ -1,0 +1,51 @@
+{
+ "name" : "LongTermStatisticsCurrentCalculation",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "returnPeriod",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "default" : "0.0"
+  }, {
+   "name" : "levels",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/metocean/CalculationLevel",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "method",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/metocean/LevelStatisticsMethod",
+   "default" : "FROM_DISTRIBUTION"
+  }, {
+   "name" : "omniMethod",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/metocean/LevelStatisticsMethod",
+   "default" : "FROM_DISTRIBUTION"
+  }, {
+   "name" : "directionRelativeToWind",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "default" : "0.0"
+  }, {
+   "name" : "statistics",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/metocean/CurrentLongTermStatistics",
+   "contained" : false,
+   "optional" : true
+  }, {
+   "name" : "omni",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/metocean/CurrentLongTermStatistics",
+   "contained" : false,
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

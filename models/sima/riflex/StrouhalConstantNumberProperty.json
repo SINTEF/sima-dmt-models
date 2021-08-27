@@ -1,0 +1,16 @@
+{
+ "name" : "StrouhalConstantNumberProperty",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "fixedStrouhalNumber",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Fixed Strouhal number",
+   "default" : "0.19"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

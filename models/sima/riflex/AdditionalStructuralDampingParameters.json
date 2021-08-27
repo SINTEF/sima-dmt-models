@@ -1,0 +1,21 @@
+{
+ "name" : "AdditionalStructuralDampingParameters",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "globalSegmentNumber",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "description" : "Global segment number",
+   "default" : "0"
+  }, {
+   "name" : "structuralDampingFile",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "File with detailed structural damping specification, see VIVANA user manual"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+
