@@ -2,7 +2,7 @@
  "name" : "HLAWinchGroup",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/hla/HLAObject"],
  "attributes" : [{
    "name" : "winchConfigurations",
    "type" : "system/SIMOS/BlueprintAttribute",

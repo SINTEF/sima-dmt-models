@@ -2,19 +2,19 @@
  "name" : "BendingStiffnessY_Item",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "curvatureValue",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Curvature value for which bending moment is specified",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "bendingMoment",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Corresponding bending moment",
-   "default" : "0.0"
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

@@ -2,42 +2,43 @@
  "name" : "OmniDirectionalWeibullDistribution",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/metocean/WeibullDistribution"],
  "attributes" : [{
    "name" : "returnPeriod",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "level",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "duration",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "probability",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "shape",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "scale",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "location",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
-   "default" : "0.0"
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

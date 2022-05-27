@@ -2,25 +2,26 @@
  "name" : "FixedBodyElement",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/NamedObject"],
  "attributes" : [{
    "name" : "volume",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Volume of element",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "mass",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Mass of element",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "waveIntegrationMethod",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/WaveIntegrationMethod",
    "description" : "Parameter defining wave force integration method",
+   "optional" : true,
    "default" : "ACTUAL_WAVE_ELEVATION"
   }, {
    "name" : "loadType",
@@ -28,6 +29,7 @@
    "attributeType" : "string",
    "enumType" : "/simo/LoadType",
    "description" : "Include gravity and buoyancy forces?",
+   "optional" : true,
    "default" : "GRAVITY_AND_BUOYANCY_INCLUDED"
   }, {
    "name" : "waveParticleMethod",
@@ -35,6 +37,7 @@
    "attributeType" : "string",
    "enumType" : "/simo/FixedBodyWaveParticleMethod",
    "description" : "Include wave particle velocity and acceleration?",
+   "optional" : true,
    "default" : "NOT_INCLUDED"
   }, {
    "name" : "position",
@@ -59,6 +62,7 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Vertical position used as reference for depth dependency",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "depthDependentHydrodynamicCoefficients",
@@ -78,55 +82,55 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Quadratic drag x",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "c2y",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Quadratic drag y",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "c2z",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Quadratic drag z",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "c1x",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Linear drag x",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "c1y",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Linear drag y",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "c1z",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Linear drag z",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "amx",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Added mass x",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "amy",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Added mass y",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "amz",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Added mass z",
-   "default" : "0.0"
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

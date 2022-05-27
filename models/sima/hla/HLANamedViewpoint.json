@@ -2,7 +2,7 @@
  "name" : "HLANamedViewpoint",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/hla/HLAViewpoint", "/hla/HLAObject"],
  "storageRecipes" : [],
  "uiRecipes" : []
 }

@@ -2,32 +2,37 @@
  "name" : "PisaClay",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/riflex/CommonSoilType"],
  "attributes" : [{
    "name" : "requiredResolution",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Required resolution of soil reaction curves",
+   "optional" : true,
    "default" : "50"
   }, {
    "name" : "pvDamping",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "mtDamping",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "baseShearLoadDamping",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "baseMomentDamping",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "lateralDisplacementForce",

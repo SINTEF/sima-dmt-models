@@ -2,13 +2,14 @@
  "name" : "SuperNode",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/NamedObject", "/simo/SuperNodeReference"],
  "attributes" : [{
    "name" : "constraint",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/NodeConstraint",
    "description" : "Supernode type.",
+   "optional" : true,
    "default" : "FREE"
   }, {
    "name" : "referenceFrame",
@@ -28,8 +29,8 @@
    "name" : "automaticInitialPosition",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
-   "description" : "Used to define the supernode position relative to \r\nthe x axis spanned by the reference supernodes",
-   "default" : "false"
+   "description" : "Initial position calculated using stress free reference line length, stress free coordinate of the other super node and static coordinates of both super nodes.",
+   "optional" : true
   }, {
    "name" : "masterNode",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -43,6 +44,7 @@
    "attributeType" : "string",
    "enumType" : "/riflex/BoundaryCondition",
    "description" : "Boundary condition for translation in X-direction.",
+   "optional" : true,
    "default" : "FREE"
   }, {
    "name" : "yConstraint",
@@ -50,6 +52,7 @@
    "attributeType" : "string",
    "enumType" : "/riflex/BoundaryCondition",
    "description" : "Boundary condition for translation in Y-direction.",
+   "optional" : true,
    "default" : "FREE"
   }, {
    "name" : "zConstraint",
@@ -57,6 +60,7 @@
    "attributeType" : "string",
    "enumType" : "/riflex/BoundaryCondition",
    "description" : "Boundary condition for translation in Z-direction.",
+   "optional" : true,
    "default" : "FREE"
   }, {
    "name" : "rxConstraint",
@@ -64,6 +68,7 @@
    "attributeType" : "string",
    "enumType" : "/riflex/BoundaryCondition",
    "description" : "Boundary condition for rotation about X-axis",
+   "optional" : true,
    "default" : "FREE"
   }, {
    "name" : "ryConstraint",
@@ -71,6 +76,7 @@
    "attributeType" : "string",
    "enumType" : "/riflex/BoundaryCondition",
    "description" : "Boundary condition for rotation about Y-axis",
+   "optional" : true,
    "default" : "FREE"
   }, {
    "name" : "rzConstraint",
@@ -78,55 +84,56 @@
    "attributeType" : "string",
    "enumType" : "/riflex/BoundaryCondition",
    "description" : "Boundary condition for rotation about Z-axis",
+   "optional" : true,
    "default" : "FREE"
   }, {
    "name" : "xGInitial",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Initial (stress-free) global coordinate X",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "yGInitial",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Initial (stress-free) global coordinate Y",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "zGInitial",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Initial (stress-free) global coordinate Z",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "xGStatic",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Static global coordinate X",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "yGStatic",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Static global coordinate Y",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "zGStatic",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Static global coordinate Z",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "rotation",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Specified rotation of supernode from stress free position \r\nto static equilibrium position.",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "direction",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Direction of axis for specified rotation.",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "referenceLine",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -145,7 +152,7 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Used to define the supernode position relative to \r\nthe x axis spanned by the reference supernodes",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "radialReference1",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -164,60 +171,61 @@
    "name" : "radialAngle",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "verticalOffset",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "radialDistance",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "boundaryConditionFrame",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/BoundaryConditionFrame",
    "description" : "Boundary condition reference co-ordinate system",
+   "optional" : true,
    "default" : "GLOBAL"
   }, {
    "name" : "xx",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Skew x-axis x-component in reference system",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "xy",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Skew x-axis y-component in reference system",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "xz",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Skew x-axis z-component in reference system",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "xp",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "XY-plane reference vector x-component  in reference system",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "yp",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "XY-plane reference vector y-component  in reference system",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "zp",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "XY-plane reference vector z-component  in reference system",
-   "default" : "0.0"
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

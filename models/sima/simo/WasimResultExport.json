@@ -2,7 +2,7 @@
  "name" : "WasimResultExport",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "floaterBody",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -21,7 +21,8 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Limit the number of wave components exported to file",
-   "optional" : true
+   "optional" : true,
+   "default" : "0"
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

@@ -2,13 +2,13 @@
  "name" : "HydrodynamicCrossSectionProperties",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "itemNumber",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Global segment number",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "excitationZoneProperty",
    "type" : "system/SIMOS/BlueprintAttribute",

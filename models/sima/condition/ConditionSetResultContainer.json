@@ -2,7 +2,7 @@
  "name" : "ConditionSetResultContainer",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/ResultContainer"],
  "attributes" : [{
    "name" : "properties",
    "type" : "system/SIMOS/BlueprintAttribute",

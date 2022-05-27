@@ -2,31 +2,35 @@
  "name" : "MultiEnvironmentSetup",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "windWaveLowerFrequency",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Wind wave lower frequency limit",
-   "optional" : true
+   "optional" : true,
+   "default" : "0.1"
   }, {
    "name" : "windWaveUpperFrequency",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Wind wave upper frequency limit",
-   "optional" : true
+   "optional" : true,
+   "default" : "3.0"
   }, {
    "name" : "swellWaveLowerFrequency",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Swell wave lower frequency limit",
-   "optional" : true
+   "optional" : true,
+   "default" : "0.05"
   }, {
    "name" : "swellWaveUpperFrequency",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Swell wave upper frequency limit",
-   "optional" : true
+   "optional" : true,
+   "default" : "2.0"
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

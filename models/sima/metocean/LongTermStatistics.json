@@ -2,7 +2,7 @@
  "name" : "LongTermStatistics",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/NamedObject"],
  "attributes" : [{
    "name" : "periods",
    "type" : "system/SIMOS/BlueprintAttribute",

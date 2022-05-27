@@ -2,17 +2,18 @@
  "name" : "RequirementOutputSlot",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/post/OutputSlot"],
  "attributes" : [{
    "name" : "useQuery",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Use boolean expressions using operators =, !=,&&,|| to create more advanced queries",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "query",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
+   "attributeType" : "string",
+   "optional" : true
   }, {
    "name" : "userRequirements",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -24,7 +25,7 @@
    "name" : "flatten",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
-   "default" : "false"
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

@@ -2,11 +2,12 @@
  "name" : "Text",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/report/ReportItem"],
  "attributes" : [{
    "name" : "text",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
+   "attributeType" : "string",
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

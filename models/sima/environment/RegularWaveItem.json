@@ -2,31 +2,31 @@
  "name" : "RegularWaveItem",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "amplitude",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Wave amplitude",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "period",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Wave period",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "phase",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Phase angle according to theory manual",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "direction",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Wave propagation direction",
-   "default" : "0.0"
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

@@ -2,7 +2,7 @@
  "name" : "MomentCoupling",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/NamedObject"],
  "attributes" : [{
    "name" : "body1",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -26,37 +26,37 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Initial moment",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "stiffness",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Moment stiffness",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "positiveDamping",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Damping coefficient for positive rotation",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "positiveExponent",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Exponent in damping for positive rotation",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "negativeDamping",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Damping coefficient for negative rotation",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "negativeExponent",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Exponent in damping for negative rotation",
-   "default" : "0.0"
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

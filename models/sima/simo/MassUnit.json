@@ -1,7 +1,7 @@
 {
  "name" : "MassUnit",
  "type" : "system/SIMOS/Enum",
- "values" : ["Mg", "kg"],
+ "values" : ["MG", "KG"],
  "labels" : ["Mg", "kg"]
 }
 

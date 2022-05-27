@@ -2,7 +2,7 @@
  "name" : "ModelSignal",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/post/GeneratorSignal"],
  "attributes" : [{
    "name" : "properties",
    "type" : "system/SIMOS/BlueprintAttribute",

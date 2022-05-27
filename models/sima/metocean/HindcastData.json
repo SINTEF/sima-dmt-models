@@ -2,7 +2,7 @@
  "name" : "HindcastData",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/NamedObject"],
  "attributes" : [{
    "name" : "dataFile",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -10,15 +10,18 @@
   }, {
    "name" : "path",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
+   "attributeType" : "string",
+   "optional" : true
   }, {
    "name" : "firstDate",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
+   "attributeType" : "string",
+   "optional" : true
   }, {
    "name" : "lastDate",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
+   "attributeType" : "string",
+   "optional" : true
   }, {
    "name" : "waveData",
    "type" : "system/SIMOS/BlueprintAttribute",

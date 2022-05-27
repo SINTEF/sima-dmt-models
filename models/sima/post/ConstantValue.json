@@ -2,7 +2,7 @@
  "name" : "ConstantValue",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/post/GeneratorSignal", "/sima/SingleParameter"],
  "attributes" : [{
    "name" : "properties",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -15,12 +15,13 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Value of the constant",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "unit",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "description" : "Defines the unit of the constant",
+   "optional" : true,
    "default" : "-"
   }],
  "storageRecipes" : [],

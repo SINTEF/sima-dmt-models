@@ -2,7 +2,7 @@
  "name" : "RIFLEXModel",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/simo/SIMOModel"],
  "attributes" : [{
    "name" : "airfoils",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -20,7 +20,7 @@
   }, {
    "name" : "location",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "/simo/CommonLocation",
+   "attributeType" : "/riflex/RIFLEXLocation",
    "contained" : true,
    "optional" : false
   }, {

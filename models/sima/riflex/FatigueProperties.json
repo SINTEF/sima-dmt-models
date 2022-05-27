@@ -2,30 +2,33 @@
  "name" : "FatigueProperties",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "calculationOption",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/FatigueCalculationOption",
+   "optional" : true,
    "default" : "DEFAULT"
   }, {
    "name" : "numCrossSectionPoints",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of points around cross-section where fatigue is",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "resultPrintOption",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/ResultPrintOption",
+   "optional" : true,
    "default" : "MOST_CRITICAL_POINT"
   }, {
    "name" : "timeSeriesPrintOption",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/TimeSeriesPrintOption",
+   "optional" : true,
    "default" : "NO_PRINT"
   }, {
    "name" : "timeSeriesLength",
@@ -44,24 +47,28 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Seed for generating random phase angles",
+   "optional" : true,
    "default" : "31415"
   }, {
    "name" : "axialFactor",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Default stress concentration factor for axial force contribution",
+   "optional" : true,
    "default" : "1.0"
   }, {
    "name" : "myFactor",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Default stress concentration factor for bending about Yaxis",
+   "optional" : true,
    "default" : "1.0"
   }, {
    "name" : "mzFactor",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Default stress concentration factor for bending about Zaxis",
+   "optional" : true,
    "default" : "1.0"
   }, {
    "name" : "crossSectionArea",
@@ -93,7 +100,7 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Include all SNCurves in fatigue analysis",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "crossSectionReferences",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -106,12 +113,12 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Relative duration / probability of the current condition",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "scaledContributions",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
-   "default" : "false"
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

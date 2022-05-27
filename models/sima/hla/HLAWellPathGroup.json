@@ -2,7 +2,7 @@
  "name" : "HLAWellPathGroup",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/hla/HLAObject"],
  "attributes" : [{
    "name" : "HLAWellPaths",
    "type" : "system/SIMOS/BlueprintAttribute",

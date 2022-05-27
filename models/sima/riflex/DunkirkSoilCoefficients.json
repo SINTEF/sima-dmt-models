@@ -2,7 +2,7 @@
  "name" : "DunkirkSoilCoefficients",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "xu",
    "type" : "system/SIMOS/BlueprintAttribute",

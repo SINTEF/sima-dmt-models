@@ -2,18 +2,20 @@
  "name" : "ExcitationZoneProperty",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/NamedObject"],
  "attributes" : [{
    "name" : "min",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Minimum non dimensional frequency limit",
+   "optional" : true,
    "default" : "0.125"
   }, {
    "name" : "max",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Minimum non dimensional frequency limit",
+   "optional" : true,
    "default" : "0.2"
   }],
  "storageRecipes" : [],

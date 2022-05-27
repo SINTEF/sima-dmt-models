@@ -1,7 +1,7 @@
 {
  "name" : "SafetyClass",
  "type" : "system/SIMOS/Enum",
- "values" : ["Low", "Normal", "High"],
+ "values" : ["LOW", "NORMAL", "HIGH"],
  "labels" : ["Low", "Normal", "High"]
 }
 

@@ -1,7 +1,7 @@
 {
  "name" : "SurfacesToIncludeFromMs2FileOption",
  "type" : "system/SIMOS/Enum",
- "values" : ["allVisibleSurfaces", "selectedEntityList"],
+ "values" : ["ALLVISIBLESURFACES", "SELECTEDENTITYLIST"],
  "labels" : ["All visible surfaces", "Selected entity list"]
 }
 

@@ -2,7 +2,7 @@
  "name" : "ReportFragmentInputSlot",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/workflow/ReportFragmentItem", "/post/InputSlot"],
  "storageRecipes" : [],
  "uiRecipes" : []
 }

@@ -2,50 +2,53 @@
  "name" : "ThinWalledPipeMaterial",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "materialModel",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/MaterialModel",
    "description" : "Type of material model.",
+   "optional" : true,
    "default" : "LINEAR_MATERIAL"
   }, {
    "name" : "elasticityModulus",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Modulus of elasticity",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "shearModulus",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Shear modulus",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "yieldStress",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Yield stress",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "strainStressCurveRise",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Rise of strain-stress curve for plastic region.",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "materialHardening",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Hardening parameter for material.",
+   "optional" : true,
    "default" : "1.0"
   }, {
    "name" : "numIntegrationPoints",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of integration points along circumference.",
-   "optional" : true
+   "optional" : true,
+   "default" : "16"
   }, {
    "name" : "strainStressCharacteristics",
    "type" : "system/SIMOS/BlueprintAttribute",

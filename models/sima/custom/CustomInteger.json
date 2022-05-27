@@ -2,25 +2,28 @@
  "name" : "CustomInteger",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/custom/ParameterField"],
  "attributes" : [{
    "name" : "label",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
+   "attributeType" : "string",
+   "optional" : true
   }, {
    "name" : "tooltip",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
+   "attributeType" : "string",
+   "optional" : true
   }, {
    "name" : "value",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "constraints",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "description" : "Give a valid range for a number: Use <,> for excluding and [] for including.\r\nExampless: \r\n- [0,4] Number from and including 0 to and including 4\r\n- <0,4> From and to, excluding \r\n- <,0> All negative numbers excluding 0\r\n- [0,> All positive numbers, including 0\r\n"
+   "description" : "Give a valid range for a number: Use <,> for excluding and [] for including.\r\nExampless: \r\n- [0,4] Number from and including 0 to and including 4\r\n- <0,4> From and to, excluding \r\n- <,0> All negative numbers excluding 0\r\n- [0,> All positive numbers, including 0\r\n",
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

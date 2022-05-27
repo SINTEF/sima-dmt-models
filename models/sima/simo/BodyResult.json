@@ -2,12 +2,13 @@
  "name" : "BodyResult",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "body",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "description" : "Result body"
+   "description" : "Result body",
+   "optional" : true
   }, {
    "name" : "initialPosition",
    "type" : "system/SIMOS/BlueprintAttribute",

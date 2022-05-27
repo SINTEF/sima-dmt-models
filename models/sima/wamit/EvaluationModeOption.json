@@ -1,7 +1,7 @@
 {
  "name" : "EvaluationModeOption",
  "type" : "system/SIMOS/Enum",
- "values" : ["fast", "accurate"],
+ "values" : ["FAST", "ACCURATE"],
  "labels" : ["Fast", "Accurate"]
 }
 

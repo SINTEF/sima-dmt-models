@@ -2,7 +2,7 @@
  "name" : "StressJointLineType",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/riflex/ARLineType"],
  "attributes" : [{
    "name" : "internalFluid",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -15,25 +15,25 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Quadratic drag coefficient in normal direction, non-dimensional.",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "addedMass",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Added mass pr. unit length coefficient in normal direction, non-dimensional.",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "extDiameterEnd1",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "External diameter at 'first' end of first conical segment in stress joint.",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "wallThicknessEnd1",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Wall thickness at 'first' end of first conical segment in stress joint.",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "segments",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -41,6 +41,19 @@
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
+  }, {
+   "name" : "loadFormulation",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/StressJointLoadFormulation",
+   "optional" : true,
+   "default" : "MORISON"
+  }, {
+   "name" : "vivCoefficients",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/TimeDomainVIVLoadCoefficients",
+   "contained" : true,
+   "optional" : false
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

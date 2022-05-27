@@ -2,73 +2,81 @@
  "name" : "TimeDomainVIVLoadCoefficients",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
+   "name" : "vivLoadFormulation",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/VIVLoadFormulation",
+   "optional" : true,
+   "default" : "CROSSFLOW_VIV_ONLY"
+  }, {
    "name" : "cv",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Vortex shedding load coefficient for cross-flow excitation (nondimensional)",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "fnull",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Natural cross-flow vortex shedding frequency (nondimensional)",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "fmin",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Minimum cross-flow vortex shedding frequency (nondimensional)",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "fmax",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Maximum cross-flow vortex shedding frequency (nondimensional)",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "nmem",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of time steps used in calculation of standard deviation",
+   "optional" : true,
    "default" : "500"
   }, {
    "name" : "cvil",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Load coefficient for in-line excitation",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "alphil",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Nondimensional parameter giving freedom to in-line excitation frequency",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "chh",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Higher harmonic load coefficient (nondimensional)",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "fnullil",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Natural in-line vortex shedding frequency (nondimensional)",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "fminil",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Minimum in-line vortex shedding frequency (nondimensional)",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "fmaxil",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Maximum in-line vortex shedding frequency (nondimensional)",
-   "default" : "0.0"
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

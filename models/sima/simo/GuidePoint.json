@@ -2,7 +2,7 @@
  "name" : "GuidePoint",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/simo/SIMOBodyPoint"],
  "attributes" : [{
    "name" : "winch",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -26,25 +26,25 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Local  x position",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "y",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Local  y position",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "z",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Local z position",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "diameter",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Diameter of guide hole",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "normalVector",
    "type" : "system/SIMOS/BlueprintAttribute",

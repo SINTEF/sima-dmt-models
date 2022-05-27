@@ -2,17 +2,19 @@
  "name" : "GenericExternalControlSystem",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/NamedObject"],
  "attributes" : [{
    "name" : "jarFile",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "description" : "Path to jar file"
+   "description" : "Path to jar file",
+   "optional" : true
   }, {
    "name" : "className",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "description" : "Class name of controller"
+   "description" : "Class name of controller",
+   "optional" : true
   }, {
    "name" : "measurementEntities",
    "type" : "system/SIMOS/BlueprintAttribute",

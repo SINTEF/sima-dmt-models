@@ -2,27 +2,27 @@
  "name" : "AutoSpectrumFilter",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/post/OperationNode"],
  "attributes" : [{
    "name" : "x",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "y",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "h",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "w",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "controlSignalInputSlots",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -49,19 +49,20 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Subtract mean value from input",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "smoothingParameter",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Smoothing parameter",
+   "optional" : true,
    "default" : "3"
   }, {
    "name" : "fadedOverlap",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Faded overlap coefficient",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "numPointsFFT",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -73,6 +74,7 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Relative length of cosine taper window",
+   "optional" : true,
    "default" : "0.1"
   }],
  "storageRecipes" : [],

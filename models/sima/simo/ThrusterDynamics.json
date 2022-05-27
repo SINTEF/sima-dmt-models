@@ -2,31 +2,32 @@
  "name" : "ThrusterDynamics",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "minTimeChange",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Minimum time to change from 10% to 90% of maximum thrust",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "tcThrust",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Time constant of thrust",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "maxRevolvingSpeed",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Maximum revolving speed",
+   "optional" : true,
    "default" : "10.0"
   }, {
    "name" : "tcAzimuth",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Time constant of azimuth change",
-   "default" : "0.0"
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

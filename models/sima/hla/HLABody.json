@@ -2,24 +2,27 @@
  "name" : "HLABody",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/hla/HLAObject"],
  "attributes" : [{
    "name" : "length",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Length",
+   "optional" : true,
    "default" : "10.0"
   }, {
    "name" : "width",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Width",
+   "optional" : true,
    "default" : "5.0"
   }, {
    "name" : "height",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Height",
+   "optional" : true,
    "default" : "5.0"
   }, {
    "name" : "appearance",

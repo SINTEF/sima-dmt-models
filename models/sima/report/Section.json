@@ -2,7 +2,7 @@
  "name" : "Section",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/report/ReportItem", "/report/Linkable"],
  "attributes" : [{
    "name" : "items",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -13,12 +13,14 @@
   }, {
    "name" : "identifier",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
+   "attributeType" : "string",
+   "optional" : true
   }, {
    "name" : "title",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "description" : "The title of the section."
+   "description" : "The title of the section.",
+   "optional" : true
   }, {
    "name" : "pageBreakBefore",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -29,6 +31,7 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/report/Orientation",
+   "optional" : true,
    "default" : "PORTRAIT"
   }],
  "storageRecipes" : [],

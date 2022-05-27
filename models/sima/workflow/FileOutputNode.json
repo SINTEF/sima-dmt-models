@@ -2,27 +2,27 @@
  "name" : "FileOutputNode",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/post/OutputNode", "/post/SignalPropertiesContainer"],
  "attributes" : [{
    "name" : "x",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "y",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "h",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "w",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "controlSignalInputSlots",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -47,44 +47,54 @@
    "name" : "filePath",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "description" : "Path to the output file."
+   "description" : "Path to the output file.",
+   "optional" : true
   }, {
    "name" : "fileFormat",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/post/FileFormat",
    "description" : "Format of the exported file.",
+   "optional" : true,
    "default" : "CSV"
   }, {
    "name" : "shellCommand",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "description" : "Shell command to execute after the export."
+   "description" : "Shell command to execute after the export.",
+   "optional" : true
   }, {
    "name" : "addMetaTags",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Include metadata tags in output",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "decimalSeparator",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/post/DecimalSeparator",
    "description" : "Set according to the language of Excel. Comma as\r\ndecimal-separator will make semicolon the value-separator.",
+   "optional" : true,
    "default" : "PERIOD"
   }, {
    "name" : "skipHeader",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Do not write a header on the file",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "specifyAdditionalProperties",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Specify additional properties in the file root",
-   "default" : "false"
+   "optional" : true
+  }, {
+   "name" : "writeRawText",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Writes a single input string into the given file",
+   "optional" : true
   }, {
    "name" : "outputSlot",
    "type" : "system/SIMOS/BlueprintAttribute",

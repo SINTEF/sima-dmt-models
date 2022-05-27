@@ -2,24 +2,27 @@
  "name" : "SIMOBody",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/Body"],
  "attributes" : [{
    "name" : "length",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Length",
+   "optional" : true,
    "default" : "10.0"
   }, {
    "name" : "width",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Width",
+   "optional" : true,
    "default" : "5.0"
   }, {
    "name" : "height",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Height",
+   "optional" : true,
    "default" : "5.0"
   }, {
    "name" : "appearance",
@@ -46,6 +49,7 @@
    "attributeType" : "string",
    "enumType" : "/simo/BodyType",
    "description" : "Body type",
+   "optional" : true,
    "default" : "PRESCRIBED"
   }, {
    "name" : "positionsImportType",
@@ -53,23 +57,26 @@
    "attributeType" : "string",
    "enumType" : "/simo/PositionsImportType",
    "description" : "Type of import for positions",
+   "optional" : true,
    "default" : "FIXED_POSITION"
   }, {
    "name" : "positionsFileName",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "description" : "File name for body positions"
+   "description" : "File name for body positions",
+   "optional" : true
   }, {
    "name" : "positionsHLAObjectName",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "description" : "HLA object name for body"
+   "description" : "HLA object name for body",
+   "optional" : true
   }, {
    "name" : "applyGravityForce",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Should gravity force be included",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "bodyPoints",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -191,12 +198,6 @@
    "name" : "smallBodyHydrodynamicalData",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "/simo/SmallBodyHydrodynamicData",
-   "contained" : true,
-   "optional" : true
-  }, {
-   "name" : "quadraticTransferFunction",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "/hydro/QuadraticTransferFunction",
    "contained" : true,
    "optional" : true
   }, {
@@ -384,17 +385,24 @@
    "attributeType" : "string",
    "enumType" : "/simo/HydrodynamicSeparationMethod",
    "description" : "Method for estimating low frequency motions",
+   "optional" : true,
    "default" : "BW2_FILTERING"
   }, {
    "name" : "hydrodynamicFilterCutOffPeriod",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Cut off period used to estimate low ferquency motion from total motion",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "bodyShapeData",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "/simo/BodyShapeData",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "qtf",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/hydro/SparseQTF",
    "contained" : true,
    "optional" : true
   }],

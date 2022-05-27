@@ -2,19 +2,19 @@
  "name" : "ProplibPropellerAndRudderThruster",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/simo/IThruster"],
  "attributes" : [{
    "name" : "minForce",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Minimum thruster force",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "maxForce",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Maximum thruster force",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "position",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -26,13 +26,13 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Resulting force, initial value if controlled by a DP-system",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "forceDirection",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Direction of thrust force in body x-y plane, initial value if controlled by a DP-system",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "thrusterDynamics",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -56,138 +56,161 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Should surface proximity loss be included?",
+   "optional" : true,
    "default" : "false"
   }, {
    "name" : "includeThrusterHullInteraction",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Should thruster-hull interaction be included?",
+   "optional" : true,
    "default" : "false"
   }, {
    "name" : "includeThrusterThrusterInteraction",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Should thruster-thruster interaction be included?",
+   "optional" : true,
    "default" : "false"
   }, {
    "name" : "maxRps",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "The RPS giving maximum force",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "diameter",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Thruster diameter",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "bladeAreaRatio",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Propeller blade area ratio",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "headboxHeight",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Headbox height",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "headboxRootChord",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Headbox root chord",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "headboxTipChord",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Headbox tip chord",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "headboxArea",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Headbox area",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "rudderHeight",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Rudder height",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "rudderRootChord",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Rudder root chord",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "rudderTipChord",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Rudder tip chord",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "rudderHornArea",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Rudder horn area",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "rudderTotalArea",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Rudder total area (including horn)",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "rudderPropellerHorizontalDistance",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Horizontal distance from propeller plane to rudder stock",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "rudderPropellerVerticalDistance",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Vertical distance from propeller plane to rudder top",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "rudderHeadboxGap",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Initial gap between rudder and headbox",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "wakeFraction",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Wake fraction",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "pitchRatio",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Propeller pitch ratio",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "bilgeRadius",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Bilge radius",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "verticalDistanceHull",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Vertical distance from propeller center to hull",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "thrustDeductionFactor",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Thrust deduction factor",
+   "optional" : true,
    "default" : "0.0"
   }],
  "storageRecipes" : [],

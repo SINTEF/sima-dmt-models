@@ -2,37 +2,37 @@
  "name" : "AmplitudeDiameterPropertyItem",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "nonDimensionalFrequency",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Non-dimensional frequency",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "adRatioCl0",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "A/D ratio when CL = 0",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "adRatioClMax",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "A/D ratio when CL = CLMax",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "maxExcitationCoefficient",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Maximum excitation coefficient",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "excitCoeffAd0",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Excitation coefficient for A/D=0",
-   "default" : "0.0"
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

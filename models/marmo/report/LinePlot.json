@@ -21,11 +21,18 @@
    "name" : "showlegend",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
-   "optional" : true
+   "optional" : true,
+   "default" : "true"
   }, {
    "name" : "showtitle",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
+   "optional" : true,
+   "default" : "true"
+  }, {
+   "name" : "caption",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "width",

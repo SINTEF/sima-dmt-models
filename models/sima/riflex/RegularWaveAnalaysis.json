@@ -2,24 +2,27 @@
  "name" : "RegularWaveAnalaysis",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "periods",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of periods for regular wave analysis, referring to wave or motion periods (of first vessel)",
+   "optional" : true,
    "default" : "1"
   }, {
    "name" : "timeSteps",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of integration time steps per period, recommended value: 50-120",
+   "optional" : true,
    "default" : "80"
   }, {
    "name" : "waveActing",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Whether there is a wave acting or not (in which case motions must be present)",
+   "optional" : true,
    "default" : "true"
   }, {
    "name" : "platformMotion",
@@ -27,6 +30,7 @@
    "attributeType" : "string",
    "enumType" : "/riflex/PlatformMotion",
    "description" : "Platform motion options:",
+   "optional" : true,
    "default" : "GENERATED"
   }],
  "storageRecipes" : [],

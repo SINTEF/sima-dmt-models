@@ -2,18 +2,20 @@
  "name" : "StabilityCalculationParameters",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "forceTolerance",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "An equilibrium will be accepted if all the force components are lower than the force tolerance, and all the moment components are lower than the moment tolerance.",
+   "optional" : true,
    "default" : "100.0"
   }, {
    "name" : "momentTolerance",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "An equilibrium will be accepted if all the force components are lower than the force tolerance, and all the moment components are lower than the moment tolerance.",
+   "optional" : true,
    "default" : "1000.0"
   }, {
    "name" : "staticEquilibriumBodies",
@@ -41,35 +43,35 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Minimum angle of the azimuth axis of rotation (body-related coordinate system)",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "maxAzimuthAngle",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Maximum angle of the azimuth axis of rotation (body-related coordinate system)",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "numAzimuthValues",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "minRotationAngle",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Minimum inclination angle about the azimuth axis",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "maxRotationAngle",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Maximum inclination angle about the azimuth axis",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "numRotationvalues",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
-   "default" : "0"
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

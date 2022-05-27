@@ -2,7 +2,7 @@
  "name" : "WorkflowContainerPackage",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "packages",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -22,7 +22,7 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Make all workflows directly contained in this package visible outside of the task",
-   "default" : "false"
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

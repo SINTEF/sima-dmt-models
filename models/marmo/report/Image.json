@@ -2,7 +2,7 @@
  "name" : "Image",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity", "/report/ReportItem"],
+ "extends" : ["/report/ReportItem"],
  "attributes" : [{
    "name" : "path",
    "type" : "system/SIMOS/BlueprintAttribute",

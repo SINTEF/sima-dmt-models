@@ -2,31 +2,31 @@
  "name" : "RollerBerthingFender",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/NamedObject"],
  "attributes" : [{
    "name" : "dynamicFriction",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Dynamic friction coefficient, sliding",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "staticFriction",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Friction coefficient, when not sliding (stiction)",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "shearStiffnes",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Shear stiffness associated with friction",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "velocityLimit",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Velocity limit for normal friction force",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "contactPlane",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -45,6 +45,7 @@
    "attributeType" : "string",
    "enumType" : "/simo/FenderAttachment",
    "description" : "Fender attachment",
+   "optional" : true,
    "default" : "GLOBAL_POINT"
   }, {
    "name" : "contactPoint",

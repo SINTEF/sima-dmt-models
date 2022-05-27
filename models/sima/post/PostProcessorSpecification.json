@@ -2,7 +2,7 @@
  "name" : "PostProcessorSpecification",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/NamedObject"],
  "attributes" : [{
    "name" : "nodes",
    "type" : "system/SIMOS/BlueprintAttribute",

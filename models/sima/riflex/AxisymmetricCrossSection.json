@@ -2,18 +2,20 @@
  "name" : "AxisymmetricCrossSection",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/riflex/CrossSection", "/riflex/CRSAxialFrictionModel", "/riflex/TimeDomainVIVLoadCoefficients"],
  "attributes" : [{
    "name" : "scfkSpecification",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Scaling of Froude-Krylov term in Morison’s equation in normal direction",
+   "optional" : true,
    "default" : "false"
   }, {
    "name" : "loadFormulation",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/LoadFormulation",
+   "optional" : true,
    "default" : "MORISON"
   }, {
    "name" : "hydrodynamicDiameter",
@@ -26,103 +28,105 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Added mass in tangential direction",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "addedMassNormDir",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Added mass in normal direction",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "dampingNormDir",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Damping coefficients in normal direction",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "cdt",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Quadratic drag coefficient in tangential direction.",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "cdn",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Quadratic drag coefficient in normal direction.",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "cmt",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Added mass per unit length in tangential direction.",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "cmn",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Added mass per unit length in normal direction.",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "cdtl",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Linear drag force coefficient in tangential direction.",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "cdnl",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Linear drag force coefficient in normal direction.",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "cdx",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Quadratic drag coefficient in tangential direction.",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "cdy",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Quadratic drag coefficient in normal direction.",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "amx",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Added mass per unit length in tangential direction.",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "amy",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Added mass per unit length in normal direction.",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "cdlx",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Linear drag force coefficient in tangential direction.",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "cdly",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Linear drag force coefficient in normal direction.",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "hydrodynamicInputCode",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/HydrodynamicInputCode",
    "description" : "Hydrodynamic input code",
+   "optional" : true,
    "default" : "DIMENSIONAL"
   }, {
    "name" : "scfk",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Scaling factor for Froude-Krylov term in Morison’s equation in normal direction",
+   "optional" : true,
    "default" : "1.0"
   }, {
    "name" : "scfkt",
@@ -130,43 +134,47 @@
    "attributeType" : "string",
    "enumType" : "/riflex/TangentialFroudeKrylovScaling",
    "description" : "Scale for Froude-Krylov term in Morison’s equation in tangential direction",
+   "optional" : true,
    "default" : "ON"
   }, {
    "name" : "massDampingSpecification",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Mass proportional Rayleigh damping",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "stiffnessDampingSpecification",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Stiffness proportional Rayleigh damping",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "axialDampingSpecification",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Local axial damping model",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "temperature",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Temperature at which the specification applies",
-   "optional" : true
+   "optional" : true,
+   "default" : "0.0"
   }, {
    "name" : "alpha",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Thermal expansion coefficient",
-   "optional" : true
+   "optional" : true,
+   "default" : "0.0"
   }, {
    "name" : "beta",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Pressure expansion coefficient",
-   "optional" : true
+   "optional" : true,
+   "default" : "0.0"
   }, {
    "name" : "massDamping",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -190,61 +198,63 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Use default thermal and pressure expansion settings",
+   "optional" : true,
    "default" : "true"
   }, {
    "name" : "staticFriction",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Static friction force corresponding to elongation",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "staticElongation",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Relative elongation",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "dynamicFriction",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Dynamic friction force corresponding to elongation",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "dynamicElongation",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Relative elongation",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "axialFriction",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Local axial friction model",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "cdax",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Quadratic aerodynamic drag force coefficient per unit length in tangential direction",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "cday",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Quadratic aerodynamic drag force coefficient per unit length in normal direction",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "cdaz",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Quadratic aerodynamic drag force coefficient per unit length in z direction",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "aerodynamicInputCode",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/AerodynamicInputCode",
    "description" : "Aerodynamic input code",
+   "optional" : true,
    "default" : "NONE"
   }, {
    "name" : "aerodynamicDiameter",
@@ -253,71 +263,79 @@
    "description" : "Aerodynamic diameter",
    "optional" : true
   }, {
+   "name" : "vivLoadFormulation",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/VIVLoadFormulation",
+   "optional" : true,
+   "default" : "CROSSFLOW_VIV_ONLY"
+  }, {
    "name" : "cv",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Vortex shedding load coefficient for cross-flow excitation (nondimensional)",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "fnull",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Natural cross-flow vortex shedding frequency (nondimensional)",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "fmin",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Minimum cross-flow vortex shedding frequency (nondimensional)",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "fmax",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Maximum cross-flow vortex shedding frequency (nondimensional)",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "nmem",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of time steps used in calculation of standard deviation",
+   "optional" : true,
    "default" : "500"
   }, {
    "name" : "cvil",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Load coefficient for in-line excitation",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "alphil",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Nondimensional parameter giving freedom to in-line excitation frequency",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "chh",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Higher harmonic load coefficient (nondimensional)",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "fnullil",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Natural in-line vortex shedding frequency (nondimensional)",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "fminil",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Minimum in-line vortex shedding frequency (nondimensional)",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "fmaxil",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Maximum in-line vortex shedding frequency (nondimensional)",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "massVolume",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -330,6 +348,7 @@
    "attributeType" : "string",
    "enumType" : "/riflex/AxialStiffness",
    "description" : "Axial stiffness input specification",
+   "optional" : true,
    "default" : "CONSTANT"
   }, {
    "name" : "bendingStiffnessInput",
@@ -337,6 +356,7 @@
    "attributeType" : "string",
    "enumType" : "/riflex/BendingStiffness",
    "description" : "Bending stiffness input specification",
+   "optional" : true,
    "default" : "CONSTANT"
   }, {
    "name" : "torsionStiffnessInput",
@@ -344,32 +364,34 @@
    "attributeType" : "string",
    "enumType" : "/riflex/TorsionStiffness",
    "description" : "Torsion stiffness input specification",
+   "optional" : true,
    "default" : "CONSTANT"
   }, {
    "name" : "pressureDependency",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Pressure dependency parameter related to bending moment",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "hysteresisOption",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/Hysteresis",
    "description" : "Hysteresis option in bending moment / curvature relation",
+   "optional" : true,
    "default" : "NO_HYSTERESIS"
   }, {
    "name" : "hardeningParameter",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Hardening parameter",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "axialStiffness",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Axial stiffness",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "axialStiffnessCharacteristics",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -382,19 +404,19 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Bending stiffness around y-axis",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "intFrictionMoment",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Internal friction moment.",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "shearStiffness",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Shear stiffness",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "bendingStiffnessCharacteristics",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -407,13 +429,13 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Torsion stiffness for negative twist.",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "positiveTorsionStiffness",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Torsion stiffness for positive twist.",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "torsionStiffnessCharacteristics",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -426,51 +448,73 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Tension capacity",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "maxCurvature",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Maximum curvature",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "barBeam",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/BarBeam",
    "description" : "Cross section type",
+   "optional" : true,
    "default" : "BAR"
   }, {
    "name" : "stiffnessFactor",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Initial stiffness factor for internal friction moment",
-   "optional" : true
+   "optional" : true,
+   "default" : "10.0"
   }, {
    "name" : "submerged",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Use formulation for partly submerged cross-section",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "coupledBendingTorsion",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Geometric stiffness coupling between bending and torsion",
-   "default" : "false"
-  }, {
-   "name" : "vivLoadFormulation",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string",
-   "enumType" : "/riflex/VIVLoadFormulation",
-   "default" : "CROSSFLOW_VIV_ONLY"
+   "optional" : true
   }, {
    "name" : "hydrodynamicRadiationInputCode",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/HydrodynamicRadiationInputCode",
    "description" : "Code for input of simplified radiation force coefficients",
+   "optional" : true,
    "default" : "DIMENSIONAL"
+  }, {
+   "name" : "solidityRatio",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Solidity ratio.",
+   "optional" : true
+  }, {
+   "name" : "netWidthEnd1",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Net width at segment end 1",
+   "optional" : true
+  }, {
+   "name" : "netWidthEnd2",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Net width at segment end 2",
+   "optional" : true
+  }, {
+   "name" : "currentVelocityScaling",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Ratio between reduced current speed and ambient current speed due to upstream net shadowing effects",
+   "optional" : true,
+   "default" : "1.0"
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

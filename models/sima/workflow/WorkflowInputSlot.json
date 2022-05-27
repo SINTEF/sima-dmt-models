@@ -2,7 +2,7 @@
  "name" : "WorkflowInputSlot",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/post/InputSlot"],
  "attributes" : [{
    "name" : "workflowInput",
    "type" : "system/SIMOS/BlueprintAttribute",

@@ -1,0 +1,29 @@
+{
+ "name" : "DynamicDirectionFrequencyComplexData",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["/sima/MOAO"],
+ "attributes" : [{
+   "name" : "directions",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true,
+   "dimensions" : "*"
+  }, {
+   "name" : "frequencies",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true,
+   "dimensions" : "*"
+  }, {
+   "name" : "dofs",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/hydro/DirectionDependentComplexValues",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

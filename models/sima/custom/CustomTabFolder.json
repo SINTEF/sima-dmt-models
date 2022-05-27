@@ -2,7 +2,7 @@
  "name" : "CustomTabFolder",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/custom/CustomComponent"],
  "attributes" : [{
    "name" : "tabItems",
    "type" : "system/SIMOS/BlueprintAttribute",

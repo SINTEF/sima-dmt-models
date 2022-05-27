@@ -2,68 +2,71 @@
  "name" : "DynamicWindChange",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "include",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "eventType",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/IEC2005WindEventType",
+   "optional" : true,
    "default" : "ECD"
   }, {
    "name" : "eventStartTime",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Time for event to start",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "direction",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/WindDirection",
+   "optional" : true,
    "default" : "POSITIVE"
   }, {
    "name" : "turbineClass",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/IEC2005WindTurbineClass",
+   "optional" : true,
    "default" : "NONE"
   }, {
    "name" : "vref",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Reference wind speed average over 10 minutes",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "iref",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Expected value of the turbulence intensity at 15 m/s",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "velocityChange",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "directionChange",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "durationOfEvent",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "gustMagnitude",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
-   "default" : "0.0"
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

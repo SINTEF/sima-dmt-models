@@ -2,7 +2,7 @@
  "name" : "ExcitationCoefficientsCurveProperty",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/riflex/ExcitationCoefficientsProperty"],
  "attributes" : [{
    "name" : "amplitudeDiameterPropertyItems",
    "type" : "system/SIMOS/BlueprintAttribute",

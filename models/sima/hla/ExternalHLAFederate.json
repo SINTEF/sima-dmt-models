@@ -2,7 +2,7 @@
  "name" : "ExternalHLAFederate",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/hla/HLAFederate"],
  "attributes" : [{
    "name" : "timeStep",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -13,38 +13,44 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Launch federate from provided class",
+   "optional" : true,
    "default" : "true"
   }, {
    "name" : "jarFile",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "description" : "Path to jar file"
+   "description" : "Path to jar file",
+   "optional" : true
   }, {
    "name" : "className",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "description" : "Class name starting HLAFederate"
+   "description" : "Class name starting HLAFederate",
+   "optional" : true
   }, {
    "name" : "classPath",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "description" : "Additional classpath needed by the external jar"
+   "description" : "Additional classpath needed by the external jar",
+   "optional" : true
   }, {
    "name" : "arguments",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "description" : "Arguments passed to the class' main function"
+   "description" : "Arguments passed to the class' main function",
+   "optional" : true
   }, {
    "name" : "libraryPath",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "description" : "Sometimes needed when using native libraries. Corresponds to the -Djava.library.path argument"
+   "description" : "Sometimes needed when using native libraries. Corresponds to the -Djava.library.path argument",
+   "optional" : true
   }, {
    "name" : "showOutput",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Show output from federate",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "hlaObjects",
    "type" : "system/SIMOS/BlueprintAttribute",

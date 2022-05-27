@@ -2,19 +2,19 @@
  "name" : "FluctuatingThreeComponent",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/environment/Wind"],
  "attributes" : [{
    "name" : "direction",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Wind propagation direction",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "meanSpeed",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Mean wind speed (along wind propagation direction)",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "velocityProfiles",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -26,77 +26,81 @@
    "name" : "longitudinalFileName",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "description" : "Path and filename for the fluctuating longitudinal wind time series"
+   "description" : "Path and filename for the fluctuating longitudinal wind time series",
+   "optional" : true
   }, {
    "name" : "lateralFileName",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "description" : "Path and filename for the fluctuating lateral wind time series"
+   "description" : "Path and filename for the fluctuating lateral wind time series",
+   "optional" : true
   }, {
    "name" : "verticalFileName",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "description" : "Path and filename for the fluctuating vertical wind time series"
+   "description" : "Path and filename for the fluctuating vertical wind time series",
+   "optional" : true
   }, {
    "name" : "lowerLeftX",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "X-coordinate of the lower left corner of the upstream border of the wind",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "lowerLeftY",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Y-coordinate of the lower left corner of the wind field domain",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "lowerLeftZ",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Z-coordinate of the lower left corner of the wind field domain",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "numPointsX",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of grid points in X- (longitudinal) direction",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "numPointsY",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of grid points in Y- (lateral) direction",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "numPointsZ",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of grid points in Z- (vertical) direction",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "sizeX",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Field size in X- (longitudinal) direction",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "sizeY",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Field size in Y- (lateral) direction",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "sizeZ",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Field size in Z- (vertical) direction",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "numSlices",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Buffer size: Number of wind crossectional planes (Slices) in memory",
-   "optional" : true
+   "optional" : true,
+   "default" : "800"
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

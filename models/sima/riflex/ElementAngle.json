@@ -2,7 +2,7 @@
  "name" : "ElementAngle",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/riflex/ElementReference"],
  "attributes" : [{
    "name" : "line",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -15,31 +15,34 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Segment on given line",
+   "optional" : true,
    "default" : "1"
   }, {
    "name" : "allSegments",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "All segments",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "elementNumber",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Local element number on actual segment",
+   "optional" : true,
    "default" : "1"
   }, {
    "name" : "allElements",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "All elements",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "plane",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/Plane",
    "description" : "Angle with axis",
+   "optional" : true,
    "default" : "XY"
   }, {
    "name" : "axis",
@@ -47,6 +50,7 @@
    "attributeType" : "string",
    "enumType" : "/riflex/Axis",
    "description" : "Projection in plane",
+   "optional" : true,
    "default" : "X"
   }],
  "storageRecipes" : [],

@@ -2,7 +2,7 @@
  "name" : "ModelDescription",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/report/ReportItem"],
  "attributes" : [{
    "name" : "object",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -13,7 +13,8 @@
    "name" : "caption",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "description" : "Caption"
+   "description" : "Caption",
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

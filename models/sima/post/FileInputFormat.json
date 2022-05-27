@@ -1,7 +1,7 @@
 {
  "name" : "FileInputFormat",
  "type" : "system/SIMOS/Enum",
- "values" : ["Automatic", "CSV"],
+ "values" : ["AUTOMATIC", "CSV"],
  "labels" : ["Automatic", "CSV"]
 }
 

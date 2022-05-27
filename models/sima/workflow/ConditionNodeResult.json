@@ -2,7 +2,7 @@
  "name" : "ConditionNodeResult",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/post/SignalStorage"],
  "attributes" : [{
    "name" : "resultContainer",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -13,6 +13,7 @@
    "name" : "filenames",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
+   "optional" : true,
    "dimensions" : "*"
   }],
  "storageRecipes" : [],

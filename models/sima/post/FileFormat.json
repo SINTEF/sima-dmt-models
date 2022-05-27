@@ -1,7 +1,7 @@
 {
  "name" : "FileFormat",
  "type" : "system/SIMOS/Enum",
- "values" : ["CSV", "Column", "HDF5", "EXCEL", "Automatic"],
- "labels" : ["CSV", "Column", "HDF5", "Excel", "Automatic"]
+ "values" : ["CSV", "COLUMN", "HDF5", "EXCEL", "JSON", "AUTOMATIC"],
+ "labels" : ["CSV", "Column", "HDF5", "Excel", "Json", "Automatic"]
 }
 

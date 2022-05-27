@@ -2,11 +2,12 @@
  "name" : "ReportTableInputSlot",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/workflow/ReportFragmentItem", "/post/InputSlot"],
  "attributes" : [{
    "name" : "caption",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
+   "attributeType" : "string",
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

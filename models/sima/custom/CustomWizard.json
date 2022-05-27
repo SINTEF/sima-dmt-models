@@ -2,21 +2,24 @@
  "name" : "CustomWizard",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "title",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
+   "attributeType" : "string",
+   "optional" : true
   }, {
    "name" : "selectionType",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "description" : "When an object of the given type is selected a popup menu will be enabled,"
+   "description" : "When an object of the given type is selected a popup menu will be enabled,",
+   "optional" : true
   }, {
    "name" : "menuLabel",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "description" : "Menu label shown in the popup"
+   "description" : "Menu label shown in the popup",
+   "optional" : true
   }, {
    "name" : "pages",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -29,17 +32,20 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Use inline script or external",
+   "optional" : true,
    "default" : "true"
   }, {
    "name" : "path",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "description" : "Path to the output file."
+   "description" : "Path to the output file.",
+   "optional" : true
   }, {
    "name" : "finishScript",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "description" : "This script will be run when finishing the wizard. Use the variable selection to get hold of the object selected in the navigator"
+   "description" : "This script will be run when finishing the wizard. Use the variable selection to get hold of the object selected in the navigator",
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

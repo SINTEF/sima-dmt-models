@@ -13,7 +13,8 @@
    "name" : "log",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
-   "optional" : true
+   "optional" : true,
+   "default" : "false"
   }, {
    "name" : "autoformat",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -33,12 +34,14 @@
    "name" : "showgrid",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
-   "optional" : true
+   "optional" : true,
+   "default" : "true"
   }, {
    "name" : "dashgridline",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
-   "optional" : true
+   "optional" : true,
+   "default" : "true"
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

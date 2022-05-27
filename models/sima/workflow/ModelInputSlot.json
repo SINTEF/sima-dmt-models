@@ -2,7 +2,7 @@
  "name" : "ModelInputSlot",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/post/InputSlot"],
  "attributes" : [{
    "name" : "reference",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -15,7 +15,7 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "If checked the children of the reference will replaced",
-   "default" : "false"
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

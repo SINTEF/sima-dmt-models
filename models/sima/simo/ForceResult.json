@@ -2,49 +2,49 @@
  "name" : "ForceResult",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "fx",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Statically calculated force",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "fy",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Statically calculated force",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "fz",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Statically calculated force",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "mx",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Statically calculated moment",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "my",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Statically calculated moment",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "mz",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Statically calculated moment",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "mass",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Mass of object",
-   "default" : "0.0"
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

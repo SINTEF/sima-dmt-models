@@ -2,7 +2,7 @@
  "name" : "RIFLEXEigenvalueResultEntry",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/ResultEntry"],
  "attributes" : [{
    "name" : "properties",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -13,21 +13,29 @@
   }, {
    "name" : "resource",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
+   "attributeType" : "string",
+   "optional" : true
   }, {
    "name" : "relative",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "changeNumber",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "results",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "/sima/Result",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "entries",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/sima/ResultEntry",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true

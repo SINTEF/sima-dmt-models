@@ -2,27 +2,27 @@
  "name" : "PolynomialFitFilter",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/post/OperationNode"],
  "attributes" : [{
    "name" : "x",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "y",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "h",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "w",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "controlSignalInputSlots",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -48,19 +48,21 @@
    "name" : "renameOutput",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
+   "optional" : true,
    "default" : "true"
   }, {
    "name" : "polynomalPower",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Polynomal power.",
+   "optional" : true,
    "default" : "2"
   }, {
    "name" : "subtract",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Subtract result from original signal",
-   "default" : "false"
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

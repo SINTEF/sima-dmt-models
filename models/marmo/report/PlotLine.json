@@ -17,29 +17,30 @@
    "name" : "showlegend",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
-   "optional" : true
+   "optional" : true,
+   "default" : "true"
   }, {
    "name" : "x",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
-   "dimensions" : "*",
-   "default" : "0.0"
+   "dimensions" : "*"
   }, {
    "name" : "y",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
-   "dimensions" : "*",
-   "default" : "0.0"
+   "dimensions" : "*"
   }, {
    "name" : "linewidth",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
-   "optional" : true
+   "optional" : true,
+   "default" : "1"
   }, {
    "name" : "pointsize",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
-   "optional" : true
+   "optional" : true,
+   "default" : "1"
   }, {
    "name" : "linestyle",
    "type" : "system/SIMOS/BlueprintAttribute",

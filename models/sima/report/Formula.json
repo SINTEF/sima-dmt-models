@@ -2,16 +2,18 @@
  "name" : "Formula",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/report/ReportItem"],
  "attributes" : [{
    "name" : "latex",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
+   "attributeType" : "string",
+   "optional" : true
   }, {
    "name" : "caption",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "description" : "Caption"
+   "description" : "Caption",
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

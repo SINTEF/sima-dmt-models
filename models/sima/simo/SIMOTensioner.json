@@ -2,31 +2,31 @@
  "name" : "SIMOTensioner",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/NamedObject"],
  "attributes" : [{
    "name" : "pretension",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Pretension in tensioner",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "maxRate",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Max. rate of change in pretension",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "stiffness",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Stiffness at specified pretension",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "strokeLength",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Stiffness at specified pretension",
-   "default" : "0.0"
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

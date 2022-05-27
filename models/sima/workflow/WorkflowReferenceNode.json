@@ -2,27 +2,27 @@
  "name" : "WorkflowReferenceNode",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/post/RunNode"],
  "attributes" : [{
    "name" : "x",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "y",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "h",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "w",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "controlSignalInputSlots",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -68,17 +68,18 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Set the workflow input from the outside. Use a model reference as source.",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "setFolderName",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Override the default folder name created. This folder will be relative to the running workflow. If left empty it will create the results directly in the workflow folder.",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "folderName",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
+   "attributeType" : "string",
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

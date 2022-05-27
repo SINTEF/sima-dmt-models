@@ -2,7 +2,7 @@
  "name" : "OmniDirectionalWaveLongTermStatistics",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/metocean/WaveLongTermStatistics"],
  "attributes" : [{
    "name" : "contours",
    "type" : "system/SIMOS/BlueprintAttribute",

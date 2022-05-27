@@ -2,7 +2,7 @@
  "name" : "GeotechnicalLineSpecification",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "geotechnicalLineSpecificationItems",
    "type" : "system/SIMOS/BlueprintAttribute",

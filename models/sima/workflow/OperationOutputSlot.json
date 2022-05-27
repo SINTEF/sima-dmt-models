@@ -2,7 +2,7 @@
  "name" : "OperationOutputSlot",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/post/OutputSlot"],
  "attributes" : [{
    "name" : "filterOutputSlot",
    "type" : "system/SIMOS/BlueprintAttribute",

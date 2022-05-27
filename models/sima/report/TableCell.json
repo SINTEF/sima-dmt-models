@@ -2,7 +2,7 @@
  "name" : "TableCell",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/report/TableCellStyle"],
  "attributes" : [{
    "name" : "font",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -14,17 +14,20 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/report/HorizontalAlignment",
+   "optional" : true,
    "default" : "LEFT"
   }, {
    "name" : "verticalTextAlignment",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/report/VerticalAlignment",
+   "optional" : true,
    "default" : "TOP"
   }, {
    "name" : "value",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
+   "attributeType" : "string",
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

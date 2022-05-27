@@ -2,7 +2,7 @@
  "name" : "PipeInPipeContact",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/NamedObject"],
  "attributes" : [{
    "name" : "masterLine",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -22,31 +22,32 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "First local segment in line for master pipe.",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "lastMasterSegment",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Last local segment in line for master pipe.",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "firstSlaveSegment",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "First local segment in line for slave pipe.",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "lastSlaveSegment",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Last local segment in line for slave pipe.",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "masterPipePosition",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/InnerOuter",
    "description" : "Position of master pipe.",
+   "optional" : true,
    "default" : "INNER"
   }, {
    "name" : "stiffnessType",
@@ -54,61 +55,62 @@
    "attributeType" : "string",
    "enumType" : "/riflex/StiffnessType",
    "description" : "Stiffness code for contact force.",
+   "optional" : true,
    "default" : "LINEAR"
   }, {
    "name" : "relativeDamping",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Desired relative damping level at estimated eigen period in the\r\npipe, pipe and contact spring system.",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "damping",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Dash pot damping coefficient per unit length of master pipe",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "frictionStiffness",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Spring stiffness associated with static friction coefficient",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "staticFriction",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Static friction coefficient.",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "dynamicFriction",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Dynamic (sliding) friction coefficient.",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "axialFrictionEnabled",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Axial (sliding) friction enabled.",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "rotationalFrictionEnabled",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Rotational (sliding) friction enabled.",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "velocityLimitFriction",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Velocity limit to change from sliding status (dynamic friction) to static\r\ndisplacement status (static friction)",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "linearStiffness",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Spring compression stiffness per unit length",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "stiffnessCharacteristics",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -120,12 +122,12 @@
    "name" : "masterAsMainRiser",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "slaveAsMainRiser",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "masterMainRiser",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -145,6 +147,7 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/InnerPipeLoading",
+   "optional" : true,
    "default" : "EXPOSED"
   }],
  "storageRecipes" : [],

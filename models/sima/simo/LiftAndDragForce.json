@@ -2,7 +2,7 @@
  "name" : "LiftAndDragForce",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/NamedObject"],
  "attributes" : [{
    "name" : "point",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -14,25 +14,25 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Maximum rudder angle",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "maxAngleVelocity",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Maximum velocity of rudder angle",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "lengthZ",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Length in z-direction",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "lengthX",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Length in x-direction",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "vectorZ",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -50,31 +50,31 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Rudder angle",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "currentFactor",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Factor that current velocity is multiplied with",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "vesselFactor",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Factor that vessel velocity is multiplied with",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "thrusterFactor",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Factor that thruster induced velocity is multiplied with",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "dragZ",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Quadratic force coefficient in rudder z-direction",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "items",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -88,13 +88,14 @@
    "attributeType" : "string",
    "enumType" : "/simo/LiftAndDragInterpolation",
    "description" : "Interpolation method",
+   "optional" : true,
    "default" : "LINEAR"
   }, {
    "name" : "symmetric",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Symmetry about x-axis",
-   "default" : "false"
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

@@ -2,7 +2,7 @@
  "name" : "StaticConditionResult",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "bodyResults",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -13,19 +13,23 @@
   }, {
    "name" : "header",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
+   "attributeType" : "string",
+   "optional" : true
   }, {
    "name" : "dateTag",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
+   "attributeType" : "string",
+   "optional" : true
   }, {
    "name" : "filepart",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
+   "attributeType" : "string",
+   "optional" : true
   }, {
    "name" : "globalForces",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
+   "optional" : true,
    "default" : "true"
   }],
  "storageRecipes" : [],

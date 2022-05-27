@@ -2,7 +2,7 @@
  "name" : "HLAPipeConfig3D",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/hla/HLAObject"],
  "attributes" : [{
    "name" : "color",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -12,7 +12,8 @@
   }, {
    "name" : "fileName",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
+   "attributeType" : "string",
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

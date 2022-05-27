@@ -2,48 +2,49 @@
  "name" : "BodyEigenvalueResult",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "body",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "description" : "Result body"
+   "description" : "Result body",
+   "optional" : true
   }, {
    "name" : "surgeExcursion",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Excursion in surge",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "swayExcursion",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Excursion in sway",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "heaveExcursion",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Excursion in heave",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "rollExcursion",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Excursion in roll",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "pitchExcursion",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Excursion in pitch",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "yawExcursion",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Excursion in yaw",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "periodResults",
    "type" : "system/SIMOS/BlueprintAttribute",

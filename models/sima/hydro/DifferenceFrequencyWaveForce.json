@@ -2,52 +2,49 @@
  "name" : "DifferenceFrequencyWaveForce",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/hydro/QuadraticTransferFunction"],
  "attributes" : [{
-   "name" : "id",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
-  }, {
    "name" : "nFreq",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "nDir",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "bichromatic",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "bidirectional",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "frequencies",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
-   "dimensions" : "*",
-   "default" : "0.0"
+   "optional" : true,
+   "dimensions" : "*"
   }, {
    "name" : "directions",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
-   "dimensions" : "*",
-   "default" : "0.0"
+   "optional" : true,
+   "dimensions" : "*"
   }, {
    "name" : "onFile",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "file",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
+   "attributeType" : "string",
+   "optional" : true
   }, {
    "name" : "surge",
    "type" : "system/SIMOS/BlueprintAttribute",

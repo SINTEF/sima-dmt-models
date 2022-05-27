@@ -2,18 +2,20 @@
  "name" : "PisaSoilLayerProfile",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/riflex/SoilLayerProfile"],
  "attributes" : [{
    "name" : "topLevelSoilPosition",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/TopLevelSoilPosition",
+   "optional" : true,
    "default" : "RELATIVE_TO_SEAFLOOR"
   }, {
    "name" : "offsetSeafloorToTopSoil",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Offset between seafloor and top of upper soil layer",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "soilLayers",

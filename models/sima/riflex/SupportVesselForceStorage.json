@@ -2,7 +2,7 @@
  "name" : "SupportVesselForceStorage",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "items",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -14,6 +14,7 @@
    "name" : "timeInterval",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
+   "optional" : true,
    "default" : "0.0"
   }],
  "storageRecipes" : [],

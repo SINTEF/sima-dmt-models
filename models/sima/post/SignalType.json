@@ -1,7 +1,7 @@
 {
  "name" : "SignalType",
  "type" : "system/SIMOS/Enum",
- "values" : ["Constant", "Equidistant", "NonEquidistant", "Text", "TextArray"],
+ "values" : ["CONSTANT", "EQUIDISTANT", "NONEQUIDISTANT", "TEXT", "TEXTARRAY"],
  "labels" : ["Constant number", "Equidistant signal", "Non-equidistant signal", "Text", "Array of text"]
 }
 

@@ -2,7 +2,7 @@
  "name" : "SIMOModel",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/environment/EnvironmentsContainer"],
  "attributes" : [{
    "name" : "airfoils",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -20,7 +20,7 @@
   }, {
    "name" : "location",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "/simo/CommonLocation",
+   "attributeType" : "/simo/SIMOLocation",
    "contained" : true,
    "optional" : false
   }, {

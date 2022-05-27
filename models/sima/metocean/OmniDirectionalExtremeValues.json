@@ -2,22 +2,23 @@
  "name" : "OmniDirectionalExtremeValues",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/metocean/LevelExtreme"],
  "attributes" : [{
    "name" : "level",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "duration",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "probability",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "extremeValues",
    "type" : "system/SIMOS/BlueprintAttribute",

@@ -2,31 +2,31 @@
  "name" : "HLAWinch",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/hla/HLAObject"],
  "attributes" : [{
    "name" : "initialLength",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Initial wire length at drum",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "maximumSpeed",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Max. run velocity for winch",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "acceleration",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Max. run acceleration for winch",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "maximumLength",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Max. wire length that can be added to drum",
-   "default" : "0.0"
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

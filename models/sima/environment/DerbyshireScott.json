@@ -2,24 +2,26 @@
  "name" : "DerbyshireScott",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/environment/Wave"],
  "attributes" : [{
    "name" : "direction",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Average wave propagation direction",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "spreadingExponent",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Exponent  η in cos spreading function",
-   "optional" : true
+   "optional" : true,
+   "default" : "2.0"
   }, {
    "name" : "numDirections",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of directions in spreading function, must be odd",
+   "optional" : true,
    "default" : "11"
   }, {
    "name" : "spreadingType",
@@ -27,49 +29,55 @@
    "attributeType" : "string",
    "enumType" : "/environment/WaveSpreadingType",
    "description" : "Wave spreading code",
+   "optional" : true,
    "default" : "UNIDIRECTIONAL"
   }, {
    "name" : "spectrumA",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Spectrum parameter, a",
-   "optional" : true
+   "optional" : true,
+   "default" : "0.214"
   }, {
    "name" : "spectrumB",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Spectrum parameter, b",
-   "optional" : true
+   "optional" : true,
+   "default" : "0.065"
   }, {
    "name" : "spectrumD",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Spectrum parameter, d",
-   "optional" : true
+   "optional" : true,
+   "default" : "0.26"
   }, {
    "name" : "waveHeight",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Significant wave height",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "wavePeriod",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Average wave period",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "lowerTrunc",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Lower truncation parameter",
-   "optional" : true
+   "optional" : true,
+   "default" : "0.0414"
   }, {
    "name" : "upperTrunc",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Upper truncation parameter",
-   "optional" : true
+   "optional" : true,
+   "default" : "10.367"
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

@@ -2,7 +2,7 @@
  "name" : "ExcitationCoefficientsTableProperty",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/riflex/ExcitationCoefficientsProperty"],
  "attributes" : [{
    "name" : "nonDimensionalFrequencyProperties",
    "type" : "system/SIMOS/BlueprintAttribute",

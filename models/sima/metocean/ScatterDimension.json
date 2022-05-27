@@ -2,19 +2,19 @@
  "name" : "ScatterDimension",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "nValues",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "values",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Scatter values",
-   "dimensions" : "*",
-   "default" : "0.0"
+   "optional" : true,
+   "dimensions" : "*"
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

@@ -2,7 +2,7 @@
  "name" : "NamedViewpoint",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/Viewpoint", "/sima/NamedObject"],
  "attributes" : [{
    "name" : "eye",
    "type" : "system/SIMOS/BlueprintAttribute",

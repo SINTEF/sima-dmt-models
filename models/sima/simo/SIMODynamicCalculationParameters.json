@@ -2,7 +2,7 @@
  "name" : "SIMODynamicCalculationParameters",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "externalControlSetup",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -20,6 +20,7 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Time increment for time series generation and storage",
+   "optional" : true,
    "default" : "0.5"
   }, {
    "name" : "waveMethod",
@@ -27,6 +28,7 @@
    "attributeType" : "string",
    "enumType" : "/simo/WaveMethod",
    "description" : "Selected wave method",
+   "optional" : true,
    "default" : "NO_WAVE"
   }, {
    "name" : "integrationMethod",
@@ -34,72 +36,84 @@
    "attributeType" : "string",
    "enumType" : "/simo/IntegrationMethod",
    "description" : "Selected integration method",
+   "optional" : true,
    "default" : "RUNGE_KUTTA"
   }, {
    "name" : "randomSeedWaves",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Random seed waves",
+   "optional" : true,
    "default" : "1"
   }, {
    "name" : "randomSeedWind",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Random seed wind",
+   "optional" : true,
    "default" : "1"
   }, {
    "name" : "randomGenerator",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/RandomGenerator",
-   "default" : "Legacy"
+   "optional" : true,
+   "default" : "LEGACY"
   }, {
    "name" : "headingCorrection",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Use correction due to heading change",
+   "optional" : true,
    "default" : "true"
   }, {
    "name" : "maxHeadingChange",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Max heading change",
+   "optional" : true,
    "default" : "45.0"
   }, {
    "name" : "largePatchLength",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Large visualization wave patch length",
-   "optional" : true
+   "optional" : true,
+   "default" : "2048.0"
   }, {
    "name" : "smallPatchLength",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Small visualization wave patch length",
-   "optional" : true
+   "optional" : true,
+   "default" : "256.0"
   }, {
    "name" : "cutFactorWaves",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Cut factor for wave components",
+   "optional" : true,
    "default" : "100"
   }, {
    "name" : "pointsLargePatch",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of points in large wave patch",
-   "optional" : true
+   "optional" : true,
+   "default" : "256"
   }, {
    "name" : "pointsSmallPatch",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of points in small wave patch",
-   "optional" : true
+   "optional" : true,
+   "default" : "128"
   }, {
    "name" : "writeVisFile",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "write visualization file?",
+   "optional" : true,
    "default" : "false"
   }, {
    "name" : "waveTimeSeries",
@@ -112,6 +126,7 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Wave time series from file",
+   "optional" : true,
    "default" : "false"
   }, {
    "name" : "bodyWaveMethodOptions",
@@ -125,25 +140,28 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Hydrosystem filter period",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "hydroFilterMethod",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/HydroSystemFilterMethod",
    "description" : "Hydro Filter Method",
+   "optional" : true,
    "default" : "BLOCKED"
   }, {
    "name" : "nWindSeaComponents",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of wind-sea components",
+   "optional" : true,
    "default" : "2000"
   }, {
    "name" : "nSwellSeaComponents",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of wind-sea components",
+   "optional" : true,
    "default" : "400"
   }, {
    "name" : "windTimeSeriesMethod",
@@ -151,6 +169,7 @@
    "attributeType" : "string",
    "enumType" : "/simo/WindTimeSeriesMethod",
    "description" : "Wind Time Series Method",
+   "optional" : true,
    "default" : "SAME"
   }, {
    "name" : "windVelocityDimension",
@@ -158,6 +177,7 @@
    "attributeType" : "string",
    "enumType" : "/simo/WindVelocityDimension",
    "description" : "Wind Velocity Dimension",
+   "optional" : true,
    "default" : "TWO"
   }, {
    "name" : "windForceMethod",
@@ -165,12 +185,14 @@
    "attributeType" : "string",
    "enumType" : "/simo/WindForceMethod",
    "description" : "Wind Force Method",
+   "optional" : true,
    "default" : "RELATIVE"
   }, {
    "name" : "windMethod",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/WindMethod",
+   "optional" : true,
    "default" : "NO_WIND"
   }, {
    "name" : "windSpectrumVerticalDomain",
@@ -184,6 +206,7 @@
    "attributeType" : "string",
    "enumType" : "/simo/CurrentForceMethod",
    "description" : "Quadratic Current Force Method",
+   "optional" : true,
    "default" : "RELATIVE"
   }, {
    "name" : "linearCurrentForceMethod",
@@ -191,11 +214,13 @@
    "attributeType" : "string",
    "enumType" : "/simo/CurrentForceMethod",
    "description" : "Linear Current Force Method",
+   "optional" : true,
    "default" : "RELATIVE"
   }, {
    "name" : "exportResultsToWasim",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
+   "optional" : true,
    "default" : "false"
   }, {
    "name" : "wasimResultExport",
@@ -208,222 +233,258 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store wind forces?",
+   "optional" : true,
    "default" : "false"
   }, {
    "name" : "storeSumGeneralLineForces",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store sum general line forces?",
+   "optional" : true,
    "default" : "false"
   }, {
    "name" : "storeTotalForces",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store total forces?",
+   "optional" : true,
    "default" : "false"
   }, {
    "name" : "storeRetardationForces",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store retardation forces?",
+   "optional" : true,
    "default" : "false"
   }, {
    "name" : "storeHydrostaticStiffnessForces",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store hydrostatic stiffness forces?",
+   "optional" : true,
    "default" : "false"
   }, {
    "name" : "storeLinearDamping",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store linear damping?",
+   "optional" : true,
    "default" : "false"
   }, {
    "name" : "storeQuadraticDamping",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store quadratic damping?",
+   "optional" : true,
    "default" : "false"
   }, {
    "name" : "storeDistributedHydrodynamicForces",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store distributed hydrodynamic forces?",
+   "optional" : true,
    "default" : "false"
   }, {
    "name" : "storeFixedBodyAndSlenderElementStripResults",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store results for slender element strips and fixed body elements?",
+   "optional" : true,
    "default" : "false"
   }, {
    "name" : "storeWaveDriftDamping",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store wave-drift damping?",
+   "optional" : true,
    "default" : "false"
   }, {
    "name" : "storeLinearCurrentDrag",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store linear current drag?",
+   "optional" : true,
    "default" : "false"
   }, {
    "name" : "storeQuadraticCurrentDrag",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store quadratic current drag?",
+   "optional" : true,
    "default" : "false"
   }, {
    "name" : "storeSmallBodyHydrodynamicForces",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store small body hydrodynamic forces?",
+   "optional" : true,
    "default" : "false"
   }, {
    "name" : "storeResultantPositioningElementForces",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store resultant positioning element forces?",
+   "optional" : true,
    "default" : "false"
   }, {
    "name" : "storePositioningElementForceComponents",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store positioning element force components?",
+   "optional" : true,
    "default" : "false"
   }, {
    "name" : "storeTotalPositioningForces",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store total positioning element forces?",
+   "optional" : true,
    "default" : "false"
   }, {
    "name" : "storeThrusterForces",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store thruster forces?",
+   "optional" : true,
    "default" : "false"
   }, {
    "name" : "storeSumThrusterForces",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store sum thruster forces?",
+   "optional" : true,
    "default" : "false"
   }, {
    "name" : "storeDynamicPositioningEstimators",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store dynamic positioning estimators?",
+   "optional" : true,
    "default" : "false"
   }, {
    "name" : "storeSumSpecifiedForces",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store sum specified forces?",
+   "optional" : true,
    "default" : "false"
   }, {
    "name" : "storeSumExternalForces",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store sum external forces?",
+   "optional" : true,
    "default" : "false"
   }, {
    "name" : "storeSumCouplingForces",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store sum coupling forces?",
+   "optional" : true,
    "default" : "false"
   }, {
    "name" : "storeResultantCouplingElementForces",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store resultant coupling element forces?",
+   "optional" : true,
    "default" : "false"
   }, {
    "name" : "storeGlobalCouplingForceComponents",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store global coupling force components?",
+   "optional" : true,
    "default" : "false"
   }, {
    "name" : "storeLocalCouplingForceComponents",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store local coupling force components?",
+   "optional" : true,
    "default" : "false"
   }, {
    "name" : "storeGlobalLowFrequencyPosition",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store global low-frequency position?",
+   "optional" : true,
    "default" : "false"
   }, {
    "name" : "storeGlobalTotalPosition",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store global total position?",
+   "optional" : true,
    "default" : "true"
   }, {
    "name" : "storeGlobalAcceleration",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store global acceleration?",
+   "optional" : true,
    "default" : "false"
   }, {
    "name" : "storeLocalAccelerations",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store local acceleration?",
+   "optional" : true,
    "default" : "false"
   }, {
    "name" : "storeLocalVelocity",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store local velocity",
+   "optional" : true,
    "default" : "false"
   }, {
    "name" : "storeCatenarySystemForces",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store catenery system forces. Requires visualization storage",
+   "optional" : true,
    "default" : "false"
   }, {
    "name" : "storeCatenarySystemNodes",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store displacement of catenary system nodes. Requires visualization storage",
+   "optional" : true,
    "default" : "false"
   }, {
    "name" : "timeStep",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Time integration step",
+   "optional" : true,
    "default" : "0.5"
   }, {
    "name" : "simulationLength",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Simulation length",
+   "optional" : true,
    "default" : "11000.0"
   }, {
    "name" : "simulationStartTime",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Time (in generated time series) that dynamic simulation will start from",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "rampDuration",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Determines the ramp duration in seconds",
+   "optional" : true,
    "default" : "2.5"
   }, {
    "name" : "requestedTimeSeriesLength",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Length of generated time series",
+   "optional" : true,
    "default" : "16384.0"
   }],
  "storageRecipes" : [],

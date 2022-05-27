@@ -2,7 +2,7 @@
  "name" : "VariableInputSlot",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/post/InputSlot"],
  "attributes" : [{
    "name" : "variable",
    "type" : "system/SIMOS/BlueprintAttribute",

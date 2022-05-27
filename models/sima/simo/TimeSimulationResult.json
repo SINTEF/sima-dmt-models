@@ -2,7 +2,7 @@
  "name" : "TimeSimulationResult",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/Result"],
  "attributes" : [{
    "name" : "properties",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -13,30 +13,35 @@
   }, {
    "name" : "resource",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
+   "attributeType" : "string",
+   "optional" : true
   }, {
    "name" : "relative",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "_type",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
+   "attributeType" : "string",
+   "optional" : true
   }, {
    "name" : "time",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
+   "optional" : true,
    "default" : "-1"
   }, {
    "name" : "size",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
+   "optional" : true,
    "default" : "-1"
   }, {
    "name" : "runNumber",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
+   "optional" : true,
    "default" : "-1"
   }, {
    "name" : "messages",

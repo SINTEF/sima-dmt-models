@@ -2,7 +2,7 @@
  "name" : "ReplaceOperation",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/condition/ModelVariationOperation"],
  "attributes" : [{
    "name" : "model",
    "type" : "system/SIMOS/BlueprintAttribute",

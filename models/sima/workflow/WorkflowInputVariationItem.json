@@ -2,19 +2,22 @@
  "name" : "WorkflowInputVariationItem",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/workflow/WorkflowLinkItem"],
  "attributes" : [{
    "name" : "fromId",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
+   "attributeType" : "string",
+   "optional" : true
   }, {
    "name" : "toId",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
+   "attributeType" : "string",
+   "optional" : true
   }, {
    "name" : "runRoots",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
+   "optional" : true,
    "dimensions" : "*"
   }],
  "storageRecipes" : [],

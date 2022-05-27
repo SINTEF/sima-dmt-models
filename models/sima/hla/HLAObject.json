@@ -2,7 +2,7 @@
  "name" : "HLAObject",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/NamedObject"],
  "storageRecipes" : [],
  "uiRecipes" : []
 }

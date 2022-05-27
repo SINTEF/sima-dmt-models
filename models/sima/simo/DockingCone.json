@@ -2,12 +2,13 @@
  "name" : "DockingCone",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/NamedObject"],
  "attributes" : [{
    "name" : "dampingExponent",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Exponent of velocity in damping term",
+   "optional" : true,
    "default" : "1.0"
   }, {
    "name" : "dampingInterpolation",
@@ -15,6 +16,7 @@
    "attributeType" : "string",
    "enumType" : "/simo/Interpolation",
    "description" : "Interpolation method for damping",
+   "optional" : true,
    "default" : "LINEAR"
   }, {
    "name" : "forceInterpolation",
@@ -22,44 +24,47 @@
    "attributeType" : "string",
    "enumType" : "/simo/Interpolation",
    "description" : "Interpolation method for force",
+   "optional" : true,
    "default" : "LINEAR"
   }, {
    "name" : "velocityLimit",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Velocity limit for friction force (Damping Exponent = 0)",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "maxRadialDistance",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Maximum radial distance at entry",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "friction",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Friction coefficient for sliding along the cone or cylinder surface",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "failureMode",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/ActivationFailureMode",
    "description" : "Failure mode of coupling element",
+   "optional" : true,
    "default" : "NONE"
   }, {
    "name" : "failureTime",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Earliest possible time of failure",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "breakingStrength",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Breaking strength",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "dockingPinBody",
    "type" : "system/SIMOS/BlueprintAttribute",

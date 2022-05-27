@@ -2,7 +2,7 @@
  "name" : "NonLinearHydrostaticStiffness",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "geometryPosition",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -13,13 +13,14 @@
    "name" : "geometryFile",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "description" : "Geometry definition file"
+   "description" : "Geometry definition file",
+   "optional" : true
   }, {
    "name" : "transparency",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Geometry transparency, [0-1], where 1 is full transparency.",
-   "default" : "0.0"
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

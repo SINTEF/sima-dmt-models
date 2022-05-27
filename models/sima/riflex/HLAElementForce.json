@@ -2,7 +2,7 @@
  "name" : "HLAElementForce",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/riflex/ElementReference", "/sima/NamedObject"],
  "attributes" : [{
    "name" : "line",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -15,37 +15,40 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Segment on given line",
+   "optional" : true,
    "default" : "1"
   }, {
    "name" : "allSegments",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "All segments",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "elementNumber",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Local element number on actual segment",
+   "optional" : true,
    "default" : "1"
   }, {
    "name" : "allElements",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "All elements",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "allEnds",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "All ends",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "elementEnd",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/End",
    "description" : "End number 1 or 2",
+   "optional" : true,
    "default" : "ONE"
   }],
  "storageRecipes" : [],

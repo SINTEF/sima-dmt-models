@@ -2,7 +2,7 @@
  "name" : "RegularLineType",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/riflex/ARLineType"],
  "attributes" : [{
    "name" : "internalFluid",
    "type" : "system/SIMOS/BlueprintAttribute",

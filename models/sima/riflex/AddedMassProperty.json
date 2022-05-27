@@ -2,7 +2,7 @@
  "name" : "AddedMassProperty",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/NamedObject"],
  "attributes" : [{
    "name" : "massFrequencyProperties",
    "type" : "system/SIMOS/BlueprintAttribute",

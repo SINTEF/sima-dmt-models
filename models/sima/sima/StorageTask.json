@@ -2,7 +2,7 @@
  "name" : "StorageTask",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/Task"],
  "attributes" : [{
    "name" : "doubleVariables",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -28,6 +28,7 @@
    "name" : "runNumber",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
+   "optional" : true,
    "default" : "0"
   }, {
    "name" : "scripts",
@@ -41,17 +42,20 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/sima/StorageTaskType",
-   "default" : "Private"
+   "optional" : true,
+   "default" : "PRIVATE"
   }, {
    "name" : "root",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "description" : "Defines the root of the storage task. If not set, the root will be the normal workspace task location"
+   "description" : "Defines the root of the storage task. If not set, the root will be the normal workspace task location",
+   "optional" : true
   }, {
    "name" : "includeInExport",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "If not set the file content withing this storage task will be ommitted when exporting.",
+   "optional" : true,
    "default" : "true"
   }],
  "storageRecipes" : [],

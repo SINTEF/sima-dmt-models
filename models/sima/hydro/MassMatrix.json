@@ -2,24 +2,15 @@
  "name" : "MassMatrix",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/hydro/Matrix6"],
  "attributes" : [{
-   "name" : "id",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
-  }, {
-   "name" : "nDOF2",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "integer",
-   "default" : "0"
-  }, {
    "name" : "values",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
-   "dimensions" : "*",
-   "default" : "0.0"
+   "optional" : true,
+   "dimensions" : "*"
   }, {
-   "name" : "COG",
+   "name" : "cog",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "/sima/Point3",
    "contained" : true,

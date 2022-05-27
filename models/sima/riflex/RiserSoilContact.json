@@ -2,103 +2,108 @@
  "name" : "RiserSoilContact",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/riflex/SeafloorContact"],
  "attributes" : [{
    "name" : "axialStiffness",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Horizontal stiffness parameter for seafloor in axial direction",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "axialFriction",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Horizontal friction parameter for seafloor in axial direction",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "axialDamping",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Axial seafloor damping ",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "lateralStiffness",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Horizontal stiffness parameter for seafloor in lateral direction",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "lateralFriction",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Horizontal stiffness parameter for seafloor in lateral direction",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "lateralDamping",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Lateral seafloor damping",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "soilSubmergedWeight",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Soil submerged weight",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "soilShearStrength",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : " Soil shear strength at seabed",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "soilShearStrengthGradient",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Soil shear strength vertical gradient",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "soilPoissonRatio",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Soil Poisson ratio",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "soilGModulus",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Soil G-modulus/compressive strength",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "stiffnessModulusRelationship",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Relationship between dynamic stiffness and G-modulus",
-   "optional" : true
+   "optional" : true,
+   "default" : "0.88"
   }, {
    "name" : "alpha",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Scaling factor for peak soil suction relative to peak soil compression",
-   "optional" : true
+   "optional" : true,
+   "default" : "1.0"
   }, {
    "name" : "beta",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Scaling factor for peak soil suction relative to peak soil compression",
-   "optional" : true
+   "optional" : true,
+   "default" : "1.0"
   }, {
    "name" : "kbc",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Mobilization displacement for soil bearing capacity as fraction of pipe soil contact width",
-   "optional" : true
+   "optional" : true,
+   "default" : "0.05"
   }, {
    "name" : "kt",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Mobilization displacement for max soil suction as fraction of pipe soil contact width",
-   "optional" : true
+   "optional" : true,
+   "default" : "0.08"
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

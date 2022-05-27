@@ -1,7 +1,7 @@
 {
  "name" : "VonMisesStress",
  "type" : "system/SIMOS/Enum",
- "values" : ["Midwall", "Maximum"],
+ "values" : ["MIDWALL", "MAXIMUM"],
  "labels" : ["Mid wall", "Maximum"]
 }
 

@@ -2,7 +2,7 @@
  "name" : "ContactSurfacePoint",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/riflex/SegmentReference"],
  "attributes" : [{
    "name" : "line",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -15,19 +15,21 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Segment on given line",
+   "optional" : true,
    "default" : "1"
   }, {
    "name" : "allSegments",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "All segments",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "segmentEnd",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/End",
    "description" : "Local segment end (1 or 2).",
+   "optional" : true,
    "default" : "ONE"
   }, {
    "name" : "tensioner",

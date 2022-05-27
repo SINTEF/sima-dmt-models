@@ -2,19 +2,19 @@
  "name" : "ThrusterForbiddenZone",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "zoneStart",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Start of forbidden zone of thrust force",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "zoneEnd",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "End of forbidden zone of thrust force",
-   "default" : "0.0"
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

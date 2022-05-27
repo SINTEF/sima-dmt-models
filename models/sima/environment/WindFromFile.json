@@ -2,18 +2,19 @@
  "name" : "WindFromFile",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/environment/Wind"],
  "attributes" : [{
    "name" : "direction",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Wind propagation direction",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "fileName",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "description" : "Name of external file with specified wind data"
+   "description" : "Name of external file with specified wind data",
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

@@ -2,24 +2,26 @@
  "name" : "IrregularResponseAnalysis",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "waveTimeSeriesFile",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Wave time series read from file",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "simulationLength",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Length of simulation",
+   "optional" : true,
    "default" : "11000.0"
   }, {
    "name" : "timeStep",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Simulation time step",
+   "optional" : true,
    "default" : "0.1"
   }, {
    "name" : "irrWaveIndicator",
@@ -27,6 +29,7 @@
    "attributeType" : "string",
    "enumType" : "/riflex/IrregularWaveIndicator",
    "description" : "Irregular wave indicator",
+   "optional" : true,
    "default" : "NEW"
   }, {
    "name" : "irrMotionIndicator",
@@ -34,6 +37,7 @@
    "attributeType" : "string",
    "enumType" : "/riflex/IrregularMotionIndicator",
    "description" : "Irregular motion indicator",
+   "optional" : true,
    "default" : "STAT"
   }, {
    "name" : "lowFrequencyMotionIndicator",
@@ -41,19 +45,21 @@
    "attributeType" : "string",
    "enumType" : "/riflex/LowFrequencyMotionIndicator",
    "description" : "Low frequency motion indicator",
+   "optional" : true,
    "default" : "NONE"
   }, {
    "name" : "simulationStartTime",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Time (in generated time series) that dynamic simulation will start from",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "motionScaling",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Switch for scaling of terminal point motions",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "supportVesselMotionScalingItems",
    "type" : "system/SIMOS/BlueprintAttribute",

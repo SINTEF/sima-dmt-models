@@ -2,18 +2,19 @@
  "name" : "FileOutputSlot",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/post/OutputSlot"],
  "attributes" : [{
    "name" : "filename",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "description" : "Name of file to be imported"
+   "description" : "Name of file to be imported",
+   "optional" : true
   }, {
    "name" : "pathOnly",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Import the path to the specified file and not the content",
-   "default" : "false"
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

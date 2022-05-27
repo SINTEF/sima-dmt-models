@@ -2,7 +2,7 @@
  "name" : "PostprocessorOutputSlot",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/post/OutputSlot"],
  "attributes" : [{
    "name" : "postprocessorOutput",
    "type" : "system/SIMOS/BlueprintAttribute",

@@ -2,61 +2,61 @@
  "name" : "SeafloorSpringContact",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/riflex/SeafloorContact"],
  "attributes" : [{
    "name" : "axialStiffness",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Horizontal stiffness parameter for seafloor in axial direction",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "axialFriction",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Horizontal friction parameter for seafloor in axial direction",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "axialDamping",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Axial seafloor damping ",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "lateralStiffness",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Horizontal stiffness parameter for seafloor in lateral direction",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "lateralFriction",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Horizontal stiffness parameter for seafloor in lateral direction",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "lateralDamping",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Lateral seafloor damping",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "normalStiffness",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Normal stiffness parameter for seafloor",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "normalDamping",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Normal seafloor damping",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "applyLateralContactForces",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Apply lateral contact forces at the external contact radius, giving a torsional moment",
-   "default" : "false"
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

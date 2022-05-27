@@ -2,12 +2,13 @@
  "name" : "SlugForceSpecification",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "enterTime",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Time when slug enters first end of main riser line",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "interruption",
@@ -15,31 +16,33 @@
    "attributeType" : "string",
    "enumType" : "/riflex/SlugForceInterruption",
    "description" : "Interruption parameter",
+   "optional" : true,
    "default" : "SLUG"
   }, {
    "name" : "length",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Initial slug length",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "mass",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Slug mass",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "velocity",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Initial slug velocity",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "densityControl",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/SlugForceDensityControl",
    "description" : "Control parameter density",
+   "optional" : true,
    "default" : "CONSTANT"
   }, {
    "name" : "velocityControl",
@@ -47,49 +50,69 @@
    "attributeType" : "string",
    "enumType" : "/riflex/SlugForceVelocityControl",
    "description" : "Control parameter velocity",
+   "optional" : true,
    "default" : "CONSTANT"
   }, {
    "name" : "cycles",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of slug cycles",
+   "optional" : true,
    "default" : "1"
   }, {
    "name" : "cycleTime",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Slug cycle time",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "secondPosition",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Second vertical position for the slug unit mass",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "massAtSecondPosition",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Slug unit mass at second vertical position",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "referenceDepth",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Reference depth",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "velocitySpecification",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Velocity specification",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "velocityExponent",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Exponent for velocity",
-   "default" : "0.0"
+   "optional" : true
+  }, {
+   "name" : "importFlow",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Import internal flow data from file",
+   "optional" : true
+  }, {
+   "name" : "flowFile",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "Internal flow data specification",
+   "optional" : true
+  }, {
+   "name" : "addedFlow",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Specified flow is in addition to that given on main riser line (default is replacement)",
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

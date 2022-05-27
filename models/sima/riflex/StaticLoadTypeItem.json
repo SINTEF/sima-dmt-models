@@ -2,13 +2,13 @@
  "name" : "StaticLoadTypeItem",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "runWithPrevious",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Run the load group together with the last",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "boundaryChangeGroup",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -21,42 +21,49 @@
    "attributeType" : "string",
    "enumType" : "/riflex/StaticLoadType",
    "description" : "Load Type",
+   "optional" : true,
    "default" : "VOLU"
   }, {
    "name" : "nStep",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of load steps",
+   "optional" : true,
    "default" : "10"
   }, {
    "name" : "maxIterations",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Maximum number of iterations during application of load",
+   "optional" : true,
    "default" : "10"
   }, {
    "name" : "accuracy",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Required accuracy measured by displacement norm",
+   "optional" : true,
    "default" : "1.0E-5"
   }, {
    "name" : "convergenceNorm",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/ConvergenceNorm",
+   "optional" : true,
    "default" : "DISP"
   }, {
    "name" : "energyAccuracy",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : " Required accuracy measured by energy norm. Value is not used if convergence norm is 'Displacement'.",
+   "optional" : true,
    "default" : "1.0E-5"
   }, {
    "name" : "entered",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "start condition for pipe-in-pipe contact",
+   "optional" : true,
    "default" : "true"
   }, {
    "name" : "temperatureVariations",
@@ -84,12 +91,14 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Scaling factor for growth profile",
+   "optional" : true,
    "default" : "1.0"
   }, {
    "name" : "windOnTurbineBlades",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Enables wind force on turbine blades",
+   "optional" : true,
    "default" : "false"
   }],
  "storageRecipes" : [],

@@ -2,56 +2,37 @@
  "name" : "DiffractedWaveVelocity",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
-   "name" : "id",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
-  }, {
-   "name" : "nDir",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "integer",
-   "default" : "0"
-  }, {
    "name" : "directions",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
-   "dimensions" : "*",
-   "default" : "0.0"
-  }, {
-   "name" : "nFreq",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "integer",
-   "default" : "0"
+   "optional" : true,
+   "dimensions" : "*"
   }, {
    "name" : "frequencies",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
-   "dimensions" : "*",
-   "default" : "0.0"
+   "optional" : true,
+   "dimensions" : "*"
   }, {
-   "name" : "nDOF",
+   "name" : "u",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "integer",
-   "default" : "0"
+   "attributeType" : "/hydro/DirectionDependentComplexValues",
+   "contained" : true,
+   "optional" : true
   }, {
-   "name" : "nonZeroDofs",
+   "name" : "v",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "boolean",
-   "dimensions" : "*",
-   "default" : "true"
+   "attributeType" : "/hydro/DirectionDependentComplexValues",
+   "contained" : true,
+   "optional" : true
   }, {
-   "name" : "realvalues",
+   "name" : "w",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "number",
-   "dimensions" : "*",
-   "default" : "0.0"
-  }, {
-   "name" : "imagValues",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "number",
-   "dimensions" : "*",
-   "default" : "0.0"
+   "attributeType" : "/hydro/DirectionDependentComplexValues",
+   "contained" : true,
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

@@ -3,12 +3,11 @@
  "type" : "system/SIMOS/Blueprint",
  "description" : "Single scalar value with dimension",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity", "/containers/Signal"],
+ "extends" : ["/containers/Signal"],
  "attributes" : [{
    "name" : "value",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "number",
-   "default" : "0.0"
+   "attributeType" : "number"
   }, {
    "name" : "label",
    "type" : "system/SIMOS/BlueprintAttribute",

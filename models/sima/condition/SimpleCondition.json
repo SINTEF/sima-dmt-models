@@ -2,12 +2,12 @@
  "name" : "SimpleCondition",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/condition/ConditionTaskCondition", "/sima/NamedObject"],
  "attributes" : [{
    "name" : "changeNumber",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "resultContainer",
    "type" : "system/SIMOS/BlueprintAttribute",

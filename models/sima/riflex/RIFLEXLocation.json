@@ -2,7 +2,7 @@
  "name" : "RIFLEXLocation",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/simo/CommonLocation"],
  "attributes" : [{
    "name" : "initialViewpoint",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -27,24 +27,27 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Relative angle between analysis x-axis and north direction in anti-clockwise direction",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "utmX",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Offset of local coordinate system origin (X) relative to UTM (Easting).",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "utmY",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Offset of local coordinate system origin (Y) relative to UTM (Northing).",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "gridZone",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "description" : "Zone consists of a number from [01-60] and a letter from [C-Z], or just one of [A,B,Y,Z] if on the antarctic or arctic pole."
+   "description" : "Zone consists of a number from [01-60] and a letter from [C-Z], or just one of [A,B,Y,Z] if on the antarctic or arctic pole.",
+   "optional" : true
   }, {
    "name" : "infrastructureBodies",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -57,6 +60,7 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Water depth for kinematics",
+   "optional" : true,
    "default" : "1000.0"
   }, {
    "name" : "seaSurface",

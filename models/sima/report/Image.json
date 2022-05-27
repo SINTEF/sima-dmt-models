@@ -2,29 +2,31 @@
  "name" : "Image",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/report/ReportItem"],
  "attributes" : [{
    "name" : "caption",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "description" : "Caption"
+   "description" : "Caption",
+   "optional" : true
   }, {
    "name" : "filePath",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "description" : "Path to the image"
+   "description" : "Path to the image",
+   "optional" : true
   }, {
    "name" : "width",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "The image witdth in twips (1/1440 inch). If only the width is specified the height will be automatically calculated.",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "height",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "The image height in twips (1/1440 inch). If only the width is specified the height will be automatically calculated.",
-   "default" : "0"
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

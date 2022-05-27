@@ -2,7 +2,7 @@
  "name" : "Appendix",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity", "/report/Section"],
+ "extends" : ["/report/Section"],
  "storageRecipes" : [],
  "uiRecipes" : []
 }

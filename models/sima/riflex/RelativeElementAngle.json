@@ -2,7 +2,7 @@
  "name" : "RelativeElementAngle",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "firstElement",
    "type" : "system/SIMOS/BlueprintAttribute",

@@ -2,7 +2,7 @@
  "name" : "ReportFragmentItemContainer",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/workflow/ReportFragmentItem"],
  "attributes" : [{
    "name" : "reportFragmentItems",
    "type" : "system/SIMOS/BlueprintAttribute",

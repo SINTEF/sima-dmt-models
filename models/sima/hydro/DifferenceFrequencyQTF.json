@@ -1,0 +1,107 @@
+{
+ "name" : "DifferenceFrequencyQTF",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["/hydro/SparseQTF"],
+ "attributes" : [{
+   "name" : "nFreq",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "optional" : true
+  }, {
+   "name" : "nDir",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "optional" : true
+  }, {
+   "name" : "nValues",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "optional" : true
+  }, {
+   "name" : "bidirectional",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "optional" : true
+  }, {
+   "name" : "bichromatic",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "optional" : true
+  }, {
+   "name" : "directions",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true,
+   "dimensions" : "*"
+  }, {
+   "name" : "frequencies",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true,
+   "dimensions" : "*"
+  }, {
+   "name" : "di",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "optional" : true,
+   "dimensions" : "*"
+  }, {
+   "name" : "dj",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "optional" : true,
+   "dimensions" : "*"
+  }, {
+   "name" : "wi",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "optional" : true,
+   "dimensions" : "*"
+  }, {
+   "name" : "wj",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "optional" : true,
+   "dimensions" : "*"
+  }, {
+   "name" : "surge",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/hydro/QTFDof",
+   "contained" : true,
+   "optional" : false
+  }, {
+   "name" : "sway",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/hydro/QTFDof",
+   "contained" : true,
+   "optional" : false
+  }, {
+   "name" : "heave",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/hydro/QTFDof",
+   "contained" : true,
+   "optional" : false
+  }, {
+   "name" : "roll",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/hydro/QTFDof",
+   "contained" : true,
+   "optional" : false
+  }, {
+   "name" : "pitch",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/hydro/QTFDof",
+   "contained" : true,
+   "optional" : false
+  }, {
+   "name" : "yaw",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/hydro/QTFDof",
+   "contained" : true,
+   "optional" : false
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

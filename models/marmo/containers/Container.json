@@ -3,7 +3,7 @@
  "type" : "system/SIMOS/Blueprint",
  "description" : "Containers contain signals and other containers",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity", "/containers/SignalItem"],
+ "extends" : ["/containers/SignalItem"],
  "attributes" : [{
    "name" : "signals",
    "type" : "system/SIMOS/BlueprintAttribute",

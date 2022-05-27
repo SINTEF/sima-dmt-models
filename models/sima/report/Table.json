@@ -2,7 +2,7 @@
  "name" : "Table",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/report/ReportItem"],
  "attributes" : [{
    "name" : "object",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -13,12 +13,14 @@
    "name" : "caption",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "description" : "Caption"
+   "description" : "Caption",
+   "optional" : true
   }, {
    "name" : "autoSplit",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Automatically split a large table into multiple tables.",
+   "optional" : true,
    "default" : "true"
   }, {
    "name" : "columns",
@@ -31,7 +33,7 @@
    "name" : "customisableTable",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
-   "default" : "false"
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

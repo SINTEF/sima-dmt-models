@@ -2,7 +2,7 @@
  "name" : "HydrodynamicCoupling",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/NamedObject"],
  "attributes" : [{
    "name" : "body1",
    "type" : "system/SIMOS/BlueprintAttribute",

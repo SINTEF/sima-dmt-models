@@ -2,7 +2,7 @@
  "name" : "BodyWaveMethodOption",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "body",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -15,6 +15,7 @@
    "attributeType" : "string",
    "enumType" : "/simo/KinematicMethod",
    "description" : "Options for wave particle motions",
+   "optional" : true,
    "default" : "FFT"
   }, {
    "name" : "waveParticleMotionDistributed",
@@ -22,6 +23,7 @@
    "attributeType" : "string",
    "enumType" : "/simo/KinematicMethod",
    "description" : "Options for wave part. motions for distr. hydr. forces",
+   "optional" : true,
    "default" : "FFT"
   }, {
    "name" : "firstOrderWaveForce",
@@ -29,6 +31,7 @@
    "attributeType" : "string",
    "enumType" : "/simo/KinematicMethod",
    "description" : "Options for first order wave forces",
+   "optional" : true,
    "default" : "FFT"
   }, {
    "name" : "firstOrderMotion",
@@ -36,6 +39,7 @@
    "attributeType" : "string",
    "enumType" : "/simo/KinematicMethod",
    "description" : "Options for first order motion",
+   "optional" : true,
    "default" : "FFT"
   }, {
    "name" : "waveDriftForce",
@@ -43,6 +47,7 @@
    "attributeType" : "string",
    "enumType" : "/simo/KinematicMethod",
    "description" : "Options for wave drift forces",
+   "optional" : true,
    "default" : "FFT"
   }, {
    "name" : "waveDriftDamping",
@@ -50,6 +55,7 @@
    "attributeType" : "string",
    "enumType" : "/simo/KinematicMethod",
    "description" : "Options for wave drift damping",
+   "optional" : true,
    "default" : "FFT"
   }, {
    "name" : "qtf",
@@ -57,6 +63,7 @@
    "attributeType" : "string",
    "enumType" : "/simo/KinematicMethod",
    "description" : "Options for forces from QTFs",
+   "optional" : true,
    "default" : "FFT"
   }, {
    "name" : "diffractedWave",
@@ -64,6 +71,7 @@
    "attributeType" : "string",
    "enumType" : "/simo/KinematicMethod",
    "description" : "Options for diffracted wave",
+   "optional" : true,
    "default" : "FFT"
   }],
  "storageRecipes" : [],

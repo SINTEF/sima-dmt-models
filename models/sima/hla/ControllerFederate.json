@@ -2,7 +2,7 @@
  "name" : "ControllerFederate",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/hla/HLAFederate"],
  "attributes" : [{
    "name" : "timeStep",
    "type" : "system/SIMOS/BlueprintAttribute",

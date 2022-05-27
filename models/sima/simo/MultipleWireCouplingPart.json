@@ -2,7 +2,7 @@
  "name" : "MultipleWireCouplingPart",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/NamedObject"],
  "attributes" : [{
    "name" : "endPoint",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -14,24 +14,26 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Wire cross section stiffness",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "length",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Initial, unstretched wire length",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "damping",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Material damping",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "flexibility",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Connection flexibility",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "failureMode",
@@ -39,19 +41,20 @@
    "attributeType" : "string",
    "enumType" : "/simo/FailureMode",
    "description" : "Failure mode of coupling element",
+   "optional" : true,
    "default" : "NONE"
   }, {
    "name" : "failureTime",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Earliest possible time of failure",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "breakingStrength",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Breaking strength",
-   "default" : "0.0"
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

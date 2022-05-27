@@ -3,23 +3,20 @@
  "type" : "system/SIMOS/Blueprint",
  "description" : "Data model for an equally spaced signal.",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity", "/containers/Signal"],
+ "extends" : ["/containers/Signal"],
  "attributes" : [{
    "name" : "value",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
-   "dimensions" : "*",
-   "default" : "0.0"
+   "dimensions" : "*"
   }, {
    "name" : "xstart",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "number",
-   "default" : "0.0"
+   "attributeType" : "number"
   }, {
    "name" : "xdelta",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "number",
-   "default" : "0.0"
+   "attributeType" : "number"
   }, {
    "name" : "unit",
    "type" : "system/SIMOS/BlueprintAttribute",

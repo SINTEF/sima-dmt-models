@@ -2,7 +2,7 @@
  "name" : "CustomEditorTask",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/Task"],
  "attributes" : [{
    "name" : "doubleVariables",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -28,6 +28,7 @@
    "name" : "runNumber",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
+   "optional" : true,
    "default" : "0"
   }, {
    "name" : "scripts",

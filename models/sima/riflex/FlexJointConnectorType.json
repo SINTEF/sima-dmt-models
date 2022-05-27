@@ -2,115 +2,116 @@
  "name" : "FlexJointConnectorType",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/riflex/NodalComponentType"],
  "attributes" : [{
    "name" : "mass",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Mass",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "volume",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Displacement volume",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "gyrationRadiusX",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Radius of gyration around local x-axis",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "gyrationRadiusY",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Radius of gyration around local y-axis",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "gyrationRadiusZ",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Radius of gyration around local z-axis",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "dampingRotX",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Damping coeff. Rotational velocity around local x-axis",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "dampingRotY",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Damping coeff. Rotational velocity around local y-axis",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "dampingRotZ",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Damping coeff. Rotational velocity around local z-axis",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "dragX",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Drag force coefficient in X-direction",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "dragY",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Drag force coefficient in Y-direction",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "dragZ",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Drag force coefficient in Z-direction",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "addedMassX",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Added mass in X-direction",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "addedMassY",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Added mass in Y-direction",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "addedMassZ",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Added mass in Z-direction",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "addedMassRotX",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Added mass rotation around local x-axis",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "addedMassRotY",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Added mass rotation around local y-axis",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "addedMassRotZ",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Added mass rotation around local z-axis",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "stiffnessTypeRotX",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/RotationalStiffnessType",
    "description" : "Rotational stiffnes type - local x-axis.",
+   "optional" : true,
    "default" : "FIXED"
   }, {
    "name" : "stiffnessTypeRotY",
@@ -118,6 +119,7 @@
    "attributeType" : "string",
    "enumType" : "/riflex/RotationalStiffnessType",
    "description" : "Rotational stiffnes type - local z-axis.",
+   "optional" : true,
    "default" : "FIXED"
   }, {
    "name" : "stiffnessTypeRotZ",
@@ -125,49 +127,50 @@
    "attributeType" : "string",
    "enumType" : "/riflex/RotationalStiffnessType",
    "description" : "Rotational stiffnes type - local z-axis.",
+   "optional" : true,
    "default" : "FIXED"
   }, {
    "name" : "stiffnessDampingCoeffX",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Stiffness proportional damping coefficient.",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "stiffnessDampingCoeffY",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Stiffness proportional damping coefficient.",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "stiffnessDampingCoeffZ",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Stiffness proportional damping coefficient.",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "linearStiffnessRotX",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Stiffness with respect to x-axis rotation",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "linearStiffnessRotY",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Stiffness with respect to y-axis rotation",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "linearStiffnessRotZ",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Stiffness with respect to z-axis rotation",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "yzStiffnessSymmetry",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Same stiffnes for y and z axis?",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "stiffnessCharacteristicsRotX",
    "type" : "system/SIMOS/BlueprintAttribute",

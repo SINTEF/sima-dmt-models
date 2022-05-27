@@ -2,7 +2,7 @@
  "name" : "WinchVariationItem",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "winch",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -14,6 +14,7 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "The length to winch in (-) or out (+)",
+   "optional" : true,
    "default" : "0.0"
   }],
  "storageRecipes" : [],

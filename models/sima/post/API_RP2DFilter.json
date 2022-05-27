@@ -2,27 +2,27 @@
  "name" : "API_RP2DFilter",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/post/OperationNode"],
  "attributes" : [{
    "name" : "x",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "y",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "h",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "w",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "controlSignalInputSlots",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -49,30 +49,35 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Nominal outside diameter",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "pipeThickness",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Thickness of pipe",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "yieldStrength",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Specified minimum yield strength of the pipe",
+   "optional" : true,
    "default" : "5.0E8"
   }, {
    "name" : "youngsFactor",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Young's modulus",
+   "optional" : true,
    "default" : "2.1E11"
   }, {
    "name" : "poissonsRatio",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Poisson's ratio for pipe wall material",
+   "optional" : true,
    "default" : "0.3"
   }, {
    "name" : "fabricationFactor",
@@ -80,36 +85,42 @@
    "attributeType" : "string",
    "enumType" : "/post/FabricationFactor",
    "description" : "Absolute value of the negative tolerance taken from the material standard/specification of the pipe",
-   "default" : "SeamlessPipe"
+   "optional" : true,
+   "default" : "SEAMLESSPIPE"
   }, {
    "name" : "ultimateStrength",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Specified minimum ultimate strength of the pipe",
+   "optional" : true,
    "default" : "7.0E8"
   }, {
    "name" : "ovality",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Ovality",
+   "optional" : true,
    "default" : "0.0025"
   }, {
    "name" : "pipeVariability",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Parameter to account for variability in pipe mechanical properties and wall thickness",
+   "optional" : true,
    "default" : "0.45"
   }, {
    "name" : "minInternalPressure",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Minimum internal presssure used in collapse check",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "maxInternalPressure",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Maximum internal presssure used in burst check",
+   "optional" : true,
    "default" : "5000000.0"
   }, {
    "name" : "pipeType",
@@ -117,24 +128,28 @@
    "attributeType" : "string",
    "enumType" : "/post/PipeType",
    "description" : "Load factor for accidental loads",
+   "optional" : true,
    "default" : "COLD_EXPANDED"
   }, {
    "name" : "extFluidDensity",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "External fluid density",
+   "optional" : true,
    "default" : "1024.0"
   }, {
    "name" : "accelerationOfGravity",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Acceleration of gravity",
-   "optional" : true
+   "optional" : true,
+   "default" : "9.81"
   }, {
    "name" : "limitStateCategory",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/post/LimitStateCategory",
+   "optional" : true,
    "default" : "SLS"
   }, {
    "name" : "internalPressureDesignFactor",
@@ -142,6 +157,7 @@
    "attributeType" : "string",
    "enumType" : "/post/InternalPressureDesignFactor",
    "description" : "Internal pressure design factor",
+   "optional" : true,
    "default" : "DESIGN_PRESSURE"
   }],
  "storageRecipes" : [],

@@ -2,7 +2,7 @@
  "name" : "SignalTable",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : true,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/post/RunNode"],
  "storageRecipes" : [],
  "uiRecipes" : []
 }

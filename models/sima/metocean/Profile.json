@@ -2,7 +2,7 @@
  "name" : "Profile",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/NamedObject"],
  "attributes" : [{
    "name" : "levels",
    "type" : "system/SIMOS/BlueprintAttribute",

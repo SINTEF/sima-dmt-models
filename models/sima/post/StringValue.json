@@ -2,7 +2,7 @@
  "name" : "StringValue",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/post/GeneratorSignal", "/sima/SingleParameter"],
  "attributes" : [{
    "name" : "properties",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -14,17 +14,19 @@
    "name" : "array",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "value",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "description" : "Value of the String constant"
+   "description" : "Value of the String constant",
+   "optional" : true
   }, {
    "name" : "values",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "description" : "Value of the String constant",
+   "optional" : true,
    "dimensions" : "*"
   }],
  "storageRecipes" : [],

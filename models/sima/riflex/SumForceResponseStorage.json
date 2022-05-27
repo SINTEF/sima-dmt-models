@@ -2,12 +2,13 @@
  "name" : "SumForceResponseStorage",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "storageStep",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Code for storage of the sum of forces. Storage for every <storage step> given.",
+   "optional" : true,
    "default" : "1"
   }, {
    "name" : "format",
@@ -15,6 +16,7 @@
    "attributeType" : "string",
    "enumType" : "/riflex/AdditionalFileFormatCode",
    "description" : "Format code for additional output of time series",
+   "optional" : true,
    "default" : "BINARY_OUTPUT"
   }, {
    "name" : "elements",

@@ -2,11 +2,12 @@
  "name" : "PositionControl",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/custom/CustomComponent"],
  "attributes" : [{
    "name" : "hlaObjectId",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
+   "attributeType" : "string",
+   "optional" : true
   }, {
    "name" : "reference",
    "type" : "system/SIMOS/BlueprintAttribute",

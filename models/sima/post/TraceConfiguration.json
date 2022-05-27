@@ -2,11 +2,12 @@
  "name" : "TraceConfiguration",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/post/PathSpecification"],
  "attributes" : [{
    "name" : "path",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
+   "attributeType" : "string",
+   "optional" : true
   }, {
    "name" : "label",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -23,33 +24,38 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/post/LineStyle",
+   "optional" : true,
    "default" : "SOLID"
   }, {
    "name" : "lineWidth",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
+   "optional" : true,
    "default" : "1"
   }, {
    "name" : "pointStyle",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/post/PointStyle",
+   "optional" : true,
    "default" : "NONE"
   }, {
    "name" : "showStatistics",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
+   "optional" : true,
    "default" : "true"
   }, {
    "name" : "pointSize",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
+   "optional" : true,
    "default" : "1"
   }, {
    "name" : "specifyPath",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
-   "default" : "false"
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

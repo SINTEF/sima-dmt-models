@@ -2,12 +2,13 @@
  "name" : "StringVariable",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/Variable"],
  "attributes" : [{
    "name" : "value",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "description" : "The current value for the variable"
+   "description" : "The current value for the variable",
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

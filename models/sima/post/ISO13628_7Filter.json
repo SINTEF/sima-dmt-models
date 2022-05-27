@@ -2,27 +2,27 @@
  "name" : "ISO13628_7Filter",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/post/OperationNode"],
  "attributes" : [{
    "name" : "x",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "y",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "h",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "w",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "controlSignalInputSlots",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -49,36 +49,42 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Single load ultimate tension capacity",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "ultimateBendingCapacity",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Single load ultimate bending capacity",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "ultimatePressureCapacity",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Single load ultimate pressure capacity due to end cap effect",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "internalPressure",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Internal pressure",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "externalPressure",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "External pressure",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "designFactor",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Design factor",
+   "optional" : true,
    "default" : "0.8"
   }],
  "storageRecipes" : [],

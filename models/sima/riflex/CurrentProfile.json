@@ -2,19 +2,19 @@
  "name" : "CurrentProfile",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "globalXPosition",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Global X-coordinate for this current profile",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "globalYPosition",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Global Y-coordinate for this current profile",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "items",
    "type" : "system/SIMOS/BlueprintAttribute",

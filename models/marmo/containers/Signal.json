@@ -3,7 +3,7 @@
  "type" : "system/SIMOS/Blueprint",
  "description" : "Signal base type",
  "abstract" : true,
- "extends" : ["system/SIMOS/NamedEntity", "/containers/SignalItem"],
+ "extends" : ["/containers/SignalItem"],
  "storageRecipes" : [],
  "uiRecipes" : []
 }

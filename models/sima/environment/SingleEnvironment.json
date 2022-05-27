@@ -2,7 +2,7 @@
  "name" : "SingleEnvironment",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/environment/Environment"],
  "attributes" : [{
    "name" : "wave",
    "type" : "system/SIMOS/BlueprintAttribute",

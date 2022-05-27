@@ -2,7 +2,7 @@
  "name" : "RIFLEXStaticCalculationParameters",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "loadTypeItems",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -15,12 +15,14 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/MatrixStorage",
+   "optional" : true,
    "default" : "SKYLINE"
   }, {
    "name" : "currentProfileScaling",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Scaling factor to amplify or reduce the referred current profile",
+   "optional" : true,
    "default" : "1.0"
   }, {
    "name" : "staticLoadComponents",
@@ -34,16 +36,18 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Whether a stress free configuration has been defined for the Slender system.",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "stressfreeFile",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
+   "attributeType" : "string",
+   "optional" : true
   }, {
    "name" : "loadAndMassFormulation",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/LoadAndMassFormulation",
+   "optional" : true,
    "default" : "LUMPED"
   }, {
    "name" : "parameterVariation",
@@ -56,6 +60,22 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store visualisation responses indicator",
+   "optional" : true,
+   "default" : "true"
+  }, {
+   "name" : "matrixPlotStorage",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/MatrixPlotStorage",
+   "description" : "Storage option for Matrix Plot",
+   "optional" : true,
+   "default" : "LOAD_GROUP"
+  }, {
+   "name" : "startAtZero",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Start arc length at zero for each line",
+   "optional" : true,
    "default" : "true"
   }],
  "storageRecipes" : [],

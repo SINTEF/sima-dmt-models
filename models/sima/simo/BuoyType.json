@@ -2,7 +2,7 @@
  "name" : "BuoyType",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/NamedObject"],
  "attributes" : [{
    "name" : "forceCharacteristic",
    "type" : "system/SIMOS/BlueprintAttribute",

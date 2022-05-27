@@ -2,7 +2,7 @@
  "name" : "ColumnLayoutContainer",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/custom/CustomComponent"],
  "attributes" : [{
    "name" : "children",
    "type" : "system/SIMOS/BlueprintAttribute",

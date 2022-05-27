@@ -2,7 +2,7 @@
  "name" : "SeafloorContactLineSpecification",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/riflex/SegmentReference"],
  "attributes" : [{
    "name" : "line",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -15,19 +15,20 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Segment on given line",
+   "optional" : true,
    "default" : "1"
   }, {
    "name" : "allSegments",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "All segments",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "allLines",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Apply specified contact to all lines",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "contact",
    "type" : "system/SIMOS/BlueprintAttribute",

@@ -2,7 +2,7 @@
  "name" : "RegularCurrent",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/environment/Current"],
  "attributes" : [{
    "name" : "items",
    "type" : "system/SIMOS/BlueprintAttribute",

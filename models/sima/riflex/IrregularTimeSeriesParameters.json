@@ -2,29 +2,32 @@
  "name" : "IrregularTimeSeriesParameters",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "randomSeedWaves",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Starting parameter of random number generator",
+   "optional" : true,
    "default" : "1"
   }, {
    "name" : "useStochasticAmplitudes",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "waveLength",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Length of generated time series",
+   "optional" : true,
    "default" : "16384.0"
   }, {
    "name" : "timeIncrement",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Time increment for time series generation",
+   "optional" : true,
    "default" : "0.5"
   }, {
    "name" : "waveComputationMethod",
@@ -32,6 +35,7 @@
    "attributeType" : "string",
    "enumType" : "/riflex/WaveComputationMethod",
    "description" : "Method parameter for computation of prescribed waves",
+   "optional" : true,
    "default" : "FFT"
   }, {
    "name" : "waveAmplitudeComputation",
@@ -39,49 +43,50 @@
    "attributeType" : "string",
    "enumType" : "/riflex/WaveAmplitudeComputation",
    "description" : "Option for amplitude computation of waves (The phace is always stochastic)",
+   "optional" : true,
    "default" : "DETERMINISTIC"
   }, {
    "name" : "numWindWaveFreqComponents",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Wind waves: Number of frequency components in the wind wave frequency range. The min and max frequencies are determined by the actual wind wave spectrum.",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "numSwellFreqComponents",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Swell: Number of frequency components in the swell frequency range. The min and max frequencies are determined by the actual swell spectrum",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "waveCutFactor",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Cut factor for wave components.",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "largePatchPoints",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of points in one dimension in the large patch.",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "largePatchLength",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Length of large patch.",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "smallPatchPoints",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of points in one dimension in the small patch.",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "patchRatio",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Ratio between length of small patch and length of large patch.",
-   "default" : "0"
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

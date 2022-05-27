@@ -2,7 +2,7 @@
  "name" : "DockingConePositioning",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/simo/PositioningElement"],
  "attributes" : [{
    "name" : "localPoint",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -21,24 +21,28 @@
    "attributeType" : "string",
    "enumType" : "/simo/ActivationFailureMode",
    "description" : "Failure mode:\r\n - No failure\r\n - Failure by exceeding the breaking strength after specified time\r\n - Activation of element after specified time if absolute value of force is below breaking strength",
+   "optional" : true,
    "default" : "NONE"
   }, {
    "name" : "failureTime",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Earliest possible time of failure",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "breakingStrength",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Breaking strength",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "dampingExponent",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Exponent of velocity in damping term",
+   "optional" : true,
    "default" : "1.0"
   }, {
    "name" : "dampingInterpolation",
@@ -46,6 +50,7 @@
    "attributeType" : "string",
    "enumType" : "/simo/Interpolation",
    "description" : "Interpolation method for damping",
+   "optional" : true,
    "default" : "LINEAR"
   }, {
    "name" : "forceInterpolation",
@@ -53,18 +58,20 @@
    "attributeType" : "string",
    "enumType" : "/simo/Interpolation",
    "description" : "Interpolation method for force",
+   "optional" : true,
    "default" : "LINEAR"
   }, {
    "name" : "velocityLimit",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Velocity limit for friction force",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "numberOfPoints",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "crossSections",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -83,12 +90,13 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Maximum radial distance at entry",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "friction",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Friction coefficient",
+   "optional" : true,
    "default" : "0.0"
   }],
  "storageRecipes" : [],

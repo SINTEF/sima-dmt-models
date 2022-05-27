@@ -1,0 +1,17 @@
+{
+ "name" : "DirectionDependentValues",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["/sima/MOAO"],
+ "attributes" : [{
+   "name" : "directionalValues",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/hydro/Values",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

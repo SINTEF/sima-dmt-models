@@ -2,7 +2,7 @@
  "name" : "MarineGrowth",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/NamedObject"],
  "attributes" : [{
    "name" : "growthLevels",
    "type" : "system/SIMOS/BlueprintAttribute",

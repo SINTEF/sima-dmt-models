@@ -2,7 +2,7 @@
  "name" : "SIMOTask",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/condition/ConditionTask"],
  "attributes" : [{
    "name" : "doubleVariables",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -28,6 +28,7 @@
    "name" : "runNumber",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
+   "optional" : true,
    "default" : "0"
   }, {
    "name" : "scripts",
@@ -74,25 +75,28 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Enables override of the default memory settings for SIMO. Given in MB",
-   "optional" : true
+   "optional" : true,
+   "default" : "128"
   }, {
    "name" : "removeIntermediateFiles",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
-   "optional" : true
+   "optional" : true,
+   "default" : "true"
   }, {
    "name" : "exportMassUnit",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/MassUnit",
    "description" : "Used as export unit for mass ( and indirectly force)",
-   "default" : "Mg"
+   "optional" : true,
+   "default" : "MG"
   }, {
    "name" : "exportAsFMU",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Generate FMU (Functional Mockup Unit) from model",
-   "default" : "false"
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

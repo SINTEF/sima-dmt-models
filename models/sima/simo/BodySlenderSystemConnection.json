@@ -2,7 +2,7 @@
  "name" : "BodySlenderSystemConnection",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : true,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/simo/SuperNodeReference"],
  "storageRecipes" : [],
  "uiRecipes" : []
 }

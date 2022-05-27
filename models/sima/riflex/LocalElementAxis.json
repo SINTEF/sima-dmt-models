@@ -2,7 +2,7 @@
  "name" : "LocalElementAxis",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/riflex/ElementReference"],
  "attributes" : [{
    "name" : "line",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -15,25 +15,27 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Segment on given line",
+   "optional" : true,
    "default" : "1"
   }, {
    "name" : "allSegments",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "All segments",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "elementNumber",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Local element number on actual segment",
+   "optional" : true,
    "default" : "1"
   }, {
    "name" : "allElements",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "All elements",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "referenceFrame",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -46,18 +48,19 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Reference vector x component",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "rny",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Reference vector y component",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "rnz",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Reference vector z component",
+   "optional" : true,
    "default" : "1.0"
   }],
  "storageRecipes" : [],

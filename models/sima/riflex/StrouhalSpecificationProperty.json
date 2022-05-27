@@ -2,7 +2,7 @@
  "name" : "StrouhalSpecificationProperty",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : true,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/NamedObject"],
  "storageRecipes" : [],
  "uiRecipes" : []
 }

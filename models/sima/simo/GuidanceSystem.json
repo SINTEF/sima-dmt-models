@@ -2,43 +2,47 @@
  "name" : "GuidanceSystem",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "guidance",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/Guidance",
+   "optional" : true,
    "default" : "STRAIGHT_LINES"
   }, {
    "name" : "waypointReference",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/WaypointReference",
-   "default" : "Local"
+   "optional" : true,
+   "default" : "LOCAL"
   }, {
    "name" : "headingReference",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/HeadingReference",
-   "default" : "Tangential"
+   "optional" : true,
+   "default" : "TANGENTIAL"
   }, {
    "name" : "startTime",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Start time for guidance system",
+   "optional" : true,
    "default" : "200.0"
   }, {
    "name" : "maxAccelerationX",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Max. acceleration in local x-direction",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "maxAccelerationY",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Max. acceleration in local y-direction",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "waypoints",
    "type" : "system/SIMOS/BlueprintAttribute",

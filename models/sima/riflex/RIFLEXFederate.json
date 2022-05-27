@@ -2,7 +2,7 @@
  "name" : "RIFLEXFederate",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/simo/SIMOFederate"],
  "attributes" : [{
    "name" : "timeStep",
    "type" : "system/SIMOS/BlueprintAttribute",

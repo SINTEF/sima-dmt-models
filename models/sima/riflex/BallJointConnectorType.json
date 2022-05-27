@@ -2,68 +2,70 @@
  "name" : "BallJointConnectorType",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/riflex/NodalComponentType"],
  "attributes" : [{
    "name" : "mass",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Mass",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "volume",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Displacement volume",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "referenceFrame",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/ReferenceFrameType",
    "description" : "Reference frame",
+   "optional" : true,
    "default" : "LOCAL"
   }, {
    "name" : "dragX",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Drag force coefficient in X-direction",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "dragY",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Drag force coefficient in Y-direction",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "dragZ",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Drag force coefficient in Z-direction",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "addedMassX",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Added mass in X-direction",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "addedMassY",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Added mass in Y-direction",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "addedMassZ",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Added mass in Z-direction",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "boundaryRotX",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/BoundaryCondition",
    "description" : "Rotation freedom code, x-axis.",
+   "optional" : true,
    "default" : "FREE"
   }, {
    "name" : "boundaryRotY",
@@ -71,6 +73,7 @@
    "attributeType" : "string",
    "enumType" : "/riflex/BoundaryCondition",
    "description" : "Rotation freedom code, y-axis.",
+   "optional" : true,
    "default" : "FREE"
   }, {
    "name" : "boundaryRotZ",
@@ -78,6 +81,7 @@
    "attributeType" : "string",
    "enumType" : "/riflex/BoundaryCondition",
    "description" : "Rotation freedom code, z-axis.",
+   "optional" : true,
    "default" : "FREE"
   }],
  "storageRecipes" : [],

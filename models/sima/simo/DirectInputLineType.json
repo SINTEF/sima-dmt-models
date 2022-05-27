@@ -2,7 +2,7 @@
  "name" : "DirectInputLineType",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/simo/LineType"],
  "attributes" : [{
    "name" : "horisontalDistances",
    "type" : "system/SIMOS/BlueprintAttribute",

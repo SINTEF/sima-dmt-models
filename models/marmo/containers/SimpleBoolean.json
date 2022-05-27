@@ -1,0 +1,14 @@
+{
+ "name" : "SimpleBoolean",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["/containers/Signal"],
+ "attributes" : [{
+   "name" : "value",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

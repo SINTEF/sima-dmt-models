@@ -2,24 +2,27 @@
  "name" : "AllocationSystem",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "surgeAllocation",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Force allocation in surge",
+   "optional" : true,
    "default" : "true"
   }, {
    "name" : "swayAllocation",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Force allocation in sway",
+   "optional" : true,
    "default" : "true"
   }, {
    "name" : "yawAllocation",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Force allocation in yaw",
+   "optional" : true,
    "default" : "true"
   }, {
    "name" : "thrusters",
@@ -33,13 +36,14 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Manual input of force to allocation system",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "allocationMethod",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/ThrusterAllocationMethod",
    "description" : "Thrust allocation method",
+   "optional" : true,
    "default" : "ORDINARY"
   }, {
    "name" : "thrusterControls",
@@ -53,13 +57,14 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/Formulation",
+   "optional" : true,
    "default" : "SIMO_41"
   }, {
    "name" : "dpOff",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Turn control system off",
-   "default" : "false"
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

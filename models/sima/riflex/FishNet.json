@@ -2,86 +2,87 @@
  "name" : "FishNet",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/riflex/CrossSection", "/riflex/CRSAxialFrictionModel"],
  "attributes" : [{
    "name" : "massDampingSpecification",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Mass proportional Rayleigh damping",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "stiffnessDampingSpecification",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Stiffness proportional Rayleigh damping",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "axialDampingSpecification",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Local axial damping model",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "staticFriction",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Static friction force corresponding to elongation",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "staticElongation",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Relative elongation",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "dynamicFriction",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Dynamic friction force corresponding to elongation",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "dynamicElongation",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Relative elongation",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "axialFriction",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Local axial friction model",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "temperature",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Temperature at which the specification applies",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "mass",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Mass / unit length",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "externalVolume",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "External volume per length",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "axialStiffnessInput",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/AxialStiffness",
    "description" : "Axial stiffness input specification",
+   "optional" : true,
    "default" : "CONSTANT"
   }, {
    "name" : "axialStiffness",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Axial stiffness",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "axialStiffnessCharacteristics",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -94,24 +95,25 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Solidity ratio.",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "netWidthEnd1",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Net width at segment end 1",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "netWidthEnd2",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Net width at segment end 2",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "currentVelocityReduction",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Reduction factor for current velocity.",
+   "optional" : true,
    "default" : "1.0"
   }, {
    "name" : "massDamping",
@@ -136,25 +138,25 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Added mass per length, tangential direction",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "amy",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Added mass per length, normal direction",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "tensionCapacity",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Tension capacity",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "maxCurvature",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Maximum curvature",
-   "default" : "0.0"
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

@@ -2,31 +2,31 @@
  "name" : "OptimizationVariableItem",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "start",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Starting value for the optimization variable",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "min",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Lower bound for the optimization variable",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "max",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Upper bound for the optimization variable",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "delta",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Delta for the optimization variable to be used in calculation of gradients",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "variable",
    "type" : "system/SIMOS/BlueprintAttribute",

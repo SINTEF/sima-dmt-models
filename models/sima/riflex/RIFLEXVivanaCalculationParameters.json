@@ -2,7 +2,7 @@
  "name" : "RIFLEXVivanaCalculationParameters",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "eigenvalueAnalysisParameters",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -27,19 +27,22 @@
    "attributeType" : "string",
    "enumType" : "/riflex/VIVLoadType",
    "description" : "Option for type of VIV loads to be applied",
+   "optional" : true,
    "default" : "CROSS_FLOW"
   }, {
    "name" : "waterTemperature",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Water temperature",
+   "optional" : true,
    "default" : "4.0"
   }, {
    "name" : "randomGenerator",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/RandomGenerator",
-   "default" : "Legacy"
+   "optional" : true,
+   "default" : "LEGACY"
   }, {
    "name" : "hydrodynamicCrossSectionProperties",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -87,18 +90,21 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "First mode number in the active VIV direction for which the constant still-water added mass will be used.",
+   "optional" : true,
    "default" : "1000000"
   }, {
    "name" : "addedMassLastModeNumber",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Last mode number in the active VIV direction for which the full frequency-dependent added mass curves will be used.",
+   "optional" : true,
    "default" : "1000000"
   }, {
    "name" : "addedMassFrequencyDependence",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/AddedMassFrequencyDependency",
+   "optional" : true,
    "default" : "FREQUENCY_ADDED_MASS"
   }],
  "storageRecipes" : [],

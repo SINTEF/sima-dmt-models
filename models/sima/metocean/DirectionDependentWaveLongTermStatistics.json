@@ -2,7 +2,7 @@
  "name" : "DirectionDependentWaveLongTermStatistics",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/metocean/WaveLongTermStatistics"],
  "attributes" : [{
    "name" : "sectors",
    "type" : "system/SIMOS/BlueprintAttribute",

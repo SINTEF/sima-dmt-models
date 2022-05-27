@@ -2,24 +2,27 @@
  "name" : "SupportVessel",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/Body"],
  "attributes" : [{
    "name" : "length",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Length",
+   "optional" : true,
    "default" : "10.0"
   }, {
    "name" : "width",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Width",
+   "optional" : true,
    "default" : "5.0"
   }, {
    "name" : "height",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Height",
+   "optional" : true,
    "default" : "5.0"
   }, {
    "name" : "appearance",
@@ -47,9 +50,10 @@
    "contained" : true,
    "optional" : true
   }, {
-   "name" : "diffractedWaveField",
+   "name" : "diffractedWaveFields",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "/hydro/DiffractedWaveField",
+   "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }],

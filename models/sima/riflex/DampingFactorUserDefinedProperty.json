@@ -2,12 +2,13 @@
  "name" : "DampingFactorUserDefinedProperty",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/riflex/DampingFactorProperty"],
  "attributes" : [{
    "name" : "stillWaterDampingFactor",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Still water damping factor",
+   "optional" : true,
    "default" : "1.0"
   }],
  "storageRecipes" : [],

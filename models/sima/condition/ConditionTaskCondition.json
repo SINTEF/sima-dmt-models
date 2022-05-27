@@ -2,7 +2,7 @@
  "name" : "ConditionTaskCondition",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : true,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/Condition"],
  "storageRecipes" : [],
  "uiRecipes" : []
 }

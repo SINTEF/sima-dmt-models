@@ -2,7 +2,7 @@
  "name" : "ARWinch",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/riflex/SegmentReference", "/sima/NamedObject"],
  "attributes" : [{
    "name" : "line",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -15,56 +15,58 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Segment on given line",
+   "optional" : true,
    "default" : "1"
   }, {
    "name" : "allSegments",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "All segments",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "segmentEnd",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/End",
    "description" : "End of segment (and line) attached to winch (1 or 2)",
+   "optional" : true,
    "default" : "ONE"
   }, {
    "name" : "relativeSegmentLength",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Relative segment length where segment is attached to winch point",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "x1",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "X-coordinate for static equilibrium position",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "y1",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Y-coordinate for static equilibrium position",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "z1",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Z-coordinate for static equilibrium position",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "rotation",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Specified rotation of supernode from stress free position to static equilibrium position.",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "rotationDirection",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Direction of axis for specified rotation",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "attachedBody",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -76,38 +78,39 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Maximum winch velocity",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "timeToMaxVelocity",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Time to reach maximum velocity (from zero)",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "lineRelease",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Line release when no more line on winch (Dynamic analysis)",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "radius",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Radius of winch",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "winchCenter",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/CenterOfWinch",
    "description" : "Center of winch in positive or negative local Z-axis",
+   "optional" : true,
    "default" : "NEGATIVE_Z_AXIS"
   }, {
    "name" : "lengthJustification",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Control parameter for adjusting the length of elements attached to winch",
-   "default" : "false"
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

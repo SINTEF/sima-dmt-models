@@ -2,7 +2,7 @@
  "name" : "MainRiserLine",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/NamedObject"],
  "attributes" : [{
    "name" : "riserLines",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -15,26 +15,27 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Density of contents",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "flowPressure",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Pressure at specified end",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "flowPressureEnd",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/End",
    "description" : "End for which flow data is specified.",
+   "optional" : true,
    "default" : "ONE"
   }, {
    "name" : "flowPressureDrop",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Pressure drop",
-   "default" : "0.0"
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

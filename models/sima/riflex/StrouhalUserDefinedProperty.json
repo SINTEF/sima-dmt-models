@@ -2,7 +2,7 @@
  "name" : "StrouhalUserDefinedProperty",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/riflex/StrouhalSpecificationProperty"],
  "attributes" : [{
    "name" : "reynoldStrouhalProperties",
    "type" : "system/SIMOS/BlueprintAttribute",

@@ -2,7 +2,7 @@
  "name" : "ModelReferenceInputSlot",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/post/InputSlot"],
  "storageRecipes" : [],
  "uiRecipes" : []
 }

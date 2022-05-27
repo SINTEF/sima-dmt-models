@@ -2,25 +2,26 @@
  "name" : "Thruster",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/simo/IThruster"],
  "attributes" : [{
    "name" : "minForce",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Minimum thruster force",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "maxForce",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Maximum thruster force",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "_type",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/ThrusterType",
    "description" : "Thruster type",
+   "optional" : true,
    "default" : "FIXED_CONVENTIONAL"
   }, {
    "name" : "attachmentPoint",
@@ -33,30 +34,32 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Thruster diameter",
+   "optional" : true,
    "default" : "1.0"
   }, {
    "name" : "forceDirection",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Direction of thrust force in body x-y plane, initial value if controlled by a DP-system",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "force",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Resulting force, initial value if controlled by a DP-system",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "minTimeChange",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Minimum time to change from 10% to 90% of maximum thrust",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "maxRevolvingSpeed",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Maximum revolving speed of rotatable thrusters",
+   "optional" : true,
    "default" : "10.0"
   }, {
    "name" : "failureMode",
@@ -64,25 +67,26 @@
    "attributeType" : "string",
    "enumType" : "/simo/ThrusterFailureMode",
    "description" : "Thruster failure mode",
+   "optional" : true,
    "default" : "NO_FAILURE"
   }, {
    "name" : "failureTime",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Time for thruster failure",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "maxRudderAngle",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Maximum rudder angle",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "rudderCoefficient",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Rudder coefficient",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "reductionItems",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -95,18 +99,21 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Relative dead band, minimum change of force relative to total change",
+   "optional" : true,
    "default" : "0.01"
   }, {
    "name" : "thrustReductionFactor",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Thrust reduction factor",
+   "optional" : true,
    "default" : "1.0"
   }, {
    "name" : "minDirectionChange",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Minimum change in direction of thrusters force",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "forbiddenZoneItems",
@@ -120,54 +127,61 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/Formulation",
+   "optional" : true,
    "default" : "SIMO_41"
   }, {
    "name" : "ctForward",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Modification factor for forward thrust",
+   "optional" : true,
    "default" : "1.0"
   }, {
    "name" : "cqForward",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Modification factor for forward torque",
+   "optional" : true,
    "default" : "1.0"
   }, {
    "name" : "ctReverse",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Modification factor for reverse thrust",
+   "optional" : true,
    "default" : "1.0"
   }, {
    "name" : "cqReverse",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Modification factor for reverse torque",
+   "optional" : true,
    "default" : "1.0"
   }, {
    "name" : "pdRatio",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Pitch-diameter ratio",
+   "optional" : true,
    "default" : "1.0"
   }, {
    "name" : "tcThrust",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Time constant of thrust",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "tcAzimuth",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Time constant of azimuth change",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "coefficientModel",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/ThrustCoefficientModel",
+   "optional" : true,
    "default" : "INTERNAL"
   }, {
    "name" : "forwardThrustTorqueCoefficients",
@@ -188,6 +202,7 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/ThrustLoss",
+   "optional" : true,
    "default" : "NONE"
   }, {
    "name" : "surfaceProximityReductionFactors",
@@ -201,13 +216,14 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Should a list of control signals be specified for thruster?",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "controlSequenceSignalType",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/ThrustSignalType",
    "description" : "Unit for demanded thrust force",
+   "optional" : true,
    "default" : "FORCE"
   }, {
    "name" : "controlSequence",

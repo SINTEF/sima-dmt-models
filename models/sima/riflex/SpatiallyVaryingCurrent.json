@@ -2,7 +2,7 @@
  "name" : "SpatiallyVaryingCurrent",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/environment/Current"],
  "attributes" : [{
    "name" : "profiles",
    "type" : "system/SIMOS/BlueprintAttribute",

@@ -2,7 +2,7 @@
  "name" : "FixedForceElongation",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/simo/PositioningElement"],
  "attributes" : [{
    "name" : "localPoint",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -21,18 +21,21 @@
    "attributeType" : "string",
    "enumType" : "/simo/ActivationFailureMode",
    "description" : "Failure mode:\r\n - No failure\r\n - Failure by exceeding the breaking strength after specified time\r\n - Activation of element after specified time if absolute value of force is below breaking strength",
+   "optional" : true,
    "default" : "NONE"
   }, {
    "name" : "failureTime",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Earliest possible time of failure",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "breakingStrength",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Breaking strength",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "method",
@@ -40,30 +43,35 @@
    "attributeType" : "string",
    "enumType" : "/simo/FixedForceElongationMethod",
    "description" : "Method for initialisation of the fixed force elongation",
+   "optional" : true,
    "default" : "PRETENSION_LOCAL"
   }, {
    "name" : "pretension",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Pretension",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "direction",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Direction of line in horizontal plane",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "angle",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Angle of line from horizontal plane (positive downwards)",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "velocityLimit",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Velocity limit for friction force (Damping Exponent = 0)",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "characteristic",

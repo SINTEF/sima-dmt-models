@@ -2,7 +2,7 @@
  "name" : "DirectionDependentScatterData",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/metocean/ScatterData"],
  "attributes" : [{
    "name" : "sectors",
    "type" : "system/SIMOS/BlueprintAttribute",

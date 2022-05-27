@@ -2,18 +2,19 @@
  "name" : "RegularSegment",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "length",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Length of the segment.",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "numElements",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of elements",
+   "optional" : true,
    "default" : "10"
   }, {
    "name" : "crossSection",
@@ -41,13 +42,15 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of subelements each element is divided into for hydrodynamic calculation; static analysis.",
-   "optional" : true
+   "optional" : true,
+   "default" : "3"
   }, {
    "name" : "numSubElementsDynamic",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of subelements each element is divided into for hydrodynamic load calculation; dynamic analysis.",
-   "optional" : true
+   "optional" : true,
+   "default" : "5"
   }, {
    "name" : "stressfreeLength",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -59,24 +62,26 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Relative twist segment end 1",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "twistEnd2",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Relative twist segment end 2",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "offsetY",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Offset in line local Y-axis segment end 2",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "offsetZ",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Offset in line local Z-axis segment end 2",
+   "optional" : true,
    "default" : "0.0"
   }],
  "storageRecipes" : [],

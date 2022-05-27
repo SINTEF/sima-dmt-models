@@ -2,7 +2,7 @@
  "name" : "DynamicLoads",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "dynamicNodalForces",
    "type" : "system/SIMOS/BlueprintAttribute",

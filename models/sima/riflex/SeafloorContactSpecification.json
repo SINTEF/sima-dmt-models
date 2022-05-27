@@ -2,7 +2,7 @@
  "name" : "SeafloorContactSpecification",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "lineContacts",
    "type" : "system/SIMOS/BlueprintAttribute",

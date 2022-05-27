@@ -2,26 +2,29 @@
  "name" : "HLAPipeRoute",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/hla/HLAObject"],
  "attributes" : [{
    "name" : "routeFile",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
+   "attributeType" : "string",
+   "optional" : true
   }, {
    "name" : "coordsUTM",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
+   "optional" : true,
    "default" : "no"
   }, {
    "name" : "mapOnTerrain",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
+   "optional" : true,
    "default" : "auto"
   }, {
    "name" : "routeWidth",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "color",
    "type" : "system/SIMOS/BlueprintAttribute",

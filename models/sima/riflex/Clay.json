@@ -2,19 +2,20 @@
  "name" : "Clay",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/riflex/Soil"],
  "attributes" : [{
    "name" : "strainVelocityExponent",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Strain velocity exponent for damping model",
+   "optional" : true,
    "default" : "1.0"
   }, {
    "name" : "calculateDamping",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Calculate damping coefficients",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "dampingItems",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -26,66 +27,66 @@
    "name" : "upperWeight",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "lowerWeight",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "displacement",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Target displacement for generating equivalent damping coefficient",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "frequency",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Target frequency for generating equivalent damping coefficient",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "initialShearModulus",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Initial shear modulus of soil",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "upperShearStrength",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Undrained shear strength",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "upperJConstant",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Dimensionless constant",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "upperStrain",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Strain at one-half the maximum stress in undrained compression",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "lowerShearStrength",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Undrained shear strength",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "lowerJConstant",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Dimensionless constant",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "lowerStrain",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Strain at one-half the maximum stress in undrained compression",
-   "default" : "0.0"
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

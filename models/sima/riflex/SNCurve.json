@@ -2,20 +2,21 @@
  "name" : "SNCurve",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/NamedObject"],
  "attributes" : [{
    "name" : "fatigueLimitIndicator",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/FatigueLimitIndicator",
    "description" : "Fatigue limit indicator",
+   "optional" : true,
    "default" : "NO_LIMIT"
   }, {
    "name" : "fatigueLimit",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Point where SN curve becomes horizontal. Stresses below this line will not contribute to fatigue damage.",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "referenceThickness",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -33,13 +34,13 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Slope of the SN curve - m",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "constant",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Constant defining the SN curve. First segment or total curve - logC (for a SN-curve given in MPa)",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "curveItems",
    "type" : "system/SIMOS/BlueprintAttribute",

@@ -2,7 +2,7 @@
  "name" : "RemoveOperation",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/condition/ModelVariationOperation"],
  "attributes" : [{
    "name" : "removals",
    "type" : "system/SIMOS/BlueprintAttribute",

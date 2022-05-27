@@ -2,7 +2,7 @@
  "name" : "CombinedLoadingProperties",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/riflex/ElementReference"],
  "attributes" : [{
    "name" : "line",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -15,66 +15,75 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Segment on given line",
+   "optional" : true,
    "default" : "1"
   }, {
    "name" : "allSegments",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "All segments",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "elementNumber",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Local element number on actual segment",
+   "optional" : true,
    "default" : "1"
   }, {
    "name" : "allElements",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "All elements",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "youngsFactor",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Young's modulus",
+   "optional" : true,
    "default" : "2.1E11"
   }, {
    "name" : "poissonsRatio",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Poisson's ratio for pipe wall material",
+   "optional" : true,
    "default" : "0.3"
   }, {
    "name" : "yieldStrength",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Yield strength to be used in design",
+   "optional" : true,
    "default" : "4.0E8"
   }, {
    "name" : "tensileStrength",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Tensile strength to be used in design",
+   "optional" : true,
    "default" : "7.0E8"
   }, {
    "name" : "ovality",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Ovality",
+   "optional" : true,
    "default" : "0.005"
   }, {
    "name" : "internalCorrosion",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Internal corrosion allowance",
+   "optional" : true,
    "default" : "0.001"
   }, {
    "name" : "externalCorrosion",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "External corrosion allowance",
+   "optional" : true,
    "default" : "0.002"
   }, {
    "name" : "nominalDiameter",

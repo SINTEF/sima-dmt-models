@@ -2,37 +2,40 @@
  "name" : "DynmodVisualisationResponses",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "startTime",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Start time for export",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "endTime",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "End time for export",
+   "optional" : true,
    "default" : "512.0"
   }, {
    "name" : "timeIncrement",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Time increment for export",
+   "optional" : true,
    "default" : "0.5"
   }, {
    "name" : "storeVisualisationResponses",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Visualisation responses indicator",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "storeVTF",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Visualisation responses indicator",
-   "default" : "false"
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

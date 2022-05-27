@@ -2,19 +2,20 @@
  "name" : "WorkflowTest",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/doc/Test"],
  "attributes" : [{
    "name" : "disabled",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "If disabled, the test will not be run in a continuous integration environment",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "duration",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/doc/Duration",
-   "default" : "Medium"
+   "optional" : true,
+   "default" : "MEDIUM"
   }, {
    "name" : "assertions",
    "type" : "system/SIMOS/BlueprintAttribute",

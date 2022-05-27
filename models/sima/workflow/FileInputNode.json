@@ -2,27 +2,27 @@
  "name" : "FileInputNode",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/post/RunNode"],
  "attributes" : [{
    "name" : "x",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "y",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "h",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "w",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "controlSignalInputSlots",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -34,13 +34,26 @@
    "name" : "filePath",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "description" : "Path to the input file."
+   "description" : "Path to the input file.",
+   "optional" : true
   }, {
    "name" : "outputSlot",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "/post/OutputSlot",
    "contained" : true,
    "optional" : false
+  }, {
+   "name" : "readRawText",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "read the file in as raw text data",
+   "optional" : true
+  }, {
+   "name" : "splitLines",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "split separate lines into array",
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

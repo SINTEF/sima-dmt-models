@@ -1,7 +1,7 @@
 {
  "name" : "ArticulatedStructureType",
  "type" : "system/SIMOS/Enum",
- "values" : ["NRUN", "NONE", "Turret", "HLA"],
+ "values" : ["NRUN", "NONE", "TURRET", "HLA"],
  "labels" : ["Predefined run", "Member is fixed to its master", "Turret", "Import from HLA"]
 }
 

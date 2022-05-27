@@ -2,12 +2,13 @@
  "name" : "ForceResponseStorage",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "storageStep",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Code for storage of internal forces. Storage for every <storage step> given.",
+   "optional" : true,
    "default" : "1"
   }, {
    "name" : "format",
@@ -15,6 +16,7 @@
    "attributeType" : "string",
    "enumType" : "/riflex/FileFormatCode",
    "description" : "Format code for additional output of time series",
+   "optional" : true,
    "default" : "BINARY_OUTPUT_ONLY"
   }, {
    "name" : "elements",
@@ -30,13 +32,14 @@
    "attributeType" : "string",
    "enumType" : "/riflex/AdditionalFileFormatCode",
    "description" : "Format code for additional output of element transformation matrices",
+   "optional" : true,
    "default" : "BINARY_OUTPUT"
   }, {
    "name" : "readTransformationMatrices",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Make transformation matrices available in the post processor",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "relativeElementAngles",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -55,7 +58,7 @@
    "name" : "storeBottomContactForces",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
-   "default" : "false"
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

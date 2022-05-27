@@ -2,7 +2,7 @@
  "name" : "SingleResultField",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/custom/CustomComponent"],
  "attributes" : [{
    "name" : "output",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -12,26 +12,31 @@
   }, {
    "name" : "path",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
+   "attributeType" : "string",
+   "optional" : true
   }, {
    "name" : "label",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
+   "attributeType" : "string",
+   "optional" : true
   }, {
    "name" : "tooltip",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
+   "attributeType" : "string",
+   "optional" : true
   }, {
    "name" : "autoFormat",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Format numbers automatically or choose appropriate format ",
+   "optional" : true,
    "default" : "true"
   }, {
    "name" : "format",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "description" : "Decimal numer format. Please refer to https://docs.oracle.com/javase/tutorial/i18n/format/decimalFormat.html for a description",
+   "optional" : true,
    "default" : "0.000"
   }],
  "storageRecipes" : [],

@@ -2,7 +2,7 @@
  "name" : "Table",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity", "/report/ReportItem"],
+ "extends" : ["/report/ReportItem"],
  "attributes" : [{
    "name" : "caption",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -12,7 +12,8 @@
    "name" : "transposed",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
-   "optional" : true
+   "optional" : true,
+   "default" : "false"
   }, {
    "name" : "columns",
    "type" : "system/SIMOS/BlueprintAttribute",

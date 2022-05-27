@@ -2,12 +2,12 @@
  "name" : "WFMotionTimeSeries",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "timeSeriesFile",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "supportVessel",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -18,13 +18,15 @@
    "name" : "fileName",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "description" : "Motion time series file"
+   "description" : "Motion time series file",
+   "optional" : true
   }, {
    "name" : "fileFormat",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/FileFormatAsciStarNone",
    "description" : "Motion time series file format",
+   "optional" : true,
    "default" : "ASCII"
   }, {
    "name" : "motionTimeSeriesType",
@@ -32,6 +34,7 @@
    "attributeType" : "string",
    "enumType" : "/riflex/MotionTimeSeriesType",
    "description" : "Kind of motion time series input",
+   "optional" : true,
    "default" : "POSI"
   }, {
    "name" : "rotationUnit",
@@ -39,85 +42,93 @@
    "attributeType" : "string",
    "enumType" : "/riflex/RotationUnit",
    "description" : "Rotation unit",
+   "optional" : true,
    "default" : "DEGR"
   }, {
    "name" : "timeColumnNum",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Column number for time (Does not apply to STAR files)",
+   "optional" : true,
    "default" : "1"
   }, {
    "name" : "xMotionColumn",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Column or time series number for global dynamic x-motion",
+   "optional" : true,
    "default" : "0"
   }, {
    "name" : "xMotionVersion",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Startimes version number for global dynamic x-motion",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "yMotionColumn",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Column or time series number for global dynamic y-motion",
+   "optional" : true,
    "default" : "0"
   }, {
    "name" : "yMotionVersion",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Startimes version number for global dynamic y-motion",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "zRotationColumn",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Column or time series number for global dynamic z-rotation",
+   "optional" : true,
    "default" : "0"
   }, {
    "name" : "zRotationVersion",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Startimes version number for global dynamic z-rotation",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "zMotionColumn",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Column or time series number for global dynamic z-motion",
+   "optional" : true,
    "default" : "0"
   }, {
    "name" : "zMotionVersion",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Startimes version number for global dynamic z-motion",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "xRotationColumn",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Column or time series number for global dynamic x-rotation",
+   "optional" : true,
    "default" : "0"
   }, {
    "name" : "xRotationVersion",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Startimes version number for global dynamic x-rotation",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "yRotationColumn",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Column or time series number for global dynamic y-rotation",
+   "optional" : true,
    "default" : "0"
   }, {
    "name" : "yRotationVersion",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Startimes version number for global dynamic y-rotation",
-   "default" : "0"
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

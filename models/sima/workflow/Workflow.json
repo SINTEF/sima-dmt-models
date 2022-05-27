@@ -2,7 +2,7 @@
  "name" : "Workflow",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/NamedObject"],
  "attributes" : [{
    "name" : "nodes",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -20,7 +20,8 @@
   }, {
    "name" : "computeServiceID",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
+   "attributeType" : "string",
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

@@ -2,100 +2,105 @@
  "name" : "TurbSimWindGenerator",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/NamedObject", "/sima/ConditionSelectable"],
  "attributes" : [{
    "name" : "randSeed1",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "First random seed (-2147483648 to 2147483647)",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "seedGeneration",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/windturbine/RandomSeedGeneration",
-   "default" : "Intrinsic"
+   "optional" : true,
+   "default" : "INTRINSIC"
   }, {
    "name" : "randSeed2",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Second random seed (-2147483648 to 2147483647) for intrinsic pRNG, or an alternative pRNG: \"RanLux\" or \"RNSNLW\"",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "gridPointsZ",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Vertical grid-point matrix dimension",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "gridPointsY",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : " Horizontal grid-point matrix dimension",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "timeStep",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "analysisTime",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Length of analysis time series (program will add time if necessary: AnalysisTime = MAX(AnalysisTime, UsableTime+GridWidth/MeanHHWS) )",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "usableTime",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Usable length of output time series (program will add GridWidth/MeanHHWS seconds)",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "hubHeight",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Hub height (should be > 0.5*GridHeight)",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "gridHeight",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "gridWidth",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Grid width (should be >= 2*(RotorRadius+ShaftLength))",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "turbulenceModel",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/windturbine/TurbulenceModel",
+   "optional" : true,
    "default" : "IECKAI"
   }, {
    "name" : "iecStandard",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/windturbine/IECStandard",
+   "optional" : true,
    "default" : "IEC_61400_1"
   }, {
    "name" : "turbulenceCharacteristics",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/windturbine/IECTurbulenceCharacteristics",
+   "optional" : true,
    "default" : "A"
   }, {
    "name" : "turbulencePercentage",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Turbulence intensity in percent",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "windType",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/windturbine/IECWindType",
+   "optional" : true,
    "default" : "NTM"
   }, {
    "name" : "etmC",
@@ -108,19 +113,20 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/windturbine/IECWindProfileType",
+   "optional" : true,
    "default" : "LOG"
   }, {
    "name" : "referenceHeight",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Height of the reference wind speed",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "meanWindSpeed",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Mean (total) wind speed at the reference height",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "powerLawExponent",
    "type" : "system/SIMOS/BlueprintAttribute",

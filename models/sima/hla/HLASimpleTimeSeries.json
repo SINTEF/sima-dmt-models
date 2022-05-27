@@ -2,7 +2,7 @@
  "name" : "HLASimpleTimeSeries",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/hla/HLAObject"],
  "storageRecipes" : [],
  "uiRecipes" : []
 }

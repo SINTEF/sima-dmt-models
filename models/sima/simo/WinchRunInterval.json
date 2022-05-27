@@ -2,25 +2,25 @@
  "name" : "WinchRunInterval",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "startTime",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Start time for running winch",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "stopTime",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Stop time for running winch",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "speed",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Winch run velocity (positive when paying out)",
-   "default" : "0.0"
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

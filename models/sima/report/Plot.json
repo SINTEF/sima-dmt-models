@@ -2,7 +2,7 @@
  "name" : "Plot",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/report/ReportItem"],
  "attributes" : [{
    "name" : "object",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -13,21 +13,24 @@
    "name" : "caption",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "description" : "Caption"
+   "description" : "Caption",
+   "optional" : true
   }, {
    "name" : "mergeSeries",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Merge all series in one plot",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "xLabel",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
+   "attributeType" : "string",
+   "optional" : true
   }, {
    "name" : "yLabel",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
+   "attributeType" : "string",
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

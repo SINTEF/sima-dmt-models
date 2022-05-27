@@ -2,7 +2,7 @@
  "name" : "ModelOutputSpecification",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "reference",
    "type" : "system/SIMOS/BlueprintAttribute",

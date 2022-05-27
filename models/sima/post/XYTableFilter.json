@@ -2,27 +2,27 @@
  "name" : "XYTableFilter",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/post/OperationNode", "/post/OutputNode"],
  "attributes" : [{
    "name" : "x",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "y",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "h",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "w",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "controlSignalInputSlots",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -48,17 +48,20 @@
    "name" : "columnVariable",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "description" : "the values of this variable will create the columns of the table"
+   "description" : "the values of this variable will create the columns of the table",
+   "optional" : true
   }, {
    "name" : "rowVariable",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "description" : "the values of this variable will create the rows of the table"
+   "description" : "the values of this variable will create the rows of the table",
+   "optional" : true
   }, {
    "name" : "dataSeries",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "description" : "the values of this signal will be shown in the field matching the related variable values"
+   "description" : "the values of this signal will be shown in the field matching the related variable values",
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

@@ -2,12 +2,8 @@
  "name" : "DiffractedWaveField",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/NamedObject"],
  "attributes" : [{
-   "name" : "id",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
-  }, {
    "name" : "waves",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "/hydro/DiffractedWave",

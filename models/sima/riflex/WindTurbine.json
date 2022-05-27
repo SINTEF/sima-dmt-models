@@ -2,7 +2,7 @@
  "name" : "WindTurbine",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/NamedObject"],
  "attributes" : [{
    "name" : "shaftLine",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -43,6 +43,7 @@
    "attributeType" : "string",
    "enumType" : "/riflex/WindTurbineLoadOption",
    "description" : "If the aerodynamic moment is removed, Cm is treated as zero and the distance between aerodynamic and structural axes is ignored.",
+   "optional" : true,
    "default" : "INCLUDE"
   }, {
    "name" : "turbineOrientation",
@@ -50,48 +51,56 @@
    "attributeType" : "string",
    "enumType" : "/riflex/TurbineOrientation",
    "description" : "Turbine orientation",
+   "optional" : true,
    "default" : "UPWIND"
   }, {
    "name" : "bakFactor",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Bak correction in tower shadow",
+   "optional" : true,
    "default" : "0.1"
   }, {
    "name" : "dragEffect",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Drag correction in tower shadow",
+   "optional" : true,
    "default" : "false"
   }, {
    "name" : "advancedOptions",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Use advanced aerodynamic options",
+   "optional" : true,
    "default" : "false"
   }, {
    "name" : "inductionCalculation",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "It is recommended to turn off the induction calculation for a parked or idling wind turbine.",
+   "optional" : true,
    "default" : "true"
   }, {
    "name" : "prandtlTip",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "The correction for tip loss due to the finite number of blades may be applied or removed.",
+   "optional" : true,
    "default" : "true"
   }, {
    "name" : "prandtlRoot",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "The correction for hub loss due to the finite number of blades may be applied or removed.",
+   "optional" : true,
    "default" : "false"
   }, {
    "name" : "prandtlYaw",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "If yaw correction is selected, the Prandtl factor is modified based on the angle between the incoming wind and the rotor plane.",
+   "optional" : true,
    "default" : "true"
   }, {
    "name" : "measurementNodes",

@@ -2,12 +2,13 @@
  "name" : "BumperData",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/NamedObject"],
  "attributes" : [{
    "name" : "velocityLimit",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Velocity limit for damping force",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "characteristic",

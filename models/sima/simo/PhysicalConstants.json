@@ -2,37 +2,42 @@
  "name" : "PhysicalConstants",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "airDensity",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Air density - rho air",
-   "optional" : true
+   "optional" : true,
+   "default" : "1.25"
   }, {
    "name" : "waterDensity",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Water density - rho water",
-   "optional" : true
+   "optional" : true,
+   "default" : "1025.0"
   }, {
    "name" : "kinematicViscosityWater",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Kinematic viscosity of water",
-   "optional" : true
+   "optional" : true,
+   "default" : "1.188E-6"
   }, {
    "name" : "kinematicViscosityAir",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Kinematic viscosity of air",
-   "optional" : true
+   "optional" : true,
+   "default" : "1.516E-5"
   }, {
    "name" : "accOfGravity",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Acceleration of gravity - g",
-   "optional" : true
+   "optional" : true,
+   "default" : "9.81"
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

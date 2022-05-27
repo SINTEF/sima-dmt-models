@@ -2,27 +2,27 @@
  "name" : "FileCopyNode",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/post/RunNode"],
  "attributes" : [{
    "name" : "x",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "y",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "h",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "w",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "controlSignalInputSlots",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -35,30 +35,31 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Do not run if input is empty",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "folder",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "If this is set, all files that er input to the operation will be copied to the destination, otherwise a single file is expected",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "path",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "description" : "Path to the output file."
+   "description" : "Path to the output file.",
+   "optional" : true
   }, {
    "name" : "retainStructure",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Retain structure of input",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "cleanUpFolder",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Delete all contained files and folders in the given folder before copying",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "inputSlot",
    "type" : "system/SIMOS/BlueprintAttribute",

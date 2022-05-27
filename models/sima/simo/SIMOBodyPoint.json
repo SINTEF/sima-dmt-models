@@ -2,7 +2,7 @@
  "name" : "SIMOBodyPoint",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/NamedObject", "/simo/BodyForceComponent"],
  "attributes" : [{
    "name" : "winch",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -26,19 +26,19 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Local  x position",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "y",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Local  y position",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "z",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Local z position",
-   "default" : "0.0"
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

@@ -2,7 +2,7 @@
  "name" : "ReferenceFrame",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/NamedObject"],
  "attributes" : [{
    "name" : "parent",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -14,37 +14,37 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Global coordinate X",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "yGlobal",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Global coordinate Y",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "zGlobal",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Global coordinate Z",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "rxGlobal",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Global  X-axis rotation",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "ryGlobal",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Global  Y-axis rotation",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "rzGlobal",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Global  Z-axis rotation",
-   "default" : "0.0"
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

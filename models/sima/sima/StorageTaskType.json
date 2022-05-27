@@ -1,7 +1,7 @@
 {
  "name" : "StorageTaskType",
  "type" : "system/SIMOS/Enum",
- "values" : ["Private", "Shared"],
+ "values" : ["PRIVATE", "SHARED"],
  "labels" : ["Private", "Shared"]
 }
 

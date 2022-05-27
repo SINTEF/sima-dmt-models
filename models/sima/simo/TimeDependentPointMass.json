@@ -2,7 +2,7 @@
  "name" : "TimeDependentPointMass",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/NamedObject"],
  "attributes" : [{
    "name" : "point",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -22,31 +22,31 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Mass at t=0 (may be negative).",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "massMax",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Maximum allowable mass Mass, (may be negative).",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "massMin",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Minimum allowable mass Mass, (may be negative).",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "massRateMax",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Maximum allowable mass rate, (may be negative) (HLA only).",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "massRateMin",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Minimum allowable mass rate, (may be negative) (HLA only).",
-   "default" : "0.0"
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

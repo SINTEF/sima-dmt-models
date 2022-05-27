@@ -2,7 +2,7 @@
  "name" : "NonEquidistantSignal",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/post/GeneratorSignal"],
  "attributes" : [{
    "name" : "properties",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -15,12 +15,14 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "description" : "Defines the unit of the x axis",
+   "optional" : true,
    "default" : "s"
   }, {
    "name" : "yunit",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "description" : "Defines the unit of the y axis",
+   "optional" : true,
    "default" : "-"
   }, {
    "name" : "values",
@@ -32,11 +34,13 @@
   }, {
    "name" : "ylabel",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
+   "attributeType" : "string",
+   "optional" : true
   }, {
    "name" : "xlabel",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
+   "attributeType" : "string",
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

@@ -2,41 +2,42 @@
  "name" : "VonMisesCombinedLoading",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/riflex/CombinedLoading"],
  "attributes" : [{
    "name" : "refPointPressure",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Internal design pressure at vertical reference position",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "referencePoint",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Vertical reference position for internal pressure. \r\nGiven as the Z coordinate in global coordinate system.",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "limitTimeInterval",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Specify time window to be applied for assessment of utilization. In case \"end time\" exceeds the time series duration, the end of the time series will be used as the end time",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "startTime",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "endTime",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "addIntermediateResults",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Add intermediate element results to the output",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "properties",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -50,24 +51,27 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Calculate characteristic extreme values of utilization factors using Gumbel distribution fitting",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "seastateReturnPeriod",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Return period used for estimating the characteristic extreme value",
+   "optional" : true,
    "default" : "3.0"
   }, {
    "name" : "percentile",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Specify percentile in extreme value distribution. \nThe value 0.57038 corresponds to the expected extreme, and 0.9 corresponds to 90% estimate of the extreme response",
+   "optional" : true,
    "default" : "0.57038"
   }, {
    "name" : "usageFactor",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Usage factor according to e.g. API 2RD",
+   "optional" : true,
    "default" : "1.0"
   }, {
    "name" : "stress",
@@ -75,7 +79,8 @@
    "attributeType" : "string",
    "enumType" : "/riflex/VonMisesStress",
    "description" : "Usage factor according to e.g. API 2RD",
-   "default" : "Midwall"
+   "optional" : true,
+   "default" : "MIDWALL"
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

@@ -2,68 +2,68 @@
  "name" : "FirstOrderMotionTransferFunction",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
-   "name" : "id",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
-  }, {
-   "name" : "nDir",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "integer",
-   "default" : "0"
-  }, {
    "name" : "directions",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
-   "dimensions" : "*",
-   "default" : "0.0"
-  }, {
-   "name" : "nFreq",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "integer",
-   "default" : "0"
+   "optional" : true,
+   "dimensions" : "*"
   }, {
    "name" : "frequencies",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
-   "dimensions" : "*",
-   "default" : "0.0"
-  }, {
-   "name" : "nDOF",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "integer",
-   "default" : "0"
-  }, {
-   "name" : "nonZeroDofs",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "boolean",
-   "dimensions" : "*",
-   "default" : "true"
-  }, {
-   "name" : "realvalues",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "number",
-   "dimensions" : "*",
-   "default" : "0.0"
-  }, {
-   "name" : "imagValues",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "number",
-   "dimensions" : "*",
-   "default" : "0.0"
+   "optional" : true,
+   "dimensions" : "*"
   }, {
    "name" : "symmetry",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/hydro/DirectionSymmetry",
+   "optional" : true,
    "default" : "NO_SYMMETRY"
   }, {
    "name" : "hfReference",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Transfer function reference position",
-   "default" : "0.0"
+   "optional" : true
+  }, {
+   "name" : "surge",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/hydro/DirectionDependentComplexValues",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "sway",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/hydro/DirectionDependentComplexValues",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "heave",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/hydro/DirectionDependentComplexValues",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "roll",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/hydro/DirectionDependentComplexValues",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "pitch",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/hydro/DirectionDependentComplexValues",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "yaw",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/hydro/DirectionDependentComplexValues",
+   "contained" : true,
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

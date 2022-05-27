@@ -2,24 +2,27 @@
  "name" : "WamitBody",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/Body"],
  "attributes" : [{
    "name" : "length",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Length",
+   "optional" : true,
    "default" : "10.0"
   }, {
    "name" : "width",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Width",
+   "optional" : true,
    "default" : "5.0"
   }, {
    "name" : "height",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Height",
+   "optional" : true,
    "default" : "5.0"
   }, {
    "name" : "appearance",
@@ -44,44 +47,49 @@
    "name" : "geometryFilename",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "description" : "GDF Geometry"
+   "description" : "GDF Geometry",
+   "optional" : true
   }, {
    "name" : "surfacesToIncludeFromMs2File",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/wamit/SurfacesToIncludeFromMs2FileOption",
-   "default" : "allVisibleSurfaces"
+   "optional" : true,
+   "default" : "ALLVISIBLESURFACES"
   }, {
    "name" : "symmetryAboutX",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "symmetryAboutY",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "entitySelectionList",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
+   "attributeType" : "string",
+   "optional" : true
   }, {
    "name" : "evaluationMode",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/wamit/EvaluationModeOption",
-   "default" : "fast"
+   "optional" : true,
+   "default" : "FAST"
   }, {
    "name" : "divisionsMultiplier",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "directionOfNormals",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/wamit/DirectionsOfNormalsOption",
-   "default" : "outward"
+   "optional" : true,
+   "default" : "OUTWARD"
   }, {
    "name" : "parameterLines",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -90,7 +98,7 @@
    "contained" : true,
    "optional" : true
   }, {
-   "name" : "COG",
+   "name" : "cog",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "/sima/Point3",
    "contained" : true,
@@ -119,19 +127,19 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Use external damping",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "includeExternalStiffnessMatrix",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Use external stiffness",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "includeExternalMassMatrix",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Use external mass matrix",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "modes",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -143,6 +151,7 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Characteristic Length (ULEN)",
+   "optional" : true,
    "default" : "1.0"
   }, {
    "name" : "controlSurface",
@@ -155,27 +164,31 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/wamit/RemoveIrregularFrequenciesOption",
-   "default" : "no"
+   "optional" : true,
+   "default" : "NO"
   }, {
    "name" : "trimWaterline",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "The static orientation of the body is shifted relative to the horizontal plane of the free surface, first by a prescribed vertical elevation, then by a pitch angle (often referred to as the trim angle), and then by a roll angle (heel).",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "draftChange",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "heelChange",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "trimChange",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
+   "optional" : true,
    "default" : "0.0"
   }],
  "storageRecipes" : [],

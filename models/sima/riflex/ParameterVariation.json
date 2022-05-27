@@ -2,52 +2,56 @@
  "name" : "ParameterVariation",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "numVariations",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of variations",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "maxIterations",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Maximum number of iterations for each variation",
+   "optional" : true,
    "default" : "1"
   }, {
    "name" : "convergenceNorm",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/ConvergenceNorm",
+   "optional" : true,
    "default" : "DISP"
   }, {
    "name" : "accuracy",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Required accuracy measured by displacement norm",
+   "optional" : true,
    "default" : "1.0E-4"
   }, {
    "name" : "energyAccuracy",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Required accuracy measured by energy norm. This value is relevant only if Convergence Norm is 'Both'.",
+   "optional" : true,
    "default" : "1.0E-4"
   }, {
    "name" : "offset",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "current",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "specifiedForce",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "offsetVariation",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -71,19 +75,19 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Activate bottom friction forces",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "springActivation",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Activate global springs",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "memoActivation",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Activate material memory formulation (isotropic / kinematic hardening)",
-   "default" : "false"
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

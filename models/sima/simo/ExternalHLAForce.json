@@ -2,7 +2,7 @@
  "name" : "ExternalHLAForce",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/NamedObject"],
  "attributes" : [{
    "name" : "attachmentPoint",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -16,13 +16,14 @@
    "attributeType" : "string",
    "enumType" : "/simo/ReferenceFrameType",
    "description" : "Which coordinate system is the force is given in?",
+   "optional" : true,
    "default" : "LOCAL"
   }, {
    "name" : "nStorageParameters",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of parameters for intermediate storage",
-   "default" : "0"
+   "optional" : true
   }, {
    "name" : "intParameters",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -48,42 +49,48 @@
    "name" : "importAttackPoint",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "fx",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Force in X-direction",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "fy",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Force in Y-direction",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "fz",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Force in Z-direction",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "mx",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Moment about X-axis",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "my",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Moment about Y-axis",
+   "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "mz",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Moment about Z-axis",
+   "optional" : true,
    "default" : "0.0"
   }],
  "storageRecipes" : [],

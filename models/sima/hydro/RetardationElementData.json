@@ -2,34 +2,27 @@
  "name" : "RetardationElementData",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
-   "name" : "id",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
-  }, {
-   "name" : "DOF1",
+   "name" : "dof1",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/hydro/DOF",
+   "optional" : true,
    "default" : "X"
   }, {
-   "name" : "DOF2",
+   "name" : "dof2",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/hydro/DOF",
+   "optional" : true,
    "default" : "X"
-  }, {
-   "name" : "nValues",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "integer",
-   "default" : "0"
   }, {
    "name" : "values",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
-   "dimensions" : "*",
-   "default" : "0.0"
+   "optional" : true,
+   "dimensions" : "*"
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

@@ -2,55 +2,61 @@
  "name" : "NonLinearForceModel",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "internalSlugFlow",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Indicator for modelling forces from internal slug flow",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "hydrodynamicForce",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/HydrodynamicForceIndicator",
    "description" : "Indicator for hydrodynamic force model",
+   "optional" : true,
    "default" : "NO_FORCE_ITERATION_VELOCITIES"
   }, {
    "name" : "maxHit",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Maximum number of load iterations (linear analysis). A negative value gives print of convergence for each step.",
+   "optional" : true,
    "default" : "5"
   }, {
    "name" : "forceIterationConvergence",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Convergence control parameter for force iteration",
+   "optional" : true,
    "default" : "0.01"
   }, {
    "name" : "startUpDuration",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Duration of start-up procedure",
+   "optional" : true,
    "default" : "10.0"
   }, {
    "name" : "ruptureRelease",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Indicator for rupture / release",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "connectorNumber",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Global ball-joint connector ID in the RIFLEX FEM model",
+   "optional" : true,
    "default" : "0"
   }, {
    "name" : "timeStepNumForRelease",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Time step number for release (nonlinear analysis only). In linear analysis the connector will be released at the first step.",
+   "optional" : true,
    "default" : "0"
   }, {
    "name" : "dampingMatrixCalculation",
@@ -58,6 +64,7 @@
    "attributeType" : "string",
    "enumType" : "/riflex/DampingMatrixCalculationOption",
    "description" : "Option for calculation of proportional damping matrix in nonlinear analysis. Irrelevant for linear analysis.",
+   "optional" : true,
    "default" : "CONSTANT_PROPORTIONAL"
   }, {
    "name" : "slugForceSpecification",

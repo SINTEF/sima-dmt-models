@@ -2,7 +2,7 @@
  "name" : "ARLine",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/simo/LineForceProvider"],
  "attributes" : [{
    "name" : "lineType",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -29,7 +29,7 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Do not include this line in the calculations",
-   "default" : "false"
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

@@ -2,7 +2,7 @@
  "name" : "SIMOResultContainer",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/ConditionResultContainer"],
  "attributes" : [{
    "name" : "properties",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -13,7 +13,8 @@
   }, {
    "name" : "modelOutputFile",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
+   "attributeType" : "string",
+   "optional" : true
   }, {
    "name" : "probability",
    "type" : "system/SIMOS/BlueprintAttribute",

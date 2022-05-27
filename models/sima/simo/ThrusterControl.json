@@ -2,7 +2,7 @@
  "name" : "ThrusterControl",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "thruster",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -16,55 +16,56 @@
    "attributeType" : "string",
    "enumType" : "/simo/DPThrusterType",
    "description" : "Thruster control type",
+   "optional" : true,
    "default" : "FIXED"
   }, {
    "name" : "direction",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Direction of thruster. Start value for azimuthing thrusters.",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "minForce",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Minimum force",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "maxForce",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Maximum force",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "maxForceRate",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Maximum rate of force",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "maxAngleRate",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Maximum rate of azimuth angle",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "x",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "X-coordinate of thruster in body system",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "y",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Y-coordinate of thruster in body system",
-   "default" : "0.0"
+   "optional" : true
   }, {
    "name" : "z",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Z-coordinate of thruster in body system",
-   "default" : "0.0"
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

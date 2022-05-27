@@ -1,7 +1,7 @@
 {
  "name" : "InputReferenceSystem",
  "type" : "system/SIMOS/Enum",
- "values" : ["Metocean", "SIMA"],
+ "values" : ["METOCEAN", "SIMA"],
  "labels" : ["Metocean", "SIMA"]
 }
 

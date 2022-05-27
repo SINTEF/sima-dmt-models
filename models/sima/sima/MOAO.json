@@ -3,6 +3,19 @@
  "type" : "system/SIMOS/Blueprint",
  "abstract" : true,
  "extends" : ["system/SIMOS/NamedEntity"],
+ "attributes" : [{
+   "name" : "_id",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
+   "name" : "scriptableValues",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/sima/ScriptableValue",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }],
  "storageRecipes" : [],
  "uiRecipes" : []
 }

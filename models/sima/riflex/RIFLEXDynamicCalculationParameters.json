@@ -2,7 +2,7 @@
  "name" : "RIFLEXDynamicCalculationParameters",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "irregularTimeSeries",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -178,25 +178,28 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Scaling of volume forces.",
+   "optional" : true,
    "default" : "1.0"
   }, {
    "name" : "specifiedForcesScaling",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Scaling of specified (nodal) forces.",
+   "optional" : true,
    "default" : "1.0"
   }, {
    "name" : "currentVelocitiesScaling",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Scaling of current velocities.",
+   "optional" : true,
    "default" : "1.0"
   }, {
    "name" : "changeStaticLoads",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Change applied static loads at the start of the dynamic analysis",
-   "default" : "false"
+   "optional" : true
   }, {
    "name" : "dynamicLoads",
    "type" : "system/SIMOS/BlueprintAttribute",

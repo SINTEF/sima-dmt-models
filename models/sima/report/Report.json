@@ -2,7 +2,7 @@
  "name" : "Report",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/NamedObject"],
  "attributes" : [{
    "name" : "items",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -14,17 +14,20 @@
    "name" : "title",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "description" : "The title of the report."
+   "description" : "The title of the report.",
+   "optional" : true
   }, {
    "name" : "subtitle",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "description" : "A sub title for the report."
+   "description" : "A sub title for the report.",
+   "optional" : true
   }, {
    "name" : "filePath",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "description" : "Optional path to the generated report file"
+   "description" : "Optional path to the generated report file",
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

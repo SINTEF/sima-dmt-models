@@ -2,39 +2,20 @@
  "name" : "FrequencyDependentDamping",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["/sima/MOAO"],
  "attributes" : [{
-   "name" : "id",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
-  }, {
-   "name" : "nDOF2",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "integer",
-   "default" : "0"
-  }, {
-   "name" : "nFreq",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "integer",
-   "default" : "0"
-  }, {
    "name" : "frequencies",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
-   "dimensions" : "*",
-   "default" : "0.0"
+   "optional" : true,
+   "dimensions" : "*"
   }, {
-   "name" : "nonZeroDofs",
+   "name" : "items",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "boolean",
+   "attributeType" : "/hydro/TwoDofData",
    "dimensions" : "*",
-   "default" : "true"
-  }, {
-   "name" : "values",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "number",
-   "dimensions" : "*",
-   "default" : "0.0"
+   "contained" : true,
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []
