@@ -10,7 +10,7 @@
    "enumType" : "/wamit/YesNoOption",
    "description" : "IRAD",
    "optional" : true,
-   "default" : "NO"
+   "default" : "YES"
   }, {
    "name" : "solveDiffractionProblem",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -26,7 +26,7 @@
    "enumType" : "/wamit/YesNoOption",
    "description" : "Corresponds to IOPTN(1)",
    "optional" : true,
-   "default" : "NO"
+   "default" : "YES"
   }, {
    "name" : "calculateExcitingForcesFromHaskindRelations",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -42,7 +42,7 @@
    "enumType" : "/wamit/CalculateExcitingForcesOption",
    "description" : "Corresponds to IOPTN(3)",
    "optional" : true,
-   "default" : "NO"
+   "default" : "YES"
   }, {
    "name" : "calculateResponseAmplitudeOperator",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -50,7 +50,7 @@
    "enumType" : "/wamit/CalculateResponseAmplitudeOperatorOption",
    "description" : "Corresponds to IOPTN(4)",
    "optional" : true,
-   "default" : "NO"
+   "default" : "YESDIFFRACTION"
   }, {
    "name" : "useMomentumIntegration",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -58,7 +58,7 @@
    "enumType" : "/wamit/CalculateMeanForceAndMomentIntegrationOption",
    "description" : "Corresponds to IOPTN(8)",
    "optional" : true,
-   "default" : "NO"
+   "default" : "YESUNIDIRECTIONAL"
   }, {
    "name" : "usePressureIntegration",
    "type" : "system/SIMOS/BlueprintAttribute",

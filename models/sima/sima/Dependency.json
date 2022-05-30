@@ -4,6 +4,11 @@
  "abstract" : false,
  "extends" : ["system/SIMOS/NamedEntity"],
  "attributes" : [{
+   "name" : "_id",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
    "name" : "object",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "/sima/MOAO",

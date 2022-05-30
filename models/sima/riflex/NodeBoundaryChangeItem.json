@@ -18,7 +18,7 @@
    "enumType" : "/riflex/BoundaryCondition",
    "description" : "Boundary condition for translation in X-direction.",
    "optional" : true,
-   "default" : "FREE"
+   "default" : "FIXED"
   }, {
    "name" : "swayConstraint",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -26,7 +26,7 @@
    "enumType" : "/riflex/BoundaryCondition",
    "description" : "Boundary condition for translation in Y-direction.",
    "optional" : true,
-   "default" : "FREE"
+   "default" : "FIXED"
   }, {
    "name" : "heaveConstraint",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -34,7 +34,7 @@
    "enumType" : "/riflex/BoundaryCondition",
    "description" : "Boundary condition for translation in Z-direction.",
    "optional" : true,
-   "default" : "FREE"
+   "default" : "FIXED"
   }, {
    "name" : "rollConstraint",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -42,7 +42,7 @@
    "enumType" : "/riflex/BoundaryCondition",
    "description" : "Boundary condition for rotation about X-axis",
    "optional" : true,
-   "default" : "FREE"
+   "default" : "FIXED"
   }, {
    "name" : "pitchConstraint",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -50,7 +50,7 @@
    "enumType" : "/riflex/BoundaryCondition",
    "description" : "Boundary condition for rotation about Y-axis",
    "optional" : true,
-   "default" : "FREE"
+   "default" : "FIXED"
   }, {
    "name" : "yawConstraint",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -58,7 +58,7 @@
    "enumType" : "/riflex/BoundaryCondition",
    "description" : "Boundary condition for rotation about Z-axis",
    "optional" : true,
-   "default" : "FREE"
+   "default" : "FIXED"
   }, {
    "name" : "supportVessel",
    "type" : "system/SIMOS/BlueprintAttribute",

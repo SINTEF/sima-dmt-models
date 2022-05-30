@@ -10,7 +10,7 @@
    "enumType" : "/riflex/NodeConstraint",
    "description" : "Supernode type.",
    "optional" : true,
-   "default" : "FREE"
+   "default" : "FIXED_PRESCRIBED"
   }, {
    "name" : "referenceFrame",
    "type" : "system/SIMOS/BlueprintAttribute",

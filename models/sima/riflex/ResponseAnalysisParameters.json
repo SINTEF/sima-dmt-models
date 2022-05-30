@@ -10,7 +10,7 @@
    "enumType" : "/riflex/ResponseIterationMethod",
    "description" : "Response iteration method",
    "optional" : true,
-   "default" : "FIXED_POINT"
+   "default" : "NEWTON_RAPHSON"
   }, {
    "name" : "retry",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -96,7 +96,7 @@
    "enumType" : "/riflex/ForceSwitch",
    "description" : "Option for force calculation",
    "optional" : true,
-   "default" : "USE_STIFFNESS_MATRIX"
+   "default" : "USE_CURVATURE"
   }, {
    "name" : "printSwitch",
    "type" : "system/SIMOS/BlueprintAttribute",

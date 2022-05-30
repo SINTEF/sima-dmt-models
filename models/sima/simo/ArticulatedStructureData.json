@@ -30,7 +30,7 @@
    "enumType" : "/simo/MotionMode",
    "description" : "Mode of motion (X,Y,Z,PHI,THETA,PSI)",
    "optional" : true,
-   "default" : "X"
+   "default" : "PHI"
   }, {
    "name" : "initialPosition",
    "type" : "system/SIMOS/BlueprintAttribute",

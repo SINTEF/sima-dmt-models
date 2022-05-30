@@ -309,7 +309,7 @@
    "enumType" : "/riflex/InnerOuter",
    "description" : "Inner or outer diameter",
    "optional" : true,
-   "default" : "INNER"
+   "default" : "OUTER"
   }, {
    "name" : "coupledBendingTorsion",
    "type" : "system/SIMOS/BlueprintAttribute",

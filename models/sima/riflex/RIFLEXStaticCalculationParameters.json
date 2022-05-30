@@ -16,7 +16,7 @@
    "attributeType" : "string",
    "enumType" : "/riflex/MatrixStorage",
    "optional" : true,
-   "default" : "SKYLINE"
+   "default" : "SPARSE"
   }, {
    "name" : "currentProfileScaling",
    "type" : "system/SIMOS/BlueprintAttribute",

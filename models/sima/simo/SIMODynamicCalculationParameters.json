@@ -29,7 +29,7 @@
    "enumType" : "/simo/WaveMethod",
    "description" : "Selected wave method",
    "optional" : true,
-   "default" : "NO_WAVE"
+   "default" : "FFT_ONLY"
   }, {
    "name" : "integrationMethod",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -193,7 +193,7 @@
    "attributeType" : "string",
    "enumType" : "/simo/WindMethod",
    "optional" : true,
-   "default" : "NO_WIND"
+   "default" : "FFT"
   }, {
    "name" : "windSpectrumVerticalDomain",
    "type" : "system/SIMOS/BlueprintAttribute",

@@ -18,7 +18,7 @@
    "enumType" : "/simo/KalmanEstimationMethod",
    "description" : "Estimation method flag",
    "optional" : true,
-   "default" : "CURRENT"
+   "default" : "FORCE"
   }, {
    "name" : "wfStartingPeriod",
    "type" : "system/SIMOS/BlueprintAttribute",

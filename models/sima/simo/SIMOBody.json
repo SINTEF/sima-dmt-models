@@ -50,7 +50,7 @@
    "enumType" : "/simo/BodyType",
    "description" : "Body type",
    "optional" : true,
-   "default" : "PRESCRIBED"
+   "default" : "SIX_DOF_TIME_DOMAIN"
   }, {
    "name" : "positionsImportType",
    "type" : "system/SIMOS/BlueprintAttribute",

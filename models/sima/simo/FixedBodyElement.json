@@ -38,7 +38,7 @@
    "enumType" : "/simo/FixedBodyWaveParticleMethod",
    "description" : "Include wave particle velocity and acceleration?",
    "optional" : true,
-   "default" : "NOT_INCLUDED"
+   "default" : "VELOCITY_AND_ACCELERATION"
   }, {
    "name" : "position",
    "type" : "system/SIMOS/BlueprintAttribute",

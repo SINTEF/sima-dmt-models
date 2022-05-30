@@ -59,7 +59,7 @@
    "attributeType" : "string",
    "enumType" : "/riflex/MatrixPlotFileOption",
    "optional" : true,
-   "default" : "NO_PRINT"
+   "default" : "MAX_AND_STANDARD_DEV"
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

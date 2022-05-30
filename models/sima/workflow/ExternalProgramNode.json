@@ -63,7 +63,7 @@
    "enumType" : "/post/FileFormat",
    "description" : "file format",
    "optional" : true,
-   "default" : "CSV"
+   "default" : "HDF5"
   }, {
    "name" : "failOnErrorCode",
    "type" : "system/SIMOS/BlueprintAttribute",

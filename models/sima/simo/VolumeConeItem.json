@@ -43,7 +43,7 @@
    "enumType" : "/simo/Axis",
    "description" : "Cone axis direction:\r\nX: parallell to Tank x-axis\r\nY: parallell to Tank y-axis\r\nZ: parallell to Tank z-axis",
    "optional" : true,
-   "default" : "X"
+   "default" : "Z"
   }],
  "storageRecipes" : [],
  "uiRecipes" : []
