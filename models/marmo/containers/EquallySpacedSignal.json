@@ -12,19 +12,25 @@
   }, {
    "name" : "xstart",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "number"
+   "attributeType" : "number",
+   "optional" : true,
+   "default" : "0.0"
   }, {
    "name" : "xdelta",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "number"
+   "attributeType" : "number",
+   "optional" : true,
+   "default" : "1.0"
   }, {
    "name" : "unit",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
+   "attributeType" : "string",
+   "optional" : true
   }, {
    "name" : "xunit",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
+   "attributeType" : "string",
+   "optional" : true
   }, {
    "name" : "xname",
    "type" : "system/SIMOS/BlueprintAttribute",

@@ -17,11 +17,13 @@
   }, {
    "name" : "unit",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
+   "attributeType" : "string",
+   "optional" : true
   }, {
    "name" : "xunit",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
+   "attributeType" : "string",
+   "optional" : true
   }, {
    "name" : "xname",
    "type" : "system/SIMOS/BlueprintAttribute",
