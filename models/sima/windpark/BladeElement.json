@@ -1,0 +1,28 @@
+{
+ "name" : "BladeElement",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["/sima/MOAO"],
+ "attributes" : [{
+   "name" : "elementLength",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Blade element length",
+   "optional" : true
+  }, {
+   "name" : "chordLength",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Chord length of the foil profile",
+   "optional" : true
+  }, {
+   "name" : "twist",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Twist angle",
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

@@ -1,0 +1,7 @@
+{
+ "name" : "AreaAveragingOption",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["RADIAL", "CIRCULAR", "SQUARE"],
+ "labels" : ["Radial distance", "Circular area", "Square area"]
+}
+

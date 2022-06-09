@@ -1,0 +1,7 @@
+{
+ "name" : "DeficitAnalysisOption",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["COMP", "READ"],
+ "labels" : ["Compute", "Read"]
+}
+

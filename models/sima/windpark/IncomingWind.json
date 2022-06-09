@@ -1,0 +1,7 @@
+{
+ "name" : "IncomingWind",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["CONSTANT", "INCOMING"],
+ "labels" : ["Constant", "Incoming"]
+}
+

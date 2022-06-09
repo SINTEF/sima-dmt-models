@@ -1,0 +1,65 @@
+{
+ "name" : "WindTurbineType",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["/sima/NamedObject"],
+ "attributes" : [{
+   "name" : "airfoilDatabaseFilename",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
+   "name" : "direction",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/windpark/TurbineDirection",
+   "description" : "Option for choosing the best approach for handling multiple deficits",
+   "optional" : true,
+   "default" : "UPWIND"
+  }, {
+   "name" : "outerRadius",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Outer airfoil radius",
+   "optional" : true
+  }, {
+   "name" : "numberOfBlades",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "optional" : true
+  }, {
+   "name" : "turbineDirection",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/windpark/TurbineDirection",
+   "optional" : true,
+   "default" : "UPWIND"
+  }, {
+   "name" : "bladeElements",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/windpark/BladeElement",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "cutInWindSpeed",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true
+  }, {
+   "name" : "cutOutWindSpeed",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true
+  }, {
+   "name" : "performanceRelations",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/windpark/PerformanceRelation",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

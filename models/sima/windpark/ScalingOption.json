@@ -1,0 +1,7 @@
+{
+ "name" : "ScalingOption",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["NONE", "STANDARD", "POINT_SCALING", "GRID_POINT_SCALING"],
+ "labels" : ["None", "Standard scaling", "Point scaling", "Grid point scaling"]
+}
+

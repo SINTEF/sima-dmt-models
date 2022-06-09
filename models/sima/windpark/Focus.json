@@ -1,0 +1,7 @@
+{
+ "name" : "Focus",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["TARGET", "PARK"],
+ "labels" : ["Target", "Park"]
+}
+

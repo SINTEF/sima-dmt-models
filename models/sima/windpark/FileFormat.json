@@ -1,0 +1,7 @@
+{
+ "name" : "FileFormat",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["BINARY", "ASCII"],
+ "labels" : ["Binary format", "Ascii format"]
+}
+

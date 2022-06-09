@@ -1,0 +1,7 @@
+{
+ "name" : "WeightOption",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["UNIFORM", "TRUNCATED_JINC", "WINDOWED_JINC"],
+ "labels" : ["Uniform", "Truncated Jinc", "Window Jinc"]
+}
+

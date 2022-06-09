@@ -1,0 +1,7 @@
+{
+ "name" : "TurbineDirection",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["UPWIND", "DOWNWIND"],
+ "labels" : ["Upwind", "Downwind"]
+}
+

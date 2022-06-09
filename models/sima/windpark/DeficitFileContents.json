@@ -1,0 +1,7 @@
+{
+ "name" : "DeficitFileContents",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["INDUCTION_PROFILE", "START_DEFICIT"],
+ "labels" : ["Induction profile", "Start deficit"]
+}
+

@@ -1,0 +1,7 @@
+{
+ "name" : "NearWakeLengthModel",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["ROTOR_DIAMETERS", "VERMEULEN", "SORENSEN"],
+ "labels" : ["Near length model 2 rotor diameters", "Near length model based on Vermeulen", "Near length model based on Sorensen"]
+}
+

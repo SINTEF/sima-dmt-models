@@ -1,0 +1,7 @@
+{
+ "name" : "MultipleDeficitMethod",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["MAXOP", "DIRECT", "QUADRATIC"],
+ "labels" : ["MAX operator", "Direct summation", "Quadratic square summation"]
+}
+

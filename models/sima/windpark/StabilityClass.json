@@ -1,0 +1,7 @@
+{
+ "name" : "StabilityClass",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["STABLE_0", "STABLE_1", "STABLE_2", "STABLE_3", "STABLE_4", "STABLE_5", "STABLE_6", "STABLE_7"],
+ "labels" : ["None", "Very stable stability class: Monin-Obukhov length scale (10 < L < 50)\u200b", "Stable stability class: Monin-Obukhov length scale (50 < L < 200)\u200b", "Near stable stability class: Monin-Obukhov length scale (200 < L < 500)", "Neutral stability class: Monin-Obukhov length scale (abs(L) > 500)\u200b", "Near unstable stability class: Monin-Obukhov length scale (-500 < L < -200)\u200b", "Unstable stability class: Monin-Obukhov length scale (-200 <L < -100)\u200b", "Very unstable stability class: Monin-Obukhov length scale (-100 <L < -50)\u200b"]
+}
+
