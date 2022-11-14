@@ -4,6 +4,11 @@
  "abstract" : false,
  "extends" : ["/simo/LineForceProvider"],
  "attributes" : [{
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
    "name" : "lineType",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "/riflex/ARLineType",

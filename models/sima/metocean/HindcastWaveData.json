@@ -2,7 +2,13 @@
  "name" : "HindcastWaveData",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["/sima/Named"],
+ "attributes" : [{
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }],
  "storageRecipes" : [],
  "uiRecipes" : []
 }

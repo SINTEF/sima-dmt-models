@@ -4,6 +4,11 @@
  "abstract" : false,
  "extends" : ["/sima/NamedObject"],
  "attributes" : [{
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
    "name" : "shaftLine",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "/riflex/ARLine",
@@ -20,7 +25,7 @@
   }, {
    "name" : "controller",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "/windturbine/HorizontalAxisWindTurbineController",
+   "attributeType" : "/riflex/HorizontalAxisController",
    "contained" : true,
    "optional" : false
   }, {

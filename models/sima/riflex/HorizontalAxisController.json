@@ -1,0 +1,194 @@
+{
+ "name" : "HorizontalAxisController",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["/windturbine/HorizontalAxisWindTurbineController"],
+ "attributes" : [{
+   "name" : "kp",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Proportionnal gain K that will be used for zero blade pitch angle",
+   "optional" : true
+  }, {
+   "name" : "ki",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Integral gain",
+   "optional" : true
+  }, {
+   "name" : "filterPeriod",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Filter period for 1st order LP filter",
+   "optional" : true
+  }, {
+   "name" : "ratedOmega",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Rated electrical omega",
+   "optional" : true
+  }, {
+   "name" : "ratedTorque",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Rated electrical torque",
+   "optional" : true
+  }, {
+   "name" : "gearBoxRatio",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Gear box ratio",
+   "optional" : true
+  }, {
+   "name" : "maxPitchRate",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Maximum pitch rate",
+   "optional" : true
+  }, {
+   "name" : "maxPitch",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Maximum pitch",
+   "optional" : true
+  }, {
+   "name" : "maxTorqueRate",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Maximum torque rate",
+   "optional" : true
+  }, {
+   "name" : "maxTorque",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Maximum torque",
+   "optional" : true
+  }, {
+   "name" : "gainScheduling",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/windturbine/TableFormat",
+   "optional" : true,
+   "default" : "DEFAULT"
+  }, {
+   "name" : "gainItems",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/windturbine/GainItem",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "external",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Use external controller",
+   "optional" : true
+  }, {
+   "name" : "controllerFile",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "Path to controller file",
+   "optional" : true
+  }, {
+   "name" : "className",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "Class name of controller",
+   "optional" : true
+  }, {
+   "name" : "configuration",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "Configuration filename",
+   "optional" : true
+  }, {
+   "name" : "libraryPaths",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/sima/LibraryPaths",
+   "contained" : true,
+   "optional" : false
+  }, {
+   "name" : "reg3MinPitch",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Minimum pitch angle for which electrical torque versus generator speed will stay in region 3",
+   "optional" : true
+  }, {
+   "name" : "transitionalSpeed15",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Transitional generator speed between region 1 and 1.5",
+   "optional" : true
+  }, {
+   "name" : "transitionalSpeed20",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Transitional generator speed between region 1.5 and 2",
+   "optional" : true
+  }, {
+   "name" : "transitionalSpeed25",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Transitional generator speed between region 2 and 2.5",
+   "optional" : true
+  }, {
+   "name" : "transitionalSpeed30",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Transitional generator speed between region 2.5 and 3",
+   "optional" : true
+  }, {
+   "name" : "reg2Torque",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Generator torque constant in region 2",
+   "optional" : true
+  }, {
+   "name" : "powerExtraction",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/windturbine/PowerExtraction",
+   "optional" : true,
+   "default" : "POWER"
+  }, {
+   "name" : "minPitch",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Minimum pitch setting in pitch controller",
+   "optional" : true
+  }, {
+   "name" : "sampleInterval",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Controller sample interval",
+   "optional" : true
+  }, {
+   "name" : "controllerType",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/windturbine/ControllerType",
+   "optional" : true,
+   "default" : "JAR_FILE_CONTROLLER"
+  }, {
+   "name" : "logFile",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Log of signals to and from controller are written to a log file. The file <turbine name>.log is stored in the analysis folder. This option should be used for debugging purposes only. Avaliable for external controller only.",
+   "optional" : true
+  }, {
+   "name" : "specifyTowerTop",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Specify which element and end positioned at the top of the wind turbine tower",
+   "optional" : true
+  }, {
+   "name" : "towerTop",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/ElementEndSpesification",
+   "contained" : true,
+   "optional" : false
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

@@ -4,6 +4,10 @@
  "abstract" : true,
  "extends" : ["system/SIMOS/NamedEntity"],
  "attributes" : [{
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string"
+  }, {
    "name" : "attributes",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "/containers/Attribute",

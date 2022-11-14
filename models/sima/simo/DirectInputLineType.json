@@ -4,6 +4,11 @@
  "abstract" : false,
  "extends" : ["/simo/LineType"],
  "attributes" : [{
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
    "name" : "horisontalDistances",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "/simo/Distance",

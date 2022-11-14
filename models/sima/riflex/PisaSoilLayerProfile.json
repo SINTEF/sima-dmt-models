@@ -4,6 +4,11 @@
  "abstract" : false,
  "extends" : ["/riflex/SoilLayerProfile"],
  "attributes" : [{
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
    "name" : "topLevelSoilPosition",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",

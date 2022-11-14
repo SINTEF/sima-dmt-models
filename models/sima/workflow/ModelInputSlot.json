@@ -4,9 +4,14 @@
  "abstract" : false,
  "extends" : ["/post/InputSlot"],
  "attributes" : [{
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
    "name" : "reference",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "/condition/ModelReferenceVariable",
+   "attributeType" : "/sima/ModelReferenceVariable",
    "contained" : false,
    "optional" : true,
    "description" : "Model reference to be replaced"

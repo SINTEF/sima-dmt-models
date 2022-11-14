@@ -2,7 +2,7 @@
  "name" : "ReportItemContainer",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : true,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["system/SIMOS/Entity"],
  "attributes" : [{
    "name" : "items",
    "type" : "system/SIMOS/BlueprintAttribute",

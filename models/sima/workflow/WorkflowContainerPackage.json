@@ -2,8 +2,13 @@
  "name" : "WorkflowContainerPackage",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["/sima/Named"],
  "attributes" : [{
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
    "name" : "packages",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "/workflow/WorkflowContainerPackage",

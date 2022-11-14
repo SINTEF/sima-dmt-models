@@ -4,6 +4,11 @@
  "abstract" : false,
  "extends" : ["/riflex/CrossSection", "/riflex/CRSAxialFrictionModel"],
  "attributes" : [{
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
    "name" : "scfkSpecification",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
@@ -423,7 +428,7 @@
    "name" : "hydrodynamicRadiationInputCode",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/HydrodynamicRadiationInputCode",
+   "enumType" : "/riflex/HydrodynamicInputCode",
    "description" : "Code for input of simplified radiation force coefficients",
    "optional" : true,
    "default" : "DIMENSIONAL"

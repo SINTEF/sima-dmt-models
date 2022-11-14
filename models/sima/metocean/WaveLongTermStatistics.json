@@ -2,7 +2,7 @@
  "name" : "WaveLongTermStatistics",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : true,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["/sima/Named"],
  "storageRecipes" : [],
  "uiRecipes" : []
 }

@@ -2,7 +2,7 @@
  "name" : "ModelContent",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["system/SIMOS/Entity"],
  "attributes" : [{
    "name" : "header",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -12,7 +12,7 @@
   }, {
    "name" : "contents",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "system/SIMOS/NamedEntity",
+   "attributeType" : "system/SIMOS/Entity",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true

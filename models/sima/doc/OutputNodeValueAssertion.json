@@ -30,6 +30,13 @@
    "name" : "expectedValue",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
+   "description" : "When expected value is a number, the number of significant digits will be used as a tolerance level",
+   "optional" : true
+  }, {
+   "name" : "tolerance",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "When set, will be used instead of the implicit toleranse based on significant digits",
    "optional" : true
   }],
  "storageRecipes" : [],

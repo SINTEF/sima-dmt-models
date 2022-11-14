@@ -2,8 +2,13 @@
  "name" : "ReportFragment",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["/report/ReportItem"],
+ "extends" : ["/report/ReportItem", "/sima/Named"],
  "attributes" : [{
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
    "name" : "fragment",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "/report/ReportFragmentReference",

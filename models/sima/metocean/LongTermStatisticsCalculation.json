@@ -4,6 +4,11 @@
  "abstract" : false,
  "extends" : ["/sima/NamedObject", "/sima/ConditionSelectable"],
  "attributes" : [{
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
    "name" : "relativeCompassAngle",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",

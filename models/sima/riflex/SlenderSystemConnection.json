@@ -64,6 +64,12 @@
    "description" : "All nodes",
    "optional" : true
   }, {
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true,
+   "default" : "connection"
+  }, {
    "name" : "location",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",

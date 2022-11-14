@@ -169,6 +169,12 @@
    "enumType" : "/windturbine/ControllerType",
    "optional" : true,
    "default" : "JAR_FILE_CONTROLLER"
+  }, {
+   "name" : "logFile",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Log of signals to and from controller are written to a log file. The file <turbine name>.log is stored in the analysis folder. This option should be used for debugging purposes only. Avaliable for external controller only.",
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

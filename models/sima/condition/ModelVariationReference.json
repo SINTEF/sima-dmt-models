@@ -1,0 +1,22 @@
+{
+ "name" : "ModelVariationReference",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["/condition/ModelVariationOperation"],
+ "attributes" : [{
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
+   "name" : "variations",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/condition/ModelVariation",
+   "dimensions" : "*",
+   "contained" : false,
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

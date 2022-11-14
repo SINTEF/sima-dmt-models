@@ -2,7 +2,7 @@
  "name" : "MetoceanFatigueAnalysis",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["/sima/Condition"],
+ "extends" : ["/sima/Condition", "/sima/Named"],
  "attributes" : [{
    "name" : "changeNumber",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -13,6 +13,11 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "/sima/ResultContainer",
    "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "metoceanCondition",

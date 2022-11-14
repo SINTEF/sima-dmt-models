@@ -28,6 +28,11 @@
    "contained" : true,
    "optional" : true
   }, {
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
    "name" : "variableItemSets",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "/condition/VariableItemSet",

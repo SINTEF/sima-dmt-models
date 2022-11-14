@@ -4,6 +4,12 @@
  "abstract" : false,
  "extends" : ["/simo/ForceResult"],
  "attributes" : [{
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "Force name",
+   "optional" : true
+  }, {
    "name" : "fx",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",

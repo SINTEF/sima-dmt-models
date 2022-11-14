@@ -21,6 +21,11 @@
    "attributeType" : "/sima/Vector3",
    "contained" : true,
    "optional" : false
+  }, {
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

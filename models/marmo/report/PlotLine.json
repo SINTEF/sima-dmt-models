@@ -2,7 +2,7 @@
  "name" : "PlotLine",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["system/SIMOS/Entity"],
  "attributes" : [{
    "name" : "xlabel",
    "type" : "system/SIMOS/BlueprintAttribute",

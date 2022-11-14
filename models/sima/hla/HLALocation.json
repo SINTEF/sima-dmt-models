@@ -4,6 +4,11 @@
  "abstract" : false,
  "extends" : ["/sima/Location"],
  "attributes" : [{
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
    "name" : "initialViewpoint",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "/sima/InitialViewpoint",
@@ -58,7 +63,7 @@
   }, {
    "name" : "seaSurface",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "/environment/SeaSurface",
+   "attributeType" : "/hla/HLASeaSurface",
    "contained" : true,
    "optional" : false
   }, {

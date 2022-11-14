@@ -35,6 +35,11 @@
    "optional" : true,
    "description" : "Used to set a probability for single runs"
   }, {
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
    "name" : "variableItemSets",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "/condition/VariableItemSet",

@@ -1,0 +1,35 @@
+{
+ "name" : "SIMOPreference",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["/sima/SIMAPreference"],
+ "attributes" : [{
+   "name" : "selectedVersion",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "Selected SIMO/RIFLEX installation",
+   "optional" : true,
+   "default" : "Default"
+  }, {
+   "name" : "locations",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true,
+   "dimensions" : "*"
+  }, {
+   "name" : "frevesLocation",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "Freves bin folder",
+   "optional" : true
+  }, {
+   "name" : "frelinLocation",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "Frelin bin folder",
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

@@ -2,8 +2,13 @@
  "name" : "ModelVariation",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["/sima/NamedObject"],
+ "extends" : ["/sima/Named"],
  "attributes" : [{
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
    "name" : "operations",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "/condition/ModelVariationOperation",

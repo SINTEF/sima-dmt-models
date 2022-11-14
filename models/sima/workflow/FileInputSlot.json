@@ -4,6 +4,11 @@
  "abstract" : false,
  "extends" : ["/post/InputSlot", "/post/SignalPropertiesContainer"],
  "attributes" : [{
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
    "name" : "properties",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "/post/SignalProperties",

@@ -1,0 +1,36 @@
+{
+ "name" : "JobPreference",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["/sima/SIMAPreference"],
+ "attributes" : [{
+   "name" : "computeConditionsAutomatically",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Compute concurrent condition runs automatically",
+   "optional" : true,
+   "default" : "true"
+  }, {
+   "name" : "maxConditionRuns",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "description" : "Maximum number of concurrent condition runs",
+   "optional" : true
+  }, {
+   "name" : "computeWorkflowsAutomatically",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Compute concurrent condition runs automatically",
+   "optional" : true,
+   "default" : "true"
+  }, {
+   "name" : "maxWorkflowRuns",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "description" : "Maximum number of concurrent workflow runs",
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

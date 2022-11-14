@@ -2,13 +2,8 @@
  "name" : "MOAO",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : true,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["system/SIMOS/Entity"],
  "attributes" : [{
-   "name" : "_id",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string",
-   "optional" : true
-  }, {
    "name" : "scriptableValues",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "/sima/ScriptableValue",

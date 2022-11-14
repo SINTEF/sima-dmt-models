@@ -3,6 +3,12 @@
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
  "extends" : ["/post/InputSlot"],
+ "attributes" : [{
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }],
  "storageRecipes" : [],
  "uiRecipes" : []
 }

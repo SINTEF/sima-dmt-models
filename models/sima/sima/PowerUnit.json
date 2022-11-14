@@ -1,0 +1,7 @@
+{
+ "name" : "PowerUnit",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["WATT", "KILO_WATT", "MEGA_WATT"],
+ "labels" : ["W", "kW", "MW"]
+}
+

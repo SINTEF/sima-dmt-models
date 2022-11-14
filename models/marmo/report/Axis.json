@@ -2,7 +2,7 @@
  "name" : "Axis",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["system/SIMOS/Entity"],
  "attributes" : [{
    "name" : "font",
    "type" : "system/SIMOS/BlueprintAttribute",

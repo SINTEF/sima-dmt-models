@@ -2,7 +2,7 @@
  "name" : "WamitFirstOrderWaveForceTransferFunction",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["/hydro/FirstOrderWaveForceTransferFunction"],
+ "extends" : ["/hydro/FirstOrderWaveForceTransferFunction", "/sima/Named"],
  "attributes" : [{
    "name" : "directions",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -57,6 +57,11 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "/hydro/DirectionDependentComplexValues",
    "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
    "optional" : true
   }],
  "storageRecipes" : [],

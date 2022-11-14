@@ -2,13 +2,18 @@
  "name" : "SIMOQuadraticDampingMatrix",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["/hydro/QuadraticDampingMatrix"],
+ "extends" : ["/hydro/QuadraticDampingMatrix", "/sima/Named"],
  "attributes" : [{
    "name" : "values",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true,
    "dimensions" : "*"
+  }, {
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
   }, {
    "name" : "mode",
    "type" : "system/SIMOS/BlueprintAttribute",

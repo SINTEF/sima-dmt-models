@@ -1,0 +1,7 @@
+{
+ "name" : "DetailLevel",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["MINIMUM", "MEDIUM", "MAXIMUM"],
+ "labels" : ["Minimum", "Medium", "Maximum"]
+}
+

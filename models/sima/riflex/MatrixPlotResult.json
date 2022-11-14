@@ -21,6 +21,11 @@
    "attributeType" : "boolean",
    "optional" : true
   }, {
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
    "name" : "_type",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",

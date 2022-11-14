@@ -4,6 +4,11 @@
  "abstract" : false,
  "extends" : ["/environment/Environment"],
  "attributes" : [{
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
    "name" : "items",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "/simo/MultiEnvironmentItem",

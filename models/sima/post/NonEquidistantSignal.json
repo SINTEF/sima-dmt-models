@@ -11,6 +11,11 @@
    "contained" : true,
    "optional" : true
   }, {
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
    "name" : "xunit",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",

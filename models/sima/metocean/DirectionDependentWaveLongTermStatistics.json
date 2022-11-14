@@ -4,6 +4,11 @@
  "abstract" : false,
  "extends" : ["/metocean/WaveLongTermStatistics"],
  "attributes" : [{
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
    "name" : "sectors",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "/metocean/WaveSector",

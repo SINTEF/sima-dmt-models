@@ -2,13 +2,8 @@
  "name" : "Dependency",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["system/SIMOS/Entity"],
  "attributes" : [{
-   "name" : "_id",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string",
-   "optional" : true
-  }, {
    "name" : "object",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "/sima/MOAO",

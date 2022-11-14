@@ -17,6 +17,11 @@
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
+  }, {
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

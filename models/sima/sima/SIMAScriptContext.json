@@ -10,6 +10,12 @@
    "contained" : false,
    "optional" : true,
    "description" : "Model object to be directly available in script by given name"
+  }, {
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "Variable name of object that will be available in the script when evaluating",
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

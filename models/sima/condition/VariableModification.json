@@ -4,6 +4,11 @@
  "abstract" : false,
  "extends" : ["/condition/ModelVariationOperation"],
  "attributes" : [{
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
    "name" : "variableItems",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "/sima/VariableItem",

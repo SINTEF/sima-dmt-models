@@ -4,6 +4,11 @@
  "abstract" : false,
  "extends" : ["/riflex/CrossSection", "/riflex/CRSAxialFrictionModel"],
  "attributes" : [{
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
    "name" : "scfkSpecification",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",

@@ -4,6 +4,11 @@
  "abstract" : false,
  "extends" : ["/sima/NamedObject", "/sima/ConditionSelectable"],
  "attributes" : [{
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
    "name" : "randSeed1",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
@@ -49,7 +54,7 @@
    "name" : "usableTime",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
-   "description" : "Usable length of output time series (program will add GridWidth/MeanHHWS seconds)",
+   "description" : "Usable length of output time series (program will add GridWidth/MeanHHWS seconds). Default value is analysis time for Turbsim v1, otherwise ALL",
    "optional" : true
   }, {
    "name" : "hubHeight",

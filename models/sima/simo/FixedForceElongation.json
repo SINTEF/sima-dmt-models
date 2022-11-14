@@ -4,6 +4,11 @@
  "abstract" : false,
  "extends" : ["/simo/PositioningElement"],
  "attributes" : [{
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
    "name" : "localPoint",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "/sima/Point3",

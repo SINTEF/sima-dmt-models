@@ -14,6 +14,11 @@
    "attributeType" : "integer",
    "optional" : true
   }, {
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
    "name" : "h",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
@@ -60,7 +65,7 @@
    "name" : "offset",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
-   "description" : "Starting position",
+   "description" : "Offset x-axis with given value",
    "optional" : true
   }, {
    "name" : "useMinimalDelta",

@@ -2,7 +2,7 @@
  "name" : "Result",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["/sima/Named"],
  "attributes" : [{
    "name" : "properties",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -19,6 +19,11 @@
    "name" : "relative",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
+   "optional" : true
+  }, {
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "_type",

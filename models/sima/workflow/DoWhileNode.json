@@ -1,0 +1,112 @@
+{
+ "name" : "DoWhileNode",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["/workflow/WorkflowReferenceNode"],
+ "attributes" : [{
+   "name" : "x",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "optional" : true
+  }, {
+   "name" : "y",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "optional" : true
+  }, {
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
+   "name" : "h",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "optional" : true
+  }, {
+   "name" : "w",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "optional" : true
+  }, {
+   "name" : "controlSignalInputSlots",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/post/ControlSignalInputSlot",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "variableInputSlots",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/workflow/VariableInputSlot",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "modelReferenceInputSlot",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/workflow/ModelReferenceInputSlot",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "workflow",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/workflow/Workflow",
+   "contained" : false,
+   "optional" : true
+  }, {
+   "name" : "workflowOutputSlots",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/workflow/WorkflowOutputSlot",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "workflowInputSlots",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/workflow/WorkflowInputSlot",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "inputWorkflow",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Set the workflow input from the outside. Use a model reference as source.",
+   "optional" : true
+  }, {
+   "name" : "setFolderName",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Override the default folder name created. This folder will be relative to the running workflow. If left empty it will create the results directly in the workflow folder.",
+   "optional" : true
+  }, {
+   "name" : "folderName",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
+   "name" : "loopWhile",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/workflow/WorkflowOutput",
+   "contained" : false,
+   "optional" : true,
+   "description" : "Loop while given condition/constraint is true. All constraints must be true to finish (and operation)"
+  }, {
+   "name" : "maxIterations",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "integer",
+   "description" : "If set, the iteration will stop when maximum number of iterations is reached",
+   "optional" : true
+  }, {
+   "name" : "plot",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/workflow/WorkflowOutput",
+   "contained" : false,
+   "optional" : true,
+   "description" : "Can be used to show live plot if needed as a debug step"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

@@ -1,0 +1,9 @@
+{
+ "name" : "SIMAPreference",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : true,
+ "extends" : ["/sima/MOAO"],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

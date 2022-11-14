@@ -82,6 +82,12 @@
    "contained" : true,
    "optional" : false
   }, {
+   "name" : "hydrodynamicLoadStorage",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/riflex/HydrodynamicLoadStorage",
+   "contained" : true,
+   "optional" : false
+  }, {
    "name" : "hlaElementForces",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "/riflex/HLAElementForce",

@@ -1,0 +1,7 @@
+{
+ "name" : "MassUnit",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["KILOGRAM", "MEGAGRAM", "POUNDS"],
+ "labels" : ["kg", "Mg", "lbs"]
+}
+

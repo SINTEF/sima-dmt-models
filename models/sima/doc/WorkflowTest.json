@@ -4,6 +4,11 @@
  "abstract" : false,
  "extends" : ["/doc/Test"],
  "attributes" : [{
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
    "name" : "disabled",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",

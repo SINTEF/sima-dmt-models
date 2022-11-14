@@ -4,6 +4,11 @@
  "abstract" : false,
  "extends" : ["/post/OutputSlot"],
  "attributes" : [{
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
    "name" : "postprocessorOutput",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "/post/PostWorkflowOutput",

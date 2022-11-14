@@ -4,6 +4,11 @@
  "abstract" : false,
  "extends" : ["/metocean/WeibullDistribution"],
  "attributes" : [{
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
    "name" : "returnPeriod",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",

@@ -6,7 +6,7 @@
  "attributes" : [{
    "name" : "reference",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "/condition/ModelReferenceVariable",
+   "attributeType" : "/sima/ModelReferenceVariable",
    "contained" : false,
    "optional" : true,
    "description" : "Model object to be included."

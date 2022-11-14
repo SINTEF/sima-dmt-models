@@ -21,6 +21,11 @@
    "attributeType" : "boolean",
    "optional" : true
   }, {
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
    "name" : "changeNumber",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",

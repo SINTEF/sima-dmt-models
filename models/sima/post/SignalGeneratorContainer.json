@@ -2,13 +2,18 @@
  "name" : "SignalGeneratorContainer",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["/post/SignalPropertiesContainer"],
+ "extends" : ["/post/SignalPropertiesContainer", "/sima/Named"],
  "attributes" : [{
    "name" : "properties",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "/post/SignalProperties",
    "dimensions" : "*",
    "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "signals",

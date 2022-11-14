@@ -6,7 +6,7 @@
  "attributes" : [{
    "name" : "value",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "system/SIMOS/NamedEntity",
+   "attributeType" : "system/SIMOS/Entity",
    "contained" : true,
    "optional" : false
   }],

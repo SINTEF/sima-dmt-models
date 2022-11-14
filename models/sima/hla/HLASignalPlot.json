@@ -2,7 +2,7 @@
  "name" : "HLASignalPlot",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["/sima/Named"],
  "attributes" : [{
    "name" : "figureTemplate",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -41,6 +41,11 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Will export all signals as plot",
+   "optional" : true
+  }, {
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "signals",

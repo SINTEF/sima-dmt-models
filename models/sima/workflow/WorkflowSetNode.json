@@ -14,6 +14,11 @@
    "attributeType" : "integer",
    "optional" : true
   }, {
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
    "name" : "h",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "integer",
@@ -88,6 +93,13 @@
    "contained" : true,
    "optional" : true
   }, {
+   "name" : "variableInputSetSlots",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/workflow/VariableInputSetSlot",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
    "name" : "writeRunStatus",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
@@ -112,13 +124,6 @@
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "description" : "Import variable values from file. Expected file format:\r\n' any comment specified with '\r\n'Hs    Tp     seed : values specified in rows ( Need to match the variables specified)  \r\n1.0      2.0    3\r\n4.0      5.0    4\r\n'any comment\r\n           ",
-   "optional" : true
-  }, {
-   "name" : "variableInputSetSlots",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "/workflow/VariableInputSetSlot",
-   "dimensions" : "*",
-   "contained" : true,
    "optional" : true
   }, {
    "name" : "iteration",

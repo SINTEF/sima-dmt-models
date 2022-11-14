@@ -1,0 +1,15 @@
+{
+ "name" : "Named",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : true,
+ "extends" : ["/sima/MOAO"],
+ "attributes" : [{
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

@@ -4,9 +4,14 @@
  "abstract" : false,
  "extends" : ["/condition/ModelVariationOperation"],
  "attributes" : [{
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
    "name" : "removals",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "/condition/ModelReference",
+   "attributeType" : "/sima/ModelReference",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true

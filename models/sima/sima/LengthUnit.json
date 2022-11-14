@@ -1,0 +1,7 @@
+{
+ "name" : "LengthUnit",
+ "type" : "system/SIMOS/Enum",
+ "values" : ["METER", "FEET"],
+ "labels" : ["m", "ft"]
+}
+

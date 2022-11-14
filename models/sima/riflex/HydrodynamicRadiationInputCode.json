@@ -1,7 +1,0 @@
-{
- "name" : "HydrodynamicRadiationInputCode",
- "type" : "system/SIMOS/Enum",
- "values" : ["DIMENSIONAL", "NONDIMENSIONAL"],
- "labels" : ["Dimensional coefficients", "Nondimensional coefficients"]
-}
-

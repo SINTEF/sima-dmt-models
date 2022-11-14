@@ -4,6 +4,11 @@
  "abstract" : false,
  "extends" : ["/riflex/CombinedLoading"],
  "attributes" : [{
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
    "name" : "refPointPressure",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",

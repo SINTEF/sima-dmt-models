@@ -2,8 +2,13 @@
  "name" : "ModelReferenceVariable",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["/sima/NamedObject", "/condition/ModelReference"],
+ "extends" : ["/sima/NamedObject", "/sima/ModelReference"],
  "attributes" : [{
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
    "name" : "model",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "/sima/MOAO",

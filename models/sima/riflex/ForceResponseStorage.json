@@ -58,6 +58,7 @@
    "name" : "storeBottomContactForces",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "boolean",
+   "description" : "Store results for seafloor contact elements and / or soil layer profile (SLP) contact elements",
    "optional" : true
   }],
  "storageRecipes" : [],

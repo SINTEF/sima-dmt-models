@@ -4,6 +4,11 @@
  "abstract" : false,
  "extends" : ["/sima/Task"],
  "attributes" : [{
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
    "name" : "doubleVariables",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "/sima/DoubleVariable",

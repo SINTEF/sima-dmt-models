@@ -2,8 +2,13 @@
  "name" : "Generator",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["/sima/ConditionSelectable"],
+ "extends" : ["/sima/Named", "/sima/ConditionSelectable"],
  "attributes" : [{
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
    "name" : "airDensity",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",
@@ -180,7 +185,7 @@
    "attributeType" : "string",
    "enumType" : "/windpark/StabilityClass",
    "optional" : true,
-   "default" : "STABLE_0"
+   "default" : "NONE"
   }, {
    "name" : "coarseMeshFilename",
    "type" : "system/SIMOS/BlueprintAttribute",

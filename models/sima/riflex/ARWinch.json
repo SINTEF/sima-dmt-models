@@ -4,6 +4,11 @@
  "abstract" : false,
  "extends" : ["/riflex/SegmentReference", "/sima/NamedObject"],
  "attributes" : [{
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
    "name" : "line",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "/riflex/ARLine",

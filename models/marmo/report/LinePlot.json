@@ -2,7 +2,7 @@
  "name" : "LinePlot",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["system/SIMOS/Entity"],
  "attributes" : [{
    "name" : "title",
    "type" : "system/SIMOS/BlueprintAttribute",

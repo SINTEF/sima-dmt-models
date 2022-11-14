@@ -4,6 +4,11 @@
  "abstract" : false,
  "extends" : ["/simo/IThruster"],
  "attributes" : [{
+   "name" : "name",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
    "name" : "minForce",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "number",

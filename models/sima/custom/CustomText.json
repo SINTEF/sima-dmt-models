@@ -2,7 +2,7 @@
  "name" : "CustomText",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["/custom/ParameterField"],
+ "extends" : ["/custom/ParameterField", "/sima/Named"],
  "attributes" : [{
    "name" : "label",
    "type" : "system/SIMOS/BlueprintAttribute",
@@ -10,6 +10,11 @@
    "optional" : true
   }, {
    "name" : "tooltip",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
+   "name" : "name",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
