@@ -1,64 +1,64 @@
 {
  "name" : "SeafloorSpringContact",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/riflex/SeafloorContact"],
  "attributes" : [{
    "name" : "axialStiffness",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Horizontal stiffness parameter for seafloor in axial direction",
    "optional" : true
   }, {
    "name" : "axialFriction",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Horizontal friction parameter for seafloor in axial direction",
    "optional" : true
   }, {
    "name" : "axialDamping",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Axial seafloor damping ",
    "optional" : true
   }, {
    "name" : "lateralStiffness",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Horizontal stiffness parameter for seafloor in lateral direction",
    "optional" : true
   }, {
    "name" : "lateralFriction",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Horizontal stiffness parameter for seafloor in lateral direction",
    "optional" : true
   }, {
    "name" : "lateralDamping",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Lateral seafloor damping",
    "optional" : true
   }, {
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "normalStiffness",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Normal stiffness parameter for seafloor",
    "optional" : true
   }, {
    "name" : "normalDamping",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Normal seafloor damping",
    "optional" : true
   }, {
    "name" : "applyLateralContactForces",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Apply lateral contact forces at the external contact radius, giving a torsional moment",
    "optional" : true

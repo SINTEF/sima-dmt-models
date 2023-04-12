@@ -1,50 +1,50 @@
 {
  "name" : "CrossSectionReference",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/riflex/ElementReference"],
  "attributes" : [{
    "name" : "line",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/ARLine",
    "contained" : false,
    "optional" : true,
    "description" : "Line"
   }, {
    "name" : "segment",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Segment on given line",
    "optional" : true,
    "default" : "1"
   }, {
    "name" : "allSegments",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "All segments",
    "optional" : true
   }, {
    "name" : "elementNumber",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Local element number on actual segment",
    "optional" : true,
    "default" : "1"
   }, {
    "name" : "allElements",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "All elements",
    "optional" : true
   }, {
    "name" : "allEnds",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "All ends",
    "optional" : true
   }, {
    "name" : "elementEnd",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/End",
    "description" : "End number 1 or 2",
@@ -52,19 +52,19 @@
    "default" : "ONE"
   }, {
    "name" : "scfa",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Stress concentration factor for axial force contribution",
    "optional" : true
   }, {
    "name" : "scfy",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Stress concentration factor for bending about y axis",
    "optional" : true
   }, {
    "name" : "scfz",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Value\tStress concentration factor for bending about z axis",
    "optional" : true

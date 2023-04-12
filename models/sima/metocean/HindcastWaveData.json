@@ -1,11 +1,11 @@
 {
  "name" : "HindcastWaveData",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/Named"],
  "attributes" : [{
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }],

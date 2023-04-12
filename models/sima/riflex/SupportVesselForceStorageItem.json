@@ -1,17 +1,17 @@
 {
  "name" : "SupportVesselForceStorageItem",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "vessel",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/SupportVessel",
    "contained" : false,
    "optional" : false
   }, {
    "name" : "referenceSystem",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/BodyForceReferenceSystem",
    "optional" : true,

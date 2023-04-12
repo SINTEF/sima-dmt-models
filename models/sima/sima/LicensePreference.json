@@ -1,11 +1,11 @@
 {
  "name" : "LicensePreference",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/SIMAPreference"],
  "attributes" : [{
    "name" : "path",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }],

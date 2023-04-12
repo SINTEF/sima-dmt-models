@@ -1,17 +1,17 @@
 {
  "name" : "FrequencyDependentDamping",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "frequencies",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true,
    "dimensions" : "*"
   }, {
    "name" : "items",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/hydro/TwoDofData",
    "dimensions" : "*",
    "contained" : true,

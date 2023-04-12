@@ -1,6 +1,6 @@
 {
  "name" : "RandomSeedGeneration",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["INTRINSIC", "RANLUX", "RNSNLW"],
  "labels" : ["Intrinsic", "RanLux", "RNSNLW"]
 }

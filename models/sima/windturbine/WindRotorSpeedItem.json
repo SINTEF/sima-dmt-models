@@ -1,17 +1,17 @@
 {
  "name" : "WindRotorSpeedItem",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "windSpeed",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Wind speed at hub",
    "optional" : true
   }, {
    "name" : "rotorSpeed",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Rotor speed",
    "optional" : true

@@ -1,49 +1,49 @@
 {
  "name" : "GlobalSpring",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/riflex/NodeReference", "/sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "line",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/ARLine",
    "contained" : false,
    "optional" : true,
    "description" : "Line"
   }, {
    "name" : "segment",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Segment on given line",
    "optional" : true,
    "default" : "1"
   }, {
    "name" : "allSegments",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "All segments",
    "optional" : true
   }, {
    "name" : "nodeNumber",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Local node number on actual segment",
    "optional" : true,
    "default" : "1"
   }, {
    "name" : "allNodes",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "All nodes",
    "optional" : true
   }, {
    "name" : "dof",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/SpringDOF",
    "description" : "Local degree of freedom.",
@@ -51,31 +51,31 @@
    "default" : "GLOBAL_X_DIRECTION"
   }, {
    "name" : "constantStiffness",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Constant stiffness",
    "optional" : true
   }, {
    "name" : "stiffness",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Constant spring stiffness.",
    "optional" : true
   }, {
    "name" : "dampingCoefficient",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Linear damping coefficient.",
    "optional" : true
   }, {
    "name" : "stiffnessDampingFactor",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Stiffness proportional damping factor.",
    "optional" : true
   }, {
    "name" : "stiffnessItems",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/GlobalSpringStiffnessItem",
    "dimensions" : "*",
    "contained" : true,

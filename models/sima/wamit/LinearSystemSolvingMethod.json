@@ -1,6 +1,6 @@
 {
  "name" : "LinearSystemSolvingMethod",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["ITERATIVE", "DIRECT", "BLOCKITERATIVE"],
  "labels" : ["Iterative", "Direct", "Block iterative"]
 }

@@ -1,11 +1,11 @@
 {
  "name" : "SeafloorContactSpecification",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "lineContacts",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/SeafloorContactLineSpecification",
    "dimensions" : "*",
    "contained" : true,

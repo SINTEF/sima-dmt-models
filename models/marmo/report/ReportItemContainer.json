@@ -1,11 +1,11 @@
 {
  "name" : "ReportItemContainer",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : true,
- "extends" : ["system/SIMOS/Entity"],
+ "extends" : ["core:Entity"],
  "attributes" : [{
    "name" : "items",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/report/ReportItem",
    "dimensions" : "*",
    "contained" : true,

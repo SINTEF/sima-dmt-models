@@ -1,17 +1,17 @@
 {
  "name" : "BodyForceStorageItem",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "body",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/SIMOBody",
    "contained" : false,
    "optional" : false
   }, {
    "name" : "referenceSystem",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/BodyForceReferenceSystem",
    "optional" : true,

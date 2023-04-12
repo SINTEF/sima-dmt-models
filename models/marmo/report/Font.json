@@ -1,22 +1,22 @@
 {
  "name" : "Font",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/Entity"],
+ "extends" : ["core:Entity"],
  "attributes" : [{
    "name" : "size",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : true,
    "default" : "10"
   }, {
    "name" : "font",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "style",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/report/FontStyle",
    "optional" : true,

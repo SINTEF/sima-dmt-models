@@ -1,28 +1,28 @@
 {
  "name" : "FixedElongationCoupling",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/simo/SimpleCoupling"],
  "attributes" : [{
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "endPoint1",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/SIMOBodyPoint",
    "contained" : false,
    "optional" : false
   }, {
    "name" : "endPoint2",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/SIMOBodyPoint",
    "contained" : false,
    "optional" : false
   }, {
    "name" : "failureMode",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/ActivationFailureMode",
    "description" : "Failure mode of coupling element",
@@ -30,19 +30,19 @@
    "default" : "NONE"
   }, {
    "name" : "failureTime",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Earliest possible time of failure",
    "optional" : true
   }, {
    "name" : "breakingStrength",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Breaking strength",
    "optional" : true
   }, {
    "name" : "method",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/FixedElongationMethod",
    "description" : "Method for initialisation of coupling element",
@@ -50,14 +50,14 @@
    "default" : "SPRING"
   }, {
    "name" : "velocityLimit",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Velocity limit for friction force (Damping Exponent = 0)",
    "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "characteristic",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/ForceDampingCharacteristic",
    "contained" : true,
    "optional" : false

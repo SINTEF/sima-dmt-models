@@ -1,15 +1,16 @@
 {
  "name" : "Paragraph",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/report/ReportItem"],
  "attributes" : [{
    "name" : "text",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : false
   }, {
    "name" : "markup",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true
   }],

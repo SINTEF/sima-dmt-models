@@ -1,59 +1,60 @@
 {
  "name" : "EquallySpacedSignal",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "description" : "Data model for an equally spaced signal.",
  "abstract" : false,
  "extends" : ["/containers/Signal"],
  "attributes" : [{
    "name" : "value",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
+   "optional" : false,
    "dimensions" : "*"
   }, {
    "name" : "xstart",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "xdelta",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true,
    "default" : "1.0"
   }, {
    "name" : "unit",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "xunit",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "xname",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "xlabel",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "xdescription",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "label",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "legend",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }],

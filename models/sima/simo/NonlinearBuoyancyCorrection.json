@@ -1,35 +1,35 @@
 {
  "name" : "NonlinearBuoyancyCorrection",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "fileName",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "description" : "Name of geometry file (\".gdf\"-file)",
    "optional" : true
   }, {
    "name" : "location",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/Point3",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "minZ",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Minimum vertical range value to be used given in \".gdf\" file system",
    "optional" : true
   }, {
    "name" : "maxZ",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Maximum vertical range value to be used given in \".gdf\" file system",
    "optional" : true
   }, {
    "name" : "correctionMethod",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/NonlinearBuoyancyCorrectionMethod",
    "optional" : true,

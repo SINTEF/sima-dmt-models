@@ -1,11 +1,11 @@
 {
  "name" : "HindcastLevelContainer",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "levels",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/metocean/HindcastLevel",
    "dimensions" : "*",
    "contained" : true,

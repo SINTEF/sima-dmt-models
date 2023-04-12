@@ -1,11 +1,11 @@
 {
  "name" : "ReportText",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/workflow/ReportFragmentItem"],
  "attributes" : [{
    "name" : "text",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }],

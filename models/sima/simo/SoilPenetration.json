@@ -1,11 +1,11 @@
 {
  "name" : "SoilPenetration",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "frictionModel",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/SoilFriction",
    "description" : "Soil force control parameter",
@@ -13,37 +13,37 @@
    "default" : "OPEN_COMPARTMENT"
   }, {
    "name" : "zcont",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Vertical coordinate of the lifted structure giving first\r\ncontact with the soil (landing)",
    "optional" : true
   }, {
    "name" : "penetrationDepth",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Depth at full penetration from first contact (positive upwards)",
    "optional" : true
   }, {
    "name" : "barArea",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Soil buoyancy cross section area",
    "optional" : true
   }, {
    "name" : "sodens",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Soil mass density",
    "optional" : true
   }, {
    "name" : "cArea",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Section area of cavity",
    "optional" : true
   }, {
    "name" : "seabedImport",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/HLA",
    "description" : "Import of seabead depth values from HLA Depth value replaces ZCONT",
@@ -51,35 +51,35 @@
    "default" : "NO_IMPORT"
   }, {
    "name" : "frictionElements",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/SoilFrictionElement",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "capacityElements",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/SoilCapacityElement",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "wstiff",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Stiffness due to compressibility of water inside the cavity",
    "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "tsuct",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Time for starting suction pumps",
    "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "cflow",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Flow coefficient in/out of closed compartment",
    "optional" : true,

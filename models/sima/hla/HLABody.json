@@ -1,49 +1,49 @@
 {
  "name" : "HLABody",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/hla/HLAObject"],
  "attributes" : [{
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "length",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Length",
    "optional" : true,
    "default" : "10.0"
   }, {
    "name" : "width",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Width",
    "optional" : true,
    "default" : "5.0"
   }, {
    "name" : "height",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Height",
    "optional" : true,
    "default" : "5.0"
   }, {
    "name" : "appearance",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/Appearance",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "position",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/Position",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "viewpoints",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/hla/HLABodyViewpoint",
    "dimensions" : "*",
    "contained" : true,

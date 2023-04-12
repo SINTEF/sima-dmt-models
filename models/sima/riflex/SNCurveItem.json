@@ -1,17 +1,17 @@
 {
  "name" : "SNCurveItem",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "slope",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Slope of curve segment",
    "optional" : true
   }, {
    "name" : "transitionPoint",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Transition point between curve segment (i-1) and i - logN",
    "optional" : true

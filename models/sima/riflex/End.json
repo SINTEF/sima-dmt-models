@@ -1,6 +1,6 @@
 {
  "name" : "End",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["ONE", "TWO"],
  "labels" : ["End 1", "End 2"]
 }

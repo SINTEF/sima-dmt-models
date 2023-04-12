@@ -1,44 +1,44 @@
 {
  "name" : "HydrodynamicLoadElementStorage",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/riflex/ElementReference"],
  "attributes" : [{
    "name" : "line",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/ARLine",
    "contained" : false,
    "optional" : true,
    "description" : "Line"
   }, {
    "name" : "segment",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Segment on given line",
    "optional" : true,
    "default" : "1"
   }, {
    "name" : "allSegments",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "All segments",
    "optional" : true
   }, {
    "name" : "elementNumber",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Local element number on actual segment",
    "optional" : true,
    "default" : "1"
   }, {
    "name" : "allElements",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "All elements",
    "optional" : true
   }, {
    "name" : "level",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/DetailLevel",
    "description" : "Level of detail for output, see user manual for details",

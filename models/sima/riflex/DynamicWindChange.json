@@ -1,70 +1,70 @@
 {
  "name" : "DynamicWindChange",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "include",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true
   }, {
    "name" : "eventType",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/IEC2005WindEventType",
    "optional" : true,
    "default" : "ECD"
   }, {
    "name" : "eventStartTime",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Time for event to start",
    "optional" : true
   }, {
    "name" : "direction",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/WindDirection",
    "optional" : true,
    "default" : "POSITIVE"
   }, {
    "name" : "turbineClass",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/IEC2005WindTurbineClass",
    "optional" : true,
    "default" : "NONE"
   }, {
    "name" : "vref",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Reference wind speed average over 10 minutes",
    "optional" : true
   }, {
    "name" : "iref",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Expected value of the turbulence intensity at 15 m/s",
    "optional" : true
   }, {
    "name" : "velocityChange",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true
   }, {
    "name" : "directionChange",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true
   }, {
    "name" : "durationOfEvent",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true
   }, {
    "name" : "gustMagnitude",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true
   }],

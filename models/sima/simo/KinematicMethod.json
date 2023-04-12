@@ -1,6 +1,6 @@
 {
  "name" : "KinematicMethod",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["FFT", "COSINE"],
  "labels" : ["FFT", "Cosine"]
 }

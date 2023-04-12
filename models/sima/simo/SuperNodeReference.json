@@ -1,6 +1,6 @@
 {
  "name" : "SuperNodeReference",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : true,
  "extends" : ["/simo/BodyForceComponent"],
  "storageRecipes" : [],

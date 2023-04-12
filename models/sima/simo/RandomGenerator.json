@@ -1,6 +1,6 @@
 {
  "name" : "RandomGenerator",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["LEGACY", "MERSENNE"],
  "labels" : ["Legacy", "Mersenne twister"]
 }

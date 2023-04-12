@@ -1,31 +1,31 @@
 {
  "name" : "Jonswap3P",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/environment/Jonswap"],
  "attributes" : [{
    "name" : "direction",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Average wave propagation direction",
    "optional" : true
   }, {
    "name" : "spreadingExponent",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Exponent  η in cos spreading function",
    "optional" : true,
    "default" : "2.0"
   }, {
    "name" : "numDirections",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of directions in spreading function, must be odd",
    "optional" : true,
    "default" : "11"
   }, {
    "name" : "spreadingType",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/environment/WaveSpreadingType",
    "description" : "Wave spreading code",
@@ -33,19 +33,19 @@
    "default" : "UNIDIRECTIONAL"
   }, {
    "name" : "significantWaveHeight",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Significant wave height",
    "optional" : true
   }, {
    "name" : "peakPeriod",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Peak period, Tp",
    "optional" : true
   }, {
    "name" : "gamma",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Peakedness parameter, γ - calculated when not specified",
    "optional" : true,

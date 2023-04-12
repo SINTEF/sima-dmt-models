@@ -1,63 +1,63 @@
 {
  "name" : "StorageTask",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/Task"],
  "attributes" : [{
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "doubleVariables",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/DoubleVariable",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "integerVariables",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/IntegerVariable",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "stringVariables",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/StringVariable",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "runNumber",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : true,
    "default" : "0"
   }, {
    "name" : "scripts",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/SIMAScript",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "_type",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/sima/StorageTaskType",
    "optional" : true,
    "default" : "PRIVATE"
   }, {
    "name" : "root",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "description" : "Defines the root of the storage task. If not set, the root will be the normal workspace task location",
    "optional" : true
   }, {
    "name" : "includeInExport",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "If not set the file content withing this storage task will be ommitted when exporting.",
    "optional" : true,

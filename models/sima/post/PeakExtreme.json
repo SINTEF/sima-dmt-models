@@ -1,6 +1,6 @@
 {
  "name" : "PeakExtreme",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["MAX", "MIN"],
  "labels" : ["Maxima", "Minima"]
 }

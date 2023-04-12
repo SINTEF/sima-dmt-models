@@ -1,6 +1,6 @@
 {
  "name" : "MatrixStorage",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["SKYLINE", "SPARSE"],
  "labels" : ["Skyline", "Sparse"]
 }

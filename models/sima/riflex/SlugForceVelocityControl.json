@@ -1,6 +1,6 @@
 {
  "name" : "SlugForceVelocityControl",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["CONSTANT", "VARIABLE"],
  "labels" : ["Constant velocity", "Variable velocity"]
 }

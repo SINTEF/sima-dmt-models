@@ -1,6 +1,6 @@
 {
  "name" : "ShearProfile",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["NONE", "POWER_SHEAR_PROFILE", "LOGARITHMIC_SHEAR_PROFILE", "TABULATED_SHEAR_PROFILE"],
  "labels" : ["None", "Power shear profile", "Logarithmic shear profile", "Tabulated shear profile"]
 }

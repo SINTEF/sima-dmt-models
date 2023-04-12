@@ -1,37 +1,37 @@
 {
  "name" : "ARLine",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/simo/LineForceProvider"],
  "attributes" : [{
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "lineType",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/ARLineType",
    "contained" : false,
    "optional" : false,
    "description" : "Line type."
   }, {
    "name" : "end1",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/SuperNode",
    "contained" : false,
    "optional" : false,
    "description" : "Supernode at end 1."
   }, {
    "name" : "end2",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/SuperNode",
    "contained" : false,
    "optional" : false,
    "description" : "Supernode at end 2."
   }, {
    "name" : "disabled",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Do not include this line in the calculations",
    "optional" : true

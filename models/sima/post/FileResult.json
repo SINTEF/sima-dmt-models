@@ -1,11 +1,11 @@
 {
  "name" : "FileResult",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/post/SignalStorage"],
  "attributes" : [{
    "name" : "filename",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }],

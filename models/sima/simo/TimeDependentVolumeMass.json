@@ -1,80 +1,80 @@
 {
  "name" : "TimeDependentVolumeMass",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "point",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/Point3",
    "contained" : true,
    "optional" : false,
    "description" : "Mass point (local coordinates)."
   }, {
    "name" : "flowRates",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/FlowRateItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "vol0",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Volume of liquid at t=0",
    "optional" : true
   }, {
    "name" : "volMax",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Maximum allowable volume",
    "optional" : true
   }, {
    "name" : "volMin",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Minimum allowable volume",
    "optional" : true
   }, {
    "name" : "volRateMax",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Maximum allowable volume rate (HLA only)",
    "optional" : true
   }, {
    "name" : "volRateMin",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Minimum allowable volume rate (HLA only)",
    "optional" : true
   }, {
    "name" : "density",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Density of liquid in tank",
    "optional" : true
   }, {
    "name" : "vectorZ",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/Vector3",
    "contained" : true,
    "optional" : false,
    "description" : "Vector defining portion z-axis in local system"
   }, {
    "name" : "vectorXZ",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/Vector3",
    "contained" : true,
    "optional" : false,
    "description" : "Vector in local xz-plane def. portion x-axis"
   }, {
    "name" : "portions",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/VolumeMassPortion",
    "dimensions" : "*",
    "contained" : true,

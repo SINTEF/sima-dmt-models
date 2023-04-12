@@ -1,6 +1,6 @@
 {
  "name" : "ConditionTask",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : true,
  "extends" : ["/sima/Task"],
  "storageRecipes" : [],

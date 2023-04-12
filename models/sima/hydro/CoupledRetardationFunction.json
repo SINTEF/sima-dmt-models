@@ -1,23 +1,23 @@
 {
  "name" : "CoupledRetardationFunction",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/hydro/RetardationFunction"],
  "attributes" : [{
    "name" : "retardationElements",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/hydro/RetardationElementData",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "timeDelay",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true
   }, {
    "name" : "additionalDamping",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/hydro/LinearDampingMatrix",
    "contained" : true,
    "optional" : true

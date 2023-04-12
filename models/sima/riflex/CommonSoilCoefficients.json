@@ -1,29 +1,29 @@
 {
  "name" : "CommonSoilCoefficients",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "xu",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/CommonSoilCoefficientsItem",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "k",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/CommonSoilCoefficientsItem",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "n",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/CommonSoilCoefficientsItem",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "yu",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/CommonSoilCoefficientsItem",
    "contained" : true,
    "optional" : false

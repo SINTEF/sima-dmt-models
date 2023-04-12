@@ -1,35 +1,35 @@
 {
  "name" : "StallPoint",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "angleZeroLift",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Angle of attack at zero lift (Typical value: -2 deg)",
    "optional" : true
   }, {
    "name" : "maxLinearClSlopePos",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Max linear CL slope (positive) (Typical value: 0.12/deg)",
    "optional" : true
   }, {
    "name" : "maxLinearClSlopeNeg",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Max linear CL slope (negative) (Typical value: 0.12/deg)",
    "optional" : true
   }, {
    "name" : "angleFullSeparationPos",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Angle of attack at full separation (positive) (Typical value: 20 deg)",
    "optional" : true
   }, {
    "name" : "angleFullSeparationNeg",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Angle of attack at full separation (negative) (Typical value: -20 deg)",
    "optional" : true

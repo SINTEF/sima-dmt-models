@@ -1,6 +1,6 @@
 {
  "name" : "SingleParameter",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : true,
  "extends" : ["/sima/MOAO"],
  "storageRecipes" : [],

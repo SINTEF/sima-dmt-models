@@ -1,23 +1,23 @@
 {
  "name" : "FibreRopeMassVolume",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "massCoefficient",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Mass / unit length",
    "optional" : true
   }, {
    "name" : "extCrossSectionalArea",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "External cross-sectional area",
    "optional" : true
   }, {
    "name" : "extContactRadius",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "External contact radius (default = 0.0)",
    "optional" : true

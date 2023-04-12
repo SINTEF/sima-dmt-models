@@ -1,51 +1,51 @@
 {
  "name" : "DNV_OS_F201CombinedLoading",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/riflex/CombinedLoading"],
  "attributes" : [{
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "refPointPressure",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Internal design pressure at vertical reference position",
    "optional" : true
   }, {
    "name" : "referencePoint",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Vertical reference position for internal pressure. \r\nGiven as the Z coordinate in global coordinate system.",
    "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "limitTimeInterval",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Specify time window to be applied for assessment of utilization. In case \"end time\" exceeds the time series duration, the end of the time series will be used as the end time",
    "optional" : true
   }, {
    "name" : "startTime",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true
   }, {
    "name" : "endTime",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true
   }, {
    "name" : "addIntermediateResults",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Add intermediate element results to the output",
    "optional" : true
   }, {
    "name" : "properties",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/CombinedLoadingProperties",
    "dimensions" : "*",
    "contained" : true,
@@ -53,85 +53,85 @@
    "description" : "Specification of nodes for displacement storage"
   }, {
    "name" : "useDistributionFitting",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Calculate characteristic extreme values of utilization factors using Gumbel distribution fitting",
    "optional" : true
   }, {
    "name" : "seastateReturnPeriod",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Return period used for estimating the characteristic extreme value",
    "optional" : true,
    "default" : "3.0"
   }, {
    "name" : "percentile",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Specify percentile in extreme value distribution. \nThe value 0.57038 corresponds to the expected extreme, and 0.9 corresponds to 90% estimate of the extreme response",
    "optional" : true,
    "default" : "0.57038"
   }, {
    "name" : "approach",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/CombinedLoadingApproach",
    "optional" : true,
    "default" : "LRFD"
   }, {
    "name" : "customSafetyClassResistanceFactor",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Safety class resistance factor (ɣ SC)",
    "optional" : true
   }, {
    "name" : "customLoadEffectFactorForEnvironmentalLoads",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Load effect factor for environmental loads (ɣ E)",
    "optional" : true
   }, {
    "name" : "customLoadEffectFactorForFunctionalLoads",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Load effect factor for functional loads (ɣ F)",
    "optional" : true
   }, {
    "name" : "customLoadFactorForAccidentalLoads",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Load factor for accidental loads (ɣ A)",
    "optional" : true
   }, {
    "name" : "customMaterialResistanceFactor",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Material resistance factor (ɣ m)",
    "optional" : true
   }, {
    "name" : "fabricationFactor",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Fabrication factor (α fab)",
    "optional" : true,
    "default" : "0.85"
   }, {
    "name" : "safetyClass",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/post/SafetyClass",
    "optional" : true,
    "default" : "LOW"
   }, {
    "name" : "limitStateCategory",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/post/LimitStateCategory",
    "optional" : true,
    "default" : "SLS"
   }, {
    "name" : "lastFunctionalLoadGroup",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of the last load group in static calculation parameter that is part of the functional load",
    "optional" : true

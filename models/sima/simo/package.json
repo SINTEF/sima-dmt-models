@@ -1,0 +1,20 @@
+{
+ "name" : "simo",
+ "type" : "core:Package",
+ "_meta_" : {
+  "type" : "core:Meta",
+  "version" : "45",
+  "dependencies" : [{
+    "alias" : "core",
+    "address" : "system/SIMOS",
+    "version" : "0.0.1",
+    "protocol" : "dmss"
+   }, {
+    "alias" : "simo",
+    "address" : "simo",
+    "version" : "45",
+    "protocol" : "dmss"
+   }]
+ }
+}
+

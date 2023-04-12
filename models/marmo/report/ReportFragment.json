@@ -1,6 +1,6 @@
 {
  "name" : "ReportFragment",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/report/ReportItemContainer"],
  "storageRecipes" : [],

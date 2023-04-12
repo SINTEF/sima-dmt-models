@@ -1,6 +1,6 @@
 {
  "name" : "ForceUnit",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["NEWTON", "KILO_NEWTON", "MEGA_NEWTON", "TONNE"],
  "labels" : ["N", "kN", "MN", "ton-force"]
 }

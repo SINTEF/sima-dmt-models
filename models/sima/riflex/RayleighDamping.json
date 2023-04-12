@@ -1,6 +1,6 @@
 {
  "name" : "RayleighDamping",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["TOTAL", "MATERIAL"],
  "labels" : ["Total stiffness damping", "Material stiffness damping"]
 }

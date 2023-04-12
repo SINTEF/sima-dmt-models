@@ -1,18 +1,18 @@
 {
  "name" : "GuidePointSpecification",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "guidePoint",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/GuidePoint",
    "contained" : false,
    "optional" : false,
    "description" : "Guide point"
   }, {
    "name" : "enteredOnLine",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Guide point entered on line",
    "optional" : true,

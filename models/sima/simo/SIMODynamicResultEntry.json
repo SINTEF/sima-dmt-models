@@ -1,64 +1,64 @@
 {
  "name" : "SIMODynamicResultEntry",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/ResultEntry"],
  "attributes" : [{
    "name" : "properties",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/Property",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "resource",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "relative",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true
   }, {
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "changeNumber",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : true
   }, {
    "name" : "results",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/Result",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "entries",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/ResultEntry",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "lisFile",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/LisFile",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "simoLDAT",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/Result",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "timeSimulationResult",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/TimeSimulationResult",
    "contained" : true,
    "optional" : true

@@ -1,6 +1,6 @@
 {
  "name" : "TurbineOrientation",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["UPWIND", "DOWNWIND"],
  "labels" : ["Upwind", "Downwind"]
 }

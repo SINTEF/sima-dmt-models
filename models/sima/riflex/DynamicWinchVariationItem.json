@@ -1,31 +1,31 @@
 {
  "name" : "DynamicWinchVariationItem",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "winch",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/ARWinch",
    "contained" : false,
    "optional" : true
   }, {
    "name" : "startTime",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Start time for winching",
    "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "endTime",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "End time for winching",
    "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "velocity",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Winch velocity",
    "optional" : true,

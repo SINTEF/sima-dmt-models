@@ -1,88 +1,88 @@
 {
  "name" : "WorkflowReferenceNode",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/post/RunNode"],
  "attributes" : [{
    "name" : "x",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : true
   }, {
    "name" : "y",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : true
   }, {
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "h",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : true
   }, {
    "name" : "w",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : true
   }, {
    "name" : "controlSignalInputSlots",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/post/ControlSignalInputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "variableInputSlots",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/workflow/VariableInputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "modelReferenceInputSlot",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/workflow/ModelReferenceInputSlot",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "workflow",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/workflow/Workflow",
    "contained" : false,
    "optional" : true
   }, {
    "name" : "workflowOutputSlots",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/workflow/WorkflowOutputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "workflowInputSlots",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/workflow/WorkflowInputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "inputWorkflow",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Set the workflow input from the outside. Use a model reference as source.",
    "optional" : true
   }, {
    "name" : "setFolderName",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Override the default folder name created. This folder will be relative to the running workflow. If left empty it will create the results directly in the workflow folder.",
    "optional" : true
   }, {
    "name" : "folderName",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }],

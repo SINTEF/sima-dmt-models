@@ -1,6 +1,6 @@
 {
  "name" : "WeightOption",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["UNIFORM", "TRUNCATED_JINC", "WINDOWED_JINC"],
  "labels" : ["Uniform", "Truncated Jinc", "Window Jinc"]
 }

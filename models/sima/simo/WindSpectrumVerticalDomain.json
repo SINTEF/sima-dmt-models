@@ -1,35 +1,35 @@
 {
  "name" : "WindSpectrumVerticalDomain",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "specifyVerticalDomain",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Should a vertical grid for interpolation of wind velocity be specified?",
    "optional" : true
   }, {
    "name" : "numberOfLevels",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of vertical levels to pre-generate wind time series for",
    "optional" : true
   }, {
    "name" : "zMinimum",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Lower limit of vertical domain",
    "optional" : true
   }, {
    "name" : "zMaximum",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Upper limit of vertical domain",
    "optional" : true
   }, {
    "name" : "allowOutsideDomain",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Should computation of wind velocity outside specified limits be allowed?",
    "optional" : true

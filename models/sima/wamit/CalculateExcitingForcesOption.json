@@ -1,6 +1,6 @@
 {
  "name" : "CalculateExcitingForcesOption",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["NO", "YES", "YESSEPARATE"],
  "labels" : ["No", "Yes", "Yes - separate"]
 }

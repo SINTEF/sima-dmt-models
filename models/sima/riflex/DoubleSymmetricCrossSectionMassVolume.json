@@ -1,29 +1,29 @@
 {
  "name" : "DoubleSymmetricCrossSectionMassVolume",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "massCoefficient",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Mass / unit length",
    "optional" : true
   }, {
    "name" : "extCrossSectionalArea",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "External cross-sectional area",
    "optional" : true
   }, {
    "name" : "intCrossSectionalArea",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Internal cross-sectional area",
    "optional" : true
   }, {
    "name" : "gyrationRadius",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Radius of gyration about local x-axis",
    "optional" : true

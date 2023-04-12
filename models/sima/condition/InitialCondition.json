@@ -1,22 +1,22 @@
 {
  "name" : "InitialCondition",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/Condition", "/sima/NamedObject"],
  "attributes" : [{
    "name" : "changeNumber",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : true
   }, {
    "name" : "resultContainer",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/ResultContainer",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }],

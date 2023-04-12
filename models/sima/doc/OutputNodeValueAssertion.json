@@ -1,40 +1,40 @@
 {
  "name" : "OutputNodeValueAssertion",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "severity",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/sima/Severity",
    "optional" : true,
    "default" : "WARNING"
   }, {
    "name" : "message",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "outputNode",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/post/OutputNode",
    "contained" : false,
    "optional" : true
   }, {
    "name" : "path",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "expectedValue",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "description" : "When expected value is a number, the number of significant digits will be used as a tolerance level",
    "optional" : true
   }, {
    "name" : "tolerance",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "When set, will be used instead of the implicit toleranse based on significant digits",
    "optional" : true

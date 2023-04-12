@@ -1,11 +1,11 @@
 {
  "name" : "RIFLEXEigenvalueCalculationParameters",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "eigenvalueAnalysisParameters",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/EigenvalueAnalysisParameters",
    "contained" : true,
    "optional" : false

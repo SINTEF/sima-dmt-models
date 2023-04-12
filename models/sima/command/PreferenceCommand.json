@@ -1,0 +1,27 @@
+{
+ "name" : "PreferenceCommand",
+ "type" : "core:Blueprint",
+ "abstract" : false,
+ "extends" : ["/command/Command"],
+ "attributes" : [{
+   "name" : "name",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
+   "name" : "file",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "Path to file",
+   "optional" : false
+  }, {
+   "name" : "export",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "If checked, this will export the preferences instead of importing",
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

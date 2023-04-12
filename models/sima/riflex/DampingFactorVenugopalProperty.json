@@ -1,30 +1,30 @@
 {
  "name" : "DampingFactorVenugopalProperty",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/riflex/DampingFactorProperty"],
  "attributes" : [{
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "stillWaterDampingContribution",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Factor Venugopal still water damping contribution",
    "optional" : true,
    "default" : "1.0"
   }, {
    "name" : "lowVelocityRegion",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Factor Venugopal low velocity region",
    "optional" : true,
    "default" : "1.0"
   }, {
    "name" : "highVelocityRegion",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Factor Venugopal high velocity region",
    "optional" : true,

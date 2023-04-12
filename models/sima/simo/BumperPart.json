@@ -1,35 +1,35 @@
 {
  "name" : "BumperPart",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "radius",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "diameter of bumper element",
    "optional" : true
   }, {
    "name" : "stiffness",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Bumper force stiffness, normal to elements",
    "optional" : true
   }, {
    "name" : "damping",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Damping",
    "optional" : true
   }, {
    "name" : "end1",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/Point3",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "end2",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/Point3",
    "contained" : true,
    "optional" : false

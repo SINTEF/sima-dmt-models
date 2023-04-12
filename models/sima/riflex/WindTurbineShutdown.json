@@ -1,49 +1,49 @@
 {
  "name" : "WindTurbineShutdown",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "startTime",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Start time for shutdown",
    "optional" : true
   }, {
    "name" : "bladePitchChangeItems",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/BladePitchChangeItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "faultOption",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/GeneratorTorqueFault",
    "optional" : true,
    "default" : "NONE"
   }, {
    "name" : "scalingFactor",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Scaling factor for generator torque",
    "optional" : true
   }, {
    "name" : "brakeOption",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/MechanicalBrakeOption",
    "optional" : true,
    "default" : "NONE"
   }, {
    "name" : "linearTorqueDampingCoefficient",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true
   }, {
    "name" : "timeToFullBrakeTorque",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true
   }],

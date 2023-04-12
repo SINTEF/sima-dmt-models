@@ -1,16 +1,16 @@
 {
  "name" : "PositionControl",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/custom/CustomComponent"],
  "attributes" : [{
    "name" : "hlaObjectId",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "reference",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/Position",
    "contained" : true,
    "optional" : false

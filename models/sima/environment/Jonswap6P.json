@@ -1,31 +1,31 @@
 {
  "name" : "Jonswap6P",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/environment/Wave"],
  "attributes" : [{
    "name" : "direction",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Average wave propagation direction",
    "optional" : true
   }, {
    "name" : "spreadingExponent",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Exponent  η in cos spreading function",
    "optional" : true,
    "default" : "2.0"
   }, {
    "name" : "numDirections",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of directions in spreading function, must be odd",
    "optional" : true,
    "default" : "11"
   }, {
    "name" : "spreadingType",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/environment/WaveSpreadingType",
    "description" : "Wave spreading code",
@@ -33,41 +33,41 @@
    "default" : "UNIDIRECTIONAL"
   }, {
    "name" : "omega",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Peak frequency, ωp",
    "optional" : true
   }, {
    "name" : "alpha",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Spectrum parameter α",
    "optional" : true,
    "default" : "0.008"
   }, {
    "name" : "beta",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Form parameter, β",
    "optional" : true,
    "default" : "1.25"
   }, {
    "name" : "gamma",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Peakedness parameter, γ",
    "optional" : true,
    "default" : "3.3"
   }, {
    "name" : "sigmaa",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Spectrum parameter σa",
    "optional" : true,
    "default" : "0.07"
   }, {
    "name" : "sigmab",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Spectrum parameter σb",
    "optional" : true,

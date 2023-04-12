@@ -1,23 +1,23 @@
 {
  "name" : "DynamicLoads",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "dynamicNodalForces",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/DynamicNodalForces",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "dynamicCurrentVariation",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/DynamicCurrentVariation",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "rigidMoonpoolColumns",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/RigidMoonpoolColumn",
    "contained" : true,
    "optional" : false

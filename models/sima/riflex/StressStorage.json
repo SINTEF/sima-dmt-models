@@ -1,11 +1,11 @@
 {
  "name" : "StressStorage",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "elements",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/ElementStressStorage",
    "dimensions" : "*",
    "contained" : true,

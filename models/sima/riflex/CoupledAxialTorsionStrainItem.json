@@ -1,0 +1,40 @@
+{
+ "name" : "CoupledAxialTorsionStrainItem",
+ "type" : "core:Blueprint",
+ "abstract" : false,
+ "extends" : ["/riflex/AxialStiffnessItem", "/riflex/TorsionStiffnessItem"],
+ "attributes" : [{
+   "name" : "axialForce",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Axial force corresponding to relative elongation.",
+   "optional" : true
+  }, {
+   "name" : "relativeElongation",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Relative elongation",
+   "optional" : true
+  }, {
+   "name" : "torsionMoment",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Torsion moment",
+   "optional" : true
+  }, {
+   "name" : "torsionAngle",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Torsion angle/length",
+   "optional" : true
+  }, {
+   "name" : "tensionTorsionCoupling",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : " Tension/torsion coupling parameter",
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

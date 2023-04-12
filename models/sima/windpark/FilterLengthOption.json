@@ -1,6 +1,6 @@
 {
  "name" : "FilterLengthOption",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["ROTOR", "WAKE"],
  "labels" : ["Rotor diameter", "Wake diameter"]
 }

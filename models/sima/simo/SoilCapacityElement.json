@@ -1,29 +1,29 @@
 {
  "name" : "SoilCapacityElement",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "dCap",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Penetration relative to ZCONT (positive upwards)",
    "optional" : true
   }, {
    "name" : "soilFr",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Soil capacity against failure at soil surface",
    "optional" : true
   }, {
    "name" : "frcDep",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Depth of each new soil failure",
    "optional" : true
   }, {
    "name" : "pSuct",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Suction pressure",
    "optional" : true

@@ -1,11 +1,11 @@
 {
  "name" : "IrregularWaveProcedure",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "kinematicsPosition",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/KinematicsPositions",
    "description" : "Kinematic positions",
@@ -13,7 +13,7 @@
    "default" : "STATIC"
   }, {
    "name" : "kinematicsInWaveZone",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/KinematicsInWaveZone",
    "description" : "Type of kinematics in wave zone",
@@ -21,90 +21,90 @@
    "default" : "MEAN_WATER_LEVEL"
   }, {
    "name" : "defaultProcedureOn",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "If chosen the default kinematics points procedure is run in RIFLEX. If not chosen the default procedure is not run in RIFLEX. In both cases additional detailed specification of wave kinematics points are run if present.",
    "optional" : true,
    "default" : "true"
   }, {
    "name" : "nodeStep",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Wave kinematics is calculated for every \"Node Step\" node between Z Lower\r\nand Z Upper",
    "optional" : true,
    "default" : "1"
   }, {
    "name" : "zLower",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Z-coordinate indicating lowest node position for which wave kinematics are calculated",
    "optional" : true
   }, {
    "name" : "zUpper",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Upper limit for wave kinematics",
    "optional" : true
   }, {
    "name" : "applyDiffractedWaves",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Whether diffracted wave points are to be specified",
    "optional" : true
   }, {
    "name" : "waveKinematicDiffPoints",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/WaveKinematicsDiffPoint",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "waveKinematicNodePoints",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/WaveKinematicsNodePoint",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "waveKinematicsFile",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Whether wave kinematics time series should be read from file or not",
    "optional" : true
   }, {
    "name" : "waveKinematicsFileName",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "description" : "Reference to a wave kinematics file",
    "optional" : true
   }, {
    "name" : "waveKinematicsTimeSeriesReferences",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/WaveKinematicsTimeSeriesReference",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "waveKinematicsMaxColumns",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Maximum number of columns in the wave kinematics time series file",
    "optional" : true
   }, {
    "name" : "waveKinematicsTimeColumn",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Column number for time in the wave kinematics time series file",
    "optional" : true
   }, {
    "name" : "waveKinematicsStorage",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Wave kinematics storage indicator",
    "optional" : true
   }, {
    "name" : "fileFormat",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/StorageType",
    "optional" : true,

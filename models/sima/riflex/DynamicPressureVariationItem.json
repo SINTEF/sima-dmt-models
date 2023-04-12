@@ -1,45 +1,45 @@
 {
  "name" : "DynamicPressureVariationItem",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/riflex/PressureVariationItem"],
  "attributes" : [{
    "name" : "mainRiserLine",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/MainRiserLine",
    "contained" : false,
    "optional" : false,
    "description" : "Main riser line"
   }, {
    "name" : "inletPressure",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Final pressure at inlet end",
    "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "pressureDrop",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Final pressure drop",
    "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "fluidVelocity",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Final fluid velocity",
    "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "startTime",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Start time for pressure variation",
    "optional" : true
   }, {
    "name" : "endTime",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "End time for pressure variation",
    "optional" : true

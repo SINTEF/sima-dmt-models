@@ -1,0 +1,22 @@
+{
+ "name" : "CompoundCommand",
+ "type" : "core:Blueprint",
+ "abstract" : false,
+ "extends" : ["/command/Command"],
+ "attributes" : [{
+   "name" : "name",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
+   "name" : "commands",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/command/Command",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

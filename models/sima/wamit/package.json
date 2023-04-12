@@ -1,0 +1,20 @@
+{
+ "name" : "wamit",
+ "type" : "core:Package",
+ "_meta_" : {
+  "type" : "core:Meta",
+  "version" : "14",
+  "dependencies" : [{
+    "alias" : "core",
+    "address" : "system/SIMOS",
+    "version" : "0.0.1",
+    "protocol" : "dmss"
+   }, {
+    "alias" : "wamit",
+    "address" : "wamit",
+    "version" : "14",
+    "protocol" : "dmss"
+   }]
+ }
+}
+

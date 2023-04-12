@@ -1,6 +1,6 @@
 {
  "name" : "ConvergenceCriterion",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["AMPNOR", "DIFMAX", "NONE"],
  "labels" : ["AMPNOR", "DIFMAX", "NONE"]
 }

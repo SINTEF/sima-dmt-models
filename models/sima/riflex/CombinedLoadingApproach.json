@@ -1,6 +1,6 @@
 {
  "name" : "CombinedLoadingApproach",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["LRFD", "WSD"],
  "labels" : ["LRFD", "WSD"]
 }

@@ -1,6 +1,6 @@
 {
  "name" : "CoordinateSystem",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["LOCAL", "GLOBAL"],
  "labels" : ["Local", "Global"]
 }

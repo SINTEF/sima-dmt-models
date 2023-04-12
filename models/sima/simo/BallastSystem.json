@@ -1,11 +1,11 @@
 {
  "name" : "BallastSystem",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "ballastTanks",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/BallastTank",
    "dimensions" : "*",
    "contained" : true,

@@ -1,82 +1,82 @@
 {
  "name" : "CrossSpectrumFilter",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/post/OperationNode"],
  "attributes" : [{
    "name" : "x",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : true
   }, {
    "name" : "y",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : true
   }, {
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "h",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : true
   }, {
    "name" : "w",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : true
   }, {
    "name" : "controlSignalInputSlots",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/post/ControlSignalInputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "filterInputSlots",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/post/InputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "filterOutputSlots",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/post/OutputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "subtractMean",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Subtract mean value from input",
    "optional" : true
   }, {
    "name" : "smoothingParameter",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Smoothing parameter",
    "optional" : true,
    "default" : "3"
   }, {
    "name" : "fadedOverlap",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Faded overlap coefficient",
    "optional" : true
   }, {
    "name" : "numPointsFFT",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of points to be used in fft (default is all input points)",
    "optional" : true
   }, {
    "name" : "taperWindowLength",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Relative length of cosine taper window",
    "optional" : true,

@@ -1,75 +1,75 @@
 {
  "name" : "StabilityCalculationParameters",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "forceTolerance",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "An equilibrium will be accepted if all the force components are lower than the force tolerance, and all the moment components are lower than the moment tolerance.",
    "optional" : true,
    "default" : "100.0"
   }, {
    "name" : "momentTolerance",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "An equilibrium will be accepted if all the force components are lower than the force tolerance, and all the moment components are lower than the moment tolerance.",
    "optional" : true,
    "default" : "1000.0"
   }, {
    "name" : "staticEquilibriumBodies",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/StaticEquilibriumBody",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "restrainFromGlobalDOFBodies",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/DOFElimination",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "body",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/SIMOBody",
    "contained" : false,
    "optional" : true,
    "description" : "Body for which GZ-curve will be calculated"
   }, {
    "name" : "minAzimuthAngle",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Minimum angle of the azimuth axis of rotation (body-related coordinate system)",
    "optional" : true
   }, {
    "name" : "maxAzimuthAngle",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Maximum angle of the azimuth axis of rotation (body-related coordinate system)",
    "optional" : true
   }, {
    "name" : "numAzimuthValues",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : true
   }, {
    "name" : "minRotationAngle",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Minimum inclination angle about the azimuth axis",
    "optional" : true
   }, {
    "name" : "maxRotationAngle",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Maximum inclination angle about the azimuth axis",
    "optional" : true
   }, {
    "name" : "numRotationvalues",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : true
   }],

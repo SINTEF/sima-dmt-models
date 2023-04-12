@@ -1,24 +1,24 @@
 {
  "name" : "ReynoldItem",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "reynoldsNumber",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Reynold number for given airfoil regime",
    "optional" : true
   }, {
    "name" : "items",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/windturbine/AirFoilItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "stallPoint",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/windturbine/StallPoint",
    "contained" : true,
    "optional" : false

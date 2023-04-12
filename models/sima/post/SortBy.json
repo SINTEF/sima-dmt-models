@@ -1,6 +1,6 @@
 {
  "name" : "SortBy",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["X_AXIS", "Y_AXIS"],
  "labels" : ["X Axis", "Y Axis"]
 }

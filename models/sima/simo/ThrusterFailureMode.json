@@ -1,6 +1,6 @@
 {
  "name" : "ThrusterFailureMode",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["NO_FAILURE", "THRUSTER_BLACKOUT"],
  "labels" : ["No failure", "Thruster blackout"]
 }

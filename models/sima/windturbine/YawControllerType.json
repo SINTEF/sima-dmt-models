@@ -1,6 +1,6 @@
 {
  "name" : "YawControllerType",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["NONE", "INTERNAL", "COMBINED"],
  "labels" : ["No yaw controller", "Internal controller", "Combined external controller"]
 }

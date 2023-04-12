@@ -1,6 +1,6 @@
 {
  "name" : "SegmentType",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["CATENARY", "RIGID"],
  "labels" : ["Catenary", "Rigid"]
 }

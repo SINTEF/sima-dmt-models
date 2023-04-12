@@ -1,6 +1,6 @@
 {
  "name" : "StorageType",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["BINARY", "ASCII"],
  "labels" : ["Binary format", "ASCII format"]
 }

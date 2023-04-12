@@ -1,25 +1,25 @@
 {
  "name" : "CurrentItem",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "level",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Global z-coordinate of current level",
    "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "direction",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Current propagation direction",
    "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "velocity",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Current velocity",
    "optional" : true,

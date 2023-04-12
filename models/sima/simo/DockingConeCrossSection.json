@@ -1,17 +1,17 @@
 {
  "name" : "DockingConeCrossSection",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "axialDistance",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Axial point, axial distance from end",
    "optional" : true
   }, {
    "name" : "items",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/ForceDampingItem",
    "dimensions" : "*",
    "contained" : true,

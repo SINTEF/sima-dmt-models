@@ -1,6 +1,6 @@
 {
  "name" : "FatigueLimitIndicator",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["STRESS_RANGE", "STRESS_CYCLES", "NO_LIMIT"],
  "labels" : ["Stress range", "Stress cycles", "No limit"]
 }

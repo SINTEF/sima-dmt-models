@@ -1,11 +1,11 @@
 {
  "name" : "ResponseAnalysisParameters",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "iterationMethod",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/ResponseIterationMethod",
    "description" : "Response iteration method",
@@ -13,20 +13,20 @@
    "default" : "NEWTON_RAPHSON"
   }, {
    "name" : "retry",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "If the response iteration does not converge a second attempt will be made with the other response iteration method",
    "optional" : true
   }, {
    "name" : "maxNumberOfIterations",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Maximum number of iterations",
    "optional" : true,
    "default" : "30"
   }, {
    "name" : "convergenceCriterion",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/ConvergenceCriterion",
    "description" : "Convergence criterion",
@@ -34,21 +34,21 @@
    "default" : "AMPNOR"
   }, {
    "name" : "convergenceLimit",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Convergence limit for the iteration",
    "optional" : true,
    "default" : "1.0E-4"
   }, {
    "name" : "initialResponseEstimate",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Scaling factor for the initial response estimate",
    "optional" : true,
    "default" : "0.5"
   }, {
    "name" : "responseFrequencyOption",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/ResponseFrequencyOption",
    "description" : "Option for combining response frequencies",
@@ -56,42 +56,42 @@
    "default" : "CONCURRENT"
   }, {
    "name" : "numberOfDominatingFrequencies",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of dominating frequencies given in user defined frequency\nranking",
    "optional" : true,
    "default" : "0"
   }, {
    "name" : "amplitudeLimit",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Amplitude limit for including frequency normalized by\nthe minimum diameter.",
    "optional" : true,
    "default" : "0.01"
   }, {
    "name" : "lowerFrequencyCutoff",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Cut-off excitation parameter ration for frequencies below the identified dominating frequency.",
    "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "upperFrequencyCutoff",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Cut-off excitation parameter ration for frequencies above the identified dominating frequency.",
    "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "relativeStructuralDamping",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Relative structural damping",
    "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "forceSwitch",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/ForceSwitch",
    "description" : "Option for force calculation",
@@ -99,7 +99,7 @@
    "default" : "USE_CURVATURE"
   }, {
    "name" : "printSwitch",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/PrintSwitch",
    "description" : "Print switch",
@@ -107,14 +107,14 @@
    "default" : "FINAL_RESULTS"
   }, {
    "name" : "additionalStructuralDampingSpecification",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "This data group allows additional material and slip damping to be specified for some or all segments in the system. \nThis structural damping is read from separate files and is applied in addition to the relative structural damping level RELDAM. \nThe structural damping is given as a function of the response curvature and is therefore updated during the response iterations.",
    "optional" : true,
    "default" : "false"
   }, {
    "name" : "additionalStructuralDampingParameters",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/AdditionalStructuralDampingParameters",
    "dimensions" : "*",
    "contained" : true,

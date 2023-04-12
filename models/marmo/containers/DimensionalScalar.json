@@ -1,21 +1,22 @@
 {
  "name" : "DimensionalScalar",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "description" : "Single scalar value with dimension",
  "abstract" : false,
  "extends" : ["/containers/Signal"],
  "attributes" : [{
    "name" : "value",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "number"
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : false
   }, {
    "name" : "label",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "unit",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }],

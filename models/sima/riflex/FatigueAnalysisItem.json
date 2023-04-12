@@ -1,50 +1,50 @@
 {
  "name" : "FatigueAnalysisItem",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/riflex/ElementReference"],
  "attributes" : [{
    "name" : "line",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/ARLine",
    "contained" : false,
    "optional" : true,
    "description" : "Line"
   }, {
    "name" : "segment",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Segment on given line",
    "optional" : true,
    "default" : "1"
   }, {
    "name" : "allSegments",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "All segments",
    "optional" : true
   }, {
    "name" : "elementNumber",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Local element number on actual segment",
    "optional" : true,
    "default" : "1"
   }, {
    "name" : "allElements",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "All elements",
    "optional" : true
   }, {
    "name" : "allEnds",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "All ends",
    "optional" : true
   }, {
    "name" : "elementEnd",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/End",
    "description" : "End number 1 or 2",
@@ -52,32 +52,32 @@
    "default" : "ONE"
   }, {
    "name" : "stressConcentrationFactor",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Stress consentration factor",
    "optional" : true,
    "default" : "1.0"
   }, {
    "name" : "snCurve",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/SNCurve",
    "contained" : false,
    "optional" : true
   }, {
    "name" : "effectiveThickness",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Thickness used in thickness correction of the SN curves. Default value is the same as the wall thickness",
    "optional" : true
   }, {
    "name" : "crossSectionalArea",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Optional cross sectional area",
    "optional" : true
   }, {
    "name" : "sectionModulus",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Optional section modulus",
    "optional" : true

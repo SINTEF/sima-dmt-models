@@ -1,24 +1,24 @@
 {
  "name" : "HawserForceMeasurement",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "standardDeviation",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "White noise standard deviation of the measurement system",
    "optional" : true
   }, {
    "name" : "seed",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Seed number for the realisation of the white noise",
    "optional" : true,
    "default" : "1"
   }, {
    "name" : "coupling",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/SimpleCoupling",
    "contained" : false,
    "optional" : true

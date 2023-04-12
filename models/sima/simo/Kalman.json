@@ -1,11 +1,11 @@
 {
  "name" : "Kalman",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/simo/Estimator"],
  "attributes" : [{
    "name" : "lineTension",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/KalmanLineTension",
    "description" : "Flag for measurement of line tensions to be included in the controller",
@@ -13,7 +13,7 @@
    "default" : "NONE"
   }, {
    "name" : "estimationMethod",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/KalmanEstimationMethod",
    "description" : "Estimation method flag",
@@ -21,41 +21,41 @@
    "default" : "FORCE"
   }, {
    "name" : "wfStartingPeriod",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Starting period for wave frequency estimation",
    "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "nominalVelocity",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Nominal velocity, used when linearizing nonlinear damping forces",
    "optional" : true,
    "default" : "0.25"
   }, {
    "name" : "lineCharacteristicItems",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/LineCharacteristicItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "hawserForceMeasurements",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/HawserForceMeasurement",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "stiffnessMatrix",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/hydro/Matrix3",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "lines",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/LineMeasurementItem",
    "dimensions" : "*",
    "contained" : true,

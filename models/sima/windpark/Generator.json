@@ -1,28 +1,28 @@
 {
  "name" : "Generator",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/Named", "/sima/ConditionSelectable"],
  "attributes" : [{
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "airDensity",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true,
    "default" : "1.3"
   }, {
    "name" : "kinematicViscosity",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true,
    "default" : "1.824E-5"
   }, {
    "name" : "meanderingOption",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/windpark/MeanderingAnalysisOption",
    "description" : "Compute or skip computation of dynamic wake meandering",
@@ -30,7 +30,7 @@
    "default" : "COMP"
   }, {
    "name" : "powerOption",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/windpark/PowerOption",
    "description" : "Compute or skip computation of power",
@@ -38,7 +38,7 @@
    "default" : "COMP"
   }, {
    "name" : "deficitOption",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/windpark/DeficitAnalysisOption",
    "description" : "Compute or read near field deficit",
@@ -46,7 +46,7 @@
    "default" : "COMP"
   }, {
    "name" : "focusOption",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/windpark/Focus",
    "description" : "Compute for a specific turbine or for the whole park",
@@ -54,45 +54,45 @@
    "default" : "TARGET"
   }, {
    "name" : "angleChange",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Rotor angle change pr step",
    "optional" : true,
    "default" : "3.0"
   }, {
    "name" : "maxLaps",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Maximum number of rotor laps for profile convergence",
    "optional" : true,
    "default" : "30"
   }, {
    "name" : "deficitFileContents",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/windpark/DeficitFileContents",
    "optional" : true,
    "default" : "INDUCTION_PROFILE"
   }, {
    "name" : "deficitFileName",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "ambientMixingParameter",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Ambient mixing parameters",
    "optional" : true
   }, {
    "name" : "deficitParameter",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Deficit parameter",
    "optional" : true
   }, {
    "name" : "multipleDeficitMethod",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/windpark/MultipleDeficitMethod",
    "description" : "Option for choosing the best approach for handling multiple deficits",
@@ -100,110 +100,110 @@
    "default" : "MAXOP"
   }, {
    "name" : "nearWakeLengthModel",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/windpark/NearWakeLengthModel",
    "optional" : true,
    "default" : "ROTOR_DIAMETERS"
   }, {
    "name" : "viscosityFilter",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/windpark/ViscosityFilter",
    "optional" : true,
    "default" : "MADSEN"
   }, {
    "name" : "incomingWind",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/windpark/IncomingWind",
    "optional" : true,
    "default" : "CONSTANT"
   }, {
    "name" : "speedIncrement",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Speed increment for calculation of deficits",
    "optional" : true,
    "default" : "0.25"
   }, {
    "name" : "deficitDepthFactor",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Factor on deficit depth",
    "optional" : true,
    "default" : "0.6"
   }, {
    "name" : "deficitGradientFactor",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Factor on depth derivative",
    "optional" : true,
    "default" : "0.35"
   }, {
    "name" : "cutOffFilterLengthFactor",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Cut off filter length in rotor diameter",
    "optional" : true,
    "default" : "2.0"
   }, {
    "name" : "windTurbineTypes",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/windpark/WindTurbineType",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "windParkLayout",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/windpark/WindParkTurbine",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "windVelocity",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Wind velocity (Constant wind)",
    "optional" : true
   }, {
    "name" : "windDirection",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Wind direction in global system (propagation direction)\n0 deg is along global X-direction\n90 deg is along global Y-direction",
    "optional" : true
   }, {
    "name" : "turbulenceIntencity",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Turbulence intencity ambient wind (fine mesh)",
    "optional" : true
   }, {
    "name" : "stabilityClass",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/windpark/StabilityClass",
    "optional" : true,
    "default" : "NONE"
   }, {
    "name" : "coarseMeshFilename",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "fineMeshFilename",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "ambientWindFieldFilename",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "turbulenceBoxOption",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/windpark/TurbulenceBoxOption",
    "description" : "Option for choosing whether turbulence boxes are made using DTU Mann (IECWind format) or TurbSim (Turbsim Bladed style format)",
@@ -211,43 +211,43 @@
    "default" : "DTUMANN"
   }, {
    "name" : "outputPrefix",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "description" : "Prefix in name of resulting wind files. File types are according to specified \"Turbulence Box Option\".  See the \"Wind specification\" tab.",
    "optional" : true,
    "default" : "diwa"
   }, {
    "name" : "includePowerResult",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true
   }, {
    "name" : "powerResultFormat",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/windpark/FileFormat",
    "optional" : true,
    "default" : "BINARY"
   }, {
    "name" : "includeVisualization",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true
   }, {
    "name" : "visualizationFormat",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/windpark/FileFormat",
    "optional" : true,
    "default" : "BINARY"
   }, {
    "name" : "animationTime",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true
   }, {
    "name" : "areaAveragingOption",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/windpark/AreaAveragingOption",
    "description" : "Option for selecting type of area averaging integration",
@@ -255,7 +255,7 @@
    "default" : "RADIAL"
   }, {
    "name" : "filterLengthOption",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/windpark/FilterLengthOption",
    "description" : "Option for selecting filter length type",
@@ -263,7 +263,7 @@
    "default" : "ROTOR"
   }, {
    "name" : "weightOption",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/windpark/WeightOption",
    "description" : "Weighting function option for calculating the meandering velocities",
@@ -271,43 +271,43 @@
    "default" : "UNIFORM"
   }, {
    "name" : "weightConst",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true,
    "default" : "1.0"
   }, {
    "name" : "meanderingScaling",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/windpark/TurbulenceBoxScaling",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "addedWakeScaling",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/windpark/TurbulenceBoxScaling",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "ambientScaling",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/windpark/TurbulenceBoxScaling",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "applyLowPassFilter",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true,
    "default" : "true"
   }, {
    "name" : "applyAreaAveraging",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true,
    "default" : "false"
   }, {
    "name" : "lowPassFrequencyOption",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/windpark/LowPassFrequencyOption",
    "description" : "Lowpass cutoff frequency option",
@@ -315,7 +315,7 @@
    "default" : "CALC"
   }, {
    "name" : "lowPassFrequency",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Cutoff frequency",
    "optional" : true

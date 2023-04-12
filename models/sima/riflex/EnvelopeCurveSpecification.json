@@ -1,61 +1,61 @@
 {
  "name" : "EnvelopeCurveSpecification",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "compDisplacement",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Compute displacement envelopes?",
    "optional" : true
   }, {
    "name" : "compForce",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Compute force envelopes?",
    "optional" : true
   }, {
    "name" : "compCurvature",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Compute curvature envelopes?",
    "optional" : true
   }, {
    "name" : "startTime",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Simulation start time for computing envelopes",
    "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "endTime",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Simulation end time for computing envelopes",
    "optional" : true,
    "default" : "1.0E7"
   }, {
    "name" : "printDisplacement",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Print displacement envelopes?",
    "optional" : true
   }, {
    "name" : "printForce",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Print force envelopes?",
    "optional" : true
   }, {
    "name" : "printCurvature",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Print curvature envelopes?",
    "optional" : true
   }, {
    "name" : "plotOption",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/MatrixPlotFileOption",
    "optional" : true,

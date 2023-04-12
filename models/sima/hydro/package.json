@@ -1,0 +1,20 @@
+{
+ "name" : "hydro",
+ "type" : "core:Package",
+ "_meta_" : {
+  "type" : "core:Meta",
+  "version" : "28",
+  "dependencies" : [{
+    "alias" : "core",
+    "address" : "system/SIMOS",
+    "version" : "0.0.1",
+    "protocol" : "dmss"
+   }, {
+    "alias" : "hydro",
+    "address" : "hydro",
+    "version" : "28",
+    "protocol" : "dmss"
+   }]
+ }
+}
+

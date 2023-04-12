@@ -1,6 +1,6 @@
 {
  "name" : "LoadSpecificationType",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["NOFILE", "FILE"],
  "labels" : ["No file", "File"]
 }

@@ -1,11 +1,11 @@
 {
  "name" : "RegularWave",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/environment/Wave"],
  "attributes" : [{
    "name" : "items",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/environment/RegularWaveItem",
    "dimensions" : "*",
    "contained" : true,

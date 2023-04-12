@@ -1,17 +1,17 @@
 {
  "name" : "BodyWaveMethodOption",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "body",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/SIMOBody",
    "contained" : false,
    "optional" : true
   }, {
    "name" : "waveParticleMotions",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/KinematicMethod",
    "description" : "Options for wave particle motions",
@@ -19,7 +19,7 @@
    "default" : "FFT"
   }, {
    "name" : "waveParticleMotionDistributed",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/KinematicMethod",
    "description" : "Options for wave part. motions for distr. hydr. forces",
@@ -27,7 +27,7 @@
    "default" : "FFT"
   }, {
    "name" : "firstOrderWaveForce",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/KinematicMethod",
    "description" : "Options for first order wave forces",
@@ -35,7 +35,7 @@
    "default" : "FFT"
   }, {
    "name" : "firstOrderMotion",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/KinematicMethod",
    "description" : "Options for first order motion",
@@ -43,7 +43,7 @@
    "default" : "FFT"
   }, {
    "name" : "waveDriftForce",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/KinematicMethod",
    "description" : "Options for wave drift forces",
@@ -51,7 +51,7 @@
    "default" : "FFT"
   }, {
    "name" : "waveDriftDamping",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/KinematicMethod",
    "description" : "Options for wave drift damping",
@@ -59,7 +59,7 @@
    "default" : "FFT"
   }, {
    "name" : "qtf",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/KinematicMethod",
    "description" : "Options for forces from QTFs",
@@ -67,7 +67,7 @@
    "default" : "FFT"
   }, {
    "name" : "diffractedWave",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/KinematicMethod",
    "description" : "Options for diffracted wave",

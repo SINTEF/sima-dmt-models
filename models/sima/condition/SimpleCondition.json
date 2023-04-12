@@ -1,47 +1,47 @@
 {
  "name" : "SimpleCondition",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/condition/ConditionTaskCondition", "/sima/NamedObject"],
  "attributes" : [{
    "name" : "changeNumber",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : true
   }, {
    "name" : "resultContainer",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/ResultContainer",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "selection",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/ConditionSelectable",
    "contained" : false,
    "optional" : true
   }, {
    "name" : "variableItems",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/VariableItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "probabilityVariable",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/DoubleVariable",
    "contained" : false,
    "optional" : true,
    "description" : "Used to set a probability for single runs"
   }, {
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "variation",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/condition/ModelVariation",
    "contained" : false,
    "optional" : true

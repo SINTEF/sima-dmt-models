@@ -1,84 +1,84 @@
 {
  "name" : "HLASeaSurface",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "centerX",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Center of surface in x",
    "optional" : true
   }, {
    "name" : "centerY",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Center of surface in y",
    "optional" : true
   }, {
    "name" : "sizeX",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Size of surface in x",
    "optional" : true,
    "default" : "500.0"
   }, {
    "name" : "sizeY",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Size of surface in y",
    "optional" : true,
    "default" : "500.0"
   }, {
    "name" : "color",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/SIMAColor",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "transparency",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Transparency of surface",
    "optional" : true
   }, {
    "name" : "meshGridSize",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Size of grids in the mesh",
    "optional" : true,
    "default" : "100.0"
   }, {
    "name" : "showMesh",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Show mesh grid on surface",
    "optional" : true,
    "default" : "false"
   }, {
    "name" : "z",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Depth of surface",
    "optional" : true,
    "default" : "-100.0"
   }, {
    "name" : "lcWaveLength",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Length of long-crested wave field",
    "optional" : true,
    "default" : "300.0"
   }, {
    "name" : "lcWaveWidth",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Width of long-crested wave field",
    "optional" : true,
    "default" : "100.0"
   }, {
    "name" : "lcWaveNumPoints",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of points in long-crested wave field",
    "optional" : true,

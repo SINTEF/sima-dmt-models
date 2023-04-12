@@ -1,42 +1,42 @@
 {
  "name" : "StressJointSegment",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "length",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Length of the segment.",
    "optional" : true
   }, {
    "name" : "numElements",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of elements",
    "optional" : true,
    "default" : "10"
   }, {
    "name" : "extDiameterEnd2",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "External diameter at second end of actual segment.",
    "optional" : true
   }, {
    "name" : "wallThicknessEnd2",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Wall thickness at second end.",
    "optional" : true
   }, {
    "name" : "elasticModulus",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Elastic modulus.",
    "optional" : true
   }, {
    "name" : "materialDensity",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Density of pipe material.",
    "optional" : true

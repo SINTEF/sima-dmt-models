@@ -1,221 +1,239 @@
 {
  "name" : "DoubleSymmetricCrossSection",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/riflex/CrossSection", "/riflex/CRSAxialFrictionModel"],
  "attributes" : [{
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "scfkSpecification",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Scaling of Froude-Krylov term in Morison’s equation in normal direction",
    "optional" : true,
    "default" : "false"
   }, {
    "name" : "loadFormulation",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/LoadFormulation",
    "optional" : true,
    "default" : "MORISON"
   }, {
    "name" : "hydrodynamicDiameter",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Hydrodynamic diameter",
    "optional" : true
   }, {
-   "name" : "addedMassTanDir",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "number",
-   "description" : "Added mass in tangential direction",
-   "optional" : true
-  }, {
-   "name" : "addedMassNormDir",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "number",
-   "description" : "Added mass in normal direction",
-   "optional" : true
-  }, {
-   "name" : "dampingNormDir",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "number",
-   "description" : "Damping coefficients in normal direction",
-   "optional" : true
-  }, {
-   "name" : "cdx",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "number",
-   "description" : "Quadratic drag force coefficient per unit length in tangential direction",
-   "optional" : true
-  }, {
-   "name" : "cdy",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "number",
-   "description" : "Quadratic drag force coefficient per unit length in local y-direction",
-   "optional" : true
-  }, {
-   "name" : "cdz",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "number",
-   "description" : "Quadratic drag force coefficient per unit length local z-direction",
-   "optional" : true
-  }, {
-   "name" : "amx",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "number",
-   "description" : "Added mass per unit length in tangential direction",
-   "optional" : true
-  }, {
-   "name" : "amy",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "number",
-   "description" : "Added mass per unit length in local y-direction",
-   "optional" : true
-  }, {
-   "name" : "amz",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "number",
-   "description" : "Added mass per unit length in local z-direction",
-   "optional" : true
-  }, {
-   "name" : "addedMass",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "number",
-   "description" : "Added mass per unit length for torsional rotation",
-   "optional" : true
-  }, {
-   "name" : "cdlx",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "number",
-   "description" : "Linear drag force coefficient per unit length in tangential direction",
-   "optional" : true
-  }, {
-   "name" : "cdly",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "number",
-   "description" : "Linear drag force coefficient per unit length in local y-direction",
-   "optional" : true
-  }, {
-   "name" : "cdlz",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "number",
-   "description" : "Linear drag force coefficient per unit length in local z-direction",
-   "optional" : true
-  }, {
-   "name" : "scfk",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "number",
-   "description" : "Scaling factor for Froude-Krylov term in Morison’s equation in normal direction",
-   "optional" : true,
-   "default" : "1.0"
-  }, {
-   "name" : "scfkt",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string",
-   "enumType" : "/riflex/TangentialFroudeKrylovScaling",
-   "description" : "Scale for Froude-Krylov term in Morison’s equation in tangential direction",
-   "optional" : true,
-   "default" : "ON"
-  }, {
    "name" : "hydrodynamicInputCode",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/HydrodynamicInputCode",
    "description" : "Hydrodynamic input code",
    "optional" : true,
    "default" : "DIMENSIONAL"
   }, {
+   "name" : "addedMassTanDir",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Added mass in tangential direction",
+   "optional" : true
+  }, {
+   "name" : "addedMassNormDir",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Added mass in normal direction",
+   "optional" : true
+  }, {
+   "name" : "dampingNormDir",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Damping coefficients in normal direction",
+   "optional" : true
+  }, {
+   "name" : "cdx",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Quadratic drag force coefficient per unit length in tangential direction",
+   "optional" : true
+  }, {
+   "name" : "cdy",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Quadratic drag force coefficient per unit length in local y-direction",
+   "optional" : true
+  }, {
+   "name" : "cdz",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Quadratic drag force coefficient per unit length local z-direction",
+   "optional" : true
+  }, {
+   "name" : "amx",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Added mass per unit length in tangential direction",
+   "optional" : true
+  }, {
+   "name" : "amy",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Added mass per unit length in local y-direction",
+   "optional" : true
+  }, {
+   "name" : "amz",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Added mass per unit length in local z-direction",
+   "optional" : true
+  }, {
+   "name" : "addedMass",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Added mass per unit length for torsional rotation",
+   "optional" : true
+  }, {
+   "name" : "cdlx",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Linear drag force coefficient per unit length in tangential direction",
+   "optional" : true
+  }, {
+   "name" : "cdly",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Linear drag force coefficient per unit length in local y-direction",
+   "optional" : true
+  }, {
+   "name" : "cdlz",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Linear drag force coefficient per unit length in local z-direction",
+   "optional" : true
+  }, {
+   "name" : "scfk",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Scaling factor for Froude-Krylov term in Morison’s equation in normal direction",
+   "optional" : true,
+   "default" : "1.0"
+  }, {
+   "name" : "scfkt",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/TangentialFroudeKrylovScaling",
+   "description" : "Scale for Froude-Krylov term in Morison’s equation in tangential direction",
+   "optional" : true,
+   "default" : "ON"
+  }, {
    "name" : "cdt",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Quadratic drag coefficient in tangential direction.",
    "optional" : true
   }, {
    "name" : "cdn",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Quadratic drag coefficient in normal direction.",
    "optional" : true
   }, {
    "name" : "cdnz",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Quadratic drag coefficient in normal direction.",
    "optional" : true
   }, {
    "name" : "massDampingSpecification",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Mass proportional Rayleigh damping",
    "optional" : true
   }, {
    "name" : "stiffnessDampingSpecification",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Stiffness proportional Rayleigh damping",
    "optional" : true
   }, {
    "name" : "axialDampingSpecification",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Local axial damping model",
    "optional" : true
   }, {
    "name" : "staticFriction",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Static friction force corresponding to elongation",
    "optional" : true
   }, {
    "name" : "staticElongation",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Relative elongation",
    "optional" : true
   }, {
    "name" : "dynamicFriction",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Dynamic friction force corresponding to elongation",
    "optional" : true
   }, {
    "name" : "dynamicElongation",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Relative elongation",
    "optional" : true
   }, {
    "name" : "axialFriction",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Local axial friction model",
    "optional" : true
   }, {
+   "name" : "massDamping",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/riflex/CRSMassDamping",
+   "contained" : true,
+   "optional" : false
+  }, {
+   "name" : "stiffnessDamping",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/riflex/CRSStiffnessDamping",
+   "contained" : true,
+   "optional" : false
+  }, {
+   "name" : "axialDamping",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/riflex/CRSAxialDamping",
+   "contained" : true,
+   "optional" : false
+  }, {
    "name" : "cdax",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Quadratic aerodynamic drag force coefficient per unit length in tangential direction",
    "optional" : true
   }, {
    "name" : "cday",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Quadratic aerodynamic drag force coefficient per unit length in normal direction",
    "optional" : true
   }, {
    "name" : "cdaz",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Quadratic aerodynamic drag force coefficient per unit length in z direction",
    "optional" : true
   }, {
    "name" : "aerodynamicInputCode",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/AerodynamicInputCode",
    "description" : "Aerodynamic input code",
@@ -223,109 +241,91 @@
    "default" : "NONE"
   }, {
    "name" : "aerodynamicDiameter",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Aerodynamic diameter",
    "optional" : true
   }, {
    "name" : "temperature",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Temperature at which the specification applies",
    "optional" : true
   }, {
    "name" : "pressureDependency",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Pressure dependency parameter related to bending moment",
    "optional" : true
   }, {
    "name" : "axialStiffness",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Axial stiffness",
    "optional" : true
   }, {
    "name" : "tensionCapacity",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Tension capacity",
    "optional" : true
   }, {
    "name" : "maxCurvatureY",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Maximum curvature around local y-axis",
    "optional" : true
   }, {
    "name" : "maxCurvatureZ",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Maximum curvature around local z-axis",
    "optional" : true
   }, {
-   "name" : "massDamping",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "/riflex/CRSMassDamping",
-   "contained" : true,
-   "optional" : false
-  }, {
-   "name" : "stiffnessDamping",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "/riflex/CRSStiffnessDamping",
-   "contained" : true,
-   "optional" : false
-  }, {
-   "name" : "axialDamping",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "/riflex/CRSAxialDamping",
-   "contained" : true,
-   "optional" : false
-  }, {
    "name" : "airfoil",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/windturbine/Airfoil",
    "contained" : false,
    "optional" : true
   }, {
    "name" : "chordLength",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true
   }, {
    "name" : "foilOriginY",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Y-coordinate of foil origin",
    "optional" : true
   }, {
    "name" : "foilOriginZ",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Z-coordinate of foil origin",
    "optional" : true
   }, {
    "name" : "foilInclination",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Inclination of foil system in the local cross section (strength) system.",
    "optional" : true
   }, {
    "name" : "aerodynamicForceType",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/AerodynamicForceType",
    "optional" : true,
    "default" : "NONE"
   }, {
    "name" : "coupledBendingTorsion",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Geometric stiffness coupling between bending and torsion",
    "optional" : true
   }, {
    "name" : "barBeam",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/BarBeam",
    "description" : "Cross section type",
@@ -333,13 +333,13 @@
    "default" : "BAR"
   }, {
    "name" : "massVolume",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/DoubleSymmetricCrossSectionMassVolume",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "axialStiffnessInput",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/AxialStiffness",
    "description" : "Axial stiffness input specification",
@@ -347,7 +347,7 @@
    "default" : "CONSTANT"
   }, {
    "name" : "bendingStiffnessInput",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/BendingStiffness",
    "description" : "Bending stiffness input specification",
@@ -355,7 +355,7 @@
    "default" : "CONSTANT"
   }, {
    "name" : "torsionStiffnessInput",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/TorsionStiffness",
    "description" : "Torsion stiffness input specification",
@@ -363,70 +363,64 @@
    "default" : "CONSTANT"
   }, {
    "name" : "axialStiffnessCharacteristics",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/AxialStiffnessItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "bendingStiffnessCharacteristics",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/BendingStiffnessYZ_Item",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "torsionStiffnessCharacteristics",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/TorsionStiffnessItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "negativeTorsionStiffness",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Torsion stiffness for negative twist.",
    "optional" : true
   }, {
    "name" : "positiveTorsionStiffness",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Torsion stiffness for positive twist.",
    "optional" : true
   }, {
-   "name" : "submerged",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "boolean",
-   "description" : "Use formulation for partly submerged cross-section",
-   "optional" : true
-  }, {
    "name" : "bendingStiffnessY",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Bending stiffness around y-axis",
    "optional" : true
   }, {
    "name" : "bendingStiffnessZ",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Bending stiffness around z-axis",
    "optional" : true
   }, {
    "name" : "shearStiffnessZ",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Shear stiffness in Z-direction",
    "optional" : true
   }, {
    "name" : "shearStiffnessY",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Shear stiffness in Y-direction",
    "optional" : true
   }, {
    "name" : "hydrodynamicRadiationInputCode",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/HydrodynamicInputCode",
    "description" : "Code for input of simplified radiation force coefficients",

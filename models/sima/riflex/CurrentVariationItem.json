@@ -1,18 +1,18 @@
 {
  "name" : "CurrentVariationItem",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "velocityIncrement",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Current velocity increment",
    "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "directionIncrement",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Current direction increment",
    "optional" : true,

@@ -1,6 +1,6 @@
 {
  "name" : "Distribution",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["RAYLEIGH", "WEIBULL", "GUMBEL"],
  "labels" : ["Rayleigh", "Weibull", "Gumbel"]
 }

@@ -1,0 +1,39 @@
+{
+ "name" : "ConditionRunCommand",
+ "type" : "core:Blueprint",
+ "abstract" : false,
+ "extends" : ["/command/Command"],
+ "attributes" : [{
+   "name" : "name",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
+   "name" : "runType",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "Condition run type",
+   "optional" : false
+  }, {
+   "name" : "task",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "Name of task containing condition",
+   "optional" : false
+  }, {
+   "name" : "condition",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "Name of condition to run",
+   "optional" : false
+  }, {
+   "name" : "dir",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "Optional working directory ( may be specified with sima resource urls: sima:// which are relative to the workspace).\nIf the working directory is given outside the workspace SIMA will not delete any of the files before running.",
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

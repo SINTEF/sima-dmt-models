@@ -1,6 +1,6 @@
 {
  "name" : "ContactDirection",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["INWARDS", "OUTWARDS"],
  "labels" : ["Inwards", "Outwards"]
 }

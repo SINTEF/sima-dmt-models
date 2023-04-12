@@ -1,11 +1,11 @@
 {
  "name" : "SpatiallyVaryingCurrent",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/environment/Current"],
  "attributes" : [{
    "name" : "profiles",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/CurrentProfile",
    "dimensions" : "*",
    "contained" : true,

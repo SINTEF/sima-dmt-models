@@ -1,6 +1,6 @@
 {
  "name" : "AerodynamicInputCode",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["NONE", "DIMENSIONAL", "NONDIMENSIONAL"],
  "labels" : ["None", "Dimensional coefficients", "Nondimensional coefficients"]
 }

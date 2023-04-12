@@ -1,6 +1,6 @@
 {
  "name" : "FederationState",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["IDLE", "STARTING", "RUNNING", "PAUSED", "STOPPING", "ERROR"],
  "labels" : ["Idle", "Starting", "Running", "Paused", "Stopping", "Error"]
 }

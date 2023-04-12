@@ -1,6 +1,6 @@
 {
  "name" : "BoundaryCondition",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["FREE", "FIXED"],
  "labels" : ["Free", "Fixed"]
 }

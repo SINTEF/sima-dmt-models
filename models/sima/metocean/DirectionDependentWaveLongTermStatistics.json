@@ -1,16 +1,16 @@
 {
  "name" : "DirectionDependentWaveLongTermStatistics",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/metocean/WaveLongTermStatistics"],
  "attributes" : [{
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "sectors",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/metocean/WaveSector",
    "dimensions" : "*",
    "contained" : true,

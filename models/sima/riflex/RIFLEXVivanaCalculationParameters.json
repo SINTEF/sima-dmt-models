@@ -1,29 +1,29 @@
 {
  "name" : "RIFLEXVivanaCalculationParameters",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "eigenvalueAnalysisParameters",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/EigenvalueAnalysisParameters",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "responseAnalysisParameters",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/ResponseAnalysisParameters",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "fatigueProperties",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/FatigueProperties",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "vivLoadType",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/VIVLoadType",
    "description" : "Option for type of VIV loads to be applied",
@@ -31,77 +31,77 @@
    "default" : "CROSS_FLOW"
   }, {
    "name" : "waterTemperature",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Water temperature",
    "optional" : true,
    "default" : "4.0"
   }, {
    "name" : "randomGenerator",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/RandomGenerator",
    "optional" : true,
    "default" : "LEGACY"
   }, {
    "name" : "hydrodynamicCrossSectionProperties",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/HydrodynamicCrossSectionProperties",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "excitationZoneProperties",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/ExcitationZoneProperty",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "addedMassProperties",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/AddedMassProperty",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "excitationCoefficientProperties",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/ExcitationCoefficientsProperty",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "dampingFactorProperties",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/DampingFactorProperty",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "strouhalSpecificationProperties",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/StrouhalSpecificationProperty",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "addedMassFirstModeNumber",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "First mode number in the active VIV direction for which the constant still-water added mass will be used.",
    "optional" : true,
    "default" : "1000000"
   }, {
    "name" : "addedMassLastModeNumber",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Last mode number in the active VIV direction for which the full frequency-dependent added mass curves will be used.",
    "optional" : true,
    "default" : "1000000"
   }, {
    "name" : "addedMassFrequencyDependence",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/AddedMassFrequencyDependency",
    "optional" : true,

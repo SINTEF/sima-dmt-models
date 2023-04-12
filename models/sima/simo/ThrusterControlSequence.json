@@ -1,17 +1,17 @@
 {
  "name" : "ThrusterControlSequence",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "specifyControlSequence",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Should a list of control signals be specified for thruster?",
    "optional" : true
   }, {
    "name" : "signalType",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/ThrustSignalType",
    "description" : "Unit for demanded thrust force",
@@ -19,7 +19,7 @@
    "default" : "FORCE"
   }, {
    "name" : "items",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/ControlSequenceItem",
    "dimensions" : "*",
    "contained" : true,

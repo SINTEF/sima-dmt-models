@@ -1,214 +1,214 @@
 {
  "name" : "RIFLEXDynamicCalculationParameters",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "irregularTimeSeries",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/IrregularTimeSeriesParameters",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "irregularResponseAnalysis",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/IrregularResponseAnalysis",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "timeDomainProcedure",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/TimeDomainProcedure",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "envelopeCurveSpecification",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/EnvelopeCurveSpecification",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "displacementResponseStorage",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/DisplacementResponseStorage",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "forceResponseStorage",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/ForceResponseStorage",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "sumForceResponseStorage",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/SumForceResponseStorage",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "curvatureResponseStorage",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/CurvatureResponseStorage",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "stressStorage",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/StressStorage",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "turbineResponseStorage",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/TurbineResponseStorage",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "turbineBladeResponseStorage",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/TurbineBladeResponseStorage",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "supportVesselForceStorage",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/SupportVesselForceStorage",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "bodyForceStorage",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/BodyForceStorage",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "hydrodynamicLoadStorage",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/HydrodynamicLoadStorage",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "hlaElementForces",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/HLAElementForce",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "hlaImportedBodies",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/ImportVesselItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "segmentLengthVariations",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/SegmentLengthVariationItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "temperatureVariations",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/DynamicTemperatureVariationItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "pressureVariations",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/DynamicPressureVariationItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "winchVariations",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/DynamicWinchVariationItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "dynamicWindChange",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/DynamicWindChange",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "windTurbineShutdown",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/WindTurbineShutdown",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "bladePitchFault",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/BladePitchFault",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "boundaryChangeGroups",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/BoundaryChangeGroup",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "visualisationResponses",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/DynmodVisualisationResponses",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "regularWaveAnalysis",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/RegularWaveAnalaysis",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "regularWaveLoading",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/RegularWaveLoading",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "regularVesselMotions",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/RegularVesselMotion",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "volumeForcesScaling",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Scaling of volume forces.",
    "optional" : true,
    "default" : "1.0"
   }, {
    "name" : "specifiedForcesScaling",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Scaling of specified (nodal) forces.",
    "optional" : true,
    "default" : "1.0"
   }, {
    "name" : "currentVelocitiesScaling",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Scaling of current velocities.",
    "optional" : true,
    "default" : "1.0"
   }, {
    "name" : "changeStaticLoads",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Change applied static loads at the start of the dynamic analysis",
    "optional" : true
   }, {
    "name" : "dynamicLoads",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/DynamicLoads",
    "contained" : true,
    "optional" : false

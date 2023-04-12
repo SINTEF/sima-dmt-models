@@ -1,34 +1,49 @@
 {
  "name" : "WaveDriftDamping",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "directions",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true,
    "dimensions" : "*"
   }, {
    "name" : "frequencies",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true,
    "dimensions" : "*"
   }, {
    "name" : "symmetry",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/hydro/DirectionSymmetry",
    "optional" : true,
    "default" : "NO_SYMMETRY"
   }, {
    "name" : "items",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/hydro/WaveDriftDampingDofItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
+  }, {
+   "name" : "from",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/hydro/WaveDriftDampingSource",
+   "description" : "Calculate from",
+   "optional" : true,
+   "default" : "INPUT"
+  }, {
+   "name" : "forceCalculation",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/hydro/WaveDriftDampingForce",
+   "optional" : true,
+   "default" : "ABSOLUTE"
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

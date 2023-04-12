@@ -1,6 +1,6 @@
 {
  "name" : "MatrixPlotStorage",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["LOAD_GROUP", "LOAD_STEP", "END", "NONE"],
  "labels" : ["After each static load group", "After each static load step", "At end of static analysis", "No storage"]
 }

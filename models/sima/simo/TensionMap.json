@@ -1,17 +1,17 @@
 {
  "name" : "TensionMap",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "key",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/DistanceKey",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "value",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/TensionItem",
    "contained" : true,
    "optional" : true

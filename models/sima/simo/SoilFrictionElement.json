@@ -1,35 +1,35 @@
 {
  "name" : "SoilFrictionElement",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "dfric",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Penetration relative to ZCONT (positive upwards)",
    "optional" : true
   }, {
    "name" : "ftipdo",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Depth dependent friction force for DOWNward motion",
    "optional" : true
   }, {
    "name" : "ftipup",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Depth dependent friction force for UPward motion",
    "optional" : true
   }, {
    "name" : "fwall",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Depth dependent friction force for both upwards and\r\ndownwards motion",
    "optional" : true
   }, {
    "name" : "frich",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Depth dependent friction force in horizontal direction (>=0)",
    "optional" : true

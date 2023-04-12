@@ -1,6 +1,6 @@
 {
  "name" : "SurfaceType",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["OCEAN_SURFACE", "SEA_FLOOR"],
  "labels" : ["Ocean surface", "Seafloor"]
 }

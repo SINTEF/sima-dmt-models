@@ -1,11 +1,11 @@
 {
  "name" : "NodeBoundaryChangeItem",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "boundaryChangeOption",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/BoundaryChangeOption",
    "description" : "Boundary change option",
@@ -13,7 +13,7 @@
    "default" : "FREE"
   }, {
    "name" : "surgeConstraint",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/BoundaryCondition",
    "description" : "Boundary condition for translation in X-direction.",
@@ -21,7 +21,7 @@
    "default" : "FIXED"
   }, {
    "name" : "swayConstraint",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/BoundaryCondition",
    "description" : "Boundary condition for translation in Y-direction.",
@@ -29,7 +29,7 @@
    "default" : "FIXED"
   }, {
    "name" : "heaveConstraint",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/BoundaryCondition",
    "description" : "Boundary condition for translation in Z-direction.",
@@ -37,7 +37,7 @@
    "default" : "FIXED"
   }, {
    "name" : "rollConstraint",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/BoundaryCondition",
    "description" : "Boundary condition for rotation about X-axis",
@@ -45,7 +45,7 @@
    "default" : "FIXED"
   }, {
    "name" : "pitchConstraint",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/BoundaryCondition",
    "description" : "Boundary condition for rotation about Y-axis",
@@ -53,7 +53,7 @@
    "default" : "FIXED"
   }, {
    "name" : "yawConstraint",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/BoundaryCondition",
    "description" : "Boundary condition for rotation about Z-axis",
@@ -61,45 +61,45 @@
    "default" : "FIXED"
   }, {
    "name" : "supportVessel",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/SupportVessel",
    "contained" : false,
    "optional" : true
   }, {
    "name" : "_type",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/BoundaryChangeReference",
    "optional" : true,
    "default" : "SUPERNODE"
   }, {
    "name" : "superNode",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/SuperNodeReference",
    "contained" : false,
    "optional" : true
   }, {
    "name" : "node",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/NodeReference",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "masterType",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/BoundaryChangeReference",
    "optional" : true,
    "default" : "SUPERNODE"
   }, {
    "name" : "master",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/SuperNodeReference",
    "contained" : false,
    "optional" : true
   }, {
    "name" : "masterNodeReference",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/NodeReference",
    "contained" : true,
    "optional" : false

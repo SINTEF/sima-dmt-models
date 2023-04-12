@@ -1,41 +1,41 @@
 {
  "name" : "OmniDirectionalScatterData",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/metocean/ScatterData"],
  "attributes" : [{
    "name" : "hsUpperLimits",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/metocean/ScatterDimension",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "tpUpperLimits",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/metocean/ScatterDimension",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "windScatter",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/metocean/ScatterLevelContainer",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "currentScatter",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/metocean/ScatterLevelContainer",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "occurrences",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : true,
    "dimensions" : "*"
   }, {
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }],

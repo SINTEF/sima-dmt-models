@@ -1,17 +1,17 @@
 {
  "name" : "BoundaryChangeGroup",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "timeChange",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Time for boundary change",
    "optional" : true
   }, {
    "name" : "nodeBoundaryChanges",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/NodeBoundaryChangeItem",
    "dimensions" : "*",
    "contained" : true,

@@ -1,65 +1,65 @@
 {
  "name" : "WamitControlSurface",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "geometryFilename",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "description" : "GDF Geometry",
    "optional" : true
   }, {
    "name" : "surfacesToIncludeFromMs2File",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/wamit/SurfacesToIncludeFromMs2FileOption",
    "optional" : true,
    "default" : "ALLVISIBLESURFACES"
   }, {
    "name" : "symmetryAboutX",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true
   }, {
    "name" : "symmetryAboutY",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true
   }, {
    "name" : "entitySelectionList",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "evaluationMode",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/wamit/EvaluationModeOption",
    "optional" : true,
    "default" : "FAST"
   }, {
    "name" : "divisionsMultiplier",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : true
   }, {
    "name" : "directionOfNormals",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/wamit/DirectionsOfNormalsOption",
    "optional" : true,
    "default" : "OUTWARD"
   }, {
    "name" : "parameterLines",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/wamit/ParameterLines",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "panelSize",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true,
    "default" : "10.0"

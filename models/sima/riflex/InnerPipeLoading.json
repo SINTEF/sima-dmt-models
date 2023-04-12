@@ -1,6 +1,6 @@
 {
  "name" : "InnerPipeLoading",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["EXPOSED", "SHELTERED_CLOSED"],
  "labels" : ["Exposed", "Sheltered Closed"]
 }

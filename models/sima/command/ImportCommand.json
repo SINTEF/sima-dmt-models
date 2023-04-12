@@ -1,0 +1,21 @@
+{
+ "name" : "ImportCommand",
+ "type" : "core:Blueprint",
+ "abstract" : false,
+ "extends" : ["/command/Command"],
+ "attributes" : [{
+   "name" : "name",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
+   "name" : "file",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "Path to file, e.g stask",
+   "optional" : false
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

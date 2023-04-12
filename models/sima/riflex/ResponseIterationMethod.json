@@ -1,6 +1,6 @@
 {
  "name" : "ResponseIterationMethod",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["FIXED_POINT", "NEWTON_RAPHSON"],
  "labels" : ["Fixed point", "Newton-Raphson"]
 }

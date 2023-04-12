@@ -1,139 +1,139 @@
 {
  "name" : "MannWindGenerator",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/NamedObject", "/sima/ConditionSelectable"],
  "attributes" : [{
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "baseFileName",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true,
    "default" : "sima"
   }, {
    "name" : "alphaEpsilon",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Spectrum scale parameter",
    "optional" : true
   }, {
    "name" : "lengthScale",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Length scale",
    "optional" : true
   }, {
    "name" : "gamma",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Shear distortion parameter",
    "optional" : true,
    "default" : "3.9"
   }, {
    "name" : "seed",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Start seed for random number generator",
    "optional" : true
   }, {
    "name" : "gridPointsX",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Grid points in X-direction (Power of 2)",
    "optional" : true
   }, {
    "name" : "gridPointsY",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Grid points in Y-direction (Power of 2)",
    "optional" : true
   }, {
    "name" : "gridPointsZ",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Grid points in Z-direction (Power of 2)",
    "optional" : true
   }, {
    "name" : "pointDistanceX",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Distance between grid points in X direction",
    "optional" : true
   }, {
    "name" : "pointDistanceY",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Distance between grid points in Y direction",
    "optional" : true
   }, {
    "name" : "pointDistanceZ",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Distance between grid points in Z direction",
    "optional" : true
   }, {
    "name" : "hfCompensation",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "High Frequency Compensation",
    "optional" : true,
    "default" : "true"
   }, {
    "name" : "turbulenceIntensity",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Turbulence intensity",
    "optional" : true
   }, {
    "name" : "meanWindSpeed",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Mean wind speed",
    "optional" : true
   }, {
    "name" : "transient",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Starting point in simulation used for calculation of scaling factor",
    "optional" : true
   }, {
    "name" : "inputFormat",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/windturbine/MannInputFormat",
    "optional" : true,
    "default" : "DIRECT"
   }, {
    "name" : "windSeriesDuration",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Length of simulation",
    "optional" : true
   }, {
    "name" : "gridWidth",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Domain size in Y-direction",
    "optional" : true
   }, {
    "name" : "gridHeight",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Domain size in Z-direction",
    "optional" : true
   }, {
    "name" : "lengthFactor",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true,
    "default" : "0.8"
   }, {
    "name" : "longTurbScaleParam",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Longitudenal Turbulence Scale Parameter",
    "optional" : true

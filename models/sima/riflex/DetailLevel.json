@@ -1,6 +1,6 @@
 {
  "name" : "DetailLevel",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["MINIMUM", "MEDIUM", "MAXIMUM"],
  "labels" : ["Minimum", "Medium", "Maximum"]
 }

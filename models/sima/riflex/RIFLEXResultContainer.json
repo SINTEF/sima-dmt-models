@@ -1,51 +1,51 @@
 {
  "name" : "RIFLEXResultContainer",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/ConditionResultContainer"],
  "attributes" : [{
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "properties",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/Property",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "modelOutputFile",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "probability",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true
   }, {
    "name" : "static",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/RIFLEXStaticResultEntry",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "dynamic",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/RIFLEXDynamicResultEntry",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "eigenvalue",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/RIFLEXEigenvalueResultEntry",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "vivana",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/RIFLEXVivanaResultEntry",
    "contained" : true,
    "optional" : true

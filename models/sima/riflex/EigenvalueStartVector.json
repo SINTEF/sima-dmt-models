@@ -1,7 +1,0 @@
-{
- "name" : "EigenvalueStartVector",
- "type" : "system/SIMOS/Enum",
- "values" : ["PSEUDORANDOM_STARTVECTOR", "DIAGONAL_OF_MASS_MATRIX", "STARTVECTOR"],
- "labels" : ["Generated pseudo random start vector", "Use diagonal of mass matrix", "Use start vector of unit elements"]
-}
-

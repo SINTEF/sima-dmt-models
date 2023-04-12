@@ -1,61 +1,61 @@
 {
  "name" : "StressJointLineType",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/riflex/ARLineType"],
  "attributes" : [{
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "internalFluid",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/InternalFluidType",
    "contained" : false,
    "optional" : true,
    "description" : "Internal fluid component type."
   }, {
    "name" : "quadraticDrag",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Quadratic drag coefficient in normal direction, non-dimensional.",
    "optional" : true
   }, {
    "name" : "addedMass",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Added mass pr. unit length coefficient in normal direction, non-dimensional.",
    "optional" : true
   }, {
    "name" : "extDiameterEnd1",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "External diameter at 'first' end of first conical segment in stress joint.",
    "optional" : true
   }, {
    "name" : "wallThicknessEnd1",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Wall thickness at 'first' end of first conical segment in stress joint.",
    "optional" : true
   }, {
    "name" : "segments",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/StressJointSegment",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "loadFormulation",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/StressJointLoadFormulation",
    "optional" : true,
    "default" : "MORISON"
   }, {
    "name" : "vivCoefficients",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/TimeDomainVIVLoadCoefficients",
    "contained" : true,
    "optional" : false

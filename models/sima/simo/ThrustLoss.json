@@ -1,6 +1,6 @@
 {
  "name" : "ThrustLoss",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["NONE", "SURFACE"],
  "labels" : ["None", "Surface"]
 }

@@ -1,6 +1,6 @@
 {
  "name" : "RotationCode",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["NONE", "X_AXIS", "Y_AXIS", "Z_AXIS"],
  "labels" : ["No rotation", "Rotation about x-axis", "Rotation about y-axis", "Rotation about z-axis"]
 }

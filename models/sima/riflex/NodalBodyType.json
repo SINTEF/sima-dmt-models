@@ -1,28 +1,28 @@
 {
  "name" : "NodalBodyType",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/riflex/NodalComponentType"],
  "attributes" : [{
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "mass",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Mass",
    "optional" : true
   }, {
    "name" : "volume",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Displacement volume",
    "optional" : true
   }, {
    "name" : "referenceFrame",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/ReferenceFrameType",
    "description" : "Reference frame",
@@ -30,37 +30,37 @@
    "default" : "LOCAL"
   }, {
    "name" : "dragX",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Drag force coefficient in X-direction",
    "optional" : true
   }, {
    "name" : "dragY",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Drag force coefficient in Y-direction",
    "optional" : true
   }, {
    "name" : "dragZ",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Drag force coefficient in Z-direction",
    "optional" : true
   }, {
    "name" : "addedMassX",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Added mass in X-direction",
    "optional" : true
   }, {
    "name" : "addedMassY",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Added mass in Y-direction",
    "optional" : true
   }, {
    "name" : "addedMassZ",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Added mass in Z-direction",
    "optional" : true

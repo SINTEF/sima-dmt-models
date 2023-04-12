@@ -1,6 +1,6 @@
 {
  "name" : "FileType",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["INPUT", "OUTPUT"],
  "labels" : ["Input", "Output"]
 }

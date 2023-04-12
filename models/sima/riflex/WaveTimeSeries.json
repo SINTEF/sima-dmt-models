@@ -1,17 +1,17 @@
 {
  "name" : "WaveTimeSeries",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "fileName",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "description" : "Wave time series file",
    "optional" : true
   }, {
    "name" : "fileFormat",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/FileFormatAsciStar",
    "description" : "Wave time series file format",
@@ -19,41 +19,41 @@
    "default" : "ASCII"
   }, {
    "name" : "timeColumnNum",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Column number for time",
    "optional" : true,
    "default" : "1"
   }, {
    "name" : "waveColumnNum",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Column or time series number for wave elevation",
    "optional" : true,
    "default" : "2"
   }, {
    "name" : "starFileVersion",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Startimes file version",
    "optional" : true
   }, {
    "name" : "direction",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Wave direction",
    "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "xgWav",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Global x-coordinate for position where time series is measured",
    "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "ygWav",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Global y-coordinate for position where time series is measured",
    "optional" : true,

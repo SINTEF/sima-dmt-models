@@ -1,6 +1,6 @@
 {
  "name" : "WaveTheory",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["AIRY_LINEAR", "STOKE_5TH_ORDER"],
  "labels" : ["Airy linear", "Stoke 5th order"]
 }

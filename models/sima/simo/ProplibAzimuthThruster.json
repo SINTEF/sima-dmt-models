@@ -1,148 +1,148 @@
 {
  "name" : "ProplibAzimuthThruster",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/simo/IThruster"],
  "attributes" : [{
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "minForce",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Minimum thruster force",
    "optional" : true
   }, {
    "name" : "maxForce",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Maximum thruster force",
    "optional" : true
   }, {
    "name" : "position",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/Point3",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "force",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Resulting force, initial value if controlled by a DP-system",
    "optional" : true
   }, {
    "name" : "forceDirection",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Direction of thrust force in body x-y plane, initial value if controlled by a DP-system",
    "optional" : true
   }, {
    "name" : "thrusterDynamics",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/ThrusterDynamics",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "controlSequence",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/ThrusterControlSequence",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "failureSpecification",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/ThrusterFailureSpecification",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "includeSurfaceProximityLoss",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Should surface proximity loss be included?",
    "optional" : true,
    "default" : "false"
   }, {
    "name" : "includeThrusterHullInteraction",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Should thruster-hull interaction be included?",
    "optional" : true,
    "default" : "false"
   }, {
    "name" : "includeThrusterThrusterInteraction",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Should thruster-thruster interaction be included?",
    "optional" : true,
    "default" : "false"
   }, {
    "name" : "maxRps",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "The RPS giving maximum force",
    "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "diameter",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Thruster diameter",
    "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "bladeAreaRatio",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Propeller blade area ratio",
    "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "wakeFraction",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Wake fraction",
    "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "thrustDeductionFactor",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Thrust deduction factor",
    "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "sigma",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "(1-Cwl_aft) / (1-Cp_aft)",
    "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "podArea",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Pod area",
    "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "pitchRatio",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Propeller pitch ratio",
    "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "bilgeRadius",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Bilge radius",
    "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "verticalDistanceHull",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Vertical distance from propeller center to hull",
    "optional" : true,

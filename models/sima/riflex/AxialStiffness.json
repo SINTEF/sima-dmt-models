@@ -1,6 +1,6 @@
 {
  "name" : "AxialStiffness",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["CONSTANT", "TENSION_ELONGATION"],
  "labels" : ["Constant", "Tension-elongation"]
 }

@@ -1,11 +1,11 @@
 {
  "name" : "ReportFragmentItemContainer",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/workflow/ReportFragmentItem"],
  "attributes" : [{
    "name" : "reportFragmentItems",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/workflow/ReportFragmentItem",
    "dimensions" : "*",
    "contained" : true,

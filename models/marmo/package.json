@@ -1,0 +1,20 @@
+{
+ "name" : "marmo",
+ "type" : "core:Package",
+ "_meta_" : {
+  "type" : "core:Meta",
+  "version" : "1.0.0",
+  "dependencies" : [{
+    "alias" : "core",
+    "address" : "system/SIMOS",
+    "version" : "0.0.1",
+    "protocol" : "dmss"
+   }, {
+    "alias" : "marmo",
+    "address" : "marmo",
+    "version" : "1.0.0",
+    "protocol" : "dmss"
+   }]
+ }
+}
+

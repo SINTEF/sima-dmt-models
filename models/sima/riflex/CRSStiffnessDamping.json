@@ -1,29 +1,29 @@
 {
  "name" : "CRSStiffnessDamping",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "axialFactor",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Factor for stiffness proportional damping in axial dof",
    "optional" : true
   }, {
    "name" : "torsionalFactor",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Factor for stiffness proportional damping in torsional dof",
    "optional" : true
   }, {
    "name" : "bendingFactor",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Factor for stiffness proportional damping in bending dof",
    "optional" : true
   }, {
    "name" : "option",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/RayleighDamping",
    "description" : "Stiffness proportional damping options",

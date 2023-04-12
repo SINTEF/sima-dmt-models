@@ -1,11 +1,11 @@
 {
  "name" : "GeotechnicalLineSpecification",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "geotechnicalLineSpecificationItems",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/GeotechnicalLineSpecificationItem",
    "dimensions" : "*",
    "contained" : true,

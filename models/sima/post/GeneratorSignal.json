@@ -1,6 +1,6 @@
 {
  "name" : "GeneratorSignal",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : true,
  "extends" : ["/post/SignalPropertiesContainer", "/sima/Named"],
  "storageRecipes" : [],

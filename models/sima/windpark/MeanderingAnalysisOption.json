@@ -1,6 +1,6 @@
 {
  "name" : "MeanderingAnalysisOption",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["COMP", "SKIP"],
  "labels" : ["Compute", "Skip"]
 }

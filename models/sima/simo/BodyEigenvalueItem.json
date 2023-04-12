@@ -1,53 +1,53 @@
 {
  "name" : "BodyEigenvalueItem",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "body",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/SIMOBody",
    "contained" : false,
    "optional" : true,
    "description" : "Selected body to compute eigenvalues for"
   }, {
    "name" : "surgeExcursion",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Excursion in surge",
    "optional" : true,
    "default" : "1.0"
   }, {
    "name" : "swayExcursion",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Excursion in sway",
    "optional" : true,
    "default" : "1.0"
   }, {
    "name" : "heaveExcursion",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Excursion in heave",
    "optional" : true,
    "default" : "1.0"
   }, {
    "name" : "rollExcursion",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Excursion in roll",
    "optional" : true,
    "default" : "1.0"
   }, {
    "name" : "pitchExcursion",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Excursion in pitch",
    "optional" : true,
    "default" : "1.0"
   }, {
    "name" : "yawExcursion",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Excursion in yaw",
    "optional" : true,

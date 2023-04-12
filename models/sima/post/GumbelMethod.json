@@ -1,6 +1,6 @@
 {
  "name" : "GumbelMethod",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["LSQ", "MOMENT"],
  "labels" : ["Least Square Fit", "Moment"]
 }

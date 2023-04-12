@@ -1,17 +1,17 @@
 {
  "name" : "DistanceKey",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "horisontalDistance",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/Distance",
    "contained" : false,
    "optional" : true
   }, {
    "name" : "verticalDistance",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/Distance",
    "contained" : false,
    "optional" : true

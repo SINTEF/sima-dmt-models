@@ -1,6 +1,6 @@
 {
  "name" : "AdditionalFileFormatCode",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["BINARY_OUTPUT", "ASCII_OUTPUT"],
  "labels" : ["Binary format", "ASCII format"]
 }

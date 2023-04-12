@@ -1,18 +1,18 @@
 {
  "name" : "AmplitudeDiameterExcitationCoefficientItem",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "amplitudeDiameterRatio",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Amplitude to diameter ratio",
    "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "excitationCoefficient",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Excitation coefficient",
    "optional" : true,

@@ -1,6 +1,6 @@
 {
  "name" : "CoefficientType",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["CLASSIC", "ADVANCED"],
  "labels" : ["Classic", "Position dependent"]
 }

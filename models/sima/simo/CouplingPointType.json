@@ -1,6 +1,6 @@
 {
  "name" : "CouplingPointType",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["FIXED", "GUIDE"],
  "labels" : ["Fixed", "Guide"]
 }

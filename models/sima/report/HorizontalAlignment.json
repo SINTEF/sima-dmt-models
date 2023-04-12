@@ -1,6 +1,6 @@
 {
  "name" : "HorizontalAlignment",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["LEFT", "CENTER", "RIGHT"],
  "labels" : ["Left", "Center", "Right"]
 }

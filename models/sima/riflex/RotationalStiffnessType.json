@@ -1,6 +1,6 @@
 {
  "name" : "RotationalStiffnessType",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["FIXED", "FREE", "LINEAR", "NON_LINEAR"],
  "labels" : ["Fixed", "Free", "Linear", "Non linear"]
 }

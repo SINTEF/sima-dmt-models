@@ -1,52 +1,52 @@
 {
  "name" : "RollerBerthingFender",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "dynamicFriction",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Dynamic friction coefficient, sliding",
    "optional" : true
   }, {
    "name" : "staticFriction",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Friction coefficient, when not sliding (stiction)",
    "optional" : true
   }, {
    "name" : "shearStiffnes",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Shear stiffness associated with friction",
    "optional" : true
   }, {
    "name" : "velocityLimit",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Velocity limit for normal friction force",
    "optional" : true
   }, {
    "name" : "contactPlane",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/Plane",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "characteristic",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/ForceDampingCharacteristic",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "attachment",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/FenderAttachment",
    "description" : "Fender attachment",
@@ -54,13 +54,13 @@
    "default" : "GLOBAL_POINT"
   }, {
    "name" : "contactPoint",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/Point3",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "axisVector",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/Vector3",
    "contained" : true,
    "optional" : false

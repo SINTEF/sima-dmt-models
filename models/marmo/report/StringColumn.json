@@ -1,12 +1,13 @@
 {
  "name" : "StringColumn",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/report/Column"],
  "attributes" : [{
    "name" : "cells",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
+   "optional" : false,
    "dimensions" : "*"
   }],
  "storageRecipes" : [],

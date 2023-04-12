@@ -1,42 +1,42 @@
 {
  "name" : "FibreRopeModel",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "originalCurve",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/AxialStiffnessItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "originalWorkingCurve",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/AxialStiffnessItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "workingCurve",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/AxialStiffnessItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "dynamicStiffnessCoefficientA",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true
   }, {
    "name" : "dynamicStiffnessCoefficientB",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true
   }],

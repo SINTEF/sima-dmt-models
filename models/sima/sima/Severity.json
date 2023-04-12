@@ -1,6 +1,6 @@
 {
  "name" : "Severity",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["WARNING", "ERROR", "INFO", "COMMENT"],
  "labels" : ["Warning", "Error", "Info", "Comment"]
 }

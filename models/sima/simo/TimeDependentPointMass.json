@@ -1,54 +1,54 @@
 {
  "name" : "TimeDependentPointMass",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "point",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/Point3",
    "contained" : true,
    "optional" : false,
    "description" : "Mass point (local coordinates)."
   }, {
    "name" : "flowRates",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/FlowRateItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "mass0",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Mass at t=0 (may be negative).",
    "optional" : true
   }, {
    "name" : "massMax",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Maximum allowable mass Mass, (may be negative).",
    "optional" : true
   }, {
    "name" : "massMin",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Minimum allowable mass Mass, (may be negative).",
    "optional" : true
   }, {
    "name" : "massRateMax",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Maximum allowable mass rate, (may be negative) (HLA only).",
    "optional" : true
   }, {
    "name" : "massRateMin",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Minimum allowable mass rate, (may be negative) (HLA only).",
    "optional" : true

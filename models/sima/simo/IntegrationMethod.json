@@ -1,6 +1,6 @@
 {
  "name" : "IntegrationMethod",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["RUNGE_KUTTA", "EULER"],
  "labels" : ["Runge Kutta", "Euler"]
 }

@@ -1,6 +1,6 @@
 {
  "name" : "Plane",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["XY", "XZ", "YZ"],
  "labels" : ["XY", "XZ", "YZ"]
 }

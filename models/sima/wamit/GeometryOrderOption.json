@@ -1,6 +1,6 @@
 {
  "name" : "GeometryOrderOption",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["LOW", "HIGH"],
  "labels" : ["Low", "High"]
 }

@@ -1,6 +1,6 @@
 {
  "name" : "LineEnd",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["END1", "END2"],
  "labels" : ["End 1", "End 2"]
 }

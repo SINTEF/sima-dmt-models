@@ -1,6 +1,6 @@
 {
  "name" : "MotionTimeSeriesType",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["POSI", "DYND"],
  "labels" : ["Global positions", "Global dynamic displacements"]
 }

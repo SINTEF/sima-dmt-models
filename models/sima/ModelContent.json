@@ -1,18 +1,18 @@
 {
  "name" : "ModelContent",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/Entity"],
+ "extends" : ["core:Entity"],
  "attributes" : [{
    "name" : "header",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/Header",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "contents",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "system/SIMOS/Entity",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "core:Entity",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true

@@ -1,17 +1,17 @@
 {
  "name" : "LineMeasurementItem",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "line",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/LineForceProvider",
    "contained" : false,
    "optional" : true
   }, {
    "name" : "lineEnd",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/LineEnd",
    "description" : "Line end to read measurements from",

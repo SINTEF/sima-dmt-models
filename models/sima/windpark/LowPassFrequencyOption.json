@@ -1,6 +1,6 @@
 {
  "name" : "LowPassFrequencyOption",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["CALC", "SPEC"],
  "labels" : ["Calculate", "Specify"]
 }

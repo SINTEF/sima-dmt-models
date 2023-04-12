@@ -1,6 +1,6 @@
 {
  "name" : "MotionMode",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["X", "Y", "Z", "PHI", "THETA", "PSI"],
  "labels" : ["X", "Y", "Z", "PHI", "THETA", "PSI"]
 }

@@ -1,6 +1,6 @@
 {
  "name" : "Linearization",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["STOCHASTIC", "DIFFERENTIATION"],
  "labels" : ["Stochastic", "Differentiation"]
 }

@@ -1,41 +1,41 @@
 {
  "name" : "Appearance",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "graphicsfile",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "description" : "Graphics file",
    "optional" : true
   }, {
    "name" : "translation",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/Vector3",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "rotation",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/Vector3",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "scaling",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/Vector3",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "color",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/SIMAColor",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "geomRepresentationType",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/sima/GeomRepresentationType",
    "description" : "Geometry representation type",
@@ -43,19 +43,19 @@
    "default" : "DEFAULT_BOX"
   }, {
    "name" : "radius",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true,
    "default" : "1.0"
   }, {
    "name" : "transparency",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Transparency of geometry. No transparancy=0, Full transparency=1",
    "optional" : true
   }, {
    "name" : "symmetry",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/sima/Symmetry",
    "description" : "Symmetric properties of the geometry",

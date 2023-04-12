@@ -1,6 +1,6 @@
 {
  "name" : "LimitStateCategory",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["SLS", "ULS", "ALS"],
  "labels" : ["SLS", "ULS", "ALS"]
 }

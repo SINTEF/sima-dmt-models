@@ -1,6 +1,6 @@
 {
  "name" : "HLAInitialViewpoint",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/hla/HLAViewpoint"],
  "storageRecipes" : [],

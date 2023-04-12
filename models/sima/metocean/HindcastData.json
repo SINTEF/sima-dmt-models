@@ -1,47 +1,58 @@
 {
  "name" : "HindcastData",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "dataFile",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : false
   }, {
    "name" : "path",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "firstDate",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "lastDate",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
+   "name" : "latitude",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true
+  }, {
+   "name" : "longitude",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true
+  }, {
    "name" : "waveData",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/metocean/HindcastWaveContainer",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "windData",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/metocean/HindcastLevelContainer",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "currentData",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/metocean/HindcastLevelContainer",
    "contained" : true,
    "optional" : false

@@ -1,11 +1,11 @@
 {
  "name" : "CustomWorkflowSetInput",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/custom/CustomComponent"],
  "attributes" : [{
    "name" : "workflowSet",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/workflow/WorkflowSetNode",
    "contained" : false,
    "optional" : true

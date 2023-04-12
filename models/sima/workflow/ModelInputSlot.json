@@ -1,23 +1,23 @@
 {
  "name" : "ModelInputSlot",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/post/InputSlot"],
  "attributes" : [{
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "reference",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/ModelReferenceVariable",
    "contained" : false,
    "optional" : true,
    "description" : "Model reference to be replaced"
   }, {
    "name" : "replaceChildren",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "If checked the children of the reference will replaced",
    "optional" : true

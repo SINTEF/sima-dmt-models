@@ -1,6 +1,6 @@
 {
  "name" : "DiffractionPotentailOption",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["DIFFRACTION", "SCATTERING"],
  "labels" : ["Diffraction", "Scattering"]
 }

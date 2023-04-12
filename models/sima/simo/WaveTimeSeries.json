@@ -1,62 +1,62 @@
 {
  "name" : "WaveTimeSeries",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "scaleFactor",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Wave scale factor",
    "optional" : true,
    "default" : "1.0"
   }, {
    "name" : "refPointX",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Reference point X",
    "optional" : true
   }, {
    "name" : "refPointY",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Reference point Y",
    "optional" : true
   }, {
    "name" : "waterDepth",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Water depth in FULL scale",
    "optional" : true
   }, {
    "name" : "fileName",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "filterInputTimeseries",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Apply filtering to the wave signal",
    "optional" : true,
    "default" : "true"
   }, {
    "name" : "specifyLowerPeriod",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Override default computation of lower cut off period",
    "optional" : true,
    "default" : "false"
   }, {
    "name" : "lowerCutOffPeriod",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Lower cut off period for filtering of wave signal",
    "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "upperCutOffPeriod",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Upper cut off period for filtering of wave signal",
    "optional" : true,

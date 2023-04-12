@@ -1,39 +1,39 @@
 {
  "name" : "ContactSurfaceLine",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "line",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/ARLine",
    "contained" : false,
    "optional" : true,
    "description" : "Reference to line to be checked for contact with the contact surface."
   }, {
    "name" : "firstSegmentContact",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "First segment to be checked for contact",
    "optional" : true,
    "default" : "1"
   }, {
    "name" : "firstElementContact",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "First element within first contact segment to be chekced for contact",
    "optional" : true,
    "default" : "1"
   }, {
    "name" : "lastSegmentContact",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Last segment to be checked for contact",
    "optional" : true,
    "default" : "0"
   }, {
    "name" : "lastElementContact",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Last element within last contact segment to be checked for contact",
    "optional" : true,

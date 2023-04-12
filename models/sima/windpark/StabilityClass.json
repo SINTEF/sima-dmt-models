@@ -1,6 +1,6 @@
 {
  "name" : "StabilityClass",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["NONE", "VERY_STABLE", "STABLE", "NEAR_STABLE", "NEUTRAL", "NEAR_UNSTABLE", "UNSTABLE", "VERY_UNSTABLE"],
  "labels" : ["None", "Very stable", "Stable", "Near stable", "Neutral", "Near unstable", "Unstable", "Very unstable"]
 }

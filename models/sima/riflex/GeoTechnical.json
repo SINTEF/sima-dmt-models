@@ -1,69 +1,69 @@
 {
  "name" : "GeoTechnical",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "soilItems",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/SoilItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "scourDepth",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Length from mudline to actual contact point between mud and coductor",
    "optional" : true
   }, {
    "name" : "diameter",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Used for calculation of geotechnical spring properties",
    "optional" : true
   }, {
    "name" : "_type",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/SoilStiffnessType",
    "optional" : true,
    "default" : "STATIC"
   }, {
    "name" : "calculateDiameter",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Calculate diameter from cross-sections",
    "optional" : true,
    "default" : "true"
   }, {
    "name" : "calculateAxialPileResistance",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Calculate axial pile resistance",
    "optional" : true,
    "default" : "false"
   }, {
    "name" : "pileType",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/GeotechnicalPileType",
    "optional" : true,
    "default" : "OPEN"
   }, {
    "name" : "zoneOfInfluence",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Zone of influence",
    "optional" : true
   }, {
    "name" : "curveFittingFactor",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Curve fitting factor",
    "optional" : true

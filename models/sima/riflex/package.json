@@ -1,0 +1,20 @@
+{
+ "name" : "riflex",
+ "type" : "core:Package",
+ "_meta_" : {
+  "type" : "core:Meta",
+  "version" : "43",
+  "dependencies" : [{
+    "alias" : "core",
+    "address" : "system/SIMOS",
+    "version" : "0.0.1",
+    "protocol" : "dmss"
+   }, {
+    "alias" : "riflex",
+    "address" : "riflex",
+    "version" : "43",
+    "protocol" : "dmss"
+   }]
+ }
+}
+

@@ -1,6 +1,6 @@
 {
  "name" : "ConvergenceNorm",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["DISP", "BOTH"],
  "labels" : ["Displacement", "Both"]
 }

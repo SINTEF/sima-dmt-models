@@ -1,6 +1,6 @@
 {
  "name" : "LengthUnit",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["METER", "FEET"],
  "labels" : ["m", "ft"]
 }

@@ -1,42 +1,42 @@
 {
  "name" : "BumperGroup",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "body1",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/SIMOBody",
    "contained" : false,
    "optional" : false
   }, {
    "name" : "body2",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/SIMOBody",
    "contained" : false,
    "optional" : false
   }, {
    "name" : "velocityLimit",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Velocity limit for friction force (Damping Exponent = 0)",
    "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "body1Bumpers",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/BumperPart",
    "dimensions" : "*",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "body2Bumpers",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/BumperPart",
    "dimensions" : "*",
    "contained" : true,

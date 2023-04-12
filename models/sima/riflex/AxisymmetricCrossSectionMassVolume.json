@@ -1,72 +1,72 @@
 {
  "name" : "AxisymmetricCrossSectionMassVolume",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "massCoefficient",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Mass / unit length",
    "optional" : true
   }, {
    "name" : "extCrossSectionalArea",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "External cross-sectional area",
    "optional" : true
   }, {
    "name" : "intCrossSectionalArea",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Internal cross-sectional area",
    "optional" : true
   }, {
    "name" : "gyrationRadius",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Radius of gyration about local x-axis",
    "optional" : true
   }, {
    "name" : "crossSectionArea",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Cross-section area for stress calculations",
    "optional" : true
   }, {
    "name" : "crossSectionModulus",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Cross-section modulus for stress calculations",
    "optional" : true
   }, {
    "name" : "diameter",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Diameter for stress calculations (default = 2 * sqrt(external area/pi))",
    "optional" : true
   }, {
    "name" : "thickness",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Thickness for stress calculations (default = sqrt(external area/pi) - sqrt(internal area/pi))",
    "optional" : true
   }, {
    "name" : "defaultStressCalculation",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Use default stress calculation settings",
    "optional" : true,
    "default" : "true"
   }, {
    "name" : "extContactRadius",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "External contact radius (default = 0.0)",
    "optional" : true
   }, {
    "name" : "innerContactRadius",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Inner contact radius (default = 0.0)",
    "optional" : true

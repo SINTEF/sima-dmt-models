@@ -1,12 +1,13 @@
 {
  "name" : "IntegerArray",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/containers/Signal"],
  "attributes" : [{
    "name" : "value",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
+   "optional" : false,
    "dimensions" : "*"
   }],
  "storageRecipes" : [],

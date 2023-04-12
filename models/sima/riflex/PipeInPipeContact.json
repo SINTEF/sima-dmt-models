@@ -1,54 +1,54 @@
 {
  "name" : "PipeInPipeContact",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "masterLine",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/ARLine",
    "contained" : false,
    "optional" : true,
    "description" : "Identification of master pipe."
   }, {
    "name" : "slaveLine",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/ARLine",
    "contained" : false,
    "optional" : true,
    "description" : "Identification of slave pipe."
   }, {
    "name" : "firstMasterSegment",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "First local segment in line for master pipe.",
    "optional" : true
   }, {
    "name" : "lastMasterSegment",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Last local segment in line for master pipe.",
    "optional" : true
   }, {
    "name" : "firstSlaveSegment",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "First local segment in line for slave pipe.",
    "optional" : true
   }, {
    "name" : "lastSlaveSegment",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Last local segment in line for slave pipe.",
    "optional" : true
   }, {
    "name" : "masterPipePosition",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/InnerOuter",
    "description" : "Position of master pipe.",
@@ -56,7 +56,7 @@
    "default" : "INNER"
   }, {
    "name" : "stiffnessType",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/StiffnessType",
    "description" : "Stiffness code for contact force.",
@@ -64,92 +64,92 @@
    "default" : "LINEAR"
   }, {
    "name" : "relativeDamping",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Desired relative damping level at estimated eigen period in the\r\npipe, pipe and contact spring system.",
    "optional" : true
   }, {
    "name" : "damping",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Dash pot damping coefficient per unit length of master pipe",
    "optional" : true
   }, {
    "name" : "frictionStiffness",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Spring stiffness associated with static friction coefficient",
    "optional" : true
   }, {
    "name" : "staticFriction",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Static friction coefficient.",
    "optional" : true
   }, {
    "name" : "dynamicFriction",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Dynamic (sliding) friction coefficient.",
    "optional" : true
   }, {
    "name" : "axialFrictionEnabled",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Axial (sliding) friction enabled.",
    "optional" : true
   }, {
    "name" : "rotationalFrictionEnabled",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Rotational (sliding) friction enabled.",
    "optional" : true
   }, {
    "name" : "velocityLimitFriction",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Velocity limit to change from sliding status (dynamic friction) to static\r\ndisplacement status (static friction)",
    "optional" : true
   }, {
    "name" : "linearStiffness",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Spring compression stiffness per unit length",
    "optional" : true
   }, {
    "name" : "stiffnessCharacteristics",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/ContactSpringStiffnessItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "masterAsMainRiser",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true
   }, {
    "name" : "slaveAsMainRiser",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true
   }, {
    "name" : "masterMainRiser",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/MainRiserLine",
    "contained" : false,
    "optional" : true,
    "description" : "Identification of master main riser"
   }, {
    "name" : "slaveMainRiser",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/MainRiserLine",
    "contained" : false,
    "optional" : true,
    "description" : "Identification of slave main riser"
   }, {
    "name" : "innerPipeLoading",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/InnerPipeLoading",
    "optional" : true,

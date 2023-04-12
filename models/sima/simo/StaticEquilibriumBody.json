@@ -1,53 +1,53 @@
 {
  "name" : "StaticEquilibriumBody",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "body",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/SIMOBody",
    "contained" : false,
    "optional" : true,
    "description" : "Selected body to compute equilibrium for"
   }, {
    "name" : "x",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Excursion along global X axis",
    "optional" : true,
    "default" : "1.0"
   }, {
    "name" : "y",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Excursion along global Y axis",
    "optional" : true,
    "default" : "1.0"
   }, {
    "name" : "z",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Excursion along global Z axis",
    "optional" : true,
    "default" : "1.0"
   }, {
    "name" : "rx",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Excursion of rotation about global X axis",
    "optional" : true,
    "default" : "1.0"
   }, {
    "name" : "ry",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Excursion of rotation about global Y axis",
    "optional" : true,
    "default" : "1.0"
   }, {
    "name" : "rz",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Excursion of rotation about global Z axis",
    "optional" : true,

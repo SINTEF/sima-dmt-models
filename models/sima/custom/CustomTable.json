@@ -1,11 +1,11 @@
 {
  "name" : "CustomTable",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/custom/CustomComponent"],
  "attributes" : [{
    "name" : "table",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/post/SignalTable",
    "contained" : false,
    "optional" : true

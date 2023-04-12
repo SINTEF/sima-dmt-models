@@ -1,66 +1,66 @@
 {
  "name" : "DoubleModelSpectrum",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/environment/Wave"],
  "attributes" : [{
    "name" : "significantWaveHeight",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Significant wave height",
    "optional" : true
   }, {
    "name" : "windDrivenRatio",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Ratio of wind driven sea to the total sea.",
    "optional" : true
   }, {
    "name" : "windPeakPeriod",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Peak period of the wind driven sea",
    "optional" : true
   }, {
    "name" : "swellPeakPeriod",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Peak period of the swell sea",
    "optional" : true
   }, {
    "name" : "gammaWind",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Gamma parameter for wind driven sea",
    "optional" : true,
    "default" : "3.3"
   }, {
    "name" : "gammaSwell",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Gamma parameter for swell sea",
    "optional" : true
   }, {
    "name" : "upperSlopeWind",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Slope of the upper frequency part of the wind driven part of wave spectrum",
    "optional" : true
   }, {
    "name" : "lowerSlopeWind",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Slope of the lower frequency part of the wind driven part of wave spectrum",
    "optional" : true
   }, {
    "name" : "upperSlopeSwell",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Slope of the upper frequency part of the swell part of wave spectrum",
    "optional" : true
   }, {
    "name" : "lowerSlopeSwell",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Slope of the lower frequency part of the swell part of wave spectrum",
    "optional" : true

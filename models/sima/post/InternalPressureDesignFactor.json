@@ -1,6 +1,6 @@
 {
  "name" : "InternalPressureDesignFactor",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["DESIGN_PRESSURE", "INCIDENTAL_PRESSURE", "PRODUCTION_CASING_WITH_TUBING_LEAK", "DRILLING_RISER_WITH_EXTREME_PRESSURE", "HYDROSTATIC_TEST"],
  "labels" : ["Design pressure (0.60)", "Incidental pressure (0.67)", "Production casing with tubing leak (0.81)", "Drilling riser with extreme pressure (0.81)", "Hydrostatic test (0.9)"]
 }

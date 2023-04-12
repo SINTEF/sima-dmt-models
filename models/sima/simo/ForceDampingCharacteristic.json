@@ -1,18 +1,18 @@
 {
  "name" : "ForceDampingCharacteristic",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "dampingExponent",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Exponent of velocity in damping term",
    "optional" : true,
    "default" : "1.0"
   }, {
    "name" : "dampingInterpolation",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/Interpolation",
    "description" : "Interpolation method for damping",
@@ -20,7 +20,7 @@
    "default" : "LINEAR"
   }, {
    "name" : "forceInterpolation",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/Interpolation",
    "description" : "Interpolation method for force",
@@ -28,7 +28,7 @@
    "default" : "LINEAR"
   }, {
    "name" : "items",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/ForceDampingItem",
    "dimensions" : "*",
    "contained" : true,

@@ -1,6 +1,6 @@
 {
  "name" : "RiserPosition",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["DYNAMIC_POSITIONS", "STATIC_RISER_POSITION"],
  "labels" : ["Dynamic positions", "Static position"]
 }

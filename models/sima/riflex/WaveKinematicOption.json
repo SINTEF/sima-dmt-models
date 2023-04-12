@@ -1,6 +1,6 @@
 {
  "name" : "WaveKinematicOption",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["NODE", "DIFF", "WKFI"],
  "labels" : ["Node step for calculating wave kinematics", "Diffracted wave kinematic option at specific node", "Wave kinematics time series reference"]
 }

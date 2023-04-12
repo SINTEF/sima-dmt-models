@@ -1,11 +1,11 @@
 {
  "name" : "EnvironmentsContainer",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "environments",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/environment/Environment",
    "dimensions" : "*",
    "contained" : true,

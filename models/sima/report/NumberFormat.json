@@ -1,6 +1,6 @@
 {
  "name" : "NumberFormat",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["AUTOFORMAT", "GENERAL", "SCIENTIFIC"],
  "labels" : ["Autoformat", "General", "Scientific"]
 }

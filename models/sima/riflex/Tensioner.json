@@ -1,40 +1,40 @@
 {
  "name" : "Tensioner",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "appliedLoad",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Applied load during static analysis",
    "optional" : true
   }, {
    "name" : "maxLoad",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Maximum load transmitted from the tensioner",
    "optional" : true
   }, {
    "name" : "minLoad",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Minimum load transmitted from the tensioner",
    "optional" : true
   }, {
    "name" : "pipelineDisplacement",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Pipeline displacement through the tensioner for a load variation of: max load - min load",
    "optional" : true
   }, {
    "name" : "direction",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Direction of the applied load referreing to local X-axis of the element going through the tensioner (+1 = The load will act in local X-axis. -1 = The load will act opposite local X-axis).",
    "optional" : true,

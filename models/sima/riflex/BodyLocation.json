@@ -1,6 +1,6 @@
 {
  "name" : "BodyLocation",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["ELEMENT", "NODE", "SUPER_NODE", "POSITION"],
  "labels" : ["Element", "Node", "Supernode", "Position"]
 }

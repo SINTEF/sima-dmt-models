@@ -1,0 +1,20 @@
+{
+ "name" : "workflow",
+ "type" : "core:Package",
+ "_meta_" : {
+  "type" : "core:Meta",
+  "version" : "19",
+  "dependencies" : [{
+    "alias" : "core",
+    "address" : "system/SIMOS",
+    "version" : "0.0.1",
+    "protocol" : "dmss"
+   }, {
+    "alias" : "workflow",
+    "address" : "workflow",
+    "version" : "19",
+    "protocol" : "dmss"
+   }]
+ }
+}
+

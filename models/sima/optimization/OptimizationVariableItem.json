@@ -1,35 +1,35 @@
 {
  "name" : "OptimizationVariableItem",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "start",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Starting value for the optimization variable",
    "optional" : true
   }, {
    "name" : "min",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Lower bound for the optimization variable",
    "optional" : true
   }, {
    "name" : "max",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Upper bound for the optimization variable",
    "optional" : true
   }, {
    "name" : "delta",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Delta for the optimization variable to be used in calculation of gradients",
    "optional" : true
   }, {
    "name" : "variable",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/workflow/RealNumberInput",
    "contained" : false,
    "optional" : true,

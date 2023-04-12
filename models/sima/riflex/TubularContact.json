@@ -1,22 +1,22 @@
 {
  "name" : "TubularContact",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "radius",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Contact radius",
    "optional" : true
   }, {
    "name" : "direction",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/ContactDirection",
    "description" : "Contact direction.",
@@ -24,43 +24,43 @@
    "default" : "INWARDS"
   }, {
    "name" : "constantStiffness",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Stiffness code for contact force.",
    "optional" : true
   }, {
    "name" : "desiredDamping",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Desired relative damping level at estimated eigen period in the pipe and contact spring system.",
    "optional" : true
   }, {
    "name" : "dampingCoefficient",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Dash pot damping coefficient",
    "optional" : true
   }, {
    "name" : "stiffness",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Spring stiffness associated with static friction coefficient",
    "optional" : true
   }, {
    "name" : "staticFriction",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Static friction coefficient.",
    "optional" : true
   }, {
    "name" : "dynamicFriction",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Dynamic (sliding) friction coefficient.",
    "optional" : true
   }, {
    "name" : "slidingFriction",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/ControlParameter",
    "description" : "Control parameter for axial sliding friction.",
@@ -68,7 +68,7 @@
    "default" : "ON"
   }, {
    "name" : "rotationFriction",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/ControlParameter",
    "description" : "Control parameter for friction caused by rotation.",
@@ -76,19 +76,19 @@
    "default" : "ON"
   }, {
    "name" : "velocityLimit",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Velocity limit to change from sliding status (dynamic friction) to static displacement status (static friction)",
    "optional" : true
   }, {
    "name" : "compressionStiffness",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Spring compression stiffness",
    "optional" : true
   }, {
    "name" : "stiffnessItems",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/SpringStiffnessItem",
    "dimensions" : "*",
    "contained" : true,

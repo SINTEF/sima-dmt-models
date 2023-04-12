@@ -1,6 +1,6 @@
 {
  "name" : "StaticLoadType",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["VOLU", "DISP", "SFOR", "CURR", "TENS", "ROLL", "PIPE", "ISTR", "FLOA", "FRIC", "SPRI", "BEND", "TEMP", "PRES", "MEMO", "BOUND", "WINCH", "GROW", "WIND"],
  "labels" : ["Volume Forces", "Specified Displacements", "Specified Forces", "Current Forces", "Tension Contact Forces", "Roller Contact Forces", "Pipe-in-pipe contact forces", "Initially pre-stressed segments", "Body Forces", "Activate bottom friction forces", "Activate global springs", "Bending stiffness", "Temperature variation", "Pressure variations", "Activate material memory", "Boundary Change", "Winch variation", "Marine growth", "Wind force"]
 }

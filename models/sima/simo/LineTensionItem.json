@@ -1,17 +1,17 @@
 {
  "name" : "LineTensionItem",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "length",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Horizontal length of the nonlinear line",
    "optional" : true
   }, {
    "name" : "tension",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Horizontal tension of the nonlinear line for the given length",
    "optional" : true

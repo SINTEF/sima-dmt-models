@@ -1,0 +1,20 @@
+{
+ "name" : "graph",
+ "type" : "core:Package",
+ "_meta_" : {
+  "type" : "core:Meta",
+  "version" : "4",
+  "dependencies" : [{
+    "alias" : "core",
+    "address" : "system/SIMOS",
+    "version" : "0.0.1",
+    "protocol" : "dmss"
+   }, {
+    "alias" : "graph",
+    "address" : "graph",
+    "version" : "4",
+    "protocol" : "dmss"
+   }]
+ }
+}
+

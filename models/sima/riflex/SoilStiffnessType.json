@@ -1,6 +1,6 @@
 {
  "name" : "SoilStiffnessType",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["STATIC", "CYCLIC"],
  "labels" : ["Static", "Cyclic"]
 }

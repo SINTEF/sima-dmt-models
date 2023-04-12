@@ -1,18 +1,18 @@
 {
  "name" : "DirectionalWaveDriftDampingItem",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/hydro/SimplifiedWaveDriftDamping"],
  "attributes" : [{
    "name" : "items",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/hydro/WaveDriftDampingItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "direction",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true
   }],

@@ -1,6 +1,6 @@
 {
  "name" : "Frequency",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["PERIOD", "RAD", "HZ"],
  "labels" : ["Period", "Rad/s", "Hz"]
 }

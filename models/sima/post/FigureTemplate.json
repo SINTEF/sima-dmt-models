@@ -1,59 +1,64 @@
 {
  "name" : "FigureTemplate",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "titleFont",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/FontDescription",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "legendFont",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/FontDescription",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "xAxis",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/post/AxisConfiguration",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "yAxis",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/post/AxisConfiguration",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "showTitle",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true,
    "default" : "true"
   }, {
    "name" : "showLegend",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true,
    "default" : "true"
   }, {
+   "name" : "equalAxes",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "optional" : true
+  }, {
    "name" : "size",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/post/PlotSize",
    "optional" : true,
    "default" : "DYNAMIC"
   }, {
    "name" : "width",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : true
   }, {
    "name" : "height",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : true
   }],

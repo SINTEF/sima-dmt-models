@@ -1,11 +1,11 @@
 {
  "name" : "DOFControlConfiguration",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "dof",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/ControlDOF",
    "description" : "Degree Of Freedom",
@@ -13,70 +13,70 @@
    "default" : "NONE"
   }, {
    "name" : "mass",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Total Mass",
    "optional" : true
   }, {
    "name" : "drag",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "drag coefficient",
    "optional" : true
   }, {
    "name" : "stiffness",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Linear stiffness in global direction (not from DP system)",
    "optional" : true
   }, {
    "name" : "naturalPeriod",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Wanted natural period",
    "optional" : true,
    "default" : "100.0"
   }, {
    "name" : "dampingFactor",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Damping factors rel. to critical damping",
    "optional" : true,
    "default" : "0.7"
   }, {
    "name" : "integrationTime",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Integration time, small time means heavy use of integral effect \r\n(Discontinuity in 0, 0 means no integral effect)",
    "optional" : true
   }, {
    "name" : "cutOffPeriod",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Cut-off period for LP-filtering",
    "optional" : true
   }, {
    "name" : "filterDampingFactor",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Damping factors rel. to critical damping",
    "optional" : true
   }, {
    "name" : "integralLF",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Integral LF estimation gain:\r\n\r\n* LF_surge_integralgain=0.00001*mass_surge \t[N/m] (where the mass is in [kg])\r\n* LF_sway_integralgain=0.00001*mass_sway [N/m] (where the mass is in [kg])\r\n* LF_yaw_integralgain=0.00005*mass_yaw [N.m.s] (where the mass is in [kg.m^2])\r\n* For Current bias estimation (see point 11), the default values are:\r\n* LF_surge_integralgain=0.0025 [1/s] \r\n* LF_sway_integralgain=0.0025 [1/s]\r\n* LF_yaw_integralgain=0.00005*mass_yaw [N.m.s] (as for the force estimation)",
    "optional" : true
   }, {
    "name" : "proportionalHF",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Proportional HF estimation gain",
    "optional" : true,
    "default" : "0.1"
   }, {
    "name" : "dampingOnly",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Turn off proportional control and use damping only",
    "optional" : true

@@ -1,6 +1,6 @@
 {
  "name" : "TurbulenceModel",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["IECKAI", "IECVKM"],
  "labels" : ["Kaimal", "von Karman"]
 }

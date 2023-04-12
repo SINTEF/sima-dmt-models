@@ -1,23 +1,23 @@
 {
  "name" : "GrowthLevel",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "levelZCoordinate",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Z coordinate of level given in global coordinate system",
    "optional" : true
   }, {
    "name" : "thickness",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Growth thickness at this level",
    "optional" : true
   }, {
    "name" : "density",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Growth density at this level",
    "optional" : true

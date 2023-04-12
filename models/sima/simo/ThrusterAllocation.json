@@ -1,18 +1,18 @@
 {
  "name" : "ThrusterAllocation",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "weight",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Factor in weight function for thruster allocation",
    "optional" : true,
    "default" : "1.0"
   }, {
    "name" : "thruster",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/IThruster",
    "contained" : false,
    "optional" : true,

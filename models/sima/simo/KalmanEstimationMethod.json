@@ -1,6 +1,6 @@
 {
  "name" : "KalmanEstimationMethod",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["CURRENT", "FORCE"],
  "labels" : ["Current", "Force"]
 }

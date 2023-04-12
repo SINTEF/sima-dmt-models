@@ -1,6 +1,6 @@
 {
  "name" : "IrregularWaveIndicator",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["NEW", "NONE"],
  "labels" : ["Wave forces present", "No wave forces"]
 }

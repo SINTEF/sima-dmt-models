@@ -1,35 +1,35 @@
 {
  "name" : "SegmentedLineType",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/simo/LineType"],
  "attributes" : [{
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "segments",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/LineSegment",
    "dimensions" : "*",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "vmin",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Min. relative z-pos. for which the line characteristics will be calculated.",
    "optional" : true
   }, {
    "name" : "vmax",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Max. relative z-pos. for which the line characteristics will be calculated.",
    "optional" : true
   }, {
    "name" : "bottomContactOption",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/BottomContactOption",
    "description" : "Bottom contact option",
@@ -37,25 +37,25 @@
    "default" : "LINE_END_ONLY"
   }, {
    "name" : "anchorZ",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Z-coordinate of the anchor in global coordinate system",
    "optional" : true
   }, {
    "name" : "maxTension",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Maximum tension to be used in the line characteristics\r\ncalculations",
    "optional" : true
   }, {
    "name" : "minHTension",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Minimum horizontal tension to be used for calculation\r\nof line characteristics",
    "optional" : true
   }, {
    "name" : "method",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/LineCharacteristicMethod",
    "description" : "Method for initialization of line",
@@ -63,24 +63,31 @@
    "default" : "SHOOTING"
   }, {
    "name" : "npth",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of points in the line characteristics matrix, offset variation in the horizontal plane.",
    "optional" : true,
    "default" : "40"
   }, {
    "name" : "nptv",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of points in the line characteristics matrix, offset variation in the vertical plane.",
    "optional" : true,
    "default" : "5"
   }, {
    "name" : "slope",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "The angle of the seabed under the catenary line. Slope = 0 means a flat seabed. Positive slope means that the seabed is sloping downwards from the anchor towards the attachment point.",
    "optional" : true
+  }, {
+   "name" : "allowVerticalExtrapolation",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Controls wether a fairlead position outside the vmin, vmax range should be an error",
+   "optional" : true,
+   "default" : "false"
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

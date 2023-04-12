@@ -1,11 +1,11 @@
 {
  "name" : "ThinWalledPipeMaterial",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "materialModel",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/MaterialModel",
    "description" : "Type of material model.",
@@ -13,45 +13,45 @@
    "default" : "LINEAR_MATERIAL"
   }, {
    "name" : "elasticityModulus",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Modulus of elasticity",
    "optional" : true
   }, {
    "name" : "shearModulus",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Shear modulus",
    "optional" : true
   }, {
    "name" : "yieldStress",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Yield stress",
    "optional" : true
   }, {
    "name" : "strainStressCurveRise",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Rise of strain-stress curve for plastic region.",
    "optional" : true
   }, {
    "name" : "materialHardening",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Hardening parameter for material.",
    "optional" : true,
    "default" : "1.0"
   }, {
    "name" : "numIntegrationPoints",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of integration points along circumference.",
    "optional" : true,
    "default" : "16"
   }, {
    "name" : "strainStressCharacteristics",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/StrainStressItem",
    "dimensions" : "*",
    "contained" : true,

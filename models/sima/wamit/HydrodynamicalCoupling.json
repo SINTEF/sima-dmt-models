@@ -1,34 +1,34 @@
 {
  "name" : "HydrodynamicalCoupling",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "model",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/wamit/WamitModel",
    "contained" : false,
    "optional" : true
   }, {
    "name" : "body1",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/wamit/WamitBodyResult",
    "contained" : false,
    "optional" : true
   }, {
    "name" : "body2",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/wamit/WamitBodyResult",
    "contained" : false,
    "optional" : true
   }, {
    "name" : "radiationData",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/hydro/CoupledRadiationDataGroup",
    "contained" : true,
    "optional" : true

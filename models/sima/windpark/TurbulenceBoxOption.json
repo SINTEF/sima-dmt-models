@@ -1,6 +1,6 @@
 {
  "name" : "TurbulenceBoxOption",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["DTUMANN", "TURBSIM"],
  "labels" : ["DTU Mann", "TurbSim"]
 }

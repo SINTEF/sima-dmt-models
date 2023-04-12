@@ -1,11 +1,11 @@
 {
  "name" : "Header",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/Entity"],
+ "extends" : ["core:Entity"],
  "attributes" : [{
    "name" : "packages",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/PackageInfo",
    "dimensions" : "*",
    "contained" : true,

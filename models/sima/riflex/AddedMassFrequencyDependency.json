@@ -1,6 +1,6 @@
 {
  "name" : "AddedMassFrequencyDependency",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["FREQUENCY_ADDED_MASS", "STILL_WATER_ADDED_MASS", "TRANSITIONAL_ADDED_MASS"],
  "labels" : ["Use frequency-dependent added mass for all modes", "Use constant still-water added mass for all modes", "Transition from frequency-dependent to still-water added mass"]
 }

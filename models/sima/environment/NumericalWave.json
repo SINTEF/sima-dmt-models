@@ -1,24 +1,27 @@
 {
  "name" : "NumericalWave",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/environment/Wave"],
  "attributes" : [{
    "name" : "directions",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Number of wave directions",
+   "optional" : false,
    "dimensions" : "*"
   }, {
    "name" : "frequencies",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Number of wave frequencies",
+   "optional" : false,
    "dimensions" : "*"
   }, {
    "name" : "values",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
+   "optional" : false,
    "dimensions" : "*"
   }],
  "storageRecipes" : [],

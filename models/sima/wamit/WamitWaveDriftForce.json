@@ -1,66 +1,73 @@
 {
  "name" : "WamitWaveDriftForce",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/hydro/WaveDriftForce", "/sima/Named"],
  "attributes" : [{
    "name" : "directions",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true,
    "dimensions" : "*"
   }, {
    "name" : "frequencies",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true,
    "dimensions" : "*"
   }, {
    "name" : "symmetry",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/hydro/DirectionSymmetry",
    "optional" : true,
    "default" : "NO_SYMMETRY"
   }, {
    "name" : "fx",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/hydro/DirectionDependentValues",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "fy",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/hydro/DirectionDependentValues",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "fz",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/hydro/DirectionDependentValues",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "mx",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/hydro/DirectionDependentValues",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "my",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/hydro/DirectionDependentValues",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "mz",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/hydro/DirectionDependentValues",
    "contained" : true,
    "optional" : true
   }, {
+   "name" : "enableCurrentCorrection",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Enable wave-current interaction using extended Aranha formula",
+   "optional" : true,
+   "default" : "false"
+  }, {
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }],

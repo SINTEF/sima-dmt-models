@@ -1,11 +1,11 @@
 {
  "name" : "BodyForceComponentReference",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "source",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/BodyForceComponent",
    "contained" : false,
    "optional" : false

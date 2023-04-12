@@ -1,41 +1,41 @@
 {
  "name" : "VerticalBladeItem",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "airfoil",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/windturbine/Airfoil",
    "contained" : false,
    "optional" : true
   }, {
    "name" : "radius",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Radius of the second node of the element",
    "optional" : true
   }, {
    "name" : "elevation",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Elevation of the second node of the element",
    "optional" : true
   }, {
    "name" : "offset",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Offset of the second node of the element from the R-Z plane",
    "optional" : true
   }, {
    "name" : "chordLength",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Chord length of the foil profile",
    "optional" : true
   }, {
    "name" : "twist",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Static twist angle",
    "optional" : true

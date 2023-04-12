@@ -1,17 +1,17 @@
 {
  "name" : "StrainStressItem",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "strain",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Strain for a given point on strain-stress curve.",
    "optional" : true
   }, {
    "name" : "stress",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Stress for a given point on strain-stress curve.",
    "optional" : true

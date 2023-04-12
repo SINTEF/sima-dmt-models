@@ -1,63 +1,63 @@
 {
  "name" : "GenericExternalControlSystem",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "jarFile",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "description" : "Path to jar file",
    "optional" : true
   }, {
    "name" : "className",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "description" : "Class name of controller",
    "optional" : true
   }, {
    "name" : "measurementEntities",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/SignalEntity",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "feedbackEntities",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/SignalEntity",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "intParameters",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/NamedIntParameter",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "doubleParameters",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/NamedDoubleParameter",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "stringParameters",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/NamedStringParameter",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "libraryPaths",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/LibraryPaths",
    "contained" : true,
    "optional" : false

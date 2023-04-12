@@ -1,6 +1,6 @@
 {
  "name" : "LiftAndDragInterpolation",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["LINEAR", "SPLINE"],
  "labels" : ["Linear", "Spline"]
 }

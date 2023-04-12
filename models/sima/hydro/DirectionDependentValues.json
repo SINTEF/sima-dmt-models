@@ -1,11 +1,11 @@
 {
  "name" : "DirectionDependentValues",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "directionalValues",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/hydro/Values",
    "dimensions" : "*",
    "contained" : true,

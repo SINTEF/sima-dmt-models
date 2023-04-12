@@ -1,0 +1,20 @@
+{
+ "name" : "windpark",
+ "type" : "core:Package",
+ "_meta_" : {
+  "type" : "core:Meta",
+  "version" : "1",
+  "dependencies" : [{
+    "alias" : "core",
+    "address" : "system/SIMOS",
+    "version" : "0.0.1",
+    "protocol" : "dmss"
+   }, {
+    "alias" : "windpark",
+    "address" : "windpark",
+    "version" : "1",
+    "protocol" : "dmss"
+   }]
+ }
+}
+

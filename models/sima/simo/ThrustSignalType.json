@@ -1,6 +1,6 @@
 {
  "name" : "ThrustSignalType",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["FORCE", "RPS"],
  "labels" : ["Force", "Rotations per second"]
 }

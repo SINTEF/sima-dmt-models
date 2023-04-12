@@ -1,47 +1,47 @@
 {
  "name" : "WaveDriftDampingItem",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "period",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Period",
    "optional" : true
   }, {
    "name" : "wd1",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Wave drift damping coefficient surge. Relative change in drift force for unit velocity.",
    "optional" : true
   }, {
    "name" : "wd2",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Wave drift damping coefficient sway. Relative change in drift force for unit velocity.",
    "optional" : true
   }, {
    "name" : "wd3",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Wave drift damping coefficient heave. Relative change in drift force for unit velocity.",
    "optional" : true
   }, {
    "name" : "wd4",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Wave drift damping coefficient roll. Relative change in drift force for unit velocity.",
    "optional" : true
   }, {
    "name" : "wd5",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Wave drift damping coefficient pitch. Relative change in drift force for unit velocity.",
    "optional" : true
   }, {
    "name" : "wd6",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Wave drift damping coefficient yaw. Relative change in drift force for unit velocity.",
    "optional" : true

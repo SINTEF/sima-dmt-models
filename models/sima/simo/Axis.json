@@ -1,6 +1,6 @@
 {
  "name" : "Axis",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["X", "Y", "Z"],
  "labels" : ["X", "Y", "Z"]
 }

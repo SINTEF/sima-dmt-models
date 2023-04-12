@@ -1,6 +1,6 @@
 {
  "name" : "ProcedureIndicator",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["NEWMARK", "WILSON"],
  "labels" : ["Newmark", "Wilson"]
 }

@@ -1,6 +1,6 @@
 {
  "name" : "BodySlenderSystemConnection",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : true,
  "extends" : ["/simo/SuperNodeReference"],
  "storageRecipes" : [],

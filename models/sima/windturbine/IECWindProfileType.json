@@ -1,6 +1,6 @@
 {
  "name" : "IECWindProfileType",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["LOG", "PL"],
  "labels" : ["Logarithmic", "Power law"]
 }

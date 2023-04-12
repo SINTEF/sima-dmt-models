@@ -1,22 +1,23 @@
 {
  "name" : "DimensionalMatrix",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "description" : "2D matrix of values with dimension",
  "abstract" : false,
  "extends" : ["/containers/Signal"],
  "attributes" : [{
    "name" : "value",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
+   "optional" : false,
    "dimensions" : "*,*"
   }, {
    "name" : "label",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "unit",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true,
    "dimensions" : "*,*"

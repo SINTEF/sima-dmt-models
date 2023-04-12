@@ -1,17 +1,17 @@
 {
  "name" : "VersioningPreference",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/SIMAPreference"],
  "attributes" : [{
    "name" : "userHome",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "description" : "Override user home folder",
    "optional" : true
   }, {
    "name" : "sshFolder",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "description" : "Override ssh folder",
    "optional" : true

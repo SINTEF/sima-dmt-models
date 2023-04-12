@@ -1,6 +1,6 @@
 {
  "name" : "BallastTankState",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["INTACT", "DAMAGED"],
  "labels" : ["Intact", "Damaged"]
 }

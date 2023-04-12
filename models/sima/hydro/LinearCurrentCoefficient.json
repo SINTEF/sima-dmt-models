@@ -1,18 +1,18 @@
 {
  "name" : "LinearCurrentCoefficient",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "symmetry",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/hydro/DirectionSymmetry",
    "optional" : true,
    "default" : "NO_SYMMETRY"
   }, {
    "name" : "items",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/hydro/LinearCurrentCoefficientItem",
    "dimensions" : "*",
    "contained" : true,

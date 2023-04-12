@@ -1,0 +1,29 @@
+{
+ "name" : "ESDUWind",
+ "type" : "core:Blueprint",
+ "abstract" : false,
+ "extends" : ["/environment/Wind"],
+ "attributes" : [{
+   "name" : "direction",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Wind propagation direction",
+   "optional" : true
+  }, {
+   "name" : "averageVelocity",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Average velocity at reference height",
+   "optional" : true
+  }, {
+   "name" : "psi",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Site latitude in decimal degrees",
+   "optional" : true,
+   "default" : "0.0"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

@@ -1,206 +1,213 @@
 {
  "name" : "SlenderSystem",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "superNodes",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/SuperNode",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "lines",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/ARLine",
    "dimensions" : "*",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "lineTypes",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/ARLineType",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "crossSections",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/CrossSection",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "mainRiserLines",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/MainRiserLine",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "externalWrappings",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/ExternalWrappingType",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "ballJointConnectors",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/BallJointConnectorType",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "flexJointConnectors",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/FlexJointConnectorType",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "nodalBodies",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/NodalBodyType",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "internalFluids",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/InternalFluidType",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "pipeInPipeContacts",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/PipeInPipeContact",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "winches",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/ARWinch",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "elasticContactSurfaces",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/ElasticContactSurface",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "tensioners",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/Tensioner",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "rollerContacts",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/RollerContact",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "tubularContacts",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/TubularContact",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "globalSprings",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/GlobalSpring",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "windTurbines",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/WindTurbine",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "localElementAxes",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/LocalElementAxis",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "dragChains",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/DragChainType",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "geotechnicalSprings",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/GeotechnicalSpring",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "seafloorContactComponents",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/SeafloorContact",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "seafloorContactSpecification",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/SeafloorContactSpecification",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "materials",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/Material",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "geotechnicals",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/GeoTechnical",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "geotechnicalLineSpecification",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/GeotechnicalLineSpecification",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "marineGrowthItems",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/MarineGrowth",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "soilLayerProfiles",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/SoilLayerProfile",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "soilTypes",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/SoilType",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "userdefinedElements",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/riflex/UserdefinedElement",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true

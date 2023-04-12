@@ -1,6 +1,6 @@
 {
  "name" : "Logical",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["OR", "AND", "NOT"],
  "labels" : ["OR", "AND", "NOT"]
 }

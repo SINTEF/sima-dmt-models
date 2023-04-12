@@ -1,35 +1,35 @@
 {
  "name" : "LineCharacteristicItem",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "seaBedX",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Global x-coordinate of the line end point anchored at the sea bed",
    "optional" : true
   }, {
    "name" : "seaBedY",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Global y-coordinate of the line end point anchored at the sea bed",
    "optional" : true
   }, {
    "name" : "vesselX",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "X-coordinate of the line end point attached to the vessel (given in the body fixed coordinate system)",
    "optional" : true
   }, {
    "name" : "vesselY",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Y-coordinate of the line end point attached to the vessel (given in the body fixed coordinate system)",
    "optional" : true
   }, {
    "name" : "lineTensionItems",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/LineTensionItem",
    "dimensions" : "*",
    "contained" : true,

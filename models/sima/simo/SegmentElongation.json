@@ -1,6 +1,6 @@
 {
  "name" : "SegmentElongation",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["LINEAR", "CHARACTERISTIC"],
  "labels" : ["Linear", "Characteristic"]
 }

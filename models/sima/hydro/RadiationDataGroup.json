@@ -1,35 +1,35 @@
 {
  "name" : "RadiationDataGroup",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "frequencyDependentAddedMass",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/hydro/FrequencyDependentAddedMass",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "frequencyDependentDamping",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/hydro/FrequencyDependentDamping",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "retardationFunction",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/hydro/RetardationFunction",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "addedMassZeroFrequency",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/hydro/AddedMassZeroFrequency",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "addedMassInfiniteFrequency",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/hydro/AddedMassInfiniteFrequency",
    "contained" : true,
    "optional" : true

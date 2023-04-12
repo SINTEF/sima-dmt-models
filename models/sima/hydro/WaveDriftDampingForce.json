@@ -1,0 +1,7 @@
+{
+ "name" : "WaveDriftDampingForce",
+ "type" : "core:Enum",
+ "values" : ["ABSOLUTE", "RELATIVE"],
+ "labels" : ["Absolute", "Relative"]
+}
+

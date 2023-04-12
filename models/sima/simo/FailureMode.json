@@ -1,6 +1,6 @@
 {
  "name" : "FailureMode",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["NONE", "FAIL"],
  "labels" : ["None", "Fail"]
 }

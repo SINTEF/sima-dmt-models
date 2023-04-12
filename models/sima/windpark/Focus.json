@@ -1,6 +1,6 @@
 {
  "name" : "Focus",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["TARGET", "PARK"],
  "labels" : ["Target", "Park"]
 }

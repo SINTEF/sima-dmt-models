@@ -1,16 +1,16 @@
 {
  "name" : "Winch",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "controlType",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/WinchControl",
    "description" : "Type of coupling winch control",
@@ -18,31 +18,31 @@
    "default" : "PREDEFINED"
   }, {
    "name" : "maximumSpeed",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Max. run velocity for winch",
    "optional" : true
   }, {
    "name" : "acceleration",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Max. run acceleration for winch",
    "optional" : true
   }, {
    "name" : "maximumLength",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Max. wire length that can be added to drum",
    "optional" : true
   }, {
    "name" : "drumLength",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Initial wire length at drum",
    "optional" : true
   }, {
    "name" : "intervals",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/WinchRunInterval",
    "dimensions" : "*",
    "contained" : true,

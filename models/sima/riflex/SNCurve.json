@@ -1,16 +1,16 @@
 {
  "name" : "SNCurve",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "fatigueLimitIndicator",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/FatigueLimitIndicator",
    "description" : "Fatigue limit indicator",
@@ -18,37 +18,37 @@
    "default" : "NO_LIMIT"
   }, {
    "name" : "fatigueLimit",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Point where SN curve becomes horizontal. Stresses below this line will not contribute to fatigue damage.",
    "optional" : true
   }, {
    "name" : "referenceThickness",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Reference thickness for thickness correction. A value of zero will give no thickness correction.",
    "optional" : true
   }, {
    "name" : "thicknessCorrectionExponent",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Exponent for thickness correction",
    "optional" : true
   }, {
    "name" : "firstSlope",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Slope of the SN curve - m",
    "optional" : true
   }, {
    "name" : "constant",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Constant defining the SN curve. First segment or total curve - logC (for a SN-curve given in MPa)",
    "optional" : true
   }, {
    "name" : "curveItems",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/SNCurveItem",
    "dimensions" : "*",
    "contained" : true,

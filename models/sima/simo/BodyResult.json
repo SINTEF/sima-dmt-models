@@ -1,64 +1,64 @@
 {
  "name" : "BodyResult",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "body",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "description" : "Result body",
    "optional" : true
   }, {
    "name" : "initialPosition",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/Position",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "staticPosition",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/Position",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "bodyForces",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/ForceResult",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "positioningElementResults",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/PositioningElementResult",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "couplingResults",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/CouplingElementResult",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "specifiedForces",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/ForceResult",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "thrusterForces",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/ForceResult",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "externalForces",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/ForceResult",
    "dimensions" : "*",
    "contained" : true,

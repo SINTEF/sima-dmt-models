@@ -1,6 +1,6 @@
 {
  "name" : "Signal",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "description" : "Signal base type",
  "abstract" : true,
  "extends" : ["/containers/SignalItem"],

@@ -1,18 +1,18 @@
 {
  "name" : "NonLinearIntegrationProcedure",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "equilibriumIterationFrequency",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Frequency of equilibrium iteration",
    "optional" : true,
    "default" : "1"
   }, {
    "name" : "iterationType",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/IterationType",
    "description" : "Type of iteration if iteration is to be performed",
@@ -20,35 +20,35 @@
    "default" : "TRUE_NEWTON_RAPHSON"
   }, {
    "name" : "maxIterations",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Maximum number of iterations for steps with iteration",
    "optional" : true,
    "default" : "10"
   }, {
    "name" : "convergenceNorm",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/ConvergenceNorm",
    "optional" : true,
    "default" : "DISP"
   }, {
    "name" : "equilibriumIterationAccuracy",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Desired accuracy for equilibrium iteration measured by a modified euclidian displacement norm (norm of squared translations). Recommended values: 10e-6 - 10e-5.",
    "optional" : true,
    "default" : "1.0E-5"
   }, {
    "name" : "energyAccuracy",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Required accuracy measured by energy norm. This value is relevant only if Convergence Norm is 'Both'.",
    "optional" : true,
    "default" : "1.0E-5"
   }, {
    "name" : "iterationContinuation",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/IterationContinuationCode",
    "description" : "Code for continuation after iteration",
@@ -56,14 +56,14 @@
    "default" : "CONTINUED"
   }, {
    "name" : "autoTimeStepSubdivision",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Code for automatic subdivision of time step",
    "optional" : true,
    "default" : "0"
   }, {
    "name" : "timeIntegrationInfo",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Code for time integration information",
    "optional" : true,

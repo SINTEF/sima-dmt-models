@@ -1,25 +1,25 @@
 {
  "name" : "WaveDriftDampingDofItem",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/hydro/DirectionDependentValues"],
  "attributes" : [{
    "name" : "directionalValues",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/hydro/Values",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "dof1",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/hydro/DOF",
    "optional" : true,
    "default" : "X"
   }, {
    "name" : "dof2",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/hydro/DOF",
    "optional" : true,

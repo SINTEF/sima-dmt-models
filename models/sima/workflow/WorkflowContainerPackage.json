@@ -1,30 +1,30 @@
 {
  "name" : "WorkflowContainerPackage",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/Named"],
  "attributes" : [{
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "packages",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/workflow/WorkflowContainerPackage",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "workflows",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/workflow/Workflow",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "visible",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Make all workflows directly contained in this package visible outside of the task",
    "optional" : true

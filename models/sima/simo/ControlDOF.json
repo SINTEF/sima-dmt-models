@@ -1,6 +1,6 @@
 {
  "name" : "ControlDOF",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["NONE", "SURGE", "SWAY", "HEAVE", "ROLL", "PITCH", "YAW"],
  "labels" : ["None", "Surge", "Sway", "Heave", "Roll", "Pitch", "Yaw"]
 }

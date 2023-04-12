@@ -1,100 +1,50 @@
 {
  "name" : "EigenvalueAnalysisParameters",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "numberOfEigenvalues",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of eigenvalues to be calculated",
    "optional" : true,
    "default" : "10"
   }, {
-   "name" : "numberOfEigenvectors",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "integer",
-   "description" : "Number of eigenvectors to be calculated",
-   "optional" : true,
-   "default" : "10"
-  }, {
    "name" : "maxRelativeError",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Maximum acceptable relative error in computed eigenvalues",
    "optional" : true,
    "default" : "0.0"
   }, {
-   "name" : "limitValue",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "number",
-   "description" : "Limit value for singularity test during factorization",
-   "optional" : true,
-   "default" : "0.0"
-  }, {
-   "name" : "orthogonalityLimit",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "number",
-   "description" : "Orthogonality limit",
-   "optional" : true,
-   "default" : "0.0"
-  }, {
-   "name" : "startVector",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string",
-   "enumType" : "/riflex/EigenvalueStartVector",
-   "description" : "Start vector code",
-   "optional" : true,
-   "default" : "PSEUDORANDOM_STARTVECTOR"
-  }, {
-   "name" : "maxNumberOfIterations",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "integer",
-   "description" : "A positive number gives an iterative Gram-Schmidt procedure. A negative number gives a multi-pass Gram-Schmidt procedure.",
-   "optional" : true,
-   "default" : "5"
-  }, {
-   "name" : "frequencyControlParameter",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "integer",
-   "description" : "Parameter controlling frequency for solving small tridiagonal eigenvalue problem",
-   "optional" : true,
-   "default" : "0"
-  }, {
-   "name" : "shiftValue",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "number",
-   "description" : "Shift value",
-   "optional" : true,
-   "default" : "0.0"
-  }, {
    "name" : "numberOfLanczoSteps",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
-   "description" : "Number of Lanczos steps to be used, 0.0 result in an automatic computaion of suitable value",
+   "description" : "Maximum number of Lanczos steps (vectors) to be used",
    "optional" : true,
    "default" : "0"
-  }, {
-   "name" : "premultiplyStartVector",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "boolean",
-   "description" : "Whether the start vector should be premultiplied with H or not",
-   "optional" : true,
-   "default" : "true"
   }, {
    "name" : "storeVisualisationResponses",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store eigenvalue visualization file",
    "optional" : true,
    "default" : "true"
   }, {
    "name" : "visualisationScaling",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Scaling of eigenvectors in visual results",
    "optional" : true,
    "default" : "10.0"
+  }, {
+   "name" : "numberOfEigenvectors",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "integer",
+   "description" : "Number of eigenvectors to be printed",
+   "optional" : true,
+   "default" : "0"
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

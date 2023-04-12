@@ -1,35 +1,35 @@
 {
  "name" : "MotionSequence",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "start",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Sequence start time",
    "optional" : true
   }, {
    "name" : "stop",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Sequence stop time",
    "optional" : true
   }, {
    "name" : "deltaPos",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Change in position during sequence",
    "optional" : true
   }, {
    "name" : "speed",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Sequence travelling speed after ramp-up",
    "optional" : true
   }, {
    "name" : "acceleration",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Acceleration / retardation for start and stop of sequence",
    "optional" : true

@@ -1,12 +1,12 @@
 {
  "name" : "ModelSignal",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/containers/Signal"],
  "attributes" : [{
    "name" : "value",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "system/SIMOS/Entity",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "core:Entity",
    "contained" : true,
    "optional" : false
   }],

@@ -1,6 +1,6 @@
 {
  "name" : "HydrodynamicInputCode",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["DIMENSIONAL", "NONDIMENSIONAL"],
  "labels" : ["Dimensional coefficients", "Nondimensional coefficients"]
 }

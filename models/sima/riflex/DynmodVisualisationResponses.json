@@ -1,38 +1,38 @@
 {
  "name" : "DynmodVisualisationResponses",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "startTime",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Start time for export",
    "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "endTime",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "End time for export",
    "optional" : true,
    "default" : "512.0"
   }, {
    "name" : "timeIncrement",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Time increment for export",
    "optional" : true,
    "default" : "0.5"
   }, {
    "name" : "storeVisualisationResponses",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Visualisation responses indicator",
    "optional" : true
   }, {
    "name" : "storeVTF",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Visualisation responses indicator",
    "optional" : true

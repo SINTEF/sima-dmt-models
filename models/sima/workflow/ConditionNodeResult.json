@@ -1,17 +1,17 @@
 {
  "name" : "ConditionNodeResult",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/post/SignalStorage"],
  "attributes" : [{
    "name" : "resultContainer",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/ResultContainer",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "filenames",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true,
    "dimensions" : "*"

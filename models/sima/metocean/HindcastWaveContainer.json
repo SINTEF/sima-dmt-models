@@ -1,15 +1,15 @@
 {
  "name" : "HindcastWaveContainer",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "waves",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/metocean/HindcastWaveData",
    "dimensions" : "*",
    "contained" : true,
-   "optional" : false
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

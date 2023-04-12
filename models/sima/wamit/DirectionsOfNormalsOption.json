@@ -1,6 +1,6 @@
 {
  "name" : "DirectionsOfNormalsOption",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["OUTWARD", "INWARD"],
  "labels" : ["Outward", "Inward"]
 }

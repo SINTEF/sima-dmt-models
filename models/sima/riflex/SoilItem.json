@@ -1,18 +1,18 @@
 {
  "name" : "SoilItem",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "soilMaterial",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/Soil",
    "contained" : false,
    "optional" : false,
    "description" : "Soil material reference to valid material of type clay or sand"
   }, {
    "name" : "lowerZ",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "The distance from mudline to lower end of soil layer",
    "optional" : true

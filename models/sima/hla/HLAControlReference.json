@@ -1,6 +1,6 @@
 {
  "name" : "HLAControlReference",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["POSITION", "VELOCITY", "FORCE"],
  "labels" : ["Position", "Velocity", "Force"]
 }

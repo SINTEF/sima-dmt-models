@@ -1,6 +1,6 @@
 {
  "name" : "MooringType",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["PERMANENT_MOORING", "MOBILE_MOORING"],
  "labels" : ["Permanent mooring", "Mobile mooring"]
 }

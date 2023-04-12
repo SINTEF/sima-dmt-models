@@ -1,6 +1,6 @@
 {
  "name" : "RatchetType",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["TENSION", "COMPRESSION"],
  "labels" : ["Tension element", "Compression Element"]
 }

@@ -1,23 +1,23 @@
 {
  "name" : "WindLongTermStatistics",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/Named"],
  "attributes" : [{
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "weibullDistributions",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/metocean/WeibullDistribution",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "extremes",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/metocean/LevelExtreme",
    "dimensions" : "*",
    "contained" : true,

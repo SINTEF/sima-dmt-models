@@ -1,32 +1,32 @@
 {
  "name" : "WorkflowRouting",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "workflowSetInputs",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/workflow/WorkflowSetItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "workflowInputVariations",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/workflow/WorkflowInputVariationItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "inputs",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/workflow/WorkflowLinkItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "outputs",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/workflow/WorkflowLinkItem",
    "dimensions" : "*",
    "contained" : true,

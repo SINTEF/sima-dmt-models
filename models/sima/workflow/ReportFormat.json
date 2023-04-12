@@ -1,6 +1,6 @@
 {
  "name" : "ReportFormat",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["WORD", "FRAGMENT"],
  "labels" : ["Word", "Report fragment"]
 }

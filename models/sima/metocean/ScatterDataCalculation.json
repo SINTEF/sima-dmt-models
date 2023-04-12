@@ -1,72 +1,72 @@
 {
  "name" : "ScatterDataCalculation",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/NamedObject", "/sima/ConditionSelectable"],
  "attributes" : [{
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "currentModel",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/metocean/CurrentModel",
    "optional" : true,
    "default" : "FROM_INPUT"
   }, {
    "name" : "kfactor",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true,
    "default" : "1.0"
   }, {
    "name" : "directionRelativeToWind",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Direction relative to wind. Zero angle means collinear wind and current",
    "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "windReferenceLevel",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "The Level in wind data at which wind speed and direction will be used to define the current",
    "optional" : true
   }, {
    "name" : "windCurrentProfile",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/metocean/Profile",
    "contained" : false,
    "optional" : true
   }, {
    "name" : "baseCurrentSpeed",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true
   }, {
    "name" : "baseCurrentProfile",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/metocean/Profile",
    "contained" : false,
    "optional" : true
   }, {
    "name" : "currentLevels",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/metocean/CalculationLevel",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "relativeCompassAngle",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Relative angle between analysis x-axis and north direction in anti-clockwise direction.\r\nShould match the angle given in the recieving SIMA task location.",
    "optional" : true
   }, {
    "name" : "inputReferenceSystem",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/metocean/InputReferenceSystem",
    "description" : "Defines the input reference system of the data.\nIf the data is defined in the Metocean system the corresponding SIMA coordinate system data is generated",
@@ -74,20 +74,20 @@
    "default" : "METOCEAN"
   }, {
    "name" : "scatterData",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/metocean/ScatterData",
    "contained" : false,
    "optional" : false
   }, {
    "name" : "directions",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/metocean/CalculationDirection",
    "dimensions" : "*",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "windLevels",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/metocean/CalculationLevel",
    "dimensions" : "*",
    "contained" : true,

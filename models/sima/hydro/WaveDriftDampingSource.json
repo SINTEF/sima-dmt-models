@@ -1,0 +1,7 @@
+{
+ "name" : "WaveDriftDampingSource",
+ "type" : "core:Enum",
+ "values" : ["INPUT", "QTF", "WAVEDRIFTFORCE"],
+ "labels" : ["Input", "QTF", "WaveDriftForce"]
+}
+

@@ -1,23 +1,23 @@
 {
  "name" : "MultiEnvironmentItem",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "environment",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/environment/SingleEnvironment",
    "contained" : false,
    "optional" : true
   }, {
    "name" : "startingTime",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Time to begin fading to this environment. Note that the new environment is not fully in effect until startingTime + ramp duration",
    "optional" : true
   }, {
    "name" : "rampDuration",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Duration of cosine fading from previous to new environment. It is recommended to use at least 10*peak period for the fade-in duration.",
    "optional" : true

@@ -1,6 +1,6 @@
 {
  "name" : "Duration",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["MEDIUM", "FAST", "SLOW", "VERY_SLOW"],
  "labels" : ["Medium", "Fast", "Slow", "Very slow"]
 }

@@ -1,6 +1,6 @@
 {
  "name" : "HydrodynamicForceIndicator",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["NO_FORCE_ITERATION_VELOCITIES", "NO_FORCE_ITERATION_ACCELERATION", "FORCE_ITERATION"],
  "labels" : ["No force iteration (velocities at prev time step)", "No force iteration (velocities and acceleration at prev time step)", "Force iteration"]
 }

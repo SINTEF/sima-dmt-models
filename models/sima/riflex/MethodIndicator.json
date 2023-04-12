@@ -1,6 +1,6 @@
 {
  "name" : "MethodIndicator",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["NONLINEAR", "LINEAR"],
  "labels" : ["Nonlinear", "Linear"]
 }

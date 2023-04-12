@@ -1,6 +1,6 @@
 {
  "name" : "Interpolation",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["LINEAR", "PARABOLIC"],
  "labels" : ["Linear", "Parabolic"]
 }

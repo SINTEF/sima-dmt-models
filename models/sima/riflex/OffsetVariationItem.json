@@ -1,11 +1,11 @@
 {
  "name" : "OffsetVariationItem",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "referenceType",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/ReferenceType",
    "description" : "Reference to moving point",
@@ -13,25 +13,25 @@
    "default" : "SUPER_NODE"
   }, {
    "name" : "dx",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Displacement increment, x-direction",
    "optional" : true
   }, {
    "name" : "dy",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Displacement increment, y-direction",
    "optional" : true
   }, {
    "name" : "dz",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Displacement increment, z-direction",
    "optional" : true
   }, {
    "name" : "rotationCode",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/RotationCode",
    "description" : "Rotation about axis",
@@ -39,19 +39,19 @@
    "default" : "NONE"
   }, {
    "name" : "rotationIncrement",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Rotation increments",
    "optional" : true
   }, {
    "name" : "supernode",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/SuperNode",
    "contained" : false,
    "optional" : true
   }, {
    "name" : "supportVessel",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/SupportVessel",
    "contained" : false,
    "optional" : true

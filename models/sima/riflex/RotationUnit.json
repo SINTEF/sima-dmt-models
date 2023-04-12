@@ -1,6 +1,6 @@
 {
  "name" : "RotationUnit",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["DEGR", "RADI"],
  "labels" : ["Degrees", "Radians"]
 }

@@ -1,17 +1,17 @@
 {
  "name" : "HLAModel",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "location",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/hla/HLALocation",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "forces",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/hla/HLAForce",
    "dimensions" : "*",
    "contained" : true,

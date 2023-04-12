@@ -1,84 +1,70 @@
 {
  "name" : "RegularSegment",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "length",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Length of the segment.",
    "optional" : true
   }, {
    "name" : "numElements",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of elements",
    "optional" : true,
    "default" : "10"
   }, {
    "name" : "crossSection",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/CrossSection",
    "contained" : false,
    "optional" : false,
    "description" : "Cross-sectional component type."
   }, {
    "name" : "nodalComponent",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/NodalComponentType",
    "contained" : false,
    "optional" : true,
    "description" : "Nodal component (body or connector) attached at end 1 of the segment."
   }, {
    "name" : "externalWrapping",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/ExternalWrappingType",
    "contained" : false,
    "optional" : true,
    "description" : "External wrapping (distributed weight or buoyancy) component."
   }, {
-   "name" : "numSubElementsStatic",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "integer",
-   "description" : "Number of subelements each element is divided into for hydrodynamic calculation; static analysis.",
-   "optional" : true,
-   "default" : "3"
-  }, {
-   "name" : "numSubElementsDynamic",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "integer",
-   "description" : "Number of subelements each element is divided into for hydrodynamic load calculation; dynamic analysis.",
-   "optional" : true,
-   "default" : "5"
-  }, {
    "name" : "stressfreeLength",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Actual stressfree segment length.",
    "optional" : true
   }, {
    "name" : "twistEnd1",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Relative twist segment end 1",
    "optional" : true
   }, {
    "name" : "twistEnd2",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Relative twist segment end 2",
    "optional" : true
   }, {
    "name" : "offsetY",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Offset in line local Y-axis segment end 2",
    "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "offsetZ",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Offset in line local Z-axis segment end 2",
    "optional" : true,

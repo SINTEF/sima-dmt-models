@@ -1,30 +1,30 @@
 {
  "name" : "CRSAxialDamping",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "constantDamping",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Damping coefficient code",
    "optional" : true
   }, {
    "name" : "strainVelocityExponent",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Exponent for strain velocity",
    "optional" : true,
    "default" : "1.0"
   }, {
    "name" : "dampingCoefficient",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Damping coefficient (constant)",
    "optional" : true
   }, {
    "name" : "dampingCoefficientCharacteristics",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/CRSAxialDampingItem",
    "dimensions" : "*",
    "contained" : true,

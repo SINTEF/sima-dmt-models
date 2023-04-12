@@ -1,25 +1,25 @@
 {
  "name" : "BladePitchFault",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "seizeFaults",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/SeizeBladePitchFaultItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "runawayFaults",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/RunawayBladePitchFaultItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "biasFaults",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/BiasBladePitchFaultItem",
    "dimensions" : "*",
    "contained" : true,

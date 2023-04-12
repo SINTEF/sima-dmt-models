@@ -1,17 +1,17 @@
 {
  "name" : "ForceItem",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "distance",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "i'th vertical position in the force vs. vertical position table, (L) For NFZ=1, ZBUOY is dummy, but must be given",
    "optional" : true
   }, {
    "name" : "force",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Corresponding vertical force, positive upwards, (F)",
    "optional" : true

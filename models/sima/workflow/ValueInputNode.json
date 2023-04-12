@@ -1,6 +1,6 @@
 {
  "name" : "ValueInputNode",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : true,
  "extends" : ["/workflow/WorkflowInput", "/post/SignalPropertiesContainer", "/sima/SingleParameter"],
  "storageRecipes" : [],

@@ -1,6 +1,6 @@
 {
  "name" : "HeadingReference",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["TANGENTIAL", "FIXED"],
  "labels" : ["Tangential to path", "Globally fixed"]
 }

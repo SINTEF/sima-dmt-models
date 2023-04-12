@@ -1,6 +1,6 @@
 {
  "name" : "IncomingWind",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["CONSTANT", "INCOMING"],
  "labels" : ["Constant", "Incoming"]
 }

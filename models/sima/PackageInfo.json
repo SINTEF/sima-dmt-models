@@ -1,18 +1,18 @@
 {
  "name" : "PackageInfo",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["core:NamedEntity"],
  "attributes" : [{
-   "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string",
-   "optional" : true
-  }, {
    "name" : "version",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : true
+  }, {
+   "name" : "name",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : false
   }],
  "storageRecipes" : [],
  "uiRecipes" : []

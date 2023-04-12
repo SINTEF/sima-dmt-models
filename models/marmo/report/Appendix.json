@@ -1,6 +1,6 @@
 {
  "name" : "Appendix",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/report/Section"],
  "storageRecipes" : [],

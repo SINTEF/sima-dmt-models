@@ -1,6 +1,6 @@
 {
  "name" : "LoadAndMassFormulation",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["LUMPED", "CONSISTENT"],
  "labels" : ["Lumped load and mass formulation", "Consistent load and mass formulation"]
 }

@@ -1,0 +1,20 @@
+{
+ "name" : "hla",
+ "type" : "core:Package",
+ "_meta_" : {
+  "type" : "core:Meta",
+  "version" : "24",
+  "dependencies" : [{
+    "alias" : "core",
+    "address" : "system/SIMOS",
+    "version" : "0.0.1",
+    "protocol" : "dmss"
+   }, {
+    "alias" : "hla",
+    "address" : "hla",
+    "version" : "24",
+    "protocol" : "dmss"
+   }]
+ }
+}
+

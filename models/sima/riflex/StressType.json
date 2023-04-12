@@ -1,6 +1,6 @@
 {
  "name" : "StressType",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["AXIAL_BENDING", "TRUE_WALL", "AXIAL_STRESS", "VON_MISES"],
  "labels" : ["Axial bending stress", "True wall axial stress", "Resultant axial stress", "Von mises stress"]
 }

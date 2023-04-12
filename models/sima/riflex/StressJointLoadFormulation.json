@@ -1,6 +1,6 @@
 {
  "name" : "StressJointLoadFormulation",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["MORISON", "TVIV", "NONE"],
  "labels" : ["Morison", "Time domain VIV", "None"]
 }

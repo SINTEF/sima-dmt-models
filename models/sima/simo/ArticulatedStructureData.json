@@ -1,11 +1,11 @@
 {
  "name" : "ArticulatedStructureData",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "_type",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/ArticulatedStructureType",
    "description" : "Type of articulated structure coupling control",
@@ -13,19 +13,19 @@
    "default" : "NRUN"
   }, {
    "name" : "masterPoint",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/Point3",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "localPoint",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/Point3",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "motionMode",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/MotionMode",
    "description" : "Mode of motion (X,Y,Z,PHI,THETA,PSI)",
@@ -33,57 +33,57 @@
    "default" : "PHI"
   }, {
    "name" : "initialPosition",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Initial position",
    "optional" : true
   }, {
    "name" : "lowerPositionLimit",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Lower position limit in master coordinate system",
    "optional" : true
   }, {
    "name" : "upperPositionLimit",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Upper position limit in master coordinate system",
    "optional" : true
   }, {
    "name" : "maxSpeed",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Maximum speed for chosen mode of motion",
    "optional" : true
   }, {
    "name" : "maxAcceleration",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Maximum acceleration for chosen mode of motion",
    "optional" : true
   }, {
    "name" : "sequenceItems",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/MotionSequence",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "motionSequenceType",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/MotionSequenceType",
    "optional" : true,
    "default" : "TSTOP"
   }, {
    "name" : "maximumAngle",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Maximum angle that turret follows the vessel before sliding",
    "optional" : true
   }, {
    "name" : "slipAngle",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Slip (turn-back) angle",
    "optional" : true

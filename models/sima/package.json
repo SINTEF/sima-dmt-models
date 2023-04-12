@@ -1,0 +1,20 @@
+{
+ "name" : "sima",
+ "type" : "core:Package",
+ "_meta_" : {
+  "type" : "core:Meta",
+  "version" : "4.5.0-SNAPSHOT",
+  "dependencies" : [{
+    "alias" : "core",
+    "address" : "system/SIMOS",
+    "version" : "0.0.1",
+    "protocol" : "dmss"
+   }, {
+    "alias" : "sima",
+    "address" : "sima",
+    "version" : "4.5.0-SNAPSHOT",
+    "protocol" : "dmss"
+   }]
+ }
+}
+

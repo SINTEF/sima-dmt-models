@@ -1,35 +1,35 @@
 {
  "name" : "LongTermStatisticsWaveCalculation",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "returnPeriod",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true
   }, {
    "name" : "statistics",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/metocean/WaveLongTermStatistics",
    "contained" : false,
    "optional" : true
   }, {
    "name" : "omni",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/metocean/OmniDirectionalWaveLongTermStatistics",
    "contained" : false,
    "optional" : true
   }, {
    "name" : "method",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/metocean/WaveStatisticsMethod",
    "optional" : true,
    "default" : "FROM_DISTRIBUTION"
   }, {
    "name" : "directions",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/metocean/CalculationDirection",
    "dimensions" : "*",
    "contained" : true,

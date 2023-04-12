@@ -1,17 +1,17 @@
 {
  "name" : "FluctuatingTwoComponent",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/environment/Wind"],
  "attributes" : [{
    "name" : "direction",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Wind propagation direction",
    "optional" : true
   }, {
    "name" : "fileName",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "description" : "Path and filename for import of wind velocity time series",
    "optional" : true

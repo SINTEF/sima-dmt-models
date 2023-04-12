@@ -1,6 +1,6 @@
 {
  "name" : "LevelStatisticsMethod",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["FROM_DISTRIBUTION", "FROM_EXTREMES"],
  "labels" : ["From distribution", "From extremes"]
 }

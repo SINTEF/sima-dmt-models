@@ -1,44 +1,44 @@
 {
  "name" : "Wills",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/environment/Harris"],
  "attributes" : [{
    "name" : "direction",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Wind propagation direction",
    "optional" : true
   }, {
+   "name" : "averageVelocity",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Average velocity at reference height",
+   "optional" : true
+  }, {
    "name" : "profileExponent",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Wind profile exponent",
    "optional" : true,
    "default" : "0.11"
   }, {
-   "name" : "averageVelocity",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "number",
-   "description" : "Average velocity at reference height",
-   "optional" : true
-  }, {
    "name" : "friction",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Surface drag coefficient.\r\nAlso used for transverse gust spectrum, if specified in DYNMOD.",
    "optional" : true,
    "default" : "0.002"
   }, {
    "name" : "referenceHeight",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Reference height for wind velocity",
    "optional" : true,
    "default" : "10.0"
   }, {
    "name" : "referenceLength",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Reference length of wind turbulence",
    "optional" : true,

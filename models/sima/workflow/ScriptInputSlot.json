@@ -1,23 +1,23 @@
 {
  "name" : "ScriptInputSlot",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/post/InputSlot", "/post/SignalPropertiesContainer"],
  "attributes" : [{
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "properties",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/post/SignalProperties",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "inputSignals",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "If checked the input will be imported directly as signals in an array with name as specified.",
    "optional" : true

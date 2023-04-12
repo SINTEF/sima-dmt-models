@@ -1,23 +1,23 @@
 {
  "name" : "ExternalDLLForce",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "attachmentPoint",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/Point3",
    "contained" : true,
    "optional" : false,
    "description" : "Attack point of force."
   }, {
    "name" : "referenceFrame",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/ReferenceFrameType",
    "description" : "Which coordinate system is the force is given in?",
@@ -25,46 +25,46 @@
    "default" : "LOCAL"
   }, {
    "name" : "nStorageParameters",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of parameters for intermediate storage",
    "optional" : true
   }, {
    "name" : "intParameters",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/StringIntItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "doubleParameters",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/StringDoubleItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "stringParameters",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/StringItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "nCurrentPoints",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of points where current velocities shall be given.",
    "optional" : true,
    "default" : "1"
   }, {
    "name" : "dllFile",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "libraryPaths",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/LibraryPaths",
    "contained" : true,
    "optional" : false

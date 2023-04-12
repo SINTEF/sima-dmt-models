@@ -1,16 +1,17 @@
 {
  "name" : "Attribute",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "description" : "Represents a key/value entry",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["core:NamedEntity"],
  "attributes" : [{
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : false
   }, {
    "name" : "value",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }],

@@ -1,6 +1,6 @@
 {
  "name" : "MassUnit",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["MG", "KG"],
  "labels" : ["Mg", "kg"]
 }

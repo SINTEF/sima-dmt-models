@@ -1,0 +1,20 @@
+{
+ "name" : "custom",
+ "type" : "core:Package",
+ "_meta_" : {
+  "type" : "core:Meta",
+  "version" : "12",
+  "dependencies" : [{
+    "alias" : "core",
+    "address" : "system/SIMOS",
+    "version" : "0.0.1",
+    "protocol" : "dmss"
+   }, {
+    "alias" : "custom",
+    "address" : "custom",
+    "version" : "12",
+    "protocol" : "dmss"
+   }]
+ }
+}
+

@@ -1,11 +1,11 @@
 {
  "name" : "VolumeConeItem",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/simo/VolumeMassPortion"],
  "attributes" : [{
    "name" : "volume",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/Volume",
    "description" : "Add or subtract volume",
@@ -13,32 +13,32 @@
    "default" : "ADD"
   }, {
    "name" : "centerPoint",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/Point3",
    "contained" : true,
    "optional" : false,
    "description" : "Location of center of bottom plane in local coordinates"
   }, {
    "name" : "length",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Length of cone",
    "optional" : true
   }, {
    "name" : "diameterBottomPlane",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Diameter of plane 1 (bottom plane)",
    "optional" : true
   }, {
    "name" : "diameterTopPlane",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Diameter of plane 2",
    "optional" : true
   }, {
    "name" : "axis",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/Axis",
    "description" : "Cone axis direction:\r\nX: parallell to Tank x-axis\r\nY: parallell to Tank y-axis\r\nZ: parallell to Tank z-axis",

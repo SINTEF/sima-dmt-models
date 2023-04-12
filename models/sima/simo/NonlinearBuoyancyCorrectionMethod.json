@@ -1,6 +1,6 @@
 {
  "name" : "NonlinearBuoyancyCorrectionMethod",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["MWL", "WAVE"],
  "labels" : ["Mean water level", "Wave"]
 }

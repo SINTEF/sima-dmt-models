@@ -1,97 +1,97 @@
 {
  "name" : "Sand",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/riflex/Soil"],
  "attributes" : [{
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "strainVelocityExponent",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Strain velocity exponent for damping model",
    "optional" : true,
    "default" : "1.0"
   }, {
    "name" : "calculateDamping",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Calculate damping coefficients",
    "optional" : true
   }, {
    "name" : "dampingItems",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/SoilDampingItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "upperWeight",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true
   }, {
    "name" : "lowerWeight",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true
   }, {
    "name" : "displacement",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Target displacement for generating equivalent damping coefficient",
    "optional" : true
   }, {
    "name" : "frequency",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Target frequency for generating equivalent damping coefficient",
    "optional" : true
   }, {
    "name" : "initialShearModulus",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Initial shear modulus of soil",
    "optional" : true
   }, {
    "name" : "upperFrictionAngle",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Angle of internal friction of sand",
    "optional" : true
   }, {
    "name" : "lowerFrictionAngle",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Angle of internal friction of sand",
    "optional" : true
   }, {
    "name" : "angleOfSoilFriction",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Angle of soil friction on pile wall",
    "optional" : true,
    "default" : "15.0"
   }, {
    "name" : "limitingSkinFriction",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Limiting unit skin friction",
    "optional" : true,
    "default" : "48000.0"
   }, {
    "name" : "bearingFactor",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Bearing factor",
    "optional" : true,
    "default" : "8.0"
   }, {
    "name" : "limitingTipResistance",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Limiting tip resistance",
    "optional" : true,

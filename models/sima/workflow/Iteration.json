@@ -1,6 +1,6 @@
 {
  "name" : "Iteration",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["COLUMN", "GRID"],
  "labels" : ["Column", "Grid"]
 }

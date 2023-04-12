@@ -1,6 +1,6 @@
 {
  "name" : "ConstraintType",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["LE", "LT", "GE", "GT"],
  "labels" : ["<=", "<", ">=", ">"]
 }

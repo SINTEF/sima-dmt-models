@@ -1,119 +1,119 @@
 {
  "name" : "MetoceanTask",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/condition/ConditionTask"],
  "attributes" : [{
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "doubleVariables",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/DoubleVariable",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "integerVariables",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/IntegerVariable",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "stringVariables",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/StringVariable",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "runNumber",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : true,
    "default" : "0"
   }, {
    "name" : "scripts",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/SIMAScript",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "variations",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/condition/ModelVariation",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "referenceVariables",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/ModelReferenceVariable",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "initialCondition",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/condition/InitialCondition",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "conditions",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/condition/ConditionTaskCondition",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "hindcastData",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/metocean/HindcastData",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "scatterData",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/metocean/ScatterData",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "longTermStatistics",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/metocean/LongTermStatistics",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "scatterDataCalculations",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/metocean/ScatterDataCalculation",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "hindcastDataCalculations",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/metocean/HindcastDataCalculation",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "longTermStatisticsCalculations",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/metocean/LongTermStatisticsCalculation",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "profiles",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/metocean/Profile",
    "dimensions" : "*",
    "contained" : true,

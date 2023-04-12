@@ -1,54 +1,54 @@
 {
  "name" : "ReferenceFrame",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "parent",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/ReferenceFrame",
    "contained" : false,
    "optional" : true
   }, {
-   "name" : "xGlobal",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "name" : "xLocal",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
-   "description" : "Global coordinate X",
+   "description" : "Local (in parent frame) coordinate X",
    "optional" : true
   }, {
-   "name" : "yGlobal",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "name" : "yLocal",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
-   "description" : "Global coordinate Y",
+   "description" : "Local (in parent frame) coordinate Y",
    "optional" : true
   }, {
-   "name" : "zGlobal",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "name" : "zLocal",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
-   "description" : "Global coordinate Z",
+   "description" : "Local (in parent frame) coordinate Z",
    "optional" : true
   }, {
-   "name" : "rxGlobal",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "name" : "rxLocal",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
-   "description" : "Global  X-axis rotation",
+   "description" : "Local (relative to parent frame)  X-axis rotation",
    "optional" : true
   }, {
-   "name" : "ryGlobal",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "name" : "ryLocal",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
-   "description" : "Global  Y-axis rotation",
+   "description" : "Local (relative to parent frame)  Y-axis rotation",
    "optional" : true
   }, {
-   "name" : "rzGlobal",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "name" : "rzLocal",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
-   "description" : "Global  Z-axis rotation",
+   "description" : "Local (relative to parent frame)  Z-axis rotation",
    "optional" : true
   }],
  "storageRecipes" : [],

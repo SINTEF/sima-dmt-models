@@ -1,6 +1,6 @@
 {
  "name" : "FileFormatAsciStar",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["ASCII", "STARTIMES"],
  "labels" : ["ASCII", "STARTIMES"]
 }

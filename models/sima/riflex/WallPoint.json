@@ -1,6 +1,6 @@
 {
  "name" : "WallPoint",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["OUTER_WALL", "INNER_WALL"],
  "labels" : ["Outer wall", "Inner wall"]
 }

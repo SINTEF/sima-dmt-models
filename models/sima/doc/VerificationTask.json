@@ -1,57 +1,57 @@
 {
  "name" : "VerificationTask",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/Task"],
  "attributes" : [{
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "doubleVariables",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/DoubleVariable",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "integerVariables",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/IntegerVariable",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "stringVariables",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/StringVariable",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "runNumber",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : true,
    "default" : "0"
   }, {
    "name" : "scripts",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/SIMAScript",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "tests",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/doc/Test",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "workflows",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/workflow/Workflow",
    "dimensions" : "*",
    "contained" : true,

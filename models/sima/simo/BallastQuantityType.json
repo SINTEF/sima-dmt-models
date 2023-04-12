@@ -1,6 +1,6 @@
 {
  "name" : "BallastQuantityType",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["PERCENTAGE", "VOLUME"],
  "labels" : ["%", "m^3"]
 }

@@ -1,6 +1,6 @@
 {
  "name" : "WorkflowSetInput",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["MANUAL", "FILE", "INPUT"],
  "labels" : ["Manual input", "From file", "From input"]
 }

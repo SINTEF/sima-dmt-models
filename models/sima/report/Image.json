@@ -1,29 +1,29 @@
 {
  "name" : "Image",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/report/ReportItem"],
  "attributes" : [{
    "name" : "caption",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "description" : "Caption",
    "optional" : true
   }, {
    "name" : "filePath",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "description" : "Path to the image",
    "optional" : true
   }, {
    "name" : "width",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "The image witdth in twips (1/1440 inch). If only the width is specified the height will be automatically calculated.",
    "optional" : true
   }, {
    "name" : "height",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "The image height in twips (1/1440 inch). If only the width is specified the height will be automatically calculated.",
    "optional" : true

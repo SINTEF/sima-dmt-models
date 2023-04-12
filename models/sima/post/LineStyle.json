@@ -1,6 +1,6 @@
 {
  "name" : "LineStyle",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["SOLID", "DASH", "BAR", "POINT"],
  "labels" : ["Solid line", "Dash Line", "Bar", "Point"]
 }

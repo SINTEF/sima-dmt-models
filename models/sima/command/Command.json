@@ -1,0 +1,9 @@
+{
+ "name" : "Command",
+ "type" : "core:Blueprint",
+ "abstract" : true,
+ "extends" : ["/sima/Named"],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

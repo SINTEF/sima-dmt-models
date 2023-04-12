@@ -1,6 +1,6 @@
 {
  "name" : "ResponseFrequencyOption",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["CONCURRENT", "CONSECUTIVE"],
  "labels" : ["Concurrent", "Consecutive"]
 }

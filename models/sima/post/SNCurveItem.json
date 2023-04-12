@@ -1,17 +1,17 @@
 {
  "name" : "SNCurveItem",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "negativeInverseSlope",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Negative inverse slope of S-N curve",
    "optional" : true
   }, {
    "name" : "transitionPointLog",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "log10 of number of cycles at transition point between preceding curve segment and this curve segment",
    "optional" : true

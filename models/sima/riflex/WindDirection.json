@@ -1,6 +1,6 @@
 {
  "name" : "WindDirection",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["POSITIVE", "NEGATIVE"],
  "labels" : ["Positive", "Negative"]
 }

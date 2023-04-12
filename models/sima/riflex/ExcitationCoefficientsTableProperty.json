@@ -1,16 +1,16 @@
 {
  "name" : "ExcitationCoefficientsTableProperty",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/riflex/ExcitationCoefficientsProperty"],
  "attributes" : [{
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "nonDimensionalFrequencyProperties",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/ExcitationCoefficientsNonDimensionalFrequencyItem",
    "dimensions" : "*",
    "contained" : true,

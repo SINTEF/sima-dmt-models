@@ -1,6 +1,6 @@
 {
  "name" : "DirectionSymmetry",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["NO_SYMMETRY", "Y0_SYMMETRY", "DOUBLE_SYMMETRY", "X0_SYMMETRY"],
  "labels" : ["No symmetry", "Symmetry about Y=0", "Double symmetry", "Symmetry about X=0"]
 }

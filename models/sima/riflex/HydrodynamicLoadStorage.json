@@ -1,24 +1,24 @@
 {
  "name" : "HydrodynamicLoadStorage",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "store",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store hydrodynamic loads",
    "optional" : true
   }, {
    "name" : "storageStep",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Storage for every <storage step> given.",
    "optional" : true,
    "default" : "1"
   }, {
    "name" : "elements",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/HydrodynamicLoadElementStorage",
    "dimensions" : "*",
    "contained" : true,

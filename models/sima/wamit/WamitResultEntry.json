@@ -1,71 +1,71 @@
 {
  "name" : "WamitResultEntry",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/ResultEntry"],
  "attributes" : [{
    "name" : "properties",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/Property",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "resource",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "relative",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true
   }, {
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "changeNumber",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : true
   }, {
    "name" : "results",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/Result",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "entries",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/ResultEntry",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "outFile",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/sima/Result",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "wamitBodyResults",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/wamit/WamitBodyResult",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "diffractedWaveField",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/hydro/DiffractedWaveField",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "hydrodynamicalCouplings",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/wamit/HydrodynamicalCoupling",
    "dimensions" : "*",
    "contained" : true,

@@ -1,6 +1,6 @@
 {
  "name" : "RemoveIrregularFrequenciesOption",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["NO", "USEGDF", "AUTOMATICDISCRETIZATION"],
  "labels" : ["No", "Use GDF", "Automatic Discretization"]
 }

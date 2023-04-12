@@ -1,31 +1,31 @@
 {
  "name" : "IrregularResponseAnalysis",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "waveTimeSeriesFile",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Wave time series read from file",
    "optional" : true
   }, {
    "name" : "simulationLength",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Length of simulation",
    "optional" : true,
    "default" : "11000.0"
   }, {
    "name" : "timeStep",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Simulation time step",
    "optional" : true,
    "default" : "0.1"
   }, {
    "name" : "irrWaveIndicator",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/IrregularWaveIndicator",
    "description" : "Irregular wave indicator",
@@ -33,7 +33,7 @@
    "default" : "NEW"
   }, {
    "name" : "irrMotionIndicator",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/IrregularMotionIndicator",
    "description" : "Irregular motion indicator",
@@ -41,7 +41,7 @@
    "default" : "STAT"
   }, {
    "name" : "lowFrequencyMotionIndicator",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/LowFrequencyMotionIndicator",
    "description" : "Low frequency motion indicator",
@@ -49,46 +49,46 @@
    "default" : "NONE"
   }, {
    "name" : "simulationStartTime",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Time (in generated time series) that dynamic simulation will start from",
    "optional" : true,
    "default" : "0.0"
   }, {
    "name" : "motionScaling",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Switch for scaling of terminal point motions",
    "optional" : true
   }, {
    "name" : "supportVesselMotionScalingItems",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/SupportVesselMotionScalingItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "irregularWaveProcedure",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/IrregularWaveProcedure",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "waveTimeSeries",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/WaveTimeSeries",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "wfMotionTimeSeries",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/WFMotionTimeSeries",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "lfMotionTimeSeries",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/LFMotionTimeSeries",
    "dimensions" : "*",
    "contained" : true,

@@ -1,38 +1,38 @@
 {
  "name" : "QuadraticWindCoefficient",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "symmetry",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/hydro/DirectionSymmetry",
    "optional" : true,
    "default" : "NO_SYMMETRY"
   }, {
    "name" : "windArea",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true,
    "default" : "2000.0"
   }, {
    "name" : "referenceHeight",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Reference height for wind velocity",
    "optional" : true,
    "default" : "10.0"
   }, {
    "name" : "items",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/hydro/QuadraticWindCoefficientItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "_type",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/hydro/CoefficientType",
    "description" : "Wind coefficient type",
@@ -40,7 +40,7 @@
    "default" : "CLASSIC"
   }, {
    "name" : "fileName",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "description" : "Text file containing the wind coefficients. The force coefficents in the file must be specified in [kN/(m/s)] for translational degrees of freedom and [kN.s] for rotational degrees of freedom.",
    "optional" : true

@@ -1,6 +1,6 @@
 {
  "name" : "DecimalSeparator",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["PERIOD", "COMMA"],
  "labels" : ["Period as decimal separator", "Comma as decimal separator"]
 }

@@ -1,39 +1,39 @@
 {
  "name" : "UnitPreference",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/SIMAPreference"],
  "attributes" : [{
    "name" : "frequency",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/sima/Frequency",
    "optional" : true,
    "default" : "PERIOD"
   }, {
    "name" : "forceUnit",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/sima/ForceUnit",
    "optional" : true,
    "default" : "NEWTON"
   }, {
    "name" : "massUnit",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/sima/MassUnit",
    "optional" : true,
    "default" : "KILOGRAM"
   }, {
    "name" : "lengthUnit",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/sima/LengthUnit",
    "optional" : true,
    "default" : "METER"
   }, {
    "name" : "powerUnit",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/sima/PowerUnit",
    "optional" : true,

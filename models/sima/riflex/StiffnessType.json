@@ -1,6 +1,6 @@
 {
  "name" : "StiffnessType",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["LINEAR", "NON_LINEAR"],
  "labels" : ["Linear", "Non linear"]
 }

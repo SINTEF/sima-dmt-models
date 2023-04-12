@@ -1,18 +1,18 @@
 {
  "name" : "NotchFilter",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/simo/Estimator"],
  "attributes" : [{
    "name" : "centerPeriod",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Center period of wave filter",
    "optional" : true,
    "default" : "10.0"
   }, {
    "name" : "strength",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Strength of wave filter, between 0 and 1",
    "optional" : true,

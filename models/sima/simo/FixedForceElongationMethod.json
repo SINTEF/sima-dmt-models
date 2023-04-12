@@ -1,6 +1,6 @@
 {
  "name" : "FixedForceElongationMethod",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["PRETENSION_LOCAL", "PRETENSION_GLOBAL", "BOTH_ENDS", "CONSTANT_TENSION_WINCH"],
  "labels" : ["Pretension and local direction", "Pretension and global direction", "Coordinates of both end points", "Constant tension winch"]
 }

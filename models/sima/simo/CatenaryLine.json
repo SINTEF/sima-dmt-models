@@ -1,64 +1,64 @@
 {
  "name" : "CatenaryLine",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "attachmentPoint",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/SIMOBodyPoint",
    "contained" : false,
    "optional" : true
   }, {
    "name" : "direction",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Direction of line in horizontal plane",
    "optional" : true
   }, {
    "name" : "xglobal",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "X-coordinate of the anchor in global coordinate\r\nsystem",
    "optional" : true
   }, {
    "name" : "yglobal",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Y-coordinate of the anchor in global coordinate\r\nsystem",
    "optional" : true
   }, {
    "name" : "xwinch",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Run length of winch",
    "optional" : true
   }, {
    "name" : "xhor",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Horizontal distance from attachment point\r\nto anchor",
    "optional" : true
   }, {
    "name" : "pretension",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Pretension",
    "optional" : true
   }, {
    "name" : "lineType",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/LineType",
    "contained" : false,
    "optional" : true
   }, {
    "name" : "inputMethod",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/InputMethodType",
    "description" : "Method for initialization of line",
@@ -66,7 +66,7 @@
    "default" : "TENSION"
   }, {
    "name" : "failureMode",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/FailureMode",
    "description" : "Failure mode of positioning element",
@@ -74,13 +74,13 @@
    "default" : "NONE"
   }, {
    "name" : "failureTime",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Earliest possible time of failure",
    "optional" : true
   }, {
    "name" : "breakingStrength",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Breaking strength",
    "optional" : true

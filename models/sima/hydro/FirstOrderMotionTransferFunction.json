@@ -1,66 +1,66 @@
 {
  "name" : "FirstOrderMotionTransferFunction",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "directions",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true,
    "dimensions" : "*"
   }, {
    "name" : "frequencies",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true,
    "dimensions" : "*"
   }, {
    "name" : "symmetry",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/hydro/DirectionSymmetry",
    "optional" : true,
    "default" : "NO_SYMMETRY"
   }, {
    "name" : "hfReference",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Transfer function reference position",
    "optional" : true
   }, {
    "name" : "surge",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/hydro/DirectionDependentComplexValues",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "sway",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/hydro/DirectionDependentComplexValues",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "heave",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/hydro/DirectionDependentComplexValues",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "roll",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/hydro/DirectionDependentComplexValues",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "pitch",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/hydro/DirectionDependentComplexValues",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "yaw",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/hydro/DirectionDependentComplexValues",
    "contained" : true,
    "optional" : true

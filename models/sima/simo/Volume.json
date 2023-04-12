@@ -1,6 +1,6 @@
 {
  "name" : "Volume",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["ADD", "SUBTRACT"],
  "labels" : ["Add", "Subtract"]
 }

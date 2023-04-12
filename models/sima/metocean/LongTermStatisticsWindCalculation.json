@@ -1,48 +1,48 @@
 {
  "name" : "LongTermStatisticsWindCalculation",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "returnPeriod",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true
   }, {
    "name" : "levels",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/metocean/CalculationLevel",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "method",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/metocean/LevelStatisticsMethod",
    "optional" : true,
    "default" : "FROM_DISTRIBUTION"
   }, {
    "name" : "omniMethod",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/metocean/LevelStatisticsMethod",
    "optional" : true,
    "default" : "FROM_DISTRIBUTION"
   }, {
    "name" : "directionRelativeToWave",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true
   }, {
    "name" : "statistics",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/metocean/WindLongTermStatistics",
    "contained" : false,
    "optional" : true
   }, {
    "name" : "omni",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/metocean/WindLongTermStatistics",
    "contained" : false,
    "optional" : true

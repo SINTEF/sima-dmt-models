@@ -1,6 +1,6 @@
 {
  "name" : "FatigueCalculationOption",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["DEFAULT", "RAINFLOW_COUNTING", "RAYLEIGH_DISTRIBUTION", "CONSTANT_STRESS_AMPLITUDE"],
  "labels" : ["Default", "Rainflow counting", "Rayleigh distribution", "Constant stress amplitude"]
 }

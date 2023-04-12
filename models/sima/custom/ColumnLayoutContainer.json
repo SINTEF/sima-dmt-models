@@ -1,11 +1,11 @@
 {
  "name" : "ColumnLayoutContainer",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/custom/CustomComponent"],
  "attributes" : [{
    "name" : "children",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/custom/CustomComponent",
    "dimensions" : "*",
    "contained" : true,

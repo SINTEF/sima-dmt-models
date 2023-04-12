@@ -1,11 +1,11 @@
 {
  "name" : "StatisticsMatrix",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "rows",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/post/StatisticsRow",
    "dimensions" : "*",
    "contained" : true,

@@ -1,77 +1,77 @@
 {
  "name" : "VerticalAxisWindTurbine",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "controller",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/windturbine/VerticalAxisWindTurbineController",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "momentCoupling",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/MomentCoupling",
    "contained" : false,
    "optional" : false
   }, {
    "name" : "referenceHeight",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Reference height for calculation of wind",
    "optional" : true
   }, {
    "name" : "windArea",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Wind area admittance function",
    "optional" : true
   }, {
    "name" : "radius",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Blade radius at lowest node",
    "optional" : true
   }, {
    "name" : "elevation",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Elevation of the lowest node",
    "optional" : true
   }, {
    "name" : "offset",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Tangential offset of the first blade node",
    "optional" : true
   }, {
    "name" : "bladeItems",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/simo/VerticalBladeItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "numBlades",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of blades",
    "optional" : true
   }, {
    "name" : "numAzimuthalElements",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of azimuthal elements for aerodynamic calculation",
    "optional" : true
   }, {
    "name" : "prandtlFactor",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Prandtl factor",
    "optional" : true,

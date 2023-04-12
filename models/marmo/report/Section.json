@@ -1,15 +1,16 @@
 {
  "name" : "Section",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/report/ReportItemContainer", "/report/ReportItem"],
  "attributes" : [{
    "name" : "title",
-   "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "string"
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : false
   }, {
    "name" : "landscape",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true
   }],

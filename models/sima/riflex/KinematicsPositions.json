@@ -1,6 +1,6 @@
 {
  "name" : "KinematicsPositions",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["STATIC", "DYNAMIC", "STATIC_CALCULATED"],
  "labels" : ["Kinematics at static positions", "Kinematics at dynamic position calculated during simulation", "Kinematics at static position calculated during simulation"]
 }

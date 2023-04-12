@@ -1,6 +1,6 @@
 {
  "name" : "HLAViewpoint",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "storageRecipes" : [],

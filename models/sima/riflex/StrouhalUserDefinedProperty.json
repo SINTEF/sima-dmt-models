@@ -1,16 +1,16 @@
 {
  "name" : "StrouhalUserDefinedProperty",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/riflex/StrouhalSpecificationProperty"],
  "attributes" : [{
    "name" : "name",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "reynoldStrouhalProperties",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/ReynoldStrouhalNumberItem",
    "dimensions" : "*",
    "contained" : true,

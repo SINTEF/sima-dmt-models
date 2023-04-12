@@ -1,6 +1,6 @@
 {
  "name" : "WindTurbineLoadOption",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["INCLUDE", "EXCLUDE"],
  "labels" : ["Include wind moment", "Exclude wind moment"]
 }

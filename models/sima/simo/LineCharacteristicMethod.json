@@ -1,6 +1,6 @@
 {
  "name" : "LineCharacteristicMethod",
- "type" : "system/SIMOS/Enum",
+ "type" : "core:Enum",
  "values" : ["SHOOTING", "SHOOTINGTWO", "FEM"],
  "labels" : ["Shooting", "Shooting (Simplified line dynamics included)", "FEM"]
 }

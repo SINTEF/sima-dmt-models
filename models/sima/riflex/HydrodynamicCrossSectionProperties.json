@@ -1,59 +1,59 @@
 {
  "name" : "HydrodynamicCrossSectionProperties",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "itemNumber",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Global segment number",
    "optional" : true
   }, {
    "name" : "excitationZoneProperty",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/ExcitationZoneProperty",
    "contained" : false,
    "optional" : true,
    "description" : "Excitation zone"
   }, {
    "name" : "addedMassCrossFlowProperty",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/AddedMassProperty",
    "contained" : false,
    "optional" : true,
    "description" : "Cross-flow added mass"
   }, {
    "name" : "excitationCoefficientCrossFlowProperty",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/ExcitationCoefficientsProperty",
    "contained" : false,
    "optional" : true,
    "description" : "Cross-flow excitation coefficients"
   }, {
    "name" : "dampingFactorProperty",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/DampingFactorProperty",
    "contained" : false,
    "optional" : true,
    "description" : "Hydrodynamic damping factor"
   }, {
    "name" : "addedMassInLineProperty",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/AddedMassProperty",
    "contained" : false,
    "optional" : true,
    "description" : "In-line added mass"
   }, {
    "name" : "excitationCoefficientInLineProperty",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/ExcitationCoefficientsProperty",
    "contained" : false,
    "optional" : true,
    "description" : "In-line excitation coefficients"
   }, {
    "name" : "strouhalSpecificationProperty",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/riflex/StrouhalSpecificationProperty",
    "contained" : false,
    "optional" : true,

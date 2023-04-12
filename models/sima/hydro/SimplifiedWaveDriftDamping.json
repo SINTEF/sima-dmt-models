@@ -1,11 +1,11 @@
 {
  "name" : "SimplifiedWaveDriftDamping",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "core:Blueprint",
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
    "name" : "items",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "core:BlueprintAttribute",
    "attributeType" : "/hydro/WaveDriftDampingItem",
    "dimensions" : "*",
    "contained" : true,
