@@ -1,0 +1,30 @@
+{
+ "name" : "Contour",
+ "type" : "core:Blueprint",
+ "description" : "CONTOUR LINES OF HS-TP.",
+ "abstract" : false,
+ "extends" : ["core:Entity"],
+ "attributes" : [{
+   "name" : "Hs",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Hs.",
+   "optional" : true,
+   "dimensions" : "*"
+  }, {
+   "name" : "Tp",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Tp",
+   "optional" : true,
+   "dimensions" : "*"
+  }, {
+   "name" : "returnPeriod",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "return period",
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}

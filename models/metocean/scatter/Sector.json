@@ -1,0 +1,51 @@
+{
+ "name" : "Sector",
+ "type" : "core:Blueprint",
+ "description" : "Description for stochastic process at a sector.",
+ "abstract" : false,
+ "extends" : ["core:NamedEntity"],
+ "attributes" : [{
+   "name" : "name",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "unique name for the sector, e.g. sec120, or omni.",
+   "optional" : true
+  }, {
+   "name" : "direction",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "sector direction.",
+   "optional" : true
+  }, {
+   "name" : "sectorSize",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "sector size.",
+   "optional" : true
+  }, {
+   "name" : "wave",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/scatter/Wave",
+   "contained" : true,
+   "optional" : true,
+   "description" : "the scatter data for wave."
+  }, {
+   "name" : "wind",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/scatter/WindCurrent",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true,
+   "description" : "the scatter data for wind at different levels."
+  }, {
+   "name" : "current",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/scatter/WindCurrent",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true,
+   "description" : "the scatter data for current at different levels."
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}

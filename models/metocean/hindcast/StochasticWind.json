@@ -1,0 +1,36 @@
+{
+ "name" : "StochasticWind",
+ "type" : "core:Blueprint",
+ "description" : "Description for stochastic wind.",
+ "abstract" : false,
+ "extends" : ["core:NamedEntity"],
+ "attributes" : [{
+   "name" : "name",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "name for the metocean data.",
+   "optional" : false
+  }, {
+   "name" : "speed",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "mean wind speed.",
+   "optional" : false,
+   "dimensions" : "*"
+  }, {
+   "name" : "direction",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "wind direction.",
+   "optional" : false,
+   "dimensions" : "*"
+  }, {
+   "name" : "level",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "at this level, upward positive.",
+   "optional" : false
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}

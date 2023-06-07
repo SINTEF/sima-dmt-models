@@ -1,0 +1,42 @@
+{
+ "name" : "HsBinnedSector",
+ "type" : "core:Blueprint",
+ "description" : "Statistical representation of a a sector.",
+ "abstract" : false,
+ "extends" : ["core:NamedEntity"],
+ "attributes" : [{
+   "name" : "name",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "unique name for the sector, e.g. sec120, or omni.",
+   "optional" : true
+  }, {
+   "name" : "direction",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "mean sector direction.",
+   "optional" : true
+  }, {
+   "name" : "sectorSize",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "sector size.",
+   "optional" : true
+  }, {
+   "name" : "probability",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "probability of this combination",
+   "optional" : true
+  }, {
+   "name" : "bins",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/longTermStatistics/HsBinned",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true,
+   "description" : "different Hs bins."
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}

@@ -1,0 +1,37 @@
+{
+ "name" : "Stat",
+ "type" : "core:Blueprint",
+ "description" : "Description for stochastic wave.",
+ "abstract" : false,
+ "extends" : ["core:NamedEntity"],
+ "attributes" : [{
+   "name" : "name",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "name for this statistical data which appear in SIMA, e.g. wave12sec, or waveomni.",
+   "optional" : true
+  }, {
+   "name" : "duration",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "sampling rate in hours.",
+   "optional" : true
+  }, {
+   "name" : "sectors",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/longTermStatistics/wave/Sector",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true,
+   "description" : "sectoral wave at this sampling rate for Hs."
+  }, {
+   "name" : "omni",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/longTermStatistics/wave/Sector",
+   "contained" : true,
+   "optional" : true,
+   "description" : "omni wave at this sampling rate for Hs."
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}

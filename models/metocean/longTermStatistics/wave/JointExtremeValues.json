@@ -1,0 +1,43 @@
+{
+ "name" : "JointExtremeValues",
+ "type" : "core:Blueprint",
+ "description" : "JOINED EXTREME VALUES FOR DIFFERENT PROBABILITY.",
+ "abstract" : false,
+ "extends" : ["core:Entity"],
+ "attributes" : [{
+   "name" : "var1",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "first variable.",
+   "optional" : true
+  }, {
+   "name" : "var2",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "second variable.",
+   "optional" : true
+  }, {
+   "name" : "returnPeriods",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "return periods",
+   "optional" : true,
+   "dimensions" : "*"
+  }, {
+   "name" : "var1Extremes",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "extreme values for the variable 1",
+   "optional" : true,
+   "dimensions" : "*"
+  }, {
+   "name" : "var2Extremes",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "extreme values for the variable 2",
+   "optional" : true,
+   "dimensions" : "*"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}

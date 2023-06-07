@@ -1,0 +1,36 @@
+{
+ "name" : "StochasticCurrent",
+ "type" : "core:Blueprint",
+ "description" : "Description for stochastic current.",
+ "abstract" : false,
+ "extends" : ["core:NamedEntity"],
+ "attributes" : [{
+   "name" : "name",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "name for the metocean data.",
+   "optional" : true
+  }, {
+   "name" : "speed",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "mean current speed.",
+   "optional" : false,
+   "dimensions" : "*"
+  }, {
+   "name" : "direction",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "current direction.",
+   "optional" : false,
+   "dimensions" : "*"
+  }, {
+   "name" : "level",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "at this level, upward positive.",
+   "optional" : false
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}

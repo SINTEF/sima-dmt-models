@@ -1,0 +1,30 @@
+{
+ "name" : "WindCurrent",
+ "type" : "core:Blueprint",
+ "description" : "Description for stochastic process at a sector.",
+ "abstract" : false,
+ "extends" : ["core:Entity"],
+ "attributes" : [{
+   "name" : "level",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "measured level.",
+   "optional" : true
+  }, {
+   "name" : "direction",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "the scatter data for direction.",
+   "optional" : true,
+   "dimensions" : "*,*"
+  }, {
+   "name" : "speed",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "the scatter data for speed.",
+   "optional" : true,
+   "dimensions" : "*,*"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}

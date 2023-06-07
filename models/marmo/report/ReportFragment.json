@@ -1,9 +1,0 @@
-{
- "name" : "ReportFragment",
- "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/report/ReportItemContainer"],
- "storageRecipes" : [],
- "uiRecipes" : []
-}
-

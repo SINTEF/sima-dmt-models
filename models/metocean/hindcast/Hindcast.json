@@ -1,0 +1,59 @@
+{
+ "name" : "Hindcast",
+ "type" : "core:Blueprint",
+ "description" : "Description for hindcast metocean data.",
+ "abstract" : false,
+ "extends" : ["core:NamedEntity"],
+ "attributes" : [{
+   "name" : "name",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "name for the metocean data.",
+   "optional" : true
+  }, {
+   "name" : "date",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "date string.",
+   "optional" : true,
+   "dimensions" : "*"
+  }, {
+   "name" : "wave",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/hindcast/StochasticWave",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true,
+   "description" : "wave models."
+  }, {
+   "name" : "wind",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/hindcast/StochasticWind",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true,
+   "description" : "wind models."
+  }, {
+   "name" : "current",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/hindcast/StochasticCurrent",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true,
+   "description" : "current models."
+  }, {
+   "name" : "latitude",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true,
+   "unit" : "deg"
+  }, {
+   "name" : "longitude",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true,
+   "unit" : "deg"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}

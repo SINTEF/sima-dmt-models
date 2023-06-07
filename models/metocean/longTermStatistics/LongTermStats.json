@@ -1,0 +1,24 @@
+{
+ "name" : "LongTermStats",
+ "type" : "core:Blueprint",
+ "description" : "Description for long term statistical metocean data.",
+ "abstract" : false,
+ "extends" : ["core:NamedEntity"],
+ "attributes" : [{
+   "name" : "periods",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/longTermStatistics/Period",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true,
+   "description" : "statistical model for different time periods."
+  }, {
+   "name" : "name",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "name for the metocean data.",
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}

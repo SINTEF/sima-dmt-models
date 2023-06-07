@@ -1,0 +1,38 @@
+{
+ "name" : "SpectralPeak",
+ "type" : "core:Blueprint",
+ "description" : "Spectral peak for Tp as a function of Hs.",
+ "abstract" : false,
+ "extends" : ["core:Entity"],
+ "attributes" : [{
+   "name" : "Hs",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Hs.",
+   "optional" : true,
+   "dimensions" : "*"
+  }, {
+   "name" : "int5",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "5%-interval",
+   "optional" : true,
+   "dimensions" : "*"
+  }, {
+   "name" : "mean",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "mean.",
+   "optional" : true,
+   "dimensions" : "*"
+  }, {
+   "name" : "int95",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "95 %-interval",
+   "optional" : true,
+   "dimensions" : "*"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}

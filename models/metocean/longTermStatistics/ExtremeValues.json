@@ -1,0 +1,30 @@
+{
+ "name" : "ExtremeValues",
+ "type" : "core:Blueprint",
+ "description" : "EXTREME VALUES FOR DIFFERENT PROBABILITY.",
+ "abstract" : false,
+ "extends" : ["core:Entity"],
+ "attributes" : [{
+   "name" : "variable",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "variable.",
+   "optional" : true
+  }, {
+   "name" : "returnPeriods",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "return periods",
+   "optional" : true,
+   "dimensions" : "*"
+  }, {
+   "name" : "extremes",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "extreme values for the variable",
+   "optional" : true,
+   "dimensions" : "*"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}

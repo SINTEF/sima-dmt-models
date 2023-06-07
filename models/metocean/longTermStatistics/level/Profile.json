@@ -1,0 +1,52 @@
+{
+ "name" : "Profile",
+ "type" : "core:Blueprint",
+ "description" : "Description for stochastic process with sampling.",
+ "abstract" : false,
+ "extends" : ["core:NamedEntity"],
+ "attributes" : [{
+   "name" : "name",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "name for statistics at this level, e.g. level10m.",
+   "optional" : true
+  }, {
+   "name" : "level",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "sampling rate in hours.",
+   "optional" : true
+  }, {
+   "name" : "sectors",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/longTermStatistics/Sector",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true,
+   "description" : "sectoral representation of wind/current at this sampling rate."
+  }, {
+   "name" : "omni",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/longTermStatistics/Sector",
+   "contained" : true,
+   "optional" : true,
+   "description" : "omni representation of wind/current at this sampling rate."
+  }, {
+   "name" : "sectoralHsBinned",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/longTermStatistics/HsBinnedSector",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true,
+   "description" : "sectoral representation of wind/current binned for different Hs at this sampling rate."
+  }, {
+   "name" : "omniHsBinned",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/longTermStatistics/HsBinnedSector",
+   "contained" : true,
+   "optional" : true,
+   "description" : "omni representation of wind/current binned for different Hs at this sampling rate."
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}

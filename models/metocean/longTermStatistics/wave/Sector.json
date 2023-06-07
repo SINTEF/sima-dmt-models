@@ -1,0 +1,63 @@
+{
+ "name" : "Sector",
+ "type" : "core:Blueprint",
+ "description" : "Description for wave at a sector.",
+ "abstract" : false,
+ "extends" : ["core:NamedEntity"],
+ "attributes" : [{
+   "name" : "name",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "unique name for the sector, e.g. sec120, or omni.",
+   "optional" : true
+  }, {
+   "name" : "direction",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "mean sector direction.",
+   "optional" : true
+  }, {
+   "name" : "sectorSize",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "sector size.",
+   "optional" : true
+  }, {
+   "name" : "probability",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "probability of this combination",
+   "optional" : true
+  }, {
+   "name" : "weibullDistribution",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/longTermStatistics/wave/Weibull",
+   "contained" : true,
+   "optional" : true,
+   "description" : "weibull parameters for Hs."
+  }, {
+   "name" : "extremeValues",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/longTermStatistics/wave/JointExtremeValues",
+   "contained" : true,
+   "optional" : true,
+   "description" : "joined extreme values for Hs and Tp."
+  }, {
+   "name" : "spectralPeak",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/longTermStatistics/wave/SpectralPeak",
+   "contained" : true,
+   "optional" : true,
+   "description" : "Spectral peak period as a function of Hs."
+  }, {
+   "name" : "contours",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/longTermStatistics/wave/Contour",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true,
+   "description" : "Hs-Tp contours"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}

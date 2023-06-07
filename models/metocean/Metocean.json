@@ -1,0 +1,40 @@
+{
+ "name" : "Metocean",
+ "type" : "core:Blueprint",
+ "description" : "Description for scatter data based on Hs-Tp.",
+ "abstract" : false,
+ "extends" : ["core:NamedEntity"],
+ "attributes" : [{
+   "name" : "name",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "name for the metocean data.",
+   "optional" : true
+  }, {
+   "name" : "hindcasts",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/hindcast/Hindcast",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true,
+   "description" : "hindcast data."
+  }, {
+   "name" : "scatters",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/scatter/Scatter",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true,
+   "description" : "scatter data."
+  }, {
+   "name" : "longterms",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/longTermStatistics/LongTermStats",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true,
+   "description" : "scatter data."
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}

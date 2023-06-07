@@ -1,0 +1,34 @@
+{
+ "name" : "Weibull",
+ "type" : "core:Blueprint",
+ "description" : "Description weibull statistics.",
+ "abstract" : false,
+ "extends" : ["core:Entity"],
+ "attributes" : [{
+   "name" : "variable",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "variable.",
+   "optional" : true
+  }, {
+   "name" : "shape",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "shape.",
+   "optional" : true
+  }, {
+   "name" : "scale",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "scale.",
+   "optional" : true
+  }, {
+   "name" : "location",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "location.",
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}

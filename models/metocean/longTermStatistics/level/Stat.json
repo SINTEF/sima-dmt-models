@@ -1,0 +1,30 @@
+{
+ "name" : "Stat",
+ "type" : "core:Blueprint",
+ "description" : "Description for stochastic process with sampling.",
+ "abstract" : false,
+ "extends" : ["core:NamedEntity"],
+ "attributes" : [{
+   "name" : "name",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "name for this statistical data, wind/current, which appear in SIMA, e.g. wind_12sec, or current_omni.",
+   "optional" : true
+  }, {
+   "name" : "duration",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "event duration in hours.",
+   "optional" : true
+  }, {
+   "name" : "levels",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/longTermStatistics/level/Profile",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true,
+   "description" : "statistical representation of wind/current at this level and sampling rate."
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}

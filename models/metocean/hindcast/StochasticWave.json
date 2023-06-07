@@ -1,0 +1,49 @@
+{
+ "name" : "StochasticWave",
+ "type" : "core:Blueprint",
+ "description" : "Description for stochastic wave.",
+ "abstract" : false,
+ "extends" : ["core:NamedEntity"],
+ "attributes" : [{
+   "name" : "name",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "name for the metocean data.",
+   "optional" : false
+  }, {
+   "name" : "hs",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "significant wave height.",
+   "optional" : false,
+   "dimensions" : "*"
+  }, {
+   "name" : "tp",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "peack period.",
+   "optional" : false,
+   "dimensions" : "*"
+  }, {
+   "name" : "tm",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "mean period.",
+   "optional" : true
+  }, {
+   "name" : "direction",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "dominant wave direction.",
+   "optional" : false,
+   "dimensions" : "*"
+  }, {
+   "name" : "meanDirection",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "mean wave direction.",
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}

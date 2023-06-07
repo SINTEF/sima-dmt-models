@@ -1,9 +1,0 @@
-{
- "name" : "ReportItem",
- "type" : "core:Blueprint",
- "abstract" : true,
- "extends" : ["core:Entity"],
- "storageRecipes" : [],
- "uiRecipes" : []
-}
-

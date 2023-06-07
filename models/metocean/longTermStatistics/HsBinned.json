@@ -1,0 +1,35 @@
+{
+ "name" : "HsBinned",
+ "type" : "core:Blueprint",
+ "description" : "Statistical representation of a a sector.",
+ "abstract" : false,
+ "extends" : ["core:NamedEntity"],
+ "attributes" : [{
+   "name" : "name",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "unique name for this bin.",
+   "optional" : true
+  }, {
+   "name" : "upperHsLimit",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "mean sector direction.",
+   "optional" : true
+  }, {
+   "name" : "lowerHsLimit",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "mean sector direction.",
+   "optional" : true
+  }, {
+   "name" : "weibullDistribution",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/longTermStatistics/Weibull",
+   "contained" : true,
+   "optional" : true,
+   "description" : "Weibull parameters."
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}

@@ -1,0 +1,17 @@
+{
+ "name" : "Wave",
+ "type" : "core:Blueprint",
+ "description" : "Description for stochastic process at a sector.",
+ "abstract" : false,
+ "extends" : ["core:Entity"],
+ "attributes" : [{
+   "name" : "occurrence",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "integer",
+   "description" : "the scatter data for occurrence of Hs-Tp.",
+   "optional" : true,
+   "dimensions" : "*,*"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}

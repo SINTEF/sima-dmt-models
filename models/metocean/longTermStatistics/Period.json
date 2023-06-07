@@ -1,0 +1,46 @@
+{
+ "name" : "Period",
+ "type" : "core:Blueprint",
+ "description" : "Description for stochastic process with sampling at certain period.",
+ "abstract" : false,
+ "extends" : ["core:NamedEntity"],
+ "attributes" : [{
+   "name" : "name",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "name of the time period as seen in SIMA.",
+   "optional" : true
+  }, {
+   "name" : "period",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "place holder identification for the time period e.g. Year, Jan",
+   "optional" : true
+  }, {
+   "name" : "wave",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/longTermStatistics/wave/Stat",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true,
+   "description" : "models for statistical representation of wave, e.g. omni, or 12sec."
+  }, {
+   "name" : "wind",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/longTermStatistics/level/Stat",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true,
+   "description" : "models for statistical representation of wind, e.g. omni, or 12sec."
+  }, {
+   "name" : "current",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/longTermStatistics/level/Stat",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true,
+   "description" : "models for statistical representation of current, e.g. omni, or 12sec."
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
