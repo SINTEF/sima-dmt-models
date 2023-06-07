@@ -273,8 +273,14 @@
    "attributeType" : "boolean",
    "description" : "Ignore process exit code. Be careful to check the result when checked",
    "optional" : true
+  }, {
+   "name" : "waterlineGapTolerance",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Waterline gap tolerance (TOLGAPWL)",
+   "optional" : true,
+   "default" : "0.001"
   }],
  "storageRecipes" : [],
  "uiRecipes" : []
 }
-

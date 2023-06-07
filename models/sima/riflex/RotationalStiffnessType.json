@@ -4,4 +4,3 @@
  "values" : ["FIXED", "FREE", "LINEAR", "NON_LINEAR"],
  "labels" : ["Fixed", "Free", "Linear", "Non linear"]
 }
-

@@ -4,4 +4,3 @@
  "values" : ["NO_HYSTERESIS", "GENERATED_HYSTERESIS"],
  "labels" : ["No hysteresis", "Generated hysteresis"]
 }
-

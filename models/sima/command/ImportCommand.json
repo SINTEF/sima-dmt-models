@@ -9,6 +9,14 @@
    "attributeType" : "string",
    "optional" : true
   }, {
+   "name" : "parameters",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/sima/Property",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true,
+   "description" : "Additional parameters"
+  }, {
    "name" : "file",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
@@ -18,4 +26,3 @@
  "storageRecipes" : [],
  "uiRecipes" : []
 }
-

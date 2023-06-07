@@ -4,4 +4,3 @@
  "values" : ["CONSTANT", "EQUIDISTANT", "NONEQUIDISTANT", "TEXT", "TEXTARRAY"],
  "labels" : ["Constant number", "Equidistant signal", "Non-equidistant signal", "Text", "Array of text"]
 }
-

@@ -22,8 +22,14 @@
    "description" : "Site latitude in decimal degrees",
    "optional" : true,
    "default" : "0.0"
+  }, {
+   "name" : "friction",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Surface drag coefficient used for transverse gust spectrum",
+   "optional" : true,
+   "default" : "0.002"
   }],
  "storageRecipes" : [],
  "uiRecipes" : []
 }
-

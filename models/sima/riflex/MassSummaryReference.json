@@ -1,0 +1,6 @@
+{
+ "name" : "MassSummaryReference",
+ "type" : "core:Enum",
+ "values" : ["BODY", "COORDINATES"],
+ "labels" : ["BODY", "COORDINATES"]
+}

@@ -4,4 +4,3 @@
  "values" : ["ROLL_AND_PITCH_ANGLES", "AZIMUTH_AND_ROTATION_ANGLES", "AZIMUTH_VECTOR_COMOPONENTS"],
  "labels" : ["Roll and pitch angles", "Azimuth and rotation angles", "Azimuth vector components"]
 }
-

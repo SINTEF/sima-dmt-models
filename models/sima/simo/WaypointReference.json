@@ -4,4 +4,3 @@
  "values" : ["LOCAL", "GLOBAL"],
  "labels" : ["Locally defined relative to body location", "Globally defined"]
 }
-

@@ -4,4 +4,3 @@
  "values" : ["CONSTANT", "HARMONIC", "RAMP"],
  "labels" : ["Constant", "Harmonic", "Ramp"]
 }
-

@@ -1,0 +1,50 @@
+{
+ "name" : "Axis",
+ "type" : "core:Blueprint",
+ "abstract" : false,
+ "extends" : ["core:Entity"],
+ "attributes" : [{
+   "name" : "font",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/signals/report/Font",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "log",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "optional" : true,
+   "default" : "false"
+  }, {
+   "name" : "autoformat",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "optional" : false,
+   "default" : "true"
+  }, {
+   "name" : "format",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
+   "name" : "autoscale",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "optional" : false,
+   "default" : "true"
+  }, {
+   "name" : "showgrid",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "optional" : true,
+   "default" : "true"
+  }, {
+   "name" : "dashgridline",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "optional" : true,
+   "default" : "true"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}

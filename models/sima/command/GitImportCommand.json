@@ -1,0 +1,41 @@
+{
+ "name" : "GitImportCommand",
+ "type" : "core:Blueprint",
+ "abstract" : false,
+ "extends" : ["/command/Command"],
+ "attributes" : [{
+   "name" : "name",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
+   "name" : "parameters",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/sima/Property",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true,
+   "description" : "Additional parameters"
+  }, {
+   "name" : "uri",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "URI of the git repository",
+   "optional" : true
+  }, {
+   "name" : "branch",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "Branch name",
+   "optional" : true,
+   "default" : "master"
+  }, {
+   "name" : "location",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "location of repository on disk (default is within workspace)",
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}

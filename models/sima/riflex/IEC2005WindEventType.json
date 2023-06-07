@@ -4,4 +4,3 @@
  "values" : ["ECD", "EWSV", "EWSH", "EOG", "EDC"],
  "labels" : ["Extreme coherent gust with direction change - ECD", "Extreme vertical wind shear - EWSV", "Extreme horizontal wind shear - EWSH", "Extreme operating gust - EOG", "Extreme direction change - EDC"]
 }
-

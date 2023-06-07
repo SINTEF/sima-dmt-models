@@ -4,4 +4,3 @@
  "values" : ["NONE", "BRAKE"],
  "labels" : ["No mechanical brake", "Mechanical brake (linear damping)"]
 }
-

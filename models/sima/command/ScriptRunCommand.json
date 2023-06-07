@@ -1,0 +1,34 @@
+{
+ "name" : "ScriptRunCommand",
+ "type" : "core:Blueprint",
+ "abstract" : false,
+ "extends" : ["/command/Command"],
+ "attributes" : [{
+   "name" : "name",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
+   "name" : "parameters",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/sima/Property",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true,
+   "description" : "Additional parameters"
+  }, {
+   "name" : "file",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "File path to script",
+   "optional" : false
+  }, {
+   "name" : "function",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "Function call with parameters",
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}

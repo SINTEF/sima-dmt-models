@@ -1,0 +1,6 @@
+{
+ "name" : "LineStyle",
+ "type" : "core:Enum",
+ "values" : ["SOLID", "DASH", "BAR", "POINT"],
+ "labels" : ["Solid line", "Dashed line", "Bar plot", "Points only"]
+}

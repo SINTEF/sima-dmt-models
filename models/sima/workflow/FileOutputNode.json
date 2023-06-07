@@ -101,6 +101,12 @@
    "description" : "Writes a single input string into the given file",
    "optional" : true
   }, {
+   "name" : "indent",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Indent the output text",
+   "optional" : true
+  }, {
    "name" : "outputSlot",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "/post/OutputSlot",
@@ -110,4 +116,3 @@
  "storageRecipes" : [],
  "uiRecipes" : []
 }
-

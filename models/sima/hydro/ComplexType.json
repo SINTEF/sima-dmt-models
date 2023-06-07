@@ -4,4 +4,3 @@
  "values" : ["REAL_IMAG", "AMP_DEG_PHASE", "AMP_RAD_PHASE"],
  "labels" : ["Complex", "Amplitude Phase [deg]", "Amplitude Phase [rad]"]
 }
-

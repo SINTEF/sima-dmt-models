@@ -4,4 +4,3 @@
  "values" : ["NO_WIND", "FFT", "STATE_SPACE"],
  "labels" : ["No wind", "FFT", "State space model"]
 }
-

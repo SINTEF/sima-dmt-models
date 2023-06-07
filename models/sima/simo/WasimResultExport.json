@@ -16,15 +16,7 @@
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }, {
-   "name" : "maxNumberOfWaveComponents",
-   "type" : "core:BlueprintAttribute",
-   "attributeType" : "integer",
-   "description" : "Limit the number of wave components exported to file",
-   "optional" : true,
-   "default" : "0"
   }],
  "storageRecipes" : [],
  "uiRecipes" : []
 }
-

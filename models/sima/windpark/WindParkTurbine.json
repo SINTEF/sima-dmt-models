@@ -38,6 +38,14 @@
    "attributeType" : "number",
    "optional" : true
   }, {
+   "name" : "shaftDirection",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/windpark/ShaftDirection",
+   "description" : "Kind of shaft direction definition",
+   "optional" : true,
+   "default" : "POSI"
+  }, {
    "name" : "target",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
@@ -46,4 +54,3 @@
  "storageRecipes" : [],
  "uiRecipes" : []
 }
-

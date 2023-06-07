@@ -1,0 +1,9 @@
+{
+ "name" : "Signal",
+ "type" : "core:Blueprint",
+ "description" : "Signal base type",
+ "abstract" : true,
+ "extends" : ["/signals/SignalItem"],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}

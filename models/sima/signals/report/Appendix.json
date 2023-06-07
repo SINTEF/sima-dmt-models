@@ -1,0 +1,8 @@
+{
+ "name" : "Appendix",
+ "type" : "core:Blueprint",
+ "abstract" : false,
+ "extends" : ["/signals/report/Section"],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}

@@ -1,0 +1,6 @@
+{
+ "name" : "MassSummaryStep",
+ "type" : "core:Enum",
+ "values" : ["FINAL", "INITIAL"],
+ "labels" : ["FINAL", "INITIAL"]
+}

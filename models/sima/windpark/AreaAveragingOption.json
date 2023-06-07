@@ -4,4 +4,3 @@
  "values" : ["RADIAL", "CIRCULAR", "SQUARE"],
  "labels" : ["Radial distance", "Circular area", "Square area"]
 }
-

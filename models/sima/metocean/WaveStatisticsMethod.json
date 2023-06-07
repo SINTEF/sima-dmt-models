@@ -4,4 +4,3 @@
  "values" : ["FROM_DISTRIBUTION", "FROM_CONTOUR"],
  "labels" : ["From distribution", "From contour data"]
 }
-

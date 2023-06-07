@@ -4,4 +4,3 @@
  "values" : ["WARNING", "ERROR", "INFO", "COMMENT"],
  "labels" : ["Warning", "Error", "Info", "Comment"]
 }
-

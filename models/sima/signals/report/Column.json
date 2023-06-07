@@ -1,0 +1,25 @@
+{
+ "name" : "Column",
+ "type" : "core:Blueprint",
+ "abstract" : true,
+ "extends" : ["core:Entity"],
+ "attributes" : [{
+   "name" : "header",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
+   "name" : "label",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
+   "name" : "headerfont",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/signals/report/Font",
+   "contained" : true,
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}

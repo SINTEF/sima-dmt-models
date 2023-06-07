@@ -1,0 +1,6 @@
+{
+ "name" : "MotionType",
+ "type" : "core:Enum",
+ "values" : ["POSI", "DYND"],
+ "labels" : ["Global positions", "Dynamic displacements"]
+}

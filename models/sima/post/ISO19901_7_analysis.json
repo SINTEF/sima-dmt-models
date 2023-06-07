@@ -4,4 +4,3 @@
  "values" : ["INTACT_CONDITION", "ONE_FAILURE", "ONE_FAILURE_TRANSIENT", "TWO_FAILURES", "TWO_FAILURES_TRANSIENT"],
  "labels" : ["Intact condition", "One failure", "One failure, transient", "Two failures", "Two failures, transient"]
 }
-

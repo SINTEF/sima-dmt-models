@@ -4,4 +4,3 @@
  "values" : ["MAX", "MAX_ABSOLUTE", "MIN", "MEAN", "STANDARD_DEVIATION"],
  "labels" : ["Maximum", "Maximum of absolute input values", "Minimum", "Mean", "Standard deviation"]
 }
-

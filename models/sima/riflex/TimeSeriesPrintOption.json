@@ -4,4 +4,3 @@
  "values" : ["NO_PRINT", "PRINT_Y_Z", "PRINT_Y_Z_SKIP_FATIGUE"],
  "labels" : ["No print", "Print Y and Z curvature", "Print Y and Z curvature - skip fatigue calculation"]
 }
-

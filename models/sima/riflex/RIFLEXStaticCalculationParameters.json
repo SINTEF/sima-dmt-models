@@ -83,8 +83,13 @@
    "attributeType" : "boolean",
    "description" : "Store additional FEM data",
    "optional" : true
+  }, {
+   "name" : "massSummary",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/riflex/MassSummary",
+   "contained" : true,
+   "optional" : false
   }],
  "storageRecipes" : [],
  "uiRecipes" : []
 }
-

@@ -1,0 +1,48 @@
+{
+ "name" : "ExportCommand",
+ "type" : "core:Blueprint",
+ "abstract" : false,
+ "extends" : ["/command/Command"],
+ "attributes" : [{
+   "name" : "name",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
+   "name" : "parameters",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/sima/Property",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true,
+   "description" : "Additional parameters"
+  }, {
+   "name" : "file",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "Path to file, e.g stask",
+   "optional" : false
+  }, {
+   "name" : "delete",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Delete the file if it already exist",
+   "optional" : true
+  }, {
+   "name" : "dependencies",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Include task dependencies automatically",
+   "optional" : true,
+   "default" : "true"
+  }, {
+   "name" : "tasks",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "Optional list of task names to export (if not given all tasks will be exported)",
+   "optional" : true,
+   "dimensions" : "*"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}

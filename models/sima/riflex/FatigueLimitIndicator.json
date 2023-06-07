@@ -4,4 +4,3 @@
  "values" : ["NO_LIMIT", "STRESS_CYCLES", "STRESS_RANGE"],
  "labels" : ["No fatigue limit", "Stress cycles", "Stress range"]
 }
-

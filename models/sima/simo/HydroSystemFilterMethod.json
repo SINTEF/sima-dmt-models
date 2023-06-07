@@ -4,4 +4,3 @@
  "values" : ["BLOCKED", "NONE", "ACTIVE"],
  "labels" : ["Block low pass translation velocities.", "No filtering", "Filter activated"]
 }
-

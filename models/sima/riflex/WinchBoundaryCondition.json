@@ -4,4 +4,3 @@
  "values" : ["FIXED", "VESSEL", "FLOATE"],
  "labels" : ["Fixed boundaries", "Attached to support vessel", "Attached to SIMO body"]
 }
-

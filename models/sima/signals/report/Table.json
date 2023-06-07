@@ -1,0 +1,27 @@
+{
+ "name" : "Table",
+ "type" : "core:Blueprint",
+ "abstract" : false,
+ "extends" : ["/signals/report/ReportItem"],
+ "attributes" : [{
+   "name" : "caption",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
+   "name" : "transposed",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "optional" : true,
+   "default" : "false"
+  }, {
+   "name" : "columns",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/signals/report/Column",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}

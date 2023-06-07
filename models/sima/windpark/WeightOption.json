@@ -4,4 +4,3 @@
  "values" : ["UNIFORM", "TRUNCATED_JINC", "WINDOWED_JINC"],
  "labels" : ["Uniform", "Truncated Jinc", "Window Jinc"]
 }
-

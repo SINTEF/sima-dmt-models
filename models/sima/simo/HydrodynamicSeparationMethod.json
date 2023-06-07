@@ -4,4 +4,3 @@
  "values" : ["BW2_FILTERING", "NLP_FILTERING", "NONE"],
  "labels" : ["2nd Order Butterworth Filter", "Non-Linearity Pass Filter", "No estimation"]
 }
-

@@ -4,4 +4,3 @@
  "values" : ["CONSTANT_PROPORTIONAL", "UPDATED_PROPORTIONAL"],
  "labels" : ["Constant proportional", "Updated proportional"]
 }
-

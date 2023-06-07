@@ -1,0 +1,34 @@
+{
+ "name" : "StorageTaskRootCommand",
+ "type" : "core:Blueprint",
+ "abstract" : false,
+ "extends" : ["/command/Command"],
+ "attributes" : [{
+   "name" : "name",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
+   "name" : "parameters",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/sima/Property",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true,
+   "description" : "Additional parameters"
+  }, {
+   "name" : "task",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "Name of storage task",
+   "optional" : false
+  }, {
+   "name" : "root",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "Storage task root",
+   "optional" : false
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}

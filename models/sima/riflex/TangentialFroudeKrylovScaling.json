@@ -1,7 +1,0 @@
-{
- "name" : "TangentialFroudeKrylovScaling",
- "type" : "core:Enum",
- "values" : ["ON", "OFF"],
- "labels" : ["On", "Off"]
-}
-

@@ -42,7 +42,7 @@
    "attributeType" : "string",
    "enumType" : "/simo/RandomGenerator",
    "optional" : true,
-   "default" : "LEGACY"
+   "default" : "MERSENNE"
   }, {
    "name" : "hydrodynamicCrossSectionProperties",
    "type" : "core:BlueprintAttribute",
@@ -110,4 +110,3 @@
  "storageRecipes" : [],
  "uiRecipes" : []
 }
-

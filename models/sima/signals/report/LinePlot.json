@@ -1,0 +1,89 @@
+{
+ "name" : "LinePlot",
+ "type" : "core:Blueprint",
+ "abstract" : false,
+ "extends" : ["core:Entity"],
+ "attributes" : [{
+   "name" : "title",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : false
+  }, {
+   "name" : "xlabel",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
+   "name" : "ylabel",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
+   "name" : "showlegend",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "optional" : true,
+   "default" : "true"
+  }, {
+   "name" : "showtitle",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "optional" : true,
+   "default" : "true"
+  }, {
+   "name" : "caption",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
+   "name" : "width",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "integer",
+   "optional" : true
+  }, {
+   "name" : "height",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "integer",
+   "optional" : true
+  }, {
+   "name" : "size",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/signals/report/PlotSize",
+   "optional" : true,
+   "default" : "DYNAMIC"
+  }, {
+   "name" : "titlefont",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/signals/report/Font",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "legendfont",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/signals/report/Font",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "xaxis",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/signals/report/Axis",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "yaxis",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/signals/report/Axis",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "lines",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/signals/report/PlotLine",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : false
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}

@@ -1,7 +1,6 @@
 {
  "name" : "IncomingWind",
  "type" : "core:Enum",
- "values" : ["CONSTANT", "INCOMING"],
- "labels" : ["Constant", "Incoming"]
+ "values" : ["AMBIENT", "INCOMING"],
+ "labels" : ["Ambient", "Incoming"]
 }
-

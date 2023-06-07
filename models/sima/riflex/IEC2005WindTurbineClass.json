@@ -4,4 +4,3 @@
  "values" : ["NONE", "IA", "IIA", "IIIA", "IB", "IIB", "IIIB", "IC", "IIC", "IIIC", "S"],
  "labels" : ["None", "IA", "IIA", "IIIA", "IB", "IIB", "IIIB", "IC", "IIC", "IIIC", "S"]
 }
-

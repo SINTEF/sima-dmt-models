@@ -1,0 +1,20 @@
+{
+ "name" : "NumberColumn",
+ "type" : "core:Blueprint",
+ "abstract" : false,
+ "extends" : ["/signals/report/Column"],
+ "attributes" : [{
+   "name" : "cells",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : false,
+   "dimensions" : "*"
+  }, {
+   "name" : "format",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}

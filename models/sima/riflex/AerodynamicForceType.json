@@ -4,4 +4,3 @@
  "values" : ["NONE", "AIRFOIL", "MORISON"],
  "labels" : ["None", "Airfoil", "Morison Type"]
 }
-

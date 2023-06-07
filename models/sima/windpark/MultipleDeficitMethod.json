@@ -4,4 +4,3 @@
  "values" : ["MAXOP", "DIRECT", "QUADRATIC"],
  "labels" : ["MAX operator", "Direct summation", "Quadratic square summation"]
 }
-

@@ -4,4 +4,3 @@
  "values" : ["LINEAR_MATERIAL", "ELASTIC_PLASTIC", "STRAIN_STRESS_CURVE", "LINEAR_MATERIAL_INCLUDING_SHEAR"],
  "labels" : ["Linear material", "Elastic-plastic", "Strain-stress curve", "Linear material including shear"]
 }
-

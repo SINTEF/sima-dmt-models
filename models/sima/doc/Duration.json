@@ -4,4 +4,3 @@
  "values" : ["MEDIUM", "FAST", "SLOW", "VERY_SLOW"],
  "labels" : ["Medium", "Fast", "Slow", "Very slow"]
 }
-

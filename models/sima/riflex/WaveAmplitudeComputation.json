@@ -4,4 +4,3 @@
  "values" : ["DETERMINISTIC", "STOCHASTIC"],
  "labels" : ["Deterministic", "Stochastic"]
 }
-

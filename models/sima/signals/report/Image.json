@@ -1,0 +1,29 @@
+{
+ "name" : "Image",
+ "type" : "core:Blueprint",
+ "abstract" : false,
+ "extends" : ["/signals/report/ReportItem"],
+ "attributes" : [{
+   "name" : "path",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : false
+  }, {
+   "name" : "caption",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
+   "name" : "height",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "integer",
+   "optional" : true
+  }, {
+   "name" : "width",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "integer",
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}

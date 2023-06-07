@@ -4,4 +4,3 @@
  "values" : ["TOTAL", "MATERIAL"],
  "labels" : ["Total stiffness damping", "Material stiffness damping"]
 }
-

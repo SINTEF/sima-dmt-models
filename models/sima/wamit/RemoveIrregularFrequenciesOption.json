@@ -4,4 +4,3 @@
  "values" : ["NO", "USEGDF", "AUTOMATICDISCRETIZATION"],
  "labels" : ["No", "Use GDF", "Automatic Discretization"]
 }
-

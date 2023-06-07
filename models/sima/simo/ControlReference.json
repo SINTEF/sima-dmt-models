@@ -4,4 +4,3 @@
  "values" : ["GLOBAL", "BODY", "WAYPOINT", "GBCIRCLE"],
  "labels" : ["Global", "Body Relative", "Waypoint", "Global circle"]
 }
-

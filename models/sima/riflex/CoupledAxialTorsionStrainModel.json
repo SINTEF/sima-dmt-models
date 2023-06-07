@@ -55,6 +55,20 @@
    "description" : "Damping coefficients in normal direction",
    "optional" : true
   }, {
+   "name" : "normalDirectionScaling",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Scaling factor for Froude-Krylov term in Morison’s equation in normal direction",
+   "optional" : true,
+   "default" : "1.0"
+  }, {
+   "name" : "tangentialDirectionScaling",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Scale for Froude-Krylov term in Morison’s equation in tangential direction",
+   "optional" : true,
+   "default" : "1.0"
+  }, {
    "name" : "cdt",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
@@ -126,21 +140,6 @@
    "attributeType" : "number",
    "description" : "Linear drag force coefficient in normal direction.",
    "optional" : true
-  }, {
-   "name" : "scfk",
-   "type" : "core:BlueprintAttribute",
-   "attributeType" : "number",
-   "description" : "Scaling factor for Froude-Krylov term in Morison’s equation in normal direction",
-   "optional" : true,
-   "default" : "1.0"
-  }, {
-   "name" : "scfkt",
-   "type" : "core:BlueprintAttribute",
-   "attributeType" : "string",
-   "enumType" : "/riflex/TangentialFroudeKrylovScaling",
-   "description" : "Scale for Froude-Krylov term in Morison’s equation in tangential direction",
-   "optional" : true,
-   "default" : "ON"
   }, {
    "name" : "hydrodynamicRadiationInputCode",
    "type" : "core:BlueprintAttribute",
@@ -356,4 +355,3 @@
  "storageRecipes" : [],
  "uiRecipes" : []
 }
-

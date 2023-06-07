@@ -1,7 +1,6 @@
 {
  "name" : "RandomGenerator",
  "type" : "core:Enum",
- "values" : ["LEGACY", "MERSENNE"],
- "labels" : ["Legacy", "Mersenne twister"]
+ "values" : ["MERSENNE", "LEGACY"],
+ "labels" : ["Mersenne twister", "Legacy"]
 }
-

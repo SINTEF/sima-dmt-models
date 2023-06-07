@@ -4,4 +4,3 @@
  "values" : ["JAR_FILE_CONTROLLER", "BLADED_CONTROLLER"],
  "labels" : ["Java based controller", "Bladed style controller"]
 }
-

@@ -4,4 +4,3 @@
  "values" : ["INCLUDE", "EXCLUDE"],
  "labels" : ["Include wind moment", "Exclude wind moment"]
 }
-

@@ -1,0 +1,48 @@
+{
+ "name" : "WorkflowRunCommand",
+ "type" : "core:Blueprint",
+ "abstract" : false,
+ "extends" : ["/command/Command"],
+ "attributes" : [{
+   "name" : "name",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
+   "name" : "parameters",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/sima/Property",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true,
+   "description" : "Additional parameters"
+  }, {
+   "name" : "file",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "Optional path to SIMA stask to import before running the workflow",
+   "optional" : true
+  }, {
+   "name" : "task",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "Name of task containing workflow",
+   "optional" : false
+  }, {
+   "name" : "workflow",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "Workflow name",
+   "optional" : false
+  }, {
+   "name" : "input",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/sima/Property",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true,
+   "description" : "Enables override of task variables or workflow input values.\nSpecified on the form Hs=2.0;Tp=12.0 where Hs and Tp are names of variables or workflow inputs.\nVariables will take precendence if duplicate names exist.\nIt is also possible to specify more complex input by using the json string representation of SIMA signals."
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}

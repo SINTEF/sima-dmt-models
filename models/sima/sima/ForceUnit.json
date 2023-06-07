@@ -4,4 +4,3 @@
  "values" : ["NEWTON", "KILO_NEWTON", "MEGA_NEWTON", "TONNE"],
  "labels" : ["N", "kN", "MN", "ton-force"]
 }
-

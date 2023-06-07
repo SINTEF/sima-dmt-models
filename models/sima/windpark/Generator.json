@@ -118,7 +118,7 @@
    "attributeType" : "string",
    "enumType" : "/windpark/IncomingWind",
    "optional" : true,
-   "default" : "CONSTANT"
+   "default" : "AMBIENT"
   }, {
    "name" : "speedIncrement",
    "type" : "core:BlueprintAttribute",
@@ -319,8 +319,48 @@
    "attributeType" : "number",
    "description" : "Cutoff frequency",
    "optional" : true
+  }, {
+   "name" : "useYawMisalignment",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "optional" : true,
+   "default" : "false"
+  }, {
+   "name" : "interpolateYawMisalignment",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Option for interpolation on specified yaw misalignment performance relations",
+   "optional" : true,
+   "default" : "false"
+  }, {
+   "name" : "wakeFlowModel",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/windpark/WakeFlowModel",
+   "optional" : true,
+   "default" : "JIMENEZ"
+  }, {
+   "name" : "yawIncrement",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Yaw misalignment increment used in deficit computation",
+   "optional" : true
+  }, {
+   "name" : "shaftDirectionDefinition",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/windpark/ShaftDirection",
+   "description" : "Kind of shaft direction definition",
+   "optional" : true,
+   "default" : "YAW"
+  }, {
+   "name" : "windTurbineMotions",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/windpark/WindTurbineMotion",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []
 }
-

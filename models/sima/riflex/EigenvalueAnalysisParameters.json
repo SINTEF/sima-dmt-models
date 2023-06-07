@@ -16,7 +16,7 @@
    "attributeType" : "number",
    "description" : "Maximum acceptable relative error in computed eigenvalues",
    "optional" : true,
-   "default" : "0.0"
+   "default" : "1.0E-10"
   }, {
    "name" : "numberOfLanczoSteps",
    "type" : "core:BlueprintAttribute",
@@ -49,4 +49,3 @@
  "storageRecipes" : [],
  "uiRecipes" : []
 }
-

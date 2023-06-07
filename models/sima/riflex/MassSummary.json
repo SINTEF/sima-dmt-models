@@ -1,0 +1,73 @@
+{
+ "name" : "MassSummary",
+ "type" : "core:Blueprint",
+ "abstract" : false,
+ "extends" : ["/sima/MOAO"],
+ "attributes" : [{
+   "name" : "calculateMassSummary",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "optional" : true
+  }, {
+   "name" : "reference",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/MassSummaryReference",
+   "description" : "load step where this mass is calculated in static analysis",
+   "optional" : true,
+   "default" : "BODY"
+  }, {
+   "name" : "x",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "X coordinate",
+   "optional" : true
+  }, {
+   "name" : "y",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Y coordinate",
+   "optional" : true
+  }, {
+   "name" : "z",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Z coordinate",
+   "optional" : true
+  }, {
+   "name" : "rz",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Rotation about z-axis",
+   "optional" : true
+  }, {
+   "name" : "body",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/simo/SIMOBody",
+   "contained" : false,
+   "optional" : true
+  }, {
+   "name" : "includeAllLines",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "optional" : true,
+   "default" : "true"
+  }, {
+   "name" : "lines",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/riflex/ARLine",
+   "dimensions" : "*",
+   "contained" : false,
+   "optional" : true
+  }, {
+   "name" : "loadStep",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/riflex/MassSummaryStep",
+   "description" : "load step where this mass is calculated in static analysis",
+   "optional" : true,
+   "default" : "FINAL"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}

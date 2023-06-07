@@ -1,0 +1,27 @@
+{
+ "name" : "Font",
+ "type" : "core:Blueprint",
+ "abstract" : false,
+ "extends" : ["core:Entity"],
+ "attributes" : [{
+   "name" : "size",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "integer",
+   "optional" : true,
+   "default" : "10"
+  }, {
+   "name" : "font",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
+   "name" : "style",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/signals/report/FontStyle",
+   "optional" : true,
+   "default" : "NORMAL"
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}

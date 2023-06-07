@@ -4,4 +4,3 @@
  "values" : ["NRUN", "NONE", "TURRET", "HLA"],
  "labels" : ["Predefined run", "Member is fixed to its master", "Turret", "Import from HLA"]
 }
-

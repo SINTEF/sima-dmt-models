@@ -1,0 +1,6 @@
+{
+ "name" : "WakeFlowModel",
+ "type" : "core:Enum",
+ "values" : ["JIMENEZ", "BASTANKHAH"],
+ "labels" : ["Jimenez", "Bastankhah"]
+}

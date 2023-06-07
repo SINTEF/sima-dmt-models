@@ -4,4 +4,3 @@
  "values" : ["NONE", "DIMENSIONAL", "NONDIMENSIONAL"],
  "labels" : ["None", "Dimensional coefficients", "Nondimensional coefficients"]
 }
-

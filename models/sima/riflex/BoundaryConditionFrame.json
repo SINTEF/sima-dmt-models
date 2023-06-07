@@ -4,4 +4,3 @@
  "values" : ["GLOBAL", "VESSEL", "SKEW_GLOBAL", "SKEW_VESSEL"],
  "labels" : ["Global", "Vessel", "Skew Global", "Skew Vessel"]
 }
-

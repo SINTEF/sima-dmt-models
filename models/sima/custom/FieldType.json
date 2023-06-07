@@ -4,4 +4,3 @@
  "values" : ["TEXT", "CHECK", "FILE", "DROPDOWN"],
  "labels" : ["Text", "Checkbox", "File", "Drop-down"]
 }
-

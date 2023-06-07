@@ -4,4 +4,3 @@
  "values" : ["TRANSIENT", "NEWTON_RAPHSON"],
  "labels" : ["Transient", "Newton-Raphson"]
 }
-

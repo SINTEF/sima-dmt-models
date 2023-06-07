@@ -1,0 +1,24 @@
+{
+ "name" : "Container",
+ "type" : "core:Blueprint",
+ "description" : "Containers contain signals and other containers",
+ "abstract" : false,
+ "extends" : ["/signals/SignalItem"],
+ "attributes" : [{
+   "name" : "signals",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/signals/Signal",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "containers",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/signals/Container",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}

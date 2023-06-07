@@ -28,6 +28,7 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/TimeSeriesPrintOption",
+   "description" : "Optional tension/curvature export to ascci file ( viv_tension_curvature_ts.txt )",
    "optional" : true,
    "default" : "NO_PRINT"
   }, {
@@ -123,4 +124,3 @@
  "storageRecipes" : [],
  "uiRecipes" : []
 }
-

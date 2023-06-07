@@ -4,4 +4,3 @@
  "values" : ["PERIOD", "COMMA"],
  "labels" : ["Period as decimal separator", "Comma as decimal separator"]
 }
-

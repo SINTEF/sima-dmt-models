@@ -4,4 +4,3 @@
  "values" : ["POSITION", "VELOCITY", "FORCE"],
  "labels" : ["Position", "Velocity", "Force"]
 }
-

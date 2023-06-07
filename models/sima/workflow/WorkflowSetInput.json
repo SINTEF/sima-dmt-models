@@ -4,4 +4,3 @@
  "values" : ["MANUAL", "FILE", "INPUT"],
  "labels" : ["Manual input", "From file", "From input"]
 }
-

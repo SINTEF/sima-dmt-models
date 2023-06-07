@@ -4,4 +4,3 @@
  "values" : ["FREE", "FIXED_PRESCRIBED", "SLAVE"],
  "labels" : ["Free", "Fixed or Prescribed", "Slave"]
 }
-

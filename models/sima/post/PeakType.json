@@ -4,4 +4,3 @@
  "values" : ["LOCAL", "GLOBAL", "BLOCK"],
  "labels" : ["Local", "Global", "Block"]
 }
-

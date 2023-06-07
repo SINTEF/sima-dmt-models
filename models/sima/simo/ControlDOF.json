@@ -4,4 +4,3 @@
  "values" : ["NONE", "SURGE", "SWAY", "HEAVE", "ROLL", "PITCH", "YAW"],
  "labels" : ["None", "Surge", "Sway", "Heave", "Roll", "Pitch", "Yaw"]
 }
-

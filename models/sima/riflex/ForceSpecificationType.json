@@ -4,4 +4,3 @@
  "values" : ["SIMPLE_EXPRESSION", "TIMESERIES_FROM_FILE"],
  "labels" : ["Forces described by simple expression", "Forces described by timeseries from file"]
 }
-

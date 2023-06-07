@@ -1,0 +1,19 @@
+{
+ "name" : "Section",
+ "type" : "core:Blueprint",
+ "abstract" : false,
+ "extends" : ["/signals/report/ReportItemContainer", "/signals/report/ReportItem"],
+ "attributes" : [{
+   "name" : "title",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : false
+  }, {
+   "name" : "landscape",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}

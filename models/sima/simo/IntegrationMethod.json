@@ -4,4 +4,3 @@
  "values" : ["RUNGE_KUTTA", "EULER"],
  "labels" : ["Runge Kutta", "Euler"]
 }
-

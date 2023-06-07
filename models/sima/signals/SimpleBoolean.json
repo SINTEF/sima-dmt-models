@@ -1,0 +1,14 @@
+{
+ "name" : "SimpleBoolean",
+ "type" : "core:Blueprint",
+ "abstract" : false,
+ "extends" : ["/signals/Signal"],
+ "attributes" : [{
+   "name" : "value",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "optional" : false
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}

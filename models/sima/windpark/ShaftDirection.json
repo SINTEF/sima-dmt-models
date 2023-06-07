@@ -1,0 +1,6 @@
+{
+ "name" : "ShaftDirection",
+ "type" : "core:Enum",
+ "values" : ["POSI", "YAW"],
+ "labels" : ["Global XY plane", "Yaw misalignment"]
+}

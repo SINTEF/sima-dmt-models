@@ -48,12 +48,6 @@
    "description" : "Load coefficient for in-line excitation",
    "optional" : true
   }, {
-   "name" : "alphil",
-   "type" : "core:BlueprintAttribute",
-   "attributeType" : "number",
-   "description" : "Nondimensional parameter giving freedom to in-line excitation frequency",
-   "optional" : true
-  }, {
    "name" : "chh",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
@@ -81,4 +75,3 @@
  "storageRecipes" : [],
  "uiRecipes" : []
 }
-

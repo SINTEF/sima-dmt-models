@@ -4,4 +4,3 @@
  "values" : ["SLUG", "SIMULATION_LENGTH"],
  "labels" : ["Analysis termination controlled by slug", "Analysis termination controlled by specified length of simulation"]
 }
-

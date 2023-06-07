@@ -1,0 +1,19 @@
+{
+ "name" : "signals",
+ "type" : "core:Package",
+ "_meta_" : {
+  "type" : "core:Meta",
+  "version" : "2",
+  "dependencies" : [{
+    "alias" : "core",
+    "address" : "system/SIMOS",
+    "version" : "0.0.1",
+    "protocol" : "dmss"
+   }, {
+    "alias" : "signals",
+    "address" : "signals",
+    "version" : "2",
+    "protocol" : "dmss"
+   }]
+ }
+}

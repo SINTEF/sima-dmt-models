@@ -4,4 +4,3 @@
  "values" : ["RELATIVE", "STATIC", "ABSOLUTE"],
  "labels" : ["Relative wind velocity", "Static forces only", "Absolute wind velocity"]
 }
-

@@ -4,4 +4,3 @@
  "values" : ["GLOBAL_X_DIRECTION", "GLOBAL_Y_DIRECTION", "GLOBAL_Z_DIRECTION", "ROTATION_AROUND_GLOBAL_X", "ROTATION_AROUND_GLOBAL_Y", "ROTATION_AROUND_GLOBAL_Z", "TRANSLATION_IN_GLOBAL_XY_PLANE", "TRANSLATION_IN_GLOBAL_XZ_PLANE", "TRANSLATION_IN_GLOBAL_YZ_PLANE"],
  "labels" : ["Global X-direction", "Global Y-direction", "Global Z-direction", "Rotation around global X-axis", "Rotation around global Y-axis", "Rotation around global Z-axis", "Translation in global XY-plane", "Translation in global XZ-plane", "Translation in global YZ-plane"]
 }
-

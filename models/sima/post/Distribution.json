@@ -4,4 +4,3 @@
  "values" : ["RAYLEIGH", "WEIBULL", "GUMBEL"],
  "labels" : ["Rayleigh", "Weibull", "Gumbel"]
 }
-

@@ -4,4 +4,3 @@
  "values" : ["PRESCRIBED", "SIX_DOF_TIME_DOMAIN", "SIX_DOF_SEPARATED_ANALYSIS", "THREE_DOF_TIME_DOMAIN"],
  "labels" : ["Prescribed", "6 DOF - time domain", "6 DOF - separated analysis", "3 DOF - time domain"]
 }
-

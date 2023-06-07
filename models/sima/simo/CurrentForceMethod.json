@@ -4,4 +4,3 @@
  "values" : ["RELATIVE", "STATIC"],
  "labels" : ["Relative current velocity", "Static forces only"]
 }
-

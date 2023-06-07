@@ -4,4 +4,3 @@
  "values" : ["FIXED_POINT", "NEWTON_RAPHSON"],
  "labels" : ["Fixed point", "Newton-Raphson"]
 }
-

@@ -53,12 +53,12 @@
    "optional" : true,
    "default" : "1"
   }, {
-   "name" : "randomGenerator",
+   "name" : "randomNumberGenerator",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/simo/RandomGenerator",
    "optional" : true,
-   "default" : "LEGACY"
+   "default" : "MERSENNE"
   }, {
    "name" : "headingCorrection",
    "type" : "core:BlueprintAttribute",
@@ -490,4 +490,3 @@
  "storageRecipes" : [],
  "uiRecipes" : []
 }
-

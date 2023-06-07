@@ -74,7 +74,7 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/riflex/BodyLocation",
-   "description" : "If a supernode is used as location option and it is not part of a line, a dummy line will be created automatically.",
+   "description" : "A SIMO body node is added to the element model for each body. \nThe node may have a rigid connection to a slender system node or may be a free or fixed node without connection to the slender system.",
    "optional" : true,
    "default" : "ELEMENT"
   }, {
@@ -144,4 +144,3 @@
  "storageRecipes" : [],
  "uiRecipes" : []
 }
-

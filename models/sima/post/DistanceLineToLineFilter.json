@@ -49,8 +49,12 @@
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
+  }, {
+   "name" : "outputVector",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []
 }
-

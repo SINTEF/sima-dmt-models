@@ -4,4 +4,3 @@
  "values" : ["CSV", "COLUMN", "HDF5", "EXCEL", "JSON", "AUTOMATIC"],
  "labels" : ["CSV", "Column", "HDF5", "Excel", "Json", "Automatic"]
 }
-

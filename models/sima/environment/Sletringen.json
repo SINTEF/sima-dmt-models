@@ -26,7 +26,7 @@
    "name" : "friction",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
-   "description" : "Surface drag coefficient.\r\nAlso used for transverse gust spectrum, if specified in DYNMOD.",
+   "description" : "Surface drag coefficient.\r\nAlso used for transverse gust spectrum, if specified.",
    "optional" : true,
    "default" : "0.002"
   }, {
@@ -47,4 +47,3 @@
  "storageRecipes" : [],
  "uiRecipes" : []
 }
-

@@ -4,4 +4,3 @@
  "values" : ["NONE", "LOSS", "BACKUP"],
  "labels" : ["No generator torque fault", "Total loss of generator torque", "Backup power - torque follows scaled torque control"]
 }
-

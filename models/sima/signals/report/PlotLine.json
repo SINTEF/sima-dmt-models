@@ -1,0 +1,68 @@
+{
+ "name" : "PlotLine",
+ "type" : "core:Blueprint",
+ "abstract" : false,
+ "extends" : ["core:Entity"],
+ "attributes" : [{
+   "name" : "xlabel",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
+   "name" : "ylabel",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
+   "name" : "showlegend",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "optional" : true,
+   "default" : "true"
+  }, {
+   "name" : "x",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : false,
+   "dimensions" : "*"
+  }, {
+   "name" : "y",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : false,
+   "dimensions" : "*"
+  }, {
+   "name" : "linewidth",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "integer",
+   "optional" : true,
+   "default" : "1"
+  }, {
+   "name" : "pointsize",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "integer",
+   "optional" : true,
+   "default" : "1"
+  }, {
+   "name" : "linestyle",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/signals/report/LineStyle",
+   "optional" : true,
+   "default" : "SOLID"
+  }, {
+   "name" : "pointstyle",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "/signals/report/PointStyle",
+   "optional" : true,
+   "default" : "NONE"
+  }, {
+   "name" : "color",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}

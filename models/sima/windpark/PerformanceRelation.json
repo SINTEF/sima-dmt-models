@@ -4,32 +4,19 @@
  "abstract" : false,
  "extends" : ["/sima/MOAO"],
  "attributes" : [{
-   "name" : "windSpeed",
+   "name" : "yawAngle",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
+   "description" : "Yaw misalignment",
    "optional" : true
   }, {
-   "name" : "rotorSpeed",
+   "name" : "items",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "number",
-   "optional" : true
-  }, {
-   "name" : "bladePitch",
-   "type" : "core:BlueprintAttribute",
-   "attributeType" : "number",
-   "optional" : true
-  }, {
-   "name" : "power",
-   "type" : "core:BlueprintAttribute",
-   "attributeType" : "number",
-   "optional" : true
-  }, {
-   "name" : "thrust",
-   "type" : "core:BlueprintAttribute",
-   "attributeType" : "number",
+   "attributeType" : "/windpark/PerformanceRelationItem",
+   "dimensions" : "*",
+   "contained" : true,
    "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []
 }
-

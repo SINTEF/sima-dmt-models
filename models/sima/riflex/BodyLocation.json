@@ -4,4 +4,3 @@
  "values" : ["ELEMENT", "NODE", "SUPER_NODE", "POSITION"],
  "labels" : ["Element", "Node", "Supernode", "Position"]
 }
-

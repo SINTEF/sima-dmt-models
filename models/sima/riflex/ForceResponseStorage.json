@@ -60,8 +60,14 @@
    "attributeType" : "boolean",
    "description" : "Store results for seafloor contact elements and / or soil layer profile (SLP) contact elements",
    "optional" : true
+  }, {
+   "name" : "transformations",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "/riflex/ElementTransformation",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
   }],
  "storageRecipes" : [],
  "uiRecipes" : []
 }
-
