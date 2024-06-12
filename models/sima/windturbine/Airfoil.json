@@ -1,8 +1,7 @@
 {
  "name" : "Airfoil",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject"],
+ "extends" : ["sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -52,18 +51,16 @@
   }, {
    "name" : "reynoldItems",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/windturbine/ReynoldItem",
+   "attributeType" : "./ReynoldItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "points",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/windturbine/FoilPoint",
+   "attributeType" : "./FoilPoint",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

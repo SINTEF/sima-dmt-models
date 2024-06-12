@@ -1,12 +1,11 @@
 {
  "name" : "VariableItemSet",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "variable",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Variable",
+   "attributeType" : "sima:sima/Variable",
    "contained" : false,
    "optional" : false
   }, {
@@ -15,7 +14,5 @@
    "attributeType" : "string",
    "optional" : true,
    "dimensions" : "*"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

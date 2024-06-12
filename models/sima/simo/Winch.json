@@ -1,8 +1,7 @@
 {
  "name" : "Winch",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject"],
+ "extends" : ["sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -12,7 +11,7 @@
    "name" : "controlType",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/WinchControl",
+   "enumType" : "./WinchControl",
    "description" : "Type of coupling winch control",
    "optional" : true,
    "default" : "PREDEFINED"
@@ -43,11 +42,9 @@
   }, {
    "name" : "intervals",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/WinchRunInterval",
+   "attributeType" : "./WinchRunInterval",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

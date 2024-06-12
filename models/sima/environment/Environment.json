@@ -2,7 +2,5 @@
  "name" : "Environment",
  "type" : "core:Blueprint",
  "abstract" : true,
- "extends" : ["/sima/NamedObject", "/sima/ConditionSelectable"],
- "storageRecipes" : [],
- "uiRecipes" : []
+ "extends" : ["sima:sima/NamedObject", "sima:sima/ConditionSelectable"]
 }

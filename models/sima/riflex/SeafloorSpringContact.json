@@ -1,8 +1,7 @@
 {
  "name" : "SeafloorSpringContact",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/riflex/SeafloorContact"],
+ "extends" : ["./SeafloorContact"],
  "attributes" : [{
    "name" : "axialStiffness",
    "type" : "core:BlueprintAttribute",
@@ -62,7 +61,5 @@
    "attributeType" : "boolean",
    "description" : "Apply lateral contact forces at the external contact radius, giving a torsional moment",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

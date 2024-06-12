@@ -1,8 +1,7 @@
 {
  "name" : "ExternalProgramNode",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/post/RunNode"],
+ "extends" : ["sima:post/RunNode"],
  "attributes" : [{
    "name" : "x",
    "type" : "core:BlueprintAttribute",
@@ -31,7 +30,7 @@
   }, {
    "name" : "controlSignalInputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/ControlSignalInputSlot",
+   "attributeType" : "sima:post/ControlSignalInputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -50,14 +49,14 @@
   }, {
    "name" : "fileInputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/workflow/FileInputSlot",
+   "attributeType" : "./FileInputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "fileOutputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/workflow/FileOutputSlot",
+   "attributeType" : "./FileOutputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -65,7 +64,7 @@
    "name" : "fileFormat",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/post/FileFormat",
+   "enumType" : "sima:post/FileFormat",
    "description" : "file format",
    "optional" : true,
    "default" : "HDF5"
@@ -75,7 +74,7 @@
    "attributeType" : "boolean",
    "description" : "When checked, the workflow will fail if the external program exits with a non-zero exit code. This is usually the preferred behaviour.",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "addInputFiles",
    "type" : "core:BlueprintAttribute",
@@ -85,7 +84,7 @@
   }, {
    "name" : "inputFileSlot",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/InputSlot",
+   "attributeType" : "sima:post/InputSlot",
    "contained" : true,
    "optional" : true
   }, {
@@ -94,7 +93,5 @@
    "attributeType" : "string",
    "description" : "Environment variables to set when executing. Separate each variable with a semicolon and path segments with colon.",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

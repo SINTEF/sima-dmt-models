@@ -1,13 +1,12 @@
 {
  "name" : "SoilPenetration",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "frictionModel",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/SoilFriction",
+   "enumType" : "./SoilFriction",
    "description" : "Soil force control parameter",
    "optional" : true,
    "default" : "OPEN_COMPARTMENT"
@@ -45,21 +44,21 @@
    "name" : "seabedImport",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/HLA",
+   "enumType" : "./HLA",
    "description" : "Import of seabead depth values from HLA Depth value replaces ZCONT",
    "optional" : true,
    "default" : "NO_IMPORT"
   }, {
    "name" : "frictionElements",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SoilFrictionElement",
+   "attributeType" : "./SoilFrictionElement",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "capacityElements",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SoilCapacityElement",
+   "attributeType" : "./SoilCapacityElement",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -69,22 +68,20 @@
    "attributeType" : "number",
    "description" : "Stiffness due to compressibility of water inside the cavity",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "tsuct",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Time for starting suction pumps",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "cflow",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Flow coefficient in/out of closed compartment",
    "optional" : true,
-   "default" : "0.0"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : 0.0
+  }]
 }

@@ -1,0 +1,6 @@
+{
+ "name" : "NodeOutputSlot",
+ "type" : "core:Blueprint",
+ "abstract" : true,
+ "extends" : ["sima:sima/Named"]
+}

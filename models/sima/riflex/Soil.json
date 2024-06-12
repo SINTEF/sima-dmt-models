@@ -2,7 +2,5 @@
  "name" : "Soil",
  "type" : "core:Blueprint",
  "abstract" : true,
- "extends" : ["/riflex/Material"],
- "storageRecipes" : [],
- "uiRecipes" : []
+ "extends" : ["./Material"]
 }

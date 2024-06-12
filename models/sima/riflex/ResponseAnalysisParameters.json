@@ -1,13 +1,12 @@
 {
  "name" : "ResponseAnalysisParameters",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "iterationMethod",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/ResponseIterationMethod",
+   "enumType" : "./ResponseIterationMethod",
    "description" : "Response iteration method",
    "optional" : true,
    "default" : "NEWTON_RAPHSON"
@@ -23,12 +22,12 @@
    "attributeType" : "integer",
    "description" : "Maximum number of iterations",
    "optional" : true,
-   "default" : "30"
+   "default" : 30
   }, {
    "name" : "convergenceCriterion",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/ConvergenceCriterion",
+   "enumType" : "./ConvergenceCriterion",
    "description" : "Convergence criterion",
    "optional" : true,
    "default" : "AMPNOR"
@@ -38,19 +37,19 @@
    "attributeType" : "number",
    "description" : "Convergence limit for the iteration",
    "optional" : true,
-   "default" : "1.0E-4"
+   "default" : 1.0E-4
   }, {
    "name" : "initialResponseEstimate",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Scaling factor for the initial response estimate",
    "optional" : true,
-   "default" : "0.5"
+   "default" : 0.5
   }, {
    "name" : "responseFrequencyOption",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/ResponseFrequencyOption",
+   "enumType" : "./ResponseFrequencyOption",
    "description" : "Option for combining response frequencies",
    "optional" : true,
    "default" : "CONCURRENT"
@@ -60,40 +59,40 @@
    "attributeType" : "integer",
    "description" : "Number of dominating frequencies given in user defined frequency\nranking",
    "optional" : true,
-   "default" : "0"
+   "default" : 0
   }, {
    "name" : "amplitudeLimit",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Amplitude limit for including frequency normalized by\nthe minimum diameter.",
    "optional" : true,
-   "default" : "0.01"
+   "default" : 0.01
   }, {
    "name" : "lowerFrequencyCutoff",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Cut-off excitation parameter ration for frequencies below the identified dominating frequency.",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "upperFrequencyCutoff",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Cut-off excitation parameter ration for frequencies above the identified dominating frequency.",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "relativeStructuralDamping",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Relative structural damping",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "forceSwitch",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/ForceSwitch",
+   "enumType" : "./ForceSwitch",
    "description" : "Option for force calculation",
    "optional" : true,
    "default" : "USE_CURVATURE"
@@ -101,7 +100,7 @@
    "name" : "printSwitch",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/PrintSwitch",
+   "enumType" : "./PrintSwitch",
    "description" : "Print switch",
    "optional" : true,
    "default" : "FINAL_RESULTS"
@@ -111,15 +110,13 @@
    "attributeType" : "boolean",
    "description" : "This data group allows additional material and slip damping to be specified for some or all segments in the system. \nThis structural damping is read from separate files and is applied in addition to the relative structural damping level RELDAM. \nThe structural damping is given as a function of the response curvature and is therefore updated during the response iterations.",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "additionalStructuralDampingParameters",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/AdditionalStructuralDampingParameters",
+   "attributeType" : "./AdditionalStructuralDampingParameters",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

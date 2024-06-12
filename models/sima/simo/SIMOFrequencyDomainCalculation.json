@@ -1,20 +1,19 @@
 {
  "name" : "SIMOFrequencyDomainCalculation",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "analysisType",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/FrequencyAnalysisType",
+   "enumType" : "./FrequencyAnalysisType",
    "optional" : true,
    "default" : "WAVE_FREQUENCY"
   }, {
    "name" : "linearization",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/Linearization",
+   "enumType" : "./Linearization",
    "optional" : true,
    "default" : "STOCHASTIC"
   }, {
@@ -22,24 +21,24 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : true,
-   "default" : "10"
+   "default" : 10
   }, {
    "name" : "bodies",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/FrequencyDomainBodyItem",
+   "attributeType" : "./FrequencyDomainBodyItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "frequencyRangeLF",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/FrequencyRangeDefinition",
+   "attributeType" : "./FrequencyRangeDefinition",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "frequencyRangeWF",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/FrequencyRangeDefinition",
+   "attributeType" : "./FrequencyRangeDefinition",
    "contained" : true,
    "optional" : false
   }, {
@@ -47,27 +46,25 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "estimationTime",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true,
-   "default" : "10800.0"
+   "default" : 10800.0
   }, {
    "name" : "specifyLinesToSimulate",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "linesToSimulate",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/FrequnecyDomainLineItem",
+   "attributeType" : "./FrequnecyDomainLineItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

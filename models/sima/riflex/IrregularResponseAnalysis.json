@@ -1,8 +1,7 @@
 {
  "name" : "IrregularResponseAnalysis",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "waveTimeSeriesFile",
    "type" : "core:BlueprintAttribute",
@@ -15,19 +14,19 @@
    "attributeType" : "number",
    "description" : "Length of simulation",
    "optional" : true,
-   "default" : "11000.0"
+   "default" : 11000.0
   }, {
    "name" : "timeStep",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Simulation time step",
    "optional" : true,
-   "default" : "0.1"
+   "default" : 0.1
   }, {
    "name" : "irrWaveIndicator",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/IrregularWaveIndicator",
+   "enumType" : "./IrregularWaveIndicator",
    "description" : "Irregular wave indicator",
    "optional" : true,
    "default" : "NEW"
@@ -35,7 +34,7 @@
    "name" : "irrMotionIndicator",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/IrregularMotionIndicator",
+   "enumType" : "./IrregularMotionIndicator",
    "description" : "Irregular motion indicator",
    "optional" : true,
    "default" : "STAT"
@@ -43,7 +42,7 @@
    "name" : "lowFrequencyMotionIndicator",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/LowFrequencyMotionIndicator",
+   "enumType" : "./LowFrequencyMotionIndicator",
    "description" : "Low frequency motion indicator",
    "optional" : true,
    "default" : "NONE"
@@ -53,7 +52,7 @@
    "attributeType" : "number",
    "description" : "Time (in generated time series) that dynamic simulation will start from",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "motionScaling",
    "type" : "core:BlueprintAttribute",
@@ -63,37 +62,35 @@
   }, {
    "name" : "supportVesselMotionScalingItems",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/SupportVesselMotionScalingItem",
+   "attributeType" : "./SupportVesselMotionScalingItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "irregularWaveProcedure",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/IrregularWaveProcedure",
+   "attributeType" : "./IrregularWaveProcedure",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "waveTimeSeries",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/WaveTimeSeries",
+   "attributeType" : "./WaveTimeSeries",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "wfMotionTimeSeries",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/WFMotionTimeSeries",
+   "attributeType" : "./WFMotionTimeSeries",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "lfMotionTimeSeries",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/LFMotionTimeSeries",
+   "attributeType" : "./LFMotionTimeSeries",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

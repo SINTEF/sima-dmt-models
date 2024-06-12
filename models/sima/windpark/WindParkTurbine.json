@@ -1,8 +1,7 @@
 {
  "name" : "WindParkTurbine",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject"],
+ "extends" : ["sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,7 +10,7 @@
   }, {
    "name" : "_type",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/windpark/WindTurbineType",
+   "attributeType" : "./WindTurbineType",
    "contained" : false,
    "optional" : true
   }, {
@@ -41,7 +40,7 @@
    "name" : "shaftDirection",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/windpark/ShaftDirection",
+   "enumType" : "./ShaftDirection",
    "description" : "Kind of shaft direction definition",
    "optional" : true,
    "default" : "POSI"
@@ -50,7 +49,5 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

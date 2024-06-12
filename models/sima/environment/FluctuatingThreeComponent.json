@@ -1,8 +1,7 @@
 {
  "name" : "FluctuatingThreeComponent",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/environment/Wind"],
+ "extends" : ["./Wind"],
  "attributes" : [{
    "name" : "direction",
    "type" : "core:BlueprintAttribute",
@@ -18,7 +17,7 @@
   }, {
    "name" : "velocityProfiles",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/environment/FluctuatingWindVelocityProfile",
+   "attributeType" : "./FluctuatingWindVelocityProfile",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -100,8 +99,6 @@
    "attributeType" : "integer",
    "description" : "Buffer size: Number of wind crossectional planes (Slices) in memory",
    "optional" : true,
-   "default" : "800"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : 800
+  }]
 }

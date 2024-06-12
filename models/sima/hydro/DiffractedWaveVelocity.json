@@ -1,8 +1,7 @@
 {
  "name" : "DiffractedWaveVelocity",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "directions",
    "type" : "core:BlueprintAttribute",
@@ -18,22 +17,20 @@
   }, {
    "name" : "u",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/DirectionDependentComplexValues",
+   "attributeType" : "./DirectionDependentComplexValues",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "v",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/DirectionDependentComplexValues",
+   "attributeType" : "./DirectionDependentComplexValues",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "w",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/DirectionDependentComplexValues",
+   "attributeType" : "./DirectionDependentComplexValues",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

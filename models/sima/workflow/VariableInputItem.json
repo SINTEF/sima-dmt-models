@@ -1,12 +1,11 @@
 {
  "name" : "VariableInputItem",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "parameter",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/SingleParameter",
+   "attributeType" : "sima:sima/SingleParameter",
    "contained" : false,
    "optional" : false
   }, {
@@ -14,7 +13,5 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

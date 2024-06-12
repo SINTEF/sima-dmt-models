@@ -1,8 +1,7 @@
 {
  "name" : "RegularSegment",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "length",
    "type" : "core:BlueprintAttribute",
@@ -15,25 +14,25 @@
    "attributeType" : "integer",
    "description" : "Number of elements",
    "optional" : true,
-   "default" : "10"
+   "default" : 10
   }, {
    "name" : "crossSection",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/CrossSection",
+   "attributeType" : "./CrossSection",
    "contained" : false,
    "optional" : false,
    "description" : "Cross-sectional component type."
   }, {
    "name" : "nodalComponent",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/NodalComponentType",
+   "attributeType" : "./NodalComponentType",
    "contained" : false,
    "optional" : true,
    "description" : "Nodal component (body or connector) attached at end 1 of the segment."
   }, {
    "name" : "externalWrapping",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/ExternalWrappingType",
+   "attributeType" : "./ExternalWrappingType",
    "contained" : false,
    "optional" : true,
    "description" : "External wrapping (distributed weight or buoyancy) component."
@@ -61,15 +60,13 @@
    "attributeType" : "number",
    "description" : "Offset in line local Y-axis segment end 2",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "offsetZ",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Offset in line local Z-axis segment end 2",
    "optional" : true,
-   "default" : "0.0"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : 0.0
+  }]
 }

@@ -1,8 +1,7 @@
 {
  "name" : "Plot",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/post/OperationNode", "/post/OutputNode"],
+ "extends" : ["./OperationNode", "./OutputNode"],
  "attributes" : [{
    "name" : "x",
    "type" : "core:BlueprintAttribute",
@@ -31,34 +30,34 @@
   }, {
    "name" : "controlSignalInputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/ControlSignalInputSlot",
+   "attributeType" : "./ControlSignalInputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "filterInputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/InputSlot",
+   "attributeType" : "./InputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "filterOutputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/OutputSlot",
+   "attributeType" : "./OutputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "figureTemplate",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/FigureTemplate",
+   "attributeType" : "./FigureTemplate",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "traces",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/TraceConfiguration",
+   "attributeType" : "./TraceConfiguration",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -88,7 +87,5 @@
    "attributeType" : "boolean",
    "description" : "Will export all signals as plot",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

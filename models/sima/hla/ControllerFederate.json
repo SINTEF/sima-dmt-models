@@ -1,8 +1,7 @@
 {
  "name" : "ControllerFederate",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/hla/HLAFederate"],
+ "extends" : ["./HLAFederate"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -16,18 +15,16 @@
   }, {
    "name" : "allHLAControlConfigurations",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hla/HLAControlConfiguration",
+   "attributeType" : "./HLAControlConfiguration",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "winchGroups",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hla/HLAWinchGroup",
+   "attributeType" : "./HLAWinchGroup",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

@@ -1,16 +1,13 @@
 {
  "name" : "RegularWave",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/environment/Wave"],
+ "extends" : ["./Wave"],
  "attributes" : [{
    "name" : "items",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/environment/RegularWaveItem",
+   "attributeType" : "./RegularWaveItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

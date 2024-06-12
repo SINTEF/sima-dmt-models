@@ -1,8 +1,7 @@
 {
  "name" : "ComparisonOperation",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/post/OperationNode"],
+ "extends" : ["./OperationNode"],
  "attributes" : [{
    "name" : "x",
    "type" : "core:BlueprintAttribute",
@@ -31,26 +30,26 @@
   }, {
    "name" : "controlSignalInputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/ControlSignalInputSlot",
+   "attributeType" : "./ControlSignalInputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "first",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/InputSlot",
+   "attributeType" : "./InputSlot",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "second",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/InputSlot",
+   "attributeType" : "./InputSlot",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "outputSlot",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/OutputSlot",
+   "attributeType" : "./OutputSlot",
    "contained" : true,
    "optional" : false
   }, {
@@ -59,22 +58,20 @@
    "attributeType" : "number",
    "description" : "Compares two values by using a factor times the smallest of the two numbers",
    "optional" : true,
-   "default" : "1.0E-5"
+   "default" : 1.0E-5
   }, {
    "name" : "threshold",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Values less than this number is considered zero",
    "optional" : true,
-   "default" : "1.0E-15"
+   "default" : 1.0E-15
   }, {
    "name" : "fail",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "If checked the operation will fail the current run when the inputs are different",
    "optional" : true,
-   "default" : "true"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : true
+  }]
 }

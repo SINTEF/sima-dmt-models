@@ -1,8 +1,7 @@
 {
  "name" : "InitialCondition",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/Condition", "/sima/NamedObject"],
+ "extends" : ["sima:sima/Condition", "sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "changeNumber",
    "type" : "core:BlueprintAttribute",
@@ -11,7 +10,7 @@
   }, {
    "name" : "resultContainer",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/ResultContainer",
+   "attributeType" : "sima:sima/ResultContainer",
    "contained" : true,
    "optional" : true
   }, {
@@ -19,7 +18,5 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

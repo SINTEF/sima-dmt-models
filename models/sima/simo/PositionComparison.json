@@ -1,21 +1,18 @@
 {
  "name" : "PositionComparison",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "first",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Position",
+   "attributeType" : "sima:sima/Position",
    "contained" : false,
    "optional" : true
   }, {
    "name" : "second",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Position",
+   "attributeType" : "sima:sima/Position",
    "contained" : false,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

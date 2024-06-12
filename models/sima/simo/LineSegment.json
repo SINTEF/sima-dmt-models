@@ -1,8 +1,7 @@
 {
  "name" : "LineSegment",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "length",
    "type" : "core:BlueprintAttribute",
@@ -12,14 +11,14 @@
   }, {
    "name" : "buoy",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/BuoyType",
+   "attributeType" : "./BuoyType",
    "contained" : false,
    "optional" : true
   }, {
    "name" : "segmentType",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/SegmentType",
+   "enumType" : "./SegmentType",
    "description" : "Segment type",
    "optional" : true,
    "default" : "CATENARY"
@@ -51,9 +50,9 @@
    "name" : "emFac",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
-   "description" : "Factor of elasticity - 2 for chains - 1 for other segment types",
+   "description" : "Factor of elasticity",
    "optional" : true,
-   "default" : "1.0"
+   "default" : 1.0
   }, {
    "name" : "transverseDrag",
    "type" : "core:BlueprintAttribute",
@@ -81,11 +80,9 @@
   }, {
    "name" : "elongationCharacteristic",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/ElongationCharacteristic",
+   "attributeType" : "./ElongationCharacteristic",
    "contained" : false,
    "optional" : true,
    "description" : "Non-linear Elongation characteristic"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

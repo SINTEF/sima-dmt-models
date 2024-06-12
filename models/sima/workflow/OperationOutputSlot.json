@@ -1,8 +1,7 @@
 {
  "name" : "OperationOutputSlot",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/post/OutputSlot"],
+ "extends" : ["sima:post/OutputSlot"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,10 +10,8 @@
   }, {
    "name" : "filterOutputSlot",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/OutputSlot",
+   "attributeType" : "sima:post/OutputSlot",
    "contained" : false,
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

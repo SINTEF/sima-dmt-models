@@ -1,8 +1,7 @@
 {
  "name" : "BumperData",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject"],
+ "extends" : ["sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -14,38 +13,36 @@
    "attributeType" : "number",
    "description" : "Velocity limit for damping force",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "characteristic",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/ForceDampingCharacteristic",
+   "attributeType" : "./ForceDampingCharacteristic",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "bodyEnd1",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Point3",
+   "attributeType" : "sima:sima/Point3",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "bodyEnd2",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Point3",
+   "attributeType" : "sima:sima/Point3",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "globalEnd1",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Point3",
+   "attributeType" : "sima:sima/Point3",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "globalEnd2",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Point3",
+   "attributeType" : "sima:sima/Point3",
    "contained" : true,
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

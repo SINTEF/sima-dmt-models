@@ -1,0 +1,43 @@
+{
+ "name" : "BottomContactStorage",
+ "type" : "core:Blueprint",
+ "extends" : ["sima:sima/MOAO"],
+ "attributes" : [{
+   "name" : "store",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Store results for seafloor contact elements and / or soil layer profile (SLP) contact elements",
+   "optional" : true
+  }, {
+   "name" : "storageStep",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "integer",
+   "description" : "Code for storage of internal forces. Storage for every <storage step> given.",
+   "optional" : true,
+   "default" : 1
+  }, {
+   "name" : "format",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "./FileFormatCode",
+   "description" : "Format code for additional output of time series",
+   "optional" : true,
+   "default" : "BINARY_OUTPUT_ONLY"
+  }, {
+   "name" : "forces",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "./BottomContactForceStorage",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true,
+   "description" : "Specification of nodes for displacement storage"
+  }, {
+   "name" : "touchDownPoints",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "./TouchDownPointStorage",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true,
+   "description" : "Specification of nodes for displacement storage"
+  }]
+}

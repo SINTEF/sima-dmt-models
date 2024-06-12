@@ -1,8 +1,7 @@
 {
  "name" : "CoupledAxialTorsionStrainItem",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/riflex/AxialStiffnessItem", "/riflex/TorsionStiffnessItem"],
+ "extends" : ["./AxialStiffnessItem", "./TorsionStiffnessItem"],
  "attributes" : [{
    "name" : "axialForce",
    "type" : "core:BlueprintAttribute",
@@ -33,7 +32,5 @@
    "attributeType" : "number",
    "description" : " Tension/torsion coupling parameter",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

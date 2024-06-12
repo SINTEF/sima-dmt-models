@@ -1,8 +1,7 @@
 {
  "name" : "Vector3",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["./MOAO"],
  "attributes" : [{
    "name" : "x",
    "type" : "core:BlueprintAttribute",
@@ -21,7 +20,5 @@
    "attributeType" : "number",
    "description" : "Z component",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

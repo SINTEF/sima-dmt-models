@@ -1,8 +1,7 @@
 {
  "name" : "SIMOBodyPoint",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject", "/simo/BodyForceComponent"],
+ "extends" : ["sima:sima/NamedObject", "./BodyForceComponent"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,40 +10,38 @@
   }, {
    "name" : "winch",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/Winch",
+   "attributeType" : "./Winch",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "tensioner",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SIMOTensioner",
+   "attributeType" : "./SIMOTensioner",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "heaveCompensator",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SIMOHeaveCompensator",
+   "attributeType" : "./SIMOHeaveCompensator",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "x",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
-   "description" : "Local  x position",
+   "description" : "X-coordinate of attachment point in body fixed (local) coordinate system",
    "optional" : true
   }, {
    "name" : "y",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
-   "description" : "Local  y position",
+   "description" : "Y-coordinate of attachment point in body fixed (local) coordinate system",
    "optional" : true
   }, {
    "name" : "z",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
-   "description" : "Local z position",
+   "description" : "Z-coordinate of attachment point in body fixed (local) coordinate system",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

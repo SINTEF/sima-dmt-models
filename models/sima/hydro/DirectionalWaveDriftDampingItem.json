@@ -1,12 +1,11 @@
 {
  "name" : "DirectionalWaveDriftDampingItem",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/hydro/SimplifiedWaveDriftDamping"],
+ "extends" : ["./SimplifiedWaveDriftDamping"],
  "attributes" : [{
    "name" : "items",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/WaveDriftDampingItem",
+   "attributeType" : "./WaveDriftDampingItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : false
@@ -15,7 +14,5 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

@@ -1,8 +1,7 @@
 {
  "name" : "StrouhalConstantNumberProperty",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/riflex/StrouhalSpecificationProperty"],
+ "extends" : ["./StrouhalSpecificationProperty"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -14,8 +13,6 @@
    "attributeType" : "number",
    "description" : "Fixed Strouhal number",
    "optional" : true,
-   "default" : "0.19"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : 0.19
+  }]
 }

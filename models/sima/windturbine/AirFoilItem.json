@@ -1,8 +1,7 @@
 {
  "name" : "AirFoilItem",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "angle",
    "type" : "core:BlueprintAttribute",
@@ -27,7 +26,5 @@
    "attributeType" : "number",
    "description" : "Moment coefficient",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

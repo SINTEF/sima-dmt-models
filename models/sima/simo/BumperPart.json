@@ -1,8 +1,7 @@
 {
  "name" : "BumperPart",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "radius",
    "type" : "core:BlueprintAttribute",
@@ -24,16 +23,14 @@
   }, {
    "name" : "end1",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Point3",
+   "attributeType" : "sima:sima/Point3",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "end2",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Point3",
+   "attributeType" : "sima:sima/Point3",
    "contained" : true,
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

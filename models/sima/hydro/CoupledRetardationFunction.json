@@ -1,12 +1,11 @@
 {
  "name" : "CoupledRetardationFunction",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/hydro/RetardationFunction"],
+ "extends" : ["./RetardationFunction"],
  "attributes" : [{
    "name" : "retardationElements",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/RetardationElementData",
+   "attributeType" : "./RetardationElementData",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -18,10 +17,8 @@
   }, {
    "name" : "additionalDamping",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/LinearDampingMatrix",
+   "attributeType" : "./LinearDampingMatrix",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

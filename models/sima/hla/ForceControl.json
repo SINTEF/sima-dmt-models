@@ -1,12 +1,11 @@
 {
  "name" : "ForceControl",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/custom/CustomComponent"],
+ "extends" : ["sima:custom/CustomComponent"],
  "attributes" : [{
    "name" : "force",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hla/HLAForce",
+   "attributeType" : "./HLAForce",
    "contained" : false,
    "optional" : true
   }, {
@@ -39,7 +38,5 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

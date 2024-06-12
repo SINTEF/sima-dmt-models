@@ -1,8 +1,7 @@
 {
  "name" : "FixedForceElongation",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/simo/PositioningElement"],
+ "extends" : ["./PositioningElement"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,20 +10,20 @@
   }, {
    "name" : "localPoint",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Point3",
+   "attributeType" : "sima:sima/Point3",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "globalPoint",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Point3",
+   "attributeType" : "sima:sima/Point3",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "failureMode",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/ActivationFailureMode",
+   "enumType" : "./ActivationFailureMode",
    "description" : "Failure mode:\r\n - No failure\r\n - Failure by exceeding the breaking strength after specified time\r\n - Activation of element after specified time if absolute value of force is below breaking strength",
    "optional" : true,
    "default" : "NONE"
@@ -34,19 +33,19 @@
    "attributeType" : "number",
    "description" : "Earliest possible time of failure",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "breakingStrength",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Breaking strength",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "method",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/FixedForceElongationMethod",
+   "enumType" : "./FixedForceElongationMethod",
    "description" : "Method for initialisation of the fixed force elongation",
    "optional" : true,
    "default" : "PRETENSION_LOCAL"
@@ -56,35 +55,33 @@
    "attributeType" : "number",
    "description" : "Pretension",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "direction",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Direction of line in horizontal plane",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "angle",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Angle of line from horizontal plane (positive downwards)",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "velocityLimit",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Velocity limit for friction force (Damping Exponent = 0)",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "characteristic",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/ForceDampingCharacteristic",
+   "attributeType" : "./ForceDampingCharacteristic",
    "contained" : true,
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

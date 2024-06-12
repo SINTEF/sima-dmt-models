@@ -1,0 +1,31 @@
+{
+ "name" : "ChainCrossSection",
+ "type" : "core:Blueprint",
+ "extends" : ["./CrossSection"],
+ "attributes" : [{
+   "name" : "name",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
+   "name" : "diameter",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Nominal chain diameter",
+   "optional" : true
+  }, {
+   "name" : "steelGrade",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "./SteelGrade",
+   "optional" : true,
+   "default" : "R3"
+  }, {
+   "name" : "constructionType",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "./ConstructionType",
+   "optional" : true,
+   "default" : "STUDLESS"
+  }]
+}

@@ -1,8 +1,7 @@
 {
  "name" : "ColumnConfiguration",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/post/PathSpecification"],
+ "extends" : ["./PathSpecification"],
  "attributes" : [{
    "name" : "path",
    "type" : "core:BlueprintAttribute",
@@ -33,7 +32,5 @@
    "attributeType" : "integer",
    "description" : "Column font size. Will be used when renderin the table in a report,etc.",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

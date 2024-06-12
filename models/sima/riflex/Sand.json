@@ -1,8 +1,7 @@
 {
  "name" : "Sand",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/riflex/Soil"],
+ "extends" : ["./Soil"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -14,7 +13,7 @@
    "attributeType" : "number",
    "description" : "Strain velocity exponent for damping model",
    "optional" : true,
-   "default" : "1.0"
+   "default" : 1.0
   }, {
    "name" : "calculateDamping",
    "type" : "core:BlueprintAttribute",
@@ -24,7 +23,7 @@
   }, {
    "name" : "dampingItems",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/SoilDampingItem",
+   "attributeType" : "./SoilDampingItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -74,29 +73,27 @@
    "attributeType" : "number",
    "description" : "Angle of soil friction on pile wall",
    "optional" : true,
-   "default" : "15.0"
+   "default" : 15.0
   }, {
    "name" : "limitingSkinFriction",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Limiting unit skin friction",
    "optional" : true,
-   "default" : "48000.0"
+   "default" : 48000.0
   }, {
    "name" : "bearingFactor",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Bearing factor",
    "optional" : true,
-   "default" : "8.0"
+   "default" : 8.0
   }, {
    "name" : "limitingTipResistance",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Limiting tip resistance",
    "optional" : true,
-   "default" : "1900000.0"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : 1900000.0
+  }]
 }

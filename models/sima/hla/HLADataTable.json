@@ -1,8 +1,7 @@
 {
  "name" : "HLADataTable",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/Named"],
+ "extends" : ["sima:sima/Named"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,7 +10,7 @@
   }, {
    "name" : "signals",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hla/HLASignal",
+   "attributeType" : "./HLASignal",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -20,7 +19,5 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

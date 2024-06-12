@@ -1,8 +1,7 @@
 {
  "name" : "FontDescription",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["./MOAO"],
  "attributes" : [{
    "name" : "font",
    "type" : "core:BlueprintAttribute",
@@ -17,16 +16,14 @@
    "name" : "style",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/sima/FontStyle",
+   "enumType" : "./FontStyle",
    "optional" : true,
    "default" : "NORMAL"
   }, {
    "name" : "color",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/SIMAColor",
+   "attributeType" : "./SIMAColor",
    "contained" : true,
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

@@ -1,8 +1,7 @@
 {
  "name" : "NameSpecification",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/post/PathSpecification"],
+ "extends" : ["./PathSpecification"],
  "attributes" : [{
    "name" : "path",
    "type" : "core:BlueprintAttribute",
@@ -13,7 +12,5 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

@@ -1,8 +1,7 @@
 {
  "name" : "ReportFragment",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/report/ReportItem", "/sima/Named"],
+ "extends" : ["./ReportItem", "sima:sima/Named"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,10 +10,8 @@
   }, {
    "name" : "fragment",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/report/ReportFragmentReference",
+   "attributeType" : "./ReportFragmentReference",
    "contained" : false,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

@@ -1,29 +1,26 @@
 {
  "name" : "TableCellStyle",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "font",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/FontDescription",
+   "attributeType" : "sima:sima/FontDescription",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "horizontalTextAlignment",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/report/HorizontalAlignment",
+   "enumType" : "./HorizontalAlignment",
    "optional" : true,
    "default" : "LEFT"
   }, {
    "name" : "verticalTextAlignment",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/report/VerticalAlignment",
+   "enumType" : "./VerticalAlignment",
    "optional" : true,
    "default" : "TOP"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

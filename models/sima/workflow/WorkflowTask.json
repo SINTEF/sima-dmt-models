@@ -1,8 +1,7 @@
 {
  "name" : "WorkflowTask",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/Task"],
+ "extends" : ["sima:sima/Task"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,21 +10,21 @@
   }, {
    "name" : "doubleVariables",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/DoubleVariable",
+   "attributeType" : "sima:sima/DoubleVariable",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "integerVariables",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/IntegerVariable",
+   "attributeType" : "sima:sima/IntegerVariable",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "stringVariables",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/StringVariable",
+   "attributeType" : "sima:sima/StringVariable",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -34,29 +33,27 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : true,
-   "default" : "0"
+   "default" : 0
   }, {
    "name" : "scripts",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/SIMAScript",
+   "attributeType" : "sima:sima/SIMAScript",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "packages",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/workflow/WorkflowContainerPackage",
+   "attributeType" : "./WorkflowContainerPackage",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "workflows",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/workflow/Workflow",
+   "attributeType" : "./Workflow",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

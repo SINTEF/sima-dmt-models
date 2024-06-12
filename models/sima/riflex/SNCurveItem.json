@@ -1,8 +1,7 @@
 {
  "name" : "SNCurveItem",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "slope",
    "type" : "core:BlueprintAttribute",
@@ -15,7 +14,5 @@
    "attributeType" : "number",
    "description" : "Transition point between curve segment (i-1) and i - logN",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

@@ -1,39 +1,36 @@
 {
  "name" : "CoupledRadiationDataGroup",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "frequencyDependentAddedMass",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/CoupledFrequencyDependentAddedMass",
+   "attributeType" : "./CoupledFrequencyDependentAddedMass",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "frequencyDependentDamping",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/CoupledFrequencyDependentDamping",
+   "attributeType" : "./CoupledFrequencyDependentDamping",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "retardationFunction",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/CoupledRetardationFunction",
+   "attributeType" : "./CoupledRetardationFunction",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "addedMassZeroFrequency",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/CoupledAddedMassZeroFrequency",
+   "attributeType" : "./CoupledAddedMassZeroFrequency",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "addedMassInfiniteFrequency",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/CoupledAddedMassInfiniteFrequency",
+   "attributeType" : "./CoupledAddedMassInfiniteFrequency",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

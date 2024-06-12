@@ -1,8 +1,7 @@
 {
  "name" : "ScaleFilter",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/post/OperationNode"],
+ "extends" : ["./OperationNode"],
  "attributes" : [{
    "name" : "x",
    "type" : "core:BlueprintAttribute",
@@ -31,21 +30,21 @@
   }, {
    "name" : "controlSignalInputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/ControlSignalInputSlot",
+   "attributeType" : "./ControlSignalInputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "filterInputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/InputSlot",
+   "attributeType" : "./InputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "filterOutputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/OutputSlot",
+   "attributeType" : "./OutputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -54,14 +53,14 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "scale",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "scale input series with given factor",
    "optional" : true,
-   "default" : "1.0"
+   "default" : 1.0
   }, {
    "name" : "unit",
    "type" : "core:BlueprintAttribute",
@@ -73,11 +72,9 @@
    "name" : "axis",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/post/SignalAxis",
+   "enumType" : "./SignalAxis",
    "description" : "Select the value from the x-axis or the y-axis",
    "optional" : true,
    "default" : "Y"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

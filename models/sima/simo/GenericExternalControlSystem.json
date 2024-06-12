@@ -1,8 +1,7 @@
 {
  "name" : "GenericExternalControlSystem",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject"],
+ "extends" : ["sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -23,45 +22,43 @@
   }, {
    "name" : "measurementEntities",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SignalEntity",
+   "attributeType" : "./SignalEntity",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "feedbackEntities",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SignalEntity",
+   "attributeType" : "./SignalEntity",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "intParameters",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/NamedIntParameter",
+   "attributeType" : "./NamedIntParameter",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "doubleParameters",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/NamedDoubleParameter",
+   "attributeType" : "./NamedDoubleParameter",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "stringParameters",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/NamedStringParameter",
+   "attributeType" : "./NamedStringParameter",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "libraryPaths",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/LibraryPaths",
+   "attributeType" : "sima:sima/LibraryPaths",
    "contained" : true,
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

@@ -1,12 +1,11 @@
 {
  "name" : "RIFLEXStaticCalculationParameters",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "loadTypeItems",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/StaticLoadTypeItem",
+   "attributeType" : "./StaticLoadTypeItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -14,7 +13,7 @@
    "name" : "matrixStorage",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/MatrixStorage",
+   "enumType" : "./MatrixStorage",
    "optional" : true,
    "default" : "SPARSE"
   }, {
@@ -23,11 +22,11 @@
    "attributeType" : "number",
    "description" : "Scaling factor to amplify or reduce the referred current profile",
    "optional" : true,
-   "default" : "1.0"
+   "default" : 1.0
   }, {
    "name" : "staticLoadComponents",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/StaticLoadComponent",
+   "attributeType" : "./StaticLoadComponent",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -46,13 +45,13 @@
    "name" : "loadAndMassFormulation",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/LoadAndMassFormulation",
+   "enumType" : "./LoadAndMassFormulation",
    "optional" : true,
    "default" : "LUMPED"
   }, {
    "name" : "parameterVariation",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/ParameterVariation",
+   "attributeType" : "./ParameterVariation",
    "contained" : true,
    "optional" : false
   }, {
@@ -61,12 +60,12 @@
    "attributeType" : "boolean",
    "description" : "Store visualisation responses indicator",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "matrixPlotStorage",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/MatrixPlotStorage",
+   "enumType" : "./MatrixPlotStorage",
    "description" : "Storage option for Matrix Plot",
    "optional" : true,
    "default" : "LOAD_GROUP"
@@ -76,7 +75,7 @@
    "attributeType" : "boolean",
    "description" : "Start arc length at zero for each line",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "storeStructuralData",
    "type" : "core:BlueprintAttribute",
@@ -86,10 +85,8 @@
   }, {
    "name" : "massSummary",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/MassSummary",
+   "attributeType" : "./MassSummary",
    "contained" : true,
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

@@ -1,8 +1,7 @@
 {
  "name" : "PositionControl",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/custom/CustomComponent"],
+ "extends" : ["sima:custom/CustomComponent"],
  "attributes" : [{
    "name" : "hlaObjectId",
    "type" : "core:BlueprintAttribute",
@@ -11,10 +10,8 @@
   }, {
    "name" : "reference",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Position",
+   "attributeType" : "sima:sima/Position",
    "contained" : true,
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

@@ -1,20 +1,19 @@
 {
  "name" : "NonLinearIntegrationProcedure",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "equilibriumIterationFrequency",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Frequency of equilibrium iteration",
    "optional" : true,
-   "default" : "1"
+   "default" : 1
   }, {
    "name" : "iterationType",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/IterationType",
+   "enumType" : "./IterationType",
    "description" : "Type of iteration if iteration is to be performed",
    "optional" : true,
    "default" : "TRUE_NEWTON_RAPHSON"
@@ -24,12 +23,12 @@
    "attributeType" : "integer",
    "description" : "Maximum number of iterations for steps with iteration",
    "optional" : true,
-   "default" : "10"
+   "default" : 10
   }, {
    "name" : "convergenceNorm",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/ConvergenceNorm",
+   "enumType" : "./ConvergenceNorm",
    "optional" : true,
    "default" : "DISP"
   }, {
@@ -38,19 +37,19 @@
    "attributeType" : "number",
    "description" : "Desired accuracy for equilibrium iteration measured by a modified euclidian displacement norm (norm of squared translations). Recommended values: 10e-6 - 10e-5.",
    "optional" : true,
-   "default" : "1.0E-5"
+   "default" : 1.0E-5
   }, {
    "name" : "energyAccuracy",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Required accuracy measured by energy norm. This value is relevant only if Convergence Norm is 'Both'.",
    "optional" : true,
-   "default" : "1.0E-5"
+   "default" : 1.0E-5
   }, {
    "name" : "iterationContinuation",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/IterationContinuationCode",
+   "enumType" : "./IterationContinuationCode",
    "description" : "Code for continuation after iteration",
    "optional" : true,
    "default" : "CONTINUED"
@@ -60,15 +59,13 @@
    "attributeType" : "integer",
    "description" : "Code for automatic subdivision of time step",
    "optional" : true,
-   "default" : "0"
+   "default" : 0
   }, {
    "name" : "timeIntegrationInfo",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Code for time integration information",
    "optional" : true,
-   "default" : "1"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : 1
+  }]
 }

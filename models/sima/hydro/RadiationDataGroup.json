@@ -1,39 +1,36 @@
 {
  "name" : "RadiationDataGroup",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "frequencyDependentAddedMass",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/FrequencyDependentAddedMass",
+   "attributeType" : "./FrequencyDependentAddedMass",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "frequencyDependentDamping",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/FrequencyDependentDamping",
+   "attributeType" : "./FrequencyDependentDamping",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "retardationFunction",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/RetardationFunction",
+   "attributeType" : "./RetardationFunction",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "addedMassZeroFrequency",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/AddedMassZeroFrequency",
+   "attributeType" : "./AddedMassZeroFrequency",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "addedMassInfiniteFrequency",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/AddedMassInfiniteFrequency",
+   "attributeType" : "./AddedMassInfiniteFrequency",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

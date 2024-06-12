@@ -1,14 +1,11 @@
 {
  "name" : "SimpleString",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/signals/Signal"],
+ "extends" : ["./Signal"],
  "attributes" : [{
    "name" : "value",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

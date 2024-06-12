@@ -1,8 +1,7 @@
 {
  "name" : "NamedDoubleParameter",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/Named"],
+ "extends" : ["sima:sima/Named"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -13,7 +12,5 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

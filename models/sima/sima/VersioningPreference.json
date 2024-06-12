@@ -1,8 +1,7 @@
 {
  "name" : "VersioningPreference",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/SIMAPreference"],
+ "extends" : ["./SIMAPreference"],
  "attributes" : [{
    "name" : "userHome",
    "type" : "core:BlueprintAttribute",
@@ -15,7 +14,5 @@
    "attributeType" : "string",
    "description" : "Override ssh folder",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

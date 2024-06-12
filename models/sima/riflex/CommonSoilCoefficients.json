@@ -1,33 +1,30 @@
 {
  "name" : "CommonSoilCoefficients",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "xu",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/CommonSoilCoefficientsItem",
+   "attributeType" : "./CommonSoilCoefficientsItem",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "k",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/CommonSoilCoefficientsItem",
+   "attributeType" : "./CommonSoilCoefficientsItem",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "n",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/CommonSoilCoefficientsItem",
+   "attributeType" : "./CommonSoilCoefficientsItem",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "yu",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/CommonSoilCoefficientsItem",
+   "attributeType" : "./CommonSoilCoefficientsItem",
    "contained" : true,
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

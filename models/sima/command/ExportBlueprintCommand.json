@@ -1,8 +1,7 @@
 {
  "name" : "ExportBlueprintCommand",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/command/Command"],
+ "extends" : ["./Command"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,7 +10,7 @@
   }, {
    "name" : "parameters",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Property",
+   "attributeType" : "sima:sima/Property",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true,
@@ -23,12 +22,10 @@
    "description" : "Optional output directory. If not specified the blueprints will be imported into the current workspace",
    "optional" : true
   }, {
-   "name" : "versions",
+   "name" : "delete",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
-   "description" : "Write package version files",
+   "description" : "Delete the content of the output folder before exporting",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

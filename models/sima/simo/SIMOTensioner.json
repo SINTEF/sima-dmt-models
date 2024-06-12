@@ -1,8 +1,7 @@
 {
  "name" : "SIMOTensioner",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject"],
+ "extends" : ["sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -32,7 +31,5 @@
    "attributeType" : "number",
    "description" : "Stiffness at specified pretension",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

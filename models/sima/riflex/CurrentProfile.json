@@ -1,8 +1,7 @@
 {
  "name" : "CurrentProfile",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "globalXPosition",
    "type" : "core:BlueprintAttribute",
@@ -18,11 +17,9 @@
   }, {
    "name" : "items",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/environment/CurrentItem",
+   "attributeType" : "sima:environment/CurrentItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

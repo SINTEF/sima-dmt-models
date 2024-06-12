@@ -1,12 +1,11 @@
 {
  "name" : "BladeItem",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "airfoil",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/windturbine/Airfoil",
+   "attributeType" : "sima:windturbine/Airfoil",
    "contained" : false,
    "optional" : true
   }, {
@@ -27,7 +26,5 @@
    "attributeType" : "number",
    "description" : "Airfoil twist",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

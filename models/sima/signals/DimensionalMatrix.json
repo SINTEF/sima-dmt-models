@@ -2,8 +2,7 @@
  "name" : "DimensionalMatrix",
  "type" : "core:Blueprint",
  "description" : "2D matrix of values with dimension",
- "abstract" : false,
- "extends" : ["/signals/Signal"],
+ "extends" : ["./Signal"],
  "attributes" : [{
    "name" : "value",
    "type" : "core:BlueprintAttribute",
@@ -21,7 +20,5 @@
    "attributeType" : "string",
    "optional" : true,
    "dimensions" : "*,*"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

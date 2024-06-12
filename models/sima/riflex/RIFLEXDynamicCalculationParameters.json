@@ -1,181 +1,180 @@
 {
  "name" : "RIFLEXDynamicCalculationParameters",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "irregularTimeSeries",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/IrregularTimeSeriesParameters",
+   "attributeType" : "./IrregularTimeSeriesParameters",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "irregularResponseAnalysis",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/IrregularResponseAnalysis",
+   "attributeType" : "./IrregularResponseAnalysis",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "timeDomainProcedure",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/TimeDomainProcedure",
+   "attributeType" : "./TimeDomainProcedure",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "envelopeCurveSpecification",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/EnvelopeCurveSpecification",
+   "attributeType" : "./EnvelopeCurveSpecification",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "displacementResponseStorage",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/DisplacementResponseStorage",
+   "attributeType" : "./DisplacementResponseStorage",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "forceResponseStorage",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/ForceResponseStorage",
+   "attributeType" : "./ForceResponseStorage",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "sumForceResponseStorage",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/SumForceResponseStorage",
+   "attributeType" : "./SumForceResponseStorage",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "curvatureResponseStorage",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/CurvatureResponseStorage",
+   "attributeType" : "./CurvatureResponseStorage",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "stressStorage",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/StressStorage",
+   "attributeType" : "./StressStorage",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "turbineResponseStorage",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/TurbineResponseStorage",
+   "attributeType" : "./TurbineResponseStorage",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "turbineBladeResponseStorage",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/TurbineBladeResponseStorage",
+   "attributeType" : "./TurbineBladeResponseStorage",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "supportVesselForceStorage",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/SupportVesselForceStorage",
+   "attributeType" : "./SupportVesselForceStorage",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "bodyForceStorage",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/BodyForceStorage",
+   "attributeType" : "./BodyForceStorage",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "hydrodynamicLoadStorage",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/HydrodynamicLoadStorage",
+   "attributeType" : "./HydrodynamicLoadStorage",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "hlaElementForces",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/HLAElementForce",
+   "attributeType" : "./HLAElementForce",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "hlaImportedBodies",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/ImportVesselItem",
+   "attributeType" : "./ImportVesselItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "segmentLengthVariations",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/SegmentLengthVariationItem",
+   "attributeType" : "./SegmentLengthVariationItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "temperatureVariations",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/DynamicTemperatureVariationItem",
+   "attributeType" : "./DynamicTemperatureVariationItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "pressureVariations",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/DynamicPressureVariationItem",
+   "attributeType" : "./DynamicPressureVariationItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "winchVariations",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/DynamicWinchVariationItem",
+   "attributeType" : "./DynamicWinchVariationItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "dynamicWindChange",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/DynamicWindChange",
+   "attributeType" : "./DynamicWindChange",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "windTurbineShutdown",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/WindTurbineShutdown",
+   "attributeType" : "./WindTurbineShutdown",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "bladePitchFault",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/BladePitchFault",
+   "attributeType" : "./BladePitchFault",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "boundaryChangeGroups",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/BoundaryChangeGroup",
+   "attributeType" : "./BoundaryChangeGroup",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "visualisationResponses",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/DynmodVisualisationResponses",
+   "attributeType" : "./DynmodVisualisationResponses",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "regularWaveAnalysis",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/RegularWaveAnalaysis",
+   "attributeType" : "./RegularWaveAnalaysis",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "regularWaveLoading",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/RegularWaveLoading",
+   "attributeType" : "./RegularWaveLoading",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "regularVesselMotions",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/RegularVesselMotion",
+   "attributeType" : "./RegularVesselMotion",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -185,21 +184,21 @@
    "attributeType" : "number",
    "description" : "Scaling of volume forces.",
    "optional" : true,
-   "default" : "1.0"
+   "default" : 1.0
   }, {
    "name" : "specifiedForcesScaling",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Scaling of specified (nodal) forces.",
    "optional" : true,
-   "default" : "1.0"
+   "default" : 1.0
   }, {
    "name" : "currentVelocitiesScaling",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Scaling of current velocities.",
    "optional" : true,
-   "default" : "1.0"
+   "default" : 1.0
   }, {
    "name" : "changeStaticLoads",
    "type" : "core:BlueprintAttribute",
@@ -209,10 +208,14 @@
   }, {
    "name" : "dynamicLoads",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/DynamicLoads",
+   "attributeType" : "./DynamicLoads",
    "contained" : true,
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }, {
+   "name" : "bottomContactStorage",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "./BottomContactStorage",
+   "contained" : true,
+   "optional" : false
+  }]
 }

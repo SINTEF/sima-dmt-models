@@ -1,14 +1,11 @@
 {
  "name" : "HLANamedViewpoint",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/hla/HLAViewpoint", "/hla/HLAObject"],
+ "extends" : ["./HLAViewpoint", "./HLAObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

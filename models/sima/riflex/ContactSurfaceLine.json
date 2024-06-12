@@ -1,12 +1,11 @@
 {
  "name" : "ContactSurfaceLine",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "line",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/ARLine",
+   "attributeType" : "./ARLine",
    "contained" : false,
    "optional" : true,
    "description" : "Reference to line to be checked for contact with the contact surface."
@@ -16,29 +15,27 @@
    "attributeType" : "integer",
    "description" : "First segment to be checked for contact",
    "optional" : true,
-   "default" : "1"
+   "default" : 1
   }, {
    "name" : "firstElementContact",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "First element within first contact segment to be chekced for contact",
    "optional" : true,
-   "default" : "1"
+   "default" : 1
   }, {
    "name" : "lastSegmentContact",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Last segment to be checked for contact",
    "optional" : true,
-   "default" : "0"
+   "default" : 0
   }, {
    "name" : "lastElementContact",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Last element within last contact segment to be checked for contact",
    "optional" : true,
-   "default" : "0"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : 0
+  }]
 }

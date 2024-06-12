@@ -1,8 +1,7 @@
 {
  "name" : "ElongationCharacteristic",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject"],
+ "extends" : ["sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -12,14 +11,14 @@
    "name" : "inputType",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/ElongationCharacteristicType",
+   "enumType" : "./ElongationCharacteristicType",
    "description" : "Elongation characteristic type. Stress-strain or tension-strain.",
    "optional" : true,
    "default" : "STRESS_STRAIN"
   }, {
    "name" : "items",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/ElongationItem",
+   "attributeType" : "./ElongationItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -32,10 +31,8 @@
   }, {
    "name" : "fibreRopeModel",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/FibreRopeModel",
+   "attributeType" : "./FibreRopeModel",
    "contained" : false,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

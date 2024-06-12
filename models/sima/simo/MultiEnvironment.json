@@ -1,8 +1,7 @@
 {
  "name" : "MultiEnvironment",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/environment/Environment"],
+ "extends" : ["sima:environment/Environment"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,11 +10,9 @@
   }, {
    "name" : "items",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/MultiEnvironmentItem",
+   "attributeType" : "./MultiEnvironmentItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

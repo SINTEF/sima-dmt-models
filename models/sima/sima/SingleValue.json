@@ -1,0 +1,6 @@
+{
+ "name" : "SingleValue",
+ "type" : "core:Blueprint",
+ "abstract" : true,
+ "extends" : ["./Value"]
+}

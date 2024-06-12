@@ -1,8 +1,7 @@
 {
  "name" : "SumFrequencyQTF",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/hydro/SparseQTF"],
+ "extends" : ["./SparseQTF"],
  "attributes" : [{
    "name" : "nFreq",
    "type" : "core:BlueprintAttribute",
@@ -67,40 +66,38 @@
   }, {
    "name" : "surge",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/QTFDof",
+   "attributeType" : "./QTFDof",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "sway",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/QTFDof",
+   "attributeType" : "./QTFDof",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "heave",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/QTFDof",
+   "attributeType" : "./QTFDof",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "roll",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/QTFDof",
+   "attributeType" : "./QTFDof",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "pitch",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/QTFDof",
+   "attributeType" : "./QTFDof",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "yaw",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/QTFDof",
+   "attributeType" : "./QTFDof",
    "contained" : true,
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

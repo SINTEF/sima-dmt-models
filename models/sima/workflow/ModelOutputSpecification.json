@@ -1,16 +1,13 @@
 {
  "name" : "ModelOutputSpecification",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "reference",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/ModelReferenceVariable",
+   "attributeType" : "sima:sima/ModelReferenceVariable",
    "contained" : false,
    "optional" : true,
    "description" : "Model object to be included."
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

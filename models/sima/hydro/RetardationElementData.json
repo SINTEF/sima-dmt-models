@@ -1,20 +1,19 @@
 {
  "name" : "RetardationElementData",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "dof1",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/hydro/DOF",
+   "enumType" : "./DOF",
    "optional" : true,
    "default" : "X"
   }, {
    "name" : "dof2",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/hydro/DOF",
+   "enumType" : "./DOF",
    "optional" : true,
    "default" : "X"
   }, {
@@ -23,7 +22,5 @@
    "attributeType" : "number",
    "optional" : true,
    "dimensions" : "*"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

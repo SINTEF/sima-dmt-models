@@ -1,8 +1,7 @@
 {
  "name" : "TubularContact",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject"],
+ "extends" : ["sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -18,7 +17,7 @@
    "name" : "direction",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/ContactDirection",
+   "enumType" : "./ContactDirection",
    "description" : "Contact direction.",
    "optional" : true,
    "default" : "INWARDS"
@@ -62,7 +61,7 @@
    "name" : "slidingFriction",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/ControlParameter",
+   "enumType" : "./ControlParameter",
    "description" : "Control parameter for axial sliding friction.",
    "optional" : true,
    "default" : "ON"
@@ -70,7 +69,7 @@
    "name" : "rotationFriction",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/ControlParameter",
+   "enumType" : "./ControlParameter",
    "description" : "Control parameter for friction caused by rotation.",
    "optional" : true,
    "default" : "ON"
@@ -89,11 +88,9 @@
   }, {
    "name" : "stiffnessItems",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/SpringStiffnessItem",
+   "attributeType" : "./SpringStiffnessItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

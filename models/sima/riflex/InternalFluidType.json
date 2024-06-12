@@ -1,8 +1,7 @@
 {
  "name" : "InternalFluidType",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject"],
+ "extends" : ["sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -36,11 +35,9 @@
    "name" : "flowInlet",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/End",
+   "enumType" : "./End",
    "description" : "Flow direction code.",
    "optional" : true,
    "default" : "ONE"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

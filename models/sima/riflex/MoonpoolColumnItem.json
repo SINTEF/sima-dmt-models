@@ -1,12 +1,11 @@
 {
  "name" : "MoonpoolColumnItem",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "body",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Body",
+   "attributeType" : "sima:sima/Body",
    "contained" : false,
    "optional" : true
   }, {
@@ -24,11 +23,9 @@
   }, {
    "name" : "lineReferences",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/LineReference",
+   "attributeType" : "./LineReference",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

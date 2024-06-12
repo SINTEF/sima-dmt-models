@@ -2,7 +2,5 @@
  "name" : "Estimator",
  "type" : "core:Blueprint",
  "abstract" : true,
- "extends" : ["/sima/MOAO"],
- "storageRecipes" : [],
- "uiRecipes" : []
+ "extends" : ["sima:sima/MOAO"]
 }

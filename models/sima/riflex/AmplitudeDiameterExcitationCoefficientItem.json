@@ -1,23 +1,20 @@
 {
  "name" : "AmplitudeDiameterExcitationCoefficientItem",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "amplitudeDiameterRatio",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Amplitude to diameter ratio",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "excitationCoefficient",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Excitation coefficient",
    "optional" : true,
-   "default" : "0.0"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : 0.0
+  }]
 }

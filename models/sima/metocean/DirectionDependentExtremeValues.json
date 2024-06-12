@@ -1,8 +1,7 @@
 {
  "name" : "DirectionDependentExtremeValues",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/metocean/LevelExtreme"],
+ "extends" : ["./LevelExtreme"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -18,15 +17,13 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "sectors",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/metocean/SectorExtreme",
+   "attributeType" : "./SectorExtreme",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

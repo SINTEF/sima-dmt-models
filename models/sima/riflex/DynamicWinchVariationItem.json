@@ -1,12 +1,11 @@
 {
  "name" : "DynamicWinchVariationItem",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "winch",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/ARWinch",
+   "attributeType" : "./ARWinch",
    "contained" : false,
    "optional" : true
   }, {
@@ -15,22 +14,20 @@
    "attributeType" : "number",
    "description" : "Start time for winching",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "endTime",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "End time for winching",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "velocity",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Winch velocity",
    "optional" : true,
-   "default" : "0.0"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : 0.0
+  }]
 }

@@ -1,16 +1,13 @@
 {
  "name" : "DirectionalSimplifiedWaveDriftDamping",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "items",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/DirectionalWaveDriftDampingItem",
+   "attributeType" : "./DirectionalWaveDriftDampingItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

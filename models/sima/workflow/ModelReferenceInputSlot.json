@@ -1,14 +1,11 @@
 {
  "name" : "ModelReferenceInputSlot",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/post/InputSlot"],
+ "extends" : ["sima:post/InputSlot"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

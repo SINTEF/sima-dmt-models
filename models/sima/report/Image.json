@@ -1,8 +1,7 @@
 {
  "name" : "Image",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/report/ReportItem"],
+ "extends" : ["./ReportItem"],
  "attributes" : [{
    "name" : "caption",
    "type" : "core:BlueprintAttribute",
@@ -27,7 +26,5 @@
    "attributeType" : "integer",
    "description" : "The image height in twips (1/1440 inch). If only the width is specified the height will be automatically calculated.",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

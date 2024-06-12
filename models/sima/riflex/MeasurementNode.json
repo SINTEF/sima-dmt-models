@@ -1,12 +1,11 @@
 {
  "name" : "MeasurementNode",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/riflex/NodeReference"],
+ "extends" : ["./NodeReference"],
  "attributes" : [{
    "name" : "line",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/ARLine",
+   "attributeType" : "./ARLine",
    "contained" : false,
    "optional" : true,
    "description" : "Line"
@@ -16,7 +15,7 @@
    "attributeType" : "integer",
    "description" : "Segment on given line",
    "optional" : true,
-   "default" : "1"
+   "default" : 1
   }, {
    "name" : "allSegments",
    "type" : "core:BlueprintAttribute",
@@ -29,7 +28,7 @@
    "attributeType" : "integer",
    "description" : "Local node number on actual segment",
    "optional" : true,
-   "default" : "1"
+   "default" : 1
   }, {
    "name" : "allNodes",
    "type" : "core:BlueprintAttribute",
@@ -40,10 +39,8 @@
    "name" : "system",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/NodeSystem",
+   "enumType" : "./NodeSystem",
    "optional" : true,
    "default" : "GLOBAL"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

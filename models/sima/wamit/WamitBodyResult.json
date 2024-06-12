@@ -1,8 +1,7 @@
 {
  "name" : "WamitBodyResult",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/Named"],
+ "extends" : ["sima:sima/Named"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,19 +10,19 @@
   }, {
    "name" : "firstOrderMotionTransferFunction",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/FirstOrderMotionTransferFunction",
+   "attributeType" : "sima:hydro/FirstOrderMotionTransferFunction",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "firstOrderWaveForceTransferFunctionDiffraction",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/wamit/WamitFirstOrderWaveForceTransferFunction",
+   "attributeType" : "./WamitFirstOrderWaveForceTransferFunction",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "firstOrderWaveForceTransferFunctionHaskind",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/wamit/WamitFirstOrderWaveForceTransferFunction",
+   "attributeType" : "./WamitFirstOrderWaveForceTransferFunction",
    "contained" : true,
    "optional" : true
   }, {
@@ -79,43 +78,43 @@
   }, {
    "name" : "volumes",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Point3",
+   "attributeType" : "sima:sima/Point3",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "centreOfGravity",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Point3",
+   "attributeType" : "sima:sima/Point3",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "centreOfBuoyancy",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Point3",
+   "attributeType" : "sima:sima/Point3",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "radiationData",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/RadiationDataGroup",
+   "attributeType" : "sima:hydro/RadiationDataGroup",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "waveDriftForceMomentum",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/wamit/WamitWaveDriftForce",
+   "attributeType" : "./WamitWaveDriftForce",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "waveDriftForceControlSurface",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/wamit/WamitWaveDriftForce",
+   "attributeType" : "./WamitWaveDriftForce",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "waveDriftForcePressure",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/wamit/WamitWaveDriftForce",
+   "attributeType" : "./WamitWaveDriftForce",
    "contained" : true,
    "optional" : true
   }, {
@@ -127,28 +126,26 @@
   }, {
    "name" : "externalStiffness",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/ExternalStiffnessMatrix",
+   "attributeType" : "sima:hydro/ExternalStiffnessMatrix",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "structuralMass",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/StructuralMass",
+   "attributeType" : "sima:hydro/StructuralMass",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "linearDamping",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/LinearDampingMatrix",
+   "attributeType" : "sima:hydro/LinearDampingMatrix",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "hydrostaticStiffness",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/HydrostaticStiffnessData",
+   "attributeType" : "sima:hydro/HydrostaticStiffnessData",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

@@ -1,13 +1,12 @@
 {
  "name" : "HorizontalAxisYawController",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/windturbine/YawController"],
+ "extends" : ["sima:windturbine/YawController"],
  "attributes" : [{
    "name" : "yawControllerType",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/windturbine/YawControllerType",
+   "enumType" : "sima:windturbine/YawControllerType",
    "optional" : true,
    "default" : "NONE"
   }, {
@@ -47,18 +46,16 @@
   }, {
    "name" : "referenceLine",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/ARLine",
+   "attributeType" : "./ARLine",
    "contained" : false,
    "optional" : true,
    "description" : "Line where end 2 is the fixed reference for the applied yaw angle"
   }, {
    "name" : "yawLine",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/ARLine",
+   "attributeType" : "./ARLine",
    "contained" : false,
    "optional" : true,
    "description" : "Line where yaw angle is applied in end 1"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

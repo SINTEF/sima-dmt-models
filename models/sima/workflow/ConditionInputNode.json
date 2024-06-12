@@ -1,8 +1,7 @@
 {
  "name" : "ConditionInputNode",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/post/RunNode"],
+ "extends" : ["sima:post/RunNode"],
  "attributes" : [{
    "name" : "x",
    "type" : "core:BlueprintAttribute",
@@ -31,27 +30,27 @@
   }, {
    "name" : "controlSignalInputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/ControlSignalInputSlot",
+   "attributeType" : "sima:post/ControlSignalInputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "variableInputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/workflow/VariableInputSlot",
+   "attributeType" : "./VariableInputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "modelReferenceInputSlot",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/workflow/ModelReferenceInputSlot",
+   "attributeType" : "./ModelReferenceInputSlot",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "condition",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Condition",
+   "attributeType" : "sima:sima/Condition",
    "contained" : false,
    "optional" : true
   }, {
@@ -62,27 +61,27 @@
   }, {
    "name" : "outputSlot",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/OutputSlot",
+   "attributeType" : "sima:post/OutputSlot",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "additionalFiles",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/workflow/FileSpecification",
+   "attributeType" : "./FileSpecification",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "modelOutput",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/workflow/ModelOutputSpecification",
+   "attributeType" : "./ModelOutputSpecification",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "modelInputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/workflow/ModelInputSlot",
+   "attributeType" : "./ModelInputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -112,10 +111,8 @@
   }, {
    "name" : "fileInputSlot",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/InputSlot",
+   "attributeType" : "sima:post/InputSlot",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

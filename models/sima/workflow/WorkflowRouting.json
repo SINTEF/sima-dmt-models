@@ -1,37 +1,34 @@
 {
  "name" : "WorkflowRouting",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "workflowSetInputs",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/workflow/WorkflowSetItem",
+   "attributeType" : "./WorkflowSetItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "workflowInputVariations",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/workflow/WorkflowInputVariationItem",
+   "attributeType" : "./WorkflowInputVariationItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "inputs",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/workflow/WorkflowLinkItem",
+   "attributeType" : "./WorkflowLinkItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "outputs",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/workflow/WorkflowLinkItem",
+   "attributeType" : "./WorkflowLinkItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

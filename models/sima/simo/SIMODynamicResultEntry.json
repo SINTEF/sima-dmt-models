@@ -1,12 +1,11 @@
 {
  "name" : "SIMODynamicResultEntry",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/ResultEntry"],
+ "extends" : ["sima:sima/ResultEntry"],
  "attributes" : [{
    "name" : "properties",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Property",
+   "attributeType" : "sima:sima/Property",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -33,36 +32,34 @@
   }, {
    "name" : "results",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Result",
+   "attributeType" : "sima:sima/Result",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "entries",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/ResultEntry",
+   "attributeType" : "sima:sima/ResultEntry",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "lisFile",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/LisFile",
+   "attributeType" : "./LisFile",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "simoLDAT",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Result",
+   "attributeType" : "sima:sima/Result",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "timeSimulationResult",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/TimeSimulationResult",
+   "attributeType" : "./TimeSimulationResult",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

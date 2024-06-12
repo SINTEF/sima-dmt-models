@@ -1,19 +1,18 @@
 {
  "name" : "PostProcessorSpecification",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject"],
+ "extends" : ["sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "nodes",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/OperationNode",
+   "attributeType" : "./OperationNode",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "connections",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/SlotConnection",
+   "attributeType" : "./SlotConnection",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -22,7 +21,5 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

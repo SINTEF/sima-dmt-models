@@ -1,16 +1,13 @@
 {
  "name" : "ColumnLayoutContainer",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/custom/CustomComponent"],
+ "extends" : ["./CustomComponent"],
  "attributes" : [{
    "name" : "children",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/custom/CustomComponent",
+   "attributeType" : "./CustomComponent",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

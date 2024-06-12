@@ -1,12 +1,11 @@
 {
  "name" : "SegmentReference",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/riflex/LineReference"],
+ "extends" : ["./LineReference"],
  "attributes" : [{
    "name" : "line",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/ARLine",
+   "attributeType" : "./ARLine",
    "contained" : false,
    "optional" : true,
    "description" : "Line"
@@ -16,14 +15,12 @@
    "attributeType" : "integer",
    "description" : "Segment on given line",
    "optional" : true,
-   "default" : "1"
+   "default" : 1
   }, {
    "name" : "allSegments",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "All segments",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

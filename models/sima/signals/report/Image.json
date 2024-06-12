@@ -1,8 +1,7 @@
 {
  "name" : "Image",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/signals/report/ReportItem"],
+ "extends" : ["./ReportItem"],
  "attributes" : [{
    "name" : "path",
    "type" : "core:BlueprintAttribute",
@@ -23,7 +22,5 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

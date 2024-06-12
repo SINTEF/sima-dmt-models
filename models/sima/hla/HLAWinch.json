@@ -1,8 +1,7 @@
 {
  "name" : "HLAWinch",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/hla/HLAObject"],
+ "extends" : ["./HLAObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -32,7 +31,5 @@
    "attributeType" : "number",
    "description" : "Max. wire length that can be added to drum",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

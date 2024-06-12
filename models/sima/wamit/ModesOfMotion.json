@@ -1,45 +1,42 @@
 {
  "name" : "ModesOfMotion",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "surge",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "sway",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "heave",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "roll",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "pitch",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "yaw",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true,
-   "default" : "true"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : true
+  }]
 }

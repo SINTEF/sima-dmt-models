@@ -2,7 +2,5 @@
  "name" : "Variable",
  "type" : "core:Blueprint",
  "abstract" : true,
- "extends" : ["/sima/NamedObject", "/sima/SingleParameter"],
- "storageRecipes" : [],
- "uiRecipes" : []
+ "extends" : ["./NamedObject", "./SingleParameter"]
 }

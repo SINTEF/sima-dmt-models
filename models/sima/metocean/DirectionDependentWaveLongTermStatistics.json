@@ -1,8 +1,7 @@
 {
  "name" : "DirectionDependentWaveLongTermStatistics",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/metocean/WaveLongTermStatistics"],
+ "extends" : ["./WaveLongTermStatistics"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,11 +10,9 @@
   }, {
    "name" : "sectors",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/metocean/WaveSector",
+   "attributeType" : "./WaveSector",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

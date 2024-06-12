@@ -1,8 +1,7 @@
 {
  "name" : "DerbyshireScott",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/environment/Wave"],
+ "extends" : ["./Wave"],
  "attributes" : [{
    "name" : "direction",
    "type" : "core:BlueprintAttribute",
@@ -15,19 +14,19 @@
    "attributeType" : "number",
    "description" : "Exponent  η in cos spreading function",
    "optional" : true,
-   "default" : "2.0"
+   "default" : 2.0
   }, {
    "name" : "numDirections",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of directions in spreading function, must be odd",
    "optional" : true,
-   "default" : "11"
+   "default" : 11
   }, {
    "name" : "spreadingType",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/environment/WaveSpreadingType",
+   "enumType" : "./WaveSpreadingType",
    "description" : "Wave spreading code",
    "optional" : true,
    "default" : "UNIDIRECTIONAL"
@@ -37,21 +36,21 @@
    "attributeType" : "number",
    "description" : "Spectrum parameter, a",
    "optional" : true,
-   "default" : "0.214"
+   "default" : 0.214
   }, {
    "name" : "spectrumB",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Spectrum parameter, b",
    "optional" : true,
-   "default" : "0.065"
+   "default" : 0.065
   }, {
    "name" : "spectrumD",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Spectrum parameter, d",
    "optional" : true,
-   "default" : "0.26"
+   "default" : 0.26
   }, {
    "name" : "waveHeight",
    "type" : "core:BlueprintAttribute",
@@ -70,15 +69,13 @@
    "attributeType" : "number",
    "description" : "Lower truncation parameter",
    "optional" : true,
-   "default" : "0.0414"
+   "default" : 0.0414
   }, {
    "name" : "upperTrunc",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Upper truncation parameter",
    "optional" : true,
-   "default" : "10.367"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : 10.367
+  }]
 }

@@ -1,15 +1,12 @@
 {
  "name" : "BooleanArray",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/signals/Signal"],
+ "extends" : ["./Signal"],
  "attributes" : [{
    "name" : "value",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : false,
    "dimensions" : "*"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

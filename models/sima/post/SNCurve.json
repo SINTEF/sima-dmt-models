@@ -1,8 +1,7 @@
 {
  "name" : "SNCurve",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject"],
+ "extends" : ["sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -18,7 +17,7 @@
    "name" : "predefinedCurve",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/post/SNCurveType",
+   "enumType" : "./SNCurveType",
    "optional" : true,
    "default" : "DNV_B1"
   }, {
@@ -39,18 +38,18 @@
    "attributeType" : "number",
    "description" : "Thickness exponent on fatigue strength",
    "optional" : true,
-   "default" : "1.0"
+   "default" : 1.0
   }, {
    "name" : "referenceThicknessFactor",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "t/t_ref:  where t is thickness through which a crack will most likely grow and t_ref i reference thickness",
    "optional" : true,
-   "default" : "1.0"
+   "default" : 1.0
   }, {
    "name" : "curveItems",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/SNCurveItem",
+   "attributeType" : "./SNCurveItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -58,7 +57,7 @@
    "name" : "fatigueLimitIndicator",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/post/FatigueLimitIndicator",
+   "enumType" : "./FatigueLimitIndicator",
    "optional" : true,
    "default" : "STRESS_RANGE"
   }, {
@@ -67,15 +66,13 @@
    "attributeType" : "number",
    "description" : "Stress range level for which the SN curve becomes horizontal.",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "fatigueLimitCycles",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Logarithm of number of stress cycles for which the SN curve becomes horizontal.",
    "optional" : true,
-   "default" : "0.0"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : 0.0
+  }]
 }

@@ -1,8 +1,7 @@
 {
  "name" : "Waypoint",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "x",
    "type" : "core:BlueprintAttribute",
@@ -45,7 +44,5 @@
    "attributeType" : "number",
    "description" : "Line of sight length (Determines the line from the vessel to the intersection of the line between the current waypoint and the next)",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

@@ -1,8 +1,7 @@
 {
  "name" : "SoilCapacityElement",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "dCap",
    "type" : "core:BlueprintAttribute",
@@ -27,7 +26,5 @@
    "attributeType" : "number",
    "description" : "Suction pressure",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

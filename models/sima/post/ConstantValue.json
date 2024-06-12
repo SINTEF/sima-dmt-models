@@ -1,12 +1,11 @@
 {
  "name" : "ConstantValue",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/post/GeneratorSignal", "/sima/SingleParameter"],
+ "extends" : ["./GeneratorSignal", "sima:sima/SingleParameter"],
  "attributes" : [{
    "name" : "properties",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/SignalProperties",
+   "attributeType" : "./SignalProperties",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -28,7 +27,5 @@
    "description" : "Defines the unit of the constant",
    "optional" : true,
    "default" : "-"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

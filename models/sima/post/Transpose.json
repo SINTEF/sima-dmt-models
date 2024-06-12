@@ -1,8 +1,7 @@
 {
  "name" : "Transpose",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/post/OperationNode"],
+ "extends" : ["./OperationNode"],
  "attributes" : [{
    "name" : "x",
    "type" : "core:BlueprintAttribute",
@@ -31,23 +30,21 @@
   }, {
    "name" : "controlSignalInputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/ControlSignalInputSlot",
+   "attributeType" : "./ControlSignalInputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "inputSlot",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/InputSlot",
+   "attributeType" : "./InputSlot",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "outputSlot",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/OutputSlot",
+   "attributeType" : "./OutputSlot",
    "contained" : true,
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

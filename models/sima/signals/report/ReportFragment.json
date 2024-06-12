@@ -1,8 +1,5 @@
 {
  "name" : "ReportFragment",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/signals/report/ReportItemContainer"],
- "storageRecipes" : [],
- "uiRecipes" : []
+ "extends" : ["./ReportItemContainer"]
 }

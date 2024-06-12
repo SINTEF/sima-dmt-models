@@ -1,12 +1,11 @@
 {
  "name" : "AxisConfiguration",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "font",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/FontDescription",
+   "attributeType" : "sima:sima/FontDescription",
    "contained" : true,
    "optional" : false
   }, {
@@ -19,7 +18,7 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "format",
    "type" : "core:BlueprintAttribute",
@@ -31,7 +30,7 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "dashGridLine",
    "type" : "core:BlueprintAttribute",
@@ -42,7 +41,7 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "minimum",
    "type" : "core:BlueprintAttribute",
@@ -53,7 +52,5 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

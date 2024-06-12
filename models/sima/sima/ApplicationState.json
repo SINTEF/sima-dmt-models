@@ -1,8 +1,5 @@
 {
  "name" : "ApplicationState",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
- "storageRecipes" : [],
- "uiRecipes" : []
+ "extends" : ["./MOAO"]
 }

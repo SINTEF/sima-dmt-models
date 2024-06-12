@@ -1,27 +1,24 @@
 {
  "name" : "InitialViewpoint",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/Viewpoint"],
+ "extends" : ["./Viewpoint"],
  "attributes" : [{
    "name" : "eye",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Point3",
+   "attributeType" : "./Point3",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "dir",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Vector3",
+   "attributeType" : "./Vector3",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "up",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Vector3",
+   "attributeType" : "./Vector3",
    "contained" : true,
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

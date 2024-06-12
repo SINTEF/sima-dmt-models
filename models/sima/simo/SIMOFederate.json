@@ -1,8 +1,7 @@
 {
  "name" : "SIMOFederate",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/hla/HLAFederate"],
+ "extends" : ["sima:hla/HLAFederate"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -16,10 +15,8 @@
   }, {
    "name" : "task",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/condition/ConditionTask",
+   "attributeType" : "sima:condition/ConditionTask",
    "contained" : false,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

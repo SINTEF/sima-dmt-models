@@ -1,8 +1,7 @@
 {
  "name" : "AerodynamicDescription",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "quadraticLongitudinalDrag",
    "type" : "core:BlueprintAttribute",
@@ -25,11 +24,9 @@
    "name" : "aerodynamicType",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/AerodynamicDescriptionType",
+   "enumType" : "./AerodynamicDescriptionType",
    "description" : "Type of aerodynamic forces",
    "optional" : true,
    "default" : "DRAG"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

@@ -1,8 +1,7 @@
 {
  "name" : "WorkflowOutputSlot",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/post/OutputSlot"],
+ "extends" : ["sima:post/OutputSlot"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,10 +10,8 @@
   }, {
    "name" : "workflowOutput",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/workflow/WorkflowOutput",
+   "attributeType" : "./WorkflowOutput",
    "contained" : false,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

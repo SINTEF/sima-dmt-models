@@ -1,8 +1,7 @@
 {
  "name" : "FixedBodyElement",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject"],
+ "extends" : ["sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -24,7 +23,7 @@
    "name" : "waveIntegrationMethod",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/WaveIntegrationMethod",
+   "enumType" : "./WaveIntegrationMethod",
    "description" : "Parameter defining wave force integration method",
    "optional" : true,
    "default" : "ACTUAL_WAVE_ELEVATION"
@@ -32,7 +31,7 @@
    "name" : "loadType",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/LoadType",
+   "enumType" : "./LoadType",
    "description" : "Include gravity and buoyancy forces?",
    "optional" : true,
    "default" : "GRAVITY_AND_BUOYANCY_INCLUDED"
@@ -40,26 +39,26 @@
    "name" : "waveParticleMethod",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/FixedBodyWaveParticleMethod",
+   "enumType" : "./FixedBodyWaveParticleMethod",
    "description" : "Include wave particle velocity and acceleration?",
    "optional" : true,
    "default" : "VELOCITY_AND_ACCELERATION"
   }, {
    "name" : "position",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Point3",
+   "attributeType" : "sima:sima/Point3",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "refPointXAxis",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Point3",
+   "attributeType" : "sima:sima/Point3",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "refPointXYPlane",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Point3",
+   "attributeType" : "sima:sima/Point3",
    "contained" : true,
    "optional" : false
   }, {
@@ -68,18 +67,18 @@
    "attributeType" : "number",
    "description" : "Vertical position used as reference for depth dependency",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "depthDependentHydrodynamicCoefficients",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/DepthDependenthydrodynamicCoefficient",
+   "attributeType" : "./DepthDependenthydrodynamicCoefficient",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "diffractedWave",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/DiffractedWave",
+   "attributeType" : "sima:hydro/DiffractedWave",
    "contained" : false,
    "optional" : true
   }, {
@@ -136,7 +135,5 @@
    "attributeType" : "number",
    "description" : "Added mass z",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

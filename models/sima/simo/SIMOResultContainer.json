@@ -1,8 +1,7 @@
 {
  "name" : "SIMOResultContainer",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/ConditionResultContainer"],
+ "extends" : ["sima:sima/ConditionResultContainer"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,7 +10,7 @@
   }, {
    "name" : "properties",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Property",
+   "attributeType" : "sima:sima/Property",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -28,28 +27,26 @@
   }, {
    "name" : "static",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SIMOStaticResultEntry",
+   "attributeType" : "./SIMOStaticResultEntry",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "dynamic",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SIMODynamicResultEntry",
+   "attributeType" : "./SIMODynamicResultEntry",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "stability",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/ResultEntry",
+   "attributeType" : "sima:sima/ResultEntry",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "preRunResults",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/ResultEntry",
+   "attributeType" : "sima:sima/ResultEntry",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

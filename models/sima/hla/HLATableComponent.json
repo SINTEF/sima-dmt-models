@@ -1,15 +1,12 @@
 {
  "name" : "HLATableComponent",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/custom/CustomComponent"],
+ "extends" : ["sima:custom/CustomComponent"],
  "attributes" : [{
    "name" : "table",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hla/HLADataTable",
+   "attributeType" : "./HLADataTable",
    "contained" : false,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

@@ -1,20 +1,19 @@
 {
  "name" : "VolumeConeItem",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/simo/VolumeMassPortion"],
+ "extends" : ["./VolumeMassPortion"],
  "attributes" : [{
    "name" : "volume",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/Volume",
+   "enumType" : "./Volume",
    "description" : "Add or subtract volume",
    "optional" : true,
    "default" : "ADD"
   }, {
    "name" : "centerPoint",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Point3",
+   "attributeType" : "sima:sima/Point3",
    "contained" : true,
    "optional" : false,
    "description" : "Location of center of bottom plane in local coordinates"
@@ -40,11 +39,9 @@
    "name" : "axis",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/Axis",
+   "enumType" : "./Axis",
    "description" : "Cone axis direction:\r\nX: parallell to Tank x-axis\r\nY: parallell to Tank y-axis\r\nZ: parallell to Tank z-axis",
    "optional" : true,
    "default" : "Z"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

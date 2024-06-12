@@ -1,30 +1,27 @@
 {
  "name" : "BladePitchFault",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "seizeFaults",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/SeizeBladePitchFaultItem",
+   "attributeType" : "./SeizeBladePitchFaultItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "runawayFaults",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/RunawayBladePitchFaultItem",
+   "attributeType" : "./RunawayBladePitchFaultItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "biasFaults",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/BiasBladePitchFaultItem",
+   "attributeType" : "./BiasBladePitchFaultItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

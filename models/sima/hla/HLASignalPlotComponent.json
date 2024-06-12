@@ -1,15 +1,12 @@
 {
  "name" : "HLASignalPlotComponent",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/custom/CustomComponent"],
+ "extends" : ["sima:custom/CustomComponent"],
  "attributes" : [{
    "name" : "plot",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hla/HLASignalPlot",
+   "attributeType" : "./HLASignalPlot",
    "contained" : false,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

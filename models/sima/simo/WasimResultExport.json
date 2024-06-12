@@ -1,22 +1,19 @@
 {
  "name" : "WasimResultExport",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "floaterBody",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SIMOBody",
+   "attributeType" : "./SIMOBody",
    "contained" : false,
    "optional" : true
   }, {
    "name" : "pointForces",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/BodyForceComponentReference",
+   "attributeType" : "./BodyForceComponentReference",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

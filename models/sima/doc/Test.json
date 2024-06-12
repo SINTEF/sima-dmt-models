@@ -2,7 +2,5 @@
  "name" : "Test",
  "type" : "core:Blueprint",
  "abstract" : true,
- "extends" : ["/sima/Named"],
- "storageRecipes" : [],
- "uiRecipes" : []
+ "extends" : ["sima:sima/Named"]
 }

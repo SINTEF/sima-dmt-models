@@ -1,8 +1,7 @@
 {
  "name" : "CustomText",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/custom/ParameterField", "/sima/Named"],
+ "extends" : ["./ParameterField", "sima:sima/Named"],
  "attributes" : [{
    "name" : "label",
    "type" : "core:BlueprintAttribute",
@@ -22,7 +21,7 @@
    "name" : "fileType",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/custom/FileType",
+   "enumType" : "./FileType",
    "optional" : true,
    "default" : "INPUT"
   }, {
@@ -46,7 +45,7 @@
    "name" : "_type",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/custom/FieldType",
+   "enumType" : "./FieldType",
    "optional" : true,
    "default" : "TEXT"
   }, {
@@ -54,7 +53,7 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : true,
-   "default" : "10"
+   "default" : 10
   }, {
    "name" : "expandHorizontally",
    "type" : "core:BlueprintAttribute",
@@ -66,7 +65,5 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

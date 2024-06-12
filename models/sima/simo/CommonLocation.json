@@ -2,7 +2,5 @@
  "name" : "CommonLocation",
  "type" : "core:Blueprint",
  "abstract" : true,
- "extends" : ["/sima/Location"],
- "storageRecipes" : [],
- "uiRecipes" : []
+ "extends" : ["sima:sima/Location"]
 }

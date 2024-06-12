@@ -2,7 +2,5 @@
  "name" : "Condition",
  "type" : "core:Blueprint",
  "abstract" : true,
- "extends" : ["/sima/MOAO"],
- "storageRecipes" : [],
- "uiRecipes" : []
+ "extends" : ["./MOAO"]
 }

@@ -1,8 +1,7 @@
 {
  "name" : "HLAForce",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/hla/HLAObject"],
+ "extends" : ["./HLAObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -38,7 +37,5 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

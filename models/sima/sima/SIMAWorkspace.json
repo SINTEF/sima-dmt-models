@@ -1,19 +1,18 @@
 {
  "name" : "SIMAWorkspace",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["./MOAO"],
  "attributes" : [{
    "name" : "childFolders",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/TaskFolder",
+   "attributeType" : "./TaskFolder",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "tasks",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Task",
+   "attributeType" : "./Task",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -27,7 +26,5 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

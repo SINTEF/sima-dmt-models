@@ -1,14 +1,11 @@
 {
  "name" : "IntegerScalar",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/signals/Signal"],
+ "extends" : ["./Signal"],
  "attributes" : [{
    "name" : "value",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

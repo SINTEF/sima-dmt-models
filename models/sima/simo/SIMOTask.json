@@ -1,8 +1,7 @@
 {
  "name" : "SIMOTask",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/condition/ConditionTask"],
+ "extends" : ["sima:condition/ConditionTask"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,21 +10,21 @@
   }, {
    "name" : "doubleVariables",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/DoubleVariable",
+   "attributeType" : "sima:sima/DoubleVariable",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "integerVariables",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/IntegerVariable",
+   "attributeType" : "sima:sima/IntegerVariable",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "stringVariables",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/StringVariable",
+   "attributeType" : "sima:sima/StringVariable",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -34,45 +33,45 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : true,
-   "default" : "0"
+   "default" : 0
   }, {
    "name" : "scripts",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/SIMAScript",
+   "attributeType" : "sima:sima/SIMAScript",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "variations",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/condition/ModelVariation",
+   "attributeType" : "sima:condition/ModelVariation",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "referenceVariables",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/ModelReferenceVariable",
+   "attributeType" : "sima:sima/ModelReferenceVariable",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "initialCondition",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/condition/InitialCondition",
+   "attributeType" : "sima:condition/InitialCondition",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "conditions",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/condition/ConditionTaskCondition",
+   "attributeType" : "sima:condition/ConditionTaskCondition",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "model",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SIMOModel",
+   "attributeType" : "./SIMOModel",
    "contained" : true,
    "optional" : false
   }, {
@@ -81,28 +80,20 @@
    "attributeType" : "integer",
    "description" : "Enables override of the default memory settings for SIMO. Given in MB",
    "optional" : true,
-   "default" : "128"
+   "default" : 128
   }, {
    "name" : "removeIntermediateFiles",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "exportMassUnit",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/MassUnit",
+   "enumType" : "./MassUnit",
    "description" : "Used as export unit for mass ( and indirectly force)",
    "optional" : true,
    "default" : "MG"
-  }, {
-   "name" : "exportAsFMU",
-   "type" : "core:BlueprintAttribute",
-   "attributeType" : "boolean",
-   "description" : "Generate FMU (Functional Mockup Unit) from model",
-   "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

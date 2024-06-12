@@ -1,8 +1,7 @@
 {
  "name" : "WindTurbineShutdown",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "startTime",
    "type" : "core:BlueprintAttribute",
@@ -12,7 +11,7 @@
   }, {
    "name" : "bladePitchChangeItems",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/BladePitchChangeItem",
+   "attributeType" : "./BladePitchChangeItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -20,7 +19,7 @@
    "name" : "faultOption",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/GeneratorTorqueFault",
+   "enumType" : "./GeneratorTorqueFault",
    "optional" : true,
    "default" : "NONE"
   }, {
@@ -33,7 +32,7 @@
    "name" : "brakeOption",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/MechanicalBrakeOption",
+   "enumType" : "./MechanicalBrakeOption",
    "optional" : true,
    "default" : "NONE"
   }, {
@@ -46,7 +45,5 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

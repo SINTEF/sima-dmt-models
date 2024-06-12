@@ -1,8 +1,7 @@
 {
  "name" : "Regular3DBottom",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "fileName",
    "type" : "core:BlueprintAttribute",
@@ -31,7 +30,5 @@
    "attributeType" : "number",
    "description" : "Angle between the X-axis of the seabed file reference system and the X-axis of the global reference system",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

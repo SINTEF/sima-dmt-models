@@ -1,0 +1,22 @@
+{
+ "name" : "NumberValue",
+ "type" : "core:Blueprint",
+ "extends" : ["./SingleValue"],
+ "attributes" : [{
+   "name" : "name",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
+   "name" : "value",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true
+  }, {
+   "name" : "unit",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true,
+   "default" : "-"
+  }]
+}

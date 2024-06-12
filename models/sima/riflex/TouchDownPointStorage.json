@@ -1,0 +1,20 @@
+{
+ "name" : "TouchDownPointStorage",
+ "type" : "core:Blueprint",
+ "extends" : ["./LineReference"],
+ "attributes" : [{
+   "name" : "line",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "./ARLine",
+   "contained" : false,
+   "optional" : true,
+   "description" : "Line"
+  }, {
+   "name" : "numberOfElements",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "integer",
+   "description" : "Additional bottom contact forces for a selected number of elements next to the TDP element",
+   "optional" : true,
+   "default" : 0
+  }]
+}

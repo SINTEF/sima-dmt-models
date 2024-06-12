@@ -1,8 +1,7 @@
 {
  "name" : "Report",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject"],
+ "extends" : ["sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,7 +10,7 @@
   }, {
    "name" : "items",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/report/ReportItem",
+   "attributeType" : "./ReportItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -33,7 +32,5 @@
    "attributeType" : "string",
    "description" : "Optional path to the generated report file",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

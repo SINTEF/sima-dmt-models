@@ -1,8 +1,7 @@
 {
  "name" : "CustomSignal",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/custom/CustomComponent"],
+ "extends" : ["./CustomComponent"],
  "attributes" : [{
    "name" : "label",
    "type" : "core:BlueprintAttribute",
@@ -17,7 +16,7 @@
    "name" : "fileType",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/custom/FileType",
+   "enumType" : "./FileType",
    "optional" : true,
    "default" : "INPUT"
   }, {
@@ -41,7 +40,7 @@
    "name" : "_type",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/custom/FieldType",
+   "enumType" : "./FieldType",
    "optional" : true,
    "default" : "TEXT"
   }, {
@@ -49,7 +48,7 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : true,
-   "default" : "10"
+   "default" : 10
   }, {
    "name" : "expandHorizontally",
    "type" : "core:BlueprintAttribute",
@@ -59,10 +58,8 @@
   }, {
    "name" : "signal",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/GeneratorSignal",
+   "attributeType" : "sima:post/GeneratorSignal",
    "contained" : false,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

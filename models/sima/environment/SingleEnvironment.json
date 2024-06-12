@@ -1,8 +1,7 @@
 {
  "name" : "SingleEnvironment",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/environment/Environment"],
+ "extends" : ["./Environment"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,28 +10,26 @@
   }, {
    "name" : "wave",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/environment/Wave",
+   "attributeType" : "./Wave",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "swell",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/environment/Wave",
+   "attributeType" : "./Wave",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "wind",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/environment/Wind",
+   "attributeType" : "./Wind",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "current",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/environment/Current",
+   "attributeType" : "./Current",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

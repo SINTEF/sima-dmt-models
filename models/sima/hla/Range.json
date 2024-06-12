@@ -1,8 +1,7 @@
 {
  "name" : "Range",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "min",
    "type" : "core:BlueprintAttribute",
@@ -18,8 +17,6 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true,
-   "default" : "false"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : false
+  }]
 }

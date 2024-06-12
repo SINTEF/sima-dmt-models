@@ -1,16 +1,13 @@
 {
  "name" : "SignalPropertiesContainer",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "properties",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/SignalProperties",
+   "attributeType" : "./SignalProperties",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

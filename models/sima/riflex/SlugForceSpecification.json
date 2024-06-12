@@ -1,20 +1,19 @@
 {
  "name" : "SlugForceSpecification",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "enterTime",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Time when slug enters first end of main riser line",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "interruption",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/SlugForceInterruption",
+   "enumType" : "./SlugForceInterruption",
    "description" : "Interruption parameter",
    "optional" : true,
    "default" : "SLUG"
@@ -40,7 +39,7 @@
    "name" : "densityControl",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/SlugForceDensityControl",
+   "enumType" : "./SlugForceDensityControl",
    "description" : "Control parameter density",
    "optional" : true,
    "default" : "CONSTANT"
@@ -48,7 +47,7 @@
    "name" : "velocityControl",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/SlugForceVelocityControl",
+   "enumType" : "./SlugForceVelocityControl",
    "description" : "Control parameter velocity",
    "optional" : true,
    "default" : "CONSTANT"
@@ -58,7 +57,7 @@
    "attributeType" : "integer",
    "description" : "Number of slug cycles",
    "optional" : true,
-   "default" : "1"
+   "default" : 1
   }, {
    "name" : "cycleTime",
    "type" : "core:BlueprintAttribute",
@@ -113,7 +112,5 @@
    "attributeType" : "boolean",
    "description" : "Specified flow is in addition to that given on main riser line (default is replacement)",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

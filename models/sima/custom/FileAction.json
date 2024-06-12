@@ -1,8 +1,7 @@
 {
  "name" : "FileAction",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/custom/CustomComponent"],
+ "extends" : ["./CustomComponent"],
  "attributes" : [{
    "name" : "label",
    "type" : "core:BlueprintAttribute",
@@ -19,7 +18,5 @@
    "attributeType" : "string",
    "description" : "Path to the input file.",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

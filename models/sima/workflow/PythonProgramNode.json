@@ -1,0 +1,65 @@
+{
+ "name" : "PythonProgramNode",
+ "type" : "core:Blueprint",
+ "extends" : ["sima:post/RunNode"],
+ "attributes" : [{
+   "name" : "x",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "integer",
+   "optional" : true
+  }, {
+   "name" : "y",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "integer",
+   "optional" : true
+  }, {
+   "name" : "name",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
+   "name" : "h",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "integer",
+   "optional" : true
+  }, {
+   "name" : "w",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "integer",
+   "optional" : true
+  }, {
+   "name" : "controlSignalInputSlots",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "sima:post/ControlSignalInputSlot",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "file",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "Python program to run",
+   "optional" : false
+  }, {
+   "name" : "fileInputSlots",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "./FileInputSlot",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "fileOutputSlots",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "./FileOutputSlot",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "parameters",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "sima:sima/SingleValue",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }]
+}

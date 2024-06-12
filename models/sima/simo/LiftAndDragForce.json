@@ -1,8 +1,7 @@
 {
  "name" : "LiftAndDragForce",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject"],
+ "extends" : ["sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,7 +10,7 @@
   }, {
    "name" : "point",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Point3",
+   "attributeType" : "sima:sima/Point3",
    "contained" : true,
    "optional" : false
   }, {
@@ -41,13 +40,13 @@
   }, {
    "name" : "vectorZ",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Vector3",
+   "attributeType" : "sima:sima/Vector3",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "vectorXZ",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Vector3",
+   "attributeType" : "sima:sima/Vector3",
    "contained" : true,
    "optional" : false
   }, {
@@ -83,7 +82,7 @@
   }, {
    "name" : "items",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/LiftAndDragForceCharacteristicItem",
+   "attributeType" : "./LiftAndDragForceCharacteristicItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -91,7 +90,7 @@
    "name" : "interpolation",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/LiftAndDragInterpolation",
+   "enumType" : "./LiftAndDragInterpolation",
    "description" : "Interpolation method",
    "optional" : true,
    "default" : "LINEAR"
@@ -101,7 +100,5 @@
    "attributeType" : "boolean",
    "description" : "Symmetry about x-axis",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

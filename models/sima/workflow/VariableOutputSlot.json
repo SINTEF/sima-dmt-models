@@ -1,14 +1,11 @@
 {
  "name" : "VariableOutputSlot",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/post/OutputSlot"],
+ "extends" : ["sima:post/OutputSlot"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

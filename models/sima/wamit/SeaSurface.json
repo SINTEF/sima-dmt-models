@@ -1,8 +1,7 @@
 {
  "name" : "SeaSurface",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "centerX",
    "type" : "core:BlueprintAttribute",
@@ -21,18 +20,18 @@
    "attributeType" : "number",
    "description" : "Size of surface in x",
    "optional" : true,
-   "default" : "500.0"
+   "default" : 500.0
   }, {
    "name" : "sizeY",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Size of surface in y",
    "optional" : true,
-   "default" : "500.0"
+   "default" : 500.0
   }, {
    "name" : "color",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/SIMAColor",
+   "attributeType" : "sima:sima/SIMAColor",
    "contained" : true,
    "optional" : false
   }, {
@@ -47,22 +46,20 @@
    "attributeType" : "number",
    "description" : "Size of grids in the mesh",
    "optional" : true,
-   "default" : "100.0"
+   "default" : 100.0
   }, {
    "name" : "showMesh",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Show mesh grid on surface",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "z",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Depth of surface",
    "optional" : true,
-   "default" : "-100.0"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : -100.0
+  }]
 }

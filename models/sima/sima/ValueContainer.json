@@ -1,0 +1,18 @@
+{
+ "name" : "ValueContainer",
+ "type" : "core:Blueprint",
+ "extends" : ["./Value"],
+ "attributes" : [{
+   "name" : "name",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
+   "name" : "values",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "./Value",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }]
+}

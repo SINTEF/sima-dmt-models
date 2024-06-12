@@ -1,8 +1,7 @@
 {
  "name" : "StressJointSegment",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "length",
    "type" : "core:BlueprintAttribute",
@@ -15,7 +14,7 @@
    "attributeType" : "integer",
    "description" : "Number of elements",
    "optional" : true,
-   "default" : "10"
+   "default" : 10
   }, {
    "name" : "extDiameterEnd2",
    "type" : "core:BlueprintAttribute",
@@ -40,7 +39,5 @@
    "attributeType" : "number",
    "description" : "Density of pipe material.",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

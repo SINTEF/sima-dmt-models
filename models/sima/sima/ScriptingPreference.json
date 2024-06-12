@@ -1,14 +1,8 @@
 {
  "name" : "ScriptingPreference",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/SIMAPreference"],
+ "extends" : ["./SIMAPreference"],
  "attributes" : [{
-   "name" : "showScripts",
-   "type" : "core:BlueprintAttribute",
-   "attributeType" : "boolean",
-   "optional" : true
-  }, {
    "name" : "javaScriptLocations",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
@@ -26,7 +20,5 @@
    "attributeType" : "string",
    "optional" : true,
    "dimensions" : "*"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

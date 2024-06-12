@@ -1,14 +1,11 @@
 {
  "name" : "HindcastWaveData",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/Named"],
+ "extends" : ["sima:sima/Named"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

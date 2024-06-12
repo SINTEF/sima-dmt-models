@@ -1,8 +1,7 @@
 {
  "name" : "HindcastData",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject"],
+ "extends" : ["sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -41,22 +40,20 @@
   }, {
    "name" : "waveData",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/metocean/HindcastWaveContainer",
+   "attributeType" : "./HindcastWaveContainer",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "windData",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/metocean/HindcastLevelContainer",
+   "attributeType" : "./HindcastLevelContainer",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "currentData",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/metocean/HindcastLevelContainer",
+   "attributeType" : "./HindcastLevelContainer",
    "contained" : true,
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

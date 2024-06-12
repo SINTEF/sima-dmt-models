@@ -1,8 +1,7 @@
 {
  "name" : "HLASeaSurface",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "centerX",
    "type" : "core:BlueprintAttribute",
@@ -21,18 +20,18 @@
    "attributeType" : "number",
    "description" : "Size of surface in x",
    "optional" : true,
-   "default" : "500.0"
+   "default" : 500.0
   }, {
    "name" : "sizeY",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Size of surface in y",
    "optional" : true,
-   "default" : "500.0"
+   "default" : 500.0
   }, {
    "name" : "color",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/SIMAColor",
+   "attributeType" : "sima:sima/SIMAColor",
    "contained" : true,
    "optional" : false
   }, {
@@ -47,43 +46,41 @@
    "attributeType" : "number",
    "description" : "Size of grids in the mesh",
    "optional" : true,
-   "default" : "100.0"
+   "default" : 100.0
   }, {
    "name" : "showMesh",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Show mesh grid on surface",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "z",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Depth of surface",
    "optional" : true,
-   "default" : "-100.0"
+   "default" : -100.0
   }, {
    "name" : "lcWaveLength",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Length of long-crested wave field",
    "optional" : true,
-   "default" : "300.0"
+   "default" : 300.0
   }, {
    "name" : "lcWaveWidth",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Width of long-crested wave field",
    "optional" : true,
-   "default" : "100.0"
+   "default" : 100.0
   }, {
    "name" : "lcWaveNumPoints",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of points in long-crested wave field",
    "optional" : true,
-   "default" : "61"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : 61
+  }]
 }

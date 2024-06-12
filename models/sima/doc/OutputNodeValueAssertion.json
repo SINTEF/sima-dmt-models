@@ -1,13 +1,12 @@
 {
  "name" : "OutputNodeValueAssertion",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "severity",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/sima/Severity",
+   "enumType" : "sima:sima/Severity",
    "optional" : true,
    "default" : "WARNING"
   }, {
@@ -18,7 +17,7 @@
   }, {
    "name" : "outputNode",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/OutputNode",
+   "attributeType" : "sima:post/OutputNode",
    "contained" : false,
    "optional" : true
   }, {
@@ -38,7 +37,5 @@
    "attributeType" : "number",
    "description" : "When set, will be used instead of the implicit toleranse based on significant digits",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

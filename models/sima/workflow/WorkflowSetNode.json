@@ -1,8 +1,7 @@
 {
  "name" : "WorkflowSetNode",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/workflow/WorkflowReferenceNode"],
+ "extends" : ["./WorkflowReferenceNode"],
  "attributes" : [{
    "name" : "x",
    "type" : "core:BlueprintAttribute",
@@ -31,40 +30,40 @@
   }, {
    "name" : "controlSignalInputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/ControlSignalInputSlot",
+   "attributeType" : "sima:post/ControlSignalInputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "variableInputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/workflow/VariableInputSlot",
+   "attributeType" : "./VariableInputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "modelReferenceInputSlot",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/workflow/ModelReferenceInputSlot",
+   "attributeType" : "./ModelReferenceInputSlot",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "workflow",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/workflow/Workflow",
+   "attributeType" : "./Workflow",
    "contained" : false,
    "optional" : true
   }, {
    "name" : "workflowOutputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/workflow/WorkflowOutputSlot",
+   "attributeType" : "./WorkflowOutputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "workflowInputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/workflow/WorkflowInputSlot",
+   "attributeType" : "./WorkflowInputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -88,14 +87,14 @@
   }, {
    "name" : "variableInputSets",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/workflow/VariableInputSet",
+   "attributeType" : "./VariableInputSet",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "variableInputSetSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/workflow/VariableInputSetSlot",
+   "attributeType" : "./VariableInputSetSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -115,7 +114,7 @@
    "name" : "input",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/workflow/WorkflowSetInput",
+   "enumType" : "./WorkflowSetInput",
    "description" : "Specify variable values from file.",
    "optional" : true,
    "default" : "MANUAL"
@@ -129,7 +128,7 @@
    "name" : "iteration",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/workflow/Iteration",
+   "enumType" : "./Iteration",
    "description" : "Switch to change type of iteration",
    "optional" : true,
    "default" : "COLUMN"
@@ -145,7 +144,7 @@
    "attributeType" : "integer",
    "description" : "Group given amount of runs together in the same process. Should be used if workflow within takes a relative short amount of time compared to forking off a new process",
    "optional" : true,
-   "default" : "1"
+   "default" : 1
   }, {
    "name" : "iterateOverInput",
    "type" : "core:BlueprintAttribute",
@@ -155,11 +154,9 @@
   }, {
    "name" : "workflowInputVariationSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/workflow/WorkflowInputSlot",
+   "attributeType" : "./WorkflowInputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

@@ -1,8 +1,7 @@
 {
  "name" : "HLAPlot",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/hla/HLAObject"],
+ "extends" : ["./HLAObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -22,13 +21,13 @@
   }, {
    "name" : "minMaxX",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hla/Range",
+   "attributeType" : "./Range",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "minMaxY",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hla/Range",
+   "attributeType" : "./Range",
    "contained" : true,
    "optional" : true
   }, {
@@ -61,8 +60,6 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : true,
-   "default" : "5"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : 5
+  }]
 }

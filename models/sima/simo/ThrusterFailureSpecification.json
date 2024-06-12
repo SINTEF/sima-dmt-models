@@ -1,13 +1,12 @@
 {
  "name" : "ThrusterFailureSpecification",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "failureMode",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/ThrusterFailureMode",
+   "enumType" : "./ThrusterFailureMode",
    "description" : "Thruster failure mode",
    "optional" : true,
    "default" : "NO_FAILURE"
@@ -17,7 +16,5 @@
    "attributeType" : "number",
    "description" : "Time for thruster failure",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

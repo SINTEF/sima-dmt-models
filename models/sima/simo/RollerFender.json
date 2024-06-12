@@ -1,8 +1,7 @@
 {
  "name" : "RollerFender",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject"],
+ "extends" : ["sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -35,40 +34,38 @@
   }, {
    "name" : "contactPlane",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/Plane",
+   "attributeType" : "./Plane",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "characteristic",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/ForceDampingCharacteristic",
+   "attributeType" : "./ForceDampingCharacteristic",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "pointBody",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SIMOBody",
+   "attributeType" : "./SIMOBody",
    "contained" : false,
    "optional" : false
   }, {
    "name" : "planeBody",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SIMOBody",
+   "attributeType" : "./SIMOBody",
    "contained" : false,
    "optional" : false
   }, {
    "name" : "contactPoint",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Point3",
+   "attributeType" : "sima:sima/Point3",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "axisVector",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Vector3",
+   "attributeType" : "sima:sima/Vector3",
    "contained" : true,
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

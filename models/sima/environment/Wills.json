@@ -1,8 +1,7 @@
 {
  "name" : "Wills",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/environment/Harris"],
+ "extends" : ["./Harris"],
  "attributes" : [{
    "name" : "direction",
    "type" : "core:BlueprintAttribute",
@@ -21,29 +20,27 @@
    "attributeType" : "number",
    "description" : "Wind profile exponent",
    "optional" : true,
-   "default" : "0.11"
+   "default" : 0.11
   }, {
    "name" : "friction",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Surface drag coefficient.\r\nAlso used for transverse gust spectrum, if specified.",
    "optional" : true,
-   "default" : "0.002"
+   "default" : 0.002
   }, {
    "name" : "referenceHeight",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Reference height for wind velocity",
    "optional" : true,
-   "default" : "10.0"
+   "default" : 10.0
   }, {
    "name" : "referenceLength",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Reference length of wind turbulence",
    "optional" : true,
-   "default" : "1200.0"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : 1200.0
+  }]
 }

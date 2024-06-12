@@ -1,13 +1,12 @@
 {
  "name" : "DOFControlConfiguration",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "dof",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/ControlDOF",
+   "enumType" : "./ControlDOF",
    "description" : "Degree Of Freedom",
    "optional" : true,
    "default" : "NONE"
@@ -35,14 +34,14 @@
    "attributeType" : "number",
    "description" : "Wanted natural period",
    "optional" : true,
-   "default" : "100.0"
+   "default" : 100.0
   }, {
    "name" : "dampingFactor",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Damping factors rel. to critical damping",
    "optional" : true,
-   "default" : "0.7"
+   "default" : 0.7
   }, {
    "name" : "integrationTime",
    "type" : "core:BlueprintAttribute",
@@ -73,14 +72,12 @@
    "attributeType" : "number",
    "description" : "Proportional HF estimation gain",
    "optional" : true,
-   "default" : "0.1"
+   "default" : 0.1
   }, {
    "name" : "dampingOnly",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Turn off proportional control and use damping only",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

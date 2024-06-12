@@ -1,8 +1,7 @@
 {
  "name" : "DragChainType",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/riflex/NodalComponentType"],
+ "extends" : ["./NodalComponentType"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -38,7 +37,5 @@
    "attributeType" : "number",
    "description" : "Cable weight.",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

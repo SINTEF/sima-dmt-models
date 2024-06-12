@@ -1,8 +1,7 @@
 {
  "name" : "RequirementOutputSlot",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/post/OutputSlot"],
+ "extends" : ["./OutputSlot"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -22,7 +21,7 @@
   }, {
    "name" : "userRequirements",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/Requirement",
+   "attributeType" : "./Requirement",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -31,7 +30,5 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

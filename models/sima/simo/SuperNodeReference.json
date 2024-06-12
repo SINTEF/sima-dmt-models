@@ -2,7 +2,5 @@
  "name" : "SuperNodeReference",
  "type" : "core:Blueprint",
  "abstract" : true,
- "extends" : ["/simo/BodyForceComponent"],
- "storageRecipes" : [],
- "uiRecipes" : []
+ "extends" : ["./BodyForceComponent"]
 }

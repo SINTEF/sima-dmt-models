@@ -1,12 +1,11 @@
 {
  "name" : "MultiEnvironmentItem",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "environment",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/environment/SingleEnvironment",
+   "attributeType" : "sima:environment/SingleEnvironment",
    "contained" : false,
    "optional" : true
   }, {
@@ -21,7 +20,5 @@
    "attributeType" : "number",
    "description" : "Duration of cosine fading from previous to new environment. It is recommended to use at least 10*peak period for the fade-in duration.",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

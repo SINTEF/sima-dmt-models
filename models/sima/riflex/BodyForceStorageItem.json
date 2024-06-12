@@ -1,22 +1,19 @@
 {
  "name" : "BodyForceStorageItem",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "body",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SIMOBody",
+   "attributeType" : "sima:simo/SIMOBody",
    "contained" : false,
    "optional" : false
   }, {
    "name" : "referenceSystem",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/BodyForceReferenceSystem",
+   "enumType" : "./BodyForceReferenceSystem",
    "optional" : true,
    "default" : "BODY_LOCAL"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

@@ -1,8 +1,7 @@
 {
  "name" : "WorkflowReferenceNode",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/post/RunNode"],
+ "extends" : ["sima:post/RunNode"],
  "attributes" : [{
    "name" : "x",
    "type" : "core:BlueprintAttribute",
@@ -31,40 +30,40 @@
   }, {
    "name" : "controlSignalInputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/ControlSignalInputSlot",
+   "attributeType" : "sima:post/ControlSignalInputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "variableInputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/workflow/VariableInputSlot",
+   "attributeType" : "./VariableInputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "modelReferenceInputSlot",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/workflow/ModelReferenceInputSlot",
+   "attributeType" : "./ModelReferenceInputSlot",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "workflow",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/workflow/Workflow",
+   "attributeType" : "./Workflow",
    "contained" : false,
    "optional" : true
   }, {
    "name" : "workflowOutputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/workflow/WorkflowOutputSlot",
+   "attributeType" : "./WorkflowOutputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "workflowInputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/workflow/WorkflowInputSlot",
+   "attributeType" : "./WorkflowInputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -85,7 +84,5 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

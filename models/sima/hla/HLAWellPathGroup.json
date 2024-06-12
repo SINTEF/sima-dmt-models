@@ -1,8 +1,7 @@
 {
  "name" : "HLAWellPathGroup",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/hla/HLAObject"],
+ "extends" : ["./HLAObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,11 +10,9 @@
   }, {
    "name" : "HLAWellPaths",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hla/HLAWellPath",
+   "attributeType" : "./HLAWellPath",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

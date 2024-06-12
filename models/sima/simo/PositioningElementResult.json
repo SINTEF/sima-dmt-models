@@ -1,8 +1,7 @@
 {
  "name" : "PositioningElementResult",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/simo/ForceResult"],
+ "extends" : ["./ForceResult"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -54,10 +53,8 @@
   }, {
    "name" : "bodyResult",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/BodyResult",
+   "attributeType" : "./BodyResult",
    "contained" : false,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

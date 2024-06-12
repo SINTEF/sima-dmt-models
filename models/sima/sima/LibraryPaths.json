@@ -1,16 +1,13 @@
 {
  "name" : "LibraryPaths",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["./MOAO"],
  "attributes" : [{
    "name" : "items",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/LibraryPathItem",
+   "attributeType" : "./LibraryPathItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

@@ -1,8 +1,7 @@
 {
  "name" : "FibreRopeModel",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject"],
+ "extends" : ["sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,21 +10,21 @@
   }, {
    "name" : "originalCurve",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/AxialStiffnessItem",
+   "attributeType" : "./AxialStiffnessItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "originalWorkingCurve",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/AxialStiffnessItem",
+   "attributeType" : "./AxialStiffnessItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "workingCurve",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/AxialStiffnessItem",
+   "attributeType" : "./AxialStiffnessItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -39,7 +38,5 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

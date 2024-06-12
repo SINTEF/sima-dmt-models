@@ -1,12 +1,11 @@
 {
  "name" : "DynamicNodalForceItem",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/riflex/SegmentReference"],
+ "extends" : ["./SegmentReference"],
  "attributes" : [{
    "name" : "line",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/ARLine",
+   "attributeType" : "./ARLine",
    "contained" : false,
    "optional" : true,
    "description" : "Line"
@@ -16,7 +15,7 @@
    "attributeType" : "integer",
    "description" : "Segment on given line",
    "optional" : true,
-   "default" : "1"
+   "default" : 1
   }, {
    "name" : "allSegments",
    "type" : "core:BlueprintAttribute",
@@ -39,7 +38,7 @@
    "name" : "coordinateSystem",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/CoordinateSystem",
+   "enumType" : "./CoordinateSystem",
    "description" : "Coordinate system code",
    "optional" : true,
    "default" : "LOCAL"
@@ -47,7 +46,7 @@
    "name" : "forceType",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/ForceComponentType",
+   "enumType" : "./ForceComponentType",
    "description" : "Force component type",
    "optional" : true,
    "default" : "CONSTANT"
@@ -81,7 +80,5 @@
    "attributeType" : "number",
    "description" : "Force component parameter 3",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

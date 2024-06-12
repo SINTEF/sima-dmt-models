@@ -1,12 +1,11 @@
 {
  "name" : "ModelContent",
  "type" : "core:Blueprint",
- "abstract" : false,
  "extends" : ["core:Entity"],
  "attributes" : [{
    "name" : "header",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/Header",
+   "attributeType" : "./Header",
    "contained" : true,
    "optional" : true
   }, {
@@ -16,7 +15,5 @@
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

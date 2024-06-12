@@ -1,8 +1,7 @@
 {
  "name" : "SIMOBody",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/Body"],
+ "extends" : ["sima:sima/Body"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -14,37 +13,37 @@
    "attributeType" : "number",
    "description" : "Length",
    "optional" : true,
-   "default" : "10.0"
+   "default" : 10.0
   }, {
    "name" : "width",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Width",
    "optional" : true,
-   "default" : "5.0"
+   "default" : 5.0
   }, {
    "name" : "height",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Height",
    "optional" : true,
-   "default" : "5.0"
+   "default" : 5.0
   }, {
    "name" : "appearance",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Appearance",
+   "attributeType" : "sima:sima/Appearance",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "initialPosition",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Position",
+   "attributeType" : "sima:sima/Position",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "viewpoints",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/BodyViewpoint",
+   "attributeType" : "sima:sima/BodyViewpoint",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -52,7 +51,7 @@
    "name" : "_type",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/BodyType",
+   "enumType" : "./BodyType",
    "description" : "Body type",
    "optional" : true,
    "default" : "SIX_DOF_TIME_DOMAIN"
@@ -60,7 +59,7 @@
    "name" : "positionsImportType",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/PositionsImportType",
+   "enumType" : "./PositionsImportType",
    "description" : "Type of import for positions",
    "optional" : true,
    "default" : "FIXED_POSITION"
@@ -85,310 +84,310 @@
   }, {
    "name" : "bodyPoints",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SIMOBodyPoint",
+   "attributeType" : "./SIMOBodyPoint",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "catenarySystem",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/CatenarySystem",
+   "attributeType" : "./CatenarySystem",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "structuralMass",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/StructuralMass",
+   "attributeType" : "sima:hydro/StructuralMass",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "linearDamping",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/LinearDampingMatrix",
+   "attributeType" : "sima:hydro/LinearDampingMatrix",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "quadraticDamping",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/QuadraticDampingMatrix",
+   "attributeType" : "sima:hydro/QuadraticDampingMatrix",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "linearDampingMatrices",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SIMOLinearDampingMatrix",
+   "attributeType" : "./SIMOLinearDampingMatrix",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "quadraticDampingMatrices",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SIMOQuadraticDampingMatrix",
+   "attributeType" : "./SIMOQuadraticDampingMatrix",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "hydrostaticStiffnessData",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/HydrostaticStiffnessData",
+   "attributeType" : "sima:hydro/HydrostaticStiffnessData",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "nonLinearHydrostaticStiffness",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/NonLinearHydrostaticStiffness",
+   "attributeType" : "./NonLinearHydrostaticStiffness",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "nonlinearBuoyancyCorrection",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/NonlinearBuoyancyCorrection",
+   "attributeType" : "./NonlinearBuoyancyCorrection",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "firstOrderMotionTransferFunction",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/FirstOrderMotionTransferFunction",
+   "attributeType" : "sima:hydro/FirstOrderMotionTransferFunction",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "firstOrderWaveForceTransferFunction",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/FirstOrderWaveForceTransferFunction",
+   "attributeType" : "sima:hydro/FirstOrderWaveForceTransferFunction",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "waveDriftForce",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/WaveDriftForce",
+   "attributeType" : "sima:hydro/WaveDriftForce",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "waveDriftDamping",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/WaveDriftDamping",
+   "attributeType" : "sima:hydro/WaveDriftDamping",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "simplifiedWaveDriftDamping",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/SimplifiedWaveDriftDamping",
+   "attributeType" : "sima:hydro/SimplifiedWaveDriftDamping",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "quadraticWindCoefficients",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/QuadraticWindCoefficient",
+   "attributeType" : "sima:hydro/QuadraticWindCoefficient",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "linearCurrentCoefficients",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/LinearCurrentCoefficient",
+   "attributeType" : "sima:hydro/LinearCurrentCoefficient",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "quadraticCurrentCoefficients",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/QuadraticCurrentCoefficient",
+   "attributeType" : "sima:hydro/QuadraticCurrentCoefficient",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "diffractedWaveField",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/DiffractedWaveField",
+   "attributeType" : "sima:hydro/DiffractedWaveField",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "smallBodyHydrodynamicalData",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SmallBodyHydrodynamicData",
+   "attributeType" : "./SmallBodyHydrodynamicData",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "radiationData",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/RadiationDataGroup",
+   "attributeType" : "sima:hydro/RadiationDataGroup",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "specifiedForces",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SpecifiedForce",
+   "attributeType" : "./SpecifiedForce",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "specifiedMoments",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SpecifiedMoment",
+   "attributeType" : "./SpecifiedMoment",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "thrusters",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/IThruster",
+   "attributeType" : "./IThruster",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "controlSystem",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/ControlSystem",
+   "attributeType" : "./ControlSystem",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "slenderElements",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SlenderElement",
+   "attributeType" : "./SlenderElement",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "externalDLLForces",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/ExternalDLLForce",
+   "attributeType" : "./ExternalDLLForce",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
-   "name" : "externalHLAForces",
+   "name" : "externalPythonForces",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/ExternalHLAForce",
+   "attributeType" : "./ExternalPythonForce",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "externalForcesFromFile",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/ExternalForceFromFile",
+   "attributeType" : "./ExternalForceFromFile",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "fixedBodyElements",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/FixedBodyElement",
+   "attributeType" : "./FixedBodyElement",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "timeDependentPointMasses",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/TimeDependentPointMass",
+   "attributeType" : "./TimeDependentPointMass",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "timeDependentVolumeMasses",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/TimeDependentVolumeMass",
+   "attributeType" : "./TimeDependentVolumeMass",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "slenderSystemConnection",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/BodySlenderSystemConnection",
+   "attributeType" : "./BodySlenderSystemConnection",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "gdfGeometry",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/GDFGeometry",
+   "attributeType" : "sima:hydro/GDFGeometry",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "fixedForceElongations",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/FixedForceElongation",
+   "attributeType" : "./FixedForceElongation",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "accCOG",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Point3",
+   "attributeType" : "sima:sima/Point3",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "liftAndDragForces",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/LiftAndDragForce",
+   "attributeType" : "./LiftAndDragForce",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "articulatedStructure",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/ArticulatedStructureData",
+   "attributeType" : "./ArticulatedStructureData",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "externalControlSystem",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/ExternalControlSystem",
+   "attributeType" : "./ExternalControlSystem",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "dockingConePositionings",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/DockingConePositioning",
+   "attributeType" : "./DockingConePositioning",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "pointBerthingFenders",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/PointBerthingFender",
+   "attributeType" : "./PointBerthingFender",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "rollerBerthingFenders",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/RollerBerthingFender",
+   "attributeType" : "./RollerBerthingFender",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "bumperDatas",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/BumperData",
+   "attributeType" : "./BumperData",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "horizontalAxisWindTurbine",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/HorizontalAxisWindTurbine",
+   "attributeType" : "./HorizontalAxisWindTurbine",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "verticalAxisWindTurbine",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/VerticalAxisWindTurbine",
+   "attributeType" : "./VerticalAxisWindTurbine",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "genericExternalControlSystems",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/GenericExternalControlSystem",
+   "attributeType" : "./GenericExternalControlSystem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "ballastSystem",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/BallastSystem",
+   "attributeType" : "./BallastSystem",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "hydrodynamicSeparationMethod",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/HydrodynamicSeparationMethod",
+   "enumType" : "./HydrodynamicSeparationMethod",
    "description" : "Method for estimating low frequency motions",
    "optional" : true,
    "default" : "BW2_FILTERING"
@@ -401,16 +400,14 @@
   }, {
    "name" : "bodyShapeData",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/BodyShapeData",
+   "attributeType" : "./BodyShapeData",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "qtf",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/SparseQTF",
+   "attributeType" : "sima:hydro/SparseQTF",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

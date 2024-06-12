@@ -1,12 +1,11 @@
 {
  "name" : "DynamicTemperatureVariationItem",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/riflex/ElementReference"],
+ "extends" : ["./ElementReference"],
  "attributes" : [{
    "name" : "line",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/ARLine",
+   "attributeType" : "./ARLine",
    "contained" : false,
    "optional" : true,
    "description" : "Line"
@@ -16,7 +15,7 @@
    "attributeType" : "integer",
    "description" : "Segment on given line",
    "optional" : true,
-   "default" : "1"
+   "default" : 1
   }, {
    "name" : "allSegments",
    "type" : "core:BlueprintAttribute",
@@ -29,7 +28,7 @@
    "attributeType" : "integer",
    "description" : "Local element number on actual segment",
    "optional" : true,
-   "default" : "1"
+   "default" : 1
   }, {
    "name" : "allElements",
    "type" : "core:BlueprintAttribute",
@@ -54,7 +53,5 @@
    "attributeType" : "number",
    "description" : "Temperature at end of temperature variation",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

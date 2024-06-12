@@ -1,8 +1,7 @@
 {
  "name" : "FluctuatingTwoComponent",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/environment/Wind"],
+ "extends" : ["./Wind"],
  "attributes" : [{
    "name" : "direction",
    "type" : "core:BlueprintAttribute",
@@ -15,7 +14,5 @@
    "attributeType" : "string",
    "description" : "Path and filename for import of wind velocity time series",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

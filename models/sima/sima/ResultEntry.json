@@ -1,12 +1,11 @@
 {
  "name" : "ResultEntry",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/Named"],
+ "extends" : ["./Named"],
  "attributes" : [{
    "name" : "properties",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Property",
+   "attributeType" : "./Property",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -33,18 +32,16 @@
   }, {
    "name" : "results",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Result",
+   "attributeType" : "./Result",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "entries",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/ResultEntry",
+   "attributeType" : "./ResultEntry",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

@@ -1,8 +1,7 @@
 {
  "name" : "MainRiserLine",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject"],
+ "extends" : ["sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,7 +10,7 @@
   }, {
    "name" : "riserLines",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/ARLineItem",
+   "attributeType" : "./ARLineItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -31,7 +30,7 @@
    "name" : "flowPressureEnd",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/End",
+   "enumType" : "./End",
    "description" : "End for which flow data is specified.",
    "optional" : true,
    "default" : "ONE"
@@ -41,7 +40,5 @@
    "attributeType" : "number",
    "description" : "Pressure drop",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

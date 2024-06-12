@@ -1,8 +1,7 @@
 {
  "name" : "ExcitationZoneProperty",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject"],
+ "extends" : ["sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -14,15 +13,13 @@
    "attributeType" : "number",
    "description" : "Minimum non dimensional frequency limit",
    "optional" : true,
-   "default" : "0.125"
+   "default" : 0.125
   }, {
    "name" : "max",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Minimum non dimensional frequency limit",
    "optional" : true,
-   "default" : "0.2"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : 0.2
+  }]
 }

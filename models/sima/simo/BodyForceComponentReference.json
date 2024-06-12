@@ -1,15 +1,12 @@
 {
  "name" : "BodyForceComponentReference",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "source",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/BodyForceComponent",
+   "attributeType" : "./BodyForceComponent",
    "contained" : false,
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

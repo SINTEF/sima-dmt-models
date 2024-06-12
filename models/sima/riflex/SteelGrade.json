@@ -1,0 +1,6 @@
+{
+ "name" : "SteelGrade",
+ "type" : "core:Enum",
+ "values" : ["R3", "R3S", "R4", "R4S", "R5"],
+ "labels" : ["R3", "R3S", "R4", "R4S", "R5"]
+}

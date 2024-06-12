@@ -1,44 +1,41 @@
 {
  "name" : "UnitPreference",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/SIMAPreference"],
+ "extends" : ["./SIMAPreference"],
  "attributes" : [{
    "name" : "frequency",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/sima/Frequency",
+   "enumType" : "./Frequency",
    "optional" : true,
    "default" : "PERIOD"
   }, {
    "name" : "forceUnit",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/sima/ForceUnit",
+   "enumType" : "./ForceUnit",
    "optional" : true,
    "default" : "NEWTON"
   }, {
    "name" : "massUnit",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/sima/MassUnit",
+   "enumType" : "./MassUnit",
    "optional" : true,
    "default" : "KILOGRAM"
   }, {
    "name" : "lengthUnit",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/sima/LengthUnit",
+   "enumType" : "./LengthUnit",
    "optional" : true,
    "default" : "METER"
   }, {
    "name" : "powerUnit",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/sima/PowerUnit",
+   "enumType" : "./PowerUnit",
    "optional" : true,
    "default" : "WATT"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

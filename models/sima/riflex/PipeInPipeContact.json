@@ -1,8 +1,7 @@
 {
  "name" : "PipeInPipeContact",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject"],
+ "extends" : ["sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,14 +10,14 @@
   }, {
    "name" : "masterLine",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/ARLine",
+   "attributeType" : "./ARLine",
    "contained" : false,
    "optional" : true,
    "description" : "Identification of master pipe."
   }, {
    "name" : "slaveLine",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/ARLine",
+   "attributeType" : "./ARLine",
    "contained" : false,
    "optional" : true,
    "description" : "Identification of slave pipe."
@@ -50,7 +49,7 @@
    "name" : "masterPipePosition",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/InnerOuter",
+   "enumType" : "./InnerOuter",
    "description" : "Position of master pipe.",
    "optional" : true,
    "default" : "INNER"
@@ -58,7 +57,7 @@
    "name" : "stiffnessType",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/StiffnessType",
+   "enumType" : "./StiffnessType",
    "description" : "Stiffness code for contact force.",
    "optional" : true,
    "default" : "LINEAR"
@@ -119,7 +118,7 @@
   }, {
    "name" : "stiffnessCharacteristics",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/ContactSpringStiffnessItem",
+   "attributeType" : "./ContactSpringStiffnessItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -136,14 +135,14 @@
   }, {
    "name" : "masterMainRiser",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/MainRiserLine",
+   "attributeType" : "./MainRiserLine",
    "contained" : false,
    "optional" : true,
    "description" : "Identification of master main riser"
   }, {
    "name" : "slaveMainRiser",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/MainRiserLine",
+   "attributeType" : "./MainRiserLine",
    "contained" : false,
    "optional" : true,
    "description" : "Identification of slave main riser"
@@ -151,10 +150,8 @@
    "name" : "innerPipeLoading",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/InnerPipeLoading",
+   "enumType" : "./InnerPipeLoading",
    "optional" : true,
    "default" : "EXPOSED"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

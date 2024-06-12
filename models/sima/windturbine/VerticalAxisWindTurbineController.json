@@ -1,8 +1,7 @@
 {
  "name" : "VerticalAxisWindTurbineController",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "sampleInterval",
    "type" : "core:BlueprintAttribute",
@@ -85,7 +84,7 @@
    "name" : "windRotorSpeed",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/windturbine/TableFormat",
+   "enumType" : "./TableFormat",
    "description" : "Wind speed / rotor speed table",
    "optional" : true,
    "default" : "DEFAULT"
@@ -93,24 +92,22 @@
    "name" : "gainScheduling",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/windturbine/TableFormat",
+   "enumType" : "./TableFormat",
    "optional" : true,
    "default" : "DEFAULT"
   }, {
    "name" : "windRotorSpeedItems",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/windturbine/WindRotorSpeedItem",
+   "attributeType" : "./WindRotorSpeedItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "gainSchedulingItems",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/windturbine/GainSchedulingItem",
+   "attributeType" : "./GainSchedulingItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

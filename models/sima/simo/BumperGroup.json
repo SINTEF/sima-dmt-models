@@ -1,8 +1,7 @@
 {
  "name" : "BumperGroup",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject"],
+ "extends" : ["sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,13 +10,13 @@
   }, {
    "name" : "body1",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SIMOBody",
+   "attributeType" : "./SIMOBody",
    "contained" : false,
    "optional" : false
   }, {
    "name" : "body2",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SIMOBody",
+   "attributeType" : "./SIMOBody",
    "contained" : false,
    "optional" : false
   }, {
@@ -26,22 +25,20 @@
    "attributeType" : "number",
    "description" : "Velocity limit for friction force (Damping Exponent = 0)",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "body1Bumpers",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/BumperPart",
+   "attributeType" : "./BumperPart",
    "dimensions" : "*",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "body2Bumpers",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/BumperPart",
+   "attributeType" : "./BumperPart",
    "dimensions" : "*",
    "contained" : true,
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

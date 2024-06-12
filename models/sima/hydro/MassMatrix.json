@@ -1,8 +1,7 @@
 {
  "name" : "MassMatrix",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/hydro/Matrix6"],
+ "extends" : ["./Matrix6"],
  "attributes" : [{
    "name" : "values",
    "type" : "core:BlueprintAttribute",
@@ -12,11 +11,9 @@
   }, {
    "name" : "cog",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Point3",
+   "attributeType" : "sima:sima/Point3",
    "contained" : true,
    "optional" : false,
    "description" : "Coordinates of centre of gravity, (L)"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

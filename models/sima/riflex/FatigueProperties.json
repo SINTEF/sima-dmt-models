@@ -1,13 +1,12 @@
 {
  "name" : "FatigueProperties",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "calculationOption",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/FatigueCalculationOption",
+   "enumType" : "./FatigueCalculationOption",
    "optional" : true,
    "default" : "DEFAULT"
   }, {
@@ -15,19 +14,20 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of points around cross-section where fatigue is",
-   "optional" : true
+   "optional" : true,
+   "default" : 8
   }, {
    "name" : "resultPrintOption",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/ResultPrintOption",
+   "enumType" : "./ResultPrintOption",
    "optional" : true,
    "default" : "MOST_CRITICAL_POINT"
   }, {
    "name" : "timeSeriesPrintOption",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/TimeSeriesPrintOption",
+   "enumType" : "./TimeSeriesPrintOption",
    "description" : "Optional tension/curvature export to ascci file ( viv_tension_curvature_ts.txt )",
    "optional" : true,
    "default" : "NO_PRINT"
@@ -49,28 +49,28 @@
    "attributeType" : "integer",
    "description" : "Seed for generating random phase angles",
    "optional" : true,
-   "default" : "31415"
+   "default" : 31415
   }, {
    "name" : "axialFactor",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Default stress concentration factor for axial force contribution",
    "optional" : true,
-   "default" : "1.0"
+   "default" : 1.0
   }, {
    "name" : "myFactor",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Default stress concentration factor for bending about Yaxis",
    "optional" : true,
-   "default" : "1.0"
+   "default" : 1.0
   }, {
    "name" : "mzFactor",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Default stress concentration factor for bending about Zaxis",
    "optional" : true,
-   "default" : "1.0"
+   "default" : 1.0
   }, {
    "name" : "crossSectionArea",
    "type" : "core:BlueprintAttribute",
@@ -92,7 +92,7 @@
   }, {
    "name" : "snCurves",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/SNCurveReference",
+   "attributeType" : "./SNCurveReference",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -105,7 +105,7 @@
   }, {
    "name" : "crossSectionReferences",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/CrossSectionReference",
+   "attributeType" : "./CrossSectionReference",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -120,7 +120,5 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

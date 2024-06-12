@@ -1,16 +1,13 @@
 {
  "name" : "FrequencyDomainBodyItem",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "body",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SIMOBody",
+   "attributeType" : "./SIMOBody",
    "contained" : false,
    "optional" : true,
    "description" : "Selected body to compute eigenvalues for"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

@@ -1,8 +1,7 @@
 {
  "name" : "LFMotionTimeSeries",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "timeSeriesFile",
    "type" : "core:BlueprintAttribute",
@@ -11,7 +10,7 @@
   }, {
    "name" : "supportVessel",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/SupportVessel",
+   "attributeType" : "./SupportVessel",
    "contained" : false,
    "optional" : true
   }, {
@@ -24,7 +23,7 @@
    "name" : "fileFormat",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/FileFormatAsciStarNone",
+   "enumType" : "./FileFormatAsciStarNone",
    "description" : "Motion time series file format",
    "optional" : true,
    "default" : "ASCII"
@@ -32,7 +31,7 @@
    "name" : "motionTimeSeriesType",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/MotionTimeSeriesType",
+   "enumType" : "./MotionTimeSeriesType",
    "description" : "Kind of motion time series input",
    "optional" : true,
    "default" : "POSI"
@@ -40,7 +39,7 @@
    "name" : "rotationUnit",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/RotationUnit",
+   "enumType" : "./RotationUnit",
    "description" : "Rotation unit",
    "optional" : true,
    "default" : "DEGR"
@@ -50,14 +49,14 @@
    "attributeType" : "integer",
    "description" : "Column number for time (Does not apply to STAR files)",
    "optional" : true,
-   "default" : "1"
+   "default" : 1
   }, {
    "name" : "xMotionColumn",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Column or time series number for global dynamic x-motion",
    "optional" : true,
-   "default" : "0"
+   "default" : 0
   }, {
    "name" : "xMotionVersion",
    "type" : "core:BlueprintAttribute",
@@ -70,7 +69,7 @@
    "attributeType" : "integer",
    "description" : "Column or time series number for global dynamic y-motion",
    "optional" : true,
-   "default" : "0"
+   "default" : 0
   }, {
    "name" : "yMotionVersion",
    "type" : "core:BlueprintAttribute",
@@ -83,14 +82,12 @@
    "attributeType" : "integer",
    "description" : "Column or time series number for global dynamic z-rotation",
    "optional" : true,
-   "default" : "0"
+   "default" : 0
   }, {
    "name" : "zRotationVersion",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Startimes version number for global dynamic z-rotation",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

@@ -1,8 +1,7 @@
 {
  "name" : "LongTermStatisticsPeriod",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/Named"],
+ "extends" : ["sima:sima/Named"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,25 +10,23 @@
   }, {
    "name" : "waveStatistics",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/metocean/WaveLongTermStatistics",
+   "attributeType" : "./WaveLongTermStatistics",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "windStatistics",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/metocean/WindLongTermStatistics",
+   "attributeType" : "./WindLongTermStatistics",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "currentStatistics",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/metocean/CurrentLongTermStatistics",
+   "attributeType" : "./CurrentLongTermStatistics",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

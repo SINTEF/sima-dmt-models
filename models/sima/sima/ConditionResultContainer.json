@@ -2,7 +2,5 @@
  "name" : "ConditionResultContainer",
  "type" : "core:Blueprint",
  "abstract" : true,
- "extends" : ["/sima/ResultContainer"],
- "storageRecipes" : [],
- "uiRecipes" : []
+ "extends" : ["./ResultContainer"]
 }

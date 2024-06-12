@@ -1,8 +1,7 @@
 {
  "name" : "StatisticalOperation",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/post/OperationNode"],
+ "extends" : ["./OperationNode"],
  "attributes" : [{
    "name" : "x",
    "type" : "core:BlueprintAttribute",
@@ -31,7 +30,7 @@
   }, {
    "name" : "controlSignalInputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/ControlSignalInputSlot",
+   "attributeType" : "./ControlSignalInputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -40,12 +39,12 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "operation",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/post/StatisticsOperation",
+   "enumType" : "./StatisticsOperation",
    "optional" : true,
    "default" : "MAX"
   }, {
@@ -57,13 +56,13 @@
   }, {
    "name" : "inputSlot",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/InputSlot",
+   "attributeType" : "./InputSlot",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "outputSlot",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/OutputSlot",
+   "attributeType" : "./OutputSlot",
    "contained" : true,
    "optional" : false
   }, {
@@ -78,7 +77,5 @@
    "attributeType" : "string",
    "description" : "Name of output when using combined operation",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

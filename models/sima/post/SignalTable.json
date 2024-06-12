@@ -2,7 +2,5 @@
  "name" : "SignalTable",
  "type" : "core:Blueprint",
  "abstract" : true,
- "extends" : ["/post/RunNode"],
- "storageRecipes" : [],
- "uiRecipes" : []
+ "extends" : ["./RunNode"]
 }

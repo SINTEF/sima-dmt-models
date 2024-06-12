@@ -1,8 +1,7 @@
 {
  "name" : "ARLine",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/simo/LineForceProvider"],
+ "extends" : ["sima:simo/LineForceProvider"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,21 +10,21 @@
   }, {
    "name" : "lineType",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/ARLineType",
+   "attributeType" : "./ARLineType",
    "contained" : false,
    "optional" : false,
    "description" : "Line type."
   }, {
    "name" : "end1",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/SuperNode",
+   "attributeType" : "./SuperNode",
    "contained" : false,
    "optional" : false,
    "description" : "Supernode at end 1."
   }, {
    "name" : "end2",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/SuperNode",
+   "attributeType" : "./SuperNode",
    "contained" : false,
    "optional" : false,
    "description" : "Supernode at end 2."
@@ -35,7 +34,5 @@
    "attributeType" : "boolean",
    "description" : "Do not include this line in the calculations",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

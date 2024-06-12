@@ -1,8 +1,7 @@
 {
  "name" : "ReynoldItem",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "reynoldsNumber",
    "type" : "core:BlueprintAttribute",
@@ -12,17 +11,15 @@
   }, {
    "name" : "items",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/windturbine/AirFoilItem",
+   "attributeType" : "./AirFoilItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "stallPoint",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/windturbine/StallPoint",
+   "attributeType" : "./StallPoint",
    "contained" : true,
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

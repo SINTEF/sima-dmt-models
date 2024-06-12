@@ -1,8 +1,7 @@
 {
  "name" : "ReportTextFile",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/workflow/ReportFragmentItem"],
+ "extends" : ["./ReportFragmentItem"],
  "attributes" : [{
    "name" : "path",
    "type" : "core:BlueprintAttribute",
@@ -13,7 +12,5 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

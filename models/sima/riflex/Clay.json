@@ -1,8 +1,7 @@
 {
  "name" : "Clay",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/riflex/Soil"],
+ "extends" : ["./Soil"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -14,7 +13,7 @@
    "attributeType" : "number",
    "description" : "Strain velocity exponent for damping model",
    "optional" : true,
-   "default" : "1.0"
+   "default" : 1.0
   }, {
    "name" : "calculateDamping",
    "type" : "core:BlueprintAttribute",
@@ -24,7 +23,7 @@
   }, {
    "name" : "dampingItems",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/SoilDampingItem",
+   "attributeType" : "./SoilDampingItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -92,7 +91,5 @@
    "attributeType" : "number",
    "description" : "Strain at one-half the maximum stress in undrained compression",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

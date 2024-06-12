@@ -1,13 +1,12 @@
 {
  "name" : "TimeDomainVIVLoadCoefficients",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "vivLoadFormulation",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/VIVLoadFormulation",
+   "enumType" : "./VIVLoadFormulation",
    "optional" : true,
    "default" : "CROSSFLOW_VIV_ONLY"
   }, {
@@ -40,7 +39,7 @@
    "attributeType" : "integer",
    "description" : "Number of time steps used in calculation of standard deviation",
    "optional" : true,
-   "default" : "500"
+   "default" : 500
   }, {
    "name" : "cvil",
    "type" : "core:BlueprintAttribute",
@@ -71,7 +70,5 @@
    "attributeType" : "number",
    "description" : "Maximum in-line vortex shedding frequency (nondimensional)",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

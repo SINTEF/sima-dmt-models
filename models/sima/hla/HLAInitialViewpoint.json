@@ -1,8 +1,5 @@
 {
  "name" : "HLAInitialViewpoint",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/hla/HLAViewpoint"],
- "storageRecipes" : [],
- "uiRecipes" : []
+ "extends" : ["./HLAViewpoint"]
 }

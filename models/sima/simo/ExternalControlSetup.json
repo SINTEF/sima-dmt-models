@@ -1,8 +1,7 @@
 {
  "name" : "ExternalControlSetup",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "executable",
    "type" : "core:BlueprintAttribute",
@@ -21,8 +20,6 @@
    "attributeType" : "integer",
    "description" : "Port number of the central unit for the external process",
    "optional" : true,
-   "default" : "9876"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : 9876
+  }]
 }

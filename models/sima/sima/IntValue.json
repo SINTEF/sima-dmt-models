@@ -1,0 +1,16 @@
+{
+ "name" : "IntValue",
+ "type" : "core:Blueprint",
+ "extends" : ["./SingleValue"],
+ "attributes" : [{
+   "name" : "name",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
+   "name" : "value",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "integer",
+   "optional" : true
+  }]
+}

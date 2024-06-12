@@ -1,43 +1,42 @@
 {
  "name" : "DepthDependenthydrodynamicCoefficient",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "zd",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Vertical position",
    "optional" : true,
-   "default" : "1.0"
+   "default" : 1.0
   }, {
    "name" : "rvol",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Volume relative to fully submerged volume",
    "optional" : true,
-   "default" : "1.0"
+   "default" : 1.0
   }, {
    "name" : "ramx",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Relative added mass in 1. degree of freedom",
    "optional" : true,
-   "default" : "1.0"
+   "default" : 1.0
   }, {
    "name" : "ramy",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Relative added mass in 2. degree of freedom",
    "optional" : true,
-   "default" : "1.0"
+   "default" : 1.0
   }, {
    "name" : "ramz",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Relative added mass in 3. degree of freedom",
    "optional" : true,
-   "default" : "1.0"
+   "default" : 1.0
   }, {
    "name" : "rc11",
    "type" : "core:BlueprintAttribute",
@@ -74,7 +73,5 @@
    "attributeType" : "number",
    "description" : "Relative quadratic drag in 3. degree of freedom",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

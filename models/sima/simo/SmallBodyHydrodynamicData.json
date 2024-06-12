@@ -1,8 +1,7 @@
 {
  "name" : "SmallBodyHydrodynamicData",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "svol",
    "type" : "core:BlueprintAttribute",
@@ -73,30 +72,28 @@
    "name" : "depthDependency",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/DepthDependency",
+   "enumType" : "./DepthDependency",
    "description" : "Reference for depth dependency",
    "optional" : true,
    "default" : "WAVE_ELEVATION"
   }, {
    "name" : "depthDependentHydrodynamicCoefficients",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/DepthDependenthydrodynamicCoefficient",
+   "attributeType" : "./DepthDependenthydrodynamicCoefficient",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "soilPenetration",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SoilPenetration",
+   "attributeType" : "./SoilPenetration",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "diffractedWave",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/DiffractedWave",
+   "attributeType" : "sima:hydro/DiffractedWave",
    "contained" : false,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

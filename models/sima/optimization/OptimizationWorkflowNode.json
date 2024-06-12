@@ -1,8 +1,7 @@
 {
  "name" : "OptimizationWorkflowNode",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/workflow/WorkflowReferenceNode"],
+ "extends" : ["sima:workflow/WorkflowReferenceNode"],
  "attributes" : [{
    "name" : "x",
    "type" : "core:BlueprintAttribute",
@@ -31,40 +30,40 @@
   }, {
    "name" : "controlSignalInputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/ControlSignalInputSlot",
+   "attributeType" : "sima:post/ControlSignalInputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "variableInputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/workflow/VariableInputSlot",
+   "attributeType" : "sima:workflow/VariableInputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "modelReferenceInputSlot",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/workflow/ModelReferenceInputSlot",
+   "attributeType" : "sima:workflow/ModelReferenceInputSlot",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "workflow",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/workflow/Workflow",
+   "attributeType" : "sima:workflow/Workflow",
    "contained" : false,
    "optional" : true
   }, {
    "name" : "workflowOutputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/workflow/WorkflowOutputSlot",
+   "attributeType" : "sima:workflow/WorkflowOutputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "workflowInputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/workflow/WorkflowInputSlot",
+   "attributeType" : "sima:workflow/WorkflowInputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -88,35 +87,33 @@
   }, {
    "name" : "optimizationCalculationParameters",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/optimization/OptimizationCalculationParameters",
+   "attributeType" : "./OptimizationCalculationParameters",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "costFunction",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/workflow/WorkflowOutput",
+   "attributeType" : "sima:workflow/WorkflowOutput",
    "contained" : false,
    "optional" : true
   }, {
    "name" : "constraints",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/workflow/WorkflowOutput",
+   "attributeType" : "sima:workflow/WorkflowOutput",
    "contained" : false,
    "optional" : true
   }, {
    "name" : "variableItems",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/optimization/OptimizationVariableItem",
+   "attributeType" : "./OptimizationVariableItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "result",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/workflow/WorkflowOutputSlot",
+   "attributeType" : "sima:workflow/WorkflowOutputSlot",
    "contained" : true,
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

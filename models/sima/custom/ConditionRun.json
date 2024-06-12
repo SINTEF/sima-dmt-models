@@ -1,12 +1,11 @@
 {
  "name" : "ConditionRun",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/custom/CustomComponent"],
+ "extends" : ["./CustomComponent"],
  "attributes" : [{
    "name" : "condition",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Condition",
+   "attributeType" : "sima:sima/Condition",
    "contained" : false,
    "optional" : true
   }, {
@@ -34,7 +33,5 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

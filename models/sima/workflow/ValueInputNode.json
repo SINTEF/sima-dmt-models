@@ -2,7 +2,5 @@
  "name" : "ValueInputNode",
  "type" : "core:Blueprint",
  "abstract" : true,
- "extends" : ["/workflow/WorkflowInput", "/post/SignalPropertiesContainer", "/sima/SingleParameter"],
- "storageRecipes" : [],
- "uiRecipes" : []
+ "extends" : ["./WorkflowInput", "sima:post/SignalPropertiesContainer", "sima:sima/SingleParameter"]
 }

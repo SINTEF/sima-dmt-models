@@ -1,8 +1,7 @@
 {
  "name" : "MassFrequencyProperty",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "nonDimensionalFrequency",
    "type" : "core:BlueprintAttribute",
@@ -15,8 +14,6 @@
    "attributeType" : "number",
    "description" : "Added mass coefficient",
    "optional" : true,
-   "default" : "0.0"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : 0.0
+  }]
 }

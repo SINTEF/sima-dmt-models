@@ -1,0 +1,58 @@
+{
+ "name" : "CSVResult",
+ "type" : "core:Blueprint",
+ "extends" : ["./Result"],
+ "attributes" : [{
+   "name" : "properties",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "./Property",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "resource",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
+   "name" : "relative",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "optional" : true
+  }, {
+   "name" : "name",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
+   "name" : "_type",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
+   "name" : "time",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "integer",
+   "optional" : true,
+   "default" : -1
+  }, {
+   "name" : "size",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "integer",
+   "optional" : true,
+   "default" : -1
+  }, {
+   "name" : "runNumber",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "integer",
+   "optional" : true,
+   "default" : -1
+  }, {
+   "name" : "messages",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "./SimaMessage",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }]
+}

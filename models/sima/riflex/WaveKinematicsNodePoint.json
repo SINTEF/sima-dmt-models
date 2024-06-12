@@ -1,12 +1,11 @@
 {
  "name" : "WaveKinematicsNodePoint",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "line",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/ARLine",
+   "attributeType" : "./ARLine",
    "contained" : false,
    "optional" : true,
    "description" : "Line"
@@ -16,7 +15,5 @@
    "attributeType" : "integer",
    "description" : "Calculating wave kinematics for each node step value. If value is 0 there is no kinematics for this line.",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

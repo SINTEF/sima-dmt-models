@@ -1,32 +1,29 @@
 {
  "name" : "DisplacementResponseStorage",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "storageStep",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Code for storage of nodal displacements. Storage for every <storage step> given.",
    "optional" : true,
-   "default" : "1"
+   "default" : 1
   }, {
    "name" : "format",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/FileFormatCode",
+   "enumType" : "./FileFormatCode",
    "description" : "Format code for additional output of nodal displacement time series",
    "optional" : true,
    "default" : "BINARY_OUTPUT_ONLY"
   }, {
    "name" : "nodes",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/NodeReference",
+   "attributeType" : "./NodeReference",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true,
    "description" : "Specification of nodes for displacement storage"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

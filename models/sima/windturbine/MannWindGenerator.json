@@ -1,8 +1,7 @@
 {
  "name" : "MannWindGenerator",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject", "/sima/ConditionSelectable"],
+ "extends" : ["sima:sima/NamedObject", "sima:sima/ConditionSelectable"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -32,7 +31,7 @@
    "attributeType" : "number",
    "description" : "Shear distortion parameter",
    "optional" : true,
-   "default" : "3.9"
+   "default" : 3.9
   }, {
    "name" : "seed",
    "type" : "core:BlueprintAttribute",
@@ -81,7 +80,7 @@
    "attributeType" : "boolean",
    "description" : "High Frequency Compensation",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "turbulenceIntensity",
    "type" : "core:BlueprintAttribute",
@@ -104,7 +103,7 @@
    "name" : "inputFormat",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/windturbine/MannInputFormat",
+   "enumType" : "./MannInputFormat",
    "optional" : true,
    "default" : "DIRECT"
   }, {
@@ -130,14 +129,12 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true,
-   "default" : "0.8"
+   "default" : 0.8
   }, {
    "name" : "longTurbScaleParam",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Longitudenal Turbulence Scale Parameter",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

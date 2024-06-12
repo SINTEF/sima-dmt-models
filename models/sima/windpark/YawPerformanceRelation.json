@@ -1,8 +1,7 @@
 {
- "name" : "PerformanceRelation",
+ "name" : "YawPerformanceRelation",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "yawAngle",
    "type" : "core:BlueprintAttribute",
@@ -12,11 +11,9 @@
   }, {
    "name" : "items",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/windpark/PerformanceRelationItem",
+   "attributeType" : "./PerformanceRelationItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

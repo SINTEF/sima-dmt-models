@@ -1,15 +1,12 @@
 {
  "name" : "WaveFromFile",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/environment/Wave"],
+ "extends" : ["./Wave"],
  "attributes" : [{
    "name" : "fileName",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "description" : "Name of external file with specified wave data",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

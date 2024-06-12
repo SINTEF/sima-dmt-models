@@ -2,7 +2,5 @@
  "name" : "GeneratorSignal",
  "type" : "core:Blueprint",
  "abstract" : true,
- "extends" : ["/post/SignalPropertiesContainer", "/sima/Named"],
- "storageRecipes" : [],
- "uiRecipes" : []
+ "extends" : ["./SignalPropertiesContainer", "sima:sima/Named"]
 }

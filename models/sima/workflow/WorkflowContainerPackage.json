@@ -1,8 +1,7 @@
 {
  "name" : "WorkflowContainerPackage",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/Named"],
+ "extends" : ["sima:sima/Named"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,14 +10,14 @@
   }, {
    "name" : "packages",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/workflow/WorkflowContainerPackage",
+   "attributeType" : "./WorkflowContainerPackage",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "workflows",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/workflow/Workflow",
+   "attributeType" : "./Workflow",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -28,7 +27,5 @@
    "attributeType" : "boolean",
    "description" : "Make all workflows directly contained in this package visible outside of the task",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

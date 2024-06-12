@@ -1,8 +1,7 @@
 {
  "name" : "GlobalSpring",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/riflex/NodeReference", "/sima/NamedObject"],
+ "extends" : ["./NodeReference", "sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,7 +10,7 @@
   }, {
    "name" : "line",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/ARLine",
+   "attributeType" : "./ARLine",
    "contained" : false,
    "optional" : true,
    "description" : "Line"
@@ -21,7 +20,7 @@
    "attributeType" : "integer",
    "description" : "Segment on given line",
    "optional" : true,
-   "default" : "1"
+   "default" : 1
   }, {
    "name" : "allSegments",
    "type" : "core:BlueprintAttribute",
@@ -34,7 +33,7 @@
    "attributeType" : "integer",
    "description" : "Local node number on actual segment",
    "optional" : true,
-   "default" : "1"
+   "default" : 1
   }, {
    "name" : "allNodes",
    "type" : "core:BlueprintAttribute",
@@ -45,7 +44,7 @@
    "name" : "dof",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/SpringDOF",
+   "enumType" : "./SpringDOF",
    "description" : "Local degree of freedom.",
    "optional" : true,
    "default" : "GLOBAL_X_DIRECTION"
@@ -76,11 +75,9 @@
   }, {
    "name" : "stiffnessItems",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/GlobalSpringStiffnessItem",
+   "attributeType" : "./GlobalSpringStiffnessItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

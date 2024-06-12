@@ -1,8 +1,7 @@
 {
  "name" : "CommonSoilType",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/riflex/SoilType"],
+ "extends" : ["./SoilType"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -14,56 +13,54 @@
    "attributeType" : "integer",
    "description" : "Required resolution of soil reaction curves",
    "optional" : true,
-   "default" : "50"
+   "default" : 50
   }, {
    "name" : "pvDamping",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "mtDamping",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "baseShearLoadDamping",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "baseMomentDamping",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "lateralDisplacementForce",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/CommonSoilCoefficients",
+   "attributeType" : "./CommonSoilCoefficients",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "inPlaneMomentRotation",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/CommonSoilCoefficients",
+   "attributeType" : "./CommonSoilCoefficients",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "baseShearLoad",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/CommonSoilCoefficients",
+   "attributeType" : "./CommonSoilCoefficients",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "baseMoment",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/CommonSoilCoefficients",
+   "attributeType" : "./CommonSoilCoefficients",
    "contained" : true,
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

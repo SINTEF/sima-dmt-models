@@ -1,8 +1,7 @@
 {
  "name" : "LinePlot",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["core:Entity"],
+ "extends" : ["./ReportItem"],
  "attributes" : [{
    "name" : "title",
    "type" : "core:BlueprintAttribute",
@@ -23,13 +22,13 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "showtitle",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "caption",
    "type" : "core:BlueprintAttribute",
@@ -49,41 +48,39 @@
    "name" : "size",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/signals/report/PlotSize",
+   "enumType" : "./PlotSize",
    "optional" : true,
    "default" : "DYNAMIC"
   }, {
    "name" : "titlefont",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/signals/report/Font",
+   "attributeType" : "./Font",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "legendfont",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/signals/report/Font",
+   "attributeType" : "./Font",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "xaxis",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/signals/report/Axis",
+   "attributeType" : "./Axis",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "yaxis",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/signals/report/Axis",
+   "attributeType" : "./Axis",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "lines",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/signals/report/PlotLine",
+   "attributeType" : "./PlotLine",
    "dimensions" : "*",
    "contained" : true,
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

@@ -1,8 +1,7 @@
 {
  "name" : "CustomImage",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/custom/CustomComponent"],
+ "extends" : ["./CustomComponent"],
  "attributes" : [{
    "name" : "filename",
    "type" : "core:BlueprintAttribute",
@@ -13,8 +12,6 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true,
-   "default" : "0.2"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : 0.2
+  }]
 }

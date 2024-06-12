@@ -1,12 +1,11 @@
 {
  "name" : "NonEquidistantSignal",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/post/GeneratorSignal"],
+ "extends" : ["./GeneratorSignal"],
  "attributes" : [{
    "name" : "properties",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/SignalProperties",
+   "attributeType" : "./SignalProperties",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -32,7 +31,7 @@
   }, {
    "name" : "values",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/XYItem",
+   "attributeType" : "./XYItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -46,7 +45,5 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

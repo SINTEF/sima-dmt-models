@@ -1,12 +1,11 @@
 {
  "name" : "StaticLoadComponent",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/riflex/SegmentReference"],
+ "extends" : ["./SegmentReference"],
  "attributes" : [{
    "name" : "line",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/ARLine",
+   "attributeType" : "./ARLine",
    "contained" : false,
    "optional" : true,
    "description" : "Line"
@@ -16,7 +15,7 @@
    "attributeType" : "integer",
    "description" : "Segment on given line",
    "optional" : true,
-   "default" : "1"
+   "default" : 1
   }, {
    "name" : "allSegments",
    "type" : "core:BlueprintAttribute",
@@ -41,12 +40,12 @@
    "attributeType" : "number",
    "description" : "Magnitude of load component",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "referenceFrame",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/ReferenceFrameType",
+   "enumType" : "sima:simo/ReferenceFrameType",
    "description" : "Reference system for application of nodal load components. If GLOBAL the force is applied at the specified node; if LOCAL the force is applied to the specified element.",
    "optional" : true,
    "default" : "LOCAL"
@@ -56,7 +55,5 @@
    "attributeType" : "number",
    "description" : "Force increment on magnitude",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

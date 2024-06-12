@@ -1,8 +1,7 @@
 {
  "name" : "WindowFilter",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/post/OperationNode"],
+ "extends" : ["./OperationNode"],
  "attributes" : [{
    "name" : "x",
    "type" : "core:BlueprintAttribute",
@@ -31,21 +30,21 @@
   }, {
    "name" : "controlSignalInputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/ControlSignalInputSlot",
+   "attributeType" : "./ControlSignalInputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "filterInputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/InputSlot",
+   "attributeType" : "./InputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "filterOutputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/OutputSlot",
+   "attributeType" : "./OutputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -54,14 +53,14 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "useIndex",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Specify start and end index of signal",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "start",
    "type" : "core:BlueprintAttribute",
@@ -77,7 +76,7 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "startValue",
    "type" : "core:BlueprintAttribute",
@@ -94,7 +93,5 @@
    "attributeType" : "integer",
    "description" : "End index or last index if not set",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

@@ -1,8 +1,7 @@
 {
  "name" : "PostprocessorInputSlot",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/post/InputSlot"],
+ "extends" : ["sima:post/InputSlot"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,10 +10,8 @@
   }, {
    "name" : "postprocessorInput",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/PostWorkflowInput",
+   "attributeType" : "sima:post/PostWorkflowInput",
    "contained" : false,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

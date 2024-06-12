@@ -1,8 +1,7 @@
 {
  "name" : "DiffractedWaveField",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject"],
+ "extends" : ["sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,11 +10,9 @@
   }, {
    "name" : "waves",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/DiffractedWave",
+   "attributeType" : "./DiffractedWave",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

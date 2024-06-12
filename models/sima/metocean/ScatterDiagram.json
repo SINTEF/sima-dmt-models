@@ -1,8 +1,7 @@
 {
  "name" : "ScatterDiagram",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/Named"],
+ "extends" : ["sima:sima/Named"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,13 +10,13 @@
   }, {
    "name" : "hsUpperLimits",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/metocean/ScatterDimension",
+   "attributeType" : "./ScatterDimension",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "tpUpperLimits",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/metocean/ScatterDimension",
+   "attributeType" : "./ScatterDimension",
    "contained" : true,
    "optional" : false
   }, {
@@ -31,7 +30,5 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

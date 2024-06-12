@@ -1,8 +1,7 @@
 {
  "name" : "SectorExtreme",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "sector",
    "type" : "core:BlueprintAttribute",
@@ -16,11 +15,9 @@
   }, {
    "name" : "extremeValues",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/metocean/ExtremeValue",
+   "attributeType" : "./ExtremeValue",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

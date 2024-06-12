@@ -1,13 +1,12 @@
 {
  "name" : "ThinWalledPipeMaterial",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "materialModel",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/MaterialModel",
+   "enumType" : "./MaterialModel",
    "description" : "Type of material model.",
    "optional" : true,
    "default" : "LINEAR_MATERIAL"
@@ -41,23 +40,21 @@
    "attributeType" : "number",
    "description" : "Hardening parameter for material.",
    "optional" : true,
-   "default" : "1.0"
+   "default" : 1.0
   }, {
    "name" : "numIntegrationPoints",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of integration points along circumference.",
    "optional" : true,
-   "default" : "16"
+   "default" : 16
   }, {
    "name" : "strainStressCharacteristics",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/StrainStressItem",
+   "attributeType" : "./StrainStressItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true,
    "description" : "Strain-stress curve."
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

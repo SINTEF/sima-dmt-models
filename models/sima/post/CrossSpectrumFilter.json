@@ -1,8 +1,7 @@
 {
  "name" : "CrossSpectrumFilter",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/post/OperationNode"],
+ "extends" : ["./OperationNode"],
  "attributes" : [{
    "name" : "x",
    "type" : "core:BlueprintAttribute",
@@ -31,21 +30,21 @@
   }, {
    "name" : "controlSignalInputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/ControlSignalInputSlot",
+   "attributeType" : "./ControlSignalInputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "filterInputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/InputSlot",
+   "attributeType" : "./InputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "filterOutputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/OutputSlot",
+   "attributeType" : "./OutputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -61,7 +60,7 @@
    "attributeType" : "integer",
    "description" : "Smoothing parameter",
    "optional" : true,
-   "default" : "3"
+   "default" : 3
   }, {
    "name" : "fadedOverlap",
    "type" : "core:BlueprintAttribute",
@@ -80,8 +79,6 @@
    "attributeType" : "number",
    "description" : "Relative length of cosine taper window",
    "optional" : true,
-   "default" : "0.1"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : 0.1
+  }]
 }

@@ -1,23 +1,20 @@
 {
  "name" : "NotchFilter",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/simo/Estimator"],
+ "extends" : ["./Estimator"],
  "attributes" : [{
    "name" : "centerPeriod",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Center period of wave filter",
    "optional" : true,
-   "default" : "10.0"
+   "default" : 10.0
   }, {
    "name" : "strength",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Strength of wave filter, between 0 and 1",
    "optional" : true,
-   "default" : "1.0"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : 1.0
+  }]
 }

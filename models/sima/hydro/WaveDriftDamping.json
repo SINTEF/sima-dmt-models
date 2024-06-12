@@ -1,8 +1,7 @@
 {
  "name" : "WaveDriftDamping",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "directions",
    "type" : "core:BlueprintAttribute",
@@ -19,13 +18,13 @@
    "name" : "symmetry",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/hydro/DirectionSymmetry",
+   "enumType" : "./DirectionSymmetry",
    "optional" : true,
    "default" : "NO_SYMMETRY"
   }, {
    "name" : "items",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/WaveDriftDampingDofItem",
+   "attributeType" : "./WaveDriftDampingDofItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -33,7 +32,7 @@
    "name" : "from",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/hydro/WaveDriftDampingSource",
+   "enumType" : "./WaveDriftDampingSource",
    "description" : "Calculate from",
    "optional" : true,
    "default" : "INPUT"
@@ -41,10 +40,8 @@
    "name" : "forceCalculation",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/hydro/WaveDriftDampingForce",
+   "enumType" : "./WaveDriftDampingForce",
    "optional" : true,
    "default" : "ABSOLUTE"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

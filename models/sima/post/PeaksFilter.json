@@ -1,8 +1,7 @@
 {
  "name" : "PeaksFilter",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/post/OperationNode"],
+ "extends" : ["./OperationNode"],
  "attributes" : [{
    "name" : "x",
    "type" : "core:BlueprintAttribute",
@@ -31,21 +30,21 @@
   }, {
    "name" : "controlSignalInputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/ControlSignalInputSlot",
+   "attributeType" : "./ControlSignalInputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "filterInputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/InputSlot",
+   "attributeType" : "./InputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "filterOutputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/OutputSlot",
+   "attributeType" : "./OutputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -54,12 +53,12 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "extreme",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/post/PeakExtreme",
+   "enumType" : "./PeakExtreme",
    "description" : "Get maxima or minima",
    "optional" : true,
    "default" : "MAX"
@@ -67,7 +66,7 @@
    "name" : "_type",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/post/PeakType",
+   "enumType" : "./PeakType",
    "description" : "Get local or global peaks",
    "optional" : true,
    "default" : "LOCAL"
@@ -77,7 +76,7 @@
    "attributeType" : "number",
    "description" : "Choose a crossing level",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "useMean",
    "type" : "core:BlueprintAttribute",
@@ -90,8 +89,6 @@
    "attributeType" : "integer",
    "description" : "Number of partitions when finding block maxima/minima",
    "optional" : true,
-   "default" : "10"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : 10
+  }]
 }

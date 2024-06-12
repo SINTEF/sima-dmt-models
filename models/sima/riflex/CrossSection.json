@@ -2,7 +2,5 @@
  "name" : "CrossSection",
  "type" : "core:Blueprint",
  "abstract" : true,
- "extends" : ["/sima/NamedObject"],
- "storageRecipes" : [],
- "uiRecipes" : []
+ "extends" : ["sima:sima/NamedObject"]
 }

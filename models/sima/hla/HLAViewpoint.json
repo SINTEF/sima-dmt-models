@@ -1,8 +1,5 @@
 {
  "name" : "HLAViewpoint",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
- "storageRecipes" : [],
- "uiRecipes" : []
+ "extends" : ["sima:sima/MOAO"]
 }

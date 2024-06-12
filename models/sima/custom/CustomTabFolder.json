@@ -1,16 +1,13 @@
 {
  "name" : "CustomTabFolder",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/custom/CustomComponent"],
+ "extends" : ["./CustomComponent"],
  "attributes" : [{
    "name" : "tabItems",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/custom/CustomTabItem",
+   "attributeType" : "./CustomTabItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

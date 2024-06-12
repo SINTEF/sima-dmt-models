@@ -1,8 +1,7 @@
 {
  "name" : "HydrodynamicLoadStorage",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "store",
    "type" : "core:BlueprintAttribute",
@@ -15,16 +14,14 @@
    "attributeType" : "integer",
    "description" : "Storage for every <storage step> given.",
    "optional" : true,
-   "default" : "1"
+   "default" : 1
   }, {
    "name" : "elements",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/HydrodynamicLoadElementStorage",
+   "attributeType" : "./HydrodynamicLoadElementStorage",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true,
    "description" : "Specification of nodes for displacement storage"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

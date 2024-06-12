@@ -1,8 +1,7 @@
 {
  "name" : "FileOutput",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/post/OperationNode", "/post/OutputNode", "/post/SignalPropertiesContainer"],
+ "extends" : ["./OperationNode", "./OutputNode", "./SignalPropertiesContainer"],
  "attributes" : [{
    "name" : "x",
    "type" : "core:BlueprintAttribute",
@@ -31,28 +30,28 @@
   }, {
    "name" : "controlSignalInputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/ControlSignalInputSlot",
+   "attributeType" : "./ControlSignalInputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "filterInputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/InputSlot",
+   "attributeType" : "./InputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "filterOutputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/OutputSlot",
+   "attributeType" : "./OutputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "properties",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/SignalProperties",
+   "attributeType" : "./SignalProperties",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -66,7 +65,7 @@
    "name" : "fileFormat",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/post/FileFormat",
+   "enumType" : "./FileFormat",
    "description" : "Format of the exported file.",
    "optional" : true,
    "default" : "CSV"
@@ -86,7 +85,7 @@
    "name" : "decimalSeparator",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/post/DecimalSeparator",
+   "enumType" : "./DecimalSeparator",
    "description" : "Set according to the language of Excel. Comma as\r\ndecimal-separator will make semicolon the value-separator.",
    "optional" : true,
    "default" : "PERIOD"
@@ -114,7 +113,11 @@
    "attributeType" : "boolean",
    "description" : "Indent the output text",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }, {
+   "name" : "directModelExport",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Drop the extra signal layer If a model is encountered in the output",
+   "optional" : true
+  }]
 }

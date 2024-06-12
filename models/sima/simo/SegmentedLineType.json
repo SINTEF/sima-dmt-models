@@ -1,8 +1,7 @@
 {
  "name" : "SegmentedLineType",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/simo/LineType"],
+ "extends" : ["./LineType"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,7 +10,7 @@
   }, {
    "name" : "segments",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/LineSegment",
+   "attributeType" : "./LineSegment",
    "dimensions" : "*",
    "contained" : true,
    "optional" : false
@@ -31,7 +30,7 @@
    "name" : "bottomContactOption",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/BottomContactOption",
+   "enumType" : "./BottomContactOption",
    "description" : "Bottom contact option",
    "optional" : true,
    "default" : "LINE_END_ONLY"
@@ -57,7 +56,7 @@
    "name" : "method",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/LineCharacteristicMethod",
+   "enumType" : "./LineCharacteristicMethod",
    "description" : "Method for initialization of line",
    "optional" : true,
    "default" : "SHOOTING"
@@ -67,14 +66,14 @@
    "attributeType" : "integer",
    "description" : "Number of points in the line characteristics matrix, offset variation in the horizontal plane.",
    "optional" : true,
-   "default" : "40"
+   "default" : 40
   }, {
    "name" : "nptv",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of points in the line characteristics matrix, offset variation in the vertical plane.",
    "optional" : true,
-   "default" : "5"
+   "default" : 5
   }, {
    "name" : "slope",
    "type" : "core:BlueprintAttribute",
@@ -87,8 +86,6 @@
    "attributeType" : "boolean",
    "description" : "Controls wether a fairlead position outside the vmin, vmax range should be an error",
    "optional" : true,
-   "default" : "false"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : false
+  }]
 }

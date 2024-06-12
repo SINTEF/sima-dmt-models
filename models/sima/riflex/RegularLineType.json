@@ -1,8 +1,7 @@
 {
  "name" : "RegularLineType",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/riflex/ARLineType"],
+ "extends" : ["./ARLineType"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,25 +10,23 @@
   }, {
    "name" : "internalFluid",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/InternalFluidType",
+   "attributeType" : "./InternalFluidType",
    "contained" : false,
    "optional" : true,
    "description" : "Internal fluid component type."
   }, {
    "name" : "endComponent",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/NodalComponentType",
+   "attributeType" : "./NodalComponentType",
    "contained" : false,
    "optional" : true,
    "description" : "Nodal component type number for attached body or connector at end 2 of rthe last segment."
   }, {
    "name" : "segments",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/RegularSegment",
+   "attributeType" : "./RegularSegment",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

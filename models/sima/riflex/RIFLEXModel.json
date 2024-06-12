@@ -1,222 +1,219 @@
 {
  "name" : "RIFLEXModel",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/simo/SIMOModel"],
+ "extends" : ["sima:simo/SIMOModel"],
  "attributes" : [{
    "name" : "airfoils",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/windturbine/Airfoil",
+   "attributeType" : "sima:windturbine/Airfoil",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "environments",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/environment/Environment",
+   "attributeType" : "sima:environment/Environment",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "location",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/RIFLEXLocation",
+   "attributeType" : "./RIFLEXLocation",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "bodies",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SIMOBody",
+   "attributeType" : "sima:simo/SIMOBody",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "hydrodynamicCouplings",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/HydrodynamicCoupling",
+   "attributeType" : "sima:simo/HydrodynamicCoupling",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "simpleWireCouplings",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SimpleWireCoupling",
+   "attributeType" : "sima:simo/SimpleWireCoupling",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "fixedElongationCouplings",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/FixedElongationCoupling",
+   "attributeType" : "sima:simo/FixedElongationCoupling",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "dockingCones",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/DockingCone",
+   "attributeType" : "sima:simo/DockingCone",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "pointFenders",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/PointFender",
+   "attributeType" : "sima:simo/PointFender",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "rollerFenders",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/RollerFender",
+   "attributeType" : "sima:simo/RollerFender",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "ratchets",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/RatchetCoupling",
+   "attributeType" : "sima:simo/RatchetCoupling",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "multipleWireCouplings",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/MultipleWireCoupling",
+   "attributeType" : "sima:simo/MultipleWireCoupling",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "bumperGroups",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/BumperGroup",
+   "attributeType" : "sima:simo/BumperGroup",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "advancedBumpers",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/AdvancedBumper",
+   "attributeType" : "sima:simo/AdvancedBumper",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "liftLineCouplings",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/LiftLineCoupling",
+   "attributeType" : "sima:simo/LiftLineCoupling",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "momentCouplings",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/MomentCoupling",
+   "attributeType" : "sima:simo/MomentCoupling",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "sIMOStaticCalculationParameters",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SIMOStaticCalculationParameters",
+   "attributeType" : "sima:simo/SIMOStaticCalculationParameters",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "sIMODynamicCalculationParameters",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SIMODynamicCalculationParameters",
+   "attributeType" : "sima:simo/SIMODynamicCalculationParameters",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "stabilityCalculationParameters",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/StabilityCalculationParameters",
+   "attributeType" : "sima:simo/StabilityCalculationParameters",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "simoFrequencyDomainCalculation",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SIMOFrequencyDomainCalculation",
+   "attributeType" : "sima:simo/SIMOFrequencyDomainCalculation",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "fibreRopeModels",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/FibreRopeModel",
+   "attributeType" : "sima:simo/FibreRopeModel",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "slenderSystem",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/SlenderSystem",
+   "attributeType" : "./SlenderSystem",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "supportVessels",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/SupportVessel",
+   "attributeType" : "./SupportVessel",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "referenceFrames",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/ReferenceFrame",
+   "attributeType" : "./ReferenceFrame",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "combinedLoadingAnalyses",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/CombinedLoading",
+   "attributeType" : "./CombinedLoading",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "riflexStaticCalculationParameters",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/RIFLEXStaticCalculationParameters",
+   "attributeType" : "./RIFLEXStaticCalculationParameters",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "riflexDynamicCalculationParameters",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/RIFLEXDynamicCalculationParameters",
+   "attributeType" : "./RIFLEXDynamicCalculationParameters",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "riflexEigenvalueCalculationParameters",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/RIFLEXEigenvalueCalculationParameters",
+   "attributeType" : "./RIFLEXEigenvalueCalculationParameters",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "riflexVivanaCalculationParameters",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/RIFLEXVivanaCalculationParameters",
+   "attributeType" : "./RIFLEXVivanaCalculationParameters",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "potentialFlowLibrary",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/PotentialFlowLibrary",
+   "attributeType" : "./PotentialFlowLibrary",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "fatigueAnalyses",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/FatigueAnalysis",
+   "attributeType" : "./FatigueAnalysis",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "snCurves",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/SNCurve",
+   "attributeType" : "./SNCurve",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

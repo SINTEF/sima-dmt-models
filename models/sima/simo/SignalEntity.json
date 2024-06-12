@@ -1,15 +1,12 @@
 {
  "name" : "SignalEntity",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "entity",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/NamedObject",
+   "attributeType" : "sima:sima/NamedObject",
    "contained" : false,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

@@ -1,15 +1,12 @@
 {
  "name" : "CustomWorkflowSetInput",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/custom/CustomComponent"],
+ "extends" : ["./CustomComponent"],
  "attributes" : [{
    "name" : "workflowSet",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/workflow/WorkflowSetNode",
+   "attributeType" : "sima:workflow/WorkflowSetNode",
    "contained" : false,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

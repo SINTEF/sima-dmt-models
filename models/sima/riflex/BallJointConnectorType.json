@@ -1,8 +1,7 @@
 {
  "name" : "BallJointConnectorType",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/riflex/NodalComponentType"],
+ "extends" : ["./NodalComponentType"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -24,7 +23,7 @@
    "name" : "referenceFrame",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/ReferenceFrameType",
+   "enumType" : "sima:simo/ReferenceFrameType",
    "description" : "Reference frame",
    "optional" : true,
    "default" : "LOCAL"
@@ -68,7 +67,7 @@
    "name" : "boundaryRotX",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/BoundaryCondition",
+   "enumType" : "./BoundaryCondition",
    "description" : "Rotation freedom code, x-axis.",
    "optional" : true,
    "default" : "FREE"
@@ -76,7 +75,7 @@
    "name" : "boundaryRotY",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/BoundaryCondition",
+   "enumType" : "./BoundaryCondition",
    "description" : "Rotation freedom code, y-axis.",
    "optional" : true,
    "default" : "FREE"
@@ -84,11 +83,9 @@
    "name" : "boundaryRotZ",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/BoundaryCondition",
+   "enumType" : "./BoundaryCondition",
    "description" : "Rotation freedom code, z-axis.",
    "optional" : true,
    "default" : "FREE"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

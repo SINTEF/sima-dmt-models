@@ -1,44 +1,43 @@
 {
  "name" : "SIMAApplicationPreference",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/SIMAPreference"],
+ "extends" : ["./SIMAPreference"],
  "attributes" : [{
    "name" : "createTimestamp",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "deleteAutomatically",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "interpolate",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "overrideTimeZone",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "minimumDiskSpace",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : true,
-   "default" : "1"
+   "default" : 1
   }, {
    "name" : "autoSaveFrequency",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : true,
-   "default" : "5"
+   "default" : 5
   }, {
    "name" : "backupFolder",
    "type" : "core:BlueprintAttribute",
@@ -50,8 +49,6 @@
    "attributeType" : "integer",
    "description" : "Maximum number of significant digits used to display floating point numbers (editors must be reopened) ",
    "optional" : true,
-   "default" : "5"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : 5
+  }]
 }

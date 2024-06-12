@@ -1,8 +1,7 @@
 {
  "name" : "HorizontalAxisController",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/windturbine/HorizontalAxisWindTurbineController"],
+ "extends" : ["sima:windturbine/HorizontalAxisWindTurbineController"],
  "attributes" : [{
    "name" : "kp",
    "type" : "core:BlueprintAttribute",
@@ -40,6 +39,13 @@
    "description" : "Gear box ratio",
    "optional" : true
   }, {
+   "name" : "generatorEfficiency",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Generator efficiency due to electrical and mechanical losses",
+   "optional" : true,
+   "default" : 1.0
+  }, {
    "name" : "maxPitchRate",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
@@ -67,13 +73,13 @@
    "name" : "gainScheduling",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/windturbine/TableFormat",
+   "enumType" : "sima:windturbine/TableFormat",
    "optional" : true,
    "default" : "DEFAULT"
   }, {
    "name" : "gainItems",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/windturbine/GainItem",
+   "attributeType" : "sima:windturbine/GainItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -104,7 +110,7 @@
   }, {
    "name" : "libraryPaths",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/LibraryPaths",
+   "attributeType" : "sima:sima/LibraryPaths",
    "contained" : true,
    "optional" : false
   }, {
@@ -147,7 +153,7 @@
    "name" : "powerExtraction",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/windturbine/PowerExtraction",
+   "enumType" : "sima:windturbine/PowerExtraction",
    "optional" : true,
    "default" : "POWER"
   }, {
@@ -166,7 +172,7 @@
    "name" : "controllerType",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/windturbine/ControllerType",
+   "enumType" : "sima:windturbine/ControllerType",
    "optional" : true,
    "default" : "JAR_FILE_CONTROLLER"
   }, {
@@ -184,10 +190,8 @@
   }, {
    "name" : "towerTop",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/ElementEndSpesification",
+   "attributeType" : "./ElementEndSpesification",
    "contained" : true,
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

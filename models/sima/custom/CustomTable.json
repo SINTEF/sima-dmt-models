@@ -1,15 +1,12 @@
 {
  "name" : "CustomTable",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/custom/CustomComponent"],
+ "extends" : ["./CustomComponent"],
  "attributes" : [{
    "name" : "table",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/SignalTable",
+   "attributeType" : "sima:post/SignalTable",
    "contained" : false,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

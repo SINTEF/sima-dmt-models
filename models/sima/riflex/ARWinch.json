@@ -1,8 +1,7 @@
 {
  "name" : "ARWinch",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/riflex/SegmentReference", "/sima/NamedObject"],
+ "extends" : ["./SegmentReference", "sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,7 +10,7 @@
   }, {
    "name" : "line",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/ARLine",
+   "attributeType" : "./ARLine",
    "contained" : false,
    "optional" : true,
    "description" : "Line"
@@ -21,7 +20,7 @@
    "attributeType" : "integer",
    "description" : "Segment on given line",
    "optional" : true,
-   "default" : "1"
+   "default" : 1
   }, {
    "name" : "allSegments",
    "type" : "core:BlueprintAttribute",
@@ -32,7 +31,7 @@
    "name" : "segmentEnd",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/End",
+   "enumType" : "./End",
    "description" : "End of segment (and line) attached to winch (1 or 2)",
    "optional" : true,
    "default" : "ONE"
@@ -75,7 +74,7 @@
   }, {
    "name" : "attachedBody",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Body",
+   "attributeType" : "sima:sima/Body",
    "contained" : false,
    "optional" : true
   }, {
@@ -106,7 +105,7 @@
    "name" : "winchCenter",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/CenterOfWinch",
+   "enumType" : "./CenterOfWinch",
    "description" : "Center of winch in positive or negative local Z-axis",
    "optional" : true,
    "default" : "NEGATIVE_Z_AXIS"
@@ -116,7 +115,5 @@
    "attributeType" : "boolean",
    "description" : "Control parameter for adjusting the length of elements attached to winch",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

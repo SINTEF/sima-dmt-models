@@ -1,8 +1,7 @@
 {
  "name" : "StressJointLineType",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/riflex/ARLineType"],
+ "extends" : ["./ARLineType"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,7 +10,7 @@
   }, {
    "name" : "internalFluid",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/InternalFluidType",
+   "attributeType" : "./InternalFluidType",
    "contained" : false,
    "optional" : true,
    "description" : "Internal fluid component type."
@@ -42,7 +41,7 @@
   }, {
    "name" : "segments",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/StressJointSegment",
+   "attributeType" : "./StressJointSegment",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -50,16 +49,14 @@
    "name" : "loadFormulation",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/StressJointLoadFormulation",
+   "enumType" : "./StressJointLoadFormulation",
    "optional" : true,
    "default" : "MORISON"
   }, {
    "name" : "vivCoefficients",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/TimeDomainVIVLoadCoefficients",
+   "attributeType" : "./TimeDomainVIVLoadCoefficients",
    "contained" : true,
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

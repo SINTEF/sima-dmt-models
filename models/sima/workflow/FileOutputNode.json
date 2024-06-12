@@ -1,8 +1,7 @@
 {
  "name" : "FileOutputNode",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/post/OutputNode", "/post/SignalPropertiesContainer"],
+ "extends" : ["sima:post/OutputNode", "sima:post/SignalPropertiesContainer"],
  "attributes" : [{
    "name" : "x",
    "type" : "core:BlueprintAttribute",
@@ -31,20 +30,20 @@
   }, {
    "name" : "controlSignalInputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/ControlSignalInputSlot",
+   "attributeType" : "sima:post/ControlSignalInputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "inputSlot",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/InputSlot",
+   "attributeType" : "sima:post/InputSlot",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "properties",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/SignalProperties",
+   "attributeType" : "sima:post/SignalProperties",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -58,7 +57,7 @@
    "name" : "fileFormat",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/post/FileFormat",
+   "enumType" : "sima:post/FileFormat",
    "description" : "Format of the exported file.",
    "optional" : true,
    "default" : "CSV"
@@ -78,7 +77,7 @@
    "name" : "decimalSeparator",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/post/DecimalSeparator",
+   "enumType" : "sima:post/DecimalSeparator",
    "description" : "Set according to the language of Excel. Comma as\r\ndecimal-separator will make semicolon the value-separator.",
    "optional" : true,
    "default" : "PERIOD"
@@ -107,12 +106,16 @@
    "description" : "Indent the output text",
    "optional" : true
   }, {
+   "name" : "directModelExport",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Drop the extra signal layer If a model is encountered in the output",
+   "optional" : true
+  }, {
    "name" : "outputSlot",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/OutputSlot",
+   "attributeType" : "sima:post/OutputSlot",
    "contained" : true,
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

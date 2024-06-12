@@ -1,8 +1,7 @@
 {
  "name" : "StaticLoadTypeItem",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "runWithPrevious",
    "type" : "core:BlueprintAttribute",
@@ -10,16 +9,10 @@
    "description" : "Run the load group together with the last",
    "optional" : true
   }, {
-   "name" : "boundaryChangeGroup",
-   "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/BoundaryChangeGroup",
-   "contained" : true,
-   "optional" : true
-  }, {
    "name" : "loadType",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/StaticLoadType",
+   "enumType" : "./StaticLoadType",
    "description" : "Load Type",
    "optional" : true,
    "default" : "VOLU"
@@ -29,26 +22,26 @@
    "attributeType" : "integer",
    "description" : "Number of load steps",
    "optional" : true,
-   "default" : "10"
+   "default" : 10
   }, {
    "name" : "maxIterations",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Maximum number of iterations during application of load",
    "optional" : true,
-   "default" : "10"
+   "default" : 10
   }, {
    "name" : "accuracy",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Required accuracy measured by displacement norm",
    "optional" : true,
-   "default" : "1.0E-5"
+   "default" : 1.0E-5
   }, {
    "name" : "convergenceNorm",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/ConvergenceNorm",
+   "enumType" : "./ConvergenceNorm",
    "optional" : true,
    "default" : "DISP"
   }, {
@@ -57,32 +50,38 @@
    "attributeType" : "number",
    "description" : " Required accuracy measured by energy norm. Value is not used if convergence norm is 'Displacement'.",
    "optional" : true,
-   "default" : "1.0E-5"
+   "default" : 1.0E-5
   }, {
    "name" : "entered",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "start condition for pipe-in-pipe contact",
    "optional" : true,
-   "default" : "true"
+   "default" : true
+  }, {
+   "name" : "boundaryChangeGroup",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "./BoundaryChangeGroup",
+   "contained" : true,
+   "optional" : false
   }, {
    "name" : "temperatureVariations",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/TemperatureVariationItem",
+   "attributeType" : "./TemperatureVariationItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "pressureVariations",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/PressureVariationItem",
+   "attributeType" : "./PressureVariationItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "winchVariations",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/WinchVariationItem",
+   "attributeType" : "./WinchVariationItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -92,15 +91,13 @@
    "attributeType" : "number",
    "description" : "Scaling factor for growth profile",
    "optional" : true,
-   "default" : "1.0"
+   "default" : 1.0
   }, {
    "name" : "windOnTurbineBlades",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Enables wind force on turbine blades",
    "optional" : true,
-   "default" : "false"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : false
+  }]
 }

@@ -1,12 +1,11 @@
 {
  "name" : "CustomEditor",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "children",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/custom/CustomComponent",
+   "attributeType" : "./CustomComponent",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -26,7 +25,5 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

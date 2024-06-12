@@ -1,15 +1,14 @@
 {
  "name" : "GDFCylinder",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "dimensionalLength",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Dimensional length",
    "optional" : true,
-   "default" : "1.0"
+   "default" : 1.0
   }, {
    "name" : "centerX",
    "type" : "core:BlueprintAttribute",
@@ -28,36 +27,34 @@
    "attributeType" : "number",
    "description" : "Radius of cyllinder",
    "optional" : true,
-   "default" : "40.0"
+   "default" : 40.0
   }, {
    "name" : "numberOfRadialPanels",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of panels around the circumference",
    "optional" : true,
-   "default" : "20"
+   "default" : 20
   }, {
    "name" : "depth",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Depth of cylinder (1 means equidistant)",
    "optional" : true,
-   "default" : "20.0"
+   "default" : 20.0
   }, {
    "name" : "numberOfVerticalPanels",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of depth levels",
    "optional" : true,
-   "default" : "10"
+   "default" : 10
   }, {
    "name" : "exponent",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Exponent in depth distribution",
    "optional" : true,
-   "default" : "2.0"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : 2.0
+  }]
 }

@@ -1,8 +1,7 @@
 {
  "name" : "CatenaryLine",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject"],
+ "extends" : ["sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,7 +10,7 @@
   }, {
    "name" : "attachmentPoint",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SIMOBodyPoint",
+   "attributeType" : "./SIMOBodyPoint",
    "contained" : false,
    "optional" : true
   }, {
@@ -33,12 +32,6 @@
    "description" : "Y-coordinate of the anchor in global coordinate\r\nsystem",
    "optional" : true
   }, {
-   "name" : "xwinch",
-   "type" : "core:BlueprintAttribute",
-   "attributeType" : "number",
-   "description" : "Run length of winch",
-   "optional" : true
-  }, {
    "name" : "xhor",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
@@ -53,14 +46,14 @@
   }, {
    "name" : "lineType",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/LineType",
+   "attributeType" : "./LineType",
    "contained" : false,
    "optional" : true
   }, {
    "name" : "inputMethod",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/InputMethodType",
+   "enumType" : "./InputMethodType",
    "description" : "Method for initialization of line",
    "optional" : true,
    "default" : "TENSION"
@@ -68,7 +61,7 @@
    "name" : "failureMode",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/FailureMode",
+   "enumType" : "./FailureMode",
    "description" : "Failure mode of positioning element",
    "optional" : true,
    "default" : "NONE"
@@ -84,7 +77,5 @@
    "attributeType" : "number",
    "description" : "Breaking strength",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

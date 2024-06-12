@@ -1,8 +1,7 @@
 {
  "name" : "ConditionSetResultContainer",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/ResultContainer"],
+ "extends" : ["sima:sima/ResultContainer"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,18 +10,16 @@
   }, {
    "name" : "properties",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Property",
+   "attributeType" : "sima:sima/Property",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "resultContainers",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/ConditionResultContainer",
+   "attributeType" : "sima:sima/ConditionResultContainer",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

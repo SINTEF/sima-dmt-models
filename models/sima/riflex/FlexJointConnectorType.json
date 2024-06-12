@@ -1,8 +1,7 @@
 {
  "name" : "FlexJointConnectorType",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/riflex/NodalComponentType"],
+ "extends" : ["./NodalComponentType"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -114,7 +113,7 @@
    "name" : "stiffnessTypeRotX",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/RotationalStiffnessType",
+   "enumType" : "./RotationalStiffnessType",
    "description" : "Rotational stiffnes type - local x-axis.",
    "optional" : true,
    "default" : "FIXED"
@@ -122,7 +121,7 @@
    "name" : "stiffnessTypeRotY",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/RotationalStiffnessType",
+   "enumType" : "./RotationalStiffnessType",
    "description" : "Rotational stiffnes type - local z-axis.",
    "optional" : true,
    "default" : "FIXED"
@@ -130,7 +129,7 @@
    "name" : "stiffnessTypeRotZ",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/RotationalStiffnessType",
+   "enumType" : "./RotationalStiffnessType",
    "description" : "Rotational stiffnes type - local z-axis.",
    "optional" : true,
    "default" : "FIXED"
@@ -179,25 +178,23 @@
   }, {
    "name" : "stiffnessCharacteristicsRotX",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/RotationalStiffnessItem",
+   "attributeType" : "./RotationalStiffnessItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "stiffnessCharacteristicsRotY",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/RotationalStiffnessItem",
+   "attributeType" : "./RotationalStiffnessItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "stiffnessCharacteristicsRotZ",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/RotationalStiffnessItem",
+   "attributeType" : "./RotationalStiffnessItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

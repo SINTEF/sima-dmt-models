@@ -1,8 +1,7 @@
 {
  "name" : "WamitEnvironment",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject", "/sima/ConditionSelectable"],
+ "extends" : ["sima:sima/NamedObject", "sima:sima/ConditionSelectable"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,10 +10,8 @@
   }, {
    "name" : "wave",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/wamit/WamitWave",
+   "attributeType" : "./WamitWave",
    "contained" : true,
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

@@ -1,0 +1,6 @@
+{
+ "name" : "ConstructionType",
+ "type" : "core:Enum",
+ "values" : ["STUDLESS", "STUDLINK"],
+ "labels" : ["Studless", "StudLink"]
+}

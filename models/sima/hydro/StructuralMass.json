@@ -1,8 +1,7 @@
 {
  "name" : "StructuralMass",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "mass",
    "type" : "core:BlueprintAttribute",
@@ -48,11 +47,9 @@
   }, {
    "name" : "cog",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Point3",
+   "attributeType" : "sima:sima/Point3",
    "contained" : true,
    "optional" : false,
    "description" : "Coordinates of centre of gravity, (L)"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }
