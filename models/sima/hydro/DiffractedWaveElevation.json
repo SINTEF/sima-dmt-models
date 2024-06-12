@@ -1,8 +1,7 @@
 {
  "name" : "DiffractedWaveElevation",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "directions",
    "type" : "core:BlueprintAttribute",
@@ -18,10 +17,8 @@
   }, {
    "name" : "elevation",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/DirectionDependentComplexValues",
+   "attributeType" : "./DirectionDependentComplexValues",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

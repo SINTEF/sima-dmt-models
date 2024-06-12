@@ -1,8 +1,7 @@
 {
  "name" : "GeneralCrossSection",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/riflex/CrossSection", "/riflex/CRSAxialFrictionModel"],
+ "extends" : ["./CrossSection", "./CRSAxialFrictionModel"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -14,12 +13,12 @@
    "attributeType" : "boolean",
    "description" : "Scaling of Froude-Krylov term in Morison’s equation in normal direction",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "loadFormulation",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/LoadFormulation",
+   "enumType" : "./LoadFormulation",
    "optional" : true,
    "default" : "MORISON"
   }, {
@@ -32,7 +31,7 @@
    "name" : "hydrodynamicInputCode",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/HydrodynamicInputCode",
+   "enumType" : "./HydrodynamicInputCode",
    "description" : "Hydrodynamic input code",
    "optional" : true,
    "default" : "DIMENSIONAL"
@@ -60,14 +59,14 @@
    "attributeType" : "number",
    "description" : "Scaling factor for Froude-Krylov term in Morison’s equation in normal direction",
    "optional" : true,
-   "default" : "1.0"
+   "default" : 1.0
   }, {
    "name" : "tangentialDirectionScaling",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Scale for Froude-Krylov term in Morison’s equation in tangential direction",
    "optional" : true,
-   "default" : "1.0"
+   "default" : 1.0
   }, {
    "name" : "cdx",
    "type" : "core:BlueprintAttribute",
@@ -197,19 +196,13 @@
   }, {
    "name" : "massDamping",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/CRSMassDamping",
-   "contained" : true,
-   "optional" : false
-  }, {
-   "name" : "stiffnessDamping",
-   "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/CRSStiffnessDamping",
+   "attributeType" : "./CRSMassDamping",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "axialDamping",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/CRSAxialDamping",
+   "attributeType" : "./CRSAxialDamping",
    "contained" : true,
    "optional" : false
   }, {
@@ -234,7 +227,7 @@
    "name" : "aerodynamicInputCode",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/AerodynamicInputCode",
+   "enumType" : "./AerodynamicInputCode",
    "description" : "Aerodynamic input code",
    "optional" : true,
    "default" : "NONE"
@@ -283,7 +276,7 @@
   }, {
    "name" : "airfoil",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/windturbine/Airfoil",
+   "attributeType" : "sima:windturbine/Airfoil",
    "contained" : false,
    "optional" : true
   }, {
@@ -313,7 +306,7 @@
    "name" : "aerodynamicForceType",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/AerodynamicForceType",
+   "enumType" : "./AerodynamicForceType",
    "optional" : true,
    "default" : "NONE"
   }, {
@@ -328,70 +321,70 @@
    "attributeType" : "number",
    "description" : "Thermal expansion coefficient",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "massCenterY",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Mass center Y-coordinate in beam element system",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "massCenterZ",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Mass center Z-coordinate in beam element system",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "buoyancyCenterY",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Buoyancy center Y-coordinate in beam element system",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "buoyancyCenterZ",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Buoyancy center Z-coordinate in beam element system",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "areaCenterY",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Area center Y-coordinate in beam element system",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "areaCenterZ",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Area center Z-coordinate in beam element system",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "principalAxesOrientation",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Orientation (theta) of principal axes V and W",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "shearCenterY",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Shear center Y-coordinate in beam element system",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "shearCenterZ",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Shear center Z-coordinate in beam element system",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "massCoefficient",
    "type" : "core:BlueprintAttribute",
@@ -446,7 +439,11 @@
    "attributeType" : "number",
    "description" : "Shear stiffness in principal V-direction. Infinite shear stiffness if equal to zero",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }, {
+   "name" : "stiffnessDamping",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "./GeneralCrossSectionStiffnessDamping",
+   "contained" : true,
+   "optional" : false
+  }]
 }

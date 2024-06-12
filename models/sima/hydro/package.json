@@ -3,17 +3,15 @@
  "type" : "core:Package",
  "_meta_" : {
   "type" : "core:Meta",
-  "version" : "28",
+  "version" : "29",
   "dependencies" : [{
     "alias" : "core",
     "address" : "system/SIMOS",
-    "version" : "0.0.1",
-    "protocol" : "dmss"
+    "version" : "0.0.1"
    }, {
     "alias" : "hydro",
     "address" : "hydro",
-    "version" : "28",
-    "protocol" : "dmss"
+    "version" : "29"
    }]
  }
 }

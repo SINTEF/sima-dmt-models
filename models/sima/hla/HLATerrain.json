@@ -1,8 +1,7 @@
 {
  "name" : "HLATerrain",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/hla/HLAObject"],
+ "extends" : ["./HLAObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -13,7 +12,5 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

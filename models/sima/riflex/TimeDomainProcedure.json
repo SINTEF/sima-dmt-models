@@ -1,13 +1,12 @@
 {
  "name" : "TimeDomainProcedure",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "method",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/MethodIndicator",
+   "enumType" : "./MethodIndicator",
    "description" : "Method indicator",
    "optional" : true,
    "default" : "NONLINEAR"
@@ -15,7 +14,7 @@
    "name" : "procedure",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/ProcedureIndicator",
+   "enumType" : "./ProcedureIndicator",
    "description" : "Procedure indicator",
    "optional" : true,
    "default" : "NEWMARK"
@@ -55,26 +54,26 @@
    "attributeType" : "number",
    "description" : "Inverse value of the beta-parameter.",
    "optional" : true,
-   "default" : "4.0"
+   "default" : 4.0
   }, {
    "name" : "gamma",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Value of the parameter gamma of the Newmark operators (usually equal to 0.5)",
    "optional" : true,
-   "default" : "0.5"
+   "default" : 0.5
   }, {
    "name" : "theta",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Value of the parameter theta in Wilson`s integration method",
    "optional" : true,
-   "default" : "1.0"
+   "default" : 1.0
   }, {
    "name" : "dampingOption",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/RayleighDamping",
+   "enumType" : "./RayleighDamping",
    "description" : "Stiffness proportional damping options",
    "optional" : true,
    "default" : "TOTAL"
@@ -84,7 +83,7 @@
    "attributeType" : "number",
    "description" : "Global mass proportional damping factor",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "globalStiffnessDampingFactor",
    "type" : "core:BlueprintAttribute",
@@ -97,55 +96,53 @@
    "attributeType" : "number",
    "description" : "Local mass proportional damping factor for tension",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "localMassTorsionDamping",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Local mass proportional damping factor for torsion",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "localMassBendingDamping",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Local mass proportional damping factor for bending",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "localStiffnessTensionDamping",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Local stiffness proportional damping factor for tension",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "localStiffnessTorsionDamping",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Local stiffness proportional damping factor for torsion",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "localStiffnessBendingDamping",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Local stiffness proportional damping factor for bending",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "nonLinearForceModel",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/NonLinearForceModel",
+   "attributeType" : "./NonLinearForceModel",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "nonLinearIntegrationProcedure",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/NonLinearIntegrationProcedure",
+   "attributeType" : "./NonLinearIntegrationProcedure",
    "contained" : true,
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

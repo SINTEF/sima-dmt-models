@@ -1,8 +1,7 @@
 {
  "name" : "SlotConnection",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "useQuery",
    "type" : "core:BlueprintAttribute",
@@ -17,30 +16,28 @@
   }, {
    "name" : "userRequirements",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/Requirement",
+   "attributeType" : "./Requirement",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "points",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/graph/Point",
+   "attributeType" : "sima:graph/Point",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "toSlot",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/InputSlot",
+   "attributeType" : "./InputSlot",
    "contained" : false,
    "optional" : false
   }, {
    "name" : "fromSlot",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/OutputSlot",
+   "attributeType" : "./OutputSlot",
    "contained" : false,
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

@@ -1,12 +1,11 @@
 {
  "name" : "SoilItem",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "soilMaterial",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/Soil",
+   "attributeType" : "./Soil",
    "contained" : false,
    "optional" : false,
    "description" : "Soil material reference to valid material of type clay or sand"
@@ -16,7 +15,5 @@
    "attributeType" : "number",
    "description" : "The distance from mudline to lower end of soil layer",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

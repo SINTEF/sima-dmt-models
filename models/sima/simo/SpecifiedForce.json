@@ -1,8 +1,7 @@
 {
  "name" : "SpecifiedForce",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject"],
+ "extends" : ["sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -12,14 +11,14 @@
    "name" : "referenceFrame",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/ReferenceFrameType",
+   "enumType" : "./ReferenceFrameType",
    "description" : "Direction vector in local or global coordinate system",
    "optional" : true,
    "default" : "LOCAL"
   }, {
    "name" : "directionVector",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Vector3",
+   "attributeType" : "sima:sima/Vector3",
    "contained" : true,
    "optional" : false
   }, {
@@ -28,19 +27,19 @@
    "attributeType" : "number",
    "description" : "Time for switching component on",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "deactivationTime",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Time for switching component off",
    "optional" : true,
-   "default" : "100000.0"
+   "default" : 100000.0
   }, {
    "name" : "loadType",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/SpecifiedLoadType",
+   "enumType" : "./SpecifiedLoadType",
    "optional" : true,
    "default" : "CONSTANT"
   }, {
@@ -68,10 +67,8 @@
   }, {
    "name" : "attachmentPoint",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Point3",
+   "attributeType" : "sima:sima/Point3",
    "contained" : true,
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

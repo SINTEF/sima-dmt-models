@@ -1,8 +1,7 @@
 {
  "name" : "HLAControlConfiguration",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/hla/HLAObject"],
+ "extends" : ["./HLAObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -20,65 +19,63 @@
    "attributeType" : "number",
    "description" : "Maximum rotation speed",
    "optional" : true,
-   "default" : "1.0"
+   "default" : 1.0
   }, {
    "name" : "vMaxX",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Maximum speed in x",
    "optional" : true,
-   "default" : "2.0"
+   "default" : 2.0
   }, {
    "name" : "vMaxY",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Maximum speed in y",
    "optional" : true,
-   "default" : "1.0"
+   "default" : 1.0
   }, {
    "name" : "aMaxRot",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Maximum rotation acceleration",
    "optional" : true,
-   "default" : "0.1"
+   "default" : 0.1
   }, {
    "name" : "aMaxX",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Maximum acceleration in x",
    "optional" : true,
-   "default" : "0.2"
+   "default" : 0.2
   }, {
    "name" : "aMaxY",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "maximum acceleration in y",
    "optional" : true,
-   "default" : "0.05"
+   "default" : 0.05
   }, {
    "name" : "limRot",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "The rotation accuracy",
    "optional" : true,
-   "default" : "1.0"
+   "default" : 1.0
   }, {
    "name" : "limXY",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "The movement accuracy",
    "optional" : true,
-   "default" : "0.5"
+   "default" : 0.5
   }, {
    "name" : "controlReference",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/hla/HLAControlReference",
+   "enumType" : "./HLAControlReference",
    "description" : "Control reference",
    "optional" : true,
    "default" : "POSITION"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

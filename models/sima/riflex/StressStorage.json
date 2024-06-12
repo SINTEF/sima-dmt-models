@@ -1,17 +1,14 @@
 {
  "name" : "StressStorage",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "elements",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/ElementStressStorage",
+   "attributeType" : "./ElementStressStorage",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true,
    "description" : "Specification of nodes for displacement storage"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

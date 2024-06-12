@@ -1,21 +1,18 @@
 {
  "name" : "TensionMap",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "key",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/DistanceKey",
+   "attributeType" : "./DistanceKey",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "value",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/TensionItem",
+   "attributeType" : "./TensionItem",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

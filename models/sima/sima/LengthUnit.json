@@ -1,6 +1,6 @@
 {
  "name" : "LengthUnit",
  "type" : "core:Enum",
- "values" : ["METER", "FEET"],
- "labels" : ["m", "ft"]
+ "values" : ["METER", "FEET", "MILLIMETER"],
+ "labels" : ["m", "ft", "mm"]
 }

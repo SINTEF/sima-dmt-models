@@ -1,8 +1,7 @@
 {
  "name" : "HLASignal",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "objectId",
    "type" : "core:BlueprintAttribute",
@@ -14,7 +13,5 @@
    "attributeType" : "string",
    "description" : "Explicitly sets the unit for the HLASignal",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

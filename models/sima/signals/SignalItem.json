@@ -11,11 +11,9 @@
   }, {
    "name" : "attributes",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/signals/Attribute",
+   "attributeType" : "./Attribute",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

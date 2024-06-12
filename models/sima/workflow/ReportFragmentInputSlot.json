@@ -1,14 +1,11 @@
 {
  "name" : "ReportFragmentInputSlot",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/workflow/ReportFragmentItem", "/post/InputSlot"],
+ "extends" : ["./ReportFragmentItem", "sima:post/InputSlot"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

@@ -1,13 +1,12 @@
 {
  "name" : "TurbulenceBoxScaling",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "scalingOption",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/windpark/ScalingOption",
+   "enumType" : "./ScalingOption",
    "optional" : true,
    "default" : "NONE"
   }, {
@@ -15,20 +14,18 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true,
-   "default" : "1.0"
+   "default" : 1.0
   }, {
    "name" : "transverseDirectionScalingFactor",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true,
-   "default" : "0.8"
+   "default" : 0.8
   }, {
    "name" : "verticalDirectionScalingFactor",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true,
-   "default" : "0.5"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : 0.5
+  }]
 }

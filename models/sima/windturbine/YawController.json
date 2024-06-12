@@ -1,13 +1,12 @@
 {
  "name" : "YawController",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "yawControllerType",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/windturbine/YawControllerType",
+   "enumType" : "./YawControllerType",
    "optional" : true,
    "default" : "NONE"
   }, {
@@ -44,7 +43,5 @@
    "attributeType" : "number",
    "description" : "Filter period for yaw misalignment signal. Used to determine end time for yawing back to set point",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

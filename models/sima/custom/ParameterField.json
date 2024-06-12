@@ -2,7 +2,5 @@
  "name" : "ParameterField",
  "type" : "core:Blueprint",
  "abstract" : true,
- "extends" : ["/custom/CustomComponent", "/sima/SingleParameter"],
- "storageRecipes" : [],
- "uiRecipes" : []
+ "extends" : ["./CustomComponent", "sima:sima/SingleParameter"]
 }

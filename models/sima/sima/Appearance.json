@@ -1,8 +1,7 @@
 {
  "name" : "Appearance",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["./MOAO"],
  "attributes" : [{
    "name" : "graphicsfile",
    "type" : "core:BlueprintAttribute",
@@ -12,32 +11,32 @@
   }, {
    "name" : "translation",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Vector3",
+   "attributeType" : "./Vector3",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "rotation",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Vector3",
+   "attributeType" : "./Vector3",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "scaling",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Vector3",
+   "attributeType" : "./Vector3",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "color",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/SIMAColor",
+   "attributeType" : "./SIMAColor",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "geomRepresentationType",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/sima/GeomRepresentationType",
+   "enumType" : "./GeomRepresentationType",
    "description" : "Geometry representation type",
    "optional" : true,
    "default" : "DEFAULT_BOX"
@@ -46,7 +45,7 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true,
-   "default" : "1.0"
+   "default" : 1.0
   }, {
    "name" : "transparency",
    "type" : "core:BlueprintAttribute",
@@ -57,11 +56,9 @@
    "name" : "symmetry",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/sima/Symmetry",
+   "enumType" : "./Symmetry",
    "description" : "Symmetric properties of the geometry",
    "optional" : true,
    "default" : "NONE"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

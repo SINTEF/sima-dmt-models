@@ -1,44 +1,41 @@
 {
  "name" : "CatenarySystem",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "elongationCharacteristics",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/ElongationCharacteristic",
+   "attributeType" : "./ElongationCharacteristic",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "lines",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/CatenaryLine",
+   "attributeType" : "./CatenaryLine",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "segmentedLineTypes",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SegmentedLineType",
+   "attributeType" : "./SegmentedLineType",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "buoys",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/BuoyType",
+   "attributeType" : "./BuoyType",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "directInputLineTypes",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/DirectInputLineType",
+   "attributeType" : "./DirectInputLineType",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

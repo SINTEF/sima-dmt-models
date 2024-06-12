@@ -1,8 +1,7 @@
 {
  "name" : "Generator",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/Named", "/sima/ConditionSelectable"],
+ "extends" : ["sima:sima/Named", "sima:sima/ConditionSelectable"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -13,18 +12,18 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true,
-   "default" : "1.3"
+   "default" : 1.3
   }, {
    "name" : "kinematicViscosity",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true,
-   "default" : "1.824E-5"
+   "default" : 1.824E-5
   }, {
    "name" : "meanderingOption",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/windpark/MeanderingAnalysisOption",
+   "enumType" : "./MeanderingAnalysisOption",
    "description" : "Compute or skip computation of dynamic wake meandering",
    "optional" : true,
    "default" : "COMP"
@@ -32,7 +31,7 @@
    "name" : "powerOption",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/windpark/PowerOption",
+   "enumType" : "./PowerOption",
    "description" : "Compute or skip computation of power",
    "optional" : true,
    "default" : "COMP"
@@ -40,7 +39,7 @@
    "name" : "deficitOption",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/windpark/DeficitAnalysisOption",
+   "enumType" : "./DeficitAnalysisOption",
    "description" : "Compute or read near field deficit",
    "optional" : true,
    "default" : "COMP"
@@ -48,7 +47,7 @@
    "name" : "focusOption",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/windpark/Focus",
+   "enumType" : "./Focus",
    "description" : "Compute for a specific turbine or for the whole park",
    "optional" : true,
    "default" : "TARGET"
@@ -58,19 +57,19 @@
    "attributeType" : "number",
    "description" : "Rotor angle change pr step",
    "optional" : true,
-   "default" : "3.0"
+   "default" : 3.0
   }, {
    "name" : "maxLaps",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Maximum number of rotor laps for profile convergence",
    "optional" : true,
-   "default" : "30"
+   "default" : 30
   }, {
    "name" : "deficitFileContents",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/windpark/DeficitFileContents",
+   "enumType" : "./DeficitFileContents",
    "optional" : true,
    "default" : "INDUCTION_PROFILE"
   }, {
@@ -94,7 +93,7 @@
    "name" : "multipleDeficitMethod",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/windpark/MultipleDeficitMethod",
+   "enumType" : "./MultipleDeficitMethod",
    "description" : "Option for choosing the best approach for handling multiple deficits",
    "optional" : true,
    "default" : "MAXOP"
@@ -102,21 +101,21 @@
    "name" : "nearWakeLengthModel",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/windpark/NearWakeLengthModel",
+   "enumType" : "./NearWakeLengthModel",
    "optional" : true,
    "default" : "ROTOR_DIAMETERS"
   }, {
    "name" : "viscosityFilter",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/windpark/ViscosityFilter",
+   "enumType" : "./ViscosityFilter",
    "optional" : true,
    "default" : "MADSEN"
   }, {
    "name" : "incomingWind",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/windpark/IncomingWind",
+   "enumType" : "./IncomingWind",
    "optional" : true,
    "default" : "AMBIENT"
   }, {
@@ -125,39 +124,39 @@
    "attributeType" : "number",
    "description" : "Speed increment for calculation of deficits",
    "optional" : true,
-   "default" : "0.25"
+   "default" : 0.25
   }, {
    "name" : "deficitDepthFactor",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Factor on deficit depth",
    "optional" : true,
-   "default" : "0.6"
+   "default" : 0.6
   }, {
    "name" : "deficitGradientFactor",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Factor on depth derivative",
    "optional" : true,
-   "default" : "0.35"
+   "default" : 0.35
   }, {
    "name" : "cutOffFilterLengthFactor",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Cut off filter length in rotor diameter",
    "optional" : true,
-   "default" : "2.0"
+   "default" : 2.0
   }, {
    "name" : "windTurbineTypes",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/windpark/WindTurbineType",
+   "attributeType" : "./WindTurbineType",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "windParkLayout",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/windpark/WindParkTurbine",
+   "attributeType" : "./WindParkTurbine",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -183,7 +182,7 @@
    "name" : "stabilityClass",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/windpark/StabilityClass",
+   "enumType" : "./StabilityClass",
    "optional" : true,
    "default" : "NONE"
   }, {
@@ -205,7 +204,7 @@
    "name" : "turbulenceBoxOption",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/windpark/TurbulenceBoxOption",
+   "enumType" : "./TurbulenceBoxOption",
    "description" : "Option for choosing whether turbulence boxes are made using DTU Mann (IECWind format) or TurbSim (Turbsim Bladed style format)",
    "optional" : true,
    "default" : "DTUMANN"
@@ -225,7 +224,7 @@
    "name" : "powerResultFormat",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/windpark/FileFormat",
+   "enumType" : "./FileFormat",
    "optional" : true,
    "default" : "BINARY"
   }, {
@@ -237,7 +236,7 @@
    "name" : "visualizationFormat",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/windpark/FileFormat",
+   "enumType" : "./FileFormat",
    "optional" : true,
    "default" : "BINARY"
   }, {
@@ -249,7 +248,7 @@
    "name" : "areaAveragingOption",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/windpark/AreaAveragingOption",
+   "enumType" : "./AreaAveragingOption",
    "description" : "Option for selecting type of area averaging integration",
    "optional" : true,
    "default" : "RADIAL"
@@ -257,7 +256,7 @@
    "name" : "filterLengthOption",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/windpark/FilterLengthOption",
+   "enumType" : "./FilterLengthOption",
    "description" : "Option for selecting filter length type",
    "optional" : true,
    "default" : "ROTOR"
@@ -265,7 +264,7 @@
    "name" : "weightOption",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/windpark/WeightOption",
+   "enumType" : "./WeightOption",
    "description" : "Weighting function option for calculating the meandering velocities",
    "optional" : true,
    "default" : "UNIFORM"
@@ -274,23 +273,23 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true,
-   "default" : "1.0"
+   "default" : 1.0
   }, {
    "name" : "meanderingScaling",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/windpark/TurbulenceBoxScaling",
+   "attributeType" : "./TurbulenceBoxScaling",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "addedWakeScaling",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/windpark/TurbulenceBoxScaling",
+   "attributeType" : "./TurbulenceBoxScaling",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "ambientScaling",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/windpark/TurbulenceBoxScaling",
+   "attributeType" : "./TurbulenceBoxScaling",
    "contained" : true,
    "optional" : false
   }, {
@@ -298,18 +297,18 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "applyAreaAveraging",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "lowPassFrequencyOption",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/windpark/LowPassFrequencyOption",
+   "enumType" : "./LowPassFrequencyOption",
    "description" : "Lowpass cutoff frequency option",
    "optional" : true,
    "default" : "CALC"
@@ -324,19 +323,19 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "interpolateYawMisalignment",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Option for interpolation on specified yaw misalignment performance relations",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "wakeFlowModel",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/windpark/WakeFlowModel",
+   "enumType" : "./WakeFlowModel",
    "optional" : true,
    "default" : "JIMENEZ"
   }, {
@@ -349,18 +348,35 @@
    "name" : "shaftDirectionDefinition",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/windpark/ShaftDirection",
+   "enumType" : "./ShaftDirection",
    "description" : "Kind of shaft direction definition",
    "optional" : true,
    "default" : "YAW"
   }, {
    "name" : "windTurbineMotions",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/windpark/WindTurbineMotion",
+   "attributeType" : "./WindTurbineMotion",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }, {
+   "name" : "useTimeWindow",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "If selected simulations will be performed for user defined start time and duration, otherwise DIWA will estimate the simulations time duration from turbulence boxes.",
+   "optional" : true,
+   "default" : false
+  }, {
+   "name" : "timeWindowStart",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Starting time of meandering",
+   "optional" : true
+  }, {
+   "name" : "timeWindowDuration",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Total duration of meandering",
+   "optional" : true
+  }]
 }

@@ -1,25 +1,24 @@
 {
  "name" : "WaveSector",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "contours",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/metocean/ContourData",
+   "attributeType" : "./ContourData",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "spectralPeakRelation",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/metocean/SpectralPeakPeriodRelation",
+   "attributeType" : "./SpectralPeakPeriodRelation",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "significantWaveHeightWeibullData",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/metocean/SignificantWaveHeightWeibullData",
+   "attributeType" : "./SignificantWaveHeightWeibullData",
    "contained" : true,
    "optional" : true
   }, {
@@ -27,7 +26,5 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

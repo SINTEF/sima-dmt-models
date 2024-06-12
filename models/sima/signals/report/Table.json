@@ -1,8 +1,7 @@
 {
  "name" : "Table",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/signals/report/ReportItem"],
+ "extends" : ["./ReportItem"],
  "attributes" : [{
    "name" : "caption",
    "type" : "core:BlueprintAttribute",
@@ -13,15 +12,13 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "columns",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/signals/report/Column",
+   "attributeType" : "./Column",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

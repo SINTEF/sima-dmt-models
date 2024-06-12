@@ -1,8 +1,7 @@
 {
  "name" : "CouplingElementResult",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/simo/ForceResult"],
+ "extends" : ["./ForceResult"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -63,7 +62,5 @@
    "attributeType" : "string",
    "description" : "Connection",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

@@ -1,8 +1,7 @@
 {
  "name" : "ExcitationCoefficientsNonDimensionalFrequencyItem",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "nonDimensionalFrequency",
    "type" : "core:BlueprintAttribute",
@@ -12,11 +11,9 @@
   }, {
    "name" : "amplitudeExcitationRatioProperties",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/AmplitudeDiameterExcitationCoefficientItem",
+   "attributeType" : "./AmplitudeDiameterExcitationCoefficientItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

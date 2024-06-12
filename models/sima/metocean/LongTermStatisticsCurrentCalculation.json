@@ -1,8 +1,7 @@
 {
  "name" : "LongTermStatisticsCurrentCalculation",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "returnPeriod",
    "type" : "core:BlueprintAttribute",
@@ -11,7 +10,7 @@
   }, {
    "name" : "levels",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/metocean/CalculationLevel",
+   "attributeType" : "./CalculationLevel",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -19,14 +18,14 @@
    "name" : "method",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/metocean/LevelStatisticsMethod",
+   "enumType" : "./LevelStatisticsMethod",
    "optional" : true,
    "default" : "FROM_DISTRIBUTION"
   }, {
    "name" : "omniMethod",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/metocean/LevelStatisticsMethod",
+   "enumType" : "./LevelStatisticsMethod",
    "optional" : true,
    "default" : "FROM_DISTRIBUTION"
   }, {
@@ -37,16 +36,14 @@
   }, {
    "name" : "statistics",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/metocean/CurrentLongTermStatistics",
+   "attributeType" : "./CurrentLongTermStatistics",
    "contained" : false,
    "optional" : true
   }, {
    "name" : "omni",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/metocean/CurrentLongTermStatistics",
+   "attributeType" : "./CurrentLongTermStatistics",
    "contained" : false,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

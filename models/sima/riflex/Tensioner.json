@@ -1,8 +1,7 @@
 {
  "name" : "Tensioner",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject"],
+ "extends" : ["sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -38,8 +37,6 @@
    "attributeType" : "number",
    "description" : "Direction of the applied load referreing to local X-axis of the element going through the tensioner (+1 = The load will act in local X-axis. -1 = The load will act opposite local X-axis).",
    "optional" : true,
-   "default" : "1.0"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : 1.0
+  }]
 }

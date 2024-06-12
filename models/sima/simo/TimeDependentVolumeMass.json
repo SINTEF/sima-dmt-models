@@ -1,8 +1,7 @@
 {
  "name" : "TimeDependentVolumeMass",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject"],
+ "extends" : ["sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,14 +10,14 @@
   }, {
    "name" : "point",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Point3",
+   "attributeType" : "sima:sima/Point3",
    "contained" : true,
    "optional" : false,
    "description" : "Mass point (local coordinates)."
   }, {
    "name" : "flowRates",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/FlowRateItem",
+   "attributeType" : "./FlowRateItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : false
@@ -61,25 +60,23 @@
   }, {
    "name" : "vectorZ",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Vector3",
+   "attributeType" : "sima:sima/Vector3",
    "contained" : true,
    "optional" : false,
    "description" : "Vector defining portion z-axis in local system"
   }, {
    "name" : "vectorXZ",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Vector3",
+   "attributeType" : "sima:sima/Vector3",
    "contained" : true,
    "optional" : false,
    "description" : "Vector in local xz-plane def. portion x-axis"
   }, {
    "name" : "portions",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/VolumeMassPortion",
+   "attributeType" : "./VolumeMassPortion",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

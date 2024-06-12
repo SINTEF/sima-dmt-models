@@ -1,8 +1,7 @@
 {
  "name" : "WorkflowRun",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/custom/CustomComponent"],
+ "extends" : ["./CustomComponent"],
  "attributes" : [{
    "name" : "label",
    "type" : "core:BlueprintAttribute",
@@ -16,10 +15,8 @@
   }, {
    "name" : "workflow",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/workflow/Workflow",
+   "attributeType" : "sima:workflow/Workflow",
    "contained" : false,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

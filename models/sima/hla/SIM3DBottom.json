@@ -1,15 +1,12 @@
 {
  "name" : "SIM3DBottom",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "fileName",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "description" : "File with seabed geometry data",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

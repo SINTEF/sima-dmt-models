@@ -1,16 +1,13 @@
 {
  "name" : "HindcastWaveContainer",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "waves",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/metocean/HindcastWaveData",
+   "attributeType" : "./HindcastWaveData",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

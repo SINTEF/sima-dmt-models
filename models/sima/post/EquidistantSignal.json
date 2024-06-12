@@ -1,12 +1,11 @@
 {
  "name" : "EquidistantSignal",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/post/GeneratorSignal"],
+ "extends" : ["./GeneratorSignal"],
  "attributes" : [{
    "name" : "properties",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/SignalProperties",
+   "attributeType" : "./SignalProperties",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -20,7 +19,7 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "values",
    "type" : "core:BlueprintAttribute",
@@ -53,7 +52,7 @@
    "attributeType" : "number",
    "description" : "The sample increment of the x axis",
    "optional" : true,
-   "default" : "1.0"
+   "default" : 1.0
   }, {
    "name" : "size",
    "type" : "core:BlueprintAttribute",
@@ -65,7 +64,5 @@
    "attributeType" : "string",
    "description" : "Apply the given function to each element of the input",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

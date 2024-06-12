@@ -1,8 +1,7 @@
 {
  "name" : "BendingStiffnessY_Item",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "curvatureValue",
    "type" : "core:BlueprintAttribute",
@@ -15,7 +14,5 @@
    "attributeType" : "number",
    "description" : "Corresponding bending moment",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

@@ -1,8 +1,7 @@
 {
  "name" : "DistributionFilter",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/post/OperationNode"],
+ "extends" : ["./OperationNode"],
  "attributes" : [{
    "name" : "x",
    "type" : "core:BlueprintAttribute",
@@ -31,21 +30,21 @@
   }, {
    "name" : "controlSignalInputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/ControlSignalInputSlot",
+   "attributeType" : "./ControlSignalInputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "filterInputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/InputSlot",
+   "attributeType" : "./InputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "filterOutputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/OutputSlot",
+   "attributeType" : "./OutputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -54,12 +53,12 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "distribution",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/post/Distribution",
+   "enumType" : "./Distribution",
    "description" : "Number of intervals used for sample distribution",
    "optional" : true,
    "default" : "RAYLEIGH"
@@ -81,19 +80,19 @@
    "attributeType" : "number",
    "description" : "Return period",
    "optional" : true,
-   "default" : "3.0"
+   "default" : 3.0
   }, {
    "name" : "probabilityLevel",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Compute response corresponding to the given probabilityLevel",
    "optional" : true,
-   "default" : "0.5"
+   "default" : 0.5
   }, {
    "name" : "extreme",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/post/PeakExtreme",
+   "enumType" : "./PeakExtreme",
    "description" : "Maxima or minima distribution",
    "optional" : true,
    "default" : "MAX"
@@ -103,7 +102,5 @@
    "attributeType" : "boolean",
    "description" : "Show output distribution in transformed axis",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

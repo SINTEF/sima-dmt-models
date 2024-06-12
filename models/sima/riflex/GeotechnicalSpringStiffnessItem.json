@@ -1,8 +1,7 @@
 {
  "name" : "GeotechnicalSpringStiffnessItem",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "force",
    "type" : "core:BlueprintAttribute",
@@ -15,7 +14,5 @@
    "attributeType" : "number",
    "description" : "Spring displacement.",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

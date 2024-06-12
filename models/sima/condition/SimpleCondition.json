@@ -1,8 +1,7 @@
 {
  "name" : "SimpleCondition",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/condition/ConditionTaskCondition", "/sima/NamedObject"],
+ "extends" : ["./ConditionTaskCondition", "sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "changeNumber",
    "type" : "core:BlueprintAttribute",
@@ -11,26 +10,26 @@
   }, {
    "name" : "resultContainer",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/ResultContainer",
+   "attributeType" : "sima:sima/ResultContainer",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "selection",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/ConditionSelectable",
+   "attributeType" : "sima:sima/ConditionSelectable",
    "contained" : false,
    "optional" : true
   }, {
    "name" : "variableItems",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/VariableItem",
+   "attributeType" : "sima:sima/VariableItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "probabilityVariable",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/DoubleVariable",
+   "attributeType" : "sima:sima/DoubleVariable",
    "contained" : false,
    "optional" : true,
    "description" : "Used to set a probability for single runs"
@@ -42,10 +41,8 @@
   }, {
    "name" : "variation",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/condition/ModelVariation",
+   "attributeType" : "./ModelVariation",
    "contained" : false,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

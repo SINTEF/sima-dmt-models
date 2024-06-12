@@ -1,12 +1,11 @@
 {
  "name" : "Plot",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/report/ReportItem"],
+ "extends" : ["./ReportItem"],
  "attributes" : [{
    "name" : "object",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/MOAO",
+   "attributeType" : "sima:sima/MOAO",
    "contained" : false,
    "optional" : true
   }, {
@@ -14,12 +13,6 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "description" : "Caption",
-   "optional" : true
-  }, {
-   "name" : "mergeSeries",
-   "type" : "core:BlueprintAttribute",
-   "attributeType" : "boolean",
-   "description" : "Merge all series in one plot",
    "optional" : true
   }, {
    "name" : "xLabel",
@@ -31,7 +24,5 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

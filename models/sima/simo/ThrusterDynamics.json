@@ -1,8 +1,7 @@
 {
  "name" : "ThrusterDynamics",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "minTimeChange",
    "type" : "core:BlueprintAttribute",
@@ -21,14 +20,12 @@
    "attributeType" : "number",
    "description" : "Maximum revolving speed",
    "optional" : true,
-   "default" : "10.0"
+   "default" : 10.0
   }, {
    "name" : "tcAzimuth",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Time constant of azimuth change",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

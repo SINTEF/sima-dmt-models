@@ -1,8 +1,7 @@
 {
  "name" : "GitTaskFolder",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/TaskFolder"],
+ "extends" : ["./TaskFolder"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,14 +10,14 @@
   }, {
    "name" : "childFolders",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/TaskFolder",
+   "attributeType" : "./TaskFolder",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "childTasks",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Task",
+   "attributeType" : "./Task",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -27,7 +26,7 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "remoteURI",
    "type" : "core:BlueprintAttribute",
@@ -48,7 +47,5 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

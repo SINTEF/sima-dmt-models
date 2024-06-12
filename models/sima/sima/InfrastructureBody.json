@@ -1,8 +1,7 @@
 {
  "name" : "InfrastructureBody",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/Body"],
+ "extends" : ["./Body"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -14,37 +13,37 @@
    "attributeType" : "number",
    "description" : "Length",
    "optional" : true,
-   "default" : "10.0"
+   "default" : 10.0
   }, {
    "name" : "width",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Width",
    "optional" : true,
-   "default" : "5.0"
+   "default" : 5.0
   }, {
    "name" : "height",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Height",
    "optional" : true,
-   "default" : "5.0"
+   "default" : 5.0
   }, {
    "name" : "appearance",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Appearance",
+   "attributeType" : "./Appearance",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "initialPosition",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Position",
+   "attributeType" : "./Position",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "viewpoints",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/BodyViewpoint",
+   "attributeType" : "./BodyViewpoint",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -60,7 +59,5 @@
    "attributeType" : "number",
    "description" : "UTM y coordinates",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

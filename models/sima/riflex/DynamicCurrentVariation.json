@@ -1,21 +1,18 @@
 {
  "name" : "DynamicCurrentVariation",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "active",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "fileName",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "description" : "File name for dynamic current variation",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

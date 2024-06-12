@@ -1,8 +1,7 @@
 {
  "name" : "OptimizationVariableItem",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "start",
    "type" : "core:BlueprintAttribute",
@@ -30,11 +29,9 @@
   }, {
    "name" : "variable",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/workflow/RealNumberInput",
+   "attributeType" : "sima:workflow/RealNumberInput",
    "contained" : false,
    "optional" : true,
    "description" : "Optimization variable"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

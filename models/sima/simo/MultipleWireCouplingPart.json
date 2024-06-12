@@ -1,8 +1,7 @@
 {
  "name" : "MultipleWireCouplingPart",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject"],
+ "extends" : ["sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,7 +10,7 @@
   }, {
    "name" : "endPoint",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SIMOBodyPoint",
+   "attributeType" : "./SIMOBodyPoint",
    "contained" : false,
    "optional" : false
   }, {
@@ -32,19 +31,19 @@
    "attributeType" : "number",
    "description" : "Material damping",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "flexibility",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Connection flexibility",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "failureMode",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/FailureMode",
+   "enumType" : "./FailureMode",
    "description" : "Failure mode of coupling element",
    "optional" : true,
    "default" : "NONE"
@@ -60,7 +59,5 @@
    "attributeType" : "number",
    "description" : "Breaking strength",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

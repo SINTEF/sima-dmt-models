@@ -1,8 +1,7 @@
 {
  "name" : "WamitFirstOrderWaveForceTransferFunction",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/hydro/FirstOrderWaveForceTransferFunction", "/sima/Named"],
+ "extends" : ["sima:hydro/FirstOrderWaveForceTransferFunction", "sima:sima/Named"],
  "attributes" : [{
    "name" : "directions",
    "type" : "core:BlueprintAttribute",
@@ -19,43 +18,43 @@
    "name" : "symmetry",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/hydro/DirectionSymmetry",
+   "enumType" : "sima:hydro/DirectionSymmetry",
    "optional" : true,
    "default" : "NO_SYMMETRY"
   }, {
    "name" : "fx",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/DirectionDependentComplexValues",
+   "attributeType" : "sima:hydro/DirectionDependentComplexValues",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "fy",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/DirectionDependentComplexValues",
+   "attributeType" : "sima:hydro/DirectionDependentComplexValues",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "fz",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/DirectionDependentComplexValues",
+   "attributeType" : "sima:hydro/DirectionDependentComplexValues",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "mx",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/DirectionDependentComplexValues",
+   "attributeType" : "sima:hydro/DirectionDependentComplexValues",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "my",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/DirectionDependentComplexValues",
+   "attributeType" : "sima:hydro/DirectionDependentComplexValues",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "mz",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/DirectionDependentComplexValues",
+   "attributeType" : "sima:hydro/DirectionDependentComplexValues",
    "contained" : true,
    "optional" : true
   }, {
@@ -63,7 +62,5 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

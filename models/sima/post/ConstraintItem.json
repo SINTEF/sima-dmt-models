@@ -1,8 +1,7 @@
 {
  "name" : "ConstraintItem",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "path",
    "type" : "core:BlueprintAttribute",
@@ -12,7 +11,7 @@
    "name" : "_type",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/post/ConstraintType",
+   "enumType" : "./ConstraintType",
    "optional" : true,
    "default" : "LE"
   }, {
@@ -20,7 +19,5 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

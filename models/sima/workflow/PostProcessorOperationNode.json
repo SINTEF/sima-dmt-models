@@ -1,8 +1,7 @@
 {
  "name" : "PostProcessorOperationNode",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/post/RunNode"],
+ "extends" : ["sima:post/RunNode"],
  "attributes" : [{
    "name" : "x",
    "type" : "core:BlueprintAttribute",
@@ -31,45 +30,43 @@
   }, {
    "name" : "controlSignalInputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/ControlSignalInputSlot",
+   "attributeType" : "sima:post/ControlSignalInputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "nodes",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/OperationNode",
+   "attributeType" : "sima:post/OperationNode",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "connections",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/SlotConnection",
+   "attributeType" : "sima:post/SlotConnection",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "operation",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/OperationNode",
+   "attributeType" : "sima:post/OperationNode",
    "contained" : false,
    "optional" : true
   }, {
    "name" : "operationOutputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/workflow/OperationOutputSlot",
+   "attributeType" : "./OperationOutputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "operationInputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/workflow/OperationInputSlot",
+   "attributeType" : "./OperationInputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

@@ -3,17 +3,15 @@
  "type" : "core:Package",
  "_meta_" : {
   "type" : "core:Meta",
-  "version" : "10",
+  "version" : "11",
   "dependencies" : [{
     "alias" : "core",
     "address" : "system/SIMOS",
-    "version" : "0.0.1",
-    "protocol" : "dmss"
+    "version" : "0.0.1"
    }, {
     "alias" : "windturbine",
     "address" : "windturbine",
-    "version" : "10",
-    "protocol" : "dmss"
+    "version" : "11"
    }]
  }
 }

@@ -1,8 +1,7 @@
 {
  "name" : "CustomWizard",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "title",
    "type" : "core:BlueprintAttribute",
@@ -23,7 +22,7 @@
   }, {
    "name" : "pages",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/custom/CustomWizardPage",
+   "attributeType" : "./CustomWizardPage",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -33,7 +32,7 @@
    "attributeType" : "boolean",
    "description" : "Use inline script or external",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "path",
    "type" : "core:BlueprintAttribute",
@@ -46,7 +45,5 @@
    "attributeType" : "string",
    "description" : "This script will be run when finishing the wizard. Use the variable selection to get hold of the object selected in the navigator",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

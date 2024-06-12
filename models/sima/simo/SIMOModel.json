@@ -1,151 +1,148 @@
 {
  "name" : "SIMOModel",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/environment/EnvironmentsContainer"],
+ "extends" : ["sima:environment/EnvironmentsContainer"],
  "attributes" : [{
    "name" : "airfoils",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/windturbine/Airfoil",
+   "attributeType" : "sima:windturbine/Airfoil",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "environments",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/environment/Environment",
+   "attributeType" : "sima:environment/Environment",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "location",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SIMOLocation",
+   "attributeType" : "./SIMOLocation",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "bodies",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SIMOBody",
+   "attributeType" : "./SIMOBody",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "hydrodynamicCouplings",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/HydrodynamicCoupling",
+   "attributeType" : "./HydrodynamicCoupling",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "simpleWireCouplings",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SimpleWireCoupling",
+   "attributeType" : "./SimpleWireCoupling",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "fixedElongationCouplings",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/FixedElongationCoupling",
+   "attributeType" : "./FixedElongationCoupling",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "dockingCones",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/DockingCone",
+   "attributeType" : "./DockingCone",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "pointFenders",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/PointFender",
+   "attributeType" : "./PointFender",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "rollerFenders",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/RollerFender",
+   "attributeType" : "./RollerFender",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "ratchets",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/RatchetCoupling",
+   "attributeType" : "./RatchetCoupling",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "multipleWireCouplings",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/MultipleWireCoupling",
+   "attributeType" : "./MultipleWireCoupling",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "bumperGroups",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/BumperGroup",
+   "attributeType" : "./BumperGroup",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "advancedBumpers",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/AdvancedBumper",
+   "attributeType" : "./AdvancedBumper",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "liftLineCouplings",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/LiftLineCoupling",
+   "attributeType" : "./LiftLineCoupling",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "momentCouplings",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/MomentCoupling",
+   "attributeType" : "./MomentCoupling",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "sIMOStaticCalculationParameters",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SIMOStaticCalculationParameters",
+   "attributeType" : "./SIMOStaticCalculationParameters",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "sIMODynamicCalculationParameters",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SIMODynamicCalculationParameters",
+   "attributeType" : "./SIMODynamicCalculationParameters",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "stabilityCalculationParameters",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/StabilityCalculationParameters",
+   "attributeType" : "./StabilityCalculationParameters",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "simoFrequencyDomainCalculation",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SIMOFrequencyDomainCalculation",
+   "attributeType" : "./SIMOFrequencyDomainCalculation",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "fibreRopeModels",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/FibreRopeModel",
+   "attributeType" : "./FibreRopeModel",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

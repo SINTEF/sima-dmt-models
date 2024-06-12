@@ -1,8 +1,7 @@
 {
  "name" : "DockingCone",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject"],
+ "extends" : ["sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -14,12 +13,12 @@
    "attributeType" : "number",
    "description" : "Exponent of velocity in damping term",
    "optional" : true,
-   "default" : "1.0"
+   "default" : 1.0
   }, {
    "name" : "dampingInterpolation",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/Interpolation",
+   "enumType" : "./Interpolation",
    "description" : "Interpolation method for damping",
    "optional" : true,
    "default" : "LINEAR"
@@ -27,7 +26,7 @@
    "name" : "forceInterpolation",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/Interpolation",
+   "enumType" : "./Interpolation",
    "description" : "Interpolation method for force",
    "optional" : true,
    "default" : "LINEAR"
@@ -37,7 +36,7 @@
    "attributeType" : "number",
    "description" : "Velocity limit for friction force (Damping Exponent = 0)",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "maxRadialDistance",
    "type" : "core:BlueprintAttribute",
@@ -54,7 +53,7 @@
    "name" : "failureMode",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/ActivationFailureMode",
+   "enumType" : "./ActivationFailureMode",
    "description" : "Failure mode of coupling element",
    "optional" : true,
    "default" : "NONE"
@@ -73,41 +72,39 @@
   }, {
    "name" : "dockingPinBody",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SIMOBody",
+   "attributeType" : "./SIMOBody",
    "contained" : false,
    "optional" : false
   }, {
    "name" : "dockingPinPoint",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Point3",
+   "attributeType" : "sima:sima/Point3",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "dockingConePoint",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Point3",
+   "attributeType" : "sima:sima/Point3",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "dockingConeDirectionVector",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Vector3",
+   "attributeType" : "sima:sima/Vector3",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "dockingConeBody",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SIMOBody",
+   "attributeType" : "./SIMOBody",
    "contained" : false,
    "optional" : false
   }, {
    "name" : "crossSections",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/DockingConeCrossSection",
+   "attributeType" : "./DockingConeCrossSection",
    "dimensions" : "*",
    "contained" : true,
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

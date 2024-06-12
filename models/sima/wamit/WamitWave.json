@@ -1,8 +1,7 @@
 {
  "name" : "WamitWave",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "periods",
    "type" : "core:BlueprintAttribute",
@@ -17,7 +16,5 @@
    "description" : "Wave headings",
    "optional" : true,
    "dimensions" : "*"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

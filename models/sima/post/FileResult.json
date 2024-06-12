@@ -1,14 +1,11 @@
 {
  "name" : "FileResult",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/post/SignalStorage"],
+ "extends" : ["./SignalStorage"],
  "attributes" : [{
    "name" : "filename",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

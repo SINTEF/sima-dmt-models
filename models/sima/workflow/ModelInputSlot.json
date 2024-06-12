@@ -1,8 +1,7 @@
 {
  "name" : "ModelInputSlot",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/post/InputSlot"],
+ "extends" : ["sima:post/InputSlot"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,7 +10,7 @@
   }, {
    "name" : "reference",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/ModelReferenceVariable",
+   "attributeType" : "sima:sima/ModelReferenceVariable",
    "contained" : false,
    "optional" : true,
    "description" : "Model reference to be replaced"
@@ -21,7 +20,5 @@
    "attributeType" : "boolean",
    "description" : "If checked the children of the reference will replaced",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

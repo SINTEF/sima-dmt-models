@@ -1,8 +1,7 @@
 {
  "name" : "AmplitudeDiameterPropertyItem",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "nonDimensionalFrequency",
    "type" : "core:BlueprintAttribute",
@@ -33,7 +32,5 @@
    "attributeType" : "number",
    "description" : "Excitation coefficient for A/D=0",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

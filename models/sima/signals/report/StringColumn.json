@@ -1,15 +1,12 @@
 {
  "name" : "StringColumn",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/signals/report/Column"],
+ "extends" : ["./Column"],
  "attributes" : [{
    "name" : "cells",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : false,
    "dimensions" : "*"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

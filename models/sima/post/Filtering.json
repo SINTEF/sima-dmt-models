@@ -1,0 +1,6 @@
+{
+ "name" : "Filtering",
+ "type" : "core:Enum",
+ "values" : ["NONE", "LOWPASS", "HIGHPASS", "BANDPASS"],
+ "labels" : ["None", "Low-pass", "High-pass", "Band-pass"]
+}

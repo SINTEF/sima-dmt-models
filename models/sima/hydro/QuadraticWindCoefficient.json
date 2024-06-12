@@ -1,13 +1,12 @@
 {
  "name" : "QuadraticWindCoefficient",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "symmetry",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/hydro/DirectionSymmetry",
+   "enumType" : "./DirectionSymmetry",
    "optional" : true,
    "default" : "NO_SYMMETRY"
   }, {
@@ -15,18 +14,18 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true,
-   "default" : "2000.0"
+   "default" : 2000.0
   }, {
    "name" : "referenceHeight",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Reference height for wind velocity",
    "optional" : true,
-   "default" : "10.0"
+   "default" : 10.0
   }, {
    "name" : "items",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/QuadraticWindCoefficientItem",
+   "attributeType" : "./QuadraticWindCoefficientItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -34,7 +33,7 @@
    "name" : "_type",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/hydro/CoefficientType",
+   "enumType" : "./CoefficientType",
    "description" : "Wind coefficient type",
    "optional" : true,
    "default" : "CLASSIC"
@@ -44,7 +43,5 @@
    "attributeType" : "string",
    "description" : "Text file containing the wind coefficients. The force coefficents in the file must be specified in [kN/(m/s)] for translational degrees of freedom and [kN.s] for rotational degrees of freedom.",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

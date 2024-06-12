@@ -1,8 +1,7 @@
 {
  "name" : "NonlinearBuoyancyCorrection",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "fileName",
    "type" : "core:BlueprintAttribute",
@@ -12,7 +11,7 @@
   }, {
    "name" : "location",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Point3",
+   "attributeType" : "sima:sima/Point3",
    "contained" : true,
    "optional" : false
   }, {
@@ -31,10 +30,8 @@
    "name" : "correctionMethod",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/NonlinearBuoyancyCorrectionMethod",
+   "enumType" : "./NonlinearBuoyancyCorrectionMethod",
    "optional" : true,
    "default" : "MWL"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

@@ -1,8 +1,7 @@
 {
  "name" : "Point",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "x",
    "type" : "core:BlueprintAttribute",
@@ -13,7 +12,5 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

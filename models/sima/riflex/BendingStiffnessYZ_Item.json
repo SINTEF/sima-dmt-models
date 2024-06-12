@@ -1,8 +1,7 @@
 {
  "name" : "BendingStiffnessYZ_Item",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "curvatureValue",
    "type" : "core:BlueprintAttribute",
@@ -21,7 +20,5 @@
    "attributeType" : "number",
    "description" : "Bending moment around z-axis corresponding to curvature values.",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

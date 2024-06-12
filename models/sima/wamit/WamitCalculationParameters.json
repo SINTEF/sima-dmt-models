@@ -1,13 +1,12 @@
 {
  "name" : "WamitCalculationParameters",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "solveRadiationProblem",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/wamit/YesNoOption",
+   "enumType" : "./YesNoOption",
    "description" : "IRAD",
    "optional" : true,
    "default" : "YES"
@@ -15,7 +14,7 @@
    "name" : "solveDiffractionProblem",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/wamit/PotenProblemOption",
+   "enumType" : "./PotenProblemOption",
    "description" : "IDIFF",
    "optional" : true,
    "default" : "YESFORALL"
@@ -23,7 +22,7 @@
    "name" : "calculateAddedMassAndDampingCoefficients",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/wamit/YesNoOption",
+   "enumType" : "./YesNoOption",
    "description" : "Corresponds to IOPTN(1)",
    "optional" : true,
    "default" : "YES"
@@ -31,7 +30,7 @@
    "name" : "calculateExcitingForcesFromHaskindRelations",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/wamit/CalculateExcitingForcesOption",
+   "enumType" : "./CalculateExcitingForcesOption",
    "description" : "Corresponds to IOPTN(2)",
    "optional" : true,
    "default" : "NO"
@@ -39,7 +38,7 @@
    "name" : "calculateExcitingForcesFromDiffractionPotential",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/wamit/CalculateExcitingForcesOption",
+   "enumType" : "./CalculateExcitingForcesOption",
    "description" : "Corresponds to IOPTN(3)",
    "optional" : true,
    "default" : "YES"
@@ -47,7 +46,7 @@
    "name" : "calculateResponseAmplitudeOperator",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/wamit/CalculateResponseAmplitudeOperatorOption",
+   "enumType" : "./CalculateResponseAmplitudeOperatorOption",
    "description" : "Corresponds to IOPTN(4)",
    "optional" : true,
    "default" : "YESDIFFRACTION"
@@ -55,7 +54,7 @@
    "name" : "useMomentumIntegration",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/wamit/CalculateMeanForceAndMomentIntegrationOption",
+   "enumType" : "./CalculateMeanForceAndMomentIntegrationOption",
    "description" : "Corresponds to IOPTN(8)",
    "optional" : true,
    "default" : "YESUNIDIRECTIONAL"
@@ -63,14 +62,14 @@
    "name" : "usePressureIntegration",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/wamit/CalculateMeanForceAndMomentIntegrationOption",
+   "enumType" : "./CalculateMeanForceAndMomentIntegrationOption",
    "description" : "Corresponds to IOPTN(9)",
    "optional" : true,
    "default" : "NO"
   }, {
    "name" : "pointField",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/wamit/PointField",
+   "attributeType" : "./PointField",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -78,7 +77,7 @@
    "name" : "useControlSurfaceIntegration",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/wamit/CalculateMeanForceAndMomentIntegrationOption",
+   "enumType" : "./CalculateMeanForceAndMomentIntegrationOption",
    "description" : "Corresponds to IOPTN(7)",
    "optional" : true,
    "default" : "NO"
@@ -86,7 +85,7 @@
    "name" : "methodForSolvingLinearSystems",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/wamit/LinearSystemSolvingMethod",
+   "enumType" : "./LinearSystemSolvingMethod",
    "description" : "ISOLVE",
    "optional" : true,
    "default" : "ITERATIVE"
@@ -95,12 +94,12 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : true,
-   "default" : "2"
+   "default" : 2
   }, {
    "name" : "geometryMethod",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/wamit/GeometryOrderOption",
+   "enumType" : "./GeometryOrderOption",
    "description" : "ILOWHI",
    "optional" : true,
    "default" : "LOW"
@@ -108,7 +107,7 @@
    "name" : "integrateLogarithmicSingularitySeparately",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/wamit/YesNoOption",
+   "enumType" : "./YesNoOption",
    "description" : "ILOG",
    "optional" : true,
    "default" : "NO"
@@ -117,12 +116,12 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true,
-   "default" : "10.0"
+   "default" : 10.0
   }, {
    "name" : "evaluateSourceStrength",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/wamit/YesNoOption",
+   "enumType" : "./YesNoOption",
    "description" : "ISOR",
    "optional" : true,
    "default" : "NO"
@@ -130,14 +129,14 @@
    "name" : "calculationOfDiffractionPotential",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/wamit/DiffractionPotentailOption",
+   "enumType" : "./DiffractionPotentailOption",
    "description" : "ISCATT",
    "optional" : true,
    "default" : "DIFFRACTION"
   }, {
    "name" : "fieldPoints",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Point3",
+   "attributeType" : "sima:sima/Point3",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -147,20 +146,20 @@
    "attributeType" : "boolean",
    "description" : "HBOT",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "maximumNumberOfIterations",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "The maximum number of iterations when using an iterative solver",
    "optional" : true,
-   "default" : "35"
+   "default" : 35
   }, {
    "name" : "maxNumOfIterationsAdaptiveIntegrationMomentum",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : true,
-   "default" : "8"
+   "default" : 8
   }, {
    "name" : "generateReport",
    "type" : "core:BlueprintAttribute",
@@ -279,8 +278,6 @@
    "attributeType" : "number",
    "description" : "Waterline gap tolerance (TOLGAPWL)",
    "optional" : true,
-   "default" : "0.001"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : 0.001
+  }]
 }

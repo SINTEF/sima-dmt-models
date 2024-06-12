@@ -1,14 +1,8 @@
 {
  "name" : "ScriptableValue",
  "type" : "core:Blueprint",
- "abstract" : false,
  "extends" : ["core:Entity"],
  "attributes" : [{
-   "name" : "_id",
-   "type" : "core:BlueprintAttribute",
-   "attributeType" : "string",
-   "optional" : true
-  }, {
    "name" : "script",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
@@ -28,8 +22,6 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : true,
-   "default" : "-1"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : -1
+  }]
 }

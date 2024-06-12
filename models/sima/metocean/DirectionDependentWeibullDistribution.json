@@ -1,8 +1,7 @@
 {
  "name" : "DirectionDependentWeibullDistribution",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/metocean/WeibullDistribution"],
+ "extends" : ["./WeibullDistribution"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -23,15 +22,13 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "items",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/metocean/WeibullDistributionItem",
+   "attributeType" : "./WeibullDistributionItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

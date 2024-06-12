@@ -1,8 +1,7 @@
 {
  "name" : "BladePitchChangeItem",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "rate",
    "type" : "core:BlueprintAttribute",
@@ -14,7 +13,5 @@
    "attributeType" : "number",
    "description" : "Maximum pitch at this rate of pitch change",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

@@ -1,8 +1,7 @@
 {
  "name" : "SimaMessage",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["./MOAO"],
  "attributes" : [{
    "name" : "title",
    "type" : "core:BlueprintAttribute",
@@ -12,17 +11,15 @@
    "name" : "severity",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/sima/Severity",
+   "enumType" : "./Severity",
    "optional" : true,
    "default" : "WARNING"
   }, {
    "name" : "messages",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/SimaMessage",
+   "attributeType" : "./SimaMessage",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

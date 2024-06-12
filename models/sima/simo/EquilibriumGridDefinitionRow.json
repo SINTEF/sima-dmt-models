@@ -1,27 +1,24 @@
 {
  "name" : "EquilibriumGridDefinitionRow",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "minimumValue",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true,
-   "default" : "-10.0"
+   "default" : -10.0
   }, {
    "name" : "maximumValue",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true,
-   "default" : "10.0"
+   "default" : 10.0
   }, {
    "name" : "numberOfValues",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : true,
-   "default" : "11"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : 11
+  }]
 }

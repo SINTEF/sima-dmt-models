@@ -1,8 +1,7 @@
 {
  "name" : "ModelVariationReference",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/condition/ModelVariationOperation"],
+ "extends" : ["./ModelVariationOperation"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,11 +10,9 @@
   }, {
    "name" : "variations",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/condition/ModelVariation",
+   "attributeType" : "./ModelVariation",
    "dimensions" : "*",
    "contained" : false,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

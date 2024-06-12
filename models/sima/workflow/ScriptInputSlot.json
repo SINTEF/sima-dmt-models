@@ -1,8 +1,7 @@
 {
  "name" : "ScriptInputSlot",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/post/InputSlot", "/post/SignalPropertiesContainer"],
+ "extends" : ["sima:post/InputSlot", "sima:post/SignalPropertiesContainer"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,7 +10,7 @@
   }, {
    "name" : "properties",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/SignalProperties",
+   "attributeType" : "sima:post/SignalProperties",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -21,7 +20,5 @@
    "attributeType" : "boolean",
    "description" : "If checked the input will be imported directly as signals in an array with name as specified.",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

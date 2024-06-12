@@ -1,8 +1,7 @@
 {
  "name" : "ThinWalledPipe",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/riflex/CrossSection", "/riflex/CRSAxialFrictionModel"],
+ "extends" : ["./CrossSection", "./CRSAxialFrictionModel"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -14,12 +13,12 @@
    "attributeType" : "boolean",
    "description" : "Scaling of Froude-Krylov term in Morison’s equation in normal direction",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "loadFormulation",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/LoadFormulation",
+   "enumType" : "./LoadFormulation",
    "optional" : true,
    "default" : "MORISON"
   }, {
@@ -32,7 +31,7 @@
    "name" : "hydrodynamicInputCode",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/HydrodynamicInputCode",
+   "enumType" : "./HydrodynamicInputCode",
    "description" : "Hydrodynamic input code",
    "optional" : true,
    "default" : "DIMENSIONAL"
@@ -60,14 +59,14 @@
    "attributeType" : "number",
    "description" : "Scaling factor for Froude-Krylov term in Morison’s equation in normal direction",
    "optional" : true,
-   "default" : "1.0"
+   "default" : 1.0
   }, {
    "name" : "tangentialDirectionScaling",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Scale for Froude-Krylov term in Morison’s equation in tangential direction",
    "optional" : true,
-   "default" : "1.0"
+   "default" : 1.0
   }, {
    "name" : "cdt",
    "type" : "core:BlueprintAttribute",
@@ -144,7 +143,7 @@
    "name" : "hydrodynamicRadiationInputCode",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/HydrodynamicInputCode",
+   "enumType" : "./HydrodynamicInputCode",
    "description" : "Code for input of simplified radiation force coefficients",
    "optional" : true,
    "default" : "DIMENSIONAL"
@@ -199,19 +198,13 @@
   }, {
    "name" : "massDamping",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/CRSMassDamping",
-   "contained" : true,
-   "optional" : false
-  }, {
-   "name" : "stiffnessDamping",
-   "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/CRSStiffnessDamping",
+   "attributeType" : "./CRSMassDamping",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "axialDamping",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/CRSAxialDamping",
+   "attributeType" : "./CRSAxialDamping",
    "contained" : true,
    "optional" : false
   }, {
@@ -220,28 +213,28 @@
    "attributeType" : "number",
    "description" : "Temperature at which the specification applies",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "alpha",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Thermal expansion coefficient",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "beta",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Pressure expansion coefficient",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "defaultExpansion",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Use default thermal and pressure expansion settings",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "tensionCapacity",
    "type" : "core:BlueprintAttribute",
@@ -276,7 +269,7 @@
    "name" : "aerodynamicInputCode",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/AerodynamicInputCode",
+   "enumType" : "./AerodynamicInputCode",
    "description" : "Aerodynamic input code",
    "optional" : true,
    "default" : "NONE"
@@ -289,7 +282,7 @@
   }, {
    "name" : "vivCoefficients",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/TimeDomainVIVLoadCoefficients",
+   "attributeType" : "./TimeDomainVIVLoadCoefficients",
    "contained" : true,
    "optional" : false
   }, {
@@ -316,32 +309,32 @@
    "attributeType" : "number",
    "description" : "Thickness of external coating",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "extCoatingDensity",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Density of external coating",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "extContactRadius",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "External contact radius",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "intContactRadius",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Inner contact radius",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "materialProperties",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/ThinWalledPipeMaterial",
+   "attributeType" : "./ThinWalledPipeMaterial",
    "contained" : true,
    "optional" : false
   }, {
@@ -354,7 +347,7 @@
    "name" : "diameterType",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/InnerOuter",
+   "enumType" : "./InnerOuter",
    "description" : "Inner or outer diameter",
    "optional" : true,
    "default" : "OUTER"
@@ -364,7 +357,11 @@
    "attributeType" : "boolean",
    "description" : "Geometric stiffness coupling between bending and torsion",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }, {
+   "name" : "stiffnessDamping",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "./CRSStiffnessDamping",
+   "contained" : true,
+   "optional" : false
+  }]
 }

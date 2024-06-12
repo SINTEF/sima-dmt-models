@@ -1,8 +1,7 @@
 {
  "name" : "TextSignalInputSlot",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/post/ControlSignalInputSlot"],
+ "extends" : ["./ControlSignalInputSlot"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,7 +10,7 @@
   }, {
    "name" : "properties",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/SignalProperties",
+   "attributeType" : "./SignalProperties",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -31,7 +30,5 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

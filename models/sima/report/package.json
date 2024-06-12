@@ -3,17 +3,15 @@
  "type" : "core:Package",
  "_meta_" : {
   "type" : "core:Meta",
-  "version" : "11",
+  "version" : "12",
   "dependencies" : [{
     "alias" : "core",
     "address" : "system/SIMOS",
-    "version" : "0.0.1",
-    "protocol" : "dmss"
+    "version" : "0.0.1"
    }, {
     "alias" : "report",
     "address" : "report",
-    "version" : "11",
-    "protocol" : "dmss"
+    "version" : "12"
    }]
  }
 }

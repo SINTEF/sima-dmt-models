@@ -1,8 +1,7 @@
 {
  "name" : "ScatterDataCalculation",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject", "/sima/ConditionSelectable"],
+ "extends" : ["sima:sima/NamedObject", "sima:sima/ConditionSelectable"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -12,7 +11,7 @@
    "name" : "currentModel",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/metocean/CurrentModel",
+   "enumType" : "./CurrentModel",
    "optional" : true,
    "default" : "FROM_INPUT"
   }, {
@@ -20,14 +19,14 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true,
-   "default" : "1.0"
+   "default" : 1.0
   }, {
    "name" : "directionRelativeToWind",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Direction relative to wind. Zero angle means collinear wind and current",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "windReferenceLevel",
    "type" : "core:BlueprintAttribute",
@@ -37,7 +36,7 @@
   }, {
    "name" : "windCurrentProfile",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/metocean/Profile",
+   "attributeType" : "./Profile",
    "contained" : false,
    "optional" : true
   }, {
@@ -48,13 +47,13 @@
   }, {
    "name" : "baseCurrentProfile",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/metocean/Profile",
+   "attributeType" : "./Profile",
    "contained" : false,
    "optional" : true
   }, {
    "name" : "currentLevels",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/metocean/CalculationLevel",
+   "attributeType" : "./CalculationLevel",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -68,31 +67,29 @@
    "name" : "inputReferenceSystem",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/metocean/InputReferenceSystem",
+   "enumType" : "./InputReferenceSystem",
    "description" : "Defines the input reference system of the data.\nIf the data is defined in the Metocean system the corresponding SIMA coordinate system data is generated",
    "optional" : true,
    "default" : "METOCEAN"
   }, {
    "name" : "scatterData",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/metocean/ScatterData",
+   "attributeType" : "./ScatterData",
    "contained" : false,
    "optional" : false
   }, {
    "name" : "directions",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/metocean/CalculationDirection",
+   "attributeType" : "./CalculationDirection",
    "dimensions" : "*",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "windLevels",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/metocean/CalculationLevel",
+   "attributeType" : "./CalculationLevel",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

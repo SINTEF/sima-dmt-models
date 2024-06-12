@@ -1,19 +1,18 @@
 {
  "name" : "Workflow",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject"],
+ "extends" : ["sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "nodes",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/RunNode",
+   "attributeType" : "sima:post/RunNode",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "connections",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/SlotConnection",
+   "attributeType" : "sima:post/SlotConnection",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -27,7 +26,5 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

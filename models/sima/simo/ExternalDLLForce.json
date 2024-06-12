@@ -1,28 +1,30 @@
 {
  "name" : "ExternalDLLForce",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject"],
+ "extends" : ["sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
-   "name" : "attachmentPoint",
+   "name" : "nCurrentPoints",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Point3",
-   "contained" : true,
-   "optional" : false,
-   "description" : "Attack point of force."
+   "attributeType" : "integer",
+   "description" : "Number of points where current velocities shall be given.",
+   "optional" : true,
+   "default" : 1
   }, {
-   "name" : "referenceFrame",
+   "name" : "dllFile",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/ReferenceFrameType",
-   "description" : "Which coordinate system is the force is given in?",
-   "optional" : true,
-   "default" : "LOCAL"
+   "optional" : true
+  }, {
+   "name" : "libraryPaths",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "sima:sima/LibraryPaths",
+   "contained" : true,
+   "optional" : false
   }, {
    "name" : "nStorageParameters",
    "type" : "core:BlueprintAttribute",
@@ -32,43 +34,38 @@
   }, {
    "name" : "intParameters",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/StringIntItem",
+   "attributeType" : "./StringIntItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "doubleParameters",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/StringDoubleItem",
+   "attributeType" : "./StringDoubleItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "stringParameters",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/StringItem",
+   "attributeType" : "./StringItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
-   "name" : "nCurrentPoints",
-   "type" : "core:BlueprintAttribute",
-   "attributeType" : "integer",
-   "description" : "Number of points where current velocities shall be given.",
-   "optional" : true,
-   "default" : "1"
-  }, {
-   "name" : "dllFile",
+   "name" : "referenceFrame",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "optional" : true
+   "enumType" : "./ReferenceFrameType",
+   "description" : "Which coordinate system is the force is given in?",
+   "optional" : true,
+   "default" : "LOCAL"
   }, {
-   "name" : "libraryPaths",
+   "name" : "attachmentPoint",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/LibraryPaths",
+   "attributeType" : "sima:sima/Point3",
    "contained" : true,
-   "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "optional" : false,
+   "description" : "Attack point of force."
+  }]
 }

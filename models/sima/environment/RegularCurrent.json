@@ -1,16 +1,13 @@
 {
  "name" : "RegularCurrent",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/environment/Current"],
+ "extends" : ["./Current"],
  "attributes" : [{
    "name" : "items",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/environment/CurrentItem",
+   "attributeType" : "./CurrentItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

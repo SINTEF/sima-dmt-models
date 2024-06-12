@@ -16,10 +16,8 @@
   }, {
    "name" : "headerfont",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/signals/report/Font",
+   "attributeType" : "./Font",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

@@ -1,8 +1,7 @@
 {
  "name" : "OperationInputSlot",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/post/InputSlot"],
+ "extends" : ["sima:post/InputSlot"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,10 +10,8 @@
   }, {
    "name" : "filterInputSlot",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/InputSlot",
+   "attributeType" : "sima:post/InputSlot",
    "contained" : false,
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

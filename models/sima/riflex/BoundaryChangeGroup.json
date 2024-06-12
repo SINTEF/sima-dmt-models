@@ -1,8 +1,7 @@
 {
  "name" : "BoundaryChangeGroup",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "timeChange",
    "type" : "core:BlueprintAttribute",
@@ -12,11 +11,9 @@
   }, {
    "name" : "nodeBoundaryChanges",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/NodeBoundaryChangeItem",
+   "attributeType" : "./NodeBoundaryChangeItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

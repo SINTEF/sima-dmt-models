@@ -1,8 +1,7 @@
 {
  "name" : "StringVariable",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/Variable"],
+ "extends" : ["./Variable"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -14,7 +13,5 @@
    "attributeType" : "string",
    "description" : "The current value for the variable",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

@@ -1,12 +1,11 @@
 {
  "name" : "SIMAScriptContext",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["./MOAO"],
  "attributes" : [{
    "name" : "model",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/MOAO",
+   "attributeType" : "./MOAO",
    "contained" : false,
    "optional" : true,
    "description" : "Model object to be directly available in script by given name"
@@ -16,7 +15,5 @@
    "attributeType" : "string",
    "description" : "Variable name of object that will be available in the script when evaluating",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

@@ -1,12 +1,11 @@
 {
  "name" : "ControlPanel",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "children",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/custom/CustomComponent",
+   "attributeType" : "sima:custom/CustomComponent",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -15,7 +14,5 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

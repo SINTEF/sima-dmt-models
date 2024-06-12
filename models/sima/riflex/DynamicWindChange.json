@@ -1,8 +1,7 @@
 {
  "name" : "DynamicWindChange",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "include",
    "type" : "core:BlueprintAttribute",
@@ -12,7 +11,7 @@
    "name" : "eventType",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/IEC2005WindEventType",
+   "enumType" : "./IEC2005WindEventType",
    "optional" : true,
    "default" : "ECD"
   }, {
@@ -25,14 +24,14 @@
    "name" : "direction",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/WindDirection",
+   "enumType" : "./WindDirection",
    "optional" : true,
    "default" : "POSITIVE"
   }, {
    "name" : "turbineClass",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/IEC2005WindTurbineClass",
+   "enumType" : "./IEC2005WindTurbineClass",
    "optional" : true,
    "default" : "NONE"
   }, {
@@ -67,7 +66,5 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

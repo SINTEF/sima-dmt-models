@@ -1,8 +1,7 @@
 {
  "name" : "ParameterVariation",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "numVariations",
    "type" : "core:BlueprintAttribute",
@@ -15,12 +14,12 @@
    "attributeType" : "integer",
    "description" : "Maximum number of iterations for each variation",
    "optional" : true,
-   "default" : "1"
+   "default" : 1
   }, {
    "name" : "convergenceNorm",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/ConvergenceNorm",
+   "enumType" : "./ConvergenceNorm",
    "optional" : true,
    "default" : "DISP"
   }, {
@@ -29,14 +28,14 @@
    "attributeType" : "number",
    "description" : "Required accuracy measured by displacement norm",
    "optional" : true,
-   "default" : "1.0E-4"
+   "default" : 1.0E-4
   }, {
    "name" : "energyAccuracy",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Required accuracy measured by energy norm. This value is relevant only if Convergence Norm is 'Both'.",
    "optional" : true,
-   "default" : "1.0E-4"
+   "default" : 1.0E-4
   }, {
    "name" : "offset",
    "type" : "core:BlueprintAttribute",
@@ -55,19 +54,19 @@
   }, {
    "name" : "offsetVariation",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/OffsetVariationItem",
+   "attributeType" : "./OffsetVariationItem",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "currentVariation",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/CurrentVariationItem",
+   "attributeType" : "./CurrentVariationItem",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "boundaryChangeGroup",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/BoundaryChangeGroup",
+   "attributeType" : "./BoundaryChangeGroup",
    "contained" : true,
    "optional" : false
   }, {
@@ -88,7 +87,5 @@
    "attributeType" : "boolean",
    "description" : "Activate material memory formulation (isotropic / kinematic hardening)",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

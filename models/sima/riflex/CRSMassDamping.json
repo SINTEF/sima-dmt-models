@@ -1,8 +1,7 @@
 {
  "name" : "CRSMassDamping",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "axialFactor",
    "type" : "core:BlueprintAttribute",
@@ -19,9 +18,7 @@
    "name" : "bendingFactor",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
-   "description" : "Factor for mass proportional damping in bending dof",
+   "description" : "Factor for mass proportional damping in bending/shear dofs",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

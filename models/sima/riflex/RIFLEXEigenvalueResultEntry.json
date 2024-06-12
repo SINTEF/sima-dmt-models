@@ -1,12 +1,11 @@
 {
  "name" : "RIFLEXEigenvalueResultEntry",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/ResultEntry"],
+ "extends" : ["sima:sima/ResultEntry"],
  "attributes" : [{
    "name" : "properties",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Property",
+   "attributeType" : "sima:sima/Property",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -33,36 +32,34 @@
   }, {
    "name" : "results",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Result",
+   "attributeType" : "sima:sima/Result",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "entries",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/ResultEntry",
+   "attributeType" : "sima:sima/ResultEntry",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "riflexLDAT",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Result",
+   "attributeType" : "sima:sima/Result",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "mpfResult",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/MatrixPlotResult",
+   "attributeType" : "./MatrixPlotResult",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "resFile",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/ResFile",
+   "attributeType" : "./ResFile",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

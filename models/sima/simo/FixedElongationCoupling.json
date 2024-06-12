@@ -1,8 +1,7 @@
 {
  "name" : "FixedElongationCoupling",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/simo/SimpleCoupling"],
+ "extends" : ["./SimpleCoupling"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,20 +10,20 @@
   }, {
    "name" : "endPoint1",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SIMOBodyPoint",
+   "attributeType" : "./SIMOBodyPoint",
    "contained" : false,
    "optional" : false
   }, {
    "name" : "endPoint2",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SIMOBodyPoint",
+   "attributeType" : "./SIMOBodyPoint",
    "contained" : false,
    "optional" : false
   }, {
    "name" : "failureMode",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/ActivationFailureMode",
+   "enumType" : "./ActivationFailureMode",
    "description" : "Failure mode of coupling element",
    "optional" : true,
    "default" : "NONE"
@@ -44,7 +43,7 @@
    "name" : "method",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/FixedElongationMethod",
+   "enumType" : "./FixedElongationMethod",
    "description" : "Method for initialisation of coupling element",
    "optional" : true,
    "default" : "SPRING"
@@ -54,14 +53,12 @@
    "attributeType" : "number",
    "description" : "Velocity limit for friction force (Damping Exponent = 0)",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "characteristic",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/ForceDampingCharacteristic",
+   "attributeType" : "./ForceDampingCharacteristic",
    "contained" : true,
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

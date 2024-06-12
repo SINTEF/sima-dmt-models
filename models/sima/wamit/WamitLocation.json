@@ -1,8 +1,7 @@
 {
  "name" : "WamitLocation",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/Location"],
+ "extends" : ["sima:sima/Location"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,19 +10,19 @@
   }, {
    "name" : "initialViewpoint",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/InitialViewpoint",
+   "attributeType" : "sima:sima/InitialViewpoint",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "initialRotationpoint",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Point3",
+   "attributeType" : "sima:sima/Point3",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "viewpoints",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/NamedViewpoint",
+   "attributeType" : "sima:sima/NamedViewpoint",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -39,14 +38,14 @@
    "attributeType" : "number",
    "description" : "Offset of local coordinate system origin (X) relative to UTM (Easting).",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "utmY",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Offset of local coordinate system origin (Y) relative to UTM (Northing).",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "gridZone",
    "type" : "core:BlueprintAttribute",
@@ -56,7 +55,7 @@
   }, {
    "name" : "infrastructureBodies",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/InfrastructureBody",
+   "attributeType" : "sima:sima/InfrastructureBody",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -66,20 +65,18 @@
    "attributeType" : "number",
    "description" : "Water depth for kinematics",
    "optional" : true,
-   "default" : "1000.0"
+   "default" : 1000.0
   }, {
    "name" : "seaSurface",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/wamit/SeaSurface",
+   "attributeType" : "./SeaSurface",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "physicalConstants",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/wamit/PhysicalConstants",
+   "attributeType" : "./PhysicalConstants",
    "contained" : true,
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

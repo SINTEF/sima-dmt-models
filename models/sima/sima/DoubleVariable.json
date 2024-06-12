@@ -1,8 +1,7 @@
 {
  "name" : "DoubleVariable",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/Variable"],
+ "extends" : ["./Variable"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -21,7 +20,5 @@
    "description" : "unit of variable",
    "optional" : true,
    "default" : "-"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

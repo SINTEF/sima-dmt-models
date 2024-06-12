@@ -1,21 +1,16 @@
 {
  "name" : "GlobalSpringStiffnessItem",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "force",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
-   "description" : "Spring force / moment corresponding to.",
    "optional" : true
   }, {
    "name" : "displacement",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
-   "description" : "Spring displacement.",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

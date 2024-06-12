@@ -1,8 +1,7 @@
 {
  "name" : "ModelReferenceVariable",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject", "/sima/ModelReference"],
+ "extends" : ["./NamedObject", "./ModelReference"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,10 +10,8 @@
   }, {
    "name" : "model",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/MOAO",
+   "attributeType" : "./MOAO",
    "contained" : false,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

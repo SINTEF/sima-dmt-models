@@ -1,13 +1,12 @@
 {
  "name" : "IrregularWaveProcedure",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "kinematicsPosition",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/KinematicsPositions",
+   "enumType" : "./KinematicsPositions",
    "description" : "Kinematic positions",
    "optional" : true,
    "default" : "STATIC"
@@ -15,7 +14,7 @@
    "name" : "kinematicsInWaveZone",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/KinematicsInWaveZone",
+   "enumType" : "./KinematicsInWaveZone",
    "description" : "Type of kinematics in wave zone",
    "optional" : true,
    "default" : "MEAN_WATER_LEVEL"
@@ -25,14 +24,14 @@
    "attributeType" : "boolean",
    "description" : "If chosen the default kinematics points procedure is run in RIFLEX. If not chosen the default procedure is not run in RIFLEX. In both cases additional detailed specification of wave kinematics points are run if present.",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "nodeStep",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Wave kinematics is calculated for every \"Node Step\" node between Z Lower\r\nand Z Upper",
    "optional" : true,
-   "default" : "1"
+   "default" : 1
   }, {
    "name" : "zLower",
    "type" : "core:BlueprintAttribute",
@@ -54,14 +53,14 @@
   }, {
    "name" : "waveKinematicDiffPoints",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/WaveKinematicsDiffPoint",
+   "attributeType" : "./WaveKinematicsDiffPoint",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "waveKinematicNodePoints",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/WaveKinematicsNodePoint",
+   "attributeType" : "./WaveKinematicsNodePoint",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -80,7 +79,7 @@
   }, {
    "name" : "waveKinematicsTimeSeriesReferences",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/WaveKinematicsTimeSeriesReference",
+   "attributeType" : "./WaveKinematicsTimeSeriesReference",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -106,10 +105,8 @@
    "name" : "fileFormat",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/StorageType",
+   "enumType" : "./StorageType",
    "optional" : true,
    "default" : "BINARY"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

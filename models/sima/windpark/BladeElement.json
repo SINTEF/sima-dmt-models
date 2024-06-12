@@ -1,8 +1,7 @@
 {
  "name" : "BladeElement",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/Named"],
+ "extends" : ["sima:sima/Named"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -26,7 +25,5 @@
    "attributeType" : "number",
    "description" : "Twist angle",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

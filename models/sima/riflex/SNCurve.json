@@ -1,8 +1,7 @@
 {
  "name" : "SNCurve",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject"],
+ "extends" : ["sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -12,7 +11,7 @@
    "name" : "fatigueLimitIndicator",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/FatigueLimitIndicator",
+   "enumType" : "./FatigueLimitIndicator",
    "description" : "Fatigue limit indicator",
    "optional" : true,
    "default" : "NO_LIMIT"
@@ -49,11 +48,9 @@
   }, {
    "name" : "curveItems",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/SNCurveItem",
+   "attributeType" : "./SNCurveItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

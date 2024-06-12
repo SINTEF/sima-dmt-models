@@ -1,12 +1,11 @@
 {
  "name" : "ControlSystem",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "relativeBody",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SIMOBody",
+   "attributeType" : "./SIMOBody",
    "contained" : false,
    "optional" : true
   }, {
@@ -33,21 +32,21 @@
    "attributeType" : "number",
    "description" : "X-coordinate of circle center",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "circleYRef",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Y-coordinate of circle center ",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "circleRadius",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Radius of the circle",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "xLocal",
    "type" : "core:BlueprintAttribute",
@@ -64,7 +63,7 @@
    "name" : "controlReference",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/ControlReference",
+   "enumType" : "./ControlReference",
    "description" : "Control Reference:\r\n Global:              Global position\r\n Body Relative:  Relative to another body\r\n Waypoint:        Wayoint reference",
    "optional" : true,
    "default" : "GLOBAL"
@@ -74,14 +73,14 @@
    "attributeType" : "boolean",
    "description" : "follow body position",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "dirRelative",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Follow body heading",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "referenceCutOff",
    "type" : "core:BlueprintAttribute",
@@ -91,14 +90,14 @@
   }, {
    "name" : "controlConfigurations",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/DOFControlConfiguration",
+   "attributeType" : "./DOFControlConfiguration",
    "dimensions" : "*",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "estimator",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/Estimator",
+   "attributeType" : "./Estimator",
    "contained" : true,
    "optional" : false
   }, {
@@ -129,23 +128,21 @@
    "name" : "windMeasurement",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/WindMeasurement",
+   "enumType" : "./WindMeasurement",
    "description" : "Flag for measurement of wind forces to be included in the controller",
    "optional" : true,
    "default" : "NO"
   }, {
    "name" : "allocationSystem",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/AllocationSystem",
+   "attributeType" : "./AllocationSystem",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "guidanceSystem",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/GuidanceSystem",
+   "attributeType" : "./GuidanceSystem",
    "contained" : true,
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

@@ -1,8 +1,7 @@
 {
  "name" : "ProplibTunnelThruster",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/simo/IThruster"],
+ "extends" : ["./IThruster"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -23,7 +22,7 @@
   }, {
    "name" : "position",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Point3",
+   "attributeType" : "sima:sima/Point3",
    "contained" : true,
    "optional" : false
   }, {
@@ -41,19 +40,19 @@
   }, {
    "name" : "thrusterDynamics",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/ThrusterDynamics",
+   "attributeType" : "./ThrusterDynamics",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "controlSequence",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/ThrusterControlSequence",
+   "attributeType" : "./ThrusterControlSequence",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "failureSpecification",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/ThrusterFailureSpecification",
+   "attributeType" : "./ThrusterFailureSpecification",
    "contained" : true,
    "optional" : false
   }, {
@@ -62,85 +61,83 @@
    "attributeType" : "boolean",
    "description" : "Should surface proximity loss be included?",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "includeThrusterHullInteraction",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Should thruster-hull interaction be included?",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "includeThrusterThrusterInteraction",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Should thruster-thruster interaction be included?",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "maxRps",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "The RPS giving maximum force",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "diameter",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Thruster diameter",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "tunnelLength",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Tunnel length",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "baselineAngle",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Hull angle relative to baseline (front view)",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "centerlineAngle",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Hull angle relative to centerline (top view)",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "numberOfGrids",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of grids",
    "optional" : true,
-   "default" : "0"
+   "default" : 0
   }, {
    "name" : "pitchRatio",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Propeller Pitch Ratio",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "bilgeRadius",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Bilge radius",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "verticalDistanceHull",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Vertical distance from propeller center to hull",
    "optional" : true,
-   "default" : "0.0"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : 0.0
+  }]
 }

@@ -1,12 +1,11 @@
 {
  "name" : "WamitResultEntry",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/ResultEntry"],
+ "extends" : ["sima:sima/ResultEntry"],
  "attributes" : [{
    "name" : "properties",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Property",
+   "attributeType" : "sima:sima/Property",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -33,44 +32,42 @@
   }, {
    "name" : "results",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Result",
+   "attributeType" : "sima:sima/Result",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "entries",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/ResultEntry",
+   "attributeType" : "sima:sima/ResultEntry",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "outFile",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Result",
+   "attributeType" : "sima:sima/Result",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "wamitBodyResults",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/wamit/WamitBodyResult",
+   "attributeType" : "./WamitBodyResult",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "diffractedWaveField",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/DiffractedWaveField",
+   "attributeType" : "sima:hydro/DiffractedWaveField",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "hydrodynamicalCouplings",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/wamit/HydrodynamicalCoupling",
+   "attributeType" : "./HydrodynamicalCoupling",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

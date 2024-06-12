@@ -1,8 +1,7 @@
 {
  "name" : "VariableInputSlot",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/post/InputSlot"],
+ "extends" : ["sima:post/InputSlot"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,10 +10,8 @@
   }, {
    "name" : "variable",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Variable",
+   "attributeType" : "sima:sima/Variable",
    "contained" : false,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

@@ -1,15 +1,12 @@
 {
  "name" : "EntitySignal",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/signals/Signal"],
+ "extends" : ["./Signal"],
  "attributes" : [{
    "name" : "value",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "core:Entity",
    "contained" : true,
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

@@ -1,27 +1,24 @@
 {
  "name" : "DiffractedWave",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "referencePoint",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Point3",
+   "attributeType" : "sima:sima/Point3",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "elevation",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/DiffractedWaveElevation",
+   "attributeType" : "./DiffractedWaveElevation",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "velocity",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/DiffractedWaveVelocity",
+   "attributeType" : "./DiffractedWaveVelocity",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

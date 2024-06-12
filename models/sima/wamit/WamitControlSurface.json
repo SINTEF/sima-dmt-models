@@ -1,8 +1,7 @@
 {
  "name" : "WamitControlSurface",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "geometryFilename",
    "type" : "core:BlueprintAttribute",
@@ -13,7 +12,7 @@
    "name" : "surfacesToIncludeFromMs2File",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/wamit/SurfacesToIncludeFromMs2FileOption",
+   "enumType" : "./SurfacesToIncludeFromMs2FileOption",
    "optional" : true,
    "default" : "ALLVISIBLESURFACES"
   }, {
@@ -35,7 +34,7 @@
    "name" : "evaluationMode",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/wamit/EvaluationModeOption",
+   "enumType" : "./EvaluationModeOption",
    "optional" : true,
    "default" : "FAST"
   }, {
@@ -47,13 +46,13 @@
    "name" : "directionOfNormals",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/wamit/DirectionsOfNormalsOption",
+   "enumType" : "./DirectionsOfNormalsOption",
    "optional" : true,
    "default" : "OUTWARD"
   }, {
    "name" : "parameterLines",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/wamit/ParameterLines",
+   "attributeType" : "./ParameterLines",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -62,8 +61,6 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true,
-   "default" : "10.0"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : 10.0
+  }]
 }

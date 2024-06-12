@@ -1,8 +1,7 @@
 {
  "name" : "Jonswap3P",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/environment/Jonswap"],
+ "extends" : ["./Jonswap"],
  "attributes" : [{
    "name" : "direction",
    "type" : "core:BlueprintAttribute",
@@ -15,19 +14,19 @@
    "attributeType" : "number",
    "description" : "Exponent  η in cos spreading function",
    "optional" : true,
-   "default" : "2.0"
+   "default" : 2.0
   }, {
    "name" : "numDirections",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of directions in spreading function, must be odd",
    "optional" : true,
-   "default" : "11"
+   "default" : 11
   }, {
    "name" : "spreadingType",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/environment/WaveSpreadingType",
+   "enumType" : "./WaveSpreadingType",
    "description" : "Wave spreading code",
    "optional" : true,
    "default" : "UNIDIRECTIONAL"
@@ -49,8 +48,6 @@
    "attributeType" : "number",
    "description" : "Peakedness parameter, γ - calculated when not specified",
    "optional" : true,
-   "default" : "3.3"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : 3.3
+  }]
 }

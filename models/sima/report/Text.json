@@ -1,14 +1,11 @@
 {
  "name" : "Text",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/report/ReportItem"],
+ "extends" : ["./ReportItem"],
  "attributes" : [{
    "name" : "text",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

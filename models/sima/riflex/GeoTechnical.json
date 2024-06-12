@@ -1,8 +1,7 @@
 {
  "name" : "GeoTechnical",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject"],
+ "extends" : ["sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,7 +10,7 @@
   }, {
    "name" : "soilItems",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/SoilItem",
+   "attributeType" : "./SoilItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -31,7 +30,7 @@
    "name" : "_type",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/SoilStiffnessType",
+   "enumType" : "./SoilStiffnessType",
    "optional" : true,
    "default" : "STATIC"
   }, {
@@ -40,19 +39,19 @@
    "attributeType" : "boolean",
    "description" : "Calculate diameter from cross-sections",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "calculateAxialPileResistance",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Calculate axial pile resistance",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "pileType",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/GeotechnicalPileType",
+   "enumType" : "./GeotechnicalPileType",
    "optional" : true,
    "default" : "OPEN"
   }, {
@@ -67,7 +66,5 @@
    "attributeType" : "number",
    "description" : "Curve fitting factor",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

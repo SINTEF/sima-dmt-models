@@ -2,7 +2,5 @@
  "name" : "ConditionTask",
  "type" : "core:Blueprint",
  "abstract" : true,
- "extends" : ["/sima/Task"],
- "storageRecipes" : [],
- "uiRecipes" : []
+ "extends" : ["sima:sima/Task"]
 }

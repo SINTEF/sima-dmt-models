@@ -2,7 +2,5 @@
  "name" : "ControlSignalInputSlot",
  "type" : "core:Blueprint",
  "abstract" : true,
- "extends" : ["/post/InputSlot", "/post/SignalPropertiesContainer"],
- "storageRecipes" : [],
- "uiRecipes" : []
+ "extends" : ["./InputSlot", "./SignalPropertiesContainer"]
 }

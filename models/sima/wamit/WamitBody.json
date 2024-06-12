@@ -1,8 +1,7 @@
 {
  "name" : "WamitBody",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/Body"],
+ "extends" : ["sima:sima/Body"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -14,37 +13,37 @@
    "attributeType" : "number",
    "description" : "Length",
    "optional" : true,
-   "default" : "10.0"
+   "default" : 10.0
   }, {
    "name" : "width",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Width",
    "optional" : true,
-   "default" : "5.0"
+   "default" : 5.0
   }, {
    "name" : "height",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Height",
    "optional" : true,
-   "default" : "5.0"
+   "default" : 5.0
   }, {
    "name" : "appearance",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Appearance",
+   "attributeType" : "sima:sima/Appearance",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "initialPosition",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Position",
+   "attributeType" : "sima:sima/Position",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "viewpoints",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/BodyViewpoint",
+   "attributeType" : "sima:sima/BodyViewpoint",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -58,7 +57,7 @@
    "name" : "surfacesToIncludeFromMs2File",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/wamit/SurfacesToIncludeFromMs2FileOption",
+   "enumType" : "./SurfacesToIncludeFromMs2FileOption",
    "optional" : true,
    "default" : "ALLVISIBLESURFACES"
   }, {
@@ -80,7 +79,7 @@
    "name" : "evaluationMode",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/wamit/EvaluationModeOption",
+   "enumType" : "./EvaluationModeOption",
    "optional" : true,
    "default" : "FAST"
   }, {
@@ -92,39 +91,39 @@
    "name" : "directionOfNormals",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/wamit/DirectionsOfNormalsOption",
+   "enumType" : "./DirectionsOfNormalsOption",
    "optional" : true,
    "default" : "OUTWARD"
   }, {
    "name" : "parameterLines",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/wamit/ParameterLines",
+   "attributeType" : "./ParameterLines",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "cog",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Point3",
+   "attributeType" : "sima:sima/Point3",
    "contained" : true,
    "optional" : false,
    "description" : "Coordinates of centre of gravity, (L)"
   }, {
    "name" : "massData",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/MassMatrix",
+   "attributeType" : "sima:hydro/MassMatrix",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "externalStiffness",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/HydrostaticStiffnessMatrix",
+   "attributeType" : "sima:hydro/HydrostaticStiffnessMatrix",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "linearDamping",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/LinearDampingMatrix",
+   "attributeType" : "sima:hydro/LinearDampingMatrix",
    "contained" : true,
    "optional" : false
   }, {
@@ -148,7 +147,7 @@
   }, {
    "name" : "modes",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/wamit/ModesOfMotion",
+   "attributeType" : "./ModesOfMotion",
    "contained" : true,
    "optional" : false
   }, {
@@ -157,18 +156,18 @@
    "attributeType" : "number",
    "description" : "Characteristic Length (ULEN)",
    "optional" : true,
-   "default" : "1.0"
+   "default" : 1.0
   }, {
    "name" : "controlSurface",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/wamit/WamitControlSurface",
+   "attributeType" : "./WamitControlSurface",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "removeIrregularFrequencies",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/wamit/RemoveIrregularFrequenciesOption",
+   "enumType" : "./RemoveIrregularFrequenciesOption",
    "optional" : true,
    "default" : "NO"
   }, {
@@ -182,20 +181,18 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "heelChange",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "trimChange",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true,
-   "default" : "0.0"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : 0.0
+  }]
 }

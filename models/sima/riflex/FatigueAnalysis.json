@@ -1,8 +1,7 @@
 {
  "name" : "FatigueAnalysis",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/Named"],
+ "extends" : ["sima:sima/Named"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -13,7 +12,7 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : true,
-   "default" : "8"
+   "default" : 8
   }, {
    "name" : "includeAllPoints",
    "type" : "core:BlueprintAttribute",
@@ -23,7 +22,7 @@
   }, {
    "name" : "items",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/FatigueAnalysisItem",
+   "attributeType" : "./FatigueAnalysisItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true,
@@ -43,7 +42,5 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

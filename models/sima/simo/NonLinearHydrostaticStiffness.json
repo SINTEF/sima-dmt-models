@@ -1,12 +1,11 @@
 {
  "name" : "NonLinearHydrostaticStiffness",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "geometryPosition",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Position",
+   "attributeType" : "sima:sima/Position",
    "contained" : true,
    "optional" : false
   }, {
@@ -21,7 +20,5 @@
    "attributeType" : "number",
    "description" : "Geometry transparency, [0-1], where 1 is full transparency.",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

@@ -1,8 +1,7 @@
 {
  "name" : "WamitWaveDriftForce",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/hydro/WaveDriftForce", "/sima/Named"],
+ "extends" : ["sima:hydro/WaveDriftForce", "sima:sima/Named"],
  "attributes" : [{
    "name" : "directions",
    "type" : "core:BlueprintAttribute",
@@ -19,43 +18,43 @@
    "name" : "symmetry",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/hydro/DirectionSymmetry",
+   "enumType" : "sima:hydro/DirectionSymmetry",
    "optional" : true,
    "default" : "NO_SYMMETRY"
   }, {
    "name" : "fx",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/DirectionDependentValues",
+   "attributeType" : "sima:hydro/DirectionDependentValues",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "fy",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/DirectionDependentValues",
+   "attributeType" : "sima:hydro/DirectionDependentValues",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "fz",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/DirectionDependentValues",
+   "attributeType" : "sima:hydro/DirectionDependentValues",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "mx",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/DirectionDependentValues",
+   "attributeType" : "sima:hydro/DirectionDependentValues",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "my",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/DirectionDependentValues",
+   "attributeType" : "sima:hydro/DirectionDependentValues",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "mz",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/DirectionDependentValues",
+   "attributeType" : "sima:hydro/DirectionDependentValues",
    "contained" : true,
    "optional" : true
   }, {
@@ -64,13 +63,11 @@
    "attributeType" : "boolean",
    "description" : "Enable wave-current interaction using extended Aranha formula",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "name",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

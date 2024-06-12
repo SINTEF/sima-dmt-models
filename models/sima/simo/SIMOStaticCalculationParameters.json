@@ -1,8 +1,7 @@
 {
  "name" : "SIMOStaticCalculationParameters",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "runStaticAutomatically",
    "type" : "core:BlueprintAttribute",
@@ -15,56 +14,56 @@
    "attributeType" : "boolean",
    "description" : "Perform equlibrium calculation",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "maxPeriod",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Maximum natural period",
    "optional" : true,
-   "default" : "10.0"
+   "default" : 10.0
   }, {
    "name" : "posTol",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Position tolerance",
    "optional" : true,
-   "default" : "0.1"
+   "default" : 0.1
   }, {
    "name" : "dirTol",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Direction tolerance",
    "optional" : true,
-   "default" : "0.1"
+   "default" : 0.1
   }, {
    "name" : "timeStep",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Equilibrium time step",
    "optional" : true,
-   "default" : "0.01"
+   "default" : 0.01
   }, {
    "name" : "maxStep",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Maximum number of time steps",
    "optional" : true,
-   "default" : "10000"
+   "default" : 10000
   }, {
    "name" : "criticalDamping",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Add critical damping?",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "writeVisFile",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "write visualization file?",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "calculateEigenvalues",
    "type" : "core:BlueprintAttribute",
@@ -74,14 +73,14 @@
   }, {
    "name" : "eliminations",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/DOFElimination",
+   "attributeType" : "./DOFElimination",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "eigenvalueItems",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/BodyEigenvalueItem",
+   "attributeType" : "./BodyEigenvalueItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -89,7 +88,7 @@
    "name" : "equilibriumCalculationMethod",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/EquilibriumCalculationOption",
+   "enumType" : "./EquilibriumCalculationOption",
    "optional" : true,
    "default" : "TRANSIENT"
   }, {
@@ -98,25 +97,25 @@
    "attributeType" : "number",
    "description" : "An equilibrium will be accepted if all the force components are lower than the force tolerance, and all the moment components are lower than the moment tolerance.",
    "optional" : true,
-   "default" : "100.0"
+   "default" : 100.0
   }, {
    "name" : "momentTolerance",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "An equilibrium will be accepted if all the force components are lower than the force tolerance, and all the moment components are lower than the moment tolerance.",
    "optional" : true,
-   "default" : "1000.0"
+   "default" : 1000.0
   }, {
    "name" : "staticEquilibriumBody",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/StaticEquilibriumBody",
+   "attributeType" : "./StaticEquilibriumBody",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "restrainFromGlobalDOFBodies",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/DOFElimination",
+   "attributeType" : "./DOFElimination",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -128,7 +127,7 @@
   }, {
    "name" : "equilibriumGridDefinition",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/EquilibriumGridDefinition",
+   "attributeType" : "./EquilibriumGridDefinition",
    "contained" : true,
    "optional" : false
   }, {
@@ -137,8 +136,12 @@
    "attributeType" : "boolean",
    "description" : "When checked, static calculation will fail if no equilibrium position is found",
    "optional" : true,
-   "default" : "true"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : true
+  }, {
+   "name" : "storageParameters",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "./SIMOStaticResultStorageParameters",
+   "contained" : true,
+   "optional" : false
+  }]
 }

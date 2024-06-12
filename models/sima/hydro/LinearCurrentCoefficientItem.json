@@ -1,8 +1,7 @@
 {
  "name" : "LinearCurrentCoefficientItem",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "direction",
    "type" : "core:BlueprintAttribute",
@@ -45,7 +44,5 @@
    "attributeType" : "number",
    "description" : "Linear current force coefficient for 6. degree of freedom",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

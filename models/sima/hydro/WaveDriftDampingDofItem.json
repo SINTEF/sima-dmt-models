@@ -1,12 +1,11 @@
 {
  "name" : "WaveDriftDampingDofItem",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/hydro/DirectionDependentValues"],
+ "extends" : ["./DirectionDependentValues"],
  "attributes" : [{
    "name" : "directionalValues",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/Values",
+   "attributeType" : "./Values",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -14,17 +13,15 @@
    "name" : "dof1",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/hydro/DOF",
+   "enumType" : "./DOF",
    "optional" : true,
    "default" : "X"
   }, {
    "name" : "dof2",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/hydro/DOF",
+   "enumType" : "./DOF",
    "optional" : true,
    "default" : "X"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

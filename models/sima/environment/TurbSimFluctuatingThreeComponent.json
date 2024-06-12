@@ -1,8 +1,7 @@
 {
  "name" : "TurbSimFluctuatingThreeComponent",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/environment/Wind"],
+ "extends" : ["./Wind"],
  "attributes" : [{
    "name" : "direction",
    "type" : "core:BlueprintAttribute",
@@ -15,7 +14,7 @@
    "attributeType" : "integer",
    "description" : "Buffer size: Number of cross-sectional planes (slices) in memory",
    "optional" : true,
-   "default" : "800"
+   "default" : 800
   }, {
    "name" : "windFileName",
    "type" : "core:BlueprintAttribute",
@@ -28,7 +27,5 @@
    "attributeType" : "string",
    "description" : "Path and filename for the summary file from TurbSim",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

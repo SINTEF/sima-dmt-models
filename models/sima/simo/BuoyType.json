@@ -1,8 +1,7 @@
 {
  "name" : "BuoyType",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject"],
+ "extends" : ["sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,11 +10,9 @@
   }, {
    "name" : "forceCharacteristic",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/ForceItem",
+   "attributeType" : "./ForceItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

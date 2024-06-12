@@ -1,25 +1,18 @@
 {
  "name" : "Section",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/report/ReportItem", "/report/Linkable"],
+ "extends" : ["./ReportItem"],
  "attributes" : [{
    "name" : "items",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/report/ReportItem",
+   "attributeType" : "./ReportItem",
    "dimensions" : "*",
    "contained" : true,
-   "optional" : true
-  }, {
-   "name" : "identifier",
-   "type" : "core:BlueprintAttribute",
-   "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "title",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "description" : "The title of the section.",
    "optional" : true
   }, {
    "name" : "pageBreakBefore",
@@ -30,10 +23,8 @@
    "name" : "orientation",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/report/Orientation",
+   "enumType" : "./Orientation",
    "optional" : true,
    "default" : "PORTRAIT"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

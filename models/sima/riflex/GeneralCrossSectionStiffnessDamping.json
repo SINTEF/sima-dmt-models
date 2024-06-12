@@ -1,0 +1,30 @@
+{
+ "name" : "GeneralCrossSectionStiffnessDamping",
+ "type" : "core:Blueprint",
+ "extends" : ["sima:sima/MOAO"],
+ "attributes" : [{
+   "name" : "axialFactor",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Factor for stiffness proportional damping in axial dof",
+   "optional" : true
+  }, {
+   "name" : "torsionalFactor",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Factor for stiffness proportional damping in torsional dof",
+   "optional" : true
+  }, {
+   "name" : "bendingFactorV",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Factor for stiffness proportional damping for bending around principal V-axis and shear in principal W-axis",
+   "optional" : true
+  }, {
+   "name" : "bendingFactorW",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Factor for stiffness proportional damping for bending around principal W-axis and shear in principal V-axis",
+   "optional" : true
+  }]
+}

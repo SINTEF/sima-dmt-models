@@ -1,15 +1,12 @@
 {
  "name" : "RIFLEXEigenvalueCalculationParameters",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "eigenvalueAnalysisParameters",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/EigenvalueAnalysisParameters",
+   "attributeType" : "./EigenvalueAnalysisParameters",
    "contained" : true,
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

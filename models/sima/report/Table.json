@@ -1,12 +1,11 @@
 {
  "name" : "Table",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/report/ReportItem"],
+ "extends" : ["./ReportItem"],
  "attributes" : [{
    "name" : "object",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/MOAO",
+   "attributeType" : "sima:sima/MOAO",
    "contained" : false,
    "optional" : true
   }, {
@@ -16,16 +15,9 @@
    "description" : "Caption",
    "optional" : true
   }, {
-   "name" : "autoSplit",
-   "type" : "core:BlueprintAttribute",
-   "attributeType" : "boolean",
-   "description" : "Automatically split a large table into multiple tables.",
-   "optional" : true,
-   "default" : "true"
-  }, {
    "name" : "columns",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/report/TableColumn",
+   "attributeType" : "./TableColumn",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -34,7 +26,5 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

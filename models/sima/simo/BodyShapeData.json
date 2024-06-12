@@ -1,72 +1,69 @@
 {
  "name" : "BodyShapeData",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "lengthBetweenPerpendiculars",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Length between perpendiculars",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "maximumBeamAtWaterline",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Maximum beam at the waterline",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "draftAtAftPerpendicular",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Draft at aft perpendicular",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "draftAtForePerpendicular",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Draft at fore perpendicular",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "blockCoefficient",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Block coefficient, Cb = displacement / (LWL * BWL * T)",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "distanceAftPerpendicular",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Distance from aft perpendicular to the body fixed origin",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "distanceBaseline",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Distance from baseline to the body fixed origin",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "specifyWaterline",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Should a waterline file be specified?",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "waterlinePoints",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/Point2",
+   "attributeType" : "./Point2",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

@@ -1,16 +1,13 @@
 {
  "name" : "SpatiallyVaryingCurrent",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/environment/Current"],
+ "extends" : ["sima:environment/Current"],
  "attributes" : [{
    "name" : "profiles",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/CurrentProfile",
+   "attributeType" : "./CurrentProfile",
    "dimensions" : "*",
    "contained" : true,
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

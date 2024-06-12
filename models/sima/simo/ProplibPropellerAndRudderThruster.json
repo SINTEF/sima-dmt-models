@@ -1,8 +1,7 @@
 {
  "name" : "ProplibPropellerAndRudderThruster",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/simo/IThruster"],
+ "extends" : ["./IThruster"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -23,7 +22,7 @@
   }, {
    "name" : "position",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Point3",
+   "attributeType" : "sima:sima/Point3",
    "contained" : true,
    "optional" : false
   }, {
@@ -41,19 +40,19 @@
   }, {
    "name" : "thrusterDynamics",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/ThrusterDynamics",
+   "attributeType" : "./ThrusterDynamics",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "controlSequence",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/ThrusterControlSequence",
+   "attributeType" : "./ThrusterControlSequence",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "failureSpecification",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/ThrusterFailureSpecification",
+   "attributeType" : "./ThrusterFailureSpecification",
    "contained" : true,
    "optional" : false
   }, {
@@ -62,162 +61,160 @@
    "attributeType" : "boolean",
    "description" : "Should surface proximity loss be included?",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "includeThrusterHullInteraction",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Should thruster-hull interaction be included?",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "includeThrusterThrusterInteraction",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Should thruster-thruster interaction be included?",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "maxRps",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "The RPS giving maximum force",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "diameter",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Thruster diameter",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "bladeAreaRatio",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Propeller blade area ratio",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "headboxHeight",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Headbox height",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "headboxRootChord",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Headbox root chord",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "headboxTipChord",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Headbox tip chord",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "headboxArea",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Headbox area",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "rudderHeight",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Rudder height",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "rudderRootChord",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Rudder root chord",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "rudderTipChord",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Rudder tip chord",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "rudderHornArea",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Rudder horn area",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "rudderTotalArea",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Rudder total area (including horn)",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "rudderPropellerHorizontalDistance",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Horizontal distance from propeller plane to rudder stock",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "rudderPropellerVerticalDistance",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Vertical distance from propeller plane to rudder top",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "rudderHeadboxGap",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Initial gap between rudder and headbox",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "wakeFraction",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Wake fraction",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "pitchRatio",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Propeller pitch ratio",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "bilgeRadius",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Bilge radius",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "verticalDistanceHull",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Vertical distance from propeller center to hull",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "thrustDeductionFactor",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Thrust deduction factor",
    "optional" : true,
-   "default" : "0.0"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : 0.0
+  }]
 }

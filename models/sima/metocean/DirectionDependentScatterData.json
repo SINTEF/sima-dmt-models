@@ -1,8 +1,7 @@
 {
  "name" : "DirectionDependentScatterData",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/metocean/ScatterData"],
+ "extends" : ["./ScatterData"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,11 +10,9 @@
   }, {
    "name" : "sectors",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/metocean/ScatterSector",
+   "attributeType" : "./ScatterSector",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

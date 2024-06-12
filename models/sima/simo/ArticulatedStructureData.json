@@ -1,33 +1,32 @@
 {
  "name" : "ArticulatedStructureData",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "_type",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/ArticulatedStructureType",
+   "enumType" : "./ArticulatedStructureType",
    "description" : "Type of articulated structure coupling control",
    "optional" : true,
    "default" : "NRUN"
   }, {
    "name" : "masterPoint",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Point3",
+   "attributeType" : "sima:sima/Point3",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "localPoint",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Point3",
+   "attributeType" : "sima:sima/Point3",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "motionMode",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/MotionMode",
+   "enumType" : "./MotionMode",
    "description" : "Mode of motion (X,Y,Z,PHI,THETA,PSI)",
    "optional" : true,
    "default" : "PHI"
@@ -64,7 +63,7 @@
   }, {
    "name" : "sequenceItems",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/MotionSequence",
+   "attributeType" : "./MotionSequence",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -72,7 +71,7 @@
    "name" : "motionSequenceType",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/MotionSequenceType",
+   "enumType" : "./MotionSequenceType",
    "optional" : true,
    "default" : "TSTOP"
   }, {
@@ -87,7 +86,5 @@
    "attributeType" : "number",
    "description" : "Slip (turn-back) angle",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

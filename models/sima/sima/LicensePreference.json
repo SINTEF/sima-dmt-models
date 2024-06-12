@@ -1,14 +1,11 @@
 {
  "name" : "LicensePreference",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/SIMAPreference"],
+ "extends" : ["./SIMAPreference"],
  "attributes" : [{
    "name" : "path",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

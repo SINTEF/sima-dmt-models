@@ -1,8 +1,7 @@
 {
  "name" : "ReplaceOperation",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/condition/ModelVariationOperation"],
+ "extends" : ["./ModelVariationOperation"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,16 +10,14 @@
   }, {
    "name" : "model",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/MOAO",
+   "attributeType" : "sima:sima/MOAO",
    "contained" : false,
    "optional" : true
   }, {
    "name" : "replacement",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/MOAO",
+   "attributeType" : "sima:sima/MOAO",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

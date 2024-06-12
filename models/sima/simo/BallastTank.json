@@ -1,8 +1,7 @@
 {
  "name" : "BallastTank",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject"],
+ "extends" : ["sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -37,14 +36,14 @@
    "attributeType" : "number",
    "description" : "Precision that should be reached by volume computation",
    "optional" : true,
-   "default" : "0.001"
+   "default" : 0.001
   }, {
    "name" : "permeabilityFactor",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Fraction of the tank volume that can be used to fill it with ballast fluid",
    "optional" : true,
-   "default" : "1.0"
+   "default" : 1.0
   }, {
    "name" : "initialBallastQuantity",
    "type" : "core:BlueprintAttribute",
@@ -55,7 +54,7 @@
    "name" : "quantityType",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/BallastQuantityType",
+   "enumType" : "./BallastQuantityType",
    "optional" : true,
    "default" : "PERCENTAGE"
   }, {
@@ -64,11 +63,11 @@
    "attributeType" : "number",
    "description" : "Density of the fluid used as ballast",
    "optional" : true,
-   "default" : "1025.0"
+   "default" : 1025.0
   }, {
    "name" : "geometryPosition",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Position",
+   "attributeType" : "sima:sima/Position",
    "contained" : true,
    "optional" : false
   }, {
@@ -81,11 +80,16 @@
    "name" : "state",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/BallastTankState",
+   "enumType" : "./BallastTankState",
    "description" : "State of ballast tank",
    "optional" : true,
    "default" : "INTACT"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }, {
+   "name" : "pressureMeasurements",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "./BallastTankPressureMeasurement",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }]
 }

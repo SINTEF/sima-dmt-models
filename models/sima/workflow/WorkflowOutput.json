@@ -1,8 +1,7 @@
 {
  "name" : "WorkflowOutput",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/post/OutputNode"],
+ "extends" : ["sima:post/OutputNode"],
  "attributes" : [{
    "name" : "x",
    "type" : "core:BlueprintAttribute",
@@ -31,14 +30,14 @@
   }, {
    "name" : "controlSignalInputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/ControlSignalInputSlot",
+   "attributeType" : "sima:post/ControlSignalInputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "inputSlot",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/InputSlot",
+   "attributeType" : "sima:post/InputSlot",
    "contained" : true,
    "optional" : false
   }, {
@@ -51,7 +50,5 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

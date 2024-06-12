@@ -1,7 +1,6 @@
 {
  "name" : "PackageInfo",
  "type" : "core:Blueprint",
- "abstract" : false,
  "extends" : ["core:NamedEntity"],
  "attributes" : [{
    "name" : "version",
@@ -13,7 +12,5 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

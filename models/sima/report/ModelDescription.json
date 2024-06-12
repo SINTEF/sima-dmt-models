@@ -1,12 +1,11 @@
 {
  "name" : "ModelDescription",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/report/ReportItem"],
+ "extends" : ["./ReportItem"],
  "attributes" : [{
    "name" : "object",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/MOAO",
+   "attributeType" : "sima:sima/MOAO",
    "contained" : false,
    "optional" : true
   }, {
@@ -15,7 +14,5 @@
    "attributeType" : "string",
    "description" : "Caption",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

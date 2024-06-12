@@ -1,8 +1,7 @@
 {
  "name" : "FirstOrderWaveForceTransferFunction",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "directions",
    "type" : "core:BlueprintAttribute",
@@ -19,46 +18,44 @@
    "name" : "symmetry",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/hydro/DirectionSymmetry",
+   "enumType" : "./DirectionSymmetry",
    "optional" : true,
    "default" : "NO_SYMMETRY"
   }, {
    "name" : "fx",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/DirectionDependentComplexValues",
+   "attributeType" : "./DirectionDependentComplexValues",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "fy",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/DirectionDependentComplexValues",
+   "attributeType" : "./DirectionDependentComplexValues",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "fz",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/DirectionDependentComplexValues",
+   "attributeType" : "./DirectionDependentComplexValues",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "mx",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/DirectionDependentComplexValues",
+   "attributeType" : "./DirectionDependentComplexValues",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "my",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/DirectionDependentComplexValues",
+   "attributeType" : "./DirectionDependentComplexValues",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "mz",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/DirectionDependentComplexValues",
+   "attributeType" : "./DirectionDependentComplexValues",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

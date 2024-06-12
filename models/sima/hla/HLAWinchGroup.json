@@ -1,8 +1,7 @@
 {
  "name" : "HLAWinchGroup",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/hla/HLAObject"],
+ "extends" : ["./HLAObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,11 +10,9 @@
   }, {
    "name" : "winchConfigurations",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hla/HLAWinchControlConfiguration",
+   "attributeType" : "./HLAWinchControlConfiguration",
    "dimensions" : "*",
    "contained" : true,
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

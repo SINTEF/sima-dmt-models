@@ -1,35 +1,32 @@
 {
  "name" : "WamitModel",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "environments",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/wamit/WamitEnvironment",
+   "attributeType" : "./WamitEnvironment",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "location",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/wamit/WamitLocation",
+   "attributeType" : "./WamitLocation",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "bodies",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/wamit/WamitBody",
+   "attributeType" : "./WamitBody",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "calculationParameters",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/wamit/WamitCalculationParameters",
+   "attributeType" : "./WamitCalculationParameters",
    "contained" : true,
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

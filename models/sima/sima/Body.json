@@ -2,7 +2,5 @@
  "name" : "Body",
  "type" : "core:Blueprint",
  "abstract" : true,
- "extends" : ["/sima/NamedObject"],
- "storageRecipes" : [],
- "uiRecipes" : []
+ "extends" : ["./NamedObject"]
 }

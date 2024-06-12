@@ -1,8 +1,7 @@
 {
  "name" : "SuperNode",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject", "/simo/SuperNodeReference"],
+ "extends" : ["sima:sima/NamedObject", "sima:simo/SuperNodeReference"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -12,21 +11,21 @@
    "name" : "constraint",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/NodeConstraint",
+   "enumType" : "./NodeConstraint",
    "description" : "Supernode type.",
    "optional" : true,
    "default" : "FIXED_PRESCRIBED"
   }, {
    "name" : "referenceFrame",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/ReferenceFrame",
+   "attributeType" : "./ReferenceFrame",
    "contained" : false,
    "optional" : true,
    "description" : "Reference frame for local coordinates."
   }, {
    "name" : "supportVessel",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/SupportVessel",
+   "attributeType" : "./SupportVessel",
    "contained" : false,
    "optional" : true,
    "description" : "Support body reference."
@@ -39,7 +38,7 @@
   }, {
    "name" : "masterNode",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SuperNodeReference",
+   "attributeType" : "sima:simo/SuperNodeReference",
    "contained" : false,
    "optional" : true,
    "description" : "Master node for Slaved / Fixed Relative Orientation nodes."
@@ -47,7 +46,7 @@
    "name" : "xConstraint",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/BoundaryCondition",
+   "enumType" : "./BoundaryCondition",
    "description" : "Boundary condition for translation in X-direction.",
    "optional" : true,
    "default" : "FREE"
@@ -55,7 +54,7 @@
    "name" : "yConstraint",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/BoundaryCondition",
+   "enumType" : "./BoundaryCondition",
    "description" : "Boundary condition for translation in Y-direction.",
    "optional" : true,
    "default" : "FREE"
@@ -63,7 +62,7 @@
    "name" : "zConstraint",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/BoundaryCondition",
+   "enumType" : "./BoundaryCondition",
    "description" : "Boundary condition for translation in Z-direction.",
    "optional" : true,
    "default" : "FREE"
@@ -71,7 +70,7 @@
    "name" : "rxConstraint",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/BoundaryCondition",
+   "enumType" : "./BoundaryCondition",
    "description" : "Boundary condition for rotation about X-axis",
    "optional" : true,
    "default" : "FREE"
@@ -79,7 +78,7 @@
    "name" : "ryConstraint",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/BoundaryCondition",
+   "enumType" : "./BoundaryCondition",
    "description" : "Boundary condition for rotation about Y-axis",
    "optional" : true,
    "default" : "FREE"
@@ -87,7 +86,7 @@
    "name" : "rzConstraint",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/BoundaryCondition",
+   "enumType" : "./BoundaryCondition",
    "description" : "Boundary condition for rotation about Z-axis",
    "optional" : true,
    "default" : "FREE"
@@ -142,7 +141,7 @@
   }, {
    "name" : "referenceLine",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/ARLine",
+   "attributeType" : "./ARLine",
    "contained" : false,
    "optional" : true,
    "description" : "Used for automatic calculation of initial super node position"
@@ -161,14 +160,14 @@
   }, {
    "name" : "radialReference1",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/SuperNode",
+   "attributeType" : "./SuperNode",
    "contained" : false,
    "optional" : true,
    "description" : "Master node for Slaved / Fixed Relative Orientation nodes."
   }, {
    "name" : "radialReference2",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/SuperNode",
+   "attributeType" : "./SuperNode",
    "contained" : false,
    "optional" : true,
    "description" : "Master node for Slaved / Fixed Relative Orientation nodes."
@@ -191,7 +190,7 @@
    "name" : "boundaryConditionFrame",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/BoundaryConditionFrame",
+   "enumType" : "./BoundaryConditionFrame",
    "description" : "Boundary condition reference co-ordinate system",
    "optional" : true,
    "default" : "GLOBAL"
@@ -231,7 +230,5 @@
    "attributeType" : "number",
    "description" : "XY-plane reference vector z-component  in reference system",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

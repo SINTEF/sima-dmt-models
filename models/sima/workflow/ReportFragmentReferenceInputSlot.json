@@ -1,8 +1,7 @@
 {
  "name" : "ReportFragmentReferenceInputSlot",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/post/InputSlot"],
+ "extends" : ["sima:post/InputSlot"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,10 +10,8 @@
   }, {
    "name" : "fragment",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/report/ReportFragment",
+   "attributeType" : "sima:report/ReportFragment",
    "contained" : false,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

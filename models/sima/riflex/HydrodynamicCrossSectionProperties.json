@@ -1,8 +1,7 @@
 {
  "name" : "HydrodynamicCrossSectionProperties",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "itemNumber",
    "type" : "core:BlueprintAttribute",
@@ -12,53 +11,51 @@
   }, {
    "name" : "excitationZoneProperty",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/ExcitationZoneProperty",
+   "attributeType" : "./ExcitationZoneProperty",
    "contained" : false,
    "optional" : true,
    "description" : "Excitation zone"
   }, {
    "name" : "addedMassCrossFlowProperty",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/AddedMassProperty",
+   "attributeType" : "./AddedMassProperty",
    "contained" : false,
    "optional" : true,
    "description" : "Cross-flow added mass"
   }, {
    "name" : "excitationCoefficientCrossFlowProperty",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/ExcitationCoefficientsProperty",
+   "attributeType" : "./ExcitationCoefficientsProperty",
    "contained" : false,
    "optional" : true,
    "description" : "Cross-flow excitation coefficients"
   }, {
    "name" : "dampingFactorProperty",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/DampingFactorProperty",
+   "attributeType" : "./DampingFactorProperty",
    "contained" : false,
    "optional" : true,
    "description" : "Hydrodynamic damping factor"
   }, {
    "name" : "addedMassInLineProperty",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/AddedMassProperty",
+   "attributeType" : "./AddedMassProperty",
    "contained" : false,
    "optional" : true,
    "description" : "In-line added mass"
   }, {
    "name" : "excitationCoefficientInLineProperty",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/ExcitationCoefficientsProperty",
+   "attributeType" : "./ExcitationCoefficientsProperty",
    "contained" : false,
    "optional" : true,
    "description" : "In-line excitation coefficients"
   }, {
    "name" : "strouhalSpecificationProperty",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/StrouhalSpecificationProperty",
+   "attributeType" : "./StrouhalSpecificationProperty",
    "contained" : false,
    "optional" : true,
    "description" : "Strouhal number"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

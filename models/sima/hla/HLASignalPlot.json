@@ -1,18 +1,17 @@
 {
  "name" : "HLASignalPlot",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/Named"],
+ "extends" : ["sima:sima/Named"],
  "attributes" : [{
    "name" : "figureTemplate",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/FigureTemplate",
+   "attributeType" : "sima:post/FigureTemplate",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "traces",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/TraceConfiguration",
+   "attributeType" : "sima:post/TraceConfiguration",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -50,7 +49,7 @@
   }, {
    "name" : "signals",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hla/HLASignal",
+   "attributeType" : "./HLASignal",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -60,8 +59,6 @@
    "attributeType" : "number",
    "description" : "Maximum size of time window when displaying plot.",
    "optional" : true,
-   "default" : "60.0"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : 60.0
+  }]
 }

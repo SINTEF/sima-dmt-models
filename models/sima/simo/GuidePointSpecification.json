@@ -1,12 +1,11 @@
 {
  "name" : "GuidePointSpecification",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "guidePoint",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/GuidePoint",
+   "attributeType" : "./GuidePoint",
    "contained" : false,
    "optional" : false,
    "description" : "Guide point"
@@ -16,8 +15,6 @@
    "attributeType" : "boolean",
    "description" : "Guide point entered on line",
    "optional" : true,
-   "default" : "true"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : true
+  }]
 }

@@ -1,33 +1,32 @@
 {
  "name" : "AllocationSystem",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "surgeAllocation",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Force allocation in surge",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "swayAllocation",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Force allocation in sway",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "yawAllocation",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Force allocation in yaw",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "thrusters",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/ThrusterAllocation",
+   "attributeType" : "./ThrusterAllocation",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -41,14 +40,14 @@
    "name" : "allocationMethod",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/ThrusterAllocationMethod",
+   "enumType" : "./ThrusterAllocationMethod",
    "description" : "Thrust allocation method",
    "optional" : true,
    "default" : "ORDINARY"
   }, {
    "name" : "thrusterControls",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/ThrusterControl",
+   "attributeType" : "./ThrusterControl",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -56,7 +55,7 @@
    "name" : "formulation",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/Formulation",
+   "enumType" : "./Formulation",
    "optional" : true,
    "default" : "SIMO_41"
   }, {
@@ -65,7 +64,5 @@
    "attributeType" : "boolean",
    "description" : "Turn control system off",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

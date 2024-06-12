@@ -1,22 +1,19 @@
 {
  "name" : "ARLineItem",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "line",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/ARLine",
+   "attributeType" : "./ARLine",
    "contained" : false,
    "optional" : false
   }, {
    "name" : "end",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/End",
+   "enumType" : "./End",
    "optional" : true,
    "default" : "ONE"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

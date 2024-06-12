@@ -1,21 +1,18 @@
 {
  "name" : "DistanceKey",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "horisontalDistance",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/Distance",
+   "attributeType" : "./Distance",
    "contained" : false,
    "optional" : true
   }, {
    "name" : "verticalDistance",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/Distance",
+   "attributeType" : "./Distance",
    "contained" : false,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

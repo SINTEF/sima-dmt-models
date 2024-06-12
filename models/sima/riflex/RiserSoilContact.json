@@ -1,8 +1,7 @@
 {
  "name" : "RiserSoilContact",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/riflex/SeafloorContact"],
+ "extends" : ["./SeafloorContact"],
  "attributes" : [{
    "name" : "axialStiffness",
    "type" : "core:BlueprintAttribute",
@@ -80,36 +79,34 @@
    "attributeType" : "number",
    "description" : "Relationship between dynamic stiffness and G-modulus",
    "optional" : true,
-   "default" : "0.88"
+   "default" : 0.88
   }, {
    "name" : "alpha",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Scaling factor for peak soil suction relative to peak soil compression",
    "optional" : true,
-   "default" : "1.0"
+   "default" : 1.0
   }, {
    "name" : "beta",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Scaling factor for peak soil suction relative to peak soil compression",
    "optional" : true,
-   "default" : "1.0"
+   "default" : 1.0
   }, {
    "name" : "kbc",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Mobilization displacement for soil bearing capacity as fraction of pipe soil contact width",
    "optional" : true,
-   "default" : "0.05"
+   "default" : 0.05
   }, {
    "name" : "kt",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Mobilization displacement for max soil suction as fraction of pipe soil contact width",
    "optional" : true,
-   "default" : "0.08"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : 0.08
+  }]
 }

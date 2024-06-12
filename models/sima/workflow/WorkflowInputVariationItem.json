@@ -1,8 +1,7 @@
 {
  "name" : "WorkflowInputVariationItem",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/workflow/WorkflowLinkItem"],
+ "extends" : ["./WorkflowLinkItem"],
  "attributes" : [{
    "name" : "fromId",
    "type" : "core:BlueprintAttribute",
@@ -19,7 +18,5 @@
    "attributeType" : "string",
    "optional" : true,
    "dimensions" : "*"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

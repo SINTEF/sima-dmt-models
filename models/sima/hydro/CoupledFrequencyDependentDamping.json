@@ -1,8 +1,7 @@
 {
  "name" : "CoupledFrequencyDependentDamping",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "frequencies",
    "type" : "core:BlueprintAttribute",
@@ -12,11 +11,9 @@
   }, {
    "name" : "items",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/TwoDofData",
+   "attributeType" : "./TwoDofData",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

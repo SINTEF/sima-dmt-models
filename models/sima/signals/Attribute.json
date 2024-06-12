@@ -2,7 +2,6 @@
  "name" : "Attribute",
  "type" : "core:Blueprint",
  "description" : "Represents a key/value entry",
- "abstract" : false,
  "extends" : ["core:NamedEntity"],
  "attributes" : [{
    "name" : "name",
@@ -14,7 +13,5 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

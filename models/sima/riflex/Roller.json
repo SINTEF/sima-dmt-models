@@ -1,8 +1,7 @@
 {
  "name" : "Roller",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject"],
+ "extends" : ["sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -14,28 +13,28 @@
    "attributeType" : "number",
    "description" : "Direction of roller axis (Clockwise around the local X-axis of the actual surface plane).",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "y",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Y-coordinate of roller origin",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "z",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Z-coordinate of roller origin",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "length",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Length of roller (0 means infinite length)",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "constantStiffness",
    "type" : "core:BlueprintAttribute",
@@ -48,7 +47,7 @@
    "attributeType" : "number",
    "description" : "Dash pot damping coefficient",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "stiffness",
    "type" : "core:BlueprintAttribute",
@@ -64,11 +63,9 @@
   }, {
    "name" : "stiffnessItems",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/SpringStiffnessItem",
+   "attributeType" : "./SpringStiffnessItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

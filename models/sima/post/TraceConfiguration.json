@@ -1,8 +1,7 @@
 {
  "name" : "TraceConfiguration",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/post/PathSpecification"],
+ "extends" : ["./PathSpecification"],
  "attributes" : [{
    "name" : "path",
    "type" : "core:BlueprintAttribute",
@@ -21,14 +20,14 @@
   }, {
    "name" : "color",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/SIMAColor",
+   "attributeType" : "sima:sima/SIMAColor",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "lineStyle",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/post/LineStyle",
+   "enumType" : "./LineStyle",
    "optional" : true,
    "default" : "SOLID"
   }, {
@@ -36,12 +35,12 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : true,
-   "default" : "1"
+   "default" : 1
   }, {
    "name" : "pointStyle",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/post/PointStyle",
+   "enumType" : "./PointStyle",
    "optional" : true,
    "default" : "NONE"
   }, {
@@ -49,19 +48,17 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "pointSize",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : true,
-   "default" : "1"
+   "default" : 1
   }, {
    "name" : "specifyPath",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

@@ -3,17 +3,15 @@
  "type" : "core:Package",
  "_meta_" : {
   "type" : "core:Meta",
-  "version" : "43",
+  "version" : "44",
   "dependencies" : [{
     "alias" : "core",
     "address" : "system/SIMOS",
-    "version" : "0.0.1",
-    "protocol" : "dmss"
+    "version" : "0.0.1"
    }, {
     "alias" : "riflex",
     "address" : "riflex",
-    "version" : "43",
-    "protocol" : "dmss"
+    "version" : "44"
    }]
  }
 }

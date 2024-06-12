@@ -1,8 +1,7 @@
 {
  "name" : "ThrusterControlSequence",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "specifyControlSequence",
    "type" : "core:BlueprintAttribute",
@@ -13,18 +12,16 @@
    "name" : "signalType",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/ThrustSignalType",
+   "enumType" : "./ThrustSignalType",
    "description" : "Unit for demanded thrust force",
    "optional" : true,
    "default" : "FORCE"
   }, {
    "name" : "items",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/ControlSequenceItem",
+   "attributeType" : "./ControlSequenceItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

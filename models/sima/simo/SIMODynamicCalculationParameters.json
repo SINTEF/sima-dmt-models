@@ -1,18 +1,17 @@
 {
  "name" : "SIMODynamicCalculationParameters",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "externalControlSetup",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/ExternalControlSetup",
+   "attributeType" : "./ExternalControlSetup",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "multiEnvironmentSetup",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/MultiEnvironmentSetup",
+   "attributeType" : "./MultiEnvironmentSetup",
    "contained" : true,
    "optional" : false
   }, {
@@ -21,12 +20,12 @@
    "attributeType" : "number",
    "description" : "Time increment for time series generation and storage",
    "optional" : true,
-   "default" : "0.5"
+   "default" : 0.5
   }, {
    "name" : "waveMethod",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/WaveMethod",
+   "enumType" : "./WaveMethod",
    "description" : "Selected wave method",
    "optional" : true,
    "default" : "FFT_ONLY"
@@ -34,7 +33,7 @@
    "name" : "integrationMethod",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/IntegrationMethod",
+   "enumType" : "./IntegrationMethod",
    "description" : "Selected integration method",
    "optional" : true,
    "default" : "RUNGE_KUTTA"
@@ -44,19 +43,19 @@
    "attributeType" : "integer",
    "description" : "Random seed waves",
    "optional" : true,
-   "default" : "1"
+   "default" : 1
   }, {
    "name" : "randomSeedWind",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Random seed wind",
    "optional" : true,
-   "default" : "1"
+   "default" : 1
   }, {
    "name" : "randomNumberGenerator",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/RandomGenerator",
+   "enumType" : "./RandomGenerator",
    "optional" : true,
    "default" : "MERSENNE"
   }, {
@@ -65,60 +64,60 @@
    "attributeType" : "boolean",
    "description" : "Use correction due to heading change",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "maxHeadingChange",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Max heading change",
    "optional" : true,
-   "default" : "45.0"
+   "default" : 45.0
   }, {
    "name" : "largePatchLength",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Large visualization wave patch length",
    "optional" : true,
-   "default" : "2048.0"
+   "default" : 2048.0
   }, {
    "name" : "smallPatchLength",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Small visualization wave patch length",
    "optional" : true,
-   "default" : "256.0"
+   "default" : 256.0
   }, {
    "name" : "cutFactorWaves",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Cut factor for wave components",
    "optional" : true,
-   "default" : "100"
+   "default" : 100
   }, {
    "name" : "pointsLargePatch",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of points in large wave patch",
    "optional" : true,
-   "default" : "256"
+   "default" : 256
   }, {
    "name" : "pointsSmallPatch",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of points in small wave patch",
    "optional" : true,
-   "default" : "128"
+   "default" : 128
   }, {
    "name" : "writeVisFile",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "write visualization file?",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "waveTimeSeries",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/WaveTimeSeries",
+   "attributeType" : "./WaveTimeSeries",
    "contained" : true,
    "optional" : false
   }, {
@@ -127,11 +126,11 @@
    "attributeType" : "boolean",
    "description" : "Wave time series from file",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "bodyWaveMethodOptions",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/BodyWaveMethodOption",
+   "attributeType" : "./BodyWaveMethodOption",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -145,7 +144,7 @@
    "name" : "hydroFilterMethod",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/HydroSystemFilterMethod",
+   "enumType" : "./HydroSystemFilterMethod",
    "description" : "Hydro Filter Method",
    "optional" : true,
    "default" : "BLOCKED"
@@ -155,19 +154,19 @@
    "attributeType" : "integer",
    "description" : "Number of wind-sea components",
    "optional" : true,
-   "default" : "2000"
+   "default" : 2000
   }, {
    "name" : "nSwellSeaComponents",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of wind-sea components",
    "optional" : true,
-   "default" : "400"
+   "default" : 400
   }, {
    "name" : "windTimeSeriesMethod",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/WindTimeSeriesMethod",
+   "enumType" : "./WindTimeSeriesMethod",
    "description" : "Wind Time Series Method",
    "optional" : true,
    "default" : "SAME"
@@ -175,7 +174,7 @@
    "name" : "windVelocityDimension",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/WindVelocityDimension",
+   "enumType" : "./WindVelocityDimension",
    "description" : "Wind Velocity Dimension",
    "optional" : true,
    "default" : "TWO"
@@ -183,7 +182,7 @@
    "name" : "windForceMethod",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/WindForceMethod",
+   "enumType" : "./WindForceMethod",
    "description" : "Wind Force Method",
    "optional" : true,
    "default" : "RELATIVE"
@@ -191,20 +190,20 @@
    "name" : "windMethod",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/WindMethod",
+   "enumType" : "./WindMethod",
    "optional" : true,
    "default" : "FFT"
   }, {
    "name" : "windSpectrumVerticalDomain",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/WindSpectrumVerticalDomain",
+   "attributeType" : "./WindSpectrumVerticalDomain",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "quadraticCurrentForceMethod",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/CurrentForceMethod",
+   "enumType" : "./CurrentForceMethod",
    "description" : "Quadratic Current Force Method",
    "optional" : true,
    "default" : "RELATIVE"
@@ -212,7 +211,7 @@
    "name" : "linearCurrentForceMethod",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/CurrentForceMethod",
+   "enumType" : "./CurrentForceMethod",
    "description" : "Linear Current Force Method",
    "optional" : true,
    "default" : "RELATIVE"
@@ -221,11 +220,11 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "wasimResultExport",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/WasimResultExport",
+   "attributeType" : "./WasimResultExport",
    "contained" : true,
    "optional" : true
   }, {
@@ -234,238 +233,238 @@
    "attributeType" : "boolean",
    "description" : "Store wind forces?",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "storeSumGeneralLineForces",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store sum general line forces?",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "storeTotalForces",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store total forces?",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "storeRetardationForces",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store retardation forces?",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "storeHydrostaticStiffnessForces",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store hydrostatic stiffness forces?",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "storeLinearDamping",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store linear damping?",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "storeQuadraticDamping",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store quadratic damping?",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "storeDistributedHydrodynamicForces",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store distributed hydrodynamic forces?",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "storeFixedBodyAndSlenderElementStripResults",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store results for slender element strips and fixed body elements?",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "storeWaveDriftDamping",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store wave-drift damping?",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "storeLinearCurrentDrag",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store linear current drag?",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "storeQuadraticCurrentDrag",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store quadratic current drag?",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "storeSmallBodyHydrodynamicForces",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store small body hydrodynamic forces?",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "storeResultantPositioningElementForces",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store resultant positioning element forces?",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "storePositioningElementForceComponents",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store positioning element force components?",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "storeTotalPositioningForces",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store total positioning element forces?",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "storeThrusterForces",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store thruster forces?",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "storeSumThrusterForces",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store sum thruster forces?",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "storeDynamicPositioningEstimators",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store dynamic positioning estimators?",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "storeSumSpecifiedForces",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store sum specified forces?",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "storeSumExternalForces",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store sum external forces?",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "storeSumCouplingForces",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store sum coupling forces?",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "storeResultantCouplingElementForces",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store resultant coupling element forces?",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "storeGlobalCouplingForceComponents",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store global coupling force components?",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "storeLocalCouplingForceComponents",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store local coupling force components?",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "storeGlobalLowFrequencyPosition",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store global low-frequency position?",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "storeGlobalTotalPosition",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store global total position?",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "storeGlobalAcceleration",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store global acceleration?",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "storeLocalAccelerations",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store local acceleration?",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "storeLocalVelocity",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store local velocity",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "storeCatenarySystemForces",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store catenery system forces. Requires visualization storage",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "storeCatenarySystemNodes",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store displacement of catenary system nodes. Requires visualization storage",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "timeStep",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Time integration step",
    "optional" : true,
-   "default" : "0.5"
+   "default" : 0.5
   }, {
    "name" : "simulationLength",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Simulation length",
    "optional" : true,
-   "default" : "11000.0"
+   "default" : 11000.0
   }, {
    "name" : "simulationStartTime",
    "type" : "core:BlueprintAttribute",
@@ -478,15 +477,13 @@
    "attributeType" : "number",
    "description" : "Determines the ramp duration in seconds",
    "optional" : true,
-   "default" : "2.5"
+   "default" : 2.5
   }, {
    "name" : "requestedTimeSeriesLength",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Length of generated time series",
    "optional" : true,
-   "default" : "16384.0"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : 16384.0
+  }]
 }

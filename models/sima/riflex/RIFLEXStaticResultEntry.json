@@ -1,12 +1,11 @@
 {
  "name" : "RIFLEXStaticResultEntry",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/simo/SIMOStaticResultEntry"],
+ "extends" : ["sima:simo/SIMOStaticResultEntry"],
  "attributes" : [{
    "name" : "properties",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Property",
+   "attributeType" : "sima:sima/Property",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -33,54 +32,52 @@
   }, {
    "name" : "results",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Result",
+   "attributeType" : "sima:sima/Result",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "entries",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/ResultEntry",
+   "attributeType" : "sima:sima/ResultEntry",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "lisFile",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/LisFile",
+   "attributeType" : "sima:simo/LisFile",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "simoLDAT",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Result",
+   "attributeType" : "sima:sima/Result",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "staticResult",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/StaticResult",
+   "attributeType" : "sima:simo/StaticResult",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "riflexLDAT",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Result",
+   "attributeType" : "sima:sima/Result",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "inpmodResFile",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/ResFile",
+   "attributeType" : "./ResFile",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "stamodResFile",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/ResFile",
+   "attributeType" : "./ResFile",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

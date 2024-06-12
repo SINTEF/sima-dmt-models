@@ -1,29 +1,38 @@
 {
  "name" : "NumericalWave",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/environment/Wave"],
+ "extends" : ["./Wave"],
  "attributes" : [{
+   "name" : "fromFile",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Define numerical spectrum in external file",
+   "optional" : true
+  }, {
    "name" : "directions",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Number of wave directions",
-   "optional" : false,
+   "optional" : true,
    "dimensions" : "*"
   }, {
    "name" : "frequencies",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Number of wave frequencies",
-   "optional" : false,
+   "optional" : true,
    "dimensions" : "*"
   }, {
    "name" : "values",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
-   "optional" : false,
+   "optional" : true,
    "dimensions" : "*"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }, {
+   "name" : "file",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "Name of external file with specified numerical spectrum data",
+   "optional" : true
+  }]
 }

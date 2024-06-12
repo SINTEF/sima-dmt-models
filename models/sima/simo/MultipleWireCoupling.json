@@ -1,8 +1,7 @@
 {
  "name" : "MultipleWireCoupling",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject"],
+ "extends" : ["sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,11 +10,9 @@
   }, {
    "name" : "parts",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/MultipleWireCouplingPart",
+   "attributeType" : "./MultipleWireCouplingPart",
    "dimensions" : "*",
    "contained" : true,
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

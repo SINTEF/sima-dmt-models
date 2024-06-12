@@ -1,8 +1,7 @@
 {
  "name" : "FirstOrderMotionTransferFunction",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "directions",
    "type" : "core:BlueprintAttribute",
@@ -19,7 +18,7 @@
    "name" : "symmetry",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/hydro/DirectionSymmetry",
+   "enumType" : "./DirectionSymmetry",
    "optional" : true,
    "default" : "NO_SYMMETRY"
   }, {
@@ -31,40 +30,38 @@
   }, {
    "name" : "surge",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/DirectionDependentComplexValues",
+   "attributeType" : "./DirectionDependentComplexValues",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "sway",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/DirectionDependentComplexValues",
+   "attributeType" : "./DirectionDependentComplexValues",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "heave",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/DirectionDependentComplexValues",
+   "attributeType" : "./DirectionDependentComplexValues",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "roll",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/DirectionDependentComplexValues",
+   "attributeType" : "./DirectionDependentComplexValues",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "pitch",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/DirectionDependentComplexValues",
+   "attributeType" : "./DirectionDependentComplexValues",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "yaw",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/DirectionDependentComplexValues",
+   "attributeType" : "./DirectionDependentComplexValues",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

@@ -1,8 +1,7 @@
 {
  "name" : "WindTurbineType",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject"],
+ "extends" : ["sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -17,7 +16,7 @@
    "name" : "direction",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/windpark/TurbineDirection",
+   "enumType" : "./TurbineDirection",
    "description" : "Option for choosing the best approach for handling multiple deficits",
    "optional" : true,
    "default" : "UPWIND"
@@ -36,13 +35,13 @@
    "name" : "turbineDirection",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/windpark/TurbineDirection",
+   "enumType" : "./TurbineDirection",
    "optional" : true,
    "default" : "UPWIND"
   }, {
    "name" : "bladeElements",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/windpark/BladeElement",
+   "attributeType" : "./BladeElement",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -57,13 +56,18 @@
    "attributeType" : "number",
    "optional" : true
   }, {
-   "name" : "performanceRelations",
+   "name" : "yawPerformanceRelations",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/windpark/PerformanceRelation",
+   "attributeType" : "./YawPerformanceRelation",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }, {
+   "name" : "performanceRelations",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "./PerformanceRelationItem",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }]
 }

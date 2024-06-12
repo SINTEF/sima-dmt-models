@@ -1,8 +1,7 @@
 {
  "name" : "ISO19901_7Filter",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/post/OperationNode"],
+ "extends" : ["./OperationNode"],
  "attributes" : [{
    "name" : "x",
    "type" : "core:BlueprintAttribute",
@@ -31,21 +30,21 @@
   }, {
    "name" : "controlSignalInputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/ControlSignalInputSlot",
+   "attributeType" : "./ControlSignalInputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "filterInputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/InputSlot",
+   "attributeType" : "./InputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "filterOutputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/OutputSlot",
+   "attributeType" : "./OutputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -55,33 +54,33 @@
    "attributeType" : "number",
    "description" : "Breaking strength",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "customSafetyFactor",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Safety factor",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "analysis",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/post/ISO19901_7_analysis",
+   "enumType" : "./ISO19901_7_analysis",
    "optional" : true,
    "default" : "INTACT_CONDITION"
   }, {
    "name" : "mooringType",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/post/MooringType",
+   "enumType" : "./MooringType",
    "optional" : true,
    "default" : "PERMANENT_MOORING"
   }, {
    "name" : "consequenceClass",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/post/ConsequenceClass",
+   "enumType" : "./ConsequenceClass",
    "optional" : true,
    "default" : "CLASS_ONE"
   }, {
@@ -89,7 +88,5 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

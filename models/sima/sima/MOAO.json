@@ -6,11 +6,9 @@
  "attributes" : [{
    "name" : "scriptableValues",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/ScriptableValue",
+   "attributeType" : "./ScriptableValue",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

@@ -1,8 +1,7 @@
 {
  "name" : "DampingFactorUserDefinedProperty",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/riflex/DampingFactorProperty"],
+ "extends" : ["./DampingFactorProperty"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -14,8 +13,6 @@
    "attributeType" : "number",
    "description" : "Still water damping factor",
    "optional" : true,
-   "default" : "1.0"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : 1.0
+  }]
 }

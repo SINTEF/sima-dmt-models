@@ -1,8 +1,7 @@
 {
  "name" : "APIWind",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/environment/Wind"],
+ "extends" : ["./Wind"],
  "attributes" : [{
    "name" : "direction",
    "type" : "core:BlueprintAttribute",
@@ -21,29 +20,27 @@
    "attributeType" : "number",
    "description" : "Frequency parameter",
    "optional" : true,
-   "default" : "0.025"
+   "default" : 0.025
   }, {
    "name" : "layerThickness",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Surface Layer Thickness",
    "optional" : true,
-   "default" : "20.0"
+   "default" : 20.0
   }, {
    "name" : "profileExponent",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Wind profile exponent",
    "optional" : true,
-   "default" : "0.125"
+   "default" : 0.125
   }, {
    "name" : "friction",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Surface drag coefficient.\r\nAlso used for transverse gust spectrum, if specified in DYNMOD.",
    "optional" : true,
-   "default" : "0.002"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : 0.002
+  }]
 }

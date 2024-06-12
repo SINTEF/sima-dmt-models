@@ -1,33 +1,30 @@
 {
  "name" : "DunkirkSoilCoefficientsItem",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/riflex/CommonSoilCoefficientsItem"],
+ "extends" : ["./CommonSoilCoefficientsItem"],
  "attributes" : [{
    "name" : "c1",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "c2",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "c3",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "c4",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true,
-   "default" : "0.0"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : 0.0
+  }]
 }

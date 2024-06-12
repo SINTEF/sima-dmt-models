@@ -1,8 +1,7 @@
 {
  "name" : "PeriodEigenvalueResult",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "period",
    "type" : "core:BlueprintAttribute",
@@ -45,7 +44,5 @@
    "attributeType" : "number",
    "description" : "Value in yaw",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

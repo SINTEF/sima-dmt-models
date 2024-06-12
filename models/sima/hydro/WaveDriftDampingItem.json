@@ -1,8 +1,7 @@
 {
  "name" : "WaveDriftDampingItem",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "period",
    "type" : "core:BlueprintAttribute",
@@ -45,7 +44,5 @@
    "attributeType" : "number",
    "description" : "Wave drift damping coefficient yaw. Relative change in drift force for unit velocity.",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

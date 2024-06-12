@@ -1,23 +1,20 @@
 {
  "name" : "LineMeasurementItem",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "line",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/LineForceProvider",
+   "attributeType" : "./LineForceProvider",
    "contained" : false,
    "optional" : true
   }, {
    "name" : "lineEnd",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/LineEnd",
+   "enumType" : "./LineEnd",
    "description" : "Line end to read measurements from",
    "optional" : true,
    "default" : "END1"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

@@ -1,19 +1,18 @@
 {
  "name" : "QuadraticCurrentCoefficient",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "symmetry",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/hydro/DirectionSymmetry",
+   "enumType" : "./DirectionSymmetry",
    "optional" : true,
    "default" : "NO_SYMMETRY"
   }, {
    "name" : "items",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/QuadraticCurrentCoefficientItem",
+   "attributeType" : "./QuadraticCurrentCoefficientItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -21,7 +20,7 @@
    "name" : "_type",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/hydro/CoefficientType",
+   "enumType" : "./CoefficientType",
    "description" : "Current coefficient type",
    "optional" : true,
    "default" : "CLASSIC"
@@ -31,7 +30,5 @@
    "attributeType" : "string",
    "description" : "Text file containing the current coefficients. The force coefficents in the file must be specified in [kN/(m/s)] for translational degrees of freedom and [kN.s] for rotational degrees of freedom.",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

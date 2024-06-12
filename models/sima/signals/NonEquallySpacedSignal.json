@@ -2,8 +2,7 @@
  "name" : "NonEquallySpacedSignal",
  "type" : "core:Blueprint",
  "description" : "Data model for a non-equally spaced signal.",
- "abstract" : false,
- "extends" : ["/signals/Signal"],
+ "extends" : ["./Signal"],
  "attributes" : [{
    "name" : "xvalue",
    "type" : "core:BlueprintAttribute",
@@ -51,7 +50,5 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

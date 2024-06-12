@@ -1,40 +1,39 @@
 {
  "name" : "StabilityCalculationParameters",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "forceTolerance",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "An equilibrium will be accepted if all the force components are lower than the force tolerance, and all the moment components are lower than the moment tolerance.",
    "optional" : true,
-   "default" : "100.0"
+   "default" : 100.0
   }, {
    "name" : "momentTolerance",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "An equilibrium will be accepted if all the force components are lower than the force tolerance, and all the moment components are lower than the moment tolerance.",
    "optional" : true,
-   "default" : "1000.0"
+   "default" : 1000.0
   }, {
    "name" : "staticEquilibriumBodies",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/StaticEquilibriumBody",
+   "attributeType" : "./StaticEquilibriumBody",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "restrainFromGlobalDOFBodies",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/DOFElimination",
+   "attributeType" : "./DOFElimination",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "body",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SIMOBody",
+   "attributeType" : "./SIMOBody",
    "contained" : false,
    "optional" : true,
    "description" : "Body for which GZ-curve will be calculated"
@@ -72,7 +71,5 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

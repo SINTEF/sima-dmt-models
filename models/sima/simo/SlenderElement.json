@@ -1,8 +1,7 @@
 {
  "name" : "SlenderElement",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject"],
+ "extends" : ["sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -24,7 +23,7 @@
    "name" : "waveIntegrationMethod",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/WaveIntegrationMethod",
+   "enumType" : "./WaveIntegrationMethod",
    "description" : "Wave force integration method",
    "optional" : true,
    "default" : "ACTUAL_WAVE_ELEVATION"
@@ -32,7 +31,7 @@
    "name" : "loadType",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/LoadType",
+   "enumType" : "./LoadType",
    "description" : "Parameter for load types",
    "optional" : true,
    "default" : "GRAVITY_AND_BUOYANCY_INCLUDED"
@@ -40,7 +39,7 @@
    "name" : "waveParticleMethod",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/WaveParticleMethod",
+   "enumType" : "./WaveParticleMethod",
    "description" : "Wave particle options",
    "optional" : true,
    "default" : "VELOCITY_AND_ACCELERATION"
@@ -50,23 +49,23 @@
    "attributeType" : "integer",
    "description" : "Number of strips",
    "optional" : true,
-   "default" : "10"
+   "default" : 10
   }, {
    "name" : "endPoint1",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Point3",
+   "attributeType" : "sima:sima/Point3",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "endPoint2",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Point3",
+   "attributeType" : "sima:sima/Point3",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "referencePoint",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Point3",
+   "attributeType" : "sima:sima/Point3",
    "contained" : true,
    "optional" : false
   }, {
@@ -75,24 +74,24 @@
    "attributeType" : "number",
    "description" : "Vertical position used as reference for depth dependency",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "depthDependentHydrodynamicCoefficients",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/DepthDependenthydrodynamicCoefficient",
+   "attributeType" : "./DepthDependenthydrodynamicCoefficient",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "diffractedWaveEnd1",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/DiffractedWave",
+   "attributeType" : "sima:hydro/DiffractedWave",
    "contained" : false,
    "optional" : true
   }, {
    "name" : "diffractedWaveEnd2",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/DiffractedWave",
+   "attributeType" : "sima:hydro/DiffractedWave",
    "contained" : false,
    "optional" : true
   }, {
@@ -157,10 +156,8 @@
   }, {
    "name" : "aerodynamicDescription",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/AerodynamicDescription",
+   "attributeType" : "./AerodynamicDescription",
    "contained" : true,
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

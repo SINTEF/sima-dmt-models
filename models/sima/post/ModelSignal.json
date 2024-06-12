@@ -1,12 +1,11 @@
 {
  "name" : "ModelSignal",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/post/GeneratorSignal"],
+ "extends" : ["./GeneratorSignal"],
  "attributes" : [{
    "name" : "properties",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/SignalProperties",
+   "attributeType" : "./SignalProperties",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -18,10 +17,8 @@
   }, {
    "name" : "model",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/MOAO",
+   "attributeType" : "sima:sima/MOAO",
    "contained" : false,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

@@ -1,8 +1,7 @@
 {
  "name" : "WaveTimeSeries",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "fileName",
    "type" : "core:BlueprintAttribute",
@@ -13,7 +12,7 @@
    "name" : "fileFormat",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/FileFormatAsciStar",
+   "enumType" : "./FileFormatAsciStar",
    "description" : "Wave time series file format",
    "optional" : true,
    "default" : "ASCII"
@@ -23,14 +22,14 @@
    "attributeType" : "integer",
    "description" : "Column number for time",
    "optional" : true,
-   "default" : "1"
+   "default" : 1
   }, {
    "name" : "waveColumnNum",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Column or time series number for wave elevation",
    "optional" : true,
-   "default" : "2"
+   "default" : 2
   }, {
    "name" : "starFileVersion",
    "type" : "core:BlueprintAttribute",
@@ -43,22 +42,20 @@
    "attributeType" : "number",
    "description" : "Wave direction",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "xgWav",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Global x-coordinate for position where time series is measured",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "ygWav",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Global y-coordinate for position where time series is measured",
    "optional" : true,
-   "default" : "0.0"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : 0.0
+  }]
 }

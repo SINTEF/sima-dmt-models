@@ -1,13 +1,12 @@
 {
  "name" : "OffsetVariationItem",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "referenceType",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/ReferenceType",
+   "enumType" : "./ReferenceType",
    "description" : "Reference to moving point",
    "optional" : true,
    "default" : "SUPER_NODE"
@@ -33,7 +32,7 @@
    "name" : "rotationCode",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/RotationCode",
+   "enumType" : "./RotationCode",
    "description" : "Rotation about axis",
    "optional" : true,
    "default" : "NONE"
@@ -46,16 +45,14 @@
   }, {
    "name" : "supernode",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/SuperNode",
+   "attributeType" : "./SuperNode",
    "contained" : false,
    "optional" : true
   }, {
    "name" : "supportVessel",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/SupportVessel",
+   "attributeType" : "./SupportVessel",
    "contained" : false,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

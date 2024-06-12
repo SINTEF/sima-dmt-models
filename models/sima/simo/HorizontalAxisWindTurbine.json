@@ -1,8 +1,7 @@
 {
  "name" : "HorizontalAxisWindTurbine",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject"],
+ "extends" : ["sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,13 +10,13 @@
   }, {
    "name" : "controller",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/windturbine/HorizontalAxisWindTurbineController",
+   "attributeType" : "sima:windturbine/HorizontalAxisWindTurbineController",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "momentCoupling",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/MomentCoupling",
+   "attributeType" : "./MomentCoupling",
    "contained" : false,
    "optional" : false
   }, {
@@ -47,7 +46,7 @@
   }, {
    "name" : "bladeItems",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/BladeItem",
+   "attributeType" : "./BladeItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : false
@@ -57,7 +56,5 @@
    "attributeType" : "integer",
    "description" : "Number of blades",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

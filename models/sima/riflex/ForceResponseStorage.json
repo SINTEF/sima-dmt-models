@@ -1,27 +1,26 @@
 {
  "name" : "ForceResponseStorage",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "storageStep",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Code for storage of internal forces. Storage for every <storage step> given.",
    "optional" : true,
-   "default" : "1"
+   "default" : 1
   }, {
    "name" : "format",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/FileFormatCode",
+   "enumType" : "./FileFormatCode",
    "description" : "Format code for additional output of time series",
    "optional" : true,
    "default" : "BINARY_OUTPUT_ONLY"
   }, {
    "name" : "elements",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/ElementReference",
+   "attributeType" : "./ElementReference",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true,
@@ -30,7 +29,7 @@
    "name" : "matrixFormat",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/AdditionalFileFormatCode",
+   "enumType" : "./AdditionalFileFormatCode",
    "description" : "Format code for additional output of element transformation matrices",
    "optional" : true,
    "default" : "BINARY_OUTPUT"
@@ -43,31 +42,23 @@
   }, {
    "name" : "relativeElementAngles",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/RelativeElementAngle",
+   "attributeType" : "./RelativeElementAngle",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "elementAngles",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/ElementAngle",
+   "attributeType" : "./ElementAngle",
    "dimensions" : "*",
    "contained" : true,
-   "optional" : true
-  }, {
-   "name" : "storeBottomContactForces",
-   "type" : "core:BlueprintAttribute",
-   "attributeType" : "boolean",
-   "description" : "Store results for seafloor contact elements and / or soil layer profile (SLP) contact elements",
    "optional" : true
   }, {
    "name" : "transformations",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/ElementTransformation",
+   "attributeType" : "./ElementTransformation",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

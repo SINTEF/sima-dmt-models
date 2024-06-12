@@ -1,8 +1,7 @@
 {
  "name" : "DirectInputLineType",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/simo/LineType"],
+ "extends" : ["./LineType"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,25 +10,23 @@
   }, {
    "name" : "horisontalDistances",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/Distance",
+   "attributeType" : "./Distance",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "verticalDistances",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/Distance",
+   "attributeType" : "./Distance",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "items",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/TensionMap",
+   "attributeType" : "./TensionMap",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

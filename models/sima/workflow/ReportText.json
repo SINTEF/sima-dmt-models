@@ -1,14 +1,11 @@
 {
  "name" : "ReportText",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/workflow/ReportFragmentItem"],
+ "extends" : ["./ReportFragmentItem"],
  "attributes" : [{
    "name" : "text",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

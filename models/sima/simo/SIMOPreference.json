@@ -1,8 +1,7 @@
 {
  "name" : "SIMOPreference",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/SIMAPreference"],
+ "extends" : ["sima:sima/SIMAPreference"],
  "attributes" : [{
    "name" : "selectedVersion",
    "type" : "core:BlueprintAttribute",
@@ -28,7 +27,5 @@
    "attributeType" : "string",
    "description" : "Frelin bin folder",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

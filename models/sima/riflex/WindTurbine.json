@@ -1,8 +1,7 @@
 {
  "name" : "WindTurbine",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject"],
+ "extends" : ["sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,34 +10,34 @@
   }, {
    "name" : "shaftLine",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/ARLine",
+   "attributeType" : "./ARLine",
    "contained" : false,
    "optional" : false,
    "description" : "Reference to the line that is used for shaft modelling"
   }, {
    "name" : "blades",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/BladeItem",
+   "attributeType" : "./BladeItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "controller",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/HorizontalAxisController",
+   "attributeType" : "./HorizontalAxisController",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "body",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Body",
+   "attributeType" : "sima:sima/Body",
    "contained" : false,
    "optional" : true,
    "description" : "Reference to SIMO body with wind"
   }, {
    "name" : "towerLine",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/ARLine",
+   "attributeType" : "./ARLine",
    "contained" : false,
    "optional" : true,
    "description" : "Reference to the line that is used for tower modelling.\r\nIf specified the incoming wind acting on the blades will be modified due to the presence of the tower."
@@ -46,7 +45,7 @@
    "name" : "windLoadOption",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/WindTurbineLoadOption",
+   "enumType" : "./WindTurbineLoadOption",
    "description" : "If the aerodynamic moment is removed, Cm is treated as zero and the distance between aerodynamic and structural axes is ignored.",
    "optional" : true,
    "default" : "INCLUDE"
@@ -54,7 +53,7 @@
    "name" : "turbineOrientation",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/TurbineOrientation",
+   "enumType" : "./TurbineOrientation",
    "description" : "Turbine orientation",
    "optional" : true,
    "default" : "UPWIND"
@@ -64,70 +63,82 @@
    "attributeType" : "number",
    "description" : "Bak correction in tower shadow",
    "optional" : true,
-   "default" : "0.1"
+   "default" : 0.1
   }, {
    "name" : "dragEffect",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Drag correction in tower shadow",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "advancedOptions",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Use advanced aerodynamic options",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "inductionCalculation",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "It is recommended to turn off the induction calculation for a parked or idling wind turbine.",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "prandtlTip",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "The correction for tip loss due to the finite number of blades may be applied or removed.",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "prandtlRoot",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "The correction for hub loss due to the finite number of blades may be applied or removed.",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "prandtlYaw",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "If yaw correction is selected, the Prandtl factor is modified based on the angle between the incoming wind and the rotor plane.",
    "optional" : true,
-   "default" : "true"
+   "default" : true
+  }, {
+   "name" : "skewedWake",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "If skewed wake factor is selected, user can define yaw correction in BEM",
+   "optional" : true,
+   "default" : false
+  }, {
+   "name" : "skewedWakeFactor",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Skewed wake factor",
+   "optional" : true,
+   "default" : 1.0
   }, {
    "name" : "measurementNodes",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/MeasurementNode",
+   "attributeType" : "./MeasurementNode",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "measurementElements",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/MeasurementElement",
+   "attributeType" : "./MeasurementElement",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "yawController",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/HorizontalAxisYawController",
+   "attributeType" : "./HorizontalAxisYawController",
    "contained" : true,
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

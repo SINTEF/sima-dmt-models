@@ -1,8 +1,7 @@
 {
  "name" : "SignalInputSlot",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/post/InputSlot", "/post/SignalGeneratorContainer"],
+ "extends" : ["./InputSlot", "./SignalGeneratorContainer"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,21 +10,21 @@
   }, {
    "name" : "properties",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/SignalProperties",
+   "attributeType" : "./SignalProperties",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "signals",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/GeneratorSignal",
+   "attributeType" : "./GeneratorSignal",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "children",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/SignalGeneratorContainer",
+   "attributeType" : "./SignalGeneratorContainer",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -35,7 +34,5 @@
    "attributeType" : "boolean",
    "description" : "Will add a root folder to the output",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

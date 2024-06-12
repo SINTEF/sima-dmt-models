@@ -1,12 +1,11 @@
 {
  "name" : "StaticConditionResult",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "bodyResults",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/BodyResult",
+   "attributeType" : "./BodyResult",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -30,8 +29,6 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true,
-   "default" : "true"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : true
+  }]
 }

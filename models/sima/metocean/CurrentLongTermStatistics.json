@@ -1,8 +1,7 @@
 {
  "name" : "CurrentLongTermStatistics",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/Named"],
+ "extends" : ["sima:sima/Named"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,18 +10,16 @@
   }, {
    "name" : "weibullDistributions",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/metocean/WeibullDistribution",
+   "attributeType" : "./WeibullDistribution",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "extremes",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/metocean/LevelExtreme",
+   "attributeType" : "./LevelExtreme",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

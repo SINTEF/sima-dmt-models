@@ -1,8 +1,7 @@
 {
  "name" : "ExcitationCoefficientsTableProperty",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/riflex/ExcitationCoefficientsProperty"],
+ "extends" : ["./ExcitationCoefficientsProperty"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,11 +10,9 @@
   }, {
    "name" : "nonDimensionalFrequencyProperties",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/ExcitationCoefficientsNonDimensionalFrequencyItem",
+   "attributeType" : "./ExcitationCoefficientsNonDimensionalFrequencyItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

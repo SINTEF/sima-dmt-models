@@ -1,16 +1,13 @@
 {
  "name" : "SIMAScriptTrigger",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["./MOAO"],
  "attributes" : [{
    "name" : "variable",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Variable",
+   "attributeType" : "./Variable",
    "contained" : false,
    "optional" : true,
    "description" : "Script will automatically update when variable value changes"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

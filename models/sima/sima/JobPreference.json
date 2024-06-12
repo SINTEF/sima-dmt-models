@@ -1,15 +1,14 @@
 {
  "name" : "JobPreference",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/SIMAPreference"],
+ "extends" : ["./SIMAPreference"],
  "attributes" : [{
    "name" : "computeConditionsAutomatically",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Compute concurrent condition runs automatically",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "maxConditionRuns",
    "type" : "core:BlueprintAttribute",
@@ -22,14 +21,12 @@
    "attributeType" : "boolean",
    "description" : "Compute concurrent condition runs automatically",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "maxWorkflowRuns",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Maximum number of concurrent workflow runs",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

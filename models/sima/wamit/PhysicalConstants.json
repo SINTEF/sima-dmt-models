@@ -1,23 +1,20 @@
 {
  "name" : "PhysicalConstants",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "waterDensity",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Water density - rho water",
    "optional" : true,
-   "default" : "1025.0"
+   "default" : 1025.0
   }, {
    "name" : "accOfGravity",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Acceleration of gravity - g",
    "optional" : true,
-   "default" : "9.81"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : 9.81
+  }]
 }

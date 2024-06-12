@@ -1,8 +1,7 @@
 {
  "name" : "RegularWaveItem",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "amplitude",
    "type" : "core:BlueprintAttribute",
@@ -27,7 +26,5 @@
    "attributeType" : "number",
    "description" : "Wave propagation direction",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

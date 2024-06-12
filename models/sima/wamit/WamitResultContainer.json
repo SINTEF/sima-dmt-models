@@ -1,8 +1,7 @@
 {
  "name" : "WamitResultContainer",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/ConditionResultContainer"],
+ "extends" : ["sima:sima/ConditionResultContainer"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,7 +10,7 @@
   }, {
    "name" : "properties",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Property",
+   "attributeType" : "sima:sima/Property",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -28,16 +27,14 @@
   }, {
    "name" : "calculationResults",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/wamit/WamitResultEntry",
+   "attributeType" : "./WamitResultEntry",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "potenResult",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/wamit/WamitResultEntry",
+   "attributeType" : "./WamitResultEntry",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

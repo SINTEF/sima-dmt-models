@@ -1,16 +1,13 @@
 {
  "name" : "QTFDofItem",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "values",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/QTFValue",
+   "attributeType" : "./QTFValue",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

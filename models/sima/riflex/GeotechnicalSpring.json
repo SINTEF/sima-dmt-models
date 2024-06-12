@@ -1,8 +1,7 @@
 {
  "name" : "GeotechnicalSpring",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/riflex/NodeReference", "/sima/NamedObject"],
+ "extends" : ["./NodeReference", "sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,7 +10,7 @@
   }, {
    "name" : "line",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/ARLine",
+   "attributeType" : "./ARLine",
    "contained" : false,
    "optional" : true,
    "description" : "Line"
@@ -21,7 +20,7 @@
    "attributeType" : "integer",
    "description" : "Segment on given line",
    "optional" : true,
-   "default" : "1"
+   "default" : 1
   }, {
    "name" : "allSegments",
    "type" : "core:BlueprintAttribute",
@@ -34,7 +33,7 @@
    "attributeType" : "integer",
    "description" : "Local node number on actual segment",
    "optional" : true,
-   "default" : "1"
+   "default" : 1
   }, {
    "name" : "allNodes",
    "type" : "core:BlueprintAttribute",
@@ -44,31 +43,23 @@
   }, {
    "name" : "stiffnessItems",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/GeotechnicalSpringStiffnessItem",
+   "attributeType" : "./GeotechnicalSpringStiffnessItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "dampingDisplacementItems",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/DampingDisplacementItem",
+   "attributeType" : "./DampingDisplacementItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
-   "name" : "strainVelocityExponent",
+   "name" : "velocityExponent",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
+   "description" : "Exponent of velocity in damping calculation",
    "optional" : true,
-   "default" : "1.0"
-  }, {
-   "name" : "relativeLength",
-   "type" : "core:BlueprintAttribute",
-   "attributeType" : "number",
-   "description" : "Relative length for result scaling",
-   "optional" : true,
-   "default" : "1.0"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : 1.0
+  }]
 }

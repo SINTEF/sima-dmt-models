@@ -1,30 +1,29 @@
 {
  "name" : "FigureTemplate",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "titleFont",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/FontDescription",
+   "attributeType" : "sima:sima/FontDescription",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "legendFont",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/FontDescription",
+   "attributeType" : "sima:sima/FontDescription",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "xAxis",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/AxisConfiguration",
+   "attributeType" : "./AxisConfiguration",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "yAxis",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/AxisConfiguration",
+   "attributeType" : "./AxisConfiguration",
    "contained" : true,
    "optional" : false
   }, {
@@ -32,13 +31,13 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "showLegend",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "equalAxes",
    "type" : "core:BlueprintAttribute",
@@ -48,7 +47,7 @@
    "name" : "size",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/post/PlotSize",
+   "enumType" : "./PlotSize",
    "optional" : true,
    "default" : "DYNAMIC"
   }, {
@@ -61,7 +60,5 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

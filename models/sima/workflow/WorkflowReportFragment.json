@@ -1,12 +1,11 @@
 {
  "name" : "WorkflowReportFragment",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/report/ReportFragment"],
+ "extends" : ["sima:report/ReportFragment"],
  "attributes" : [{
    "name" : "items",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/report/ReportItem",
+   "attributeType" : "sima:report/ReportItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -18,10 +17,8 @@
   }, {
    "name" : "fragment",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/report/ReportFragmentReference",
+   "attributeType" : "sima:report/ReportFragmentReference",
    "contained" : false,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

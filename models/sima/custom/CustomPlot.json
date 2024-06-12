@@ -1,12 +1,11 @@
 {
  "name" : "CustomPlot",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/custom/CustomComponent"],
+ "extends" : ["./CustomComponent"],
  "attributes" : [{
    "name" : "output",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/OutputNode",
+   "attributeType" : "sima:post/OutputNode",
    "contained" : false,
    "optional" : true
   }, {
@@ -19,7 +18,5 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

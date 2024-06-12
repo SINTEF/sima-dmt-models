@@ -1,8 +1,7 @@
 {
  "name" : "DoubleModelSpectrum",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/environment/Wave"],
+ "extends" : ["./Wave"],
  "attributes" : [{
    "name" : "significantWaveHeight",
    "type" : "core:BlueprintAttribute",
@@ -33,7 +32,7 @@
    "attributeType" : "number",
    "description" : "Gamma parameter for wind driven sea",
    "optional" : true,
-   "default" : "3.3"
+   "default" : 3.3
   }, {
    "name" : "gammaSwell",
    "type" : "core:BlueprintAttribute",
@@ -64,7 +63,5 @@
    "attributeType" : "number",
    "description" : "Slope of the lower frequency part of the swell part of wave spectrum",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

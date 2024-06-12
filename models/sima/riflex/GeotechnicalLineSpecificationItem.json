@@ -1,18 +1,17 @@
 {
  "name" : "GeotechnicalLineSpecificationItem",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "geotechnical",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/GeoTechnical",
+   "attributeType" : "./GeoTechnical",
    "contained" : false,
    "optional" : false
   }, {
    "name" : "line",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/ARLine",
+   "attributeType" : "./ARLine",
    "contained" : false,
    "optional" : false
   }, {
@@ -21,7 +20,5 @@
    "attributeType" : "number",
    "description" : "Global Z coordinate of seafloor",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

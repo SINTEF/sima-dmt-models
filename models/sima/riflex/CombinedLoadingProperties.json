@@ -1,12 +1,11 @@
 {
  "name" : "CombinedLoadingProperties",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/riflex/ElementReference"],
+ "extends" : ["./ElementReference"],
  "attributes" : [{
    "name" : "line",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/ARLine",
+   "attributeType" : "./ARLine",
    "contained" : false,
    "optional" : true,
    "description" : "Line"
@@ -16,7 +15,7 @@
    "attributeType" : "integer",
    "description" : "Segment on given line",
    "optional" : true,
-   "default" : "1"
+   "default" : 1
   }, {
    "name" : "allSegments",
    "type" : "core:BlueprintAttribute",
@@ -29,7 +28,7 @@
    "attributeType" : "integer",
    "description" : "Local element number on actual segment",
    "optional" : true,
-   "default" : "1"
+   "default" : 1
   }, {
    "name" : "allElements",
    "type" : "core:BlueprintAttribute",
@@ -42,49 +41,49 @@
    "attributeType" : "number",
    "description" : "Young's modulus",
    "optional" : true,
-   "default" : "2.1E11"
+   "default" : 2.1E11
   }, {
    "name" : "poissonsRatio",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Poisson's ratio for pipe wall material",
    "optional" : true,
-   "default" : "0.3"
+   "default" : 0.3
   }, {
    "name" : "yieldStrength",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Yield strength to be used in design",
    "optional" : true,
-   "default" : "4.0E8"
+   "default" : 4.0E8
   }, {
    "name" : "tensileStrength",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Tensile strength to be used in design",
    "optional" : true,
-   "default" : "7.0E8"
+   "default" : 7.0E8
   }, {
    "name" : "ovality",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Ovality",
    "optional" : true,
-   "default" : "0.005"
+   "default" : 0.005
   }, {
    "name" : "internalCorrosion",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Internal corrosion allowance",
    "optional" : true,
-   "default" : "0.001"
+   "default" : 0.001
   }, {
    "name" : "externalCorrosion",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "External corrosion allowance",
    "optional" : true,
-   "default" : "0.002"
+   "default" : 0.002
   }, {
    "name" : "nominalDiameter",
    "type" : "core:BlueprintAttribute",
@@ -97,7 +96,5 @@
    "attributeType" : "number",
    "description" : "Nominal wall thickness (t_nom) of pipe (uncorroded), as specified on the drawing/specification ",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

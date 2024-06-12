@@ -1,8 +1,7 @@
 {
  "name" : "ElasticContactSurface",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject"],
+ "extends" : ["sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,18 +10,16 @@
   }, {
    "name" : "points",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/ContactSurfacePoint",
+   "attributeType" : "./ContactSurfacePoint",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "lines",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/ContactSurfaceLine",
+   "attributeType" : "./ContactSurfaceLine",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

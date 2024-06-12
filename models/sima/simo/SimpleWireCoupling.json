@@ -1,8 +1,7 @@
 {
  "name" : "SimpleWireCoupling",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/simo/SimpleCoupling"],
+ "extends" : ["./SimpleCoupling"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,20 +10,20 @@
   }, {
    "name" : "endPoint1",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SIMOBodyPoint",
+   "attributeType" : "./SIMOBodyPoint",
    "contained" : false,
    "optional" : false
   }, {
    "name" : "endPoint2",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SIMOBodyPoint",
+   "attributeType" : "./SIMOBodyPoint",
    "contained" : false,
    "optional" : false
   }, {
    "name" : "failureMode",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/ActivationFailureMode",
+   "enumType" : "./ActivationFailureMode",
    "description" : "Failure mode of coupling element",
    "optional" : true,
    "default" : "NONE"
@@ -67,7 +66,7 @@
   }, {
    "name" : "guidePointSpecifications",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/GuidePointSpecification",
+   "attributeType" : "./GuidePointSpecification",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -77,43 +76,41 @@
    "attributeType" : "boolean",
    "description" : "Enable constant tension control for this wire",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "tensionLevel",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Desired tension level",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "tensionDeadband",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Tension level deadband",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "maxSpeed",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Max wire length rate of change",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "activationTime",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Activation time for constant tension control",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "deactivationTime",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Deactivation time for constant tension control. If value is less then or equal to activation time, controller will remain active throughout simulation",
    "optional" : true,
-   "default" : "0.0"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : 0.0
+  }]
 }

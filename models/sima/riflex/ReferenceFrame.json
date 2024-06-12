@@ -1,8 +1,7 @@
 {
  "name" : "ReferenceFrame",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject"],
+ "extends" : ["sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,7 +10,7 @@
   }, {
    "name" : "parent",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/ReferenceFrame",
+   "attributeType" : "./ReferenceFrame",
    "contained" : false,
    "optional" : true
   }, {
@@ -50,7 +49,5 @@
    "attributeType" : "number",
    "description" : "Local (relative to parent frame)  Z-axis rotation",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

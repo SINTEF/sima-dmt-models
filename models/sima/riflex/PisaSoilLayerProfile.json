@@ -1,8 +1,7 @@
 {
  "name" : "PisaSoilLayerProfile",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/riflex/SoilLayerProfile"],
+ "extends" : ["./SoilLayerProfile"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -12,7 +11,7 @@
    "name" : "topLevelSoilPosition",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/TopLevelSoilPosition",
+   "enumType" : "./TopLevelSoilPosition",
    "optional" : true,
    "default" : "RELATIVE_TO_SEAFLOOR"
   }, {
@@ -21,22 +20,20 @@
    "attributeType" : "number",
    "description" : "Offset between seafloor and top of upper soil layer",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "soilLayers",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/PisaSoilLayer",
+   "attributeType" : "./PisaSoilLayer",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "embeddedLines",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/PisaLineItem",
+   "attributeType" : "./PisaLineItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

@@ -1,8 +1,7 @@
 {
  "name" : "MassSummary",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "calculateMassSummary",
    "type" : "core:BlueprintAttribute",
@@ -12,7 +11,7 @@
    "name" : "reference",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/MassSummaryReference",
+   "enumType" : "./MassSummaryReference",
    "description" : "load step where this mass is calculated in static analysis",
    "optional" : true,
    "default" : "BODY"
@@ -43,7 +42,7 @@
   }, {
    "name" : "body",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SIMOBody",
+   "attributeType" : "sima:simo/SIMOBody",
    "contained" : false,
    "optional" : true
   }, {
@@ -51,11 +50,11 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "lines",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/ARLine",
+   "attributeType" : "./ARLine",
    "dimensions" : "*",
    "contained" : false,
    "optional" : true
@@ -63,11 +62,9 @@
    "name" : "loadStep",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/MassSummaryStep",
+   "enumType" : "./MassSummaryStep",
    "description" : "load step where this mass is calculated in static analysis",
    "optional" : true,
    "default" : "FINAL"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

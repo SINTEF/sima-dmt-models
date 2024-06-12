@@ -1,8 +1,7 @@
 {
  "name" : "StationaryUniform",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/environment/Wind"],
+ "extends" : ["./Wind"],
  "attributes" : [{
    "name" : "direction",
    "type" : "core:BlueprintAttribute",
@@ -24,7 +23,7 @@
   }, {
    "name" : "velocityProfiles",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/environment/ShearWindVelocityProfile",
+   "attributeType" : "./ShearWindVelocityProfile",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -50,7 +49,7 @@
    "name" : "shearProfile",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/environment/ShearProfile",
+   "enumType" : "./ShearProfile",
    "optional" : true,
    "default" : "NONE"
   }, {
@@ -70,7 +69,5 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

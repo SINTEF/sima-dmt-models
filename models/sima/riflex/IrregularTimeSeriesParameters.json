@@ -1,15 +1,14 @@
 {
  "name" : "IrregularTimeSeriesParameters",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "randomSeedWaves",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Starting parameter of random number generator",
    "optional" : true,
-   "default" : "1"
+   "default" : 1
   }, {
    "name" : "useStochasticAmplitudes",
    "type" : "core:BlueprintAttribute",
@@ -21,19 +20,19 @@
    "attributeType" : "number",
    "description" : "Length of generated time series",
    "optional" : true,
-   "default" : "16384.0"
+   "default" : 16384.0
   }, {
    "name" : "timeIncrement",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Time increment for time series generation",
    "optional" : true,
-   "default" : "0.5"
+   "default" : 0.5
   }, {
    "name" : "waveComputationMethod",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/WaveComputationMethod",
+   "enumType" : "./WaveComputationMethod",
    "description" : "Method parameter for computation of prescribed waves",
    "optional" : true,
    "default" : "FFT"
@@ -41,7 +40,7 @@
    "name" : "waveAmplitudeComputation",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/WaveAmplitudeComputation",
+   "enumType" : "./WaveAmplitudeComputation",
    "description" : "Option for amplitude computation of waves (The phace is always stochastic)",
    "optional" : true,
    "default" : "DETERMINISTIC"
@@ -87,7 +86,5 @@
    "attributeType" : "integer",
    "description" : "Ratio between length of small patch and length of large patch.",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

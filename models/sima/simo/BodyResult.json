@@ -1,8 +1,7 @@
 {
  "name" : "BodyResult",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "body",
    "type" : "core:BlueprintAttribute",
@@ -12,58 +11,56 @@
   }, {
    "name" : "initialPosition",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Position",
+   "attributeType" : "sima:sima/Position",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "staticPosition",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Position",
+   "attributeType" : "sima:sima/Position",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "bodyForces",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/ForceResult",
+   "attributeType" : "./ForceResult",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "positioningElementResults",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/PositioningElementResult",
+   "attributeType" : "./PositioningElementResult",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "couplingResults",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/CouplingElementResult",
+   "attributeType" : "./CouplingElementResult",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "specifiedForces",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/ForceResult",
+   "attributeType" : "./ForceResult",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "thrusterForces",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/ForceResult",
+   "attributeType" : "./ForceResult",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "externalForces",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/ForceResult",
+   "attributeType" : "./ForceResult",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

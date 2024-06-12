@@ -1,8 +1,7 @@
 {
  "name" : "EnvelopeCurveSpecification",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "compDisplacement",
    "type" : "core:BlueprintAttribute",
@@ -27,14 +26,14 @@
    "attributeType" : "number",
    "description" : "Simulation start time for computing envelopes",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "endTime",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Simulation end time for computing envelopes",
    "optional" : true,
-   "default" : "1.0E7"
+   "default" : 1.0E7
   }, {
    "name" : "printDisplacement",
    "type" : "core:BlueprintAttribute",
@@ -57,10 +56,8 @@
    "name" : "plotOption",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/MatrixPlotFileOption",
+   "enumType" : "./MatrixPlotFileOption",
    "optional" : true,
    "default" : "MAX_AND_STANDARD_DEV"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

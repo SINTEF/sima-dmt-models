@@ -1,22 +1,19 @@
 {
  "name" : "AdditionalStructuralDampingParameters",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "globalSegmentNumber",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Global segment number",
    "optional" : true,
-   "default" : "0"
+   "default" : 0
   }, {
    "name" : "structuralDampingFile",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "description" : "File with detailed structural damping specification, see VIVANA user manual",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

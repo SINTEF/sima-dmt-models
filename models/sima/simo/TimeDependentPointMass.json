@@ -1,8 +1,7 @@
 {
  "name" : "TimeDependentPointMass",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject"],
+ "extends" : ["sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,14 +10,14 @@
   }, {
    "name" : "point",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Point3",
+   "attributeType" : "sima:sima/Point3",
    "contained" : true,
    "optional" : false,
    "description" : "Mass point (local coordinates)."
   }, {
    "name" : "flowRates",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/FlowRateItem",
+   "attributeType" : "./FlowRateItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : false
@@ -52,7 +51,5 @@
    "attributeType" : "number",
    "description" : "Minimum allowable mass rate, (may be negative) (HLA only).",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

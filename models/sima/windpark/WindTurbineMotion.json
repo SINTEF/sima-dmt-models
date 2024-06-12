@@ -1,12 +1,11 @@
 {
  "name" : "WindTurbineMotion",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "turbine",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/windpark/WindParkTurbine",
+   "attributeType" : "./WindParkTurbine",
    "contained" : false,
    "optional" : true
   }, {
@@ -25,7 +24,7 @@
    "name" : "motionType",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/windpark/MotionType",
+   "enumType" : "./MotionType",
    "description" : "Kind of motion time series input",
    "optional" : true,
    "default" : "POSI"
@@ -35,7 +34,5 @@
    "attributeType" : "string",
    "description" : "File name for hub positions",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

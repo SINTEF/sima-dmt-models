@@ -1,20 +1,16 @@
 {
- "name" : "Formula",
+ "name" : "StringValue",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/report/ReportItem"],
+ "extends" : ["./SingleValue"],
  "attributes" : [{
-   "name" : "latex",
+   "name" : "name",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
-   "name" : "caption",
+   "name" : "value",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "description" : "Caption",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

@@ -1,16 +1,13 @@
 {
  "name" : "Header",
  "type" : "core:Blueprint",
- "abstract" : false,
  "extends" : ["core:Entity"],
  "attributes" : [{
    "name" : "packages",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/PackageInfo",
+   "attributeType" : "./PackageInfo",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

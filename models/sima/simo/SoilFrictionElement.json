@@ -1,8 +1,7 @@
 {
  "name" : "SoilFrictionElement",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "dfric",
    "type" : "core:BlueprintAttribute",
@@ -33,7 +32,5 @@
    "attributeType" : "number",
    "description" : "Depth dependent friction force in horizontal direction (>=0)",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

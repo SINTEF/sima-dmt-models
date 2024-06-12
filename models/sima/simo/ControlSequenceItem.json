@@ -1,8 +1,7 @@
 {
  "name" : "ControlSequenceItem",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "time",
    "type" : "core:BlueprintAttribute",
@@ -27,7 +26,5 @@
    "attributeType" : "boolean",
    "description" : "Should signals from DP system be accepted?",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

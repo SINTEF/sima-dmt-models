@@ -1,8 +1,7 @@
 {
  "name" : "MetoceanFatigueAnalysis",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/Condition", "/sima/Named"],
+ "extends" : ["sima:sima/Condition", "sima:sima/Named"],
  "attributes" : [{
    "name" : "changeNumber",
    "type" : "core:BlueprintAttribute",
@@ -11,7 +10,7 @@
   }, {
    "name" : "resultContainer",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/ResultContainer",
+   "attributeType" : "sima:sima/ResultContainer",
    "contained" : true,
    "optional" : true
   }, {
@@ -22,16 +21,14 @@
   }, {
    "name" : "metoceanCondition",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Condition",
+   "attributeType" : "sima:sima/Condition",
    "contained" : false,
    "optional" : true
   }, {
    "name" : "analysisCondition",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Condition",
+   "attributeType" : "sima:sima/Condition",
    "contained" : false,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

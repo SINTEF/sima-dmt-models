@@ -1,13 +1,12 @@
 {
  "name" : "Kalman",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/simo/Estimator"],
+ "extends" : ["./Estimator"],
  "attributes" : [{
    "name" : "lineTension",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/KalmanLineTension",
+   "enumType" : "./KalmanLineTension",
    "description" : "Flag for measurement of line tensions to be included in the controller",
    "optional" : true,
    "default" : "NONE"
@@ -15,7 +14,7 @@
    "name" : "estimationMethod",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/KalmanEstimationMethod",
+   "enumType" : "./KalmanEstimationMethod",
    "description" : "Estimation method flag",
    "optional" : true,
    "default" : "FORCE"
@@ -25,42 +24,40 @@
    "attributeType" : "number",
    "description" : "Starting period for wave frequency estimation",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "nominalVelocity",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Nominal velocity, used when linearizing nonlinear damping forces",
    "optional" : true,
-   "default" : "0.25"
+   "default" : 0.25
   }, {
    "name" : "lineCharacteristicItems",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/LineCharacteristicItem",
+   "attributeType" : "./LineCharacteristicItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "hawserForceMeasurements",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/HawserForceMeasurement",
+   "attributeType" : "./HawserForceMeasurement",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "stiffnessMatrix",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/Matrix3",
+   "attributeType" : "sima:hydro/Matrix3",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "lines",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/LineMeasurementItem",
+   "attributeType" : "./LineMeasurementItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

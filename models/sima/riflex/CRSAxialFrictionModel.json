@@ -1,8 +1,7 @@
 {
  "name" : "CRSAxialFrictionModel",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "staticFriction",
    "type" : "core:BlueprintAttribute",
@@ -33,7 +32,5 @@
    "attributeType" : "boolean",
    "description" : "Local axial friction model",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

@@ -1,12 +1,11 @@
 {
  "name" : "ThrusterControl",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "thruster",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/IThruster",
+   "attributeType" : "./IThruster",
    "contained" : false,
    "optional" : true,
    "description" : "Thruster to be controlled"
@@ -14,7 +13,7 @@
    "name" : "thrusterControlType",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/simo/DPThrusterType",
+   "enumType" : "./DPThrusterType",
    "description" : "Thruster control type",
    "optional" : true,
    "default" : "FIXED"
@@ -66,7 +65,5 @@
    "attributeType" : "number",
    "description" : "Z-coordinate of thruster in body system",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

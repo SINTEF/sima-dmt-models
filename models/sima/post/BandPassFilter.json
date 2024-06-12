@@ -1,8 +1,7 @@
 {
  "name" : "BandPassFilter",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/post/OperationNode"],
+ "extends" : ["./OperationNode"],
  "attributes" : [{
    "name" : "x",
    "type" : "core:BlueprintAttribute",
@@ -31,21 +30,21 @@
   }, {
    "name" : "controlSignalInputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/ControlSignalInputSlot",
+   "attributeType" : "./ControlSignalInputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "filterInputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/InputSlot",
+   "attributeType" : "./InputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "filterOutputSlots",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/OutputSlot",
+   "attributeType" : "./OutputSlot",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -54,14 +53,14 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "taperingFactor",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Exponent in tapering of coefficient",
    "optional" : true,
-   "default" : "0.5"
+   "default" : 0.5
   }, {
    "name" : "coefficientCount",
    "type" : "core:BlueprintAttribute",
@@ -74,7 +73,7 @@
    "attributeType" : "integer",
    "description" : "normalized window duration: k. Used to calculate default coefficientCount",
    "optional" : true,
-   "default" : "4"
+   "default" : 4
   }, {
    "name" : "lowerCutoffFrequency",
    "type" : "core:BlueprintAttribute",
@@ -87,7 +86,5 @@
    "attributeType" : "number",
    "description" : "Upper cut off frequency",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

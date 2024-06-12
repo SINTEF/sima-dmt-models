@@ -1,8 +1,7 @@
 {
  "name" : "CustomVisibilityParameter",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/Named"],
+ "extends" : ["sima:sima/Named"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,10 +10,8 @@
   }, {
    "name" : "parameter",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/custom/ParameterField",
+   "attributeType" : "./ParameterField",
    "contained" : false,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

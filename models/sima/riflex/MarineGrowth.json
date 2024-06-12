@@ -1,8 +1,7 @@
 {
  "name" : "MarineGrowth",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject"],
+ "extends" : ["sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,11 +10,9 @@
   }, {
    "name" : "growthLevels",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/GrowthLevel",
+   "attributeType" : "./GrowthLevel",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

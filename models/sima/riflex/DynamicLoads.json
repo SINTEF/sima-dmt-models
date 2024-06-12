@@ -1,27 +1,24 @@
 {
  "name" : "DynamicLoads",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "dynamicNodalForces",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/DynamicNodalForces",
+   "attributeType" : "./DynamicNodalForces",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "dynamicCurrentVariation",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/DynamicCurrentVariation",
+   "attributeType" : "./DynamicCurrentVariation",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "rigidMoonpoolColumns",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/RigidMoonpoolColumn",
+   "attributeType" : "./RigidMoonpoolColumn",
    "contained" : true,
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

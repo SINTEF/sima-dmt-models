@@ -1,8 +1,7 @@
 {
  "name" : "TurbineBladeResponseStorage",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "store",
    "type" : "core:BlueprintAttribute",
@@ -12,7 +11,7 @@
    "name" : "responseAmount",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/ResponseAmount",
+   "enumType" : "./ResponseAmount",
    "optional" : true,
    "default" : "MIN"
   }, {
@@ -25,18 +24,16 @@
    "name" : "fileFormat",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/StorageType",
+   "enumType" : "./StorageType",
    "optional" : true,
    "default" : "BINARY"
   }, {
    "name" : "elements",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/ElementReference",
+   "attributeType" : "./ElementReference",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true,
    "description" : "Specification of elements for turbine blade response storage"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

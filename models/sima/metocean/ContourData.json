@@ -1,8 +1,7 @@
 {
  "name" : "ContourData",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "returnPeriod",
    "type" : "core:BlueprintAttribute",
@@ -11,11 +10,9 @@
   }, {
    "name" : "contourDataPoints",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/metocean/ContourDataPoint",
+   "attributeType" : "./ContourDataPoint",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

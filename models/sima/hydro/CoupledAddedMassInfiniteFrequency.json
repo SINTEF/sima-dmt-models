@@ -1,15 +1,12 @@
 {
  "name" : "CoupledAddedMassInfiniteFrequency",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/hydro/Matrix6"],
+ "extends" : ["./Matrix6"],
  "attributes" : [{
    "name" : "values",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true,
    "dimensions" : "*"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

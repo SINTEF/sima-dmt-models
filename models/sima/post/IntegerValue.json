@@ -1,12 +1,11 @@
 {
  "name" : "IntegerValue",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/post/GeneratorSignal", "/sima/SingleParameter"],
+ "extends" : ["./GeneratorSignal", "sima:sima/SingleParameter"],
  "attributes" : [{
    "name" : "properties",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/post/SignalProperties",
+   "attributeType" : "./SignalProperties",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -33,7 +32,5 @@
    "description" : "Value of the String constant",
    "optional" : true,
    "dimensions" : "*"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

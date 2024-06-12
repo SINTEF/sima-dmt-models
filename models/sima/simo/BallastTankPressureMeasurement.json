@@ -1,0 +1,29 @@
+{
+ "name" : "BallastTankPressureMeasurement",
+ "type" : "core:Blueprint",
+ "extends" : ["sima:sima/Named"],
+ "attributes" : [{
+   "name" : "name",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
+   "name" : "x",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Local  x position",
+   "optional" : true
+  }, {
+   "name" : "y",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Local  y position",
+   "optional" : true
+  }, {
+   "name" : "z",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Local z position",
+   "optional" : true
+  }]
+}

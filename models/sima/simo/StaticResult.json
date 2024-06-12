@@ -1,12 +1,11 @@
 {
  "name" : "StaticResult",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/Result"],
+ "extends" : ["sima:sima/Result"],
  "attributes" : [{
    "name" : "properties",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Property",
+   "attributeType" : "sima:sima/Property",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -35,27 +34,25 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : true,
-   "default" : "-1"
+   "default" : -1
   }, {
    "name" : "size",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : true,
-   "default" : "-1"
+   "default" : -1
   }, {
    "name" : "runNumber",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : true,
-   "default" : "-1"
+   "default" : -1
   }, {
    "name" : "messages",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/SimaMessage",
+   "attributeType" : "sima:sima/SimaMessage",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

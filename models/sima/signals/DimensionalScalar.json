@@ -2,8 +2,7 @@
  "name" : "DimensionalScalar",
  "type" : "core:Blueprint",
  "description" : "Single scalar value with dimension",
- "abstract" : false,
- "extends" : ["/signals/Signal"],
+ "extends" : ["./Signal"],
  "attributes" : [{
    "name" : "value",
    "type" : "core:BlueprintAttribute",
@@ -19,7 +18,5 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

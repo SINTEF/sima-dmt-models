@@ -1,8 +1,7 @@
 {
  "name" : "ExternalHLAFederate",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/hla/HLAFederate"],
+ "extends" : ["./HLAFederate"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -19,7 +18,7 @@
    "attributeType" : "boolean",
    "description" : "Launch federate from provided class",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "jarFile",
    "type" : "core:BlueprintAttribute",
@@ -59,11 +58,9 @@
   }, {
    "name" : "hlaObjects",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hla/HLAObject",
+   "attributeType" : "./HLAObject",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

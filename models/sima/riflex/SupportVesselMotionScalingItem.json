@@ -1,12 +1,11 @@
 {
  "name" : "SupportVesselMotionScalingItem",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "supportVessel",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/SupportVessel",
+   "attributeType" : "./SupportVessel",
    "contained" : false,
    "optional" : true
   }, {
@@ -15,43 +14,41 @@
    "attributeType" : "number",
    "description" : "Scaling for global X-motion",
    "optional" : true,
-   "default" : "1.0"
+   "default" : 1.0
   }, {
    "name" : "scaly",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Scaling for global Y-motion",
    "optional" : true,
-   "default" : "1.0"
+   "default" : 1.0
   }, {
    "name" : "scalz",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Scaling for global Z-motion",
    "optional" : true,
-   "default" : "1.0"
+   "default" : 1.0
   }, {
    "name" : "scalxr",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Scaling for global X-rotation",
    "optional" : true,
-   "default" : "1.0"
+   "default" : 1.0
   }, {
    "name" : "scalyr",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Scaling for global Y-rotation",
    "optional" : true,
-   "default" : "1.0"
+   "default" : 1.0
   }, {
    "name" : "scalzr",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Scaling for global Z-rotation",
    "optional" : true,
-   "default" : "1.0"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : 1.0
+  }]
 }

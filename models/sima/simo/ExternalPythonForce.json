@@ -1,0 +1,30 @@
+{
+ "name" : "ExternalPythonForce",
+ "type" : "core:Blueprint",
+ "extends" : ["sima:sima/NamedObject"],
+ "attributes" : [{
+   "name" : "name",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
+   "name" : "file",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
+   "name" : "className",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "Python class name contained in the python file",
+   "optional" : true,
+   "default" : "0"
+  }, {
+   "name" : "parameters",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "sima:sima/SingleValue",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }]
+}

@@ -1,8 +1,7 @@
 {
  "name" : "VariableModification",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/condition/ModelVariationOperation"],
+ "extends" : ["./ModelVariationOperation"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,11 +10,9 @@
   }, {
    "name" : "variableItems",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/VariableItem",
+   "attributeType" : "sima:sima/VariableItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

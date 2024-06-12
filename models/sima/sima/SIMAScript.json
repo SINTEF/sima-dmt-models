@@ -1,8 +1,7 @@
 {
  "name" : "SIMAScript",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject"],
+ "extends" : ["./NamedObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -16,18 +15,16 @@
   }, {
    "name" : "contextItems",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/SIMAScriptContext",
+   "attributeType" : "./SIMAScriptContext",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "triggers",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/SIMAScriptTrigger",
+   "attributeType" : "./SIMAScriptTrigger",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

@@ -1,8 +1,7 @@
 {
  "name" : "ForceDampingItem",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/simo/ForceItem"],
+ "extends" : ["./ForceItem"],
  "attributes" : [{
    "name" : "distance",
    "type" : "core:BlueprintAttribute",
@@ -21,7 +20,5 @@
    "attributeType" : "number",
    "description" : "Damping coefficient",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

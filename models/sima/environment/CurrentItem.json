@@ -1,30 +1,27 @@
 {
  "name" : "CurrentItem",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "level",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Global z-coordinate of current level",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "direction",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Current propagation direction",
    "optional" : true,
-   "default" : "0.0"
+   "default" : 0.0
   }, {
    "name" : "velocity",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Current velocity",
    "optional" : true,
-   "default" : "0.0"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : 0.0
+  }]
 }

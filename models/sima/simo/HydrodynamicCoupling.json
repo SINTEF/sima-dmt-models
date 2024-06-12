@@ -1,8 +1,7 @@
 {
  "name" : "HydrodynamicCoupling",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedObject"],
+ "extends" : ["sima:sima/NamedObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,22 +10,20 @@
   }, {
    "name" : "body1",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SIMOBody",
+   "attributeType" : "./SIMOBody",
    "contained" : false,
    "optional" : true
   }, {
    "name" : "body2",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/simo/SIMOBody",
+   "attributeType" : "./SIMOBody",
    "contained" : false,
    "optional" : true
   }, {
    "name" : "radiationData",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hydro/CoupledRadiationDataGroup",
+   "attributeType" : "sima:hydro/CoupledRadiationDataGroup",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

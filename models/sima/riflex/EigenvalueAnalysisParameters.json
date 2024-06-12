@@ -1,51 +1,48 @@
 {
  "name" : "EigenvalueAnalysisParameters",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "numberOfEigenvalues",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of eigenvalues to be calculated",
    "optional" : true,
-   "default" : "10"
+   "default" : 10
   }, {
    "name" : "maxRelativeError",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Maximum acceptable relative error in computed eigenvalues",
    "optional" : true,
-   "default" : "1.0E-10"
+   "default" : 1.0E-10
   }, {
    "name" : "numberOfLanczoSteps",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Maximum number of Lanczos steps (vectors) to be used",
    "optional" : true,
-   "default" : "0"
+   "default" : 0
   }, {
    "name" : "storeVisualisationResponses",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Store eigenvalue visualization file",
    "optional" : true,
-   "default" : "true"
+   "default" : true
   }, {
    "name" : "visualisationScaling",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Scaling of eigenvectors in visual results",
    "optional" : true,
-   "default" : "10.0"
+   "default" : 10.0
   }, {
    "name" : "numberOfEigenvectors",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
    "description" : "Number of eigenvectors to be printed",
    "optional" : true,
-   "default" : "0"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+   "default" : 0
+  }]
 }

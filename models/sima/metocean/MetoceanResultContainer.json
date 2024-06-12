@@ -1,8 +1,7 @@
 {
  "name" : "MetoceanResultContainer",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/ConditionResultContainer"],
+ "extends" : ["sima:sima/ConditionResultContainer"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,7 +10,7 @@
   }, {
    "name" : "properties",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Property",
+   "attributeType" : "sima:sima/Property",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -28,10 +27,8 @@
   }, {
    "name" : "entry",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/ResultEntry",
+   "attributeType" : "sima:sima/ResultEntry",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

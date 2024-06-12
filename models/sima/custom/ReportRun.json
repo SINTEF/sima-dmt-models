@@ -1,8 +1,7 @@
 {
  "name" : "ReportRun",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/custom/CustomComponent"],
+ "extends" : ["./CustomComponent"],
  "attributes" : [{
    "name" : "label",
    "type" : "core:BlueprintAttribute",
@@ -16,10 +15,8 @@
   }, {
    "name" : "report",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/report/Report",
+   "attributeType" : "sima:report/Report",
    "contained" : false,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

@@ -1,8 +1,7 @@
 {
  "name" : "DoubleSymmetricCrossSection",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/riflex/CrossSection", "/riflex/CRSAxialFrictionModel"],
+ "extends" : ["./CrossSection", "./CRSAxialFrictionModel"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -14,12 +13,12 @@
    "attributeType" : "boolean",
    "description" : "Scaling of Froude-Krylov term in Morison’s equation in normal direction",
    "optional" : true,
-   "default" : "false"
+   "default" : false
   }, {
    "name" : "loadFormulation",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/LoadFormulation",
+   "enumType" : "./LoadFormulation",
    "optional" : true,
    "default" : "MORISON"
   }, {
@@ -32,7 +31,7 @@
    "name" : "hydrodynamicInputCode",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/HydrodynamicInputCode",
+   "enumType" : "./HydrodynamicInputCode",
    "description" : "Hydrodynamic input code",
    "optional" : true,
    "default" : "DIMENSIONAL"
@@ -60,14 +59,14 @@
    "attributeType" : "number",
    "description" : "Scaling factor for Froude-Krylov term in Morison’s equation in normal direction",
    "optional" : true,
-   "default" : "1.0"
+   "default" : 1.0
   }, {
    "name" : "tangentialDirectionScaling",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Scale for Froude-Krylov term in Morison’s equation in tangential direction",
    "optional" : true,
-   "default" : "1.0"
+   "default" : 1.0
   }, {
    "name" : "cdx",
    "type" : "core:BlueprintAttribute",
@@ -197,19 +196,13 @@
   }, {
    "name" : "massDamping",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/CRSMassDamping",
-   "contained" : true,
-   "optional" : false
-  }, {
-   "name" : "stiffnessDamping",
-   "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/CRSStiffnessDamping",
+   "attributeType" : "./CRSMassDamping",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "axialDamping",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/CRSAxialDamping",
+   "attributeType" : "./CRSAxialDamping",
    "contained" : true,
    "optional" : false
   }, {
@@ -234,7 +227,7 @@
    "name" : "aerodynamicInputCode",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/AerodynamicInputCode",
+   "enumType" : "./AerodynamicInputCode",
    "description" : "Aerodynamic input code",
    "optional" : true,
    "default" : "NONE"
@@ -283,7 +276,7 @@
   }, {
    "name" : "airfoil",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/windturbine/Airfoil",
+   "attributeType" : "sima:windturbine/Airfoil",
    "contained" : false,
    "optional" : true
   }, {
@@ -313,7 +306,7 @@
    "name" : "aerodynamicForceType",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/AerodynamicForceType",
+   "enumType" : "./AerodynamicForceType",
    "optional" : true,
    "default" : "NONE"
   }, {
@@ -326,21 +319,21 @@
    "name" : "barBeam",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/BarBeam",
+   "enumType" : "./BarBeam",
    "description" : "Cross section type",
    "optional" : true,
    "default" : "BAR"
   }, {
    "name" : "massVolume",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/DoubleSymmetricCrossSectionMassVolume",
+   "attributeType" : "./DoubleSymmetricCrossSectionMassVolume",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "axialStiffnessInput",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/AxialStiffness",
+   "enumType" : "./AxialStiffness",
    "description" : "Axial stiffness input specification",
    "optional" : true,
    "default" : "CONSTANT"
@@ -348,7 +341,7 @@
    "name" : "bendingStiffnessInput",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/BendingStiffness",
+   "enumType" : "./BendingStiffness",
    "description" : "Bending stiffness input specification",
    "optional" : true,
    "default" : "CONSTANT"
@@ -356,28 +349,28 @@
    "name" : "torsionStiffnessInput",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/TorsionStiffness",
+   "enumType" : "./TorsionStiffness",
    "description" : "Torsion stiffness input specification",
    "optional" : true,
    "default" : "CONSTANT"
   }, {
    "name" : "axialStiffnessCharacteristics",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/AxialStiffnessItem",
+   "attributeType" : "./AxialStiffnessItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "bendingStiffnessCharacteristics",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/BendingStiffnessYZ_Item",
+   "attributeType" : "./BendingStiffnessYZ_Item",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "torsionStiffnessCharacteristics",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/TorsionStiffnessItem",
+   "attributeType" : "./TorsionStiffnessItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -421,11 +414,15 @@
    "name" : "hydrodynamicRadiationInputCode",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/HydrodynamicInputCode",
+   "enumType" : "./HydrodynamicInputCode",
    "description" : "Code for input of simplified radiation force coefficients",
    "optional" : true,
    "default" : "DIMENSIONAL"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }, {
+   "name" : "stiffnessDamping",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "./DoubleSymmetricStiffnessDamping",
+   "contained" : true,
+   "optional" : false
+  }]
 }

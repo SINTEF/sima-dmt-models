@@ -1,14 +1,11 @@
 {
  "name" : "FileStorage",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/NamedStorageResource"],
+ "extends" : ["./NamedStorageResource"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

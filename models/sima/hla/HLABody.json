@@ -1,8 +1,7 @@
 {
  "name" : "HLABody",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/hla/HLAObject"],
+ "extends" : ["./HLAObject"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -14,41 +13,39 @@
    "attributeType" : "number",
    "description" : "Length",
    "optional" : true,
-   "default" : "10.0"
+   "default" : 10.0
   }, {
    "name" : "width",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Width",
    "optional" : true,
-   "default" : "5.0"
+   "default" : 5.0
   }, {
    "name" : "height",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Height",
    "optional" : true,
-   "default" : "5.0"
+   "default" : 5.0
   }, {
    "name" : "appearance",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Appearance",
+   "attributeType" : "sima:sima/Appearance",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "position",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Position",
+   "attributeType" : "sima:sima/Position",
    "contained" : true,
    "optional" : false
   }, {
    "name" : "viewpoints",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/hla/HLABodyViewpoint",
+   "attributeType" : "./HLABodyViewpoint",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

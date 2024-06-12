@@ -1,8 +1,7 @@
 {
  "name" : "TurbineResponseStorage",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "store",
    "type" : "core:BlueprintAttribute",
@@ -18,10 +17,8 @@
    "name" : "fileFormat",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/riflex/StorageType",
+   "enumType" : "./StorageType",
    "optional" : true,
    "default" : "BINARY"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

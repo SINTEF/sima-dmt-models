@@ -1,8 +1,7 @@
 {
  "name" : "QTFDof",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/MOAO"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "nValues",
    "type" : "core:BlueprintAttribute",
@@ -20,7 +19,5 @@
    "attributeType" : "number",
    "optional" : true,
    "dimensions" : "*"
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

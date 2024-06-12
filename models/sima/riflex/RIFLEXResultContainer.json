@@ -1,8 +1,7 @@
 {
  "name" : "RIFLEXResultContainer",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/sima/ConditionResultContainer"],
+ "extends" : ["sima:sima/ConditionResultContainer"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -11,7 +10,7 @@
   }, {
    "name" : "properties",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Property",
+   "attributeType" : "sima:sima/Property",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
@@ -28,28 +27,26 @@
   }, {
    "name" : "static",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/RIFLEXStaticResultEntry",
+   "attributeType" : "./RIFLEXStaticResultEntry",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "dynamic",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/RIFLEXDynamicResultEntry",
+   "attributeType" : "./RIFLEXDynamicResultEntry",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "eigenvalue",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/RIFLEXEigenvalueResultEntry",
+   "attributeType" : "./RIFLEXEigenvalueResultEntry",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "vivana",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/riflex/RIFLEXVivanaResultEntry",
+   "attributeType" : "./RIFLEXVivanaResultEntry",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

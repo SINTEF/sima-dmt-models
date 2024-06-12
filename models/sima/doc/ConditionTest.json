@@ -1,8 +1,7 @@
 {
  "name" : "ConditionTest",
  "type" : "core:Blueprint",
- "abstract" : false,
- "extends" : ["/doc/Test"],
+ "extends" : ["./Test"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -18,27 +17,27 @@
    "name" : "duration",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/doc/Duration",
+   "enumType" : "./Duration",
    "optional" : true,
    "default" : "MEDIUM"
   }, {
    "name" : "assertions",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/doc/OutputNodeValueAssertion",
+   "attributeType" : "./OutputNodeValueAssertion",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "comparisons",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/doc/ComparisonAssertion",
+   "attributeType" : "./ComparisonAssertion",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "condition",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "/sima/Condition",
+   "attributeType" : "sima:sima/Condition",
    "contained" : false,
    "optional" : true
   }, {
@@ -46,7 +45,5 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }

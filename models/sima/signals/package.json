@@ -7,13 +7,11 @@
   "dependencies" : [{
     "alias" : "core",
     "address" : "system/SIMOS",
-    "version" : "0.0.1",
-    "protocol" : "dmss"
+    "version" : "0.0.1"
    }, {
     "alias" : "signals",
     "address" : "signals",
-    "version" : "2",
-    "protocol" : "dmss"
+    "version" : "2"
    }]
  }
 }
