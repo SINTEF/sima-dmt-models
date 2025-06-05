@@ -1,0 +1,19 @@
+{
+ "name" : "MarineGrowthScaling",
+ "type" : "core:Blueprint",
+ "extends" : ["sima:sima/MOAO"],
+ "attributes" : [{
+   "name" : "line",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "./ARLine",
+   "contained" : false,
+   "optional" : true
+  }, {
+   "name" : "scaling",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Scaling factor for growth profile",
+   "optional" : true,
+   "default" : 1.0
+  }]
+}

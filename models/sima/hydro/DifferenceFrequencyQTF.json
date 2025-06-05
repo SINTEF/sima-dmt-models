@@ -1,7 +1,7 @@
 {
  "name" : "DifferenceFrequencyQTF",
  "type" : "core:Blueprint",
- "extends" : ["./SparseQTF"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "nFreq",
    "type" : "core:BlueprintAttribute",
@@ -100,11 +100,37 @@
    "contained" : true,
    "optional" : false
   }, {
+   "name" : "symmetry",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "./DirectionSymmetry",
+   "optional" : true,
+   "default" : "NO_SYMMETRY"
+  }, {
    "name" : "enableCurrentCorrection",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Enable wave-current interaction using extended Aranha formula",
    "optional" : true,
    "default" : false
+  }, {
+   "name" : "input",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "./QtfInput",
+   "optional" : true,
+   "default" : "MANUAL"
+  }, {
+   "name" : "file",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
+   "name" : "bodyNumber",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "integer",
+   "description" : "If file is multi-body, give the number within the file for this data",
+   "optional" : true,
+   "default" : 1
   }]
 }

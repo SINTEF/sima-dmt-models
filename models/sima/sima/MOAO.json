@@ -4,6 +4,11 @@
  "abstract" : true,
  "extends" : ["core:Entity"],
  "attributes" : [{
+   "name" : "_id",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
    "name" : "scriptableValues",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "./ScriptableValue",

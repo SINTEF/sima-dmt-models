@@ -1,7 +1,7 @@
 {
  "name" : "NonLinearHydrostaticStiffness",
  "type" : "core:Blueprint",
- "extends" : ["sima:sima/MOAO"],
+ "extends" : ["sima:hydro/HydrostaticStiffnessData"],
  "attributes" : [{
    "name" : "geometryPosition",
    "type" : "core:BlueprintAttribute",

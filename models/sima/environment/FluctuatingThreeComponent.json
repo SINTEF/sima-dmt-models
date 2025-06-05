@@ -43,19 +43,19 @@
    "name" : "lowerLeftX",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
-   "description" : "X-coordinate of the lower left corner of the upstream border of the wind",
+   "description" : "X-coordinate of the upwind lower left data point, in wind aligned coordinates",
    "optional" : true
   }, {
    "name" : "lowerLeftY",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
-   "description" : "Y-coordinate of the lower left corner of the wind field domain",
+   "description" : "Y-coordinate of the upwind lower left data point, in wind aligned coordinates",
    "optional" : true
   }, {
    "name" : "lowerLeftZ",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
-   "description" : "Z-coordinate of the lower left corner of the wind field domain",
+   "description" : "Z-coordinate of the upwind lower left data point, in wind aligned coordinates",
    "optional" : true
   }, {
    "name" : "numPointsX",
@@ -100,5 +100,11 @@
    "description" : "Buffer size: Number of wind crossectional planes (Slices) in memory",
    "optional" : true,
    "default" : 800
+  }, {
+   "name" : "reverseBox",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Read turbulence box in reverse direction",
+   "optional" : true
   }]
 }

@@ -1,0 +1,6 @@
+{
+ "name" : "WamitWaveDriftForceOption",
+ "type" : "core:Enum",
+ "values" : ["MOMENTUM", "PRESSURE", "CONTROL_SURFACE"],
+ "labels" : ["Momentum", "Pressure", "Control surface"]
+}

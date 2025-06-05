@@ -1,5 +1,5 @@
 {
- "name" : "Command",
+ "name" : "CapacityCheck",
  "type" : "core:Blueprint",
  "abstract" : true,
  "extends" : ["sima:sima/Named"]

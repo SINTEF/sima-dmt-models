@@ -3,7 +3,7 @@
  "type" : "core:Package",
  "_meta_" : {
   "type" : "core:Meta",
-  "version" : "23",
+  "version" : "24",
   "dependencies" : [{
     "alias" : "core",
     "address" : "system/SIMOS",
@@ -11,7 +11,7 @@
    }, {
     "alias" : "environment",
     "address" : "environment",
-    "version" : "23"
+    "version" : "24"
    }]
  }
 }

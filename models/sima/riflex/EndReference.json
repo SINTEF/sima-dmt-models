@@ -1,0 +1,6 @@
+{
+ "name" : "EndReference",
+ "type" : "core:Enum",
+ "values" : ["BOTH", "ONE", "TWO"],
+ "labels" : ["Both", "One", "Two"]
+}

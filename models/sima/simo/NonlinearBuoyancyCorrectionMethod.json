@@ -1,6 +1,0 @@
-{
- "name" : "NonlinearBuoyancyCorrectionMethod",
- "type" : "core:Enum",
- "values" : ["MWL", "WAVE"],
- "labels" : ["Mean water level", "Wave"]
-}

@@ -259,7 +259,6 @@
    "name" : "storeHydrostaticStiffnessForces",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
-   "description" : "Store hydrostatic stiffness forces?",
    "optional" : true,
    "default" : false
   }, {
@@ -485,5 +484,11 @@
    "description" : "Length of generated time series",
    "optional" : true,
    "default" : 16384.0
+  }, {
+   "name" : "storeDifferenceFrequencyWaveForce",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "optional" : true,
+   "default" : false
   }]
 }

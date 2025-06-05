@@ -37,7 +37,8 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Gear box ratio",
-   "optional" : true
+   "optional" : true,
+   "default" : 1.0
   }, {
    "name" : "generatorEfficiency",
    "type" : "core:BlueprintAttribute",
@@ -180,6 +181,12 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Log of signals to and from controller are written to a log file. The file <turbine name>.log is stored in the analysis folder. This option should be used for debugging purposes only. Avaliable for external controller only.",
+   "optional" : true
+  }, {
+   "name" : "accelerationFromDisplacement",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Acceleration is calculated from the displacements",
    "optional" : true
   }]
 }

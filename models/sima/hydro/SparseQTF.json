@@ -1,6 +1,0 @@
-{
- "name" : "SparseQTF",
- "type" : "core:Blueprint",
- "abstract" : true,
- "extends" : ["sima:sima/MOAO"]
-}

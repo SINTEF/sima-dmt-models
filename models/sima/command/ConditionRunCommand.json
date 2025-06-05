@@ -1,7 +1,7 @@
 {
  "name" : "ConditionRunCommand",
  "type" : "core:Blueprint",
- "extends" : ["./Command"],
+ "extends" : ["sima:sima/Command"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -53,5 +53,24 @@
    "contained" : true,
    "optional" : true,
    "description" : "Enables override of condition variables. Specify variable name and wanted value"
+  }, {
+   "name" : "copy",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Copy selected files to destination folder",
+   "optional" : true
+  }, {
+   "name" : "paths",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "Optional list of file names within the condition folder to copy after run",
+   "optional" : true,
+   "dimensions" : "*"
+  }, {
+   "name" : "destination",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "Destination folder",
+   "optional" : true
   }]
 }

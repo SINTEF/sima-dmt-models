@@ -1,7 +1,7 @@
 {
  "name" : "SumFrequencyQTF",
  "type" : "core:Blueprint",
- "extends" : ["./SparseQTF"],
+ "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
    "name" : "nFreq",
    "type" : "core:BlueprintAttribute",

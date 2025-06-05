@@ -1,0 +1,85 @@
+{
+ "name" : "TensionAndCurvatureCapacityCheck",
+ "type" : "core:Blueprint",
+ "extends" : ["./CapacityCheck"],
+ "attributes" : [{
+   "name" : "name",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
+   "name" : "limitTimeInterval",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Specify time window to be applied for assessment of utilization. In case \"end time\" exceeds the time series duration, the end of the time series will be used as the end time",
+   "optional" : true
+  }, {
+   "name" : "startTime",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true
+  }, {
+   "name" : "endTime",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true
+  }, {
+   "name" : "addIntermediateResults",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Add intermediate element results to the output",
+   "optional" : true
+  }, {
+   "name" : "sections",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "./ElementReference",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true,
+   "description" : "Specification of nodes for displacement storage"
+  }, {
+   "name" : "useDistributionFitting",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Calculate characteristic extreme values of utilization factors using Gumbel distribution fitting",
+   "optional" : true
+  }, {
+   "name" : "seastateReturnPeriod",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Return period used for estimating the characteristic extreme value",
+   "optional" : true,
+   "default" : 3.0
+  }, {
+   "name" : "check",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "./UtilizationCheck",
+   "optional" : true,
+   "default" : "TENSIONANDCURVATURE"
+  }, {
+   "name" : "tensionMaterialFactor",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true,
+   "default" : 1.0
+  }, {
+   "name" : "tensionLoadFactor",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true,
+   "default" : 1.0
+  }, {
+   "name" : "curvatureMaterialFactor",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true,
+   "default" : 1.0
+  }, {
+   "name" : "curvatureLoadFactor",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true,
+   "default" : 1.0
+  }]
+}

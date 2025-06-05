@@ -1,0 +1,6 @@
+{
+ "name" : "Command",
+ "type" : "core:Blueprint",
+ "abstract" : true,
+ "extends" : ["./Named"]
+}

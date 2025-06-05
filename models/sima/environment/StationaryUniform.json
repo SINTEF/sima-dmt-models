@@ -37,7 +37,7 @@
    "name" : "domainResolution",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
-   "description" : "Domain resolution in Z- (vertical) direction",
+   "description" : "Distance between grid points in the vertical direction",
    "optional" : true
   }, {
    "name" : "numGridPoints",

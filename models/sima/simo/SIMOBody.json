@@ -133,18 +133,6 @@
    "contained" : true,
    "optional" : true
   }, {
-   "name" : "nonLinearHydrostaticStiffness",
-   "type" : "core:BlueprintAttribute",
-   "attributeType" : "./NonLinearHydrostaticStiffness",
-   "contained" : true,
-   "optional" : true
-  }, {
-   "name" : "nonlinearBuoyancyCorrection",
-   "type" : "core:BlueprintAttribute",
-   "attributeType" : "./NonlinearBuoyancyCorrection",
-   "contained" : true,
-   "optional" : true
-  }, {
    "name" : "firstOrderMotionTransferFunction",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "sima:hydro/FirstOrderMotionTransferFunction",
@@ -404,9 +392,15 @@
    "contained" : true,
    "optional" : true
   }, {
-   "name" : "qtf",
+   "name" : "differenceFrequencyQtf",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "sima:hydro/SparseQTF",
+   "attributeType" : "sima:hydro/DifferenceFrequencyQTF",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "sumFrequencyQtf",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "sima:hydro/SumFrequencyQTF",
    "contained" : true,
    "optional" : true
   }]

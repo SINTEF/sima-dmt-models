@@ -172,6 +172,13 @@
    "contained" : true,
    "optional" : true
   }, {
+   "name" : "capacityChecks",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "./CapacityCheck",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
    "name" : "riflexStaticCalculationParameters",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "./RIFLEXStaticCalculationParameters",

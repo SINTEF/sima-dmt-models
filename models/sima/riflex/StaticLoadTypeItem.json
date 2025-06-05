@@ -36,7 +36,7 @@
    "attributeType" : "number",
    "description" : "Required accuracy measured by displacement norm",
    "optional" : true,
-   "default" : 1.0E-5
+   "default" : 1.0E-6
   }, {
    "name" : "convergenceNorm",
    "type" : "core:BlueprintAttribute",
@@ -50,12 +50,12 @@
    "attributeType" : "number",
    "description" : " Required accuracy measured by energy norm. Value is not used if convergence norm is 'Displacement'.",
    "optional" : true,
-   "default" : 1.0E-5
+   "default" : 1.0E-6
   }, {
    "name" : "entered",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
-   "description" : "start condition for pipe-in-pipe contact",
+   "description" : "start condition for pipe-in-pipe contact\nEntered should be used for analysis of slender structures such as risers, cables and umbilicals\nNot Entered is intended to be used for marine operations",
    "optional" : true,
    "default" : true
   }, {
@@ -89,9 +89,16 @@
    "name" : "growthFactor",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
-   "description" : "Scaling factor for growth profile",
+   "description" : "Scaling factor for growth profile for all lines",
    "optional" : true,
    "default" : 1.0
+  }, {
+   "name" : "marineGrowthScalings",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "./MarineGrowthScaling",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
   }, {
    "name" : "windOnTurbineBlades",
    "type" : "core:BlueprintAttribute",

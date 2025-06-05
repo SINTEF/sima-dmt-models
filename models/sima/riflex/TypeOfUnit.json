@@ -1,0 +1,6 @@
+{
+ "name" : "TypeOfUnit",
+ "type" : "core:Enum",
+ "values" : ["PERMANENT", "MOBILE", "PERMANENTANDMOBILE"],
+ "labels" : ["Permanent", "Mobile", "PermanentAndMobile"]
+}

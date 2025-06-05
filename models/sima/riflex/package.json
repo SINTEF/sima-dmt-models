@@ -3,7 +3,7 @@
  "type" : "core:Package",
  "_meta_" : {
   "type" : "core:Meta",
-  "version" : "44",
+  "version" : "45",
   "dependencies" : [{
     "alias" : "core",
     "address" : "system/SIMOS",
@@ -11,7 +11,7 @@
    }, {
     "alias" : "riflex",
     "address" : "riflex",
-    "version" : "44"
+    "version" : "45"
    }]
  }
 }

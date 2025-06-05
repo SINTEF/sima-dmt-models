@@ -50,5 +50,13 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
+  }, {
+   "name" : "elementEnd",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "./EndReference",
+   "description" : "End number 1 or 2",
+   "optional" : true,
+   "default" : "BOTH"
   }]
 }

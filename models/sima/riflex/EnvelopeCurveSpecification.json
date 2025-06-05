@@ -3,22 +3,22 @@
  "type" : "core:Blueprint",
  "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
-   "name" : "compDisplacement",
+   "name" : "storeDisplacement",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
-   "description" : "Compute displacement envelopes?",
+   "description" : "Store displacement envelopes",
    "optional" : true
   }, {
-   "name" : "compForce",
+   "name" : "storeForce",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
-   "description" : "Compute force envelopes?",
+   "description" : "Store force envelopes",
    "optional" : true
   }, {
-   "name" : "compCurvature",
+   "name" : "storeCurvature",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
-   "description" : "Compute curvature envelopes?",
+   "description" : "Store curvature envelopes",
    "optional" : true
   }, {
    "name" : "startTime",
@@ -34,24 +34,6 @@
    "description" : "Simulation end time for computing envelopes",
    "optional" : true,
    "default" : 1.0E7
-  }, {
-   "name" : "printDisplacement",
-   "type" : "core:BlueprintAttribute",
-   "attributeType" : "boolean",
-   "description" : "Print displacement envelopes?",
-   "optional" : true
-  }, {
-   "name" : "printForce",
-   "type" : "core:BlueprintAttribute",
-   "attributeType" : "boolean",
-   "description" : "Print force envelopes?",
-   "optional" : true
-  }, {
-   "name" : "printCurvature",
-   "type" : "core:BlueprintAttribute",
-   "attributeType" : "boolean",
-   "description" : "Print curvature envelopes?",
-   "optional" : true
   }, {
    "name" : "plotOption",
    "type" : "core:BlueprintAttribute",

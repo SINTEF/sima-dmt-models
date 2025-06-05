@@ -1,0 +1,6 @@
+{
+ "name" : "QtfInput",
+ "type" : "core:Enum",
+ "values" : ["MANUAL", "FILE"],
+ "labels" : ["Manual", "File"]
+}

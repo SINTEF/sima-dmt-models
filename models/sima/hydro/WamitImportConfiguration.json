@@ -1,0 +1,52 @@
+{
+ "name" : "WamitImportConfiguration",
+ "type" : "core:Blueprint",
+ "extends" : ["sima:sima/MOAO"],
+ "attributes" : [{
+   "name" : "retardationFunctionParameters",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "./RetardationFunctionCalculationParameters",
+   "contained" : true,
+   "optional" : false
+  }, {
+   "name" : "waveDriftForce",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "./WamitWaveDriftForceOption",
+   "optional" : true,
+   "default" : "MOMENTUM"
+  }, {
+   "name" : "waveForce",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "./WamitWaveForceOption",
+   "optional" : true,
+   "default" : "DIFFRACTION"
+  }, {
+   "name" : "sumQTF",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "./WamitQtfImportOption",
+   "optional" : true,
+   "default" : "NONE"
+  }, {
+   "name" : "diffQTF",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "./WamitQtfImportOption",
+   "optional" : true,
+   "default" : "NONE"
+  }, {
+   "name" : "diffractedWaveElevation",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "optional" : true,
+   "default" : true
+  }, {
+   "name" : "diffractedWaveVelocity",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "optional" : true,
+   "default" : true
+  }]
+}

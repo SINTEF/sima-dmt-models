@@ -1,6 +1,6 @@
 {
  "name" : "MatrixStorage",
  "type" : "core:Enum",
- "values" : ["SKYLINE", "SPARSE"],
- "labels" : ["Skyline", "Sparse"]
+ "values" : ["AUTOMATIC", "SKYLINE", "SPARSE"],
+ "labels" : ["Automatic", "Skyline", "Sparse"]
 }

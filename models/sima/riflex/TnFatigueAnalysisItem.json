@@ -1,8 +1,15 @@
 {
- "name" : "LocalElementAxis",
+ "name" : "TnFatigueAnalysisItem",
  "type" : "core:Blueprint",
- "extends" : ["sima:sima/MOAO"],
+ "extends" : ["./ElementReference"],
  "attributes" : [{
+   "name" : "line",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "./ARLine",
+   "contained" : false,
+   "optional" : true,
+   "description" : "Line"
+  }, {
    "name" : "segment",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "integer",
@@ -29,30 +36,35 @@
    "description" : "All elements",
    "optional" : true
   }, {
-   "name" : "referenceFrame",
+   "name" : "allEnds",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "./ReferenceFrame",
-   "contained" : false,
-   "optional" : true,
-   "description" : "Reference frame for local orientation. If no reference frame is given. Orientation is given in global frame of reference"
-  }, {
-   "name" : "rnx",
-   "type" : "core:BlueprintAttribute",
-   "attributeType" : "number",
-   "description" : "Reference vector x component",
+   "attributeType" : "boolean",
+   "description" : "All ends",
    "optional" : true
   }, {
-   "name" : "rny",
+   "name" : "elementEnd",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "./End",
+   "description" : "End number 1 or 2",
+   "optional" : true,
+   "default" : "ONE"
+  }, {
+   "name" : "referenceBreakingStrength",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
-   "description" : "Reference vector y component",
    "optional" : true
   }, {
-   "name" : "rnz",
+   "name" : "m",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
-   "description" : "Reference vector z component",
-   "optional" : true,
-   "default" : 1.0
+   "description" : "Slope M in formula NR^M=K",
+   "optional" : true
+  }, {
+   "name" : "k",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Constant K in formula NR^M=K",
+   "optional" : true
   }]
 }

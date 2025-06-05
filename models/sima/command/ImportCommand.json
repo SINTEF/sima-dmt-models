@@ -1,7 +1,7 @@
 {
  "name" : "ImportCommand",
  "type" : "core:Blueprint",
- "extends" : ["./Command"],
+ "extends" : ["sima:sima/Command"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -20,6 +20,12 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "description" : "Path to file, e.g stask",
+   "optional" : false
+  }, {
+   "name" : "configuration",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "Path to configuration file (context specific)",
    "optional" : false
   }]
 }

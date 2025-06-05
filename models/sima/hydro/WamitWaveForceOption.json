@@ -1,0 +1,6 @@
+{
+ "name" : "WamitWaveForceOption",
+ "type" : "core:Enum",
+ "values" : ["DIFFRACTION", "HASKIND"],
+ "labels" : ["Diffraction", "Haskind"]
+}

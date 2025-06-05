@@ -34,5 +34,12 @@
    "attributeType" : "boolean",
    "description" : "Do not include this line in the calculations",
    "optional" : true
+  }, {
+   "name" : "localElementAxes",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "./LocalElementAxis",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
   }]
 }

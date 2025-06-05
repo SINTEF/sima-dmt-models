@@ -3,6 +3,11 @@
  "type" : "core:Blueprint",
  "extends" : ["core:Entity"],
  "attributes" : [{
+   "name" : "_id",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
    "name" : "script",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",

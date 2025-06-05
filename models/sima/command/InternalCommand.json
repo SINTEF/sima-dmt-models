@@ -1,7 +1,7 @@
 {
  "name" : "InternalCommand",
  "type" : "core:Blueprint",
- "extends" : ["./Command"],
+ "extends" : ["sima:sima/Command"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",

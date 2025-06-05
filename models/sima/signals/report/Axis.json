@@ -43,5 +43,15 @@
    "attributeType" : "boolean",
    "optional" : true,
    "default" : true
+  }, {
+   "name" : "max",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true
+  }, {
+   "name" : "min",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true
   }]
 }

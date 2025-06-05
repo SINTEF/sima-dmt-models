@@ -1,0 +1,6 @@
+{
+ "name" : "WamitQtfImportOption",
+ "type" : "core:Enum",
+ "values" : ["NONE", "DIRECT", "INDIRECT"],
+ "labels" : ["None", "Direct", "Indirect"]
+}

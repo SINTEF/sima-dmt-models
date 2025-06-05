@@ -1,7 +1,7 @@
 {
  "name" : "CompoundCommand",
  "type" : "core:Blueprint",
- "extends" : ["./Command"],
+ "extends" : ["sima:sima/Command"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -18,7 +18,7 @@
   }, {
    "name" : "commands",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "./Command",
+   "attributeType" : "sima:sima/Command",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true

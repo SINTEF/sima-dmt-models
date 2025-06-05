@@ -1,0 +1,6 @@
+{
+ "name" : "UtilizationCheck",
+ "type" : "core:Enum",
+ "values" : ["TENSIONANDCURVATURE", "TENSION", "CURVATURE"],
+ "labels" : ["TensionAndCurvature", "Tension", "Curvature"]
+}

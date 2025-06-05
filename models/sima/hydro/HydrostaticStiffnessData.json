@@ -1,18 +1,6 @@
 {
  "name" : "HydrostaticStiffnessData",
  "type" : "core:Blueprint",
- "extends" : ["sima:sima/MOAO"],
- "attributes" : [{
-   "name" : "matrix",
-   "type" : "core:BlueprintAttribute",
-   "attributeType" : "./HydrostaticStiffnessMatrix",
-   "contained" : true,
-   "optional" : false
-  }, {
-   "name" : "reference",
-   "type" : "core:BlueprintAttribute",
-   "attributeType" : "sima:sima/Position",
-   "contained" : true,
-   "optional" : false
-  }]
+ "abstract" : true,
+ "extends" : ["sima:sima/MOAO"]
 }

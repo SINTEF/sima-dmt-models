@@ -42,5 +42,13 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "optional" : true
+  }, {
+   "name" : "tnItems",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "./TnFatigueAnalysisItem",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true,
+   "description" : "Specification of nodes for displacement storage"
   }]
 }

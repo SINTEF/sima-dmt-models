@@ -3,6 +3,12 @@
  "type" : "core:Blueprint",
  "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
+   "name" : "automaticLoading",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Automatic static loading sequence",
+   "optional" : true
+  }, {
    "name" : "loadTypeItems",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "./StaticLoadTypeItem",
@@ -15,7 +21,7 @@
    "attributeType" : "string",
    "enumType" : "./MatrixStorage",
    "optional" : true,
-   "default" : "SPARSE"
+   "default" : "AUTOMATIC"
   }, {
    "name" : "currentProfileScaling",
    "type" : "core:BlueprintAttribute",

@@ -20,5 +20,11 @@
    "attributeType" : "./RigidMoonpoolColumn",
    "contained" : true,
    "optional" : false
+  }, {
+   "name" : "windVelocityRamping",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "./WindVelocityRamping",
+   "contained" : true,
+   "optional" : false
   }]
 }

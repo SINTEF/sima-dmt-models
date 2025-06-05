@@ -129,13 +129,6 @@
    "contained" : true,
    "optional" : true
   }, {
-   "name" : "localElementAxes",
-   "type" : "core:BlueprintAttribute",
-   "attributeType" : "./LocalElementAxis",
-   "dimensions" : "*",
-   "contained" : true,
-   "optional" : true
-  }, {
    "name" : "dragChains",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "./DragChainType",

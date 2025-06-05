@@ -1,0 +1,41 @@
+{
+ "name" : "RetardationFunctionCalculationParameters",
+ "type" : "core:Blueprint",
+ "extends" : ["sima:sima/MOAO"],
+ "attributes" : [{
+   "name" : "timeStep",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Retardation function timeStep",
+   "optional" : true,
+   "default" : 0.5
+  }, {
+   "name" : "useLimitingFrequencies",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Use added mass zero and/or added mass infinite if these exist",
+   "optional" : true,
+   "default" : true
+  }, {
+   "name" : "cutFactor",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "factor for cut of fft. Default 200",
+   "optional" : true,
+   "default" : 200.0
+  }, {
+   "name" : "powerOfTwo",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "integer",
+   "description" : "Length of array used for fft/ifft. Default 2**13.",
+   "optional" : true,
+   "default" : 13
+  }, {
+   "name" : "massCutFactor",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Factor used together with structural mass to cut a degree of freedom.  Small factor means larger chance of cutting",
+   "optional" : true,
+   "default" : 100000.0
+  }]
+}

@@ -1,0 +1,59 @@
+{
+ "name" : "LinearHydrostatics",
+ "type" : "core:Blueprint",
+ "extends" : ["./HydrostaticStiffnessData"],
+ "attributes" : [{
+   "name" : "xcob",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Center of buoyancy - x",
+   "optional" : true
+  }, {
+   "name" : "ycob",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Center of buoyancy - y",
+   "optional" : true
+  }, {
+   "name" : "zcob",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Center of buoyancy - z",
+   "optional" : true
+  }, {
+   "name" : "displacedVolume",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true
+  }, {
+   "name" : "k33norm",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true
+  }, {
+   "name" : "k34norm",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true
+  }, {
+   "name" : "k35norm",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true
+  }, {
+   "name" : "k44norm",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true
+  }, {
+   "name" : "k45norm",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true
+  }, {
+   "name" : "k55norm",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true
+  }]
+}

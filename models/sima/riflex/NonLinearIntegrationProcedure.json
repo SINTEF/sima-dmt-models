@@ -37,14 +37,14 @@
    "attributeType" : "number",
    "description" : "Desired accuracy for equilibrium iteration measured by a modified euclidian displacement norm (norm of squared translations). Recommended values: 10e-6 - 10e-5.",
    "optional" : true,
-   "default" : 1.0E-5
+   "default" : 1.0E-6
   }, {
    "name" : "energyAccuracy",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Required accuracy measured by energy norm. This value is relevant only if Convergence Norm is 'Both'.",
    "optional" : true,
-   "default" : 1.0E-5
+   "default" : 1.0E-6
   }, {
    "name" : "iterationContinuation",
    "type" : "core:BlueprintAttribute",
