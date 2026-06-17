@@ -35,6 +35,13 @@
    "contained" : true,
    "optional" : false
   }, {
+   "name" : "shapes",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "./Shape",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
    "name" : "initialPosition",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "./Position",
@@ -48,16 +55,11 @@
    "contained" : true,
    "optional" : true
   }, {
-   "name" : "utmX",
+   "name" : "frame",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "number",
-   "description" : "UTM x coordinates",
-   "optional" : true
-  }, {
-   "name" : "utmY",
-   "type" : "core:BlueprintAttribute",
-   "attributeType" : "number",
-   "description" : "UTM y coordinates",
-   "optional" : true
+   "attributeType" : "./FrameOfReference",
+   "contained" : false,
+   "optional" : true,
+   "description" : "Express position and orientation in selected frame"
   }]
 }

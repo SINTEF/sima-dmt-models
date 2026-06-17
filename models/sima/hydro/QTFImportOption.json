@@ -1,0 +1,6 @@
+{
+ "name" : "QTFImportOption",
+ "type" : "core:Enum",
+ "values" : ["ANY", "DIFF", "SUM", "NONE"],
+ "labels" : ["ANY", "DIFF", "SUM", "NONE"]
+}

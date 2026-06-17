@@ -18,7 +18,7 @@
   }, {
    "name" : "referenceFrame",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "./ReferenceFrame",
+   "attributeType" : "sima:sima/FrameOfReference",
    "contained" : false,
    "optional" : true,
    "description" : "Reference frame for local coordinates."

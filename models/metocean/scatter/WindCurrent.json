@@ -16,15 +16,18 @@
    "attributeType" : "number",
    "description" : "the scatter data for direction.",
    "optional" : true,
-   "dimensions" : "*,*"
+   "dimensions" : "*,*",
+   "unit" : "deg"
   }, {
    "name" : "speed",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "the scatter data for speed.",
    "optional" : true,
-   "dimensions" : "*,*"
+   "dimensions" : "*,*",
+   "unit" : "m/s"
   }],
  "storageRecipes" : [],
  "uiRecipes" : []
 }
+

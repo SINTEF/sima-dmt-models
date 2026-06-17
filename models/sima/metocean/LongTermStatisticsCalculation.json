@@ -11,7 +11,7 @@
    "name" : "relativeCompassAngle",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
-   "description" : "Relative angle between analysis x-axis and north direction in anti-clockwise direction.\r\nShould match the angle given in the recieving SIMA task location.",
+   "description" : "This is the relative angle measured from the global x-axis to the compass North, measured counter-clockwise. Should match the angle given in the receiving SIMA task location.",
    "optional" : true
   }, {
    "name" : "inputReferenceSystem",

@@ -1,6 +1,0 @@
-{
- "name" : "ThrustLoss",
- "type" : "core:Enum",
- "values" : ["NONE", "SURFACE"],
- "labels" : ["None", "Surface"]
-}

@@ -43,19 +43,19 @@
    "name" : "lowerLeftX",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
-   "description" : "X-coordinate of the upwind lower left data point, in wind aligned coordinates",
+   "description" : "X-coordinate of the front lower left data point, in wind aligned coordinates",
    "optional" : true
   }, {
    "name" : "lowerLeftY",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
-   "description" : "Y-coordinate of the upwind lower left data point, in wind aligned coordinates",
+   "description" : "Y-coordinate of the front lower left data point, in wind aligned coordinates",
    "optional" : true
   }, {
    "name" : "lowerLeftZ",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
-   "description" : "Z-coordinate of the upwind lower left data point, in wind aligned coordinates",
+   "description" : "Z-coordinate of the front lower left data point, in wind aligned coordinates",
    "optional" : true
   }, {
    "name" : "numPointsX",

@@ -31,7 +31,7 @@
    "name" : "hydrodynamicInputCode",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "./HydrodynamicInputCode",
+   "enumType" : "./DimensionalInput",
    "description" : "Hydrodynamic input code",
    "optional" : true,
    "default" : "DIMENSIONAL"
@@ -224,19 +224,27 @@
    "description" : "Quadratic aerodynamic drag force coefficient per unit length in z direction",
    "optional" : true
   }, {
-   "name" : "aerodynamicInputCode",
+   "name" : "aerodynamicInput",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "./AerodynamicInputCode",
+   "enumType" : "./DimensionalInput",
    "description" : "Aerodynamic input code",
    "optional" : true,
-   "default" : "NONE"
+   "default" : "DIMENSIONAL"
   }, {
    "name" : "aerodynamicDiameter",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "Aerodynamic diameter",
    "optional" : true
+  }, {
+   "name" : "aerodynamicLoadFormulation",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "./AerodynamicLoadFormulation",
+   "description" : "Aerodynamic input code",
+   "optional" : true,
+   "default" : "NONE"
   }, {
    "name" : "temperature",
    "type" : "core:BlueprintAttribute",

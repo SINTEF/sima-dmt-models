@@ -73,5 +73,17 @@
    "attributeType" : "boolean",
    "description" : "Use the first signal as the x axis for all inputs",
    "optional" : true
+  }, {
+   "name" : "readRawText",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "read the file in as raw text data",
+   "optional" : true
+  }, {
+   "name" : "splitLines",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "split separate lines into array",
+   "optional" : true
   }]
 }

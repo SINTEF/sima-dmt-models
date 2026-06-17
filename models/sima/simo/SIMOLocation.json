@@ -14,12 +14,6 @@
    "contained" : true,
    "optional" : false
   }, {
-   "name" : "initialRotationpoint",
-   "type" : "core:BlueprintAttribute",
-   "attributeType" : "sima:sima/Point3",
-   "contained" : true,
-   "optional" : false
-  }, {
    "name" : "viewpoints",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "sima:sima/NamedViewpoint",
@@ -30,27 +24,7 @@
    "name" : "relativeCompassAngle",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
-   "description" : "Relative angle between analysis x-axis and north direction in anti-clockwise direction",
-   "optional" : true
-  }, {
-   "name" : "utmX",
-   "type" : "core:BlueprintAttribute",
-   "attributeType" : "number",
-   "description" : "Offset of local coordinate system origin (X) relative to UTM (Easting).",
-   "optional" : true,
-   "default" : 0.0
-  }, {
-   "name" : "utmY",
-   "type" : "core:BlueprintAttribute",
-   "attributeType" : "number",
-   "description" : "Offset of local coordinate system origin (Y) relative to UTM (Northing).",
-   "optional" : true,
-   "default" : 0.0
-  }, {
-   "name" : "gridZone",
-   "type" : "core:BlueprintAttribute",
-   "attributeType" : "string",
-   "description" : "Zone consists of a number from [01-60] and a letter from [C-Z], or just one of [A,B,Y,Z] if on the antarctic or arctic pole.",
+   "description" : "This is the relative angle measured from the global x-axis to the compass North, measured counter-clockwise",
    "optional" : true
   }, {
    "name" : "infrastructureBodies",

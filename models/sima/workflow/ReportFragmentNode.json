@@ -1,7 +1,7 @@
 {
  "name" : "ReportFragmentNode",
  "type" : "core:Blueprint",
- "extends" : ["sima:post/RunNode", "sima:report/ReportFragmentReference"],
+ "extends" : ["sima:report/ReportFragmentReference", "sima:post/RunNode"],
  "attributes" : [{
    "name" : "x",
    "type" : "core:BlueprintAttribute",

@@ -1,0 +1,68 @@
+{
+ "name" : "GeometricShape",
+ "type" : "core:Blueprint",
+ "extends" : ["./Shape"],
+ "attributes" : [{
+   "name" : "name",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
+   "name" : "x",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true
+  }, {
+   "name" : "y",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true
+  }, {
+   "name" : "z",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true
+  }, {
+   "name" : "rotX",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true
+  }, {
+   "name" : "rotY",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true
+  }, {
+   "name" : "rotZ",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true
+  }, {
+   "name" : "length",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Length",
+   "optional" : true,
+   "default" : 10.0
+  }, {
+   "name" : "width",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Width",
+   "optional" : true,
+   "default" : 5.0
+  }, {
+   "name" : "height",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Height",
+   "optional" : true,
+   "default" : 5.0
+  }, {
+   "name" : "appearance",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "./Appearance",
+   "contained" : true,
+   "optional" : false
+  }]
+}

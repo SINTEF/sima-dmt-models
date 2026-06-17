@@ -1,6 +1,0 @@
-{
- "name" : "Location",
- "type" : "core:Blueprint",
- "abstract" : true,
- "extends" : ["./NamedObject"]
-}

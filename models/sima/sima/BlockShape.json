@@ -1,0 +1,56 @@
+{
+ "name" : "BlockShape",
+ "type" : "core:Blueprint",
+ "extends" : ["./Shape"],
+ "attributes" : [{
+   "name" : "name",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
+   "name" : "x",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true
+  }, {
+   "name" : "y",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true
+  }, {
+   "name" : "z",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true
+  }, {
+   "name" : "rotX",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true
+  }, {
+   "name" : "rotY",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true
+  }, {
+   "name" : "rotZ",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true
+  }, {
+   "name" : "sizeX",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true
+  }, {
+   "name" : "sizeY",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true
+  }, {
+   "name" : "sizeZ",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true
+  }]
+}

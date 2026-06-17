@@ -2,5 +2,5 @@
  "name" : "Body",
  "type" : "core:Blueprint",
  "abstract" : true,
- "extends" : ["./NamedObject"]
+ "extends" : ["./NamedObject", "./FrameOfReference"]
 }

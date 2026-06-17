@@ -1,0 +1,6 @@
+{
+ "name" : "AerodynamicLoadFormulation",
+ "type" : "core:Enum",
+ "values" : ["NONE", "DRAG", "TDVIV"],
+ "labels" : ["None", "Morison drag", "Time domain VIV"]
+}

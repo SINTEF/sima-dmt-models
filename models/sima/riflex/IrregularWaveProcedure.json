@@ -49,7 +49,8 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "description" : "Whether diffracted wave points are to be specified",
-   "optional" : true
+   "optional" : true,
+   "default" : true
   }, {
    "name" : "waveKinematicDiffPoints",
    "type" : "core:BlueprintAttribute",

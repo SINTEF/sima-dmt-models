@@ -1,7 +1,7 @@
 {
  "name" : "ModelReferenceVariable",
  "type" : "core:Blueprint",
- "extends" : ["./NamedObject", "./ModelReference"],
+ "extends" : ["./Variable", "./ModelReference"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",

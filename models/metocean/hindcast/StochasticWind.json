@@ -16,21 +16,25 @@
    "attributeType" : "number",
    "description" : "mean wind speed.",
    "optional" : false,
-   "dimensions" : "*"
+   "dimensions" : "*",
+   "unit" : "m/s"
   }, {
    "name" : "direction",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "wind direction.",
    "optional" : false,
-   "dimensions" : "*"
+   "dimensions" : "*",
+   "unit" : "deg"
   }, {
    "name" : "level",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "at this level, upward positive.",
-   "optional" : false
+   "optional" : false,
+   "unit" : "m"
   }],
  "storageRecipes" : [],
  "uiRecipes" : []
 }
+

@@ -1,0 +1,28 @@
+{
+ "name" : "NodeMessage",
+ "type" : "core:Blueprint",
+ "extends" : ["sima:sima/MOAO"],
+ "attributes" : [{
+   "name" : "severity",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "sima:sima/Severity",
+   "optional" : true,
+   "default" : "WARNING"
+  }, {
+   "name" : "line",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
+   "name" : "segmentNumber",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "integer",
+   "optional" : true
+  }, {
+   "name" : "nodeNumber",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "integer",
+   "optional" : true
+  }]
+}

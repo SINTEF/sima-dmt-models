@@ -3,6 +3,12 @@
  "type" : "core:Blueprint",
  "extends" : ["sima:sima/MOAO"],
  "attributes" : [{
+   "name" : "taskName",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "Name of task to import into. Required if bodyName is set.",
+   "optional" : true
+  }, {
    "name" : "retardationFunctionParameters",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "./RetardationFunctionCalculationParameters",

@@ -1,7 +1,7 @@
 {
  "name" : "ReferenceFrame",
  "type" : "core:Blueprint",
- "extends" : ["sima:sima/NamedObject"],
+ "extends" : ["sima:sima/NamedObject", "sima:sima/FrameOfReference"],
  "attributes" : [{
    "name" : "name",
    "type" : "core:BlueprintAttribute",
@@ -10,7 +10,7 @@
   }, {
    "name" : "parent",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "./ReferenceFrame",
+   "attributeType" : "sima:sima/FrameOfReference",
    "contained" : false,
    "optional" : true
   }, {

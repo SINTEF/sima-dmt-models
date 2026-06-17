@@ -1,0 +1,16 @@
+{
+ "name" : "CurvedPlateProfileItem",
+ "type" : "core:Blueprint",
+ "extends" : ["./MOAO"],
+ "attributes" : [{
+   "name" : "distanceAlongAxis",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true
+  }, {
+   "name" : "diameter",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true
+  }]
+}

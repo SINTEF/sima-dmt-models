@@ -145,6 +145,13 @@
    "contained" : true,
    "optional" : true
   }, {
+   "name" : "disturbedWaveField",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "sima:simo/DisturbedWaveField",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
    "name" : "slenderSystem",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "./SlenderSystem",

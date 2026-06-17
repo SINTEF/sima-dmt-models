@@ -1,0 +1,6 @@
+{
+ "name" : "DimensionalInput",
+ "type" : "core:Enum",
+ "values" : ["DIMENSIONAL", "NONDIMENSIONAL"],
+ "labels" : ["Dimensional coefficients", "Nondimensional coefficients"]
+}
