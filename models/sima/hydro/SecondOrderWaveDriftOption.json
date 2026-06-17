@@ -1,0 +1,6 @@
+{
+ "name" : "SecondOrderWaveDriftOption",
+ "type" : "core:Enum",
+ "values" : ["COMBINED", "MEAN", "HORIZONTAL"],
+ "labels" : ["COMBINED", "MEAN", "HORIZONTAL"]
+}

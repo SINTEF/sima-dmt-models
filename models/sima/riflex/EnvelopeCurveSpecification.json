@@ -40,6 +40,6 @@
    "attributeType" : "string",
    "enumType" : "./MatrixPlotFileOption",
    "optional" : true,
-   "default" : "MAX_AND_STANDARD_DEV"
+   "default" : "MIN_AND_STANDARD_DEV"
   }]
 }

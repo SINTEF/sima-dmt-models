@@ -189,6 +189,13 @@
    "description" : "Acceleration is calculated from the displacements",
    "optional" : true
   }, {
+   "name" : "pitchControl",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "sima:windturbine/PitchControl",
+   "optional" : true,
+   "default" : "COLLECTIVE"
+  }, {
    "name" : "specifyTowerTop",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",

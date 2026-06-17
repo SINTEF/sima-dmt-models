@@ -1,0 +1,38 @@
+{
+ "name" : "SIFImportConfiguration",
+ "type" : "core:Blueprint",
+ "extends" : ["sima:sima/MOAO"],
+ "attributes" : [{
+   "name" : "taskName",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "Name of task to import into. Required if bodyName is set.",
+   "optional" : true
+  }, {
+   "name" : "bodyName",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "Optional. Name of SIMOBody to merge hydrodynamic data into.",
+   "optional" : true
+  }, {
+   "name" : "waveDriftOption",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "./SecondOrderWaveDriftOption",
+   "optional" : true,
+   "default" : "COMBINED"
+  }, {
+   "name" : "qtfImportOption",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "./QTFImportOption",
+   "optional" : true,
+   "default" : "ANY"
+  }, {
+   "name" : "retardationFunctionParameters",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "./RetardationFunctionCalculationParameters",
+   "contained" : true,
+   "optional" : false
+  }]
+}

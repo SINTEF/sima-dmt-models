@@ -41,11 +41,24 @@
    "description" : "Path to the input file.",
    "optional" : true
   }, {
-   "name" : "outputSlot",
+   "name" : "fileFromInput",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "sima:post/OutputSlot",
-   "contained" : true,
-   "optional" : false
+   "attributeType" : "boolean",
+   "description" : "Input the filename to be imported from an input slot",
+   "optional" : true
+  }, {
+   "name" : "format",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "sima:post/FileInputFormat",
+   "optional" : true,
+   "default" : "AUTOMATIC"
+  }, {
+   "name" : "firstIsX",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Use the first signal as the x axis for all inputs",
+   "optional" : true
   }, {
    "name" : "readRawText",
    "type" : "core:BlueprintAttribute",
@@ -58,5 +71,11 @@
    "attributeType" : "boolean",
    "description" : "split separate lines into array",
    "optional" : true
+  }, {
+   "name" : "outputSlot",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "sima:post/OutputSlot",
+   "contained" : true,
+   "optional" : false
   }]
 }

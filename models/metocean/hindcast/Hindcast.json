@@ -18,6 +18,16 @@
    "optional" : true,
    "dimensions" : "*"
   }, {
+   "name" : "latitude",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true
+  }, {
+   "name" : "longitude",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true
+  }, {
    "name" : "wave",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "/hindcast/StochasticWave",
@@ -41,19 +51,8 @@
    "contained" : true,
    "optional" : true,
    "description" : "current models."
-  }, {
-   "name" : "latitude",
-   "type" : "core:BlueprintAttribute",
-   "attributeType" : "number",
-   "optional" : true,
-   "unit" : "deg"
-  }, {
-   "name" : "longitude",
-   "type" : "core:BlueprintAttribute",
-   "attributeType" : "number",
-   "optional" : true,
-   "unit" : "deg"
   }],
  "storageRecipes" : [],
  "uiRecipes" : []
 }
+

@@ -31,7 +31,7 @@
    "name" : "hydrodynamicInputCode",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "./HydrodynamicInputCode",
+   "enumType" : "./DimensionalInput",
    "description" : "Hydrodynamic input code",
    "optional" : true,
    "default" : "DIMENSIONAL"
@@ -143,7 +143,7 @@
    "name" : "hydrodynamicRadiationInputCode",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "./HydrodynamicInputCode",
+   "enumType" : "./DimensionalInput",
    "description" : "Code for input of simplified radiation force coefficients",
    "optional" : true,
    "default" : "DIMENSIONAL"
@@ -266,13 +266,13 @@
    "description" : "Quadratic aerodynamic drag force coefficient per unit length in z direction",
    "optional" : true
   }, {
-   "name" : "aerodynamicInputCode",
+   "name" : "aerodynamicInput",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "./AerodynamicInputCode",
+   "enumType" : "./DimensionalInput",
    "description" : "Aerodynamic input code",
    "optional" : true,
-   "default" : "NONE"
+   "default" : "DIMENSIONAL"
   }, {
    "name" : "aerodynamicDiameter",
    "type" : "core:BlueprintAttribute",
@@ -280,7 +280,21 @@
    "description" : "Aerodynamic diameter",
    "optional" : true
   }, {
+   "name" : "aerodynamicLoadFormulation",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "./AerodynamicLoadFormulation",
+   "description" : "Aerodynamic input code",
+   "optional" : true,
+   "default" : "NONE"
+  }, {
    "name" : "vivCoefficients",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "./TimeDomainVIVLoadCoefficients",
+   "contained" : true,
+   "optional" : false
+  }, {
+   "name" : "aerodynamicVivCoefficients",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "./TimeDomainVIVLoadCoefficients",
    "contained" : true,
@@ -291,14 +305,6 @@
    "attributeType" : "./AxisymmetricCrossSectionMassVolume",
    "contained" : true,
    "optional" : false
-  }, {
-   "name" : "axialStiffnessInput",
-   "type" : "core:BlueprintAttribute",
-   "attributeType" : "string",
-   "enumType" : "./AxialStiffness",
-   "description" : "Axial stiffness input specification",
-   "optional" : true,
-   "default" : "CONSTANT"
   }, {
    "name" : "axialStiffness",
    "type" : "core:BlueprintAttribute",
@@ -331,13 +337,6 @@
    "description" : "Initial stiffness factor for internal friction moment",
    "optional" : true,
    "default" : 10.0
-  }, {
-   "name" : "coupledAxialTorsionItems",
-   "type" : "core:BlueprintAttribute",
-   "attributeType" : "./CoupledAxialTorsionStrainItem",
-   "dimensions" : "*",
-   "contained" : true,
-   "optional" : true
   }, {
    "name" : "tensionTorsionCoupling",
    "type" : "core:BlueprintAttribute",

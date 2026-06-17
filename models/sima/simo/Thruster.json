@@ -202,13 +202,6 @@
    "contained" : true,
    "optional" : true
   }, {
-   "name" : "thrustLoss",
-   "type" : "core:BlueprintAttribute",
-   "attributeType" : "string",
-   "enumType" : "./ThrustLoss",
-   "optional" : true,
-   "default" : "NONE"
-  }, {
    "name" : "surfaceProximityReductionFactors",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "./SurfaceProximityReductionFactor",
@@ -235,6 +228,16 @@
    "attributeType" : "./ControlSequenceItem",
    "dimensions" : "*",
    "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "surfaceProximityLoss",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "optional" : true
+  }, {
+   "name" : "directionDependentLoss",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
    "optional" : true
   }]
 }

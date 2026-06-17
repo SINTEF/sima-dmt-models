@@ -42,16 +42,16 @@
    "contained" : true,
    "optional" : true
   }, {
-   "name" : "variations",
+   "name" : "referenceVariables",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "sima:condition/ModelVariation",
+   "attributeType" : "sima:sima/ModelReferenceVariable",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
   }, {
-   "name" : "referenceVariables",
+   "name" : "variations",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "sima:sima/ModelReferenceVariable",
+   "attributeType" : "sima:condition/ModelVariation",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true

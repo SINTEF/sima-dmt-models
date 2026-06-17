@@ -126,7 +126,7 @@
   }, {
    "name" : "externalStiffness",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "sima:hydro/ExternalStiffnessMatrix",
+   "attributeType" : "./ExternalStiffnessMatrix",
    "contained" : true,
    "optional" : true
   }, {

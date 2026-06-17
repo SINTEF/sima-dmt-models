@@ -1,0 +1,370 @@
+{
+ "name" : "ArmouredCrossSection",
+ "type" : "core:Blueprint",
+ "extends" : ["./CrossSection", "./CRSAxialFrictionModel"],
+ "attributes" : [{
+   "name" : "name",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
+   "name" : "scfkSpecification",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Scaling of Froude-Krylov term in Morison’s equation in normal direction",
+   "optional" : true,
+   "default" : false
+  }, {
+   "name" : "loadFormulation",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "./LoadFormulation",
+   "optional" : true,
+   "default" : "MORISON"
+  }, {
+   "name" : "hydrodynamicDiameter",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Hydrodynamic diameter",
+   "optional" : true
+  }, {
+   "name" : "hydrodynamicInputCode",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "./DimensionalInput",
+   "description" : "Hydrodynamic input code",
+   "optional" : true,
+   "default" : "DIMENSIONAL"
+  }, {
+   "name" : "addedMassTanDir",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Added mass in tangential direction",
+   "optional" : true
+  }, {
+   "name" : "addedMassNormDir",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Added mass in normal direction",
+   "optional" : true
+  }, {
+   "name" : "dampingNormDir",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Damping coefficients in normal direction",
+   "optional" : true
+  }, {
+   "name" : "normalDirectionScaling",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Scaling factor for Froude-Krylov term in Morison’s equation in normal direction",
+   "optional" : true,
+   "default" : 1.0
+  }, {
+   "name" : "tangentialDirectionScaling",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Scale for Froude-Krylov term in Morison’s equation in tangential direction",
+   "optional" : true,
+   "default" : 1.0
+  }, {
+   "name" : "cdt",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Quadratic drag coefficient in tangential direction.",
+   "optional" : true
+  }, {
+   "name" : "cdn",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Quadratic drag coefficient in normal direction.",
+   "optional" : true
+  }, {
+   "name" : "cmt",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Added mass per unit length in tangential direction.",
+   "optional" : true
+  }, {
+   "name" : "cmn",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Added mass per unit length in normal direction.",
+   "optional" : true
+  }, {
+   "name" : "cdtl",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Linear drag force coefficient in tangential direction.",
+   "optional" : true
+  }, {
+   "name" : "cdnl",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Linear drag force coefficient in normal direction.",
+   "optional" : true
+  }, {
+   "name" : "cdx",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Quadratic drag coefficient in tangential direction.",
+   "optional" : true
+  }, {
+   "name" : "cdy",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Quadratic drag coefficient in normal direction.",
+   "optional" : true
+  }, {
+   "name" : "amx",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Added mass per unit length in tangential direction.",
+   "optional" : true
+  }, {
+   "name" : "amy",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Added mass per unit length in normal direction.",
+   "optional" : true
+  }, {
+   "name" : "cdlx",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Linear drag force coefficient in tangential direction.",
+   "optional" : true
+  }, {
+   "name" : "cdly",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Linear drag force coefficient in normal direction.",
+   "optional" : true
+  }, {
+   "name" : "hydrodynamicRadiationInputCode",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "./DimensionalInput",
+   "description" : "Code for input of simplified radiation force coefficients",
+   "optional" : true,
+   "default" : "DIMENSIONAL"
+  }, {
+   "name" : "massDampingSpecification",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Mass proportional Rayleigh damping",
+   "optional" : true
+  }, {
+   "name" : "stiffnessDampingSpecification",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Stiffness proportional Rayleigh damping",
+   "optional" : true
+  }, {
+   "name" : "axialDampingSpecification",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Local axial damping model",
+   "optional" : true
+  }, {
+   "name" : "staticFriction",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Static friction force corresponding to elongation",
+   "optional" : true
+  }, {
+   "name" : "staticElongation",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Relative elongation",
+   "optional" : true
+  }, {
+   "name" : "dynamicFriction",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Dynamic friction force corresponding to elongation",
+   "optional" : true
+  }, {
+   "name" : "dynamicElongation",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Relative elongation",
+   "optional" : true
+  }, {
+   "name" : "axialFriction",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Local axial friction model",
+   "optional" : true
+  }, {
+   "name" : "massDamping",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "./CRSMassDamping",
+   "contained" : true,
+   "optional" : false
+  }, {
+   "name" : "axialDamping",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "./CRSAxialDamping",
+   "contained" : true,
+   "optional" : false
+  }, {
+   "name" : "temperature",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Temperature at which the specification applies",
+   "optional" : true,
+   "default" : 0.0
+  }, {
+   "name" : "alpha",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Thermal expansion coefficient",
+   "optional" : true,
+   "default" : 0.0
+  }, {
+   "name" : "beta",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Pressure expansion coefficient",
+   "optional" : true,
+   "default" : 0.0
+  }, {
+   "name" : "defaultExpansion",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Use default thermal and pressure expansion settings",
+   "optional" : true,
+   "default" : true
+  }, {
+   "name" : "tensionCapacity",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Tension capacity",
+   "optional" : true
+  }, {
+   "name" : "maxCurvature",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Maximum curvature",
+   "optional" : true
+  }, {
+   "name" : "cdax",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Quadratic aerodynamic drag force coefficient per unit length in tangential direction",
+   "optional" : true
+  }, {
+   "name" : "cday",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Quadratic aerodynamic drag force coefficient per unit length in normal direction",
+   "optional" : true
+  }, {
+   "name" : "cdaz",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Quadratic aerodynamic drag force coefficient per unit length in z direction",
+   "optional" : true
+  }, {
+   "name" : "aerodynamicInput",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "./DimensionalInput",
+   "description" : "Aerodynamic input code",
+   "optional" : true,
+   "default" : "DIMENSIONAL"
+  }, {
+   "name" : "aerodynamicDiameter",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Aerodynamic diameter",
+   "optional" : true
+  }, {
+   "name" : "aerodynamicLoadFormulation",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "./AerodynamicLoadFormulation",
+   "description" : "Aerodynamic input code",
+   "optional" : true,
+   "default" : "NONE"
+  }, {
+   "name" : "netWidthEnd1",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Net width at segment end 1",
+   "optional" : true
+  }, {
+   "name" : "netWidthEnd2",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Net width at segment end 2",
+   "optional" : true
+  }, {
+   "name" : "currentVelocityScaling",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Ratio between reduced current speed and ambient current speed due to upstream net shadowing effects",
+   "optional" : true,
+   "default" : 1.0
+  }, {
+   "name" : "solidityRatio",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Solidity ratio.",
+   "optional" : true
+  }, {
+   "name" : "vivCoefficients",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "./TimeDomainVIVLoadCoefficients",
+   "contained" : true,
+   "optional" : false
+  }, {
+   "name" : "aerodynamicVivCoefficients",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "./TimeDomainVIVLoadCoefficients",
+   "contained" : true,
+   "optional" : false
+  }, {
+   "name" : "massVolume",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "./AxisymmetricCrossSectionMassVolume",
+   "contained" : true,
+   "optional" : false
+  }, {
+   "name" : "pressureDependency",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "integer",
+   "description" : "Pressure dependency parameter related to bending moment",
+   "optional" : true
+  }, {
+   "name" : "hardeningParameter",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Hardening parameter",
+   "optional" : true
+  }, {
+   "name" : "intFrictionMoment",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Internal friction moment.",
+   "optional" : true
+  }, {
+   "name" : "coupledBendingTorsion",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Geometric stiffness coupling between bending and torsion",
+   "optional" : true
+  }, {
+   "name" : "stiffnessDamping",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "./CRSStiffnessDamping",
+   "contained" : true,
+   "optional" : false
+  }, {
+   "name" : "fileName",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "Macro beam nonlinear stiffness data for cables and flexible pipes (HYBBHY stiffness data)",
+   "optional" : true
+  }]
+}

@@ -1,0 +1,25 @@
+{
+ "name" : "DisturbedWaveField",
+ "type" : "core:Blueprint",
+ "extends" : ["sima:sima/MOAO"],
+ "attributes" : [{
+   "name" : "waveFieldFile",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "description" : "HDF5 file with wave field definition",
+   "optional" : true
+  }, {
+   "name" : "diffractorBody",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "./SIMOBody",
+   "contained" : false,
+   "optional" : false
+  }, {
+   "name" : "numHeadings",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "integer",
+   "description" : "Number of wave headings the shielding field is interpolated over",
+   "optional" : true,
+   "default" : 36
+  }]
+}

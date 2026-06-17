@@ -25,7 +25,7 @@
    "name" : "configuration",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
-   "description" : "Path to configuration file (context specific)",
-   "optional" : false
+   "description" : "Optional path to configuration file (context specific)",
+   "optional" : true
   }]
 }

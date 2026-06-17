@@ -67,7 +67,7 @@
    "name" : "usageFactor",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
-   "description" : "Usage factor according to e.g. API 2RD",
+   "description" : "Design factor, F_D according to eg. API 2RD, not  to exceed 1",
    "optional" : true,
    "default" : 1.0
   }, {

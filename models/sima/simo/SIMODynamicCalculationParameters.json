@@ -216,43 +216,39 @@
    "optional" : true,
    "default" : "RELATIVE"
   }, {
-   "name" : "exportResultsToWasim",
+   "name" : "exportResultsToSesam",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true,
    "default" : false
   }, {
-   "name" : "wasimResultExport",
+   "name" : "sesamResultExport",
    "type" : "core:BlueprintAttribute",
-   "attributeType" : "./WasimResultExport",
+   "attributeType" : "./SesamResultExport",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "storeWindForces",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
-   "description" : "Store wind forces?",
    "optional" : true,
    "default" : false
   }, {
    "name" : "storeSumGeneralLineForces",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
-   "description" : "Store sum general line forces?",
    "optional" : true,
    "default" : false
   }, {
    "name" : "storeTotalForces",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
-   "description" : "Store total forces?",
    "optional" : true,
    "default" : false
   }, {
    "name" : "storeRetardationForces",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
-   "description" : "Store retardation forces?",
    "optional" : true,
    "default" : false
   }, {
@@ -265,175 +261,151 @@
    "name" : "storeLinearDamping",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
-   "description" : "Store linear damping?",
    "optional" : true,
    "default" : false
   }, {
    "name" : "storeQuadraticDamping",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
-   "description" : "Store quadratic damping?",
    "optional" : true,
    "default" : false
   }, {
    "name" : "storeDistributedHydrodynamicForces",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
-   "description" : "Store distributed hydrodynamic forces?",
    "optional" : true,
    "default" : false
   }, {
    "name" : "storeFixedBodyAndSlenderElementStripResults",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
-   "description" : "Store results for slender element strips and fixed body elements?",
+   "description" : "Store results for slender element strips and fixed body elements",
    "optional" : true,
    "default" : false
   }, {
    "name" : "storeWaveDriftDamping",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
-   "description" : "Store wave-drift damping?",
    "optional" : true,
    "default" : false
   }, {
    "name" : "storeLinearCurrentDrag",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
-   "description" : "Store linear current drag?",
    "optional" : true,
    "default" : false
   }, {
    "name" : "storeQuadraticCurrentDrag",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
-   "description" : "Store quadratic current drag?",
    "optional" : true,
    "default" : false
   }, {
    "name" : "storeSmallBodyHydrodynamicForces",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
-   "description" : "Store small body hydrodynamic forces?",
    "optional" : true,
    "default" : false
   }, {
    "name" : "storeResultantPositioningElementForces",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
-   "description" : "Store resultant positioning element forces?",
    "optional" : true,
    "default" : false
   }, {
    "name" : "storePositioningElementForceComponents",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
-   "description" : "Store positioning element force components?",
    "optional" : true,
    "default" : false
   }, {
    "name" : "storeTotalPositioningForces",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
-   "description" : "Store total positioning element forces?",
    "optional" : true,
    "default" : false
   }, {
    "name" : "storeThrusterForces",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
-   "description" : "Store thruster forces?",
    "optional" : true,
    "default" : false
   }, {
    "name" : "storeSumThrusterForces",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
-   "description" : "Store sum thruster forces?",
    "optional" : true,
    "default" : false
   }, {
    "name" : "storeDynamicPositioningEstimators",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
-   "description" : "Store dynamic positioning estimators?",
    "optional" : true,
    "default" : false
   }, {
    "name" : "storeSumSpecifiedForces",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
-   "description" : "Store sum specified forces?",
    "optional" : true,
    "default" : false
   }, {
    "name" : "storeSumExternalForces",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
-   "description" : "Store sum external forces?",
    "optional" : true,
    "default" : false
   }, {
    "name" : "storeSumCouplingForces",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
-   "description" : "Store sum coupling forces?",
    "optional" : true,
    "default" : false
   }, {
    "name" : "storeResultantCouplingElementForces",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
-   "description" : "Store resultant coupling element forces?",
    "optional" : true,
    "default" : false
   }, {
    "name" : "storeGlobalCouplingForceComponents",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
-   "description" : "Store global coupling force components?",
    "optional" : true,
    "default" : false
   }, {
    "name" : "storeLocalCouplingForceComponents",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
-   "description" : "Store local coupling force components?",
    "optional" : true,
    "default" : false
   }, {
    "name" : "storeGlobalLowFrequencyPosition",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
-   "description" : "Store global low-frequency position?",
    "optional" : true,
    "default" : false
   }, {
    "name" : "storeGlobalTotalPosition",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
-   "description" : "Store global total position?",
    "optional" : true,
    "default" : true
   }, {
    "name" : "storeGlobalAcceleration",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
-   "description" : "Store global acceleration?",
    "optional" : true,
    "default" : false
   }, {
    "name" : "storeLocalAccelerations",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
-   "description" : "Store local acceleration?",
    "optional" : true,
    "default" : false
   }, {
    "name" : "storeLocalVelocity",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
-   "description" : "Store local velocity",
    "optional" : true,
    "default" : false
   }, {
@@ -486,6 +458,38 @@
    "default" : 16384.0
   }, {
    "name" : "storeDifferenceFrequencyWaveForce",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "optional" : true,
+   "default" : false
+  }, {
+   "name" : "storeSumFrequencyWaveForce",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "optional" : true,
+   "default" : false
+  }, {
+   "name" : "useOldResultStructure",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Using the new result structure increase simulation efficiency and use updated names for results. Note that signal selection in any old workflows or post processor will need to be updated.",
+   "optional" : true,
+   "default" : false
+  }, {
+   "name" : "storeWaveParticleMotions",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "optional" : true,
+   "default" : false
+  }, {
+   "name" : "storeWaveForces",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Store first and second order wave forces",
+   "optional" : true,
+   "default" : false
+  }, {
+   "name" : "storeWindVelocity",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true,

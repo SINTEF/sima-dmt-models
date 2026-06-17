@@ -35,6 +35,13 @@
    "contained" : true,
    "optional" : false
   }, {
+   "name" : "shapes",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "sima:sima/Shape",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
    "name" : "initialPosition",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "sima:sima/Position",

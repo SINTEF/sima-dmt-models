@@ -65,5 +65,12 @@
    "type" : "core:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
+  }, {
+   "name" : "nodeMessages",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "./NodeMessage",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
   }]
 }

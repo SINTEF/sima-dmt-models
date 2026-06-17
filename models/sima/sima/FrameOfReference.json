@@ -1,0 +1,6 @@
+{
+ "name" : "FrameOfReference",
+ "type" : "core:Blueprint",
+ "abstract" : true,
+ "extends" : ["./MOAO"]
+}

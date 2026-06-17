@@ -50,5 +50,16 @@
    "description" : "Maximum number of significant digits used to display floating point numbers (editors must be reopened) ",
    "optional" : true,
    "default" : 5
+  }, {
+   "name" : "documentationLocation",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
+   "name" : "externalHelp",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "optional" : true,
+   "default" : false
   }]
 }

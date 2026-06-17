@@ -188,5 +188,12 @@
    "attributeType" : "boolean",
    "description" : "Acceleration is calculated from the displacements",
    "optional" : true
+  }, {
+   "name" : "pitchControl",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "enumType" : "./PitchControl",
+   "optional" : true,
+   "default" : "COLLECTIVE"
   }]
 }

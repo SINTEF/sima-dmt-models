@@ -1,0 +1,18 @@
+{
+ "name" : "DensityLevel",
+ "type" : "core:Blueprint",
+ "extends" : ["sima:sima/MOAO"],
+ "attributes" : [{
+   "name" : "depth",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Water depth",
+   "optional" : true
+  }, {
+   "name" : "waterDensity",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "description" : "Water density at this level",
+   "optional" : true
+  }]
+}

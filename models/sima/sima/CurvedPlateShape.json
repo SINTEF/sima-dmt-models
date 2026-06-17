@@ -1,0 +1,64 @@
+{
+ "name" : "CurvedPlateShape",
+ "type" : "core:Blueprint",
+ "extends" : ["./Shape"],
+ "attributes" : [{
+   "name" : "name",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
+   "name" : "x",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true
+  }, {
+   "name" : "y",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true
+  }, {
+   "name" : "z",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true
+  }, {
+   "name" : "rotX",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true
+  }, {
+   "name" : "rotY",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true
+  }, {
+   "name" : "rotZ",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true
+  }, {
+   "name" : "includedAngle",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true,
+   "default" : 360.0
+  }, {
+   "name" : "hollow",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "optional" : true
+  }, {
+   "name" : "thickness",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "number",
+   "optional" : true
+  }, {
+   "name" : "profileItems",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "./CurvedPlateProfileItem",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }]
+}

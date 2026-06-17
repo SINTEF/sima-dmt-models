@@ -16,34 +16,40 @@
    "attributeType" : "number",
    "description" : "significant wave height.",
    "optional" : false,
-   "dimensions" : "*"
+   "dimensions" : "*",
+   "unit" : "m"
   }, {
    "name" : "tp",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "peack period.",
    "optional" : false,
-   "dimensions" : "*"
+   "dimensions" : "*",
+   "unit" : "s"
   }, {
    "name" : "tm",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "mean period.",
-   "optional" : true
+   "optional" : true,
+   "unit" : "s"
   }, {
    "name" : "direction",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "dominant wave direction.",
    "optional" : false,
-   "dimensions" : "*"
+   "dimensions" : "*",
+   "unit" : "deg"
   }, {
    "name" : "meanDirection",
    "type" : "core:BlueprintAttribute",
    "attributeType" : "number",
    "description" : "mean wave direction.",
-   "optional" : true
+   "optional" : true,
+   "unit" : "deg"
   }],
  "storageRecipes" : [],
  "uiRecipes" : []
 }
+

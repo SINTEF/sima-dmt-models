@@ -140,5 +140,21 @@
    "attributeType" : "./HorizontalAxisYawController",
    "contained" : true,
    "optional" : false
+  }, {
+   "name" : "externalRotorLoads",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Specify external DLL to calculate rotor aerodynamic loads",
+   "optional" : true
+  }, {
+   "name" : "externalRotorLoadFile",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
+  }, {
+   "name" : "externalRotorLoadConfigFile",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "string",
+   "optional" : true
   }]
 }

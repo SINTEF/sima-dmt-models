@@ -144,5 +144,12 @@
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
+  }, {
+   "name" : "disturbedWaveField",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "./DisturbedWaveField",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
   }]
 }

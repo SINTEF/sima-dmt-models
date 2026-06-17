@@ -13,5 +13,11 @@
    "attributeType" : "string",
    "description" : "The current value for the variable",
    "optional" : true
+  }, {
+   "name" : "structured",
+   "type" : "core:BlueprintAttribute",
+   "attributeType" : "boolean",
+   "description" : "Use JSON string to enable a structured variable in the scripting engine",
+   "optional" : true
   }]
 }

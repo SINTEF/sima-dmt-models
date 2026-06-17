@@ -1,0 +1,6 @@
+{
+ "name" : "PitchControl",
+ "type" : "core:Enum",
+ "values" : ["COLLECTIVE", "INDIVIDUAL"],
+ "labels" : ["Collective", "Individual"]
+}
